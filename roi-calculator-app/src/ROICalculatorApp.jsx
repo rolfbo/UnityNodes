@@ -23,10 +23,40 @@
  * @returns {JSX.Element} The complete ROI calculator interface
  */
 
-import React, { useState } from 'react';
-import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChart3, PieChart, HelpCircle, Info, Share2, Download, Clock } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
+import { usePersistentState } from './utils/usePersistentState.js';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+
+// Tooltip component for help text
+const HelpTooltip = ({ content, children }) => {
+    const [show, setShow] = useState(false);
+
+    return (
+        <div className="relative inline-block">
+            <div
+                onMouseEnter={() => setShow(true)}
+                onMouseLeave={() => setShow(false)}
+                className="inline-flex items-center cursor-help"
+            >
+                {children}
+                <HelpCircle size={14} className="ml-1 text-purple-400 hover:text-purple-300" />
+            </div>
+            {show && (
+                <div className="absolute z-50 w-64 p-3 bg-slate-800 border border-purple-400/30 rounded-lg shadow-lg text-sm text-purple-200 left-0 top-full mt-1">
+                    {content}
+                    <div className="absolute -top-1 left-4 w-2 h-2 bg-slate-800 border-l border-t border-purple-400/30 transform rotate-45"></div>
+                </div>
+            )}
+        </div>
+    );
+};
 
 export default function UnityNodesROICalculator() {
+    console.log('UnityNodesROICalculator component starting...');
+
     // Number formatting function for proper locale formatting
     const formatNumber = (number, decimals = 2) => {
         return new Intl.NumberFormat('en-US', {
@@ -35,31 +65,126 @@ export default function UnityNodesROICalculator() {
         }).format(number);
     };
 
+    // URL parameter handling
+    const getUrlParams = () => {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            numNodes: params.get('numNodes'),
+            licensesPerNode: params.get('licensesPerNode'),
+            licensesRunBySelf: params.get('licensesRunBySelf'),
+            licensesLeased: params.get('licensesLeased'),
+            licensesInactive: params.get('licensesInactive'),
+            phonePrice: params.get('phonePrice'),
+            simMonthly: params.get('simMonthly'),
+            monthlyCredits: params.get('monthlyCredits'),
+            nodeOperatorPaysCredits: params.get('nodeOperatorPaysCredits'),
+            revenuePerLicense: params.get('revenuePerLicense'),
+            leaseSplitToOperator: params.get('leaseSplitToOperator'),
+            usdToEur: params.get('usdToEur'),
+            marketShareScenario: params.get('marketShareScenario'),
+            uptimeSelfRun: params.get('uptimeSelfRun'),
+            uptimeLeased: params.get('uptimeLeased'),
+            rampUpEnabled: params.get('rampUpEnabled'),
+            rampUpDuration: params.get('rampUpDuration'),
+            selfRunRampCurve: params.get('selfRunRampCurve'),
+            leasedRampCurve: params.get('leasedRampCurve')
+        };
+    };
+
+    const generateShareUrl = () => {
+        const params = new URLSearchParams();
+        params.set('numNodes', numNodes.toString());
+        params.set('licensesPerNode', licensesPerNode.toString());
+        params.set('licensesRunBySelf', licensesRunBySelf.toString());
+        params.set('licensesLeased', licensesLeased.toString());
+        params.set('licensesInactive', licensesInactive.toString());
+        params.set('phonePrice', phonePrice.toString());
+        params.set('simMonthly', simMonthly.toString());
+        params.set('monthlyCredits', monthlyCredits.toString());
+        params.set('nodeOperatorPaysCredits', nodeOperatorPaysCredits.toString());
+        params.set('revenuePerLicense', revenuePerLicense.toString());
+        params.set('leaseSplitToOperator', leaseSplitToOperator.toString());
+        params.set('usdToEur', usdToEur.toString());
+        params.set('marketShareScenario', marketShareScenario);
+        params.set('uptimeSelfRun', uptimeSelfRun.toString());
+        params.set('uptimeLeased', uptimeLeased.toString());
+        params.set('rampUpEnabled', rampUpEnabled.toString());
+        params.set('rampUpDuration', rampUpDuration.toString());
+        params.set('selfRunRampCurve', selfRunRampCurve);
+        params.set('leasedRampCurve', leasedRampCurve);
+
+        return `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+    };
+
+    const copyToClipboard = async (text) => {
+        try {
+            await navigator.clipboard.writeText(text);
+            // Could add a toast notification here
+        } catch (err) {
+            console.error('Failed to copy to clipboard:', err);
+        }
+    };
+
+    // Load from URL params on component mount
+    useEffect(() => {
+        const urlParams = getUrlParams();
+
+        if (urlParams.numNodes) setNumNodes(Math.max(1, parseInt(urlParams.numNodes) || 1));
+        if (urlParams.licensesPerNode) setLicensesPerNode(Math.max(1, parseInt(urlParams.licensesPerNode) || 200));
+        if (urlParams.licensesRunBySelf) setLicensesRunBySelf(Math.max(0, parseInt(urlParams.licensesRunBySelf) || 0));
+        if (urlParams.licensesLeased) setLicensesLeased(Math.max(0, parseInt(urlParams.licensesLeased) || 0));
+        if (urlParams.licensesInactive) setLicensesInactive(Math.max(0, parseInt(urlParams.licensesInactive) || 0));
+        if (urlParams.phonePrice) setPhonePrice(Math.max(0, parseInt(urlParams.phonePrice) || 0));
+        if (urlParams.simMonthly) setSimMonthly(Math.max(0, parseInt(urlParams.simMonthly) || 0));
+        if (urlParams.monthlyCredits) setMonthlyCredits(Math.max(0, parseFloat(urlParams.monthlyCredits) || 0));
+        if (urlParams.nodeOperatorPaysCredits) setNodeOperatorPaysCredits(urlParams.nodeOperatorPaysCredits === 'true');
+        if (urlParams.revenuePerLicense) setRevenuePerLicense(Math.max(0, parseFloat(urlParams.revenuePerLicense) || 0));
+        if (urlParams.leaseSplitToOperator) setLeaseSplitToOperator(Math.min(100, Math.max(0, parseInt(urlParams.leaseSplitToOperator) || 0)));
+        if (urlParams.usdToEur) setUsdToEur(Math.max(0, parseFloat(urlParams.usdToEur) || 0.92));
+        if (urlParams.marketShareScenario) setMarketShareScenario(urlParams.marketShareScenario);
+        if (urlParams.uptimeSelfRun) setUptimeSelfRun(Math.min(100, Math.max(0, parseFloat(urlParams.uptimeSelfRun) || 95)));
+        if (urlParams.uptimeLeased) setUptimeLeased(Math.min(100, Math.max(0, parseFloat(urlParams.uptimeLeased) || 95)));
+        if (urlParams.rampUpEnabled !== undefined) setRampUpEnabled(urlParams.rampUpEnabled === 'true');
+        if (urlParams.rampUpDuration) setRampUpDuration(Math.min(12, Math.max(1, parseInt(urlParams.rampUpDuration) || 6)));
+        if (urlParams.selfRunRampCurve && rampUpCurves[urlParams.selfRunRampCurve]) setSelfRunRampCurve(urlParams.selfRunRampCurve);
+        if (urlParams.leasedRampCurve && rampUpCurves[urlParams.leasedRampCurve]) setLeasedRampCurve(urlParams.leasedRampCurve);
+    }, []);
+
     // Node Configuration
-    const [numNodes, setNumNodes] = useState(4);
+    const [numNodes, setNumNodes] = usePersistentState('roi_numNodes', 4);
     const nodePrice = 5000;
-    const [licensesPerNode, setLicensesPerNode] = useState(200);
+    const [licensesPerNode, setLicensesPerNode] = usePersistentState('roi_licensesPerNode', 200);
 
     // Exchange rate
-    const [usdToEur, setUsdToEur] = useState(0.92); // Conservative EUR/USD rate
+    const [usdToEur, setUsdToEur] = usePersistentState('roi_usdToEur', 0.92); // Conservative EUR/USD rate
 
     // License Distribution
-    const [licensesRunBySelf, setLicensesRunBySelf] = useState(0); // Per node
-    const [licensesLeased, setLicensesLeased] = useState(150); // Per node
-    const [licensesInactive, setLicensesInactive] = useState(50); // Per node
+    const [licensesRunBySelf, setLicensesRunBySelf] = usePersistentState('roi_licensesRunBySelf', 0); // Per node
+    const [licensesLeased, setLicensesLeased] = usePersistentState('roi_licensesLeased', 150); // Per node
+    const [licensesInactive, setLicensesInactive] = usePersistentState('roi_licensesInactive', 50); // Per node
 
     // Costs per phone/license
-    const [phonePrice, setPhonePrice] = useState(80);
-    const [simMonthly, setSimMonthly] = useState(10);
-    const [monthlyCredits, setMonthlyCredits] = useState(1.99);
-    const [nodeOperatorPaysCredits, setNodeOperatorPaysCredits] = useState(true); // Toggle who pays credits
+    const [phonePrice, setPhonePrice] = usePersistentState('roi_phonePrice', 80);
+    const [simMonthly, setSimMonthly] = usePersistentState('roi_simMonthly', 10);
+    const [monthlyCredits, setMonthlyCredits] = usePersistentState('roi_monthlyCredits', 1.99);
+    const [nodeOperatorPaysCredits, setNodeOperatorPaysCredits] = usePersistentState('roi_nodeOperatorPaysCredits', true); // Toggle who pays credits
 
     // Revenue Model
-    const [revenuePerLicense, setRevenuePerLicense] = useState(75); // Monthly revenue per active license
-    const [leaseSplitToOperator, setLeaseSplitToOperator] = useState(40); // Node operator gets 40% when leasing
+    const [revenuePerLicense, setRevenuePerLicense] = usePersistentState('roi_revenuePerLicense', 75); // Monthly revenue per active license
+    const [leaseSplitToOperator, setLeaseSplitToOperator] = usePersistentState('roi_leaseSplitToOperator', 40); // Node operator gets 40% when leasing
 
     // Market Share Scenario
-    const [marketShareScenario, setMarketShareScenario] = useState('conservative'); // conservative, moderate, optimistic
+    const [marketShareScenario, setMarketShareScenario] = usePersistentState('roi_marketShareScenario', 'conservative'); // conservative, moderate, optimistic
+
+    // Expected Uptime (percentage of time licenses are active)
+    const [uptimeSelfRun, setUptimeSelfRun] = usePersistentState('roi_uptimeSelfRun', 95); // Percentage for self-run licenses
+    const [uptimeLeased, setUptimeLeased] = usePersistentState('roi_uptimeLeased', 95); // Percentage for leased licenses
+
+    // Ramp-Up Configuration
+    const [rampUpEnabled, setRampUpEnabled] = usePersistentState('roi_rampUpEnabled', false); // Enable ramp-up modeling - TEMPORARILY DISABLED
+    const [rampUpDuration, setRampUpDuration] = usePersistentState('roi_rampUpDuration', 6); // Duration in months (1-12)
+    const [selfRunRampCurve, setSelfRunRampCurve] = usePersistentState('roi_selfRunRampCurve', 'moderate'); // Curve type for self-run licenses
+    const [leasedRampCurve, setLeasedRampCurve] = usePersistentState('roi_leasedRampCurve', 'slow'); // Curve type for leased licenses
 
     // Market share scenarios based on the table (using 1.2M license row)
     // Assuming $208/month = 7GB per device (max capacity)
@@ -68,6 +193,105 @@ export default function UnityNodesROICalculator() {
         conservative: { share: 1, revenuePerLicense: 208, dataGB: 7, totalLicenses: 1.2, label: "1% Market Share" },
         moderate: { share: 5, revenuePerLicense: 1042, dataGB: 35, totalLicenses: 6.0, label: "5% Market Share" },
         optimistic: { share: 10, revenuePerLicense: 2083, dataGB: 70, totalLicenses: 12.0, label: "10% Market Share" }
+    };
+
+    // Ramp-up curves for license activation over time
+    const rampUpCurves = {
+        immediate: {
+            name: "Immediate",
+            description: "All licenses active from day 1",
+            getPercentage: (month, duration) => 100
+        },
+        linear: {
+            name: "Linear",
+            description: "Steady growth each month",
+            getPercentage: (month, duration) => Math.min(100, (month / duration) * 100)
+        },
+        moderate: {
+            name: "S-Curve Moderate",
+            description: "Slow start, accelerates, then plateaus",
+            getPercentage: (month, duration) => {
+                const x = (month / duration) * 12 - 6; // Scale to -6 to 6
+                return Math.min(100, Math.max(0, 100 / (1 + Math.exp(-x))));
+            }
+        },
+        aggressive: {
+            name: "Aggressive",
+            description: "Fast initial ramp-up",
+            getPercentage: (month, duration) => {
+                const x = (month / duration) * 8 - 2; // Shifted S-curve
+                return Math.min(100, Math.max(0, 100 / (1 + Math.exp(-x))));
+            }
+        },
+        slow: {
+            name: "Conservative",
+            description: "Very gradual adoption",
+            getPercentage: (month, duration) => {
+                const x = (month / duration) * 16 - 10; // Stretched S-curve
+                return Math.min(100, Math.max(0, 100 / (1 + Math.exp(-x))));
+            }
+        }
+    };
+
+    // Calculate ramped costs for a specific month
+    const calculateRampedCosts = (month) => {
+        if (!rampUpEnabled) {
+            // Return standard costs if ramp-up is disabled
+            return totalMonthlyCost;
+        }
+
+        const selfRunPercent = getRampUpPercentage(month, selfRunRampCurve, 'selfRun') / 100;
+        const leasedPercent = getRampUpPercentage(month, leasedRampCurve, 'leased') / 100;
+
+        // Phone costs: Scale with self-run licenses (phones are purchased as needed)
+        const phonesActive = Math.ceil(totalLicensesRunBySelf * selfRunPercent);
+        const rampedPhoneCost = (phonesActive / totalLicensesRunBySelf) * totalPhoneCost;
+
+        // SIM costs: Scale with active self-run licenses
+        const rampedSimCost = totalLicensesRunBySelf * selfRunPercent * simMonthly;
+
+        // Credit costs: Scale with active licenses (self-run and leased if operator pays)
+        const totalActiveLicenses = (totalLicensesRunBySelf * selfRunPercent) + (totalLicensesLeased * leasedPercent);
+        const rampedCreditCost = nodeOperatorPaysCredits ?
+            totalActiveLicenses * monthlyCredits :
+            (totalLicensesRunBySelf * selfRunPercent * monthlyCredits);
+
+        // Node costs remain upfront (one-time), so only include in month 1
+        const nodeCost = month === 1 ? totalNodeCost : 0;
+
+        return rampedPhoneCost + rampedSimCost + rampedCreditCost + nodeCost;
+    };
+
+    // Calculate ramped revenue for a specific month
+    const calculateRampedRevenue = (month) => {
+        if (!rampUpEnabled) {
+            // Return standard revenue if ramp-up is disabled
+            return totalMonthlyRevenue;
+        }
+
+        const selfRunPercent = getRampUpPercentage(month, selfRunRampCurve, 'selfRun') / 100;
+        const leasedPercent = getRampUpPercentage(month, leasedRampCurve, 'leased') / 100;
+
+        // Calculate effective licenses with ramp-up and uptime
+        const effectiveSelfRun = totalLicensesRunBySelf * selfRunPercent * (uptimeSelfRun / 100);
+        const effectiveLeased = totalLicensesLeased * leasedPercent * (uptimeLeased / 100);
+
+        // Calculate revenue
+        const revenueSelfRun = effectiveSelfRun * revenuePerLicense;
+        const revenueLeased = effectiveLeased * revenuePerLicense * (leaseSplitToOperator / 100);
+
+        return revenueSelfRun + revenueLeased;
+    };
+
+    // Get ramp-up percentage for a specific month
+    const getRampUpPercentage = (month, curveType, licenseType) => {
+        const curve = rampUpCurves[curveType];
+        if (!curve) return 100; // Default to 100% if curve not found
+
+        const duration = rampUpDuration;
+        if (month >= duration) return 100; // Full activation after ramp-up period
+
+        return curve.getPercentage(month, duration);
     };
 
     // Calculate totals
@@ -100,834 +324,1786 @@ export default function UnityNodesROICalculator() {
     // revenuePerLicense is already the 75% after network fees
     // So for self-run: you get the full revenuePerLicense amount
     // For leased: you split the revenuePerLicense with the license operator
-    const revenueFromSelfRun = totalLicensesRunBySelf * revenuePerLicense;
+    // Apply uptime multipliers to account for device downtime
+    const revenueFromSelfRun = totalLicensesRunBySelf * revenuePerLicense * (uptimeSelfRun / 100);
 
     // For leased licenses: split the revenue with license operator
-    const revenueFromLeased = totalLicensesLeased * revenuePerLicense * (leaseSplitToOperator / 100);
+    const revenueFromLeased = totalLicensesLeased * revenuePerLicense * (leaseSplitToOperator / 100) * (uptimeLeased / 100);
 
     const totalMonthlyRevenue = revenueFromSelfRun + revenueFromLeased;
     const netMonthlyProfit = totalMonthlyRevenue - totalMonthlyCost;
-    const annualProfit = netMonthlyProfit * 12;
 
-    // ROI calculations
-    const breakEvenMonths = initialInvestment / netMonthlyProfit;
-    const roi12Month = ((netMonthlyProfit * 12) / initialInvestment) * 100;
-    const roi24Month = ((netMonthlyProfit * 24) / initialInvestment) * 100;
+    // Effective licenses (accounting for uptime)
+    const effectiveLicensesSelfRun = totalLicensesRunBySelf * (uptimeSelfRun / 100);
+    const effectiveLicensesLeased = totalLicensesLeased * (uptimeLeased / 100);
+    const totalEffectiveLicenses = effectiveLicensesSelfRun + effectiveLicensesLeased;
+
+    // ROI calculations (accounting for ramp-up if enabled)
+    const calculateRampUpMetrics = () => {
+        console.log('calculateRampUpMetrics called, rampUpEnabled:', rampUpEnabled);
+        if (!rampUpEnabled) {
+            // Use simple calculations if ramp-up is disabled
+            const breakEvenMonths = netMonthlyProfit > 0 ? initialInvestment / netMonthlyProfit : Infinity;
+            const roi12Month = initialInvestment > 0 ? ((netMonthlyProfit * 12) / initialInvestment) * 100 : 0;
+            const roi24Month = initialInvestment > 0 ? ((netMonthlyProfit * 24) / initialInvestment) * 100 : 0;
+            const annualProfit = netMonthlyProfit * 12;
+            const annualRevenue = totalMonthlyRevenue * 12;
+            return { breakEvenMonths, roi12Month, roi24Month, annualProfit, annualRevenue };
+        }
+
+        // Calculate cumulative cash flow with ramp-up
+        let cumulativeCashFlow = -initialInvestment;
+        let breakEvenMonths = Infinity;
+        let totalProfit12Month = 0;
+        let totalProfit24Month = 0;
+        let totalRevenue12Month = 0;
+        let totalRevenue24Month = 0;
+
+        // Simulate up to 36 months to find break-even and calculate ROIs
+        for (let month = 1; month <= 36; month++) {
+            const monthlyRevenue = calculateRampedRevenue(month);
+            const monthlyCosts = calculateRampedCosts(month);
+            const monthlyProfit = monthlyRevenue - monthlyCosts;
+
+            cumulativeCashFlow += monthlyProfit;
+
+            // Track break-even
+            if (cumulativeCashFlow >= 0 && breakEvenMonths === Infinity) {
+                breakEvenMonths = month;
+            }
+
+            // Accumulate for ROI calculations
+            if (month <= 12) {
+                totalProfit12Month += monthlyProfit;
+                totalRevenue12Month += monthlyRevenue;
+            }
+            if (month <= 24) {
+                totalProfit24Month += monthlyProfit;
+                totalRevenue24Month += monthlyRevenue;
+            }
+        }
+
+        const roi12Month = initialInvestment > 0 ? (totalProfit12Month / initialInvestment) * 100 : 0;
+        const roi24Month = initialInvestment > 0 ? (totalProfit24Month / initialInvestment) * 100 : 0;
+        const annualProfit = totalProfit12Month; // Annual profit (12 months)
+        const annualRevenue = totalRevenue12Month;
+
+        return { breakEvenMonths, roi12Month, roi24Month, annualProfit, annualRevenue };
+    };
+
+    const rampUpMetrics = calculateRampUpMetrics();
+    const breakEvenMonths = rampUpMetrics.breakEvenMonths;
+    const roi12Month = rampUpMetrics.roi12Month;
+    const roi24Month = rampUpMetrics.roi24Month;
+    const annualProfit = rampUpMetrics.annualProfit;
+    const annualRevenue = rampUpMetrics.annualRevenue;
+
+    // Daily calculations (30-day month basis)
+    const dailyNetProfit = netMonthlyProfit / 30;
+    const dailyNetProfitEur = dailyNetProfit * usdToEur;
 
     // Validation
     const totalLicensesAllocated = licensesRunBySelf + licensesLeased + licensesInactive;
     const isValidAllocation = totalLicensesAllocated === licensesPerNode;
 
-    return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6 pb-28 md:pb-6">
-            <div className="max-w-7xl mx-auto">
-                {/* Sticky Summary (Desktop) */}
-                <div className="hidden md:block sticky top-0 z-30 bg-slate-900/60 backdrop-blur border-b border-white/10 mb-6">
-                    <div className="px-6 py-2 text-sm flex gap-6 justify-center">
-                        <span className="text-green-300">Net: ${formatNumber(netMonthlyProfit)} · €{formatNumber(netMonthlyProfit * usdToEur)}</span>
-                        <span className="text-blue-300">Break-Even: {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</span>
-                        <span className="text-purple-300">Annual: ${formatNumber(annualProfit)} · €{formatNumber(annualProfit * usdToEur)}</span>
-                    </div>
-                </div>
+    // Scenario comparison feature
+    const [savedScenarios, setSavedScenarios] = useState([]);
+    const [scenarioName, setScenarioName] = useState('');
 
-                <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold text-white mb-2">Unity Nodes ROI Calculator</h1>
-                    <p className="text-purple-300">Calculate returns based on self-run and leased licenses</p>
+    const saveCurrentScenario = () => {
+        if (!scenarioName.trim()) return;
 
-                    <div className="mt-4 inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-lg px-4 py-2 border border-white/20">
-                        <label className="text-sm text-purple-300">
-                            USD to EUR Rate:
-                        </label>
-                        <input
-                            type="number"
-                            value={usdToEur}
-                            onChange={(e) => setUsdToEur(Math.max(0, parseFloat(e.target.value) || 0.92))}
-                            step="0.01"
-                            className="w-20 bg-white/5 border border-purple-400/30 rounded px-2 py-1 text-white text-sm"
-                            min="0"
-                        />
-                    </div>
-                </div>
+        const scenario = {
+            id: Date.now(),
+            name: scenarioName.trim(),
+            numNodes,
+            licensesPerNode,
+            licensesRunBySelf,
+            licensesLeased,
+            licensesInactive,
+            phonePrice,
+            simMonthly,
+            monthlyCredits,
+            nodeOperatorPaysCredits,
+            revenuePerLicense,
+            leaseSplitToOperator,
+            usdToEur,
+            marketShareScenario,
+            uptimeSelfRun,
+            uptimeLeased,
+            rampUpEnabled,
+            rampUpDuration,
+            selfRunRampCurve,
+            leasedRampCurve,
+            // Calculated values
+            netMonthlyProfit,
+            breakEvenMonths,
+            roi12Month,
+            roi24Month,
+            totalMonthlyRevenue,
+            annualProfit,
+            initialInvestment,
+            totalMonthlyCost
+        };
 
-                {/* Node Configuration */}
-                <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
-                    <div className="flex items-center gap-2 mb-4">
-                        <Package className="text-purple-400" size={24} />
-                        <h2 className="text-xl font-bold text-white">Node Configuration</h2>
-                    </div>
+        setSavedScenarios(prev => [...prev, scenario]);
+        setScenarioName('');
+    };
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                Number of Unity Nodes
-                            </label>
-                            <input
-                                type="number"
-                                value={numNodes}
-                                onChange={(e) => setNumNodes(Math.max(1, parseInt(e.target.value) || 1))}
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="1"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                ${nodePrice.toLocaleString()} per node × {numNodes} = ${totalNodeCost.toLocaleString()}
-                            </p>
-                        </div>
+    const loadScenario = (scenario) => {
+        setNumNodes(scenario.numNodes);
+        setLicensesPerNode(scenario.licensesPerNode);
+        setLicensesRunBySelf(scenario.licensesRunBySelf);
+        setLicensesLeased(scenario.licensesLeased);
+        setLicensesInactive(scenario.licensesInactive);
+        setPhonePrice(scenario.phonePrice);
+        setSimMonthly(scenario.simMonthly);
+        setMonthlyCredits(scenario.monthlyCredits);
+        setNodeOperatorPaysCredits(scenario.nodeOperatorPaysCredits);
+        setRevenuePerLicense(scenario.revenuePerLicense);
+        setLeaseSplitToOperator(scenario.leaseSplitToOperator);
+        setUsdToEur(scenario.usdToEur);
+        setMarketShareScenario(scenario.marketShareScenario);
+        setUptimeSelfRun(scenario.uptimeSelfRun ?? 95); // Default to 95% if not in scenario
+        setUptimeLeased(scenario.uptimeLeased ?? 95); // Default to 95% if not in scenario
+        setRampUpEnabled(scenario.rampUpEnabled ?? false); // Default to false if not in scenario
+        setRampUpDuration(scenario.rampUpDuration ?? 6); // Default to 6 months if not in scenario
+        setSelfRunRampCurve(scenario.selfRunRampCurve ?? 'moderate'); // Default to moderate if not in scenario
+        setLeasedRampCurve(scenario.leasedRampCurve ?? 'slow'); // Default to slow if not in scenario
+    };
 
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                Licenses per Node
-                            </label>
-                            <input
-                                type="number"
-                                value={licensesPerNode}
-                                onChange={(e) => {
-                                    const newValue = Math.max(1, parseInt(e.target.value) || 200);
-                                    setLicensesPerNode(newValue);
-                                    // Reset license distribution when changing total licenses
-                                    const defaultSelfRun = Math.floor(newValue * 0.25);
-                                    const defaultLeased = Math.floor(newValue * 0.5);
-                                    const defaultInactive = newValue - defaultSelfRun - defaultLeased;
-                                    setLicensesRunBySelf(defaultSelfRun);
-                                    setLicensesLeased(defaultLeased);
-                                    setLicensesInactive(defaultInactive);
-                                }}
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="1"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                Total licenses available: {numNodes * licensesPerNode}
-                            </p>
-                        </div>
-                    </div>
+    const deleteScenario = (id) => {
+        setSavedScenarios(prev => prev.filter(s => s.id !== id));
+    };
 
-                    <div className="mt-4">
-                        <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-                            <h3 className="text-blue-300 font-semibold mb-2">What's Included Per Node:</h3>
-                            <ul className="text-sm text-blue-200 space-y-1">
-                                <li>• {licensesPerNode} Unity License NFTs</li>
-                                <li>• $1,875 MNTx staked (24mo lock)</li>
-                                <li>• $1,875 WMTx staked (24mo lock)</li>
-                                <li>• NFTs are transferable & sellable</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    // PDF Export functionality
+    const exportToPDF = async () => {
+        const pdf = new jsPDF('p', 'mm', 'a4');
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = pdf.internal.pageSize.getHeight();
 
-                {/* License Distribution */}
-                <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
-                    <div className="flex items-center gap-2 mb-4">
-                        <Users className="text-purple-400" size={24} />
-                        <h2 className="text-xl font-bold text-white">License Distribution (Per Node)</h2>
-                        {!isValidAllocation && (
-                            <span className="text-red-400 text-sm ml-auto">
-                                ⚠️ Must total {licensesPerNode} licenses
-                            </span>
-                        )}
-                    </div>
+        // Add title
+        pdf.setFontSize(20);
+        pdf.text('Unity Nodes ROI Calculator Report', 20, 30);
 
-                    <div className="grid md:grid-cols-3 gap-4">
-                        <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-green-500/10 border border-green-500/30'}`}>
-                            <label className="text-sm text-white block mb-2 font-semibold">
-                                Licenses Run by Me
-                            </label>
-                            <div className="flex gap-2 mb-3">
-                                {[0, 25, 50, 75, 100].map((percentage) => {
-                                    const licenseCount = Math.floor(licensesPerNode * percentage / 100);
-                                    return (
-                                        <button
-                                            key={percentage}
-                                            onClick={() => setLicensesRunBySelf(licenseCount)}
-                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesRunBySelf === licenseCount
-                                                    ? 'bg-green-500 text-white'
-                                                    : 'bg-white/10 text-green-200 hover:bg-white/20'
-                                                }`}
-                                        >
-                                            {percentage}% ({licenseCount})
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                            <button
-                                onClick={() => setLicensesRunBySelf(Math.max(0, licensesPerNode - licensesLeased - licensesInactive))}
-                                className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
-                            >
-                                Calculate
-                            </button>
-                            <input
-                                type="number"
-                                value={licensesRunBySelf}
-                                onChange={(e) => setLicensesRunBySelf(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                min="0"
-                                max={licensesPerNode}
-                            />
-                            <p className="text-xs text-green-200">
-                                Total: {totalLicensesRunBySelf} licenses
-                            </p>
-                            <p className="text-xs text-green-200">
-                                I pay all costs & earn 100% of license earnings
-                            </p>
-                        </div>
+        // Add generation date
+        pdf.setFontSize(10);
+        pdf.text(`Generated on: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`, 20, 40);
 
-                        <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-blue-500/10 border border-blue-500/30'}`}>
-                            <label className="text-sm text-white block mb-2 font-semibold">
-                                Licenses Leased Out
-                            </label>
-                            <div className="flex gap-2 mb-3">
-                                {[0, 25, 50, 75, 100].map((percentage) => {
-                                    const licenseCount = Math.floor(licensesPerNode * percentage / 100);
-                                    return (
-                                        <button
-                                            key={percentage}
-                                            onClick={() => setLicensesLeased(licenseCount)}
-                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesLeased === licenseCount
-                                                    ? 'bg-blue-500 text-white'
-                                                    : 'bg-white/10 text-blue-200 hover:bg-white/20'
-                                                }`}
-                                        >
-                                            {percentage}% ({licenseCount})
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                            <button
-                                onClick={() => setLicensesLeased(Math.max(0, licensesPerNode - licensesRunBySelf - licensesInactive))}
-                                className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
-                            >
-                                Calculate
-                            </button>
-                            <input
-                                type="number"
-                                value={licensesLeased}
-                                onChange={(e) => setLicensesLeased(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                min="0"
-                                max={licensesPerNode}
-                            />
-                            <p className="text-xs text-blue-200">
-                                Total: {totalLicensesLeased} licenses
-                            </p>
-                            <p className="text-xs text-blue-200">
-                                Operator pays costs, I earn split
-                            </p>
-                        </div>
+        let yPosition = 60;
 
-                        <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-gray-500/10 border border-gray-500/30'}`}>
-                            <label className="text-sm text-white block mb-2 font-semibold">
-                                Inactive Licenses
-                            </label>
-                            <div className="flex gap-2 mb-3">
-                                {[0, 5, 12.5, 25, 50].map((percentage) => {
-                                    const licenseCount = Math.floor(licensesPerNode * percentage / 100);
-                                    return (
-                                        <button
-                                            key={percentage}
-                                            onClick={() => setLicensesInactive(licenseCount)}
-                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesInactive === licenseCount
-                                                    ? 'bg-gray-500 text-white'
-                                                    : 'bg-white/10 text-gray-200 hover:bg-white/20'
-                                                }`}
-                                        >
-                                            {percentage}% ({licenseCount})
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                            <button
-                                onClick={() => setLicensesInactive(Math.max(0, licensesPerNode - licensesRunBySelf - licensesLeased))}
-                                className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
-                            >
-                                Calculate
-                            </button>
-                            <input
-                                type="number"
-                                value={licensesInactive}
-                                onChange={(e) => setLicensesInactive(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                min="0"
-                                max={licensesPerNode}
-                            />
-                            <p className="text-xs text-gray-300">
-                                Total: {numNodes * licensesInactive} licenses
-                            </p>
-                            <p className="text-xs text-gray-300">
-                                Not generating revenue
-                            </p>
+        // Configuration Summary
+        pdf.setFontSize(14);
+        pdf.text('Configuration Summary', 20, yPosition);
+        yPosition += 10;
+
+        pdf.setFontSize(10);
+        const configData = [
+            `Number of Nodes: ${numNodes}`,
+            `Licenses per Node: ${licensesPerNode}`,
+            `Self-run Licenses: ${licensesRunBySelf}`,
+            `Leased Licenses: ${licensesLeased}`,
+            `Inactive Licenses: ${licensesInactive}`,
+            `Phone Price: $${phonePrice}`,
+            `SIM Monthly: $${simMonthly}`,
+            `Monthly Credits: $${monthlyCredits.toFixed(2)}`,
+            `Revenue per License: $${revenuePerLicense.toFixed(2)}`,
+            `Lease Split: ${leaseSplitToOperator}%`,
+            `Self-run Uptime: ${uptimeSelfRun}%`,
+            `Leased Uptime: ${uptimeLeased}%`,
+            `Effective Self-run Licenses: ${formatNumber(effectiveLicensesSelfRun, 1)}`,
+            `Effective Leased Licenses: ${formatNumber(effectiveLicensesLeased, 1)}`,
+            `Ramp-up Enabled: ${rampUpEnabled ? 'Yes' : 'No'}`,
+            ...(rampUpEnabled ? [
+                `Ramp-up Duration: ${rampUpDuration} months`,
+                `Self-run Curve: ${rampUpCurves[selfRunRampCurve].name}`,
+                `Leased Curve: ${rampUpCurves[leasedRampCurve].name}`
+            ] : []),
+            `USD to EUR: ${usdToEur}`,
+            `Market Scenario: ${marketShareScenario === 'custom' ? 'Custom' : marketScenarios[marketShareScenario].label}`
+        ];
+
+        configData.forEach(line => {
+            pdf.text(line, 20, yPosition);
+            yPosition += 6;
+        });
+
+        yPosition += 10;
+
+        // Financial Results
+        pdf.setFontSize(14);
+        pdf.text('Financial Results', 20, yPosition);
+        yPosition += 10;
+
+        pdf.setFontSize(10);
+        const financialData = [
+            `Initial Investment: $${formatNumber(initialInvestment)} (€${formatNumber(initialInvestment * usdToEur)})`,
+            `Monthly Revenue: $${formatNumber(totalMonthlyRevenue)} (€${formatNumber(totalMonthlyRevenue * usdToEur)})`,
+            `Monthly Costs: $${formatNumber(totalMonthlyCost)} (€${formatNumber(totalMonthlyCost * usdToEur)})`,
+            `Net Monthly Profit: $${formatNumber(netMonthlyProfit)} (€${formatNumber(netMonthlyProfit * usdToEur)})`,
+            `Break-even Period: ${isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) + ' months' : 'Never'}`,
+            `12-Month ROI: ${formatNumber(roi12Month, 1)}%`,
+            `24-Month ROI: ${formatNumber(roi24Month, 1)}%`,
+            `Annual Profit: $${formatNumber(annualProfit)} (€${formatNumber(annualProfit * usdToEur)})`
+        ];
+
+        financialData.forEach(line => {
+            pdf.text(line, 20, yPosition);
+            yPosition += 6;
+        });
+
+        // Add disclaimer
+        yPosition += 20;
+        pdf.setFontSize(8);
+        pdf.text('Disclaimer: This calculator is for illustrative purposes only and does not constitute financial advice.', 20, yPosition);
+        yPosition += 5;
+        pdf.text('Actual returns may vary significantly based on network performance, market conditions, and other factors.', 20, yPosition);
+
+        // Save the PDF
+        pdf.save(`unity-nodes-roi-report-${new Date().toISOString().split('T')[0]}.pdf`);
+    };
+
+    // Chart data preparation
+    const generateProfitOverTimeData = () => {
+        const data = [];
+        let cumulativeProfit = -initialInvestment;
+        let cumulativeRevenue = 0;
+        let cumulativeCosts = 0;
+
+        for (let month = 0; month <= 36; month++) {
+            if (month > 0) {
+                // Use ramp-up calculations if enabled, otherwise use standard calculations
+                const monthlyRevenue = rampUpEnabled ? calculateRampedRevenue(month) : totalMonthlyRevenue;
+                const monthlyCosts = rampUpEnabled ? calculateRampedCosts(month) : totalMonthlyCost;
+                const monthlyProfit = monthlyRevenue - monthlyCosts;
+
+                cumulativeProfit += monthlyProfit;
+                cumulativeRevenue += monthlyRevenue;
+                cumulativeCosts += monthlyCosts;
+            }
+
+            data.push({
+                month,
+                profit: cumulativeProfit,
+                revenue: cumulativeRevenue,
+                costs: cumulativeCosts + (month === 0 ? initialInvestment : 0),
+                netProfit: cumulativeProfit
+            });
+        }
+        return data;
+    };
+
+    const costBreakdownData = [
+        { name: 'Node Cost', value: totalNodeCost, color: '#8b5cf6' },
+        { name: 'Phones', value: totalPhoneCost, color: '#06b6d4' },
+        { name: 'Monthly SIM', value: totalMonthlyCost, color: '#10b981' },
+        { name: 'Credits', value: monthlyCreditCost, color: '#f59e0b' }
+    ].filter(item => item.value > 0);
+
+    const roiComparisonData = [
+        { scenario: '12 Month', roi: roi12Month, profit: netMonthlyProfit * 12 },
+        { scenario: '24 Month', roi: roi24Month, profit: netMonthlyProfit * 24 }
+    ];
+
+    const profitOverTimeData = generateProfitOverTimeData();
+
+
+    console.log('About to render component...');
+
+    try {
+        return (
+            <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6 pb-28 md:pb-6">
+                <div className="max-w-7xl mx-auto">
+                    {/* Sticky Summary (Desktop) */}
+                    <div className="hidden md:block sticky top-0 z-30 bg-slate-900/60 backdrop-blur border-b border-white/10 mb-6">
+                        <div className="px-6 py-3 text-xl flex gap-6 justify-center">
+                            <span className="text-green-300">Net: ${formatNumber(netMonthlyProfit)} · €{formatNumber(netMonthlyProfit * usdToEur)}</span>
+                            <span className="text-yellow-300">Daily: ${formatNumber(dailyNetProfit)} · €{formatNumber(dailyNetProfitEur)}</span>
+                            <span className="text-blue-300">Break-Even: {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</span>
+                            <span className="text-purple-300">Annual: ${formatNumber(annualRevenue)} · €{formatNumber(annualRevenue * usdToEur)}</span>
                         </div>
                     </div>
 
-                    <div className="mt-4 p-3 bg-white/5 rounded-lg">
-                        <div className="flex justify-between text-sm">
-                            <span className="text-purple-300">Allocated per node:</span>
-                            <span className={`font-semibold ${isValidAllocation ? 'text-green-400' : 'text-red-400'}`}>
-                                {totalLicensesAllocated} / {licensesPerNode}
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                    <div className="text-center mb-8">
+                        <h1 className="text-4xl font-bold text-white mb-2">Unity Nodes ROI Calculator</h1>
+                        <p className="text-purple-300">Calculate returns based on self-run and leased licenses</p>
 
-                {/* Costs for Self-Run Licenses */}
-                <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
-                    <div className="flex items-center gap-2 mb-4">
-                        <Smartphone className="text-purple-400" size={24} />
-                        <h2 className="text-xl font-bold text-white">Operating Costs</h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                Phone Cost per License (One-time CapEx)
-                            </label>
-                            <input
-                                type="number"
-                                value={phonePrice}
-                                onChange={(e) => setPhonePrice(Math.max(0, parseInt(e.target.value) || 0))}
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="0"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                {phonesNeeded} phones needed = ${totalPhoneCost.toLocaleString()}
-                            </p>
-                            <p className="text-xs text-purple-200 mt-1">
-                                One-time capital expenditure
-                            </p>
-                        </div>
-
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                SIM Monthly Cost per Phone
-                            </label>
-                            <input
-                                type="number"
-                                value={simMonthly}
-                                onChange={(e) => setSimMonthly(Math.max(0, parseInt(e.target.value) || 0))}
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="0"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                Monthly SIM: ${monthlySimCost.toLocaleString()}
-                            </p>
-                            <p className="text-xs text-purple-200 mt-1">
-                                Only for self-run licenses
-                            </p>
-                        </div>
-
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                Monthly Credits per Phone in $
-                            </label>
-                            <div className="flex gap-2 mb-2">
-                                <button
-                                    onClick={() => setMonthlyCredits(1.99)}
-                                    className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 1.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                        }`}
-                                >
-                                    $1.99
-                                </button>
-                                <button
-                                    onClick={() => setMonthlyCredits(2.99)}
-                                    className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 2.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                        }`}
-                                >
-                                    $2.99
-                                </button>
-                                <button
-                                    onClick={() => setMonthlyCredits(3.99)}
-                                    className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 3.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                        }`}
-                                >
-                                    $3.99
-                                </button>
-                            </div>
-                            <input
-                                type="number"
-                                value={monthlyCredits.toFixed(2)}
-                                onChange={(e) => setMonthlyCredits(Math.max(0, parseFloat(e.target.value) || 0))}
-                                step="0.01"
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
-                                min="0"
-                            />
-
-                            <div className="mt-2 p-2 bg-blue-500/10 border border-blue-500/30 rounded">
-                                <label className="flex items-center gap-2 text-xs text-blue-200 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        checked={nodeOperatorPaysCredits}
-                                        onChange={(e) => setNodeOperatorPaysCredits(e.target.checked)}
-                                        className="w-3 h-3"
-                                    />
-                                    <span>I (Node Operator) pay credits for leased licenses too</span>
+                        <div className="mt-4 inline-flex items-center gap-4 bg-white/10 backdrop-blur-lg rounded-lg px-4 py-2 border border-white/20">
+                            <div className="flex items-center gap-2">
+                                <label className="text-sm text-purple-300">
+                                    USD to EUR Rate:
                                 </label>
+                                <input
+                                    type="number"
+                                    value={usdToEur}
+                                    onChange={(e) => setUsdToEur(Math.max(0, parseFloat(e.target.value) || 0.92))}
+                                    step="0.01"
+                                    className="w-20 bg-white/5 border border-purple-400/30 rounded px-2 py-1 text-white text-sm"
+                                    min="0"
+                                />
                             </div>
 
-                            <p className="text-xs text-purple-300 mt-2">
-                                {nodeOperatorPaysCredits
-                                    ? `Paying for all ${totalActiveLicenses} licenses: $${formatNumber(monthlyCreditCost)}/mo`
-                                    : `Paying only for ${totalLicensesRunBySelf} self-run: $${formatNumber(monthlyCreditCost)}/mo`
-                                }
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4 mt-4">
-                        <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
-                            <div className="flex justify-between items-center">
-                                <span className="text-red-300 font-semibold">Initial Investment</span>
-                                <div className="text-right">
-                                    <div className="text-2xl font-bold text-white">
-                                        ${initialInvestment.toLocaleString()}
-                                    </div>
-                                    <div className="text-lg font-semibold text-red-200">
-                                        €{(initialInvestment * usdToEur).toLocaleString()}
-                                    </div>
-                                </div>
-                            </div>
-                            <p className="text-xs text-red-200 mt-1">
-                                Nodes: ${totalNodeCost.toLocaleString()} + Phones (one-time): ${totalPhoneCost.toLocaleString()}
-                            </p>
-                        </div>
-
-                        <div className="p-4 bg-orange-500/10 border border-orange-500/30 rounded-lg">
-                            <div className="flex justify-between items-center">
-                                <span className="text-orange-300 font-semibold">Monthly Operating Costs</span>
-                                <div className="text-right">
-                                    <div className="text-2xl font-bold text-white">
-                                        ${totalMonthlyCost.toLocaleString()}
-                                    </div>
-                                    <div className="text-lg font-semibold text-orange-200">
-                                        €{(totalMonthlyCost * usdToEur).toLocaleString()}
-                                    </div>
-                                </div>
-                            </div>
-                            <p className="text-xs text-orange-200 mt-1">
-                                SIM: ${formatNumber(monthlySimCost)} + Credits: ${formatNumber(monthlyCreditCost)}
-                            </p>
-                            <p className="text-xs text-orange-200">
-                                {nodeOperatorPaysCredits
-                                    ? `(Credits for all ${totalActiveLicenses} active licenses)`
-                                    : `(Credits only for ${totalLicensesRunBySelf} self-run licenses)`
-                                }
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Revenue Model */}
-                <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
-                    <div className="flex items-center gap-2 mb-4">
-                        <TrendingUp className="text-green-400" size={24} />
-                        <h2 className="text-xl font-bold text-white">Revenue Model</h2>
-                    </div>
-
-                    {/* Market Share Scenarios */}
-                    <div className="mb-6 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                        <h3 className="text-blue-300 font-semibold mb-3">Market Share Scenarios (1.2M Licenses)</h3>
-                        <p className="text-sm text-blue-200 mb-3">
-                            Based on Unity's projected market share of the global telecom TAM ($2 trillion annually)
-                            with 1.2 million total licenses. Assumes max capacity of 7GB per device = $208/month revenue.
-                        </p>
-
-                        <div className="grid grid-cols-3 gap-3 mb-4">
-                            {Object.entries(marketScenarios).map(([key, scenario]) => (
+                            <div className="flex gap-2">
                                 <button
-                                    key={key}
-                                    onClick={() => {
-                                        setMarketShareScenario(key);
-                                        setRevenuePerLicense(scenario.revenuePerLicense);
-                                    }}
-                                    className={`p-3 rounded-lg transition-all ${marketShareScenario === key
-                                            ? 'bg-blue-500 text-white'
-                                            : 'bg-white/10 text-blue-200 hover:bg-white/20'
-                                        }`}
+                                    onClick={() => copyToClipboard(generateShareUrl())}
+                                    className="flex items-center gap-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded px-3 py-1 text-purple-200 hover:text-purple-100 transition-colors text-sm"
+                                    title="Copy shareable URL with current calculator settings"
                                 >
-                                    <div className="font-bold text-lg">{scenario.share}% Share</div>
-                                    <div className="text-sm font-semibold mt-1">${scenario.revenuePerLicense}/mo</div>
-                                    <div className="text-xs mt-1">{scenario.dataGB}GB per device</div>
-                                    <div className="text-xs mt-1 text-blue-200">
-                                        {scenario.totalLicenses}M total licenses
-                                    </div>
+                                    <Share2 size={14} />
+                                    Share
                                 </button>
-                            ))}
-                        </div>
 
-                        <div className="bg-white/5 rounded p-3">
-                            <div className="text-xs text-blue-200">
-                                <strong>Capacity Note:</strong> Each device can handle max 7GB/month traffic generating $208 revenue.
-                                At 1% share, 1.2M licenses handle the load. At 5% share (35GB/device worth of traffic),
-                                the network would need 6M total licenses (5x more) to distribute the load back to 7GB per device.
-                                At 10% share (70GB/device), 12M licenses (10x more) would be needed.
-                                Your 200 licenses per node represent your fixed share of this growing network capacity.
+                                <button
+                                    onClick={exportToPDF}
+                                    className="flex items-center gap-2 bg-green-500/20 hover:bg-green-500/30 border border-green-500/30 rounded px-3 py-1 text-green-200 hover:text-green-100 transition-colors text-sm"
+                                    title="Export current results to PDF"
+                                >
+                                    <Download size={14} />
+                                    PDF
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                Earnings per Active License ($/month)
-                            </label>
-                            <div className="mb-2 text-xs text-purple-200 bg-purple-500/10 rounded p-2">
-                                This is the revenue AFTER 75% network split (25% goes to network pools)
-                            </div>
-                            <div className="flex gap-2 mb-3">
-                                {[25, 50, 75, 90].map((value) => (
+                    {/* Node Configuration */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Package className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Node Configuration</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <HelpTooltip content="The number of Unity Nodes you want to purchase and operate. Each node costs $5,000 and comes with 200 Unity License NFTs.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        Number of Unity Nodes
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-2">
                                     <button
-                                        key={value}
+                                        onClick={() => setNumNodes(Math.max(1, numNodes - 1))}
+                                        className="px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg text-purple-200 hover:text-purple-100 transition-colors"
+                                    >
+                                        -1
+                                    </button>
+                                    <input
+                                        type="number"
+                                        value={numNodes}
+                                        onChange={(e) => setNumNodes(Math.max(1, parseInt(e.target.value) || 1))}
+                                        className="flex-1 bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                        min="1"
+                                    />
+                                    <button
+                                        onClick={() => setNumNodes(numNodes + 1)}
+                                        className="px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg text-purple-200 hover:text-purple-100 transition-colors"
+                                    >
+                                        +1
+                                    </button>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-1">
+                                    ${nodePrice.toLocaleString()} per node × {numNodes} = ${totalNodeCost.toLocaleString()}
+                                </p>
+                            </div>
+
+                            <div>
+                                <HelpTooltip content="Each Unity Node comes with 200 Unity License NFTs by default. These licenses can be activated on smartphones to participate in the network and earn revenue.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        Licenses per Node
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-2">
+                                    <button
                                         onClick={() => {
-                                            setRevenuePerLicense(value);
-                                            setMarketShareScenario('custom');
+                                            const newValue = Math.max(1, licensesPerNode - 200);
+                                            setLicensesPerNode(newValue);
+                                            const defaultSelfRun = Math.floor(newValue * 0.25);
+                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultInactive = newValue - defaultSelfRun - defaultLeased;
+                                            setLicensesRunBySelf(defaultSelfRun);
+                                            setLicensesLeased(defaultLeased);
+                                            setLicensesInactive(defaultInactive);
                                         }}
-                                        className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${revenuePerLicense === value && marketShareScenario === 'custom'
-                                                ? 'bg-purple-500 text-white'
-                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                            }`}
+                                        className="px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg text-purple-200 hover:text-purple-100 transition-colors"
                                     >
-                                        ${value}
+                                        -200
                                     </button>
-                                ))}
-                            </div>
-                            <input
-                                type="number"
-                                value={revenuePerLicense}
-                                onChange={(e) => {
-                                    setRevenuePerLicense(Math.max(0, parseFloat(e.target.value) || 0));
-                                    setMarketShareScenario('custom');
-                                }}
-                                step="0.5"
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="0"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                {marketShareScenario === 'custom'
-                                    ? 'Custom earnings estimate'
-                                    : `Based on ${marketScenarios[marketShareScenario].label}`}
-                            </p>
-                        </div>
-
-                        <div>
-                            <label className="text-sm text-purple-300 block mb-2">
-                                My Split from Leased Licenses (%)
-                            </label>
-                            <div className="flex gap-2 mb-3">
-                                {[25, 50, 75, 90].map((value) => (
+                                    <input
+                                        type="number"
+                                        value={licensesPerNode}
+                                        onChange={(e) => {
+                                            const newValue = Math.max(1, parseInt(e.target.value) || 200);
+                                            setLicensesPerNode(newValue);
+                                            // Reset license distribution when changing total licenses
+                                            const defaultSelfRun = Math.floor(newValue * 0.25);
+                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultInactive = newValue - defaultSelfRun - defaultLeased;
+                                            setLicensesRunBySelf(defaultSelfRun);
+                                            setLicensesLeased(defaultLeased);
+                                            setLicensesInactive(defaultInactive);
+                                        }}
+                                        className="flex-1 bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                        min="1"
+                                    />
                                     <button
-                                        key={value}
-                                        onClick={() => setLeaseSplitToOperator(value)}
-                                        className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${leaseSplitToOperator === value
-                                                ? 'bg-purple-500 text-white'
-                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                            }`}
+                                        onClick={() => {
+                                            const newValue = licensesPerNode + 200;
+                                            setLicensesPerNode(newValue);
+                                            const defaultSelfRun = Math.floor(newValue * 0.25);
+                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultInactive = newValue - defaultSelfRun - defaultLeased;
+                                            setLicensesRunBySelf(defaultSelfRun);
+                                            setLicensesLeased(defaultLeased);
+                                            setLicensesInactive(defaultInactive);
+                                        }}
+                                        className="px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg text-purple-200 hover:text-purple-100 transition-colors"
                                     >
-                                        {value}%
+                                        +200
                                     </button>
-                                ))}
-                            </div>
-                            <input
-                                type="number"
-                                value={leaseSplitToOperator}
-                                onChange={(e) => setLeaseSplitToOperator(Math.min(100, Math.max(0, parseInt(e.target.value) || 0)))}
-                                className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
-                                min="0"
-                                max="100"
-                            />
-                            <p className="text-xs text-purple-300 mt-1">
-                                License operator keeps {100 - leaseSplitToOperator}% (and pays their costs)
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4 mt-6">
-                        <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
-                            <h3 className="text-green-300 text-sm font-semibold mb-2">Self-Run Revenue</h3>
-                            <div className="space-y-1 text-xs text-green-200 mb-2">
-                                <div className="flex justify-between">
-                                    <span>{totalLicensesRunBySelf} licenses × ${formatNumber(revenuePerLicense)}</span>
-                                    <span>${formatNumber(totalLicensesRunBySelf * revenuePerLicense)}</span>
                                 </div>
-                            </div>
-                            <div className="flex justify-between items-center pt-2 border-t border-green-500/30 mb-2">
-                                <span className="text-green-300 font-semibold">Monthly Total</span>
-                                <span className="text-xl font-bold text-white">
-                                    ${formatNumber(revenueFromSelfRun)}
-                                </span>
-                            </div>
-                            <div className="pt-2 border-t border-green-500/20 space-y-2">
-                                <div className="flex justify-between text-xs">
-                                    <span className="text-green-200">Per license I earn:</span>
-                                    <span className="text-green-100 font-semibold">
-                                        ${formatNumber(revenuePerLicense)}/mo
-                                    </span>
-                                </div>
-                                <div className="text-xs text-green-200">
-                                    (100% - I run & keep all earnings)
-                                </div>
-                                <div className="pt-2 border-t border-green-500/20">
-                                    <div className="flex justify-between text-xs">
-                                        <span className="text-green-200">Quarterly:</span>
-                                        <span className="text-green-100 font-semibold">
-                                            ${formatNumber(revenueFromSelfRun * 3)}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between text-xs mt-1">
-                                        <span className="text-green-200">Yearly:</span>
-                                        <span className="text-green-100 font-semibold">
-                                            ${formatNumber(revenueFromSelfRun * 12)}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                            <h3 className="text-blue-300 text-sm font-semibold mb-2">Leased Revenue</h3>
-                            <div className="space-y-1 text-xs text-blue-200 mb-2">
-                                <div className="flex justify-between">
-                                    <span>{totalLicensesLeased} licenses × ${formatNumber(revenuePerLicense)}</span>
-                                    <span>${formatNumber(totalLicensesLeased * revenuePerLicense)}</span>
-                                </div>
-                                <div className="flex justify-between">
-                                    <span>× {leaseSplitToOperator}% (my split)</span>
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between items-center pt-2 border-t border-blue-500/30 mb-2">
-                                <span className="text-blue-300 font-semibold">Monthly Total</span>
-                                <span className="text-xl font-bold text-white">
-                                    ${formatNumber(revenueFromLeased)}
-                                </span>
-                            </div>
-                            <div className="pt-2 border-t border-blue-500/20 space-y-2">
-                                <div className="flex justify-between text-xs">
-                                    <span className="text-blue-200">Per license I earn:</span>
-                                    <span className="text-blue-100 font-semibold">
-                                        ${formatNumber(revenuePerLicense * (leaseSplitToOperator / 100))}/mo
-                                    </span>
-                                </div>
-                                <div className="flex justify-between text-xs">
-                                    <span className="text-blue-200">License operator earns:</span>
-                                    <span className="text-blue-100 font-semibold">
-                                        ${formatNumber(revenuePerLicense * ((100 - leaseSplitToOperator) / 100))}/mo
-                                    </span>
-                                </div>
-                                <div className="pt-2 border-t border-blue-500/20">
-                                    <div className="flex justify-between text-xs">
-                                        <span className="text-blue-200">Quarterly:</span>
-                                        <span className="text-blue-100 font-semibold">
-                                            ${formatNumber(revenueFromLeased * 3)}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between text-xs mt-1">
-                                        <span className="text-blue-200">Yearly:</span>
-                                        <span className="text-blue-100 font-semibold">
-                                            ${formatNumber(revenueFromLeased * 12)}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Total Revenue Summary */}
-                    <div className="mt-6 p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
-                        <h3 className="text-purple-300 text-sm font-semibold mb-3">Total Revenue Summary</h3>
-                        <div className="grid grid-cols-3 gap-4">
-                            <div>
-                                <div className="text-xs text-purple-300 mb-1">Monthly</div>
-                                <div className="text-2xl font-bold text-white">
-                                    ${formatNumber(totalMonthlyRevenue)}
-                                </div>
-                                <div className="text-lg font-semibold text-purple-200">
-                                    €{formatNumber(totalMonthlyRevenue * usdToEur)}
-                                </div>
-                            </div>
-                            <div>
-                                <div className="text-xs text-purple-300 mb-1">Quarterly (3 months)</div>
-                                <div className="text-2xl font-bold text-white">
-                                    ${formatNumber(totalMonthlyRevenue * 3)}
-                                </div>
-                                <div className="text-lg font-semibold text-purple-200">
-                                    €{formatNumber(totalMonthlyRevenue * 3 * usdToEur)}
-                                </div>
-                            </div>
-                            <div>
-                                <div className="text-xs text-purple-300 mb-1">Yearly (12 months)</div>
-                                <div className="text-2xl font-bold text-white">
-                                    ${formatNumber(totalMonthlyRevenue * 12)}
-                                </div>
-                                <div className="text-lg font-semibold text-purple-200">
-                                    €{formatNumber(totalMonthlyRevenue * 12 * usdToEur)}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Results Dashboard */}
-                <div className="grid md:grid-cols-3 gap-6 mb-6">
-                    <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-6 border border-green-400/30">
-                        <h3 className="text-sm text-green-300 mb-2">Net Monthly Profit</h3>
-                        <div className="mb-2">
-                            <p className="text-3xl font-bold text-white">
-                                ${formatNumber(netMonthlyProfit)}
-                            </p>
-                            <p className="text-xl font-semibold text-green-200">
-                                €{formatNumber(netMonthlyProfit * usdToEur)}
-                            </p>
-                        </div>
-                        <p className="text-xs text-green-300">
-                            Revenue: ${formatNumber(totalMonthlyRevenue)} / €{formatNumber(totalMonthlyRevenue * usdToEur)}
-                        </p>
-                        <p className="text-xs text-green-300">
-                            Costs: ${formatNumber(totalMonthlyCost)} / €{formatNumber(totalMonthlyCost * usdToEur)}
-                        </p>
-                    </div>
-
-                    <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-6 border border-blue-400/30">
-                        <h3 className="text-sm text-blue-300 mb-2">Break-Even Period</h3>
-                        <p className="text-3xl font-bold text-white mb-1">
-                            {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} months
-                        </p>
-                        <p className="text-sm text-blue-300">
-                            {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths / 12, 1) : '∞'} years
-                        </p>
-                    </div>
-
-                    <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-6 border border-purple-400/30">
-                        <h3 className="text-sm text-purple-300 mb-2">Annual Profit</h3>
-                        <div className="mb-1">
-                            <p className="text-3xl font-bold text-white">
-                                ${formatNumber(annualProfit)}
-                            </p>
-                            <p className="text-xl font-semibold text-purple-200">
-                                €{formatNumber(annualProfit * usdToEur)}
-                            </p>
-                        </div>
-                        <p className="text-sm text-purple-300">
-                            Year 1 net profit
-                        </p>
-                    </div>
-                </div>
-
-                {/* ROI Analysis */}
-                <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
-                    <h2 className="text-xl font-bold text-white mb-4">ROI Analysis</h2>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                            <div className="p-4 bg-white/5 rounded-lg">
-                                <div className="flex justify-between items-center mb-2">
-                                    <span className="text-purple-300">12-Month ROI</span>
-                                    <span className={`text-2xl font-bold ${roi12Month > 0 ? 'text-green-400' : 'text-red-400'}`}>
-                                        {formatNumber(roi12Month, 1)}%
-                                    </span>
-                                </div>
-                                <div className="pt-2 border-t border-white/20">
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-purple-200">Total Profit:</span>
-                                        <span className="text-white font-semibold">
-                                            ${formatNumber(netMonthlyProfit * 12)}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between text-xs mt-1">
-                                        <span className="text-purple-200">In EUR:</span>
-                                        <span className="text-purple-100">
-                                            €{formatNumber(netMonthlyProfit * 12 * usdToEur)}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="p-4 bg-white/5 rounded-lg">
-                                <div className="flex justify-between items-center mb-2">
-                                    <span className="text-purple-300">24-Month ROI (Token Unlock)</span>
-                                    <span className={`text-2xl font-bold ${roi24Month > 0 ? 'text-green-400' : 'text-red-400'}`}>
-                                        {formatNumber(roi24Month, 1)}%
-                                    </span>
-                                </div>
-                                <div className="pt-2 border-t border-white/20">
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-purple-200">Total Profit:</span>
-                                        <span className="text-white font-semibold">
-                                            ${formatNumber(netMonthlyProfit * 24)}
-                                        </span>
-                                    </div>
-                                    <div className="flex justify-between text-xs mt-1">
-                                        <span className="text-purple-200">In EUR:</span>
-                                        <span className="text-purple-100">
-                                            €{formatNumber(netMonthlyProfit * 24 * usdToEur)}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
-                                <p className="text-xs text-purple-200">
-                                    <strong>Token Value:</strong> At unlock, you'll also have access to the staked tokens
-                                    (${(numNodes * 1875).toLocaleString()} MNTx + ${(numNodes * 1875).toLocaleString()} WMTx),
-                                    which could add significant value depending on token prices.
+                                <p className="text-xs text-purple-300 mt-1">
+                                    Total licenses available: {numNodes * licensesPerNode}
                                 </p>
                             </div>
                         </div>
 
-                        <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
-                            <h3 className="text-yellow-300 font-semibold mb-2">Key Assumptions:</h3>
-                            <ul className="text-sm text-yellow-200 space-y-1">
-                                <li>• Each node includes {licensesPerNode} Unity License NFTs</li>
-                                <li>• Market share scenarios based on 1.2M total licenses</li>
-                                <li>• Max device capacity: 7GB = $208/month revenue</li>
-                                <li>• 1% share = 7GB | 5% = 35GB (~5x licenses) | 10% = 70GB (~10x licenses)</li>
-                                <li>• Current: {marketShareScenario === 'custom' ? 'custom' : marketScenarios[marketShareScenario].label}</li>
-                                <li>• Self-run licenses: You keep 100% of license earnings</li>
-                                <li>• Leased licenses: Split earnings based on your % split</li>
-                                <li>• Tokens locked for 24 months</li>
-                                <li>• Your {numNodes * licensesPerNode} licenses represent your fixed share of network capacity</li>
-                                <li>• Token appreciation not included in ROI</li>
-                            </ul>
+                        <div className="mt-4">
+                            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
+                                <h3 className="text-blue-300 font-semibold mb-2">What's Included Per Node:</h3>
+                                <ul className="text-sm text-blue-200 space-y-1">
+                                    <li>• {licensesPerNode} Unity License NFTs</li>
+                                    <li>• $1,875 MNTx staked (24mo lock)</li>
+                                    <li>• $1,875 WMTx staked (24mo lock)</li>
+                                    <li>• NFTs are transferable & sellable</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Sticky Summary (Mobile) */}
-                <div className="fixed bottom-0 inset-x-0 z-50 md:hidden pointer-events-none">
-                    <div className="pointer-events-auto mx-auto max-w-7xl px-4 pb-[calc(env(safe-area-inset-bottom)+8px)]">
-                        <div className="rounded-t-xl bg-white/10 backdrop-blur-lg border border-white/20 p-3 shadow-lg">
-                            <div className="flex items-center justify-between gap-3 text-xs">
+                    {/* License Distribution */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Users className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">License Distribution (Per Node)</h2>
+                            {!isValidAllocation && (
+                                <span className="text-red-400 text-sm ml-auto">
+                                    ⚠️ Must total {licensesPerNode} licenses
+                                </span>
+                            )}
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-green-500/10 border border-green-500/30'}`}>
+                                <label className="text-sm text-white block mb-2 font-semibold">
+                                    Licenses Run by Me
+                                </label>
+                                <div className="flex gap-2 mb-3">
+                                    {[0, 25, 50, 75, 100].map((percentage) => {
+                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        return (
+                                            <button
+                                                key={percentage}
+                                                onClick={() => setLicensesRunBySelf(licenseCount)}
+                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesRunBySelf === licenseCount
+                                                    ? 'bg-green-500 text-white'
+                                                    : 'bg-white/10 text-green-200 hover:bg-white/20'
+                                                    }`}
+                                            >
+                                                {percentage}% ({licenseCount})
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                                <button
+                                    onClick={() => setLicensesRunBySelf(Math.max(0, licensesPerNode - licensesLeased - licensesInactive))}
+                                    className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
+                                >
+                                    Calculate
+                                </button>
+                                <input
+                                    type="number"
+                                    value={licensesRunBySelf}
+                                    onChange={(e) => setLicensesRunBySelf(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
+                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                    max={licensesPerNode}
+                                />
+                                <p className="text-xs text-green-200">
+                                    Total: {totalLicensesRunBySelf} licenses
+                                </p>
+                                <p className="text-xs text-green-200">
+                                    I pay all costs & earn 100% of license earnings
+                                </p>
+                            </div>
+
+                            <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-blue-500/10 border border-blue-500/30'}`}>
+                                <label className="text-sm text-white block mb-2 font-semibold">
+                                    Licenses Leased Out
+                                </label>
+                                <div className="flex gap-2 mb-3">
+                                    {[0, 25, 50, 75, 100].map((percentage) => {
+                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        return (
+                                            <button
+                                                key={percentage}
+                                                onClick={() => setLicensesLeased(licenseCount)}
+                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesLeased === licenseCount
+                                                    ? 'bg-blue-500 text-white'
+                                                    : 'bg-white/10 text-blue-200 hover:bg-white/20'
+                                                    }`}
+                                            >
+                                                {percentage}% ({licenseCount})
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                                <button
+                                    onClick={() => setLicensesLeased(Math.max(0, licensesPerNode - licensesRunBySelf - licensesInactive))}
+                                    className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
+                                >
+                                    Calculate
+                                </button>
+                                <input
+                                    type="number"
+                                    value={licensesLeased}
+                                    onChange={(e) => setLicensesLeased(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
+                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                    max={licensesPerNode}
+                                />
+                                <p className="text-xs text-blue-200">
+                                    Total: {totalLicensesLeased} licenses
+                                </p>
+                                <p className="text-xs text-blue-200">
+                                    Operator pays costs, I earn split
+                                </p>
+                            </div>
+
+                            <div className={`p-4 rounded-lg ${!isValidAllocation ? 'bg-red-500/10 border border-red-500/30' : 'bg-gray-500/10 border border-gray-500/30'}`}>
+                                <label className="text-sm text-white block mb-2 font-semibold">
+                                    Inactive Licenses
+                                </label>
+                                <div className="flex gap-2 mb-3">
+                                    {[0, 5, 12.5, 25, 50].map((percentage) => {
+                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        return (
+                                            <button
+                                                key={percentage}
+                                                onClick={() => setLicensesInactive(licenseCount)}
+                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesInactive === licenseCount
+                                                    ? 'bg-gray-500 text-white'
+                                                    : 'bg-white/10 text-gray-200 hover:bg-white/20'
+                                                    }`}
+                                            >
+                                                {percentage}% ({licenseCount})
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                                <button
+                                    onClick={() => setLicensesInactive(Math.max(0, licensesPerNode - licensesRunBySelf - licensesLeased))}
+                                    className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
+                                >
+                                    Calculate
+                                </button>
+                                <input
+                                    type="number"
+                                    value={licensesInactive}
+                                    onChange={(e) => setLicensesInactive(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
+                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                    max={licensesPerNode}
+                                />
+                                <p className="text-xs text-gray-300">
+                                    Total: {numNodes * licensesInactive} licenses
+                                </p>
+                                <p className="text-xs text-gray-300">
+                                    Not generating revenue
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-4 p-3 bg-white/5 rounded-lg">
+                            <div className="flex justify-between text-sm">
+                                <span className="text-purple-300">Allocated per node:</span>
+                                <span className={`font-semibold ${isValidAllocation ? 'text-green-400' : 'text-red-400'}`}>
+                                    {totalLicensesAllocated} / {licensesPerNode}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Expected Uptime */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Clock className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Expected Uptime</h2>
+                        </div>
+
+                        <p className="text-sm text-purple-300 mb-6">
+                            Not all licenses verify at all times due to device downtime, maintenance, or network issues.
+                            Adjust the expected uptime percentage to account for real-world reliability.
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+                                <HelpTooltip content="Expected uptime percentage for licenses you run yourself. This affects revenue calculations by applying a multiplier to your self-run licenses.">
+                                    <label className="text-sm text-white block mb-2 font-semibold">
+                                        Self-Run License Uptime (%)
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-3">
+                                    {[90, 95, 98, 99.5].map((percentage) => (
+                                        <button
+                                            key={percentage}
+                                            onClick={() => setUptimeSelfRun(percentage)}
+                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${uptimeSelfRun === percentage
+                                                ? 'bg-green-500 text-white'
+                                                : 'bg-white/10 text-green-200 hover:bg-white/20'
+                                                }`}
+                                        >
+                                            {percentage}%
+                                        </button>
+                                    ))}
+                                </div>
+                                <input
+                                    type="number"
+                                    value={uptimeSelfRun}
+                                    onChange={(e) => setUptimeSelfRun(Math.min(100, Math.max(0, parseFloat(e.target.value) || 0)))}
+                                    step="0.1"
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                    max="100"
+                                />
+                                <p className="text-xs text-green-200">
+                                    Effective: {formatNumber(effectiveLicensesSelfRun, 1)} of {totalLicensesRunBySelf} licenses
+                                </p>
+                                <p className="text-xs text-green-200">
+                                    Revenue impact: {((uptimeSelfRun / 100) * 100).toFixed(1)}% of full potential
+                                </p>
+                            </div>
+
+                            <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                <HelpTooltip content="Expected uptime percentage for licenses leased to others. This affects revenue calculations by applying a multiplier to your leased license earnings.">
+                                    <label className="text-sm text-white block mb-2 font-semibold">
+                                        Leased License Uptime (%)
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-3">
+                                    {[90, 95, 98, 99.5].map((percentage) => (
+                                        <button
+                                            key={percentage}
+                                            onClick={() => setUptimeLeased(percentage)}
+                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${uptimeLeased === percentage
+                                                ? 'bg-blue-500 text-white'
+                                                : 'bg-white/10 text-blue-200 hover:bg-white/20'
+                                                }`}
+                                        >
+                                            {percentage}%
+                                        </button>
+                                    ))}
+                                </div>
+                                <input
+                                    type="number"
+                                    value={uptimeLeased}
+                                    onChange={(e) => setUptimeLeased(Math.min(100, Math.max(0, parseFloat(e.target.value) || 0)))}
+                                    step="0.1"
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                    max="100"
+                                />
+                                <p className="text-xs text-blue-200">
+                                    Effective: {formatNumber(effectiveLicensesLeased, 1)} of {totalLicensesLeased} licenses
+                                </p>
+                                <p className="text-xs text-blue-200">
+                                    Revenue impact: {((uptimeLeased / 100) * 100).toFixed(1)}% of full potential
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-4 p-3 bg-white/5 rounded-lg">
+                            <div className="flex justify-between text-sm">
+                                <span className="text-purple-300">Total Effective Licenses:</span>
+                                <span className="text-white font-semibold">
+                                    {formatNumber(totalEffectiveLicenses, 1)} of {totalActiveLicenses} active licenses
+                                </span>
+                            </div>
+                            <div className="flex justify-between text-xs mt-1">
+                                <span className="text-purple-200">Combined uptime impact:</span>
+                                <span className="text-purple-100">
+                                    {totalActiveLicenses > 0 ? formatNumber((totalEffectiveLicenses / totalActiveLicenses) * 100, 1) : 0}% of full revenue potential
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Ramp-Up Configuration */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <TrendingUp className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Ramp-Up Configuration</h2>
+                        </div>
+
+                        <p className="text-sm text-purple-300 mb-6">
+                            Not all licenses activate immediately. Model realistic growth patterns for license adoption over time.
+                            This creates more accurate cash flow projections and break-even calculations.
+                        </p>
+
+                        {/* Enable/Disable Toggle */}
+                        <div className="mb-6 p-4 bg-white/5 rounded-lg">
+                            <div className="flex items-center justify-between">
                                 <div>
-                                    <div className="text-green-300 font-semibold">Net Monthly Profit</div>
-                                    <div className="text-white font-bold">${formatNumber(netMonthlyProfit)}</div>
-                                    <div className="text-green-200">€{formatNumber(netMonthlyProfit * usdToEur)}</div>
+                                    <h3 className="text-white font-semibold mb-1">Enable Ramp-Up Modeling</h3>
+                                    <p className="text-sm text-purple-300">
+                                        {rampUpEnabled ? "Ramp-up enabled - licenses activate gradually" : "Ramp-up disabled - all licenses active from day 1"}
+                                    </p>
                                 </div>
-                                <div className="text-center">
-                                    <div className="text-blue-300 font-semibold">Break-Even</div>
-                                    <div className="text-white font-bold">{isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</div>
+                                <label className="relative inline-flex items-center cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        checked={rampUpEnabled}
+                                        onChange={(e) => setRampUpEnabled(e.target.checked)}
+                                        className="sr-only peer"
+                                    />
+                                    <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                                </label>
+                            </div>
+                        </div>
+
+                        {rampUpEnabled && (
+                            <>
+                                {/* Duration Control */}
+                                <div className="mb-6">
+                                    <label className="text-sm text-purple-300 block mb-3">
+                                        Ramp-Up Duration (months): {rampUpDuration}
+                                    </label>
+                                    <input
+                                        type="range"
+                                        min="1"
+                                        max="12"
+                                        value={rampUpDuration}
+                                        onChange={(e) => setRampUpDuration(parseInt(e.target.value))}
+                                        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-purple"
+                                    />
+                                    <div className="flex justify-between text-xs text-purple-400 mt-1">
+                                        <span>1 month</span>
+                                        <span>6 months (default)</span>
+                                        <span>12 months</span>
+                                    </div>
                                 </div>
-                                <div className="text-right">
-                                    <div className="text-purple-300 font-semibold">Annual Profit</div>
-                                    <div className="text-white font-bold">${formatNumber(annualProfit)}</div>
-                                    <div className="text-purple-200">€{formatNumber(annualProfit * usdToEur)}</div>
+
+                                {/* Curve Selection */}
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+                                        <label className="text-sm text-white block mb-3 font-semibold">
+                                            Self-Run Licenses Curve
+                                        </label>
+                                        <div className="space-y-2">
+                                            {Object.entries(rampUpCurves).map(([key, curve]) => (
+                                                <button
+                                                    key={key}
+                                                    onClick={() => setSelfRunRampCurve(key)}
+                                                    className={`w-full p-2 rounded-lg text-left transition-all ${selfRunRampCurve === key
+                                                        ? 'bg-green-500 text-white'
+                                                        : 'bg-white/10 text-green-200 hover:bg-white/20'
+                                                        }`}
+                                                >
+                                                    <div className="font-medium">{curve.name}</div>
+                                                    <div className="text-xs opacity-80">{curve.description}</div>
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                        <label className="text-sm text-white block mb-3 font-semibold">
+                                            Leased Licenses Curve
+                                        </label>
+                                        <div className="space-y-2">
+                                            {Object.entries(rampUpCurves).map(([key, curve]) => (
+                                                <button
+                                                    key={key}
+                                                    onClick={() => setLeasedRampCurve(key)}
+                                                    className={`w-full p-2 rounded-lg text-left transition-all ${leasedRampCurve === key
+                                                        ? 'bg-blue-500 text-white'
+                                                        : 'bg-white/10 text-blue-200 hover:bg-white/20'
+                                                        }`}
+                                                >
+                                                    <div className="font-medium">{curve.name}</div>
+                                                    <div className="text-xs opacity-80">{curve.description}</div>
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Curve Preview Chart */}
+                                <div className="mt-6 p-4 bg-white/5 rounded-lg">
+                                    <h4 className="text-purple-300 font-semibold mb-3">Ramp-Up Preview</h4>
+                                    <div className="h-48">
+                                        <ResponsiveContainer width="100%" height="100%">
+                                            <LineChart>
+                                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                                <XAxis
+                                                    dataKey="month"
+                                                    stroke="#9ca3af"
+                                                    tick={{ fontSize: 10 }}
+                                                    label={{ value: 'Month', position: 'insideBottom', offset: -5 }}
+                                                />
+                                                <YAxis
+                                                    stroke="#9ca3af"
+                                                    tick={{ fontSize: 10 }}
+                                                    label={{ value: '% Active', angle: -90, position: 'insideLeft' }}
+                                                />
+                                                <Tooltip
+                                                    contentStyle={{
+                                                        backgroundColor: '#1f2937',
+                                                        border: '1px solid #374151',
+                                                        borderRadius: '8px'
+                                                    }}
+                                                    labelStyle={{ color: '#e5e7eb' }}
+                                                    formatter={(value, name) => [
+                                                        `${formatNumber(value)}%`,
+                                                        name === 'selfRun' ? 'Self-Run Licenses' : 'Leased Licenses'
+                                                    ]}
+                                                />
+                                                <Line
+                                                    data={Array.from({ length: rampUpDuration }, (_, i) => ({
+                                                        month: i + 1,
+                                                        selfRun: getRampUpPercentage(i + 1, selfRunRampCurve, 'selfRun'),
+                                                        leased: getRampUpPercentage(i + 1, leasedRampCurve, 'leased')
+                                                    }))}
+                                                    type="monotone"
+                                                    dataKey="selfRun"
+                                                    stroke="#10b981"
+                                                    strokeWidth={2}
+                                                    name="selfRun"
+                                                    dot={{ fill: '#10b981', strokeWidth: 2, r: 3 }}
+                                                />
+                                                <Line
+                                                    data={Array.from({ length: rampUpDuration }, (_, i) => ({
+                                                        month: i + 1,
+                                                        selfRun: getRampUpPercentage(i + 1, selfRunRampCurve, 'selfRun'),
+                                                        leased: getRampUpPercentage(i + 1, leasedRampCurve, 'leased')
+                                                    }))}
+                                                    type="monotone"
+                                                    dataKey="leased"
+                                                    stroke="#3b82f6"
+                                                    strokeWidth={2}
+                                                    name="leased"
+                                                    dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
+                                                />
+                                            </LineChart>
+                                        </ResponsiveContainer>
+                                    </div>
+                                    <div className="flex justify-center gap-4 mt-2 text-xs">
+                                        <div className="flex items-center gap-1">
+                                            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                                            <span className="text-green-400">Self-Run ({rampUpCurves[selfRunRampCurve].name})</span>
+                                        </div>
+                                        <div className="flex items-center gap-1">
+                                            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                            <span className="text-blue-400">Leased ({rampUpCurves[leasedRampCurve].name})</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Summary */}
+                                <div className="mt-4 p-3 bg-white/5 rounded-lg">
+                                    <div className="flex justify-between text-sm">
+                                        <span className="text-purple-300">Ramp-up Configuration:</span>
+                                        <span className="text-white font-semibold">
+                                            {rampUpDuration} months - Self: {rampUpCurves[selfRunRampCurve].name} - Leased: {rampUpCurves[leasedRampCurve].name}
+                                        </span>
+                                    </div>
+                                </div>
+                            </>
+                        )}
+                    </div>
+
+                    {/* Costs for Self-Run Licenses */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Smartphone className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Operating Costs</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div>
+                                <HelpTooltip content="The cost of each smartphone needed to run licenses. You only need phones for licenses you run yourself. Leased licenses are operated by others.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        Phone Cost per License (One-time CapEx)
+                                    </label>
+                                </HelpTooltip>
+                                <input
+                                    type="number"
+                                    value={phonePrice}
+                                    onChange={(e) => setPhonePrice(Math.max(0, parseInt(e.target.value) || 0))}
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                    min="0"
+                                />
+                                <p className="text-xs text-purple-300 mt-1">
+                                    {phonesNeeded} phones needed = ${totalPhoneCost.toLocaleString()}
+                                </p>
+                                <p className="text-xs text-purple-200 mt-1">
+                                    One-time capital expenditure
+                                </p>
+                            </div>
+
+                            <div>
+                                <HelpTooltip content="Monthly cost for SIM cards. Each self-run license requires a SIM card for data connectivity to participate in network verification tasks.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        SIM Monthly Cost per Phone
+                                    </label>
+                                </HelpTooltip>
+                                <input
+                                    type="number"
+                                    value={simMonthly}
+                                    onChange={(e) => setSimMonthly(Math.max(0, parseInt(e.target.value) || 0))}
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                    min="0"
+                                />
+                                <p className="text-xs text-purple-300 mt-1">
+                                    Monthly SIM: ${monthlySimCost.toLocaleString()}
+                                </p>
+                                <p className="text-xs text-purple-200 mt-1">
+                                    Only for self-run licenses
+                                </p>
+                            </div>
+
+                            <div>
+                                <HelpTooltip content="Monthly credit cost for each active license. Credits are required to participate in network verification tasks. You can choose to pay for leased licenses or require license operators to pay their own.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        Monthly Credits per Phone in $
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-2">
+                                    <button
+                                        onClick={() => setMonthlyCredits(1.99)}
+                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 1.99
+                                            ? 'bg-purple-500 text-white'
+                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                            }`}
+                                    >
+                                        $1.99
+                                    </button>
+                                    <button
+                                        onClick={() => setMonthlyCredits(2.99)}
+                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 2.99
+                                            ? 'bg-purple-500 text-white'
+                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                            }`}
+                                    >
+                                        $2.99
+                                    </button>
+                                    <button
+                                        onClick={() => setMonthlyCredits(3.99)}
+                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 3.99
+                                            ? 'bg-purple-500 text-white'
+                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                            }`}
+                                    >
+                                        $3.99
+                                    </button>
+                                </div>
+                                <input
+                                    type="number"
+                                    value={monthlyCredits.toFixed(2)}
+                                    onChange={(e) => setMonthlyCredits(Math.max(0, parseFloat(e.target.value) || 0))}
+                                    step="0.01"
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
+                                    min="0"
+                                />
+
+                                <div className="mt-2 p-2 bg-blue-500/10 border border-blue-500/30 rounded">
+                                    <label className="flex items-center gap-2 text-xs text-blue-200 cursor-pointer">
+                                        <input
+                                            type="checkbox"
+                                            checked={nodeOperatorPaysCredits}
+                                            onChange={(e) => setNodeOperatorPaysCredits(e.target.checked)}
+                                            className="w-3 h-3"
+                                        />
+                                        <span>I (Node Operator) pay credits for leased licenses too</span>
+                                    </label>
+                                </div>
+
+                                <p className="text-xs text-purple-300 mt-2">
+                                    {nodeOperatorPaysCredits
+                                        ? `Paying for all ${totalActiveLicenses} licenses: $${formatNumber(monthlyCreditCost)}/mo`
+                                        : `Paying only for ${totalLicensesRunBySelf} self-run: $${formatNumber(monthlyCreditCost)}/mo`
+                                    }
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-4 mt-4">
+                            <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-red-300 font-semibold">Initial Investment</span>
+                                    <div className="text-right">
+                                        <div className="text-2xl font-bold text-white">
+                                            ${initialInvestment.toLocaleString()}
+                                        </div>
+                                        <div className="text-lg font-semibold text-red-200">
+                                            €{(initialInvestment * usdToEur).toLocaleString()}
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className="text-xs text-red-200 mt-1">
+                                    Nodes: ${totalNodeCost.toLocaleString()} + Phones (one-time): ${totalPhoneCost.toLocaleString()}
+                                </p>
+                            </div>
+
+                            <div className="p-4 bg-orange-500/10 border border-orange-500/30 rounded-lg">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-orange-300 font-semibold">Monthly Operating Costs</span>
+                                    <div className="text-right">
+                                        <div className="text-2xl font-bold text-white">
+                                            ${totalMonthlyCost.toLocaleString()}
+                                        </div>
+                                        <div className="text-lg font-semibold text-orange-200">
+                                            €{(totalMonthlyCost * usdToEur).toLocaleString()}
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className="text-xs text-orange-200 mt-1">
+                                    SIM: ${formatNumber(monthlySimCost)} + Credits: ${formatNumber(monthlyCreditCost)}
+                                </p>
+                                <p className="text-xs text-orange-200">
+                                    {nodeOperatorPaysCredits
+                                        ? `(Credits for all ${totalActiveLicenses} active licenses)`
+                                        : `(Credits only for ${totalLicensesRunBySelf} self-run licenses)`
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Revenue Model */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <TrendingUp className="text-green-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Revenue Model</h2>
+                        </div>
+
+                        {/* Market Share Scenarios */}
+                        <div className="mb-6 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                            <h3 className="text-blue-300 font-semibold mb-3">Market Share Scenarios (1.2M Licenses)</h3>
+                            <p className="text-sm text-blue-200 mb-3">
+                                Based on Unity's projected market share of the global telecom TAM ($2 trillion annually)
+                                with 1.2 million total licenses. Assumes max capacity of 7GB per device = $208/month revenue.
+                            </p>
+
+                            <div className="grid grid-cols-3 gap-3 mb-4">
+                                {Object.entries(marketScenarios).map(([key, scenario]) => (
+                                    <button
+                                        key={key}
+                                        onClick={() => {
+                                            setMarketShareScenario(key);
+                                            setRevenuePerLicense(scenario.revenuePerLicense);
+                                        }}
+                                        className={`p-3 rounded-lg transition-all ${marketShareScenario === key
+                                            ? 'bg-blue-500 text-white'
+                                            : 'bg-white/10 text-blue-200 hover:bg-white/20'
+                                            }`}
+                                    >
+                                        <div className="font-bold text-lg">{scenario.share}% Share</div>
+                                        <div className="text-sm font-semibold mt-1">${scenario.revenuePerLicense}/mo</div>
+                                        <div className="text-xs mt-1">{scenario.dataGB}GB per device</div>
+                                        <div className="text-xs mt-1 text-blue-200">
+                                            {scenario.totalLicenses}M total licenses
+                                        </div>
+                                    </button>
+                                ))}
+                            </div>
+
+                            <div className="bg-white/5 rounded p-3">
+                                <div className="text-xs text-blue-200">
+                                    <strong>Capacity Note:</strong> Each device can handle max 7GB/month traffic generating $208 revenue.
+                                    At 1% share, 1.2M licenses handle the load. At 5% share (35GB/device worth of traffic),
+                                    the network would need 6M total licenses (5x more) to distribute the load back to 7GB per device.
+                                    At 10% share (70GB/device), 12M licenses (10x more) would be needed.
+                                    Your 200 licenses per node represent your fixed share of this growing network capacity.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6 items-start">
+                            <div>
+                                <HelpTooltip content="Monthly revenue earned per active license after the 75% network split (25% goes to network pools). This represents your share of the telecom service fees.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        Earnings per Active License ($/month · €/month)
+                                    </label>
+                                </HelpTooltip>
+                                <div className="mb-2 text-xs text-purple-200 bg-purple-500/10 rounded p-2">
+                                    This is the revenue AFTER 75% network split (25% goes to network pools)
+                                </div>
+                                <div className="flex gap-2 mb-3">
+                                    {[25, 50, 75, 90].map((value) => (
+                                        <button
+                                            key={value}
+                                            onClick={() => {
+                                                setRevenuePerLicense(value);
+                                                setMarketShareScenario('custom');
+                                            }}
+                                            className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${revenuePerLicense === value && marketShareScenario === 'custom'
+                                                ? 'bg-purple-500 text-white'
+                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                                }`}
+                                        >
+                                            ${value} · €{formatNumber(value * usdToEur)}
+                                        </button>
+                                    ))}
+                                </div>
+                                <input
+                                    type="number"
+                                    value={revenuePerLicense}
+                                    onChange={(e) => {
+                                        setRevenuePerLicense(Math.max(0, parseFloat(e.target.value) || 0));
+                                        setMarketShareScenario('custom');
+                                    }}
+                                    step="0.5"
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                    min="0"
+                                />
+                                <div className="flex items-center gap-2 mt-2">
+                                    <button
+                                        onClick={() => {
+                                            setRevenuePerLicense(Math.max(0, (revenuePerLicense || 0) - 5));
+                                            setMarketShareScenario('custom');
+                                        }}
+                                        className="px-3 py-1 rounded bg-white/10 text-purple-300 hover:bg-white/20 transition-colors text-sm font-medium"
+                                        aria-label="Decrease earnings by $5/€{formatNumber(5 * usdToEur)}"
+                                    >
+                                        −$5 · €{formatNumber(5 * usdToEur)}
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            setRevenuePerLicense((revenuePerLicense || 0) + 5);
+                                            setMarketShareScenario('custom');
+                                        }}
+                                        className="px-3 py-1 rounded bg-white/10 text-purple-300 hover:bg-white/20 transition-colors text-sm font-medium"
+                                        aria-label="Increase earnings by $5/€{formatNumber(5 * usdToEur)}"
+                                    >
+                                        +$5 · €{formatNumber(5 * usdToEur)}
+                                    </button>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-1">
+                                    {marketShareScenario === 'custom'
+                                        ? 'Custom earnings estimate'
+                                        : `Based on ${marketScenarios[marketShareScenario].label}`}
+                                </p>
+                            </div>
+
+                            <div className="md:mt-8">
+                                <HelpTooltip content="Percentage of license earnings you keep when leasing licenses to others. The remaining percentage goes to the license operator who runs the phone and pays operating costs.">
+                                    <label className="text-sm text-purple-300 block mb-2">
+                                        My Split from Leased Licenses (%)
+                                    </label>
+                                </HelpTooltip>
+                                <div className="flex gap-2 mb-3">
+                                    {[25, 50, 75, 90].map((value) => (
+                                        <button
+                                            key={value}
+                                            onClick={() => setLeaseSplitToOperator(value)}
+                                            className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${leaseSplitToOperator === value
+                                                ? 'bg-purple-500 text-white'
+                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                                }`}
+                                        >
+                                            {value}%
+                                        </button>
+                                    ))}
+                                </div>
+                                <input
+                                    type="number"
+                                    value={leaseSplitToOperator}
+                                    onChange={(e) => setLeaseSplitToOperator(Math.min(100, Math.max(0, parseInt(e.target.value) || 0)))}
+                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                    min="0"
+                                    max="100"
+                                />
+                                <div className="flex items-center gap-2 mt-2">
+                                    <button
+                                        onClick={() => setLeaseSplitToOperator(Math.max(0, (leaseSplitToOperator || 0) - 5))}
+                                        className="px-3 py-1 rounded bg-white/10 text-purple-300 hover:bg-white/20 transition-colors text-sm font-medium"
+                                        aria-label="Decrease split by 5%"
+                                    >
+                                        −5%
+                                    </button>
+                                    <button
+                                        onClick={() => setLeaseSplitToOperator(Math.min(100, (leaseSplitToOperator || 0) + 5))}
+                                        className="px-3 py-1 rounded bg-white/10 text-purple-300 hover:bg-white/20 transition-colors text-sm font-medium"
+                                        aria-label="Increase split by 5%"
+                                    >
+                                        +5%
+                                    </button>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-1">
+                                    License operator keeps {100 - leaseSplitToOperator}% (and pays their costs)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-4 mt-6">
+                            <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+                                <h3 className="text-green-300 text-sm font-semibold mb-2">Self-Run Revenue</h3>
+                                <div className="space-y-1 text-xs text-green-200 mb-2">
+                                    <div className="flex justify-between">
+                                        <span>{formatNumber(effectiveLicensesSelfRun, 1)} effective licenses × ${formatNumber(revenuePerLicense)}</span>
+                                        <span>${formatNumber(revenueFromSelfRun)}</span>
+                                    </div>
+                                    <div className="flex justify-between text-xs">
+                                        <span>({totalLicensesRunBySelf} total licenses × {uptimeSelfRun}% uptime)</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-center pt-2 border-t border-green-500/30 mb-2">
+                                    <span className="text-green-300 font-semibold">Monthly Total</span>
+                                    <span className="text-xl font-bold text-white">
+                                        ${formatNumber(revenueFromSelfRun)}
+                                    </span>
+                                </div>
+                                <div className="pt-2 border-t border-green-500/20 space-y-2">
+                                    <div className="flex justify-between text-xs">
+                                        <span className="text-green-200">Per license I earn:</span>
+                                        <span className="text-green-100 font-semibold">
+                                            ${formatNumber(revenuePerLicense)}/mo
+                                        </span>
+                                    </div>
+                                    <div className="text-xs text-green-200">
+                                        (100% - I run & keep all earnings)
+                                    </div>
+                                    <div className="pt-2 border-t border-green-500/20">
+                                        <div className="flex justify-between text-xs">
+                                            <span className="text-green-200">Quarterly:</span>
+                                            <span className="text-green-100 font-semibold">
+                                                ${formatNumber(revenueFromSelfRun * 3)}
+                                            </span>
+                                        </div>
+                                        <div className="flex justify-between text-xs mt-1">
+                                            <span className="text-green-200">Yearly:</span>
+                                            <span className="text-green-100 font-semibold">
+                                                ${formatNumber(revenueFromSelfRun * 12)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                <h3 className="text-blue-300 text-sm font-semibold mb-2">Leased Revenue</h3>
+                                <div className="space-y-1 text-xs text-blue-200 mb-2">
+                                    <div className="flex justify-between">
+                                        <span>{formatNumber(effectiveLicensesLeased, 1)} effective licenses × ${formatNumber(revenuePerLicense)}</span>
+                                        <span>${formatNumber(effectiveLicensesLeased * revenuePerLicense)}</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span>× {leaseSplitToOperator}% (my split) × {uptimeLeased}% uptime</span>
+                                        <span>${formatNumber(revenueFromLeased)}</span>
+                                    </div>
+                                    <div className="flex justify-between text-xs">
+                                        <span>({totalLicensesLeased} total licenses × {uptimeLeased}% uptime × {leaseSplitToOperator}% split)</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-center pt-2 border-t border-blue-500/30 mb-2">
+                                    <span className="text-blue-300 font-semibold">Monthly Total</span>
+                                    <span className="text-xl font-bold text-white">
+                                        ${formatNumber(revenueFromLeased)}
+                                    </span>
+                                </div>
+                                <div className="pt-2 border-t border-blue-500/20 space-y-2">
+                                    <div className="flex justify-between text-xs">
+                                        <span className="text-blue-200">Per license I earn:</span>
+                                        <span className="text-blue-100 font-semibold">
+                                            ${formatNumber(revenuePerLicense * (leaseSplitToOperator / 100))}/mo
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-between text-xs">
+                                        <span className="text-blue-200">License operator earns:</span>
+                                        <span className="text-blue-100 font-semibold">
+                                            ${formatNumber(revenuePerLicense * ((100 - leaseSplitToOperator) / 100))}/mo
+                                        </span>
+                                    </div>
+                                    <div className="pt-2 border-t border-blue-500/20">
+                                        <div className="flex justify-between text-xs">
+                                            <span className="text-blue-200">Quarterly:</span>
+                                            <span className="text-blue-100 font-semibold">
+                                                ${formatNumber(revenueFromLeased * 3)}
+                                            </span>
+                                        </div>
+                                        <div className="flex justify-between text-xs mt-1">
+                                            <span className="text-blue-200">Yearly:</span>
+                                            <span className="text-blue-100 font-semibold">
+                                                ${formatNumber(revenueFromLeased * 12)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Total Revenue Summary */}
+                        <div className="mt-6 p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
+                            <h3 className="text-purple-300 text-sm font-semibold mb-3">Total Revenue Summary</h3>
+                            <div className="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div className="text-xs text-purple-300 mb-1">Monthly</div>
+                                    <div className="text-2xl font-bold text-white">
+                                        ${formatNumber(totalMonthlyRevenue)}
+                                    </div>
+                                    <div className="text-lg font-semibold text-purple-200">
+                                        €{formatNumber(totalMonthlyRevenue * usdToEur)}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-xs text-purple-300 mb-1">Quarterly (3 months)</div>
+                                    <div className="text-2xl font-bold text-white">
+                                        ${formatNumber(totalMonthlyRevenue * 3)}
+                                    </div>
+                                    <div className="text-lg font-semibold text-purple-200">
+                                        €{formatNumber(totalMonthlyRevenue * 3 * usdToEur)}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-xs text-purple-300 mb-1">Yearly (12 months)</div>
+                                    <div className="text-2xl font-bold text-white">
+                                        ${formatNumber(totalMonthlyRevenue * 12)}
+                                    </div>
+                                    <div className="text-lg font-semibold text-purple-200">
+                                        €{formatNumber(totalMonthlyRevenue * 12 * usdToEur)}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Disclaimer */}
-                <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
-                    <p className="text-sm text-red-200">
-                        <strong>Disclaimer:</strong> This calculator is for illustrative purposes only and does not constitute financial advice.
-                        Actual returns may vary significantly based on network performance, market conditions, license operator activity, token prices,
-                        and other factors. Cryptocurrency investments carry substantial risk. The revenue per license is a conservative estimate
-                        and may be higher or lower in practice. Always conduct thorough research and consult financial professionals before making
-                        investment decisions.
-                    </p>
+                    {/* Results Dashboard */}
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                        <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-6 border border-green-400/30">
+                            <h3 className="text-sm text-green-300 mb-2">Net Monthly Profit</h3>
+                            <div className="mb-2">
+                                <p className="text-3xl font-bold text-white">
+                                    ${formatNumber(netMonthlyProfit)}
+                                </p>
+                                <p className="text-xl font-semibold text-green-200">
+                                    €{formatNumber(netMonthlyProfit * usdToEur)}
+                                </p>
+                            </div>
+                            <p className="text-xs text-green-300">
+                                Revenue: ${formatNumber(totalMonthlyRevenue)} / €{formatNumber(totalMonthlyRevenue * usdToEur)}
+                            </p>
+                            <p className="text-xs text-green-300">
+                                Costs: ${formatNumber(totalMonthlyCost)} / €{formatNumber(totalMonthlyCost * usdToEur)}
+                            </p>
+                        </div>
+
+                        <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-6 border border-blue-400/30">
+                            <h3 className="text-sm text-blue-300 mb-2">Break-Even Period</h3>
+                            <p className="text-3xl font-bold text-white mb-1">
+                                {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} months
+                            </p>
+                            <p className="text-sm text-blue-300">
+                                {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths / 12, 1) : '∞'} years
+                            </p>
+                        </div>
+
+                        <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-6 border border-purple-400/30">
+                            <h3 className="text-sm text-purple-300 mb-2">Annual Profit</h3>
+                            <div className="mb-1">
+                                <p className="text-3xl font-bold text-white">
+                                    ${formatNumber(annualProfit)}
+                                </p>
+                                <p className="text-xl font-semibold text-purple-200">
+                                    €{formatNumber(annualProfit * usdToEur)}
+                                </p>
+                            </div>
+                            <p className="text-sm text-purple-300">
+                                Year 1 net profit
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Visual Charts */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <BarChart3 className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Financial Charts & Visualizations</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6 mb-6">
+                            {/* Profit Over Time Chart */}
+                            <div className="bg-white/5 rounded-lg p-4">
+                                <h3 className="text-purple-300 font-semibold mb-3">Profit Over Time</h3>
+                                <div className="h-64">
+                                    <ResponsiveContainer width="100%" height="100%">
+                                        <AreaChart data={profitOverTimeData}>
+                                            <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                            <XAxis
+                                                dataKey="month"
+                                                stroke="#9ca3af"
+                                                tick={{ fontSize: 12 }}
+                                            />
+                                            <YAxis
+                                                stroke="#9ca3af"
+                                                tick={{ fontSize: 12 }}
+                                                tickFormatter={(value) => formatNumber(value, 0)}
+                                            />
+                                            <Tooltip
+                                                contentStyle={{
+                                                    backgroundColor: '#1f2937',
+                                                    border: '1px solid #374151',
+                                                    borderRadius: '8px'
+                                                }}
+                                                labelStyle={{ color: '#e5e7eb' }}
+                                                formatter={(value, name) => [
+                                                    `$${formatNumber(value)}`,
+                                                    name === 'netProfit' ? 'Cumulative Net Profit' : name
+                                                ]}
+                                            />
+                                            <Area
+                                                type="monotone"
+                                                dataKey="netProfit"
+                                                stroke="#10b981"
+                                                fill="#10b981"
+                                                fillOpacity={0.3}
+                                                name="Cumulative Profit"
+                                            />
+                                        </AreaChart>
+                                    </ResponsiveContainer>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-2">
+                                    Shows cumulative profit over 36 months, including initial investment
+                                </p>
+                            </div>
+
+                            {/* Cost Breakdown Chart */}
+                            <div className="bg-white/5 rounded-lg p-4">
+                                <h3 className="text-purple-300 font-semibold mb-3">Cost Breakdown</h3>
+                                <div className="h-64">
+                                    <ResponsiveContainer width="100%" height="100%">
+                                        <RechartsPieChart>
+                                            <Pie
+                                                data={costBreakdownData}
+                                                cx="50%"
+                                                cy="50%"
+                                                labelLine={false}
+                                                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                                                outerRadius={80}
+                                                fill="#8884d8"
+                                                dataKey="value"
+                                            >
+                                                {costBreakdownData.map((entry, index) => (
+                                                    <Cell key={`cell-${index}`} fill={entry.color} />
+                                                ))}
+                                            </Pie>
+                                            <Tooltip
+                                                contentStyle={{
+                                                    backgroundColor: '#1f2937',
+                                                    border: '1px solid #374151',
+                                                    borderRadius: '8px'
+                                                }}
+                                                formatter={(value) => [`$${formatNumber(value)}`, 'Cost']}
+                                            />
+                                        </RechartsPieChart>
+                                    </ResponsiveContainer>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-2">
+                                    Breakdown of all costs: initial investment and monthly operating costs
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* ROI Comparison Chart */}
+                        <div className="bg-white/5 rounded-lg p-4">
+                            <h3 className="text-purple-300 font-semibold mb-3">ROI Comparison</h3>
+                            <div className="h-64">
+                                <ResponsiveContainer width="100%" height="100%">
+                                    <BarChart data={roiComparisonData}>
+                                        <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                        <XAxis dataKey="scenario" stroke="#9ca3af" tick={{ fontSize: 12 }} />
+                                        <YAxis
+                                            stroke="#9ca3af"
+                                            tick={{ fontSize: 12 }}
+                                            tickFormatter={(value) => `${value}%`}
+                                        />
+                                        <Tooltip
+                                            contentStyle={{
+                                                backgroundColor: '#1f2937',
+                                                border: '1px solid #374151',
+                                                borderRadius: '8px'
+                                            }}
+                                            formatter={(value, name) => [
+                                                name === 'roi' ? `${formatNumber(value, 1)}%` : `$${formatNumber(value)}`,
+                                                name === 'roi' ? 'ROI Percentage' : 'Total Profit'
+                                            ]}
+                                        />
+                                        <Bar dataKey="roi" fill="#8b5cf6" name="roi" />
+                                    </BarChart>
+                                </ResponsiveContainer>
+                            </div>
+                            <p className="text-xs text-purple-300 mt-2">
+                                Compares 12-month and 24-month ROI percentages
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Scenario Comparison */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <TrendingUp className="text-purple-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Scenario Comparison</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* Save Current Scenario */}
+                            <div className="bg-white/5 rounded-lg p-4">
+                                <h3 className="text-purple-300 font-semibold mb-3">Save Current Scenario</h3>
+                                <div className="space-y-3">
+                                    <input
+                                        type="text"
+                                        value={scenarioName}
+                                        onChange={(e) => setScenarioName(e.target.value)}
+                                        placeholder="Enter scenario name..."
+                                        className="w-full bg-white/10 border border-purple-400/30 rounded-lg px-4 py-2 text-white placeholder-purple-400"
+                                    />
+                                    <button
+                                        onClick={saveCurrentScenario}
+                                        disabled={!scenarioName.trim()}
+                                        className="w-full bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500/50 disabled:cursor-not-allowed text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+                                    >
+                                        Save Scenario
+                                    </button>
+                                </div>
+                                <p className="text-xs text-purple-300 mt-2">
+                                    Save your current configuration to compare with other scenarios
+                                </p>
+                            </div>
+
+                            {/* Saved Scenarios List */}
+                            <div className="bg-white/5 rounded-lg p-4">
+                                <h3 className="text-purple-300 font-semibold mb-3">Saved Scenarios ({savedScenarios.length})</h3>
+                                <div className="space-y-2 max-h-48 overflow-y-auto">
+                                    {savedScenarios.length === 0 ? (
+                                        <p className="text-purple-400 text-sm">No saved scenarios yet</p>
+                                    ) : (
+                                        savedScenarios.map(scenario => (
+                                            <div key={scenario.id} className="flex items-center justify-between bg-white/10 rounded p-2">
+                                                <div className="flex-1">
+                                                    <div className="text-white font-medium text-sm">{scenario.name}</div>
+                                                    <div className="text-purple-300 text-xs">
+                                                        ${formatNumber(scenario.netMonthlyProfit)}/mo · ROI: {formatNumber(scenario.roi12Month, 1)}%
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2">
+                                                    <button
+                                                        onClick={() => loadScenario(scenario)}
+                                                        className="text-blue-400 hover:text-blue-300 text-xs font-medium"
+                                                    >
+                                                        Load
+                                                    </button>
+                                                    <button
+                                                        onClick={() => deleteScenario(scenario.id)}
+                                                        className="text-red-400 hover:text-red-300 text-xs font-medium"
+                                                    >
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        ))
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Comparison Table */}
+                        {savedScenarios.length > 0 && (
+                            <div className="mt-6">
+                                <h3 className="text-purple-300 font-semibold mb-3">Scenario Comparison</h3>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full bg-white/5 rounded-lg overflow-hidden">
+                                        <thead className="bg-purple-500/20">
+                                            <tr>
+                                                <th className="px-4 py-2 text-left text-purple-300 font-semibold text-sm">Scenario</th>
+                                                <th className="px-4 py-2 text-right text-purple-300 font-semibold text-sm">Monthly Profit</th>
+                                                <th className="px-4 py-2 text-right text-purple-300 font-semibold text-sm">Break-Even</th>
+                                                <th className="px-4 py-2 text-right text-purple-300 font-semibold text-sm">12M ROI</th>
+                                                <th className="px-4 py-2 text-right text-purple-300 font-semibold text-sm">Uptime Self/Leased</th>
+                                                <th className="px-4 py-2 text-right text-purple-300 font-semibold text-sm">Initial Invest</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {/* Current scenario */}
+                                            <tr className="border-t border-white/10 bg-blue-500/10">
+                                                <td className="px-4 py-2 text-white font-medium">Current</td>
+                                                <td className="px-4 py-2 text-right text-green-400">${formatNumber(netMonthlyProfit)}</td>
+                                                <td className="px-4 py-2 text-right text-blue-400">{isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) + ' mo' : '∞'}</td>
+                                                <td className="px-4 py-2 text-right text-purple-400">{formatNumber(roi12Month, 1)}%</td>
+                                                <td className="px-4 py-2 text-right text-cyan-400">{uptimeSelfRun}%/{uptimeLeased}%</td>
+                                                <td className="px-4 py-2 text-right text-orange-400">${formatNumber(initialInvestment)}</td>
+                                            </tr>
+                                            {/* Saved scenarios */}
+                                            {savedScenarios.map(scenario => (
+                                                <tr key={scenario.id} className="border-t border-white/10">
+                                                    <td className="px-4 py-2 text-white font-medium">{scenario.name}</td>
+                                                    <td className="px-4 py-2 text-right text-green-400">${formatNumber(scenario.netMonthlyProfit)}</td>
+                                                    <td className="px-4 py-2 text-right text-blue-400">{isFinite(scenario.breakEvenMonths) ? formatNumber(scenario.breakEvenMonths, 1) + ' mo' : '∞'}</td>
+                                                    <td className="px-4 py-2 text-right text-purple-400">{formatNumber(scenario.roi12Month, 1)}%</td>
+                                                    <td className="px-4 py-2 text-right text-cyan-400">{scenario.uptimeSelfRun ?? 95}%/{scenario.uptimeLeased ?? 95}%</td>
+                                                    <td className="px-4 py-2 text-right text-orange-400">${formatNumber(scenario.initialInvestment)}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* ROI Analysis */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <h2 className="text-xl font-bold text-white mb-4">ROI Analysis</h2>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="space-y-3">
+                                <div className="p-4 bg-white/5 rounded-lg">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <span className="text-purple-300">12-Month ROI</span>
+                                        <span className={`text-2xl font-bold ${roi12Month > 0 ? 'text-green-400' : 'text-red-400'}`}>
+                                            {formatNumber(roi12Month, 1)}%
+                                        </span>
+                                    </div>
+                                    <div className="pt-2 border-t border-white/20">
+                                        <div className="flex justify-between text-sm">
+                                            <span className="text-purple-200">Total Profit:</span>
+                                            <span className="text-white font-semibold">
+                                                ${formatNumber(netMonthlyProfit * 12)}
+                                            </span>
+                                        </div>
+                                        <div className="flex justify-between text-xs mt-1">
+                                            <span className="text-purple-200">In EUR:</span>
+                                            <span className="text-purple-100">
+                                                €{formatNumber(netMonthlyProfit * 12 * usdToEur)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="p-4 bg-white/5 rounded-lg">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <span className="text-purple-300">24-Month ROI (Token Unlock)</span>
+                                        <span className={`text-2xl font-bold ${roi24Month > 0 ? 'text-green-400' : 'text-red-400'}`}>
+                                            {formatNumber(roi24Month, 1)}%
+                                        </span>
+                                    </div>
+                                    <div className="pt-2 border-t border-white/20">
+                                        <div className="flex justify-between text-sm">
+                                            <span className="text-purple-200">Total Profit:</span>
+                                            <span className="text-white font-semibold">
+                                                ${formatNumber(netMonthlyProfit * 24)}
+                                            </span>
+                                        </div>
+                                        <div className="flex justify-between text-xs mt-1">
+                                            <span className="text-purple-200">In EUR:</span>
+                                            <span className="text-purple-100">
+                                                €{formatNumber(netMonthlyProfit * 24 * usdToEur)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
+                                    <p className="text-xs text-purple-200">
+                                        <strong>Token Value:</strong> At unlock, you'll also have access to the staked tokens
+                                        (${(numNodes * 1875).toLocaleString()} MNTx + ${(numNodes * 1875).toLocaleString()} WMTx),
+                                        which could add significant value depending on token prices.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <Info className="text-yellow-400" size={18} />
+                                    <h3 className="text-yellow-300 font-semibold">Key Assumptions & Help</h3>
+                                </div>
+                                <ul className="text-sm text-yellow-200 space-y-1">
+                                    <li>• Each node includes {licensesPerNode} Unity License NFTs</li>
+                                    <li>• Market share scenarios based on 1.2M total licenses</li>
+                                    <li>• Max device capacity: 7GB = $208/month revenue</li>
+                                    <li>• 1% share = 7GB | 5% = 35GB (~5x licenses) | 10% = 70GB (~10x licenses)</li>
+                                    <li>• Current: {marketShareScenario === 'custom' ? 'custom' : marketScenarios[marketShareScenario].label}</li>
+                                    <li>• Self-run licenses: You keep 100% of license earnings</li>
+                                    <li>• Leased licenses: Split earnings based on your % split</li>
+                                    <li>• Uptime accounts for device downtime, maintenance, and network issues</li>
+                                    <li>• Self-run uptime: {uptimeSelfRun}% | Leased uptime: {uptimeLeased}% (effective: {formatNumber(totalEffectiveLicenses, 1)} of {totalActiveLicenses} licenses)</li>
+                                    <li>• Tokens locked for 24 months</li>
+                                    <li>• Your {numNodes * licensesPerNode} licenses represent your fixed share of network capacity</li>
+                                    <li>• Token appreciation not included in ROI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Sticky Summary (Mobile) */}
+                    <div className="fixed bottom-0 inset-x-0 z-50 md:hidden pointer-events-none">
+                        <div className="pointer-events-auto mx-auto max-w-7xl px-4 pb-[calc(env(safe-area-inset-bottom)+8px)]">
+                            <div className="rounded-t-xl bg-white/10 backdrop-blur-lg border border-white/20 p-3 shadow-lg">
+                                <div className="flex items-center justify-between gap-3 text-xs">
+                                    <div>
+                                        <div className="text-green-300 font-semibold">Net Monthly Profit</div>
+                                        <div className="text-white font-bold">${formatNumber(netMonthlyProfit)}</div>
+                                        <div className="text-green-200">€{formatNumber(netMonthlyProfit * usdToEur)}</div>
+                                        <div className="text-yellow-300 font-semibold mt-1">Daily</div>
+                                        <div className="text-white font-bold">${formatNumber(dailyNetProfit)}</div>
+                                        <div className="text-yellow-200">€{formatNumber(dailyNetProfitEur)}</div>
+                                    </div>
+                                    <div className="text-center">
+                                        <div className="text-blue-300 font-semibold">Break-Even</div>
+                                        <div className="text-white font-bold">{isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</div>
+                                    </div>
+                                    <div className="text-right">
+                                        <div className="text-purple-300 font-semibold">Annual</div>
+                                        <div className="text-white font-bold">${formatNumber(annualRevenue)}</div>
+                                        <div className="text-purple-200">€{formatNumber(annualRevenue * usdToEur)}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Disclaimer */}
+                    <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+                        <p className="text-sm text-red-200">
+                            <strong>Disclaimer:</strong> This calculator is for illustrative purposes only and does not constitute financial advice.
+                            Actual returns may vary significantly based on network performance, market conditions, license operator activity, token prices,
+                            and other factors. Cryptocurrency investments carry substantial risk. The revenue per license is a conservative estimate
+                            and may be higher or lower in practice. Always conduct thorough research and consult financial professionals before making
+                            investment decisions.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    } catch (error) {
+        console.error('Error rendering UnityNodesROICalculator:', error);
+        return (
+            <div className="min-h-screen bg-red-900 p-6 flex items-center justify-center">
+                <div className="bg-white p-8 rounded-lg text-center">
+                    <h1 className="text-2xl font-bold text-red-600 mb-4">Error Loading Calculator</h1>
+                    <p className="text-gray-700 mb-4">
+                        There was an error loading the Unity Nodes ROI Calculator.
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        Error: {error.message}
+                    </p>
+                    <button
+                        onClick={() => window.location.reload()}
+                        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    >
+                        Reload Page
+                    </button>
+                </div>
+            </div>
+        );
+    }
 }

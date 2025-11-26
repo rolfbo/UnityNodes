@@ -8,10 +8,10 @@
  * @returns {JSX.Element} The application wrapper containing the ROI calculator
  */
 
-import ROICalculatorApp from './ROICalculatorApp.jsx'
+import UnityNodesROICalculator from './ROICalculatorApp.jsx'
 
 function App() {
-  return <ROICalculatorApp />
+  return <UnityNodesROICalculator />
 }
 
 export default App
