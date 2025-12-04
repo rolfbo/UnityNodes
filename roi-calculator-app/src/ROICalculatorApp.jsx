@@ -131,9 +131,9 @@ export default function UnityNodesROICalculator() {
 
         if (urlParams.numNodes) setNumNodes(Math.max(1, parseInt(urlParams.numNodes) || 1));
         if (urlParams.licensesPerNode) setLicensesPerNode(Math.max(1, parseInt(urlParams.licensesPerNode) || 200));
-        if (urlParams.licensesRunBySelf) setLicensesRunBySelf(Math.max(0, parseInt(urlParams.licensesRunBySelf) || 0));
-        if (urlParams.licensesLeased) setLicensesLeased(Math.max(0, parseInt(urlParams.licensesLeased) || 0));
-        if (urlParams.licensesInactive) setLicensesInactive(Math.max(0, parseInt(urlParams.licensesInactive) || 0));
+        if (urlParams.licensesRunBySelf) setLicensesRunBySelf(Math.max(0, parseFloat(urlParams.licensesRunBySelf) || 0));
+        if (urlParams.licensesLeased) setLicensesLeased(Math.max(0, parseFloat(urlParams.licensesLeased) || 0));
+        if (urlParams.licensesInactive) setLicensesInactive(Math.max(0, parseFloat(urlParams.licensesInactive) || 0));
         if (urlParams.phonePrice) setPhonePrice(Math.max(0, parseInt(urlParams.phonePrice) || 0));
         if (urlParams.simMonthly) setSimMonthly(Math.max(0, parseInt(urlParams.simMonthly) || 0));
         if (urlParams.monthlyCredits) setMonthlyCredits(Math.max(0, parseFloat(urlParams.monthlyCredits) || 0));
@@ -404,7 +404,7 @@ export default function UnityNodesROICalculator() {
 
     // Validation
     const totalLicensesAllocated = licensesRunBySelf + licensesLeased + licensesInactive;
-    const isValidAllocation = totalLicensesAllocated === licensesPerNode;
+    const isValidAllocation = Math.abs(totalLicensesAllocated - licensesPerNode) < 0.1;
 
     // Scenario comparison feature
     const [savedScenarios, setSavedScenarios] = useState([]);
@@ -635,7 +635,7 @@ export default function UnityNodesROICalculator() {
                                 </label>
                                 <input
                                     type="number"
-                                    value={usdToEur}
+                                    value={parseFloat(usdToEur.toFixed(2))}
                                     onChange={(e) => setUsdToEur(Math.max(0, parseFloat(e.target.value) || 0.92))}
                                     step="0.01"
                                     className="w-20 bg-white/5 border border-purple-400/30 rounded px-2 py-1 text-white text-sm"
@@ -716,8 +716,8 @@ export default function UnityNodesROICalculator() {
                                         onClick={() => {
                                             const newValue = Math.max(1, licensesPerNode - 200);
                                             setLicensesPerNode(newValue);
-                                            const defaultSelfRun = Math.floor(newValue * 0.25);
-                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultSelfRun = newValue * 0.25;
+                                            const defaultLeased = newValue * 0.5;
                                             const defaultInactive = newValue - defaultSelfRun - defaultLeased;
                                             setLicensesRunBySelf(defaultSelfRun);
                                             setLicensesLeased(defaultLeased);
@@ -734,8 +734,8 @@ export default function UnityNodesROICalculator() {
                                             const newValue = Math.max(1, parseInt(e.target.value) || 200);
                                             setLicensesPerNode(newValue);
                                             // Reset license distribution when changing total licenses
-                                            const defaultSelfRun = Math.floor(newValue * 0.25);
-                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultSelfRun = newValue * 0.25;
+                                            const defaultLeased = newValue * 0.5;
                                             const defaultInactive = newValue - defaultSelfRun - defaultLeased;
                                             setLicensesRunBySelf(defaultSelfRun);
                                             setLicensesLeased(defaultLeased);
@@ -748,8 +748,8 @@ export default function UnityNodesROICalculator() {
                                         onClick={() => {
                                             const newValue = licensesPerNode + 200;
                                             setLicensesPerNode(newValue);
-                                            const defaultSelfRun = Math.floor(newValue * 0.25);
-                                            const defaultLeased = Math.floor(newValue * 0.5);
+                                            const defaultSelfRun = newValue * 0.25;
+                                            const defaultLeased = newValue * 0.5;
                                             const defaultInactive = newValue - defaultSelfRun - defaultLeased;
                                             setLicensesRunBySelf(defaultSelfRun);
                                             setLicensesLeased(defaultLeased);
@@ -783,10 +783,10 @@ export default function UnityNodesROICalculator() {
                     <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
                         <div className="flex items-center gap-2 mb-4">
                             <Users className="text-purple-400" size={24} />
-                            <h2 className="text-xl font-bold text-white">License Distribution (Per Node)</h2>
+                            <h2 className="text-xl font-bold text-white">License Distribution</h2>
                             {!isValidAllocation && (
                                 <span className="text-red-400 text-sm ml-auto">
-                                    ⚠️ Must total {licensesPerNode} licenses
+                                    ⚠️ Must total {totalLicenses} licenses
                                 </span>
                             )}
                         </div>
@@ -796,19 +796,20 @@ export default function UnityNodesROICalculator() {
                                 <label className="text-sm text-white block mb-2 font-semibold">
                                     Licenses Run by Me
                                 </label>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-3">
                                     {[0, 25, 50, 75, 100].map((percentage) => {
-                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        const totalLicenseCount = totalLicenses * percentage / 100;
+                                        const perNodeCount = totalLicenseCount / numNodes;
                                         return (
                                             <button
                                                 key={percentage}
-                                                onClick={() => setLicensesRunBySelf(licenseCount)}
-                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesRunBySelf === licenseCount
+                                                onClick={() => setLicensesRunBySelf(perNodeCount)}
+                                                className={`py-2 px-2 rounded-lg font-semibold text-sm transition-all text-center ${licensesRunBySelf === perNodeCount
                                                     ? 'bg-green-500 text-white'
                                                     : 'bg-white/10 text-green-200 hover:bg-white/20'
                                                     }`}
                                             >
-                                                {percentage}% ({licenseCount})
+                                                {percentage}% ({formatNumber(totalLicenseCount, 0)})
                                             </button>
                                         );
                                     })}
@@ -817,18 +818,38 @@ export default function UnityNodesROICalculator() {
                                     onClick={() => setLicensesRunBySelf(Math.max(0, licensesPerNode - licensesLeased - licensesInactive))}
                                     className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
                                 >
-                                    Calculate
+                                    Calculate Remaining
                                 </button>
-                                <input
-                                    type="number"
-                                    value={licensesRunBySelf}
-                                    onChange={(e) => setLicensesRunBySelf(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                    min="0"
-                                    max={licensesPerNode}
-                                />
+                                <div className="grid grid-cols-2 gap-2 mb-2">
+                                    <div>
+                                        <label className="text-xs text-green-200 block mb-1">Total Licenses</label>
+                                        <input
+                                            type="number"
+                                            value={totalLicensesRunBySelf}
+                                            onChange={(e) => setLicensesRunBySelf(Math.max(0, (parseFloat(e.target.value) || 0) / numNodes))}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={totalLicenses}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="text-xs text-green-200 block mb-1">Equivalent Nodes</label>
+                                        <input
+                                            type="number"
+                                            value={parseFloat((licensesRunBySelf / licensesPerNode * numNodes).toFixed(2))}
+                                            onChange={(e) => {
+                                                const nodes = parseFloat(e.target.value) || 0;
+                                                setLicensesRunBySelf((nodes * licensesPerNode) / numNodes);
+                                            }}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={numNodes}
+                                            step="0.1"
+                                        />
+                                    </div>
+                                </div>
                                 <p className="text-xs text-green-200">
-                                    Total: {totalLicensesRunBySelf} licenses
+                                    Per node: {formatNumber(licensesRunBySelf, 1)} | Share: {formatNumber(licensesRunBySelf / licensesPerNode * 100, 1)}%
                                 </p>
                                 <p className="text-xs text-green-200">
                                     I pay all costs & earn 100% of license earnings
@@ -839,19 +860,20 @@ export default function UnityNodesROICalculator() {
                                 <label className="text-sm text-white block mb-2 font-semibold">
                                     Licenses Leased Out
                                 </label>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-3">
                                     {[0, 25, 50, 75, 100].map((percentage) => {
-                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        const totalLicenseCount = totalLicenses * percentage / 100;
+                                        const perNodeCount = totalLicenseCount / numNodes;
                                         return (
                                             <button
                                                 key={percentage}
-                                                onClick={() => setLicensesLeased(licenseCount)}
-                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesLeased === licenseCount
+                                                onClick={() => setLicensesLeased(perNodeCount)}
+                                                className={`py-2 px-2 rounded-lg font-semibold text-sm transition-all text-center ${licensesLeased === perNodeCount
                                                     ? 'bg-blue-500 text-white'
                                                     : 'bg-white/10 text-blue-200 hover:bg-white/20'
                                                     }`}
                                             >
-                                                {percentage}% ({licenseCount})
+                                                {percentage}% ({formatNumber(totalLicenseCount, 0)})
                                             </button>
                                         );
                                     })}
@@ -860,18 +882,38 @@ export default function UnityNodesROICalculator() {
                                     onClick={() => setLicensesLeased(Math.max(0, licensesPerNode - licensesRunBySelf - licensesInactive))}
                                     className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
                                 >
-                                    Calculate
+                                    Calculate Remaining
                                 </button>
-                                <input
-                                    type="number"
-                                    value={licensesLeased}
-                                    onChange={(e) => setLicensesLeased(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                    min="0"
-                                    max={licensesPerNode}
-                                />
+                                <div className="grid grid-cols-2 gap-2 mb-2">
+                                    <div>
+                                        <label className="text-xs text-blue-200 block mb-1">Total Licenses</label>
+                                        <input
+                                            type="number"
+                                            value={totalLicensesLeased}
+                                            onChange={(e) => setLicensesLeased(Math.max(0, (parseFloat(e.target.value) || 0) / numNodes))}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={totalLicenses}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="text-xs text-blue-200 block mb-1">Equivalent Nodes</label>
+                                        <input
+                                            type="number"
+                                            value={parseFloat((licensesLeased / licensesPerNode * numNodes).toFixed(2))}
+                                            onChange={(e) => {
+                                                const nodes = parseFloat(e.target.value) || 0;
+                                                setLicensesLeased((nodes * licensesPerNode) / numNodes);
+                                            }}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={numNodes}
+                                            step="0.1"
+                                        />
+                                    </div>
+                                </div>
                                 <p className="text-xs text-blue-200">
-                                    Total: {totalLicensesLeased} licenses
+                                    Per node: {formatNumber(licensesLeased, 1)} | Share: {formatNumber(licensesLeased / licensesPerNode * 100, 1)}%
                                 </p>
                                 <p className="text-xs text-blue-200">
                                     Operator pays costs, I earn split
@@ -882,19 +924,20 @@ export default function UnityNodesROICalculator() {
                                 <label className="text-sm text-white block mb-2 font-semibold">
                                     Inactive Licenses
                                 </label>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-3">
                                     {[0, 5, 12.5, 25, 50].map((percentage) => {
-                                        const licenseCount = Math.floor(licensesPerNode * percentage / 100);
+                                        const totalLicenseCount = totalLicenses * percentage / 100;
+                                        const perNodeCount = totalLicenseCount / numNodes;
                                         return (
                                             <button
                                                 key={percentage}
-                                                onClick={() => setLicensesInactive(licenseCount)}
-                                                className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${licensesInactive === licenseCount
+                                                onClick={() => setLicensesInactive(perNodeCount)}
+                                                className={`py-2 px-2 rounded-lg font-semibold text-sm transition-all text-center ${licensesInactive === perNodeCount
                                                     ? 'bg-gray-500 text-white'
                                                     : 'bg-white/10 text-gray-200 hover:bg-white/20'
                                                     }`}
                                             >
-                                                {percentage}% ({licenseCount})
+                                                {percentage}% ({formatNumber(totalLicenseCount, 0)})
                                             </button>
                                         );
                                     })}
@@ -903,18 +946,38 @@ export default function UnityNodesROICalculator() {
                                     onClick={() => setLicensesInactive(Math.max(0, licensesPerNode - licensesRunBySelf - licensesLeased))}
                                     className="w-full mb-3 py-2 px-4 rounded-lg font-semibold text-sm transition-all bg-orange-500/20 text-orange-200 hover:bg-orange-500/30 border border-orange-500/30"
                                 >
-                                    Calculate
+                                    Calculate Remaining
                                 </button>
-                                <input
-                                    type="number"
-                                    value={licensesInactive}
-                                    onChange={(e) => setLicensesInactive(Math.max(0, Math.min(licensesPerNode, parseInt(e.target.value) || 0)))}
-                                    className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white mb-2"
-                                    min="0"
-                                    max={licensesPerNode}
-                                />
+                                <div className="grid grid-cols-2 gap-2 mb-2">
+                                    <div>
+                                        <label className="text-xs text-gray-300 block mb-1">Total Licenses</label>
+                                        <input
+                                            type="number"
+                                            value={totalLicensesInactive}
+                                            onChange={(e) => setLicensesInactive(Math.max(0, (parseFloat(e.target.value) || 0) / numNodes))}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={totalLicenses}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="text-xs text-gray-300 block mb-1">Equivalent Nodes</label>
+                                        <input
+                                            type="number"
+                                            value={parseFloat((licensesInactive / licensesPerNode * numNodes).toFixed(2))}
+                                            onChange={(e) => {
+                                                const nodes = parseFloat(e.target.value) || 0;
+                                                setLicensesInactive((nodes * licensesPerNode) / numNodes);
+                                            }}
+                                            className="w-full bg-white/10 border border-white/30 rounded-lg px-3 py-2 text-white"
+                                            min="0"
+                                            max={numNodes}
+                                            step="0.1"
+                                        />
+                                    </div>
+                                </div>
                                 <p className="text-xs text-gray-300">
-                                    Total: {numNodes * licensesInactive} licenses
+                                    Per node: {formatNumber(licensesInactive, 1)} | Share: {formatNumber(licensesInactive / licensesPerNode * 100, 1)}%
                                 </p>
                                 <p className="text-xs text-gray-300">
                                     Not generating revenue
@@ -924,9 +987,9 @@ export default function UnityNodesROICalculator() {
 
                         <div className="mt-4 p-3 bg-white/5 rounded-lg">
                             <div className="flex justify-between text-sm">
-                                <span className="text-purple-300">Allocated per node:</span>
-                                <span className={`font-semibold ${isValidAllocation ? 'text-green-400' : 'text-red-400'}`}>
-                                    {totalLicensesAllocated} / {licensesPerNode}
+                                <span className="text-purple-300">Unallocated / Remaining:</span>
+                                <span className={`font-semibold ${(totalLicenses - licensesRunBySelf - licensesLeased) === 0 ? 'text-green-400' : (totalLicenses - licensesRunBySelf - licensesLeased) < 0 ? 'text-red-400' : 'text-yellow-400'}`}>
+                                    {formatNumber(totalLicenses - licensesRunBySelf - licensesLeased, 0)} / {formatNumber(totalLicenses, 0)} licenses ({formatNumber(((totalLicenses - licensesRunBySelf - licensesLeased) / totalLicenses) * 100, 1)}%)
                                 </span>
                             </div>
                         </div>
@@ -951,12 +1014,12 @@ export default function UnityNodesROICalculator() {
                                         Self-Run License Uptime (%)
                                     </label>
                                 </HelpTooltip>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
                                     {[90, 95, 98, 99.5].map((percentage) => (
                                         <button
                                             key={percentage}
                                             onClick={() => setUptimeSelfRun(percentage)}
-                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${uptimeSelfRun === percentage
+                                            className={`py-2 px-2 rounded-lg font-semibold text-sm transition-all text-center ${uptimeSelfRun === percentage
                                                 ? 'bg-green-500 text-white'
                                                 : 'bg-white/10 text-green-200 hover:bg-white/20'
                                                 }`}
@@ -967,7 +1030,7 @@ export default function UnityNodesROICalculator() {
                                 </div>
                                 <input
                                     type="number"
-                                    value={uptimeSelfRun}
+                                    value={parseFloat(uptimeSelfRun.toFixed(1))}
                                     onChange={(e) => setUptimeSelfRun(Math.min(100, Math.max(0, parseFloat(e.target.value) || 0)))}
                                     step="0.1"
                                     className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
@@ -988,12 +1051,12 @@ export default function UnityNodesROICalculator() {
                                         Leased License Uptime (%)
                                     </label>
                                 </HelpTooltip>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
                                     {[90, 95, 98, 99.5].map((percentage) => (
                                         <button
                                             key={percentage}
                                             onClick={() => setUptimeLeased(percentage)}
-                                            className={`flex-1 py-2 px-2 rounded-lg font-semibold text-sm transition-all ${uptimeLeased === percentage
+                                            className={`py-2 px-2 rounded-lg font-semibold text-sm transition-all text-center ${uptimeLeased === percentage
                                                 ? 'bg-blue-500 text-white'
                                                 : 'bg-white/10 text-blue-200 hover:bg-white/20'
                                                 }`}
@@ -1004,7 +1067,7 @@ export default function UnityNodesROICalculator() {
                                 </div>
                                 <input
                                     type="number"
-                                    value={uptimeLeased}
+                                    value={parseFloat(uptimeLeased.toFixed(1))}
                                     onChange={(e) => setUptimeLeased(Math.min(100, Math.max(0, parseFloat(e.target.value) || 0)))}
                                     step="0.1"
                                     className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
@@ -1437,7 +1500,7 @@ export default function UnityNodesROICalculator() {
                                 <div className="mb-2 text-xs text-purple-200 bg-purple-500/10 rounded p-2">
                                     This is the revenue AFTER 75% network split (25% goes to network pools)
                                 </div>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
                                     {[25, 50, 75, 90].map((value) => (
                                         <button
                                             key={value}
@@ -1445,7 +1508,7 @@ export default function UnityNodesROICalculator() {
                                                 setRevenuePerLicense(value);
                                                 setMarketShareScenario('custom');
                                             }}
-                                            className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${revenuePerLicense === value && marketShareScenario === 'custom'
+                                            className={`py-2 px-3 rounded-lg font-semibold transition-all text-center ${revenuePerLicense === value && marketShareScenario === 'custom'
                                                 ? 'bg-purple-500 text-white'
                                                 : 'bg-white/10 text-purple-300 hover:bg-white/20'
                                                 }`}
@@ -1456,7 +1519,7 @@ export default function UnityNodesROICalculator() {
                                 </div>
                                 <input
                                     type="number"
-                                    value={revenuePerLicense}
+                                    value={parseFloat(revenuePerLicense.toFixed(2))}
                                     onChange={(e) => {
                                         setRevenuePerLicense(Math.max(0, parseFloat(e.target.value) || 0));
                                         setMarketShareScenario('custom');
@@ -1487,6 +1550,23 @@ export default function UnityNodesROICalculator() {
                                         +$5 · €{formatNumber(5 * usdToEur)}
                                     </button>
                                 </div>
+                                <div className="mt-3 pt-2 border-t border-white/10">
+                                    <label className="text-xs text-purple-300 block mb-1">
+                                        Equivalent Daily Earnings ($/day)
+                                    </label>
+                                    <input
+                                        type="number"
+                                        value={parseFloat((revenuePerLicense / 30).toFixed(2))}
+                                        onChange={(e) => {
+                                            const daily = Math.max(0, parseFloat(e.target.value) || 0);
+                                            setRevenuePerLicense(daily * 30);
+                                            setMarketShareScenario('custom');
+                                        }}
+                                        step="0.01"
+                                        className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white"
+                                        min="0"
+                                    />
+                                </div>
                                 <p className="text-xs text-purple-300 mt-1">
                                     {marketShareScenario === 'custom'
                                         ? 'Custom earnings estimate'
@@ -1500,12 +1580,12 @@ export default function UnityNodesROICalculator() {
                                         My Split from Leased Licenses (%)
                                     </label>
                                 </HelpTooltip>
-                                <div className="flex gap-2 mb-3">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
                                     {[25, 50, 75, 90].map((value) => (
                                         <button
                                             key={value}
                                             onClick={() => setLeaseSplitToOperator(value)}
-                                            className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${leaseSplitToOperator === value
+                                            className={`py-2 px-3 rounded-lg font-semibold transition-all text-center ${leaseSplitToOperator === value
                                                 ? 'bg-purple-500 text-white'
                                                 : 'bg-white/10 text-purple-300 hover:bg-white/20'
                                                 }`}
@@ -1598,7 +1678,7 @@ export default function UnityNodesROICalculator() {
                                         <span>${formatNumber(effectiveLicensesLeased * revenuePerLicense)}</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span>× {leaseSplitToOperator}% (my split) × {uptimeLeased}% uptime</span>
+                                        <span>× {leaseSplitToOperator}% (my split)</span>
                                         <span>${formatNumber(revenueFromLeased)}</span>
                                     </div>
                                     <div className="flex justify-between text-xs">
