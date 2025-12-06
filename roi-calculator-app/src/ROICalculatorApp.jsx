@@ -24,7 +24,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChart3, PieChart, HelpCircle, Info, Share2, Download, Clock } from 'lucide-react';
+import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChart3, PieChart, HelpCircle, Info, Share2, Download, Clock, AlertTriangle, Globe } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
 import { usePersistentState } from './utils/usePersistentState.js';
 import jsPDF from 'jspdf';
@@ -155,6 +155,11 @@ export default function UnityNodesROICalculator() {
     const nodePrice = 5000;
     const [licensesPerNode, setLicensesPerNode] = usePersistentState('roi_licensesPerNode', 200);
 
+    // Ecosystem-Wide Constants for Reality Check
+    // These represent the total maximum capacity of the Unity Nodes network
+    const TOTAL_NODES_IN_ECOSYSTEM = 6000; // Maximum nodes available in the ecosystem
+    const TOTAL_LICENSES_IN_ECOSYSTEM = TOTAL_NODES_IN_ECOSYSTEM * licensesPerNode; // Total licenses across all nodes
+
     // Exchange rate
     const [usdToEur, setUsdToEur] = usePersistentState('roi_usdToEur', 0.92); // Conservative EUR/USD rate
 
@@ -185,6 +190,9 @@ export default function UnityNodesROICalculator() {
     const [rampUpDuration, setRampUpDuration] = usePersistentState('roi_rampUpDuration', 6); // Duration in months (1-12)
     const [selfRunRampCurve, setSelfRunRampCurve] = usePersistentState('roi_selfRunRampCurve', 'moderate'); // Curve type for self-run licenses
     const [leasedRampCurve, setLeasedRampCurve] = usePersistentState('roi_leasedRampCurve', 'slow'); // Curve type for leased licenses
+
+    // Reality Check UI State
+    const [realityCheckExpanded, setRealityCheckExpanded] = usePersistentState('roi_realityCheckExpanded', true); // Show/hide Reality Check section
 
     // Market share scenarios based on the table (using 1.2M license row)
     // Assuming $208/month = 7GB per device (max capacity)
@@ -401,6 +409,139 @@ export default function UnityNodesROICalculator() {
     // Daily calculations (30-day month basis)
     const dailyNetProfit = netMonthlyProfit / 30;
     const dailyNetProfitEur = dailyNetProfit * usdToEur;
+
+    // ==========================================
+    // REALITY CHECK CALCULATIONS
+    // ==========================================
+    // These calculations provide a sanity check by analyzing the entire Unity Nodes ecosystem
+    // and comparing the user's position to the total market potential
+
+    // 1. Total Ecosystem Market Potential
+    // Calculate the total revenue potential across all 6000 nodes in the ecosystem
+    const ecosystemTotalMonthlyRevenue = TOTAL_LICENSES_IN_ECOSYSTEM * revenuePerLicense;
+    const ecosystemTotalAnnualRevenue = ecosystemTotalMonthlyRevenue * 12;
+
+    // 2. User's Market Share
+    // Calculate what percentage of the total ecosystem this user represents
+    const userNodeSharePercent = (numNodes / TOTAL_NODES_IN_ECOSYSTEM) * 100;
+    const userLicenseSharePercent = (totalLicenses / TOTAL_LICENSES_IN_ECOSYSTEM) * 100;
+    const userRevenueSharePercent = ecosystemTotalMonthlyRevenue > 0
+        ? (totalMonthlyRevenue / ecosystemTotalMonthlyRevenue) * 100
+        : 0;
+
+    // 3. Total Market Capitalization Required
+    // How much total investment would be needed if all 6000 nodes were purchased
+    const ecosystemTotalInvestment = TOTAL_NODES_IN_ECOSYSTEM * nodePrice;
+    const userInvestmentSharePercent = (totalNodeCost / ecosystemTotalInvestment) * 100;
+
+    // 4. Global Break-Even Analysis
+    // Estimate when ALL operators collectively would break even
+    // Assumptions: 
+    // - Average operator runs 25% self, 50% leased, 25% inactive (like current defaults)
+    // - Average phone cost per active license
+    // - Average operating costs per license
+    const avgActiveLicensesPerNode = licensesPerNode * 0.75; // 75% active (25% self + 50% leased)
+    const avgSelfRunLicensesPerNode = licensesPerNode * 0.25;
+    const avgPhonesPerNode = avgSelfRunLicensesPerNode;
+    const avgPhoneCostPerNode = avgPhonesPerNode * phonePrice;
+    const avgInitialInvestmentPerNode = nodePrice + avgPhoneCostPerNode;
+    const ecosystemTotalInitialInvestment = TOTAL_NODES_IN_ECOSYSTEM * avgInitialInvestmentPerNode;
+
+    // Average monthly costs per node
+    const avgMonthlySimCostPerNode = avgSelfRunLicensesPerNode * simMonthly;
+    const avgMonthlyCreditCostPerNode = avgActiveLicensesPerNode * monthlyCredits; // Assume someone pays for all active
+    const avgMonthlyOperatingCostPerNode = avgMonthlySimCostPerNode + avgMonthlyCreditCostPerNode;
+    const ecosystemTotalMonthlyCosts = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyOperatingCostPerNode;
+
+    // Average monthly revenue per node
+    const avgSelfRunRevenuePerNode = avgSelfRunLicensesPerNode * revenuePerLicense;
+    const avgLeasedLicensesPerNode = licensesPerNode * 0.50;
+    const avgLeasedRevenuePerNode = avgLeasedLicensesPerNode * revenuePerLicense * 0.40; // 40% split like default
+    const avgMonthlyRevenuePerNode = avgSelfRunRevenuePerNode + avgLeasedRevenuePerNode;
+    const ecosystemTotalMonthlyRevenueRealistic = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyRevenuePerNode;
+
+    // Global break-even calculation
+    const ecosystemMonthlyNetProfit = ecosystemTotalMonthlyRevenueRealistic - ecosystemTotalMonthlyCosts;
+    const ecosystemBreakEvenMonths = ecosystemMonthlyNetProfit > 0
+        ? ecosystemTotalInitialInvestment / ecosystemMonthlyNetProfit
+        : Infinity;
+
+    // 5. Revenue Sustainability Analysis
+    // How many verification tasks are needed to support this revenue?
+    // Assumptions based on typical DePIN networks:
+    // - Each verification task pays a small amount (e.g., $0.001 - $0.01)
+    // - Licenses verify multiple tasks per day
+    const assumedRevenuePerVerification = 0.005; // $0.005 per verification (middle estimate)
+    const verificationsNeededPerLicensePerMonth = revenuePerLicense / assumedRevenuePerVerification;
+    const verificationsNeededPerLicensePerDay = verificationsNeededPerLicensePerMonth / 30;
+    const totalEcosystemVerificationsPerMonth = TOTAL_LICENSES_IN_ECOSYSTEM * verificationsNeededPerLicensePerMonth;
+    const totalEcosystemVerificationsPerDay = totalEcosystemVerificationsPerMonth / 30;
+
+    // 6. Competitive Landscape Comparisons
+    // Compare Unity Nodes revenue to similar DePIN networks
+    const competitiveNetworks = {
+        helium: { name: "Helium Mobile", revenuePerDevice: 30, description: "5G hotspot network" },
+        natix: { name: "NATIX Network", revenuePerDevice: 50, description: "AI camera network" },
+        hivemapper: { name: "Hivemapper", revenuePerDevice: 40, description: "Decentralized mapping" },
+        unity: { name: "Unity Nodes", revenuePerDevice: revenuePerLicense, description: "Current scenario" }
+    };
+
+    // Calculate how Unity compares (as a multiplier)
+    const unityVsHelium = revenuePerLicense / competitiveNetworks.helium.revenuePerDevice;
+    const unityVsNatix = revenuePerLicense / competitiveNetworks.natix.revenuePerDevice;
+    const unityVsHivemapper = revenuePerLicense / competitiveNetworks.hivemapper.revenuePerDevice;
+
+    // 7. Reality Check Warning Flags
+    // Automatically detect potentially unrealistic scenarios
+    const realityWarnings = [];
+
+    if (userRevenueSharePercent > 1) {
+        realityWarnings.push({
+            level: 'warning',
+            message: `You control ${formatNumber(userRevenueSharePercent, 2)}% of total ecosystem revenue`,
+            detail: 'Significant market concentration - requires large capital investment'
+        });
+    }
+
+    if (ecosystemTotalInvestment > 100000000) {
+        realityWarnings.push({
+            level: 'caution',
+            message: `Total market cap: $${formatNumber(ecosystemTotalInvestment / 1000000, 0)}M`,
+            detail: 'Requires substantial ecosystem-wide investment to reach full capacity'
+        });
+    }
+
+    if (revenuePerLicense > 3000) {
+        realityWarnings.push({
+            level: 'alert',
+            message: `Revenue per license: $${formatNumber(revenuePerLicense, 0)}/month`,
+            detail: 'Very high revenue per license - verify market scenario assumptions'
+        });
+    }
+
+    if (breakEvenMonths > 24) {
+        realityWarnings.push({
+            level: 'info',
+            message: `Break-even: ${formatNumber(breakEvenMonths, 1)} months`,
+            detail: 'Long-term investment horizon - consider cash flow requirements'
+        });
+    }
+
+    if (verificationsNeededPerLicensePerDay > 10000) {
+        realityWarnings.push({
+            level: 'alert',
+            message: `Requires ${formatNumber(verificationsNeededPerLicensePerDay, 0)} verifications/day per license`,
+            detail: 'Very high verification volume needed - verify network capacity'
+        });
+    }
+
+    if (unityVsHelium > 5) {
+        realityWarnings.push({
+            level: 'caution',
+            message: `Revenue is ${formatNumber(unityVsHelium, 1)}x higher than Helium Mobile`,
+            detail: 'Significantly higher than established DePIN networks'
+        });
+    }
 
     // Validation
     const totalLicensesAllocated = licensesRunBySelf + licensesLeased + licensesInactive;
@@ -777,6 +918,344 @@ export default function UnityNodesROICalculator() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Reality Check Section */}
+                    <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 backdrop-blur-lg rounded-xl p-6 border border-orange-500/30 mb-6">
+                        <div
+                            className="flex items-center gap-2 mb-4 cursor-pointer"
+                            onClick={() => setRealityCheckExpanded(!realityCheckExpanded)}
+                        >
+                            <AlertTriangle className="text-orange-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">Reality Check: Ecosystem Analysis</h2>
+                            <button className="ml-auto text-orange-300 hover:text-orange-200 transition-colors">
+                                {realityCheckExpanded ? '▼' : '▶'}
+                            </button>
+                        </div>
+
+                        {realityCheckExpanded && (
+                            <>
+                                <div className="mb-4 p-4 bg-orange-500/10 border border-orange-500/30 rounded-lg">
+                                    <p className="text-orange-200 text-sm">
+                                        <strong>Financial Guru Insight:</strong> This section analyzes the entire Unity Nodes ecosystem
+                                        to provide context for your investment. We're looking at all 6,000 nodes and {formatNumber(TOTAL_LICENSES_IN_ECOSYSTEM / 1000000, 2)}M
+                                        licenses to see if the numbers make sense at scale.
+                                    </p>
+                                </div>
+
+                                {/* Warning Flags */}
+                                {realityWarnings.length > 0 && (
+                                    <div className="mb-6">
+                                        <h3 className="text-orange-300 font-semibold mb-3 flex items-center gap-2">
+                                            <AlertTriangle size={18} />
+                                            Reality Flags
+                                        </h3>
+                                        <div className="space-y-2">
+                                            {realityWarnings.map((warning, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className={`p-3 rounded-lg border ${warning.level === 'alert' ? 'bg-red-500/10 border-red-500/30' :
+                                                        warning.level === 'warning' ? 'bg-yellow-500/10 border-yellow-500/30' :
+                                                            warning.level === 'caution' ? 'bg-orange-500/10 border-orange-500/30' :
+                                                                'bg-blue-500/10 border-blue-500/30'
+                                                        }`}
+                                                >
+                                                    <div className={`font-semibold text-sm ${warning.level === 'alert' ? 'text-red-300' :
+                                                        warning.level === 'warning' ? 'text-yellow-300' :
+                                                            warning.level === 'caution' ? 'text-orange-300' :
+                                                                'text-blue-300'
+                                                        }`}>
+                                                        {warning.message}
+                                                    </div>
+                                                    <div className={`text-xs mt-1 ${warning.level === 'alert' ? 'text-red-200' :
+                                                        warning.level === 'warning' ? 'text-yellow-200' :
+                                                            warning.level === 'caution' ? 'text-orange-200' :
+                                                                'text-blue-200'
+                                                        }`}>
+                                                        {warning.detail}
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Two-Column Layout: Ecosystem vs Your Position */}
+                                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                                    {/* Left Column: Ecosystem Totals */}
+                                    <div className="space-y-4">
+                                        <h3 className="text-purple-300 font-semibold text-lg flex items-center gap-2">
+                                            <Globe size={20} />
+                                            Ecosystem Totals
+                                        </h3>
+
+                                        {/* Total Nodes */}
+                                        <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                            <div className="text-purple-300 text-xs mb-1">Total Nodes Available</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(TOTAL_NODES_IN_ECOSYSTEM, 0)}
+                                            </div>
+                                            <div className="text-purple-200 text-xs mt-1">Maximum network capacity</div>
+                                        </div>
+
+                                        {/* Total Licenses */}
+                                        <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                            <div className="text-purple-300 text-xs mb-1">Total Licenses</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(TOTAL_LICENSES_IN_ECOSYSTEM, 0)}
+                                            </div>
+                                            <div className="text-purple-200 text-xs mt-1">
+                                                {formatNumber(TOTAL_LICENSES_IN_ECOSYSTEM / 1000000, 2)}M licenses @ {licensesPerNode} per node
+                                            </div>
+                                        </div>
+
+                                        {/* Total Market Revenue Potential */}
+                                        <div className="bg-white/5 border border-green-400/30 rounded-lg p-4">
+                                            <div className="text-green-300 text-xs mb-1">
+                                                Total Market Revenue ({marketScenarios[marketShareScenario]?.label || 'Custom'})
+                                            </div>
+                                            <div className="text-white text-2xl font-bold">
+                                                ${formatNumber(ecosystemTotalMonthlyRevenue / 1000000, 1)}M/mo
+                                            </div>
+                                            <div className="text-green-200 text-xs mt-1">
+                                                ${formatNumber(ecosystemTotalAnnualRevenue / 1000000, 1)}M annually
+                                            </div>
+                                        </div>
+
+                                        {/* Total Market Cap */}
+                                        <div className={`border rounded-lg p-4 ${ecosystemTotalInvestment > 100000000
+                                            ? 'bg-orange-500/10 border-orange-400/30'
+                                            : 'bg-white/5 border-blue-400/30'
+                                            }`}>
+                                            <div className={`text-xs mb-1 ${ecosystemTotalInvestment > 100000000 ? 'text-orange-300' : 'text-blue-300'
+                                                }`}>
+                                                Total Investment Required (Nodes Only)
+                                            </div>
+                                            <div className="text-white text-2xl font-bold">
+                                                ${formatNumber(ecosystemTotalInvestment / 1000000, 0)}M
+                                            </div>
+                                            <div className={`text-xs mt-1 ${ecosystemTotalInvestment > 100000000 ? 'text-orange-200' : 'text-blue-200'
+                                                }`}>
+                                                6,000 nodes × $5,000 each
+                                            </div>
+                                        </div>
+
+                                        {/* Global Break-Even */}
+                                        <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                            <div className="text-purple-300 text-xs mb-1">Ecosystem Break-Even Timeline</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {ecosystemBreakEvenMonths < 100
+                                                    ? `${formatNumber(ecosystemBreakEvenMonths, 1)} months`
+                                                    : 'Not profitable'
+                                                }
+                                            </div>
+                                            <div className="text-purple-200 text-xs mt-1">
+                                                When all 6,000 operators collectively break even
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Right Column: Your Position */}
+                                    <div className="space-y-4">
+                                        <h3 className="text-green-300 font-semibold text-lg flex items-center gap-2">
+                                            <Users size={20} />
+                                            Your Position
+                                        </h3>
+
+                                        {/* Your Node Share */}
+                                        <div className={`border rounded-lg p-4 ${userNodeSharePercent > 5
+                                            ? 'bg-yellow-500/10 border-yellow-400/30'
+                                            : 'bg-white/5 border-green-400/30'
+                                            }`}>
+                                            <div className={`text-xs mb-1 ${userNodeSharePercent > 5 ? 'text-yellow-300' : 'text-green-300'
+                                                }`}>
+                                                Your Node Share
+                                            </div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(userNodeSharePercent, 2)}%
+                                            </div>
+                                            <div className={`text-xs mt-1 ${userNodeSharePercent > 5 ? 'text-yellow-200' : 'text-green-200'
+                                                }`}>
+                                                {numNodes} of {formatNumber(TOTAL_NODES_IN_ECOSYSTEM, 0)} nodes
+                                            </div>
+                                            {/* Progress bar */}
+                                            <div className="mt-2 w-full bg-gray-700 rounded-full h-2">
+                                                <div
+                                                    className={`h-2 rounded-full ${userNodeSharePercent > 5 ? 'bg-yellow-500' : 'bg-green-500'
+                                                        }`}
+                                                    style={{ width: `${Math.min(userNodeSharePercent, 100)}%` }}
+                                                ></div>
+                                            </div>
+                                        </div>
+
+                                        {/* Your License Share */}
+                                        <div className="bg-white/5 border border-green-400/30 rounded-lg p-4">
+                                            <div className="text-green-300 text-xs mb-1">Your License Share</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(userLicenseSharePercent, 2)}%
+                                            </div>
+                                            <div className="text-green-200 text-xs mt-1">
+                                                {formatNumber(totalLicenses, 0)} of {formatNumber(TOTAL_LICENSES_IN_ECOSYSTEM, 0)} licenses
+                                            </div>
+                                            {/* Progress bar */}
+                                            <div className="mt-2 w-full bg-gray-700 rounded-full h-2">
+                                                <div
+                                                    className="bg-green-500 h-2 rounded-full"
+                                                    style={{ width: `${Math.min(userLicenseSharePercent, 100)}%` }}
+                                                ></div>
+                                            </div>
+                                        </div>
+
+                                        {/* Your Revenue Share */}
+                                        <div className={`border rounded-lg p-4 ${userRevenueSharePercent > 1
+                                            ? 'bg-orange-500/10 border-orange-400/30'
+                                            : 'bg-white/5 border-green-400/30'
+                                            }`}>
+                                            <div className={`text-xs mb-1 ${userRevenueSharePercent > 1 ? 'text-orange-300' : 'text-green-300'
+                                                }`}>
+                                                Your Revenue vs. Total Market
+                                            </div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(userRevenueSharePercent, 2)}%
+                                            </div>
+                                            <div className={`text-xs mt-1 ${userRevenueSharePercent > 1 ? 'text-orange-200' : 'text-green-200'
+                                                }`}>
+                                                ${formatNumber(totalMonthlyRevenue, 0)} of ${formatNumber(ecosystemTotalMonthlyRevenue / 1000000, 1)}M
+                                            </div>
+                                        </div>
+
+                                        {/* Your Investment Share */}
+                                        <div className="bg-white/5 border border-blue-400/30 rounded-lg p-4">
+                                            <div className="text-blue-300 text-xs mb-1">Your Investment Share</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(userInvestmentSharePercent, 2)}%
+                                            </div>
+                                            <div className="text-blue-200 text-xs mt-1">
+                                                ${formatNumber(totalNodeCost, 0)} of ${formatNumber(ecosystemTotalInvestment / 1000000, 0)}M
+                                            </div>
+                                        </div>
+
+                                        {/* Comparison: Your vs Global Break-Even */}
+                                        <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                            <div className="text-purple-300 text-xs mb-1">Your Break-Even vs. Ecosystem</div>
+                                            <div className="grid grid-cols-2 gap-4 mt-2">
+                                                <div>
+                                                    <div className="text-white text-lg font-bold">
+                                                        {breakEvenMonths < 100
+                                                            ? `${formatNumber(breakEvenMonths, 1)}mo`
+                                                            : 'N/A'
+                                                        }
+                                                    </div>
+                                                    <div className="text-purple-200 text-xs">You</div>
+                                                </div>
+                                                <div>
+                                                    <div className="text-white text-lg font-bold">
+                                                        {ecosystemBreakEvenMonths < 100
+                                                            ? `${formatNumber(ecosystemBreakEvenMonths, 1)}mo`
+                                                            : 'N/A'
+                                                        }
+                                                    </div>
+                                                    <div className="text-purple-200 text-xs">Ecosystem Avg</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Revenue Sustainability Analysis */}
+                                <div className="mb-6">
+                                    <h3 className="text-blue-300 font-semibold mb-3 flex items-center gap-2">
+                                        <BarChart3 size={18} />
+                                        Revenue Sustainability Analysis
+                                    </h3>
+                                    <div className="grid md:grid-cols-3 gap-4">
+                                        <div className="bg-white/5 border border-blue-400/30 rounded-lg p-4">
+                                            <div className="text-blue-300 text-xs mb-1">Verifications Per License/Day</div>
+                                            <div className={`text-2xl font-bold ${verificationsNeededPerLicensePerDay > 10000 ? 'text-orange-400' : 'text-white'
+                                                }`}>
+                                                {formatNumber(verificationsNeededPerLicensePerDay, 0)}
+                                            </div>
+                                            <div className="text-blue-200 text-xs mt-1">
+                                                @ ${assumedRevenuePerVerification.toFixed(3)}/verification
+                                            </div>
+                                        </div>
+
+                                        <div className="bg-white/5 border border-blue-400/30 rounded-lg p-4">
+                                            <div className="text-blue-300 text-xs mb-1">Ecosystem Daily Verifications</div>
+                                            <div className="text-white text-2xl font-bold">
+                                                {formatNumber(totalEcosystemVerificationsPerDay / 1000000, 1)}M
+                                            </div>
+                                            <div className="text-blue-200 text-xs mt-1">
+                                                {formatNumber(totalEcosystemVerificationsPerMonth / 1000000, 0)}M monthly
+                                            </div>
+                                        </div>
+
+                                        <div className={`border rounded-lg p-4 ${verificationsNeededPerLicensePerDay > 10000
+                                            ? 'bg-orange-500/10 border-orange-400/30'
+                                            : 'bg-green-500/10 border-green-400/30'
+                                            }`}>
+                                            <div className={`text-xs mb-1 ${verificationsNeededPerLicensePerDay > 10000 ? 'text-orange-300' : 'text-green-300'
+                                                }`}>
+                                                Network Capacity Check
+                                            </div>
+                                            <div className={`text-lg font-bold ${verificationsNeededPerLicensePerDay > 10000 ? 'text-orange-400' : 'text-green-400'
+                                                }`}>
+                                                {verificationsNeededPerLicensePerDay > 10000 ? '⚠️ High' : '✓ Reasonable'}
+                                            </div>
+                                            <div className={`text-xs mt-1 ${verificationsNeededPerLicensePerDay > 10000 ? 'text-orange-200' : 'text-green-200'
+                                                }`}>
+                                                {verificationsNeededPerLicensePerDay > 10000
+                                                    ? 'Very high verification volume needed'
+                                                    : 'Achievable verification volume'
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Competitive Landscape */}
+                                <div>
+                                    <h3 className="text-purple-300 font-semibold mb-3 flex items-center gap-2">
+                                        <TrendingUp size={18} />
+                                        Competitive Landscape Comparison
+                                    </h3>
+                                    <div className="grid md:grid-cols-4 gap-4">
+                                        {Object.entries(competitiveNetworks).map(([key, network]) => (
+                                            <div
+                                                key={key}
+                                                className={`border rounded-lg p-4 ${key === 'unity'
+                                                    ? 'bg-purple-500/20 border-purple-400/50'
+                                                    : 'bg-white/5 border-gray-400/30'
+                                                    }`}
+                                            >
+                                                <div className={`text-xs mb-1 ${key === 'unity' ? 'text-purple-300' : 'text-gray-300'
+                                                    }`}>
+                                                    {network.name}
+                                                </div>
+                                                <div className="text-white text-xl font-bold">
+                                                    ${formatNumber(network.revenuePerDevice, 0)}/mo
+                                                </div>
+                                                <div className={`text-xs mt-1 ${key === 'unity' ? 'text-purple-200' : 'text-gray-400'
+                                                    }`}>
+                                                    {network.description}
+                                                </div>
+                                                {key !== 'unity' && (
+                                                    <div className="text-xs mt-2 text-blue-300">
+                                                        Unity is {formatNumber(network.revenuePerDevice > 0 ? revenuePerLicense / network.revenuePerDevice : 0, 1)}x
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                        <p className="text-blue-200 text-sm">
+                                            <strong>Note:</strong> Competitive data represents typical monthly earnings for similar DePIN (Decentralized Physical Infrastructure)
+                                            networks. Higher multiples may indicate optimistic projections or unique value propositions that should be validated.
+                                        </p>
+                                    </div>
+                                </div>
+                            </>
+                        )}
                     </div>
 
                     {/* License Distribution */}
