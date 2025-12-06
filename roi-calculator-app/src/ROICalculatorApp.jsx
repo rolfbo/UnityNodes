@@ -421,12 +421,22 @@ export default function UnityNodesROICalculator() {
     const ecosystemTotalMonthlyRevenue = TOTAL_LICENSES_IN_ECOSYSTEM * revenuePerLicense;
     const ecosystemTotalAnnualRevenue = ecosystemTotalMonthlyRevenue * 12;
 
+    // 1b. Calculate realistic ecosystem revenue (used for break-even and comparisons)
+    // Assumes average operator runs 25% self, 50% leased, 25% inactive
+    const avgSelfRunLicensesPerNode = licensesPerNode * 0.25;
+    const avgLeasedLicensesPerNode = licensesPerNode * 0.50;
+    const avgSelfRunRevenuePerNode = avgSelfRunLicensesPerNode * revenuePerLicense;
+    const avgLeasedRevenuePerNode = avgLeasedLicensesPerNode * revenuePerLicense * 0.40; // 40% split
+    const avgMonthlyRevenuePerNode = avgSelfRunRevenuePerNode + avgLeasedRevenuePerNode;
+    const ecosystemTotalMonthlyRevenueRealistic = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyRevenuePerNode;
+
     // 2. User's Market Share
     // Calculate what percentage of the total ecosystem this user represents
     const userNodeSharePercent = (numNodes / TOTAL_NODES_IN_ECOSYSTEM) * 100;
     const userLicenseSharePercent = (totalLicenses / TOTAL_LICENSES_IN_ECOSYSTEM) * 100;
-    const userRevenueSharePercent = ecosystemTotalMonthlyRevenue > 0
-        ? (totalMonthlyRevenue / ecosystemTotalMonthlyRevenue) * 100
+    // Compare user's actual revenue to ecosystem's realistic revenue (both use actual distributions)
+    const userRevenueSharePercent = ecosystemTotalMonthlyRevenueRealistic > 0
+        ? (totalMonthlyRevenue / ecosystemTotalMonthlyRevenueRealistic) * 100
         : 0;
 
     // 3. Total Market Capitalization Required
@@ -453,14 +463,7 @@ export default function UnityNodesROICalculator() {
     const avgMonthlyOperatingCostPerNode = avgMonthlySimCostPerNode + avgMonthlyCreditCostPerNode;
     const ecosystemTotalMonthlyCosts = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyOperatingCostPerNode;
 
-    // Average monthly revenue per node
-    const avgSelfRunRevenuePerNode = avgSelfRunLicensesPerNode * revenuePerLicense;
-    const avgLeasedLicensesPerNode = licensesPerNode * 0.50;
-    const avgLeasedRevenuePerNode = avgLeasedLicensesPerNode * revenuePerLicense * 0.40; // 40% split like default
-    const avgMonthlyRevenuePerNode = avgSelfRunRevenuePerNode + avgLeasedRevenuePerNode;
-    const ecosystemTotalMonthlyRevenueRealistic = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyRevenuePerNode;
-
-    // Global break-even calculation
+    // Global break-even calculation (uses ecosystemTotalMonthlyRevenueRealistic calculated above)
     const ecosystemMonthlyNetProfit = ecosystemTotalMonthlyRevenueRealistic - ecosystemTotalMonthlyCosts;
     const ecosystemBreakEvenMonths = ecosystemMonthlyNetProfit > 0
         ? ecosystemTotalInitialInvestment / ecosystemMonthlyNetProfit
@@ -1012,13 +1015,19 @@ export default function UnityNodesROICalculator() {
                                         {/* Total Market Revenue Potential */}
                                         <div className="bg-white/5 border border-green-400/30 rounded-lg p-4">
                                             <div className="text-green-300 text-xs mb-1">
-                                                Total Market Revenue ({marketScenarios[marketShareScenario]?.label || 'Custom'})
+                                                Ecosystem Revenue (Realistic)
                                             </div>
                                             <div className="text-white text-2xl font-bold">
-                                                ${formatNumber(ecosystemTotalMonthlyRevenue / 1000000, 1)}M/mo
+                                                ${formatNumber(ecosystemTotalMonthlyRevenueRealistic / 1000000, 1)}M/mo
                                             </div>
                                             <div className="text-green-200 text-xs mt-1">
-                                                ${formatNumber(ecosystemTotalAnnualRevenue / 1000000, 1)}M annually
+                                                ${formatNumber(ecosystemTotalMonthlyRevenueRealistic * 12 / 1000000, 1)}M annually
+                                            </div>
+                                            <div className="text-green-300 text-xs mt-2 opacity-70">
+                                                Theoretical max: ${formatNumber(ecosystemTotalMonthlyRevenue / 1000000, 1)}M/mo
+                                            </div>
+                                            <div className="text-green-200 text-xs opacity-60">
+                                                Assumes avg 25% self-run, 50% leased, 25% inactive
                                             </div>
                                         </div>
 
@@ -1051,6 +1060,9 @@ export default function UnityNodesROICalculator() {
                                             </div>
                                             <div className="text-purple-200 text-xs mt-1">
                                                 When all 6,000 operators collectively break even
+                                            </div>
+                                            <div className="text-purple-200 text-xs mt-1 opacity-60">
+                                                Based on realistic revenue distribution above
                                             </div>
                                         </div>
                                     </div>
@@ -1113,14 +1125,14 @@ export default function UnityNodesROICalculator() {
                                             }`}>
                                             <div className={`text-xs mb-1 ${userRevenueSharePercent > 1 ? 'text-orange-300' : 'text-green-300'
                                                 }`}>
-                                                Your Revenue vs. Total Market
+                                                Your Revenue vs. Ecosystem (Realistic)
                                             </div>
                                             <div className="text-white text-2xl font-bold">
                                                 {formatNumber(userRevenueSharePercent, 2)}%
                                             </div>
                                             <div className={`text-xs mt-1 ${userRevenueSharePercent > 1 ? 'text-orange-200' : 'text-green-200'
                                                 }`}>
-                                                ${formatNumber(totalMonthlyRevenue, 0)} of ${formatNumber(ecosystemTotalMonthlyRevenue / 1000000, 1)}M
+                                                ${formatNumber(totalMonthlyRevenue, 0)} of ${formatNumber(ecosystemTotalMonthlyRevenueRealistic / 1000000, 1)}M
                                             </div>
                                         </div>
 
