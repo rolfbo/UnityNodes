@@ -1,15 +1,46 @@
 # Dependencies
 **/node_modules
+node_modules/
+
+# Development notes (not for public repo)
+dev-notes/
 
 # Build
 **/dist
 **/build
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
 
 # System
 .DS_Store
-.env
+Thumbs.db
+*.swp
+*.swo
+*~
 
 # IDE
 .cursor
 .idea
 .vscode
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# OS generated
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db

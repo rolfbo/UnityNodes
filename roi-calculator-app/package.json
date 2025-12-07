@@ -1,6 +1,7 @@
 {
-  "name": "roi-calculator-app",
-  "version": "1.0.0",
+  "name": "unity-nodes-roi-calculator",
+  "version": "2.0.0",
+  "description": "Comprehensive ROI Calculator and Earnings Tracker for Unity Nodes operators",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -8,10 +9,25 @@
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "unity-nodes",
+    "roi-calculator",
+    "earnings-tracker",
+    "depin",
+    "cryptocurrency",
+    "investment-analysis",
+    "react"
+  ],
+  "author": "Unity Nodes ROI Calculator Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/UnityNodes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/UnityNodes/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/UnityNodes#readme",
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.16",
     "@vitejs/plugin-react": "^4.7.0",
