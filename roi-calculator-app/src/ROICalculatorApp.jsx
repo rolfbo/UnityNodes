@@ -451,7 +451,7 @@ export default function UnityNodesROICalculator() {
     // - Average phone cost per active license
     // - Average operating costs per license
     const avgActiveLicensesPerNode = licensesPerNode * 0.75; // 75% active (25% self + 50% leased)
-    const avgSelfRunLicensesPerNode = licensesPerNode * 0.25;
+    // avgSelfRunLicensesPerNode already declared at line 426, reusing it here
     const avgPhonesPerNode = avgSelfRunLicensesPerNode;
     const avgPhoneCostPerNode = avgPhonesPerNode * phonePrice;
     const avgInitialInvestmentPerNode = nodePrice + avgPhoneCostPerNode;
