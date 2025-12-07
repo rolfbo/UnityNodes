@@ -79,11 +79,22 @@ Users can map each node ID to its license type:
 
 The dashboard provides comprehensive visualization of earnings data:
 
+#### Data Filtering
+The dashboard can show either:
+- **All earnings data** (default view)
+- **Selected earnings only** (when using Data Table selection)
+
+When filtered by selection, a blue banner appears showing:
+- Number of selected earnings displayed
+- "Clear Filter" button to return to all data
+
+All metrics and charts automatically update to reflect the current view (all data or selected data).
+
 #### Key Metrics Cards
-- **Total Earnings**: All-time cumulative earnings
-- **This Month**: Current month's earnings
-- **Average Daily**: Average earnings per active day
-- **Active Nodes**: Count of unique node IDs
+- **Total Earnings**: All-time cumulative earnings (or total of selection)
+- **This Month**: Current month's earnings (or from selection)
+- **Average Daily**: Average earnings per active day (calculated from selection if filtered)
+- **Active Nodes**: Count of unique node IDs (in all data or selection)
 
 #### Charts
 1. **Cumulative Earnings Over Time**
@@ -110,22 +121,43 @@ The dashboard provides comprehensive visualization of earnings data:
 A comprehensive table view with:
 
 #### Features
+- **Selection**: 
+  - Checkboxes to select individual or multiple earnings
+  - "Select All" to select all filtered earnings
+  - "Clear Selection" to deselect all
+  - "Use in Dashboard" to filter dashboard by selection
 - **Sortable columns**: Click headers to sort by date, node ID, license type, or amount
 - **Filtering**: 
   - By license type
-  - By date range (start and end dates)
+  - By date range with enhanced date pickers:
+    - Calendar icons for visual clarity
+    - Native browser date picker support
+    - Quick date range shortcuts (Last 7/14/30 Days, This/Last Month)
+    - One-click date range selection
   - By search query (node ID, amount)
 - **Inline editing**: Edit individual entries directly in the table
 - **Delete**: Remove individual entries
 - **Summary row**: Shows totals for filtered results
 
 #### Columns
+- Selection (Checkbox)
 - Date
 - Node ID
 - License Type
 - Amount ($)
 - Status
 - Actions (Edit, Delete)
+
+#### Selection to Dashboard Feature
+The Data Table allows you to select specific earnings and apply that selection to the Dashboard:
+1. Use checkboxes to select earnings (individually or "Select All")
+2. Click "Use in Dashboard" button
+3. Dashboard automatically filters to show only selected data
+4. All metrics and charts update to reflect selection
+5. Blue banner appears indicating filter is active
+6. Click "Clear Filter" to return to viewing all data
+
+For detailed documentation on this feature, see [Data Table to Dashboard Selection](./data-table-to-dashboard-selection.md).
 
 ### 6. Export Functionality
 
@@ -342,6 +374,23 @@ For issues or questions:
 5. Clear localStorage and start fresh if needed
 
 ## Version History
+
+### v1.2 (December 2025)
+- Enhanced date picker inputs with calendar icons
+- Added visual feedback (hover, focus states)
+- Quick date range shortcuts:
+  - Last 7/14/30 Days
+  - This Month / Last Month
+  - Clear Dates button
+- Improved date input accessibility and UX
+
+### v1.1 (December 2025)
+- Added Data Table selection feature
+- Checkbox-based selection of individual or multiple earnings
+- "Use in Dashboard" functionality to filter dashboard by selection
+- Dashboard filter indicator banner
+- Select All / Clear Selection controls
+- Integration with existing filters and sorting
 
 ### v1.0 (December 2025)
 - Initial release

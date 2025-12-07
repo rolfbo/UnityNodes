@@ -121,6 +121,11 @@ export default function EarningsTrackerApp() {
     const [showExampleFormat, setShowExampleFormat] = useState(false);
     const [activeView, setActiveView] = useState('dashboard'); // 'dashboard', 'table', 'input'
 
+    // Selection state - tracks which earnings are selected in the Data Table
+    const [selectedEarningIds, setSelectedEarningIds] = useState(new Set());
+    // Dashboard filter state - determines if dashboard should use selected data
+    const [useDashboardSelection, setUseDashboardSelection] = useState(false);
+
     // Load data on mount
     useEffect(() => {
         setEarnings(loadEarnings());
@@ -168,6 +173,42 @@ export default function EarningsTrackerApp() {
         updateNodeMapping(nodeId, licenseType);
         setNodeMapping(getNodeMapping());
         setEarnings(loadEarnings()); // Reload to reflect updated license types
+    };
+
+    /**
+     * Quick date range selection helpers
+     */
+    const handleQuickDateRange = (days) => {
+        const end = new Date();
+        const start = new Date();
+        start.setDate(end.getDate() - days);
+
+        setFilterDateRange({
+            start: start.toISOString().split('T')[0],
+            end: end.toISOString().split('T')[0]
+        });
+    };
+
+    const handleThisMonth = () => {
+        const now = new Date();
+        const start = new Date(now.getFullYear(), now.getMonth(), 1);
+        const end = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+
+        setFilterDateRange({
+            start: start.toISOString().split('T')[0],
+            end: end.toISOString().split('T')[0]
+        });
+    };
+
+    const handleLastMonth = () => {
+        const now = new Date();
+        const start = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+        const end = new Date(now.getFullYear(), now.getMonth(), 0);
+
+        setFilterDateRange({
+            start: start.toISOString().split('T')[0],
+            end: end.toISOString().split('T')[0]
+        });
     };
 
     /**
@@ -283,7 +324,52 @@ export default function EarningsTrackerApp() {
     };
 
     /**
-     * Get filtered and sorted earnings
+     * Handle selection of individual earnings
+     */
+    const handleToggleSelection = (earningId) => {
+        const newSelection = new Set(selectedEarningIds);
+        if (newSelection.has(earningId)) {
+            newSelection.delete(earningId);
+        } else {
+            newSelection.add(earningId);
+        }
+        setSelectedEarningIds(newSelection);
+    };
+
+    /**
+     * Handle selecting all filtered earnings
+     */
+    const handleSelectAll = () => {
+        const allIds = new Set(filteredEarnings.map(e => e.id));
+        setSelectedEarningIds(allIds);
+    };
+
+    /**
+     * Handle clearing all selections
+     */
+    const handleClearSelection = () => {
+        setSelectedEarningIds(new Set());
+    };
+
+    /**
+     * Handle applying selection to dashboard
+     */
+    const handleApplySelectionToDashboard = () => {
+        if (selectedEarningIds.size > 0) {
+            setUseDashboardSelection(true);
+            setActiveView('dashboard');
+        }
+    };
+
+    /**
+     * Handle clearing dashboard filter
+     */
+    const handleClearDashboardFilter = () => {
+        setUseDashboardSelection(false);
+    };
+
+    /**
+     * Get filtered and sorted earnings (for Data Table view)
      */
     const filteredEarnings = useMemo(() => {
         let filtered = [...earnings];
@@ -332,6 +418,18 @@ export default function EarningsTrackerApp() {
     }, [earnings, filterLicenseType, filterDateRange, searchQuery, sortField, sortDirection]);
 
     /**
+     * Get earnings data for dashboard (respects selection if enabled)
+     */
+    const dashboardEarnings = useMemo(() => {
+        if (useDashboardSelection && selectedEarningIds.size > 0) {
+            // Filter to show only selected earnings
+            return earnings.filter(e => selectedEarningIds.has(e.id));
+        }
+        // Show all earnings
+        return earnings;
+    }, [earnings, useDashboardSelection, selectedEarningIds]);
+
+    /**
      * Get unique license types for filter dropdown
      */
     const licenseTypes = useMemo(() => {
@@ -347,18 +445,46 @@ export default function EarningsTrackerApp() {
     }, [earnings]);
 
     /**
-     * Calculate statistics
+     * Calculate statistics (uses dashboardEarnings if selection is active)
      */
     const stats = useMemo(() => {
+        // If dashboard is using selected data, calculate stats from selected earnings only
+        if (useDashboardSelection && selectedEarningIds.size > 0) {
+            // Temporarily save selected earnings and calculate stats
+            const selectedEarnings = earnings.filter(e => selectedEarningIds.has(e.id));
+
+            // Calculate stats manually for selected data
+            const total = selectedEarnings.reduce((sum, e) => sum + e.amount, 0);
+            const count = selectedEarnings.length;
+            const average = count > 0 ? total / count : 0;
+            const uniqueNodes = new Set(selectedEarnings.map(e => e.nodeId)).size;
+
+            const byLicenseType = {};
+            selectedEarnings.forEach(e => {
+                const type = e.licenseType || 'Unknown';
+                if (!byLicenseType[type]) {
+                    byLicenseType[type] = { total: 0, count: 0 };
+                }
+                byLicenseType[type].total += e.amount;
+                byLicenseType[type].count += 1;
+            });
+
+            return { total, count, average, uniqueNodes, byLicenseType };
+        }
+
+        // Otherwise use all earnings
         return getEarningsStats();
-    }, [earnings]);
+    }, [earnings, useDashboardSelection, selectedEarningIds]);
 
     /**
-     * Prepare data for charts
+     * Prepare data for charts (uses dashboardEarnings if selection is active)
      */
     const chartData = useMemo(() => {
+        // Use dashboardEarnings for chart calculations
+        const earningsToUse = dashboardEarnings;
+
         // Cumulative earnings over time
-        const sortedEarnings = [...earnings].sort((a, b) =>
+        const sortedEarnings = [...earningsToUse].sort((a, b) =>
             new Date(a.date) - new Date(b.date)
         );
 
@@ -373,7 +499,7 @@ export default function EarningsTrackerApp() {
 
         // Group by date for daily earnings
         const dailyMap = {};
-        earnings.forEach(e => {
+        earningsToUse.forEach(e => {
             if (!dailyMap[e.date]) {
                 dailyMap[e.date] = 0;
             }
@@ -391,31 +517,31 @@ export default function EarningsTrackerApp() {
         }));
 
         return { cumulativeData, dailyData, pieData };
-    }, [earnings, stats]);
+    }, [dashboardEarnings, stats]);
 
     /**
-     * Calculate this month's earnings
+     * Calculate this month's earnings (uses dashboardEarnings if selection is active)
      */
     const thisMonthEarnings = useMemo(() => {
         const now = new Date();
         const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
 
-        return earnings
+        return dashboardEarnings
             .filter(e => e.date.startsWith(thisMonth))
             .reduce((sum, e) => sum + e.amount, 0);
-    }, [earnings]);
+    }, [dashboardEarnings]);
 
     /**
-     * Calculate average daily earnings
+     * Calculate average daily earnings (uses dashboardEarnings if selection is active)
      */
     const avgDailyEarnings = useMemo(() => {
-        if (earnings.length === 0) return 0;
+        if (dashboardEarnings.length === 0) return 0;
 
-        const dates = new Set(earnings.map(e => e.date));
+        const dates = new Set(dashboardEarnings.map(e => e.date));
         const totalDays = dates.size;
 
         return totalDays > 0 ? stats.total / totalDays : 0;
-    }, [earnings, stats]);
+    }, [dashboardEarnings, stats]);
 
     // Color palette for charts
     const COLORS = ['#a78bfa', '#818cf8', '#60a5fa', '#34d399', '#fbbf24', '#fb923c', '#f87171'];
@@ -476,6 +602,32 @@ export default function EarningsTrackerApp() {
                 {/* Dashboard View */}
                 {activeView === 'dashboard' && (
                     <div className="space-y-6">
+                        {/* Dashboard Filter Indicator */}
+                        {useDashboardSelection && selectedEarningIds.size > 0 && (
+                            <div className="bg-blue-900/30 backdrop-blur-sm border border-blue-400/30 rounded-xl p-4">
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center gap-3">
+                                        <Info className="text-blue-400" size={20} />
+                                        <div>
+                                            <h3 className="font-semibold text-blue-200">
+                                                Dashboard Filtered by Selection
+                                            </h3>
+                                            <p className="text-sm text-blue-300">
+                                                Showing {selectedEarningIds.size} selected earning{selectedEarningIds.size !== 1 ? 's' : ''} from Data Table
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        onClick={handleClearDashboardFilter}
+                                        className="flex items-center gap-2 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 px-4 py-2 rounded-lg transition-colors border border-blue-400/30"
+                                    >
+                                        <X size={18} />
+                                        Clear Filter
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
                         {/* Key Metrics Cards */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                             {/* Total Earnings */}
@@ -536,7 +688,7 @@ export default function EarningsTrackerApp() {
                         </div>
 
                         {/* Charts */}
-                        {earnings.length > 0 ? (
+                        {dashboardEarnings.length > 0 ? (
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 {/* Cumulative Earnings Chart */}
                                 <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
@@ -684,7 +836,7 @@ export default function EarningsTrackerApp() {
                         )}
 
                         {/* Export Buttons */}
-                        {earnings.length > 0 && (
+                        {dashboardEarnings.length > 0 && (
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <h3 className="text-xl font-semibold mb-4 text-purple-200">
                                     Export Data
@@ -760,24 +912,84 @@ export default function EarningsTrackerApp() {
 
                                 {/* Date Range Start */}
                                 <div>
-                                    <label className="block text-sm text-purple-200 mb-2">From Date</label>
-                                    <input
-                                        type="date"
-                                        value={filterDateRange.start}
-                                        onChange={(e) => setFilterDateRange({ ...filterDateRange, start: e.target.value })}
-                                        className="w-full px-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white"
-                                    />
+                                    <label className="block text-sm text-purple-200 mb-2 flex items-center gap-2">
+                                        <Calendar size={16} />
+                                        From Date
+                                    </label>
+                                    <div className="relative">
+                                        <Calendar size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400 pointer-events-none" />
+                                        <input
+                                            type="date"
+                                            value={filterDateRange.start}
+                                            onChange={(e) => setFilterDateRange({ ...filterDateRange, start: e.target.value })}
+                                            className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
+                                            placeholder="Select start date"
+                                        />
+                                    </div>
                                 </div>
 
                                 {/* Date Range End */}
                                 <div>
-                                    <label className="block text-sm text-purple-200 mb-2">To Date</label>
-                                    <input
-                                        type="date"
-                                        value={filterDateRange.end}
-                                        onChange={(e) => setFilterDateRange({ ...filterDateRange, end: e.target.value })}
-                                        className="w-full px-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white"
-                                    />
+                                    <label className="block text-sm text-purple-200 mb-2 flex items-center gap-2">
+                                        <Calendar size={16} />
+                                        To Date
+                                    </label>
+                                    <div className="relative">
+                                        <Calendar size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400 pointer-events-none" />
+                                        <input
+                                            type="date"
+                                            value={filterDateRange.end}
+                                            onChange={(e) => setFilterDateRange({ ...filterDateRange, end: e.target.value })}
+                                            className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
+                                            placeholder="Select end date"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Quick Date Range Shortcuts */}
+                            <div className="mt-4 p-4 bg-slate-900/30 rounded-lg border border-purple-400/20">
+                                <h4 className="text-sm text-purple-300 mb-3 flex items-center gap-2">
+                                    <Calendar size={16} />
+                                    Quick Date Ranges
+                                </h4>
+                                <div className="flex flex-wrap gap-2">
+                                    <button
+                                        onClick={() => handleQuickDateRange(7)}
+                                        className="px-3 py-1.5 text-sm bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 rounded-lg transition-colors border border-purple-400/30"
+                                    >
+                                        Last 7 Days
+                                    </button>
+                                    <button
+                                        onClick={() => handleQuickDateRange(14)}
+                                        className="px-3 py-1.5 text-sm bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 rounded-lg transition-colors border border-purple-400/30"
+                                    >
+                                        Last 14 Days
+                                    </button>
+                                    <button
+                                        onClick={() => handleQuickDateRange(30)}
+                                        className="px-3 py-1.5 text-sm bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 rounded-lg transition-colors border border-purple-400/30"
+                                    >
+                                        Last 30 Days
+                                    </button>
+                                    <button
+                                        onClick={handleThisMonth}
+                                        className="px-3 py-1.5 text-sm bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 rounded-lg transition-colors border border-blue-400/30"
+                                    >
+                                        This Month
+                                    </button>
+                                    <button
+                                        onClick={handleLastMonth}
+                                        className="px-3 py-1.5 text-sm bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 rounded-lg transition-colors border border-blue-400/30"
+                                    >
+                                        Last Month
+                                    </button>
+                                    <button
+                                        onClick={() => setFilterDateRange({ start: '', end: '' })}
+                                        className="px-3 py-1.5 text-sm bg-slate-600/20 hover:bg-slate-600/30 text-slate-300 rounded-lg transition-colors border border-slate-400/30"
+                                    >
+                                        Clear Dates
+                                    </button>
                                 </div>
                             </div>
 
@@ -799,7 +1011,7 @@ export default function EarningsTrackerApp() {
                         {/* Earnings Table */}
                         <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl overflow-hidden">
                             <div className="p-6 border-b border-purple-400/30">
-                                <div className="flex justify-between items-center">
+                                <div className="flex justify-between items-center mb-4">
                                     <h3 className="text-xl font-semibold text-purple-200">
                                         Earnings Data ({filteredEarnings.length} {filteredEarnings.length === 1 ? 'entry' : 'entries'})
                                     </h3>
@@ -813,6 +1025,42 @@ export default function EarningsTrackerApp() {
                                         </button>
                                     )}
                                 </div>
+
+                                {/* Selection Controls */}
+                                {filteredEarnings.length > 0 && (
+                                    <div className="flex items-center gap-3 p-3 bg-slate-900/50 rounded-lg">
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-sm text-purple-300">
+                                                {selectedEarningIds.size} selected
+                                            </span>
+                                        </div>
+                                        <div className="flex gap-2">
+                                            <button
+                                                onClick={handleSelectAll}
+                                                className="text-sm text-purple-400 hover:text-purple-300 px-3 py-1 rounded bg-purple-600/10 hover:bg-purple-600/20 transition-colors"
+                                            >
+                                                Select All ({filteredEarnings.length})
+                                            </button>
+                                            {selectedEarningIds.size > 0 && (
+                                                <>
+                                                    <button
+                                                        onClick={handleClearSelection}
+                                                        className="text-sm text-purple-400 hover:text-purple-300 px-3 py-1 rounded bg-purple-600/10 hover:bg-purple-600/20 transition-colors"
+                                                    >
+                                                        Clear Selection
+                                                    </button>
+                                                    <button
+                                                        onClick={handleApplySelectionToDashboard}
+                                                        className="text-sm text-blue-300 hover:text-blue-200 px-3 py-1 rounded bg-blue-600/20 hover:bg-blue-600/30 transition-colors font-semibold flex items-center gap-2"
+                                                    >
+                                                        <BarChart3 size={16} />
+                                                        Use in Dashboard
+                                                    </button>
+                                                </>
+                                            )}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
 
                             {filteredEarnings.length > 0 ? (
@@ -820,6 +1068,20 @@ export default function EarningsTrackerApp() {
                                     <table className="w-full">
                                         <thead className="bg-slate-900/50">
                                             <tr>
+                                                <th className="px-6 py-3 w-12">
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={filteredEarnings.length > 0 && filteredEarnings.every(e => selectedEarningIds.has(e.id))}
+                                                        onChange={(e) => {
+                                                            if (e.target.checked) {
+                                                                handleSelectAll();
+                                                            } else {
+                                                                handleClearSelection();
+                                                            }
+                                                        }}
+                                                        className="w-4 h-4 rounded border-purple-400/30 bg-slate-900/50 text-purple-600 focus:ring-purple-500 focus:ring-offset-slate-800 cursor-pointer"
+                                                    />
+                                                </th>
                                                 <th
                                                     className="px-6 py-3 text-left text-xs font-medium text-purple-300 uppercase tracking-wider cursor-pointer hover:text-purple-200"
                                                     onClick={() => {
@@ -887,10 +1149,18 @@ export default function EarningsTrackerApp() {
                                                         <>
                                                             <td className="px-6 py-4">
                                                                 <input
+                                                                    type="checkbox"
+                                                                    checked={selectedEarningIds.has(earning.id)}
+                                                                    onChange={() => handleToggleSelection(earning.id)}
+                                                                    className="w-4 h-4 rounded border-purple-400/30 bg-slate-900/50 text-purple-600 focus:ring-purple-500 focus:ring-offset-slate-800 cursor-pointer"
+                                                                />
+                                                            </td>
+                                                            <td className="px-6 py-4">
+                                                                <input
                                                                     type="date"
                                                                     value={editForm.date}
                                                                     onChange={(e) => setEditForm({ ...editForm, date: e.target.value })}
-                                                                    className="w-full px-2 py-1 bg-slate-900/50 border border-purple-400/30 rounded text-white"
+                                                                    className="w-full px-2 py-1 bg-slate-900/50 border border-purple-400/30 rounded text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
                                                                 />
                                                             </td>
                                                             <td className="px-6 py-4">
@@ -950,6 +1220,14 @@ export default function EarningsTrackerApp() {
                                                         </>
                                                     ) : (
                                                         <>
+                                                            <td className="px-6 py-4">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    checked={selectedEarningIds.has(earning.id)}
+                                                                    onChange={() => handleToggleSelection(earning.id)}
+                                                                    className="w-4 h-4 rounded border-purple-400/30 bg-slate-900/50 text-purple-600 focus:ring-purple-500 focus:ring-offset-slate-800 cursor-pointer"
+                                                                />
+                                                            </td>
                                                             <td className="px-6 py-4 text-sm text-white">
                                                                 {new Date(earning.date).toLocaleDateString()}
                                                             </td>
@@ -997,6 +1275,7 @@ export default function EarningsTrackerApp() {
                                         </tbody>
                                         <tfoot className="bg-slate-900/50">
                                             <tr>
+                                                <td className="px-6 py-3"></td>
                                                 <td colSpan="3" className="px-6 py-3 text-sm font-semibold text-purple-200">
                                                     Total ({filteredEarnings.length} entries)
                                                 </td>
