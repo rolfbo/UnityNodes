@@ -55,7 +55,6 @@ const HelpTooltip = ({ content, children }) => {
 };
 
 export default function UnityNodesROICalculator() {
-    console.log('UnityNodesROICalculator component starting...');
 
     // Number formatting function for proper locale formatting
     const formatNumber = (number, decimals = 2) => {
@@ -348,7 +347,6 @@ export default function UnityNodesROICalculator() {
 
     // ROI calculations (accounting for ramp-up if enabled)
     const calculateRampUpMetrics = () => {
-        console.log('calculateRampUpMetrics called, rampUpEnabled:', rampUpEnabled);
         if (!rampUpEnabled) {
             // Use simple calculations if ramp-up is disabled
             const breakEvenMonths = netMonthlyProfit > 0 ? initialInvestment / netMonthlyProfit : Infinity;
@@ -451,7 +449,6 @@ export default function UnityNodesROICalculator() {
     // - Average phone cost per active license
     // - Average operating costs per license
     const avgActiveLicensesPerNode = licensesPerNode * 0.75; // 75% active (25% self + 50% leased)
-    const avgSelfRunLicensesPerNode = licensesPerNode * 0.25;
     const avgPhonesPerNode = avgSelfRunLicensesPerNode;
     const avgPhoneCostPerNode = avgPhonesPerNode * phonePrice;
     const avgInitialInvestmentPerNode = nodePrice + avgPhoneCostPerNode;
@@ -752,7 +749,6 @@ export default function UnityNodesROICalculator() {
     const profitOverTimeData = generateProfitOverTimeData();
 
 
-    console.log('About to render component...');
 
     try {
         return (
@@ -1694,7 +1690,7 @@ export default function UnityNodesROICalculator() {
                                 <div className="mt-6 p-4 bg-white/5 rounded-lg">
                                     <h4 className="text-purple-300 font-semibold mb-3">Ramp-Up Preview</h4>
                                     <div className="h-48">
-                                        <ResponsiveContainer width="100%" height="100%">
+                                        <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                             <LineChart>
                                                 <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
                                                 <XAxis
@@ -2043,7 +2039,7 @@ export default function UnityNodesROICalculator() {
                                 </div>
                                 <div className="mt-3 pt-2 border-t border-white/10">
                                     <label className="text-xs text-purple-300 block mb-1">
-                                        Equivalent Daily Earnings ($/day)
+                                        Equivalent Daily Earnings per ULO ($/day)
                                     </label>
                                     <input
                                         type="number"
@@ -2307,7 +2303,7 @@ export default function UnityNodesROICalculator() {
                             <div className="bg-white/5 rounded-lg p-4">
                                 <h3 className="text-purple-300 font-semibold mb-3">Profit Over Time</h3>
                                 <div className="h-64">
-                                    <ResponsiveContainer width="100%" height="100%">
+                                    <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                         <AreaChart data={profitOverTimeData}>
                                             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
                                             <XAxis
@@ -2352,7 +2348,7 @@ export default function UnityNodesROICalculator() {
                             <div className="bg-white/5 rounded-lg p-4">
                                 <h3 className="text-purple-300 font-semibold mb-3">Cost Breakdown</h3>
                                 <div className="h-64">
-                                    <ResponsiveContainer width="100%" height="100%">
+                                    <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                         <RechartsPieChart>
                                             <Pie
                                                 data={costBreakdownData}
@@ -2389,7 +2385,7 @@ export default function UnityNodesROICalculator() {
                         <div className="bg-white/5 rounded-lg p-4">
                             <h3 className="text-purple-300 font-semibold mb-3">ROI Comparison</h3>
                             <div className="h-64">
-                                <ResponsiveContainer width="100%" height="100%">
+                                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                     <BarChart data={roiComparisonData}>
                                         <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
                                         <XAxis dataKey="scenario" stroke="#9ca3af" tick={{ fontSize: 12 }} />
