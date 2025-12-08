@@ -4,6 +4,7 @@ node_modules/
 
 # Development notes (not for public repo)
 dev-notes/
+PUBLIC-RELEASE-SUMMARY.md
 
 # Build
 **/dist
