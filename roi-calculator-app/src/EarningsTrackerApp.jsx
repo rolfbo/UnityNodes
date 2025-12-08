@@ -770,10 +770,10 @@ export default function EarningsTrackerApp() {
                                 </p>
                             </div>
 
-                            {/* Active Nodes */}
+                            {/* Active ULOs */}
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <div className="flex items-center justify-between mb-2">
-                                    <h3 className="text-purple-200 text-sm">Active Nodes</h3>
+                                    <h3 className="text-purple-200 text-sm">Active ULOs</h3>
                                     <Hash className="text-orange-400" size={20} />
                                 </div>
                                 <p className="text-3xl font-bold text-white">
