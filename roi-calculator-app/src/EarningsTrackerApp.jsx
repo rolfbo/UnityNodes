@@ -22,6 +22,7 @@
  */
 
 import React, { useState, useEffect, useMemo } from 'react';
+import ReactDOM from 'react-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './datepicker-custom.css';
@@ -129,6 +130,14 @@ const CustomDatePicker = ({ selected, onChange, placeholderText, ...props }) => 
                 className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer outline-none"
                 calendarClassName="custom-datepicker"
                 wrapperClassName="w-full"
+                popperContainer={({ children }) => {
+                    // Create portal to render calendar at document body level
+                    // This ensures the calendar appears above all other elements
+                    return ReactDOM.createPortal(children, document.body);
+                }}
+                popperProps={{
+                    strategy: 'fixed'
+                }}
                 {...props}
             />
         </div>
@@ -576,6 +585,62 @@ export default function EarningsTrackerApp() {
         return totalDays > 0 ? stats.total / totalDays : 0;
     }, [dashboardEarnings, stats]);
 
+    /**
+     * Calculate average daily earnings per device (node)
+     * This calculates the average daily earnings for each device individually,
+     * then averages those values together to get an overall per-device average.
+     */
+    const avgDailyPerDevice = useMemo(() => {
+        if (dashboardEarnings.length === 0) return 0;
+
+        // Group earnings by nodeId
+        const nodeMap = {};
+        dashboardEarnings.forEach(e => {
+            if (!nodeMap[e.nodeId]) {
+                nodeMap[e.nodeId] = { total: 0, dates: new Set() };
+            }
+            nodeMap[e.nodeId].total += e.amount;
+            nodeMap[e.nodeId].dates.add(e.date);
+        });
+
+        // Calculate average daily earnings for each device
+        const avgPerDevices = Object.values(nodeMap).map(node =>
+            node.total / node.dates.size
+        );
+
+        // Return the average of all device averages
+        if (avgPerDevices.length === 0) return 0;
+        return avgPerDevices.reduce((sum, avg) => sum + avg, 0) / avgPerDevices.length;
+    }, [dashboardEarnings]);
+
+    /**
+     * Find the top earning device (node) with highest total earnings
+     * Returns object with nodeId, licenseType, and total amount
+     */
+    const topEarningDevice = useMemo(() => {
+        if (dashboardEarnings.length === 0) return null;
+
+        // Group earnings by nodeId
+        const nodeMap = {};
+        dashboardEarnings.forEach(e => {
+            if (!nodeMap[e.nodeId]) {
+                nodeMap[e.nodeId] = {
+                    nodeId: e.nodeId,
+                    licenseType: e.licenseType,
+                    total: 0
+                };
+            }
+            nodeMap[e.nodeId].total += e.amount;
+            // Update license type if available (in case it was added later)
+            nodeMap[e.nodeId].licenseType = e.licenseType || nodeMap[e.nodeId].licenseType;
+        });
+
+        // Find the node with the highest total earnings
+        return Object.values(nodeMap).reduce((top, node) =>
+            node.total > (top?.total || 0) ? node : top
+            , null);
+    }, [dashboardEarnings]);
+
     // Color palette for charts
     const COLORS = ['#a78bfa', '#818cf8', '#60a5fa', '#34d399', '#fbbf24', '#fb923c', '#f87171'];
 
@@ -662,7 +727,7 @@ export default function EarningsTrackerApp() {
                         )}
 
                         {/* Key Metrics Cards */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {/* Total Earnings */}
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <div className="flex items-center justify-between mb-2">
@@ -717,6 +782,50 @@ export default function EarningsTrackerApp() {
                                 <p className="text-xs text-purple-300 mt-1">
                                     unique node IDs
                                 </p>
+                            </div>
+
+                            {/* Average Daily Per Device */}
+                            <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
+                                <div className="flex items-center justify-between mb-2">
+                                    <h3 className="text-purple-200 text-sm">Avg/Day/Device</h3>
+                                    <TrendingUp className="text-cyan-400" size={20} />
+                                </div>
+                                <p className="text-3xl font-bold text-white">
+                                    ${avgDailyPerDevice.toFixed(2)}
+                                </p>
+                                <p className="text-xs text-purple-300 mt-1">
+                                    per device per day
+                                </p>
+                            </div>
+
+                            {/* Top Earning Device */}
+                            <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
+                                <div className="flex items-center justify-between mb-2">
+                                    <h3 className="text-purple-200 text-sm">Top Earning Device</h3>
+                                    <Hash className="text-yellow-400" size={20} />
+                                </div>
+                                {topEarningDevice ? (
+                                    <>
+                                        <p className="text-xl font-bold text-white font-mono mb-1">
+                                            {topEarningDevice.nodeId}
+                                        </p>
+                                        <p className="text-2xl font-bold text-green-400">
+                                            ${topEarningDevice.total.toFixed(2)}
+                                        </p>
+                                        <p className="text-xs text-purple-300 mt-1">
+                                            {topEarningDevice.licenseType || 'Unknown type'}
+                                        </p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <p className="text-3xl font-bold text-white">
+                                            -
+                                        </p>
+                                        <p className="text-xs text-purple-300 mt-1">
+                                            no data
+                                        </p>
+                                    </>
+                                )}
                             </div>
                         </div>
 
@@ -1339,20 +1448,34 @@ export default function EarningsTrackerApp() {
                                     <InfoTooltip content="Map each node ID to its license type. This helps categorize your earnings by license." />
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {uniqueNodeIds.map(nodeId => (
-                                        <div key={nodeId} className="flex items-center gap-3 p-3 bg-slate-900/50 rounded-lg">
-                                            <span className="font-mono text-sm text-purple-300 flex-1">
-                                                {nodeId}
-                                            </span>
-                                            <input
-                                                type="text"
-                                                value={nodeMapping[nodeId] || ''}
-                                                onChange={(e) => handleUpdateNodeMapping(nodeId, e.target.value)}
-                                                placeholder="License type (e.g., ULO)"
-                                                className="px-3 py-1 bg-slate-800 border border-purple-400/30 rounded text-white text-sm w-40"
-                                            />
-                                        </div>
-                                    ))}
+                                    {uniqueNodeIds.map(nodeId => {
+                                        // Calculate total earnings for this node
+                                        const nodeTotal = earnings
+                                            .filter(e => e.nodeId === nodeId)
+                                            .reduce((sum, e) => sum + e.amount, 0);
+
+                                        return (
+                                            <div key={nodeId} className="flex flex-col gap-2 p-3 bg-slate-900/50 rounded-lg">
+                                                <div className="flex items-center gap-3">
+                                                    <span className="font-mono text-sm text-purple-300 flex-1">
+                                                        {nodeId}
+                                                    </span>
+                                                    <input
+                                                        type="text"
+                                                        value={nodeMapping[nodeId] || ''}
+                                                        onChange={(e) => handleUpdateNodeMapping(nodeId, e.target.value)}
+                                                        placeholder="License type (e.g., ULO)"
+                                                        className="px-3 py-1 bg-slate-800 border border-purple-400/30 rounded text-white text-sm w-40"
+                                                    />
+                                                </div>
+                                                <div className="flex items-center justify-end">
+                                                    <span className="text-sm font-semibold text-green-400">
+                                                        Total: ${nodeTotal.toFixed(2)}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         )}

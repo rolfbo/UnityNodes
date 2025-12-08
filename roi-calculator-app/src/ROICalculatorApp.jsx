@@ -755,13 +755,13 @@ export default function UnityNodesROICalculator() {
         return (
             <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6 pb-28 md:pb-6">
                 <div className="max-w-7xl mx-auto">
-                    {/* Sticky Summary (Desktop) */}
-                    <div className="hidden md:block sticky top-0 z-30 bg-slate-900/60 backdrop-blur border-b border-white/10 mb-6">
-                        <div className="px-6 py-3 text-xl flex gap-6 justify-center">
-                            <span className="text-green-300">Net: ${formatNumber(netMonthlyProfit)} · €{formatNumber(netMonthlyProfit * usdToEur)}</span>
-                            <span className="text-yellow-300">Daily: ${formatNumber(dailyNetProfit)} · €{formatNumber(dailyNetProfitEur)}</span>
-                            <span className="text-blue-300">Break-Even: {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</span>
-                            <span className="text-purple-300">Annual: ${formatNumber(annualRevenue)} · €{formatNumber(annualRevenue * usdToEur)}</span>
+                    {/* Sticky Summary - Always visible at top when scrolling */}
+                    <div className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-purple-400/30 mb-6 shadow-lg shadow-purple-900/20">
+                        <div className="px-3 md:px-6 py-3 text-base md:text-xl flex flex-wrap gap-3 md:gap-6 justify-center items-center">
+                            <span className="text-green-300 font-semibold">Net: ${formatNumber(netMonthlyProfit)} · €{formatNumber(netMonthlyProfit * usdToEur)}</span>
+                            <span className="text-yellow-300 font-semibold">Daily: ${formatNumber(dailyNetProfit)} · €{formatNumber(dailyNetProfitEur)}</span>
+                            <span className="text-blue-300 font-semibold">Break-Even: {isFinite(breakEvenMonths) ? formatNumber(breakEvenMonths, 1) : '∞'} mo</span>
+                            <span className="text-purple-300 font-semibold">Annual: ${formatNumber(annualRevenue)} · €{formatNumber(annualRevenue * usdToEur)}</span>
                         </div>
                     </div>
 

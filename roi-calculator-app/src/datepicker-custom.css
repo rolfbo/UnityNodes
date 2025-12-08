@@ -12,9 +12,9 @@
  * - Text: #f3e8ff (very light purple)
  */
 
-/* Main datepicker wrapper - needs high z-index to appear above other elements */
+/* Main datepicker wrapper - needs extremely high z-index to appear above all other elements */
 .react-datepicker-popper {
-    z-index: 9999 !important;
+    z-index: 99999 !important;
 }
 
 .react-datepicker {
@@ -23,7 +23,13 @@
     border: 1px solid rgba(167, 139, 250, 0.3) !important;
     border-radius: 0.75rem !important;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    z-index: 9999 !important;
+    z-index: 99999 !important;
+    position: relative;
+}
+
+/* Ensure portal container also has high z-index */
+.react-datepicker__portal {
+    z-index: 99999 !important;
 }
 
 .react-datepicker__header {

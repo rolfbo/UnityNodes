@@ -64,16 +64,17 @@ This manual approach ensures that legitimate earnings (e.g., multiple transactio
 
 ### 3. Node ID to License Type Mapping
 
-Users can map each node ID to its license type:
+Users can map each node ID to its license type and view total earnings per node:
 - Manual input for each node
 - Auto-detection from previously mapped nodes
 - Persistent storage in browser localStorage
 - Automatic update of all earnings when mapping changes
+- **Total earnings per node**: Displays the sum of all earnings for each node ID
 
 #### Example Mappings
-- `0x01...a278` → `ULO`
-- `0x02...b123` → `Enterprise`
-- `0x03...c456` → `Standard`
+- `0x01...a278` → `ULO` → Total: $45.67
+- `0x02...b123` → `Enterprise` → Total: $89.23
+- `0x03...c456` → `Standard` → Total: $23.45
 
 ### 4. Interactive Dashboard
 
@@ -95,6 +96,8 @@ All metrics and charts automatically update to reflect the current view (all dat
 - **This Month**: Current month's earnings (or from selection)
 - **Average Daily**: Average earnings per active day (calculated from selection if filtered)
 - **Active Nodes**: Count of unique node IDs (in all data or selection)
+- **Avg/Day/Device**: Average daily earnings per device (calculates each device's avg, then averages those)
+- **Top Earning Device**: Shows the node ID with highest total earnings and its license type
 
 #### Charts
 1. **Cumulative Earnings Over Time**
@@ -374,6 +377,15 @@ For issues or questions:
 5. Clear localStorage and start fresh if needed
 
 ## Version History
+
+### v1.4 (December 2025)
+- Added device-specific metrics to dashboard:
+  - Avg/Day/Device metric showing per-device daily average
+  - Top Earning Device card showing best performing node
+- Enhanced Node ID Mapping section:
+  - Shows total earnings per node
+  - Green color-coded totals for quick identification
+- Updated dashboard grid layout from 4 to 3 columns for better visual balance
 
 ### v1.3 (December 2025)
 - Replaced native date picker with custom calendar picker
