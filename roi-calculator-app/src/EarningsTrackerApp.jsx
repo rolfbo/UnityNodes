@@ -22,6 +22,9 @@
  */
 
 import React, { useState, useEffect, useMemo } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import './datepicker-custom.css';
 import {
     DollarSign,
     Upload,
@@ -98,6 +101,36 @@ const InfoTooltip = ({ content }) => {
                     {content}
                 </div>
             )}
+        </div>
+    );
+};
+
+/**
+ * Custom styled DatePicker wrapper component
+ * Wraps react-datepicker with our custom styling to match the app theme
+ * 
+ * Styling is defined in datepicker-custom.css which matches the purple/dark theme.
+ * The calendar icon is positioned absolutely to the left of the input field.
+ * 
+ * @param {Date|null} selected - Currently selected date
+ * @param {Function} onChange - Callback when date is selected
+ * @param {string} placeholderText - Placeholder text for input
+ * @param {Object} props - Additional props to pass to DatePicker
+ */
+const CustomDatePicker = ({ selected, onChange, placeholderText, ...props }) => {
+    return (
+        <div className="relative w-full">
+            <Calendar size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400 pointer-events-none z-10" />
+            <DatePicker
+                selected={selected}
+                onChange={onChange}
+                placeholderText={placeholderText}
+                dateFormat="yyyy-MM-dd"
+                className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer outline-none"
+                calendarClassName="custom-datepicker"
+                wrapperClassName="w-full"
+                {...props}
+            />
         </div>
     );
 };
@@ -916,16 +949,16 @@ export default function EarningsTrackerApp() {
                                         <Calendar size={16} />
                                         From Date
                                     </label>
-                                    <div className="relative">
-                                        <Calendar size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400 pointer-events-none" />
-                                        <input
-                                            type="date"
-                                            value={filterDateRange.start}
-                                            onChange={(e) => setFilterDateRange({ ...filterDateRange, start: e.target.value })}
-                                            className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
-                                            placeholder="Select start date"
-                                        />
-                                    </div>
+                                    <CustomDatePicker
+                                        selected={filterDateRange.start ? new Date(filterDateRange.start) : null}
+                                        onChange={(date) => {
+                                            const dateStr = date ? date.toISOString().split('T')[0] : '';
+                                            setFilterDateRange({ ...filterDateRange, start: dateStr });
+                                        }}
+                                        placeholderText="Select start date"
+                                        isClearable
+                                        maxDate={filterDateRange.end ? new Date(filterDateRange.end) : null}
+                                    />
                                 </div>
 
                                 {/* Date Range End */}
@@ -934,16 +967,16 @@ export default function EarningsTrackerApp() {
                                         <Calendar size={16} />
                                         To Date
                                     </label>
-                                    <div className="relative">
-                                        <Calendar size={18} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400 pointer-events-none" />
-                                        <input
-                                            type="date"
-                                            value={filterDateRange.end}
-                                            onChange={(e) => setFilterDateRange({ ...filterDateRange, end: e.target.value })}
-                                            className="w-full pl-10 pr-3 py-2 bg-slate-900/50 border border-purple-400/30 rounded-lg text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
-                                            placeholder="Select end date"
-                                        />
-                                    </div>
+                                    <CustomDatePicker
+                                        selected={filterDateRange.end ? new Date(filterDateRange.end) : null}
+                                        onChange={(date) => {
+                                            const dateStr = date ? date.toISOString().split('T')[0] : '';
+                                            setFilterDateRange({ ...filterDateRange, end: dateStr });
+                                        }}
+                                        placeholderText="Select end date"
+                                        isClearable
+                                        minDate={filterDateRange.start ? new Date(filterDateRange.start) : null}
+                                    />
                                 </div>
                             </div>
 
@@ -1156,11 +1189,13 @@ export default function EarningsTrackerApp() {
                                                                 />
                                                             </td>
                                                             <td className="px-6 py-4">
-                                                                <input
-                                                                    type="date"
-                                                                    value={editForm.date}
-                                                                    onChange={(e) => setEditForm({ ...editForm, date: e.target.value })}
-                                                                    className="w-full px-2 py-1 bg-slate-900/50 border border-purple-400/30 rounded text-white hover:border-purple-400/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-colors cursor-pointer"
+                                                                <CustomDatePicker
+                                                                    selected={editForm.date ? new Date(editForm.date) : null}
+                                                                    onChange={(date) => {
+                                                                        const dateStr = date ? date.toISOString().split('T')[0] : '';
+                                                                        setEditForm({ ...editForm, date: dateStr });
+                                                                    }}
+                                                                    placeholderText="Select date"
                                                                 />
                                                             </td>
                                                             <td className="px-6 py-4">

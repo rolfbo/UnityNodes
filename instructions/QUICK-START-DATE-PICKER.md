@@ -3,9 +3,14 @@
 ## 🎯 What's New?
 
 The date inputs in the Earnings Tracker now have:
+- ✅ **Beautiful custom calendar picker** that drops down when clicked
+- ✅ **Consistent design** across all browsers (no more native picker!)
 - ✅ **Calendar icons** for easy identification
+- ✅ **Clear button (X)** to quickly remove dates
 - ✅ **Visual hover effects** to show they're interactive
 - ✅ **Quick date range shortcuts** for one-click filtering
+- ✅ **Today highlighting** in calendar view
+- ✅ **Smart validation** (can't select invalid date ranges)
 
 ## ⚡ Quick Guide
 

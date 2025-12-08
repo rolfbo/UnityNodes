@@ -375,6 +375,15 @@ For issues or questions:
 
 ## Version History
 
+### v1.3 (December 2025)
+- Replaced native date picker with custom calendar picker
+- Uses react-datepicker library for consistent cross-browser experience
+- Themed calendar matching app's purple/dark design
+- Smart date range validation (can't select invalid ranges)
+- Clear button (X icon) to quickly remove dates
+- Today highlighting in calendar view
+- Enhanced keyboard navigation in calendar
+
 ### v1.2 (December 2025)
 - Enhanced date picker inputs with calendar icons
 - Added visual feedback (hover, focus states)
