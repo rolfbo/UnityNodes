@@ -52,7 +52,7 @@ We welcome several types of contributions:
 
 1. **Fork the Repository**
    - Click the "Fork" button on GitHub
-   - Clone your fork: `git clone https://github.com/YOUR-USERNAME/UnityNodes.git`
+   - Clone your fork: `git clone https://github.com/rolfbo/UnityNodes.git`
 
 2. **Navigate to Project**
    ```bash
