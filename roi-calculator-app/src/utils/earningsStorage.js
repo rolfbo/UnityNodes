@@ -287,26 +287,307 @@ export function exportToCSV() {
 }
 
 /**
- * Import earnings from JSON string
- * Merges with existing data, skipping duplicates
+ * Import earnings from JSON string with enhanced validation and merge strategies
  * @param {string} jsonString - JSON string to import
- * @returns {Object} Result with success status and counts
+ * @param {string} mergeStrategy - How to handle duplicates: 'skip', 'add-all', or 'replace-all'
+ * @returns {Object} Result with success status, counts, validation details, and preview
  */
-export function importFromJSON(jsonString) {
+export function importFromJSON(jsonString, mergeStrategy = 'skip') {
     try {
+        // Import validation utilities
+        const { validateJSONImport, checkForDuplicates, sanitizeEarning, generateImportPreview } =
+            require('./importValidator.js');
+
+        // Parse JSON
         const imported = JSON.parse(jsonString);
 
+        // Validate structure
         if (!Array.isArray(imported)) {
-            throw new Error('Invalid format: expected an array');
+            throw new Error('Invalid format: expected an array of earnings');
         }
 
-        return addEarnings(imported);
+        if (imported.length === 0) {
+            return {
+                success: false,
+                message: 'Import file contains no earnings data',
+                errors: ['File is empty']
+            };
+        }
+
+        // Validate all earnings
+        const validation = validateJSONImport(imported);
+
+        if (!validation.isValid) {
+            return {
+                success: false,
+                message: `Validation failed: ${validation.invalidCount} invalid entries`,
+                errors: validation.errors,
+                warnings: validation.warnings,
+                validCount: validation.validCount,
+                invalidCount: validation.invalidCount,
+                totalCount: validation.totalCount
+            };
+        }
+
+        // Sanitize all earnings (normalize formats, add IDs, etc.)
+        const sanitizedEarnings = imported.map(e => sanitizeEarning(e));
+
+        // Get existing earnings for duplicate checking
+        const existingEarnings = loadEarnings();
+
+        // Check for duplicates
+        const duplicateCheck = checkForDuplicates(sanitizedEarnings, existingEarnings);
+
+        // Generate preview
+        const preview = generateImportPreview(sanitizedEarnings);
+
+        // Handle different merge strategies
+        let earningsToAdd = [];
+        let message = '';
+
+        switch (mergeStrategy) {
+            case 'replace-all':
+                // Replace all existing data
+                saveEarnings(sanitizedEarnings);
+                return {
+                    success: true,
+                    message: `Replaced all data with ${sanitizedEarnings.length} imported earnings`,
+                    addedCount: sanitizedEarnings.length,
+                    replacedCount: existingEarnings.length,
+                    duplicateCount: 0,
+                    totalCount: sanitizedEarnings.length,
+                    preview
+                };
+
+            case 'add-all':
+                // Add all, even duplicates
+                earningsToAdd = sanitizedEarnings;
+                message = `Added ${sanitizedEarnings.length} earnings (including ${duplicateCheck.duplicateCount} potential duplicates)`;
+                break;
+
+            case 'skip':
+            default:
+                // Skip duplicates (default behavior)
+                earningsToAdd = duplicateCheck.uniqueEarnings;
+                message = duplicateCheck.duplicateCount > 0
+                    ? `Added ${duplicateCheck.uniqueCount} new earnings, skipped ${duplicateCheck.duplicateCount} duplicates`
+                    : `Added ${duplicateCheck.uniqueCount} new earnings`;
+                break;
+        }
+
+        // Add the earnings
+        if (earningsToAdd.length > 0) {
+            const allEarnings = [...existingEarnings, ...earningsToAdd];
+            saveEarnings(allEarnings);
+        }
+
+        return {
+            success: true,
+            message,
+            addedCount: earningsToAdd.length,
+            duplicateCount: duplicateCheck.duplicateCount,
+            skippedCount: mergeStrategy === 'skip' ? duplicateCheck.duplicateCount : 0,
+            totalCount: imported.length,
+            warnings: validation.warnings,
+            preview
+        };
+
     } catch (error) {
         return {
             success: false,
-            message: `Import failed: ${error.message}`
+            message: `Import failed: ${error.message}`,
+            errors: [error.message]
         };
     }
+}
+
+/**
+ * Import earnings from CSV string
+ * @param {string} csvString - CSV string to import
+ * @param {Object} options - Import options
+ * @returns {Object} Result with success status and counts
+ */
+export function importFromCSV(csvString, options = {}) {
+    try {
+        // Import validation utilities
+        const { validateCSVRow, detectCSVColumns, checkForDuplicates, generateImportPreview } =
+            require('./importValidator.js');
+
+        // Parse CSV into rows
+        const lines = csvString.split('\n').filter(line => line.trim().length > 0);
+
+        if (lines.length < 2) {
+            return {
+                success: false,
+                message: 'CSV file must have at least a header row and one data row',
+                errors: ['File too short']
+            };
+        }
+
+        // Parse header row
+        const headerRow = lines[0].split(',').map(cell => cell.trim().replace(/^"|"$/g, ''));
+
+        // Detect or use provided column mapping
+        let columnMap = options.columnMap || detectCSVColumns(headerRow);
+
+        if (!columnMap) {
+            return {
+                success: false,
+                message: 'Could not detect required columns (Date, Node ID, Amount)',
+                errors: ['Missing required columns'],
+                expectedColumns: ['Date', 'Node ID', 'Amount', 'Status (optional)', 'License Type (optional)'],
+                foundColumns: headerRow
+            };
+        }
+
+        // Parse data rows
+        const earnings = [];
+        const errors = [];
+        const warnings = [];
+
+        for (let i = 1; i < lines.length; i++) {
+            // Parse CSV row (handle quoted values)
+            const row = lines[i].match(/(".*?"|[^,]+)(?=\s*,|\s*$)/g)
+                .map(cell => cell.trim().replace(/^"|"$/g, ''));
+
+            const validation = validateCSVRow(row, columnMap, i);
+
+            if (validation.isValid && validation.earning) {
+                // Generate unique ID
+                validation.earning.id = `earning-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+                earnings.push(validation.earning);
+            }
+
+            errors.push(...validation.errors);
+            warnings.push(...validation.warnings);
+        }
+
+        if (earnings.length === 0) {
+            return {
+                success: false,
+                message: 'No valid earnings found in CSV',
+                errors: errors.length > 0 ? errors : ['All rows failed validation'],
+                warnings
+            };
+        }
+
+        // Check for duplicates
+        const existingEarnings = loadEarnings();
+        const duplicateCheck = checkForDuplicates(earnings, existingEarnings);
+
+        // Generate preview
+        const preview = generateImportPreview(earnings);
+
+        // Add unique earnings (skip duplicates by default)
+        const earningsToAdd = options.addDuplicates ? earnings : duplicateCheck.uniqueEarnings;
+
+        if (earningsToAdd.length > 0) {
+            const allEarnings = [...existingEarnings, ...earningsToAdd];
+            saveEarnings(allEarnings);
+        }
+
+        const message = duplicateCheck.duplicateCount > 0
+            ? `Imported ${duplicateCheck.uniqueCount} earnings, skipped ${duplicateCheck.duplicateCount} duplicates`
+            : `Imported ${earnings.length} earnings`;
+
+        return {
+            success: true,
+            message,
+            addedCount: earningsToAdd.length,
+            duplicateCount: duplicateCheck.duplicateCount,
+            totalCount: earnings.length,
+            errors: errors.length > 0 ? errors : undefined,
+            warnings: warnings.length > 0 ? warnings : undefined,
+            preview,
+            columnMap
+        };
+
+    } catch (error) {
+        return {
+            success: false,
+            message: `CSV import failed: ${error.message}`,
+            errors: [error.message]
+        };
+    }
+}
+
+/**
+ * Export earnings data as Markdown formatted table
+ * @param {Object} options - Export options (includeAll, maxRows, etc.)
+ * @returns {string} Markdown formatted string
+ */
+export function exportToMarkdown(options = {}) {
+    const earnings = loadEarnings();
+    const stats = getEarningsStats();
+
+    if (earnings.length === 0) {
+        return '# Unity Nodes Earnings Report\n\nNo earnings data available.\n';
+    }
+
+    const {
+        includeAll = false,
+        maxRows = 20,
+        groupByLicense = true
+    } = options;
+
+    // Build markdown document
+    let markdown = '';
+
+    // Header
+    markdown += '# Unity Nodes Earnings Report\n\n';
+    markdown += `**Generated:** ${new Date().toLocaleString()}\n\n`;
+    markdown += '---\n\n';
+
+    // Summary Statistics
+    markdown += '## Summary\n\n';
+    markdown += `- **Total Earnings:** $${stats.total.toFixed(2)}\n`;
+    markdown += `- **Number of Transactions:** ${stats.count}\n`;
+    markdown += `- **Average per Transaction:** $${stats.average.toFixed(2)}\n`;
+    markdown += `- **Active Nodes (ULOs):** ${stats.uniqueNodes}\n`;
+
+    // Date range
+    const dates = earnings.map(e => e.date).sort();
+    if (dates.length > 0) {
+        markdown += `- **Date Range:** ${dates[0]} to ${dates[dates.length - 1]}\n`;
+    }
+    markdown += '\n';
+
+    // Earnings by License Type
+    if (groupByLicense && Object.keys(stats.byLicenseType).length > 0) {
+        markdown += '## Earnings by License Type\n\n';
+        markdown += '| License Type | Count | Total | Average |\n';
+        markdown += '|--------------|------:|------:|--------:|\n';
+
+        Object.entries(stats.byLicenseType)
+            .sort((a, b) => b[1].total - a[1].total)
+            .forEach(([type, data]) => {
+                const avg = data.total / data.count;
+                markdown += `| ${type} | ${data.count} | $${data.total.toFixed(2)} | $${avg.toFixed(2)} |\n`;
+            });
+        markdown += '\n';
+    }
+
+    // Recent Transactions Table
+    const rowsToShow = includeAll ? earnings.length : Math.min(maxRows, earnings.length);
+    const sortedEarnings = [...earnings].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    markdown += `## ${includeAll ? 'All' : 'Recent'} Transactions${!includeAll && earnings.length > maxRows ? ` (showing ${rowsToShow} of ${earnings.length})` : ''}\n\n`;
+    markdown += '| Date | Node ID | License Type | Amount | Status |\n';
+    markdown += '|------|---------|--------------|-------:|--------|\n';
+
+    sortedEarnings.slice(0, rowsToShow).forEach(earning => {
+        const shortNodeId = earning.nodeId.length > 15
+            ? `${earning.nodeId.substring(0, 6)}...${earning.nodeId.substring(earning.nodeId.length - 4)}`
+            : earning.nodeId;
+        markdown += `| ${earning.date} | ${shortNodeId} | ${earning.licenseType || 'Unknown'} | $${earning.amount.toFixed(2)} | ${earning.status} |\n`;
+    });
+    markdown += '\n';
+
+    // Footer
+    markdown += '---\n\n';
+    markdown += '*This report was generated by Unity Nodes Earnings Tracker*\n';
+
+    return markdown;
 }
 
 /**

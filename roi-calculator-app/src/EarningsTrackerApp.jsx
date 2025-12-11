@@ -48,7 +48,14 @@ import {
     BarChart3,
     FileDown,
     FileText,
-    Database
+    Database,
+    RefreshCw,
+    Settings,
+    Save,
+    FolderDown,
+    FileJson,
+    FileSpreadsheet,
+    FileType
 } from 'lucide-react';
 import {
     LineChart,
@@ -78,9 +85,22 @@ import {
     updateNodeMapping,
     exportToJSON,
     exportToCSV,
+    exportToMarkdown,
+    importFromJSON,
+    importFromCSV,
     getEarningsStats
 } from './utils/earningsStorage.js';
 import { parseEarningsText, getExampleFormat } from './utils/earningsParser.js';
+import {
+    loadBackupSettings,
+    saveBackupSettings,
+    toggleAutoBackup,
+    updateBackupFrequency,
+    getBackupStatus,
+    shouldTriggerBackup,
+    performAutoBackup,
+    incrementChangeCounter
+} from './utils/autoBackup.js';
 import jsPDF from 'jspdf';
 
 /**
@@ -168,6 +188,15 @@ export default function EarningsTrackerApp() {
     // Dashboard filter state - determines if dashboard should use selected data
     const [useDashboardSelection, setUseDashboardSelection] = useState(false);
 
+    // Backup/Restore state
+    const [backupSettings, setBackupSettings] = useState(loadBackupSettings());
+    const [importResult, setImportResult] = useState(null);
+    const [showImportPreview, setShowImportPreview] = useState(false);
+    const [importPreviewData, setImportPreviewData] = useState(null);
+    const [showBackupSettings, setShowBackupSettings] = useState(false);
+    const [backupStatus, setBackupStatus] = useState(getBackupStatus());
+    const [lastBackupNotification, setLastBackupNotification] = useState(null);
+
     // Load data on mount
     useEffect(() => {
         setEarnings(loadEarnings());
@@ -187,6 +216,11 @@ export default function EarningsTrackerApp() {
 
             // Update state
             setEarnings(loadEarnings());
+
+            // Track changes for auto-backup
+            if (addResult.addedCount > 0) {
+                trackChange();
+            }
 
             // Update parse result with add information
             setParseResult({
@@ -363,6 +397,164 @@ export default function EarningsTrackerApp() {
 
         // Save
         doc.save(`unity-earnings-report-${new Date().toISOString().split('T')[0]}.pdf`);
+    };
+
+    /**
+     * Handle markdown export
+     */
+    const handleExportMarkdown = () => {
+        const markdown = exportToMarkdown({ includeAll: false, maxRows: 20 });
+        const filename = `unity-earnings-report-${new Date().toISOString().split('T')[0]}.md`;
+
+        const blob = new Blob([markdown], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        link.click();
+        URL.revokeObjectURL(url);
+    };
+
+    /**
+     * Handle file import (JSON or CSV)
+     */
+    const handleImportFile = (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const content = e.target.result;
+            const isJSON = file.name.endsWith('.json');
+            const isCSV = file.name.endsWith('.csv');
+
+            let result;
+            if (isJSON) {
+                result = importFromJSON(content, 'skip'); // Default: skip duplicates
+            } else if (isCSV) {
+                result = importFromCSV(content);
+            } else {
+                setImportResult({
+                    success: false,
+                    message: 'Unsupported file type. Please use .json or .csv files.'
+                });
+                return;
+            }
+
+            setImportResult(result);
+
+            if (result.success) {
+                // Reload earnings
+                setEarnings(loadEarnings());
+
+                // Check for auto-backup trigger
+                checkAndTriggerAutoBackup();
+
+                // Auto-switch to dashboard to show imported data
+                setTimeout(() => {
+                    setActiveView('dashboard');
+                    // Clear result after showing
+                    setTimeout(() => setImportResult(null), 5000);
+                }, 2000);
+            }
+        };
+
+        reader.readAsText(file);
+
+        // Reset file input
+        event.target.value = '';
+    };
+
+    /**
+     * Handle toggling auto-backup
+     */
+    const handleToggleAutoBackup = (enabled) => {
+        const settings = toggleAutoBackup(enabled);
+        setBackupSettings(settings);
+        setBackupStatus(getBackupStatus());
+    };
+
+    /**
+     * Handle updating backup frequency
+     */
+    const handleUpdateBackupFrequency = (frequency) => {
+        const settings = updateBackupFrequency(frequency);
+        setBackupSettings(settings);
+        setBackupStatus(getBackupStatus());
+    };
+
+    /**
+     * Handle manual backup trigger
+     */
+    const handleManualBackup = () => {
+        const result = performAutoBackup(() => exportToJSON());
+
+        if (result.success) {
+            setLastBackupNotification({
+                type: 'success',
+                message: result.message
+            });
+            setBackupStatus(getBackupStatus());
+
+            // Clear notification after 5 seconds
+            setTimeout(() => setLastBackupNotification(null), 5000);
+        } else {
+            setLastBackupNotification({
+                type: 'error',
+                message: result.message
+            });
+        }
+    };
+
+    /**
+     * Check if auto-backup should trigger and perform it
+     */
+    const checkAndTriggerAutoBackup = () => {
+        if (shouldTriggerBackup()) {
+            const result = performAutoBackup(() => exportToJSON());
+
+            if (result.success) {
+                setLastBackupNotification({
+                    type: 'success',
+                    message: `✓ ${result.message}`
+                });
+                setBackupStatus(getBackupStatus());
+
+                // Clear notification after 5 seconds
+                setTimeout(() => setLastBackupNotification(null), 5000);
+            }
+        }
+    };
+
+    /**
+     * Track changes for auto-backup
+     * Call this whenever earnings data changes
+     */
+    const trackChange = () => {
+        if (backupSettings.enabled) {
+            incrementChangeCounter();
+            checkAndTriggerAutoBackup();
+            setBackupStatus(getBackupStatus());
+        }
+    };
+
+    /**
+     * Override existing handlers to include change tracking
+     */
+    const handleDeleteWithTracking = (earningId) => {
+        if (confirm('Are you sure you want to delete this earning?')) {
+            deleteEarning(earningId);
+            setEarnings(loadEarnings());
+            trackChange();
+        }
+    };
+
+    const handleSaveEditWithTracking = () => {
+        updateEarning(editingId, editForm);
+        setEarnings(loadEarnings());
+        setEditingId(null);
+        setEditForm({});
+        trackChange();
     };
 
     /**
@@ -1005,9 +1197,218 @@ export default function EarningsTrackerApp() {
                                         <FileDown size={18} />
                                         Export PDF Report
                                     </button>
+                                    <button
+                                        onClick={handleExportMarkdown}
+                                        className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition-colors"
+                                    >
+                                        <FileType size={18} />
+                                        Export Markdown
+                                    </button>
                                 </div>
                             </div>
                         )}
+
+                        {/* Backup & Restore Panel */}
+                        <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
+                            <div className="flex items-center justify-between mb-4">
+                                <h3 className="text-xl font-semibold text-purple-200 flex items-center gap-2">
+                                    <FolderDown size={20} />
+                                    Backup & Restore
+                                </h3>
+                                <button
+                                    onClick={() => setShowBackupSettings(!showBackupSettings)}
+                                    className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+                                >
+                                    <Settings size={18} />
+                                    {showBackupSettings ? 'Hide' : 'Settings'}
+                                </button>
+                            </div>
+
+                            {/* Auto-backup notification */}
+                            {lastBackupNotification && (
+                                <div className={`mb-4 p-3 rounded-lg border ${lastBackupNotification.type === 'success'
+                                        ? 'bg-green-900/20 border-green-400/30 text-green-300'
+                                        : 'bg-red-900/20 border-red-400/30 text-red-300'
+                                    }`}>
+                                    <p className="text-sm">{lastBackupNotification.message}</p>
+                                </div>
+                            )}
+
+                            {/* Auto-backup Status */}
+                            {backupSettings.enabled && (
+                                <div className="mb-4 p-4 bg-blue-900/20 border border-blue-400/30 rounded-lg">
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <CheckCircle size={16} className="text-blue-400" />
+                                        <span className="text-sm font-semibold text-blue-200">
+                                            Auto-Backup Enabled
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-blue-300">{backupStatus.statusMessage}</p>
+                                    <p className="text-xs text-blue-400 mt-1">{backupStatus.nextBackupInfo}</p>
+                                    {backupStatus.lastBackupTimestamp && (
+                                        <p className="text-xs text-blue-400 mt-1">
+                                            Last backup: {backupStatus.lastBackupDate}
+                                        </p>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Import Result */}
+                            {importResult && (
+                                <div className={`mb-4 p-4 rounded-lg border ${importResult.success
+                                        ? 'bg-green-900/20 border-green-400/30'
+                                        : 'bg-red-900/20 border-red-400/30'
+                                    }`}>
+                                    <div className="flex items-center gap-2 mb-2">
+                                        {importResult.success ? (
+                                            <CheckCircle className="text-green-400" size={20} />
+                                        ) : (
+                                            <AlertCircle className="text-red-400" size={20} />
+                                        )}
+                                        <h4 className={`font-semibold ${importResult.success ? 'text-green-200' : 'text-red-200'
+                                            }`}>
+                                            {importResult.success ? 'Import Successful' : 'Import Failed'}
+                                        </h4>
+                                    </div>
+                                    <p className={`text-sm ${importResult.success ? 'text-green-300' : 'text-red-300'
+                                        }`}>
+                                        {importResult.message}
+                                    </p>
+                                    {importResult.warnings && importResult.warnings.length > 0 && (
+                                        <div className="mt-2">
+                                            <p className="text-xs text-yellow-300 font-semibold">Warnings:</p>
+                                            <ul className="list-disc list-inside text-xs text-yellow-200 ml-2">
+                                                {importResult.warnings.slice(0, 5).map((warning, i) => (
+                                                    <li key={i}>{warning}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                    {importResult.errors && importResult.errors.length > 0 && (
+                                        <div className="mt-2">
+                                            <p className="text-xs text-red-300 font-semibold">Errors:</p>
+                                            <ul className="list-disc list-inside text-xs text-red-200 ml-2">
+                                                {importResult.errors.slice(0, 5).map((error, i) => (
+                                                    <li key={i}>{error}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Main Backup/Restore Buttons */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                {/* Backup Section */}
+                                <div className="space-y-3">
+                                    <h4 className="text-sm font-semibold text-purple-300 flex items-center gap-2">
+                                        <Save size={16} />
+                                        Backup Your Data
+                                    </h4>
+                                    <button
+                                        onClick={handleManualBackup}
+                                        className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition-colors font-semibold"
+                                    >
+                                        <FolderDown size={20} />
+                                        Create Backup (JSON)
+                                    </button>
+                                    <p className="text-xs text-purple-300">
+                                        Creates a complete backup of all earnings and settings
+                                    </p>
+                                </div>
+
+                                {/* Restore Section */}
+                                <div className="space-y-3">
+                                    <h4 className="text-sm font-semibold text-purple-300 flex items-center gap-2">
+                                        <RefreshCw size={16} />
+                                        Restore from Backup
+                                    </h4>
+                                    <label className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-3 rounded-lg transition-colors font-semibold cursor-pointer">
+                                        <Upload size={20} />
+                                        Import JSON or CSV
+                                        <input
+                                            type="file"
+                                            accept=".json,.csv"
+                                            onChange={handleImportFile}
+                                            className="hidden"
+                                        />
+                                    </label>
+                                    <p className="text-xs text-purple-300">
+                                        Import earnings from a backup file or CSV export
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Auto-Backup Settings (collapsible) */}
+                            {showBackupSettings && (
+                                <div className="mt-4 p-4 bg-slate-900/50 rounded-lg border border-purple-400/20">
+                                    <h4 className="text-sm font-semibold text-purple-200 mb-3">
+                                        Auto-Backup Settings
+                                    </h4>
+
+                                    {/* Enable/Disable Toggle */}
+                                    <div className="flex items-center justify-between mb-4 p-3 bg-slate-800/50 rounded-lg">
+                                        <div>
+                                            <p className="font-semibold text-white">Enable Auto-Backup</p>
+                                            <p className="text-xs text-purple-300">
+                                                Automatically backup your data
+                                            </p>
+                                        </div>
+                                        <button
+                                            onClick={() => handleToggleAutoBackup(!backupSettings.enabled)}
+                                            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${backupSettings.enabled ? 'bg-blue-600' : 'bg-gray-600'
+                                                }`}
+                                        >
+                                            <span
+                                                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${backupSettings.enabled ? 'translate-x-6' : 'translate-x-1'
+                                                    }`}
+                                            />
+                                        </button>
+                                    </div>
+
+                                    {/* Frequency Selection */}
+                                    {backupSettings.enabled && (
+                                        <div className="space-y-2">
+                                            <label className="block text-sm text-purple-200 mb-2">
+                                                Backup Frequency
+                                            </label>
+                                            <select
+                                                value={backupSettings.frequency}
+                                                onChange={(e) => handleUpdateBackupFrequency(e.target.value)}
+                                                className="w-full px-3 py-2 bg-slate-800 border border-purple-400/30 rounded-lg text-white"
+                                            >
+                                                <option value="every_10_changes">After every 10 changes</option>
+                                                <option value="every_25_changes">After every 25 changes</option>
+                                                <option value="every_50_changes">After every 50 changes</option>
+                                                <option value="daily">Once per day</option>
+                                                <option value="weekly">Once per week</option>
+                                                <option value="manual">Manual only</option>
+                                            </select>
+                                        </div>
+                                    )}
+
+                                    {/* Stats */}
+                                    <div className="mt-4 grid grid-cols-2 gap-3">
+                                        <div className="p-2 bg-slate-800/50 rounded text-center">
+                                            <p className="text-xs text-purple-300">Changes Since Backup</p>
+                                            <p className="text-lg font-bold text-white">{backupStatus.changeCount}</p>
+                                        </div>
+                                        <div className="p-2 bg-slate-800/50 rounded text-center">
+                                            <p className="text-xs text-purple-300">Total Backups</p>
+                                            <p className="text-lg font-bold text-white">{backupStatus.totalBackups}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Help Text */}
+                            <div className="mt-4 p-3 bg-blue-900/10 border border-blue-400/20 rounded-lg">
+                                <p className="text-xs text-blue-200">
+                                    <strong>💡 Tip:</strong> Regular backups help you keep your data safe.
+                                    You can import backups on any device to transfer your earnings data.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 )}
 
@@ -1346,7 +1747,7 @@ export default function EarningsTrackerApp() {
                                                             <td className="px-6 py-4">
                                                                 <div className="flex gap-2">
                                                                     <button
-                                                                        onClick={handleSaveEdit}
+                                                                        onClick={handleSaveEditWithTracking}
                                                                         className="text-green-400 hover:text-green-300"
                                                                         title="Save"
                                                                     >
@@ -1404,7 +1805,7 @@ export default function EarningsTrackerApp() {
                                                                         <Edit2 size={18} />
                                                                     </button>
                                                                     <button
-                                                                        onClick={() => handleDelete(earning.id)}
+                                                                        onClick={() => handleDeleteWithTracking(earning.id)}
                                                                         className="text-red-400 hover:text-red-300"
                                                                         title="Delete"
                                                                     >
@@ -1618,7 +2019,7 @@ export default function EarningsTrackerApp() {
                                             </div>
                                             <button
                                                 onClick={() => {
-                                                    handleDelete(dup.id);
+                                                    handleDeleteWithTracking(dup.id);
                                                     // Update parse result to remove from list
                                                     setParseResult({
                                                         ...parseResult,

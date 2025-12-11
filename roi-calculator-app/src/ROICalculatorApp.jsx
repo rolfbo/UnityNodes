@@ -24,9 +24,10 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChart3, PieChart, HelpCircle, Info, Share2, Download, Clock, AlertTriangle, Globe } from 'lucide-react';
+import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChart3, PieChart, HelpCircle, Info, Share2, Download, Clock, AlertTriangle, Globe, ChevronUp, ChevronDown } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
 import { usePersistentState } from './utils/usePersistentState.js';
+import { loadEarnings, getEarningsStats } from './utils/earningsStorage.js';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
@@ -112,6 +113,12 @@ export default function UnityNodesROICalculator() {
         params.set('selfRunRampCurve', selfRunRampCurve);
         params.set('leasedRampCurve', leasedRampCurve);
 
+        // Earnings Target Calculator parameters
+        params.set('targetRevenue', targetRevenue.toString());
+        params.set('targetTimePeriod', targetTimePeriod);
+        params.set('activeLicensesCount', activeLicensesCount.toString());
+        params.set('earningsTargetExpanded', earningsTargetExpanded.toString());
+
         return `${window.location.origin}${window.location.pathname}?${params.toString()}`;
     };
 
@@ -147,6 +154,12 @@ export default function UnityNodesROICalculator() {
         if (urlParams.rampUpDuration) setRampUpDuration(Math.min(12, Math.max(1, parseInt(urlParams.rampUpDuration) || 6)));
         if (urlParams.selfRunRampCurve && rampUpCurves[urlParams.selfRunRampCurve]) setSelfRunRampCurve(urlParams.selfRunRampCurve);
         if (urlParams.leasedRampCurve && rampUpCurves[urlParams.leasedRampCurve]) setLeasedRampCurve(urlParams.leasedRampCurve);
+
+        // Earnings Target Calculator parameters
+        if (urlParams.targetRevenue) setTargetRevenue(Math.max(0, parseFloat(urlParams.targetRevenue) || 10000));
+        if (urlParams.targetTimePeriod) setTargetTimePeriod(urlParams.targetTimePeriod);
+        if (urlParams.activeLicensesCount) setActiveLicensesCount(Math.max(1, parseInt(urlParams.activeLicensesCount) || totalActiveLicenses));
+        if (urlParams.earningsTargetExpanded !== undefined) setEarningsTargetExpanded(urlParams.earningsTargetExpanded === 'true');
     }, []);
 
     // Node Configuration
@@ -192,6 +205,12 @@ export default function UnityNodesROICalculator() {
 
     // Reality Check UI State
     const [realityCheckExpanded, setRealityCheckExpanded] = usePersistentState('roi_realityCheckExpanded', true); // Show/hide Reality Check section
+
+    // Earnings Target Calculator State
+    const [targetRevenue, setTargetRevenue] = usePersistentState('roi_targetRevenue', 10000); // Target revenue amount ($)
+    const [targetTimePeriod, setTargetTimePeriod] = usePersistentState('roi_targetTimePeriod', 'monthly'); // daily, monthly, yearly
+    const [activeLicensesCount, setActiveLicensesCount] = usePersistentState('roi_activeLicensesCount', totalActiveLicenses); // Number of active licenses
+    const [earningsTargetExpanded, setEarningsTargetExpanded] = usePersistentState('roi_earningsTargetExpanded', true); // Show/hide Earnings Target Calculator section
 
     // Market share scenarios based on the table (using 1.2M license row)
     // Assuming $208/month = 7GB per device (max capacity)
@@ -543,6 +562,126 @@ export default function UnityNodesROICalculator() {
             detail: 'Significantly higher than established DePIN networks'
         });
     }
+
+    // ==========================================
+    // EARNINGS TARGET CALCULATOR FUNCTIONS
+    // ==========================================
+
+    /**
+     * Calculate the gross earnings needed per license to reach the target revenue
+     * @param {number} target - Target revenue amount
+     * @param {number} licenses - Number of active licenses
+     * @param {string} period - Time period ('daily', 'monthly', 'yearly')
+     * @returns {number} Earnings needed per license per period
+     */
+    const calculateGrossEarningsNeeded = (target, licenses, period) => {
+        if (licenses <= 0) return 0;
+
+        switch (period) {
+            case 'daily':
+                return target / licenses; // Target is already daily
+            case 'monthly':
+                return target / licenses; // Target is monthly
+            case 'yearly':
+                return target / licenses / 12; // Convert yearly target to monthly per license
+            default:
+                return target / licenses;
+        }
+    };
+
+    /**
+     * Calculate operating costs per license per period
+     * @param {string} period - Time period ('daily', 'monthly', 'yearly')
+     * @returns {number} Operating costs per license per period
+     */
+    const calculateOperatingCostsPerLicense = (period) => {
+        // Hardware amortization (spread over 24 months)
+        const hardwareCostPerLicenseMonthly = (phonePrice * numNodes * licensesPerNode) / (totalActiveLicenses * 24);
+
+        // SIM card costs
+        const simCostPerLicenseMonthly = simMonthly;
+
+        // Unity credits costs (if operator pays)
+        const creditsCostPerLicenseMonthly = nodeOperatorPaysCredits ? monthlyCredits : 0;
+
+        // Total monthly operating costs per license
+        const totalMonthlyOpCosts = hardwareCostPerLicenseMonthly + simCostPerLicenseMonthly + creditsCostPerLicenseMonthly;
+
+        switch (period) {
+            case 'daily':
+                return totalMonthlyOpCosts / 30;
+            case 'monthly':
+                return totalMonthlyOpCosts;
+            case 'yearly':
+                return totalMonthlyOpCosts * 12;
+            default:
+                return totalMonthlyOpCosts;
+        }
+    };
+
+    /**
+     * Calculate net earnings required per license (accounting for costs)
+     * @param {number} target - Target revenue amount
+     * @param {number} licenses - Number of active licenses
+     * @param {string} period - Time period ('daily', 'monthly', 'yearly')
+     * @returns {number} Net earnings required per license per period
+     */
+    const calculateNetEarningsRequired = (target, licenses, period) => {
+        const grossNeeded = calculateGrossEarningsNeeded(target, licenses, period);
+        const operatingCosts = calculateOperatingCostsPerLicense(period);
+        return Math.max(0, grossNeeded + operatingCosts); // Add costs (operating costs are expenses)
+    };
+
+    /**
+     * Get actual earnings data from the Earnings Tracker
+     * @returns {Object} Earnings statistics and comparison data
+     */
+    const getActualEarningsComparison = () => {
+        try {
+            const earningsStats = getEarningsStats();
+            const earnings = loadEarnings();
+
+            if (earnings.length === 0) {
+                return {
+                    hasData: false,
+                    currentAveragePerLicense: 0,
+                    totalEarnings: 0,
+                    transactionCount: 0
+                };
+            }
+
+            // Calculate average per license based on available data
+            // This is a simplified calculation - in reality, we'd need to know how many licenses were active during the period
+            const currentAveragePerLicense = earningsStats.average;
+
+            return {
+                hasData: true,
+                currentAveragePerLicense,
+                totalEarnings: earningsStats.total,
+                transactionCount: earningsStats.count,
+                uniqueNodes: earningsStats.uniqueNodes
+            };
+        } catch (error) {
+            console.error('Error loading earnings data:', error);
+            return {
+                hasData: false,
+                currentAveragePerLicense: 0,
+                totalEarnings: 0,
+                transactionCount: 0
+            };
+        }
+    };
+
+    // Earnings Target Calculator Results
+    const grossEarningsNeeded = calculateGrossEarningsNeeded(targetRevenue, activeLicensesCount, targetTimePeriod);
+    const operatingCostsPerLicense = calculateOperatingCostsPerLicense(targetTimePeriod);
+    const netEarningsRequired = calculateNetEarningsRequired(targetRevenue, activeLicensesCount, targetTimePeriod);
+    const actualEarningsData = getActualEarningsComparison();
+
+    // Calculate progress toward target (if we have actual data)
+    const earningsGap = actualEarningsData.hasData ? netEarningsRequired - actualEarningsData.currentAveragePerLicense : 0;
+    const progressPercentage = actualEarningsData.hasData && netEarningsRequired > 0 ?
+        Math.min(100, (actualEarningsData.currentAveragePerLicense / netEarningsRequired) * 100) : 0;
 
     // Validation
     const totalLicensesAllocated = licensesRunBySelf + licensesLeased + licensesInactive;
@@ -2610,6 +2749,190 @@ export default function UnityNodesROICalculator() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Earnings Target Calculator */}
+                    <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 mb-6">
+                        <div className="flex items-center justify-between mb-4">
+                            <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                                <TrendingUp size={20} className="text-green-400" />
+                                Earnings Target Calculator
+                            </h2>
+                            <button
+                                onClick={() => setEarningsTargetExpanded(!earningsTargetExpanded)}
+                                className="text-purple-400 hover:text-purple-300 transition-colors"
+                            >
+                                {earningsTargetExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                            </button>
+                        </div>
+
+                        {earningsTargetExpanded && (
+                            <div className="space-y-6">
+                                {/* Input Controls */}
+                                <div className="grid md:grid-cols-3 gap-4">
+                                    <div className="space-y-2">
+                                        <label className="text-sm text-purple-300 font-medium">
+                                            Target Revenue ($)
+                                            <HelpTooltip content="The total revenue amount you want to achieve">
+                                                <span></span>
+                                            </HelpTooltip>
+                                        </label>
+                                        <input
+                                            type="number"
+                                            value={targetRevenue}
+                                            onChange={(e) => setTargetRevenue(Math.max(0, parseFloat(e.target.value) || 0))}
+                                            className="w-full px-3 py-2 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                                            placeholder="10000"
+                                            min="0"
+                                            step="100"
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label className="text-sm text-purple-300 font-medium">
+                                            Active Licenses
+                                            <HelpTooltip content="Number of licenses that are actively running and earning">
+                                                <span></span>
+                                            </HelpTooltip>
+                                        </label>
+                                        <input
+                                            type="number"
+                                            value={activeLicensesCount}
+                                            onChange={(e) => setActiveLicensesCount(Math.max(1, parseInt(e.target.value) || 1))}
+                                            className="w-full px-3 py-2 bg-white/10 border border-purple-400/30 rounded-lg text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                                            placeholder={totalActiveLicenses.toString()}
+                                            min="1"
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label className="text-sm text-purple-300 font-medium">
+                                            Time Period
+                                            <HelpTooltip content="The time period for the earnings calculation">
+                                                <span></span>
+                                            </HelpTooltip>
+                                        </label>
+                                        <select
+                                            value={targetTimePeriod}
+                                            onChange={(e) => setTargetTimePeriod(e.target.value)}
+                                            className="w-full px-3 py-2 bg-white/10 border border-purple-400/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-400"
+                                        >
+                                            <option value="monthly">Monthly</option>
+                                            <option value="yearly">Yearly</option>
+                                            <option value="daily">Daily</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                {/* Results Display */}
+                                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                    {/* Target Summary */}
+                                    <div className="bg-white/5 rounded-lg p-4 border border-green-400/30">
+                                        <div className="text-green-300 text-sm font-medium mb-1">Target Summary</div>
+                                        <div className="text-white text-lg font-bold">${formatNumber(targetRevenue)}</div>
+                                        <div className="text-green-200 text-xs">
+                                            {targetTimePeriod} with {activeLicensesCount} licenses
+                                        </div>
+                                    </div>
+
+                                    {/* Gross Earnings Needed */}
+                                    <div className="bg-white/5 rounded-lg p-4 border border-blue-400/30">
+                                        <div className="text-blue-300 text-sm font-medium mb-1">Gross Earnings Needed</div>
+                                        <div className="text-white text-lg font-bold">${formatNumber(grossEarningsNeeded)}</div>
+                                        <div className="text-blue-200 text-xs">
+                                            per license per {targetTimePeriod.slice(0, -2)}
+                                        </div>
+                                    </div>
+
+                                    {/* Operating Costs */}
+                                    <div className="bg-white/5 rounded-lg p-4 border border-orange-400/30">
+                                        <div className="text-orange-300 text-sm font-medium mb-1">Operating Costs</div>
+                                        <div className="text-white text-lg font-bold">${formatNumber(operatingCostsPerLicense)}</div>
+                                        <div className="text-orange-200 text-xs">
+                                            per license per {targetTimePeriod.slice(0, -2)}
+                                        </div>
+                                    </div>
+
+                                    {/* Net Earnings Required */}
+                                    <div className="bg-white/5 rounded-lg p-4 border border-purple-400/30">
+                                        <div className="text-purple-300 text-sm font-medium mb-1">Net Earnings Required</div>
+                                        <div className="text-white text-xl font-bold">${formatNumber(netEarningsRequired)}</div>
+                                        <div className="text-purple-200 text-xs">
+                                            per license per {targetTimePeriod.slice(0, -2)}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Cost Breakdown */}
+                                <div className="bg-white/5 rounded-lg p-4 border border-white/20">
+                                    <h3 className="text-white font-semibold mb-3">Cost Breakdown per License</h3>
+                                    <div className="grid md:grid-cols-3 gap-4 text-sm">
+                                        <div>
+                                            <div className="text-purple-200">Hardware Amortization:</div>
+                                            <div className="text-white font-semibold">
+                                                ${formatNumber((phonePrice * numNodes * licensesPerNode) / (totalActiveLicenses * 24), 2)}/month
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="text-purple-200">SIM Card:</div>
+                                            <div className="text-white font-semibold">${formatNumber(simMonthly)}/month</div>
+                                        </div>
+                                        <div>
+                                            <div className="text-purple-200">Unity Credits:</div>
+                                            <div className="text-white font-semibold">
+                                                ${formatNumber(nodeOperatorPaysCredits ? monthlyCredits : 0)}/month
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Actual Earnings Comparison */}
+                                {actualEarningsData.hasData && (
+                                    <div className="bg-white/5 rounded-lg p-4 border border-cyan-400/30">
+                                        <h3 className="text-cyan-300 font-semibold mb-3 flex items-center gap-2">
+                                            <BarChart3 size={16} />
+                                            Actual Earnings Comparison
+                                        </h3>
+                                        <div className="grid md:grid-cols-3 gap-4">
+                                            <div>
+                                                <div className="text-cyan-200 text-sm">Current Average:</div>
+                                                <div className="text-white font-bold">${formatNumber(actualEarningsData.currentAveragePerLicense)}</div>
+                                                <div className="text-cyan-200 text-xs">per transaction</div>
+                                            </div>
+                                            <div>
+                                                <div className="text-cyan-200 text-sm">Gap to Target:</div>
+                                                <div className={`font-bold ${earningsGap > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                                                    ${formatNumber(Math.abs(earningsGap))} {earningsGap > 0 ? 'short' : 'surplus'}
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div className="text-cyan-200 text-sm">Progress:</div>
+                                                <div className="flex items-center gap-2">
+                                                    <div className="flex-1 bg-white/10 rounded-full h-2">
+                                                        <div
+                                                            className="bg-cyan-400 h-2 rounded-full transition-all duration-300"
+                                                            style={{ width: `${progressPercentage}%` }}
+                                                        ></div>
+                                                    </div>
+                                                    <span className="text-white font-bold text-xs">{formatNumber(progressPercentage)}%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Information Note */}
+                                <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
+                                    <div className="flex items-start gap-2">
+                                        <Info className="text-blue-400 mt-0.5" size={16} />
+                                        <div className="text-blue-200 text-sm">
+                                            <strong>How to use:</strong> Set your desired revenue target and see exactly how much each license needs to earn.
+                                            The calculator automatically factors in your operational costs. Compare with your actual earnings data to track progress toward your goals.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Sticky Summary (Mobile) */}
