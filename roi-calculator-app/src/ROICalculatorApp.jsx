@@ -158,7 +158,7 @@ export default function UnityNodesROICalculator() {
         // Earnings Target Calculator parameters
         if (urlParams.targetRevenue) setTargetRevenue(Math.max(0, parseFloat(urlParams.targetRevenue) || 10000));
         if (urlParams.targetTimePeriod) setTargetTimePeriod(urlParams.targetTimePeriod);
-        if (urlParams.activeLicensesCount) setActiveLicensesCount(Math.max(1, parseInt(urlParams.activeLicensesCount) || totalActiveLicenses));
+        if (urlParams.activeLicensesCount) setActiveLicensesCount(Math.max(1, parseInt(urlParams.activeLicensesCount) || 100));
         if (urlParams.earningsTargetExpanded !== undefined) setEarningsTargetExpanded(urlParams.earningsTargetExpanded === 'true');
     }, []);
 
@@ -209,7 +209,7 @@ export default function UnityNodesROICalculator() {
     // Earnings Target Calculator State
     const [targetRevenue, setTargetRevenue] = usePersistentState('roi_targetRevenue', 10000); // Target revenue amount ($)
     const [targetTimePeriod, setTargetTimePeriod] = usePersistentState('roi_targetTimePeriod', 'monthly'); // daily, monthly, yearly
-    const [activeLicensesCount, setActiveLicensesCount] = usePersistentState('roi_activeLicensesCount', totalActiveLicenses); // Number of active licenses
+    const [activeLicensesCount, setActiveLicensesCount] = usePersistentState('roi_activeLicensesCount', 100); // Number of active licenses
     const [earningsTargetExpanded, setEarningsTargetExpanded] = usePersistentState('roi_earningsTargetExpanded', true); // Show/hide Earnings Target Calculator section
 
     // Market share scenarios based on the table (using 1.2M license row)
