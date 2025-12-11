@@ -678,6 +678,22 @@ export default function UnityNodesROICalculator() {
     const netEarningsRequired = calculateNetEarningsRequired(targetRevenue, activeLicensesCount, targetTimePeriod);
     const actualEarningsData = getActualEarningsComparison();
 
+    // Calculate daily earnings required per license (always shown)
+    const calculateDailyEarningsRequired = (netEarningsRequired, period) => {
+        switch (period) {
+            case 'daily':
+                return netEarningsRequired;
+            case 'monthly':
+                return netEarningsRequired / 30; // 30-day month
+            case 'yearly':
+                return netEarningsRequired / 365; // Calendar year
+            default:
+                return netEarningsRequired / 30;
+        }
+    };
+
+    const dailyEarningsRequiredPerLicense = calculateDailyEarningsRequired(netEarningsRequired, targetTimePeriod);
+
     // Calculate progress toward target (if we have actual data)
     const earningsGap = actualEarningsData.hasData ? netEarningsRequired - actualEarningsData.currentAveragePerLicense : 0;
     const progressPercentage = actualEarningsData.hasData && netEarningsRequired > 0 ?
@@ -2821,6 +2837,31 @@ export default function UnityNodesROICalculator() {
                                             <option value="yearly">Yearly</option>
                                             <option value="daily">Daily</option>
                                         </select>
+                                    </div>
+                                </div>
+
+                                {/* Daily Earnings Display - Always Visible */}
+                                <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-400/40 rounded-xl p-6 mb-6">
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <div className="flex items-center gap-2 mb-2">
+                                                <Clock size={24} className="text-yellow-400" />
+                                                <h3 className="text-xl font-bold text-yellow-300">Daily Earnings Required</h3>
+                                            </div>
+                                            <div className="text-yellow-200 text-sm mb-1">per license per day</div>
+                                            <div className="text-white text-3xl font-bold">${formatNumber(dailyEarningsRequiredPerLicense, 3)}</div>
+                                            <div className="text-yellow-200 text-xs mt-1">
+                                                Each phone needs to earn this much daily
+                                            </div>
+                                        </div>
+                                        <div className="text-right">
+                                            <div className="text-yellow-300 text-sm font-medium">
+                                                Based on {targetTimePeriod} target
+                                            </div>
+                                            <div className="text-yellow-200 text-xs mt-1">
+                                                Converted from ${formatNumber(netEarningsRequired)} {targetTimePeriod.slice(0, -2)} requirement
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 

@@ -108,6 +108,22 @@ The calculator shows results in four main cards:
 3. **Operating Costs**: Total costs per license per period
 4. **Net Earnings Required**: Final amount each license needs to earn
 
+### Daily Earnings Display (Always Visible)
+
+**Prominent Header Card:**
+- **Daily Earnings Required**: Always shows the daily amount each license needs to earn
+- **Conversion Logic**: Automatically converts from your selected time period:
+  - Monthly target ÷ 30 days
+  - Yearly target ÷ 365 days
+  - Daily target shown as-is
+- **Visual Design**: Yellow/amber gradient card with clock icon for prominence
+- **Context**: Shows both daily amount and original period reference
+
+**Why Always Visible:**
+- Daily earnings are the most practical metric for node operators
+- Helps with day-to-day planning and performance tracking
+- Provides immediate understanding regardless of target period chosen
+
 ### Cost Breakdown Section
 
 Detailed breakdown of how costs are calculated:
