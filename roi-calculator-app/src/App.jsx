@@ -22,7 +22,7 @@ function App() {
   // State to manage which page is currently active
   // 'calculator' = ROI Calculator page
   // 'tracker' = Earnings Tracker page
-  const [activePage, setActivePage] = useState('calculator')
+  const [activePage, setActivePage] = useState('tracker')
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -42,8 +42,8 @@ function App() {
               <button
                 onClick={() => setActivePage('calculator')}
                 className={`flex items-center gap-2 px-6 py-2 rounded-lg transition-all duration-200 ${activePage === 'calculator'
-                    ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50'
-                    : 'bg-slate-800/50 text-purple-200 hover:bg-slate-800 hover:text-white'
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50'
+                  : 'bg-slate-800/50 text-purple-200 hover:bg-slate-800 hover:text-white'
                   }`}
               >
                 <Calculator size={20} />
@@ -53,8 +53,8 @@ function App() {
               <button
                 onClick={() => setActivePage('tracker')}
                 className={`flex items-center gap-2 px-6 py-2 rounded-lg transition-all duration-200 ${activePage === 'tracker'
-                    ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50'
-                    : 'bg-slate-800/50 text-purple-200 hover:bg-slate-800 hover:text-white'
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50'
+                  : 'bg-slate-800/50 text-purple-200 hover:bg-slate-800 hover:text-white'
                   }`}
               >
                 <TrendingUp size={20} />
