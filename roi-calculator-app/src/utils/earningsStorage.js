@@ -114,11 +114,12 @@ export function addEarning(earning) {
 /**
  * Add multiple earnings at once
  * Adds ALL entries and flags potential duplicates for manual review
- * 
+ *
  * @param {Array} earnings - Array of earning objects to add
+ * @param {Function} updateLicenseBinding - Optional callback to update license binding status
  * @returns {Object} Result with added count and potential duplicates list
  */
-export function addEarnings(earnings) {
+export function addEarnings(earnings, updateLicenseBinding = null) {
     const existingEarnings = loadEarnings();
     const added = [];
     const potentialDuplicates = [];
@@ -134,6 +135,18 @@ export function addEarnings(earnings) {
     // Save all new earnings
     const allEarnings = [...existingEarnings, ...added];
     saveEarnings(allEarnings);
+
+    // Update license binding status for newly earning licenses
+    if (updateLicenseBinding) {
+        const uniqueNodeIds = [...new Set(added.map(e => e.nodeId))];
+        uniqueNodeIds.forEach(nodeId => {
+            try {
+                updateLicenseBinding(nodeId, true);
+            } catch (error) {
+                console.warn(`Failed to update binding status for ${nodeId}:`, error);
+            }
+        });
+    }
 
     return {
         success: true,
@@ -631,5 +644,106 @@ export function getEarningsStats() {
         average,
         byLicenseType,
         uniqueNodes
+    };
+}
+
+/**
+ * Check if a license is currently earning (bound)
+ * A license is considered bound if it has generated earnings within the last 24 hours
+ *
+ * @param {string} licenseId - The license address to check
+ * @returns {boolean} True if the license is currently bound
+ */
+export function isLicenseBound(licenseId) {
+    const earnings = loadEarnings();
+    const normalizedLicenseId = licenseId.trim().toLowerCase();
+    const now = new Date();
+    const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+
+    // Check if there are any earnings for this license in the last 24 hours
+    return earnings.some(earning => {
+        const earningDate = new Date(earning.date);
+        return earning.nodeId.toLowerCase() === normalizedLicenseId &&
+            earningDate >= twentyFourHoursAgo &&
+            earning.amount > 0;
+    });
+}
+
+/**
+ * Update license binding status based on recent earnings
+ * This function should be called when new earnings are added
+ *
+ * @param {string} licenseId - The license address that earned
+ * @param {Function} updateLicenseBinding - Callback to update license binding status (from licenseStorage)
+ */
+export function updateLicenseBindingFromEarnings(licenseId, updateLicenseBinding) {
+    if (!updateLicenseBinding) return;
+
+    try {
+        // Mark this license as bound since it just earned
+        updateLicenseBinding(licenseId, true);
+    } catch (error) {
+        console.warn('Failed to update license binding status:', error);
+    }
+}
+
+/**
+ * Get licenses that haven't earned in the specified number of days
+ * Used for detecting potentially unbound licenses
+ *
+ * @param {number} days - Number of days without earnings to check for
+ * @returns {Array} Array of license IDs that haven't earned in the specified period
+ */
+export function getUnboundLicenses(days = 2) {
+    const earnings = loadEarnings();
+    const now = new Date();
+    const cutoffDate = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+
+    // Get all unique node IDs that have earned recently
+    const recentlyEarningNodes = new Set(
+        earnings
+            .filter(earning => new Date(earning.date) >= cutoffDate)
+            .map(earning => earning.nodeId.toLowerCase())
+    );
+
+    // Get all unique node IDs from all earnings
+    const allNodes = new Set(
+        earnings.map(earning => earning.nodeId.toLowerCase())
+    );
+
+    // Return nodes that exist but haven't earned recently
+    return Array.from(allNodes).filter(nodeId => !recentlyEarningNodes.has(nodeId));
+}
+
+/**
+ * Get license earning patterns for analysis
+ * @param {string} licenseId - The license address to analyze
+ * @param {number} days - Number of days to look back
+ * @returns {Object} Earning pattern analysis
+ */
+export function getLicenseEarningPattern(licenseId, days = 30) {
+    const earnings = loadEarnings();
+    const normalizedLicenseId = licenseId.trim().toLowerCase();
+    const now = new Date();
+    const startDate = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+
+    const licenseEarnings = earnings.filter(earning =>
+        earning.nodeId.toLowerCase() === normalizedLicenseId &&
+        new Date(earning.date) >= startDate
+    );
+
+    const totalEarned = licenseEarnings.reduce((sum, earning) => sum + earning.amount, 0);
+    const earningDays = new Set(licenseEarnings.map(e => e.date)).size;
+    const averageDaily = earningDays > 0 ? totalEarned / earningDays : 0;
+
+    return {
+        licenseId: normalizedLicenseId,
+        totalEarned,
+        earningDays,
+        nonEarningDays: days - earningDays,
+        averageDaily,
+        lastEarning: licenseEarnings.length > 0 ?
+            new Date(Math.max(...licenseEarnings.map(e => new Date(e.date)))) : null,
+        isCurrentlyBound: isLicenseBound(normalizedLicenseId)
     };
 }

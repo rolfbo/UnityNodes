@@ -28,6 +28,7 @@ import { DollarSign, Smartphone, CreditCard, Package, TrendingUp, Users, BarChar
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
 import { usePersistentState } from './utils/usePersistentState.js';
 import { loadEarnings, getEarningsStats } from './utils/earningsStorage.js';
+import { getAllLicenses, getLicenseStats } from './utils/licenseStorage.js';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
@@ -205,6 +206,9 @@ export default function UnityNodesROICalculator() {
 
     // Reality Check UI State
     const [realityCheckExpanded, setRealityCheckExpanded] = usePersistentState('roi_realityCheckExpanded', true); // Show/hide Reality Check section
+
+    // License Utilization UI State
+    const [licenseUtilizationExpanded, setLicenseUtilizationExpanded] = usePersistentState('roi_licenseUtilizationExpanded', true); // Show/hide License Utilization section
 
     // Earnings Target Calculator State
     const [targetRevenue, setTargetRevenue] = usePersistentState('roi_targetRevenue', 10000); // Target revenue amount ($)
@@ -1418,6 +1422,207 @@ export default function UnityNodesROICalculator() {
                                         </p>
                                     </div>
                                 </div>
+                            </>
+                        )}
+                    </div>
+
+                    {/* License Utilization Reality Check */}
+                    <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 backdrop-blur-lg rounded-xl p-6 border border-blue-500/30 mb-6">
+                        <div
+                            className="flex items-center gap-2 mb-4 cursor-pointer"
+                            onClick={() => setLicenseUtilizationExpanded(!licenseUtilizationExpanded)}
+                        >
+                            <Database className="text-blue-400" size={24} />
+                            <h2 className="text-xl font-bold text-white">License Utilization Reality Check</h2>
+                            <button className="ml-auto text-blue-300 hover:text-blue-200 transition-colors">
+                                {licenseUtilizationExpanded ? '▼' : '▶'}
+                            </button>
+                        </div>
+
+                        {licenseUtilizationExpanded && (
+                            <>
+                                <div className="mb-4 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                    <p className="text-blue-200 text-sm">
+                                        <strong>License Manager Integration:</strong> This section compares your projected license utilization
+                                        with actual license binding data from your License Manager. It helps identify revenue loss from
+                                        unbound leased licenses.
+                                    </p>
+                                </div>
+
+                                {/* Load License Data */}
+                                {(() => {
+                                    const licenses = getAllLicenses();
+                                    const licenseStats = getLicenseStats();
+                                    const earningsStats = getEarningsStats();
+
+                                    // Calculate projected vs actual utilization
+                                    const projectedUtilization = totalLicensesAllocated > 0 ?
+                                        (licensesRunBySelf / totalLicensesAllocated) * 100 : 0;
+                                    const actualUtilization = licenseStats.total > 0 ?
+                                        (licenseStats.bound / licenseStats.total) * 100 : 0;
+
+                                    // Calculate revenue loss from unbound licenses
+                                    const estimatedDailyRevenue = 5; // $5 per bound license per day (placeholder)
+                                    const unboundRevenueLoss = licenseStats.unbound * estimatedDailyRevenue;
+
+                                    return (
+                                        <div className="space-y-6">
+                                            {/* License Status Overview */}
+                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                <div className="bg-white/5 border border-green-400/30 rounded-lg p-4">
+                                                    <div className="text-green-300 text-xs mb-1">Projected Utilization</div>
+                                                    <div className="text-white text-2xl font-bold">
+                                                        {formatNumber(projectedUtilization, 1)}%
+                                                    </div>
+                                                    <div className="text-green-200 text-xs mt-1">
+                                                        Based on your calculator settings
+                                                    </div>
+                                                </div>
+
+                                                <div className={`border rounded-lg p-4 ${actualUtilization >= projectedUtilization ?
+                                                        'bg-green-500/10 border-green-400/30' :
+                                                        'bg-red-500/10 border-red-400/30'
+                                                    }`}>
+                                                    <div className={`text-xs mb-1 ${actualUtilization >= projectedUtilization ? 'text-green-300' : 'text-red-300'
+                                                        }`}>
+                                                        Actual Utilization
+                                                    </div>
+                                                    <div className="text-white text-2xl font-bold">
+                                                        {formatNumber(actualUtilization, 1)}%
+                                                    </div>
+                                                    <div className={`text-xs mt-1 ${actualUtilization >= projectedUtilization ? 'text-green-200' : 'text-red-200'
+                                                        }`}>
+                                                        {licenseStats.bound} of {licenseStats.total} licenses bound
+                                                    </div>
+                                                </div>
+
+                                                <div className={`border rounded-lg p-4 ${unboundRevenueLoss > 0 ? 'bg-red-500/10 border-red-400/30' : 'bg-green-500/10 border-green-400/30'
+                                                    }`}>
+                                                    <div className={`text-xs mb-1 ${unboundRevenueLoss > 0 ? 'text-red-300' : 'text-green-300'}`}>
+                                                        Daily Revenue Loss
+                                                    </div>
+                                                    <div className="text-white text-2xl font-bold">
+                                                        ${formatNumber(unboundRevenueLoss, 2)}
+                                                    </div>
+                                                    <div className={`text-xs mt-1 ${unboundRevenueLoss > 0 ? 'text-red-200' : 'text-green-200'}`}>
+                                                        From {licenseStats.unbound} unbound licenses
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Utilization Comparison Chart */}
+                                            <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                                <h3 className="text-purple-300 font-semibold mb-3">Projected vs Actual Utilization</h3>
+                                                <div className="space-y-3">
+                                                    <div>
+                                                        <div className="flex justify-between text-sm mb-1">
+                                                            <span className="text-green-300">Projected</span>
+                                                            <span className="text-white">{formatNumber(projectedUtilization, 1)}%</span>
+                                                        </div>
+                                                        <div className="w-full bg-gray-700 rounded-full h-3">
+                                                            <div
+                                                                className="bg-green-500 h-3 rounded-full"
+                                                                style={{ width: `${Math.min(projectedUtilization, 100)}%` }}
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex justify-between text-sm mb-1">
+                                                            <span className="text-blue-300">Actual</span>
+                                                            <span className="text-white">{formatNumber(actualUtilization, 1)}%</span>
+                                                        </div>
+                                                        <div className="w-full bg-gray-700 rounded-full h-3">
+                                                            <div
+                                                                className={`h-3 rounded-full ${actualUtilization >= projectedUtilization ? 'bg-blue-500' : 'bg-red-500'
+                                                                    }`}
+                                                                style={{ width: `${Math.min(actualUtilization, 100)}%` }}
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* License Status Breakdown */}
+                                            {licenseStats.total > 0 && (
+                                                <div className="bg-white/5 border border-purple-400/30 rounded-lg p-4">
+                                                    <h3 className="text-purple-300 font-semibold mb-3">License Status Breakdown</h3>
+                                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                                        <div>
+                                                            <div className="text-2xl font-bold text-blue-300">{licenseStats.selfRun}</div>
+                                                            <div className="text-xs text-slate-400">Self-run</div>
+                                                        </div>
+                                                        <div>
+                                                            <div className="text-2xl font-bold text-green-300">{licenseStats.bound - licenseStats.selfRun}</div>
+                                                            <div className="text-xs text-slate-400">Leased & Bound</div>
+                                                        </div>
+                                                        <div>
+                                                            <div className="text-2xl font-bold text-red-300">{licenseStats.unbound}</div>
+                                                            <div className="text-xs text-slate-400">Leased & Unbound</div>
+                                                        </div>
+                                                        <div>
+                                                            <div className="text-2xl font-bold text-purple-300">{licenseStats.available}</div>
+                                                            <div className="text-xs text-slate-400">Available</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Action Items */}
+                                            <div className="space-y-3">
+                                                {licenseStats.unbound > 0 && (
+                                                    <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
+                                                        <h4 className="font-semibold text-red-300 mb-2 flex items-center gap-2">
+                                                            <AlertTriangle size={16} />
+                                                            Revenue Loss Alert
+                                                        </h4>
+                                                        <p className="text-red-200 text-sm mb-3">
+                                                            You have {licenseStats.unbound} leased licenses that are not generating revenue,
+                                                            resulting in a daily loss of ${formatNumber(unboundRevenueLoss, 2)}.
+                                                        </p>
+                                                        <button
+                                                            onClick={() => {
+                                                                // Navigate to License Manager
+                                                                const licenseTab = document.querySelector('[data-tab="licenses"]');
+                                                                if (licenseTab) licenseTab.click();
+                                                            }}
+                                                            className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors text-sm"
+                                                        >
+                                                            View in License Manager
+                                                        </button>
+                                                    </div>
+                                                )}
+
+                                                {actualUtilization < projectedUtilization && (
+                                                    <div className="p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
+                                                        <h4 className="font-semibold text-yellow-300 mb-2">
+                                                            Utilization Gap Detected
+                                                        </h4>
+                                                        <p className="text-yellow-200 text-sm mb-3">
+                                                            Your actual license utilization ({formatNumber(actualUtilization, 1)}%) is
+                                                            {formatNumber(projectedUtilization - actualUtilization, 1)}% lower than projected.
+                                                            Consider reviewing customer relationships or license deployment.
+                                                        </p>
+                                                    </div>
+                                                )}
+
+                                                {licenseStats.total === 0 && (
+                                                    <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                                                        <h4 className="font-semibold text-blue-300 mb-2">
+                                                            License Manager Not Set Up
+                                                        </h4>
+                                                        <p className="text-blue-200 text-sm mb-3">
+                                                            Add your licenses to the License Manager to enable utilization tracking
+                                                            and revenue loss analysis.
+                                                        </p>
+                                                        <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors text-sm">
+                                                            Go to License Manager
+                                                        </button>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                    );
+                                })()}
                             </>
                         )}
                     </div>

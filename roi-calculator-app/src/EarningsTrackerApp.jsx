@@ -90,6 +90,7 @@ import {
     importFromCSV,
     getEarningsStats
 } from './utils/earningsStorage.js';
+import { updateBindingStatus } from './utils/licenseStorage.js';
 import { parseEarningsText, getExampleFormat } from './utils/earningsParser.js';
 import {
     loadBackupSettings,
@@ -101,6 +102,7 @@ import {
     performAutoBackup,
     incrementChangeCounter
 } from './utils/autoBackup.js';
+import LicenseManager from './components/LicenseManager.jsx';
 import jsPDF from 'jspdf';
 
 /**
@@ -181,7 +183,7 @@ export default function EarningsTrackerApp() {
     const [editingId, setEditingId] = useState(null);
     const [editForm, setEditForm] = useState({});
     const [showExampleFormat, setShowExampleFormat] = useState(false);
-    const [activeView, setActiveView] = useState('dashboard'); // 'dashboard', 'table', 'input'
+    const [activeView, setActiveView] = useState('dashboard'); // 'dashboard', 'table', 'input', 'licenses'
 
     // Selection state - tracks which earnings are selected in the Data Table
     const [selectedEarningIds, setSelectedEarningIds] = useState(new Set());
@@ -211,8 +213,8 @@ export default function EarningsTrackerApp() {
         setParseResult(result);
 
         if (result.success && result.earnings.length > 0) {
-            // Add earnings to storage
-            const addResult = addEarnings(result.earnings);
+            // Add earnings to storage and update license binding status
+            const addResult = addEarnings(result.earnings, updateBindingStatus);
 
             // Update state
             setEarnings(loadEarnings());
@@ -887,6 +889,18 @@ export default function EarningsTrackerApp() {
                             <span>Add Earnings</span>
                         </div>
                     </button>
+                    <button
+                        onClick={() => setActiveView('licenses')}
+                        className={`px-4 py-2 rounded-t-lg transition-colors ${activeView === 'licenses'
+                            ? 'bg-purple-600 text-white'
+                            : 'bg-slate-800/50 text-purple-200 hover:bg-slate-800'
+                            }`}
+                    >
+                        <div className="flex items-center gap-2">
+                            <Database size={18} />
+                            <span>License Manager</span>
+                        </div>
+                    </button>
                 </div>
 
                 {/* Dashboard View */}
@@ -1227,8 +1241,8 @@ export default function EarningsTrackerApp() {
                             {/* Auto-backup notification */}
                             {lastBackupNotification && (
                                 <div className={`mb-4 p-3 rounded-lg border ${lastBackupNotification.type === 'success'
-                                        ? 'bg-green-900/20 border-green-400/30 text-green-300'
-                                        : 'bg-red-900/20 border-red-400/30 text-red-300'
+                                    ? 'bg-green-900/20 border-green-400/30 text-green-300'
+                                    : 'bg-red-900/20 border-red-400/30 text-red-300'
                                     }`}>
                                     <p className="text-sm">{lastBackupNotification.message}</p>
                                 </div>
@@ -1256,8 +1270,8 @@ export default function EarningsTrackerApp() {
                             {/* Import Result */}
                             {importResult && (
                                 <div className={`mb-4 p-4 rounded-lg border ${importResult.success
-                                        ? 'bg-green-900/20 border-green-400/30'
-                                        : 'bg-red-900/20 border-red-400/30'
+                                    ? 'bg-green-900/20 border-green-400/30'
+                                    : 'bg-red-900/20 border-red-400/30'
                                     }`}>
                                     <div className="flex items-center gap-2 mb-2">
                                         {importResult.success ? (
@@ -2047,6 +2061,11 @@ export default function EarningsTrackerApp() {
                             </div>
                         )}
                     </div>
+                )}
+
+                {/* License Manager View */}
+                {activeView === 'licenses' && (
+                    <LicenseManager />
                 )}
             </div>
         </div>
