@@ -77,6 +77,7 @@ export default function UnityNodesROICalculator() {
             phonePrice: params.get('phonePrice'),
             simMonthly: params.get('simMonthly'),
             monthlyCredits: params.get('monthlyCredits'),
+            creditsActive: params.get('creditsActive'),
             nodeOperatorPaysCredits: params.get('nodeOperatorPaysCredits'),
             revenuePerLicense: params.get('revenuePerLicense'),
             leaseSplitToOperator: params.get('leaseSplitToOperator'),
@@ -101,6 +102,7 @@ export default function UnityNodesROICalculator() {
         params.set('phonePrice', phonePrice.toString());
         params.set('simMonthly', simMonthly.toString());
         params.set('monthlyCredits', monthlyCredits.toString());
+        params.set('creditsActive', creditsActive.toString());
         params.set('nodeOperatorPaysCredits', nodeOperatorPaysCredits.toString());
         params.set('revenuePerLicense', revenuePerLicense.toString());
         params.set('leaseSplitToOperator', leaseSplitToOperator.toString());
@@ -143,6 +145,7 @@ export default function UnityNodesROICalculator() {
         if (urlParams.phonePrice) setPhonePrice(Math.max(0, parseInt(urlParams.phonePrice) || 0));
         if (urlParams.simMonthly) setSimMonthly(Math.max(0, parseInt(urlParams.simMonthly) || 0));
         if (urlParams.monthlyCredits) setMonthlyCredits(Math.max(0, parseFloat(urlParams.monthlyCredits) || 0));
+        if (urlParams.creditsActive !== undefined) setCreditsActive(urlParams.creditsActive === 'true');
         if (urlParams.nodeOperatorPaysCredits) setNodeOperatorPaysCredits(urlParams.nodeOperatorPaysCredits === 'true');
         if (urlParams.revenuePerLicense) setRevenuePerLicense(Math.max(0, parseFloat(urlParams.revenuePerLicense) || 0));
         if (urlParams.leaseSplitToOperator) setLeaseSplitToOperator(Math.min(100, Math.max(0, parseInt(urlParams.leaseSplitToOperator) || 0)));
@@ -184,6 +187,7 @@ export default function UnityNodesROICalculator() {
     const [phonePrice, setPhonePrice] = usePersistentState('roi_phonePrice', 80);
     const [simMonthly, setSimMonthly] = usePersistentState('roi_simMonthly', 10);
     const [monthlyCredits, setMonthlyCredits] = usePersistentState('roi_monthlyCredits', 1.99);
+    const [creditsActive, setCreditsActive] = usePersistentState('roi_creditsActive', false); // Toggle whether credits are being paid
     const [nodeOperatorPaysCredits, setNodeOperatorPaysCredits] = usePersistentState('roi_nodeOperatorPaysCredits', true); // Toggle who pays credits
 
     // Revenue Model
@@ -277,10 +281,12 @@ export default function UnityNodesROICalculator() {
         const rampedSimCost = totalLicensesRunBySelf * selfRunPercent * simMonthly;
 
         // Credit costs: Scale with active licenses (self-run and leased if operator pays)
+        // Only apply if credits are active
+        const effectiveMonthlyCredits = creditsActive ? monthlyCredits : 0;
         const totalActiveLicenses = (totalLicensesRunBySelf * selfRunPercent) + (totalLicensesLeased * leasedPercent);
         const rampedCreditCost = nodeOperatorPaysCredits ?
-            totalActiveLicenses * monthlyCredits :
-            (totalLicensesRunBySelf * selfRunPercent * monthlyCredits);
+            totalActiveLicenses * effectiveMonthlyCredits :
+            (totalLicensesRunBySelf * selfRunPercent * effectiveMonthlyCredits);
 
         // Node costs remain upfront (one-time), so only include in month 1
         const nodeCost = month === 1 ? totalNodeCost : 0;
@@ -335,9 +341,11 @@ export default function UnityNodesROICalculator() {
     // Monthly costs
     const monthlySimCost = totalLicensesRunBySelf * simMonthly;
 
-    // Credit costs depend on who pays
-    const monthlyCreditCostSelfRun = totalLicensesRunBySelf * monthlyCredits;
-    const monthlyCreditCostLeased = nodeOperatorPaysCredits ? (totalLicensesLeased * monthlyCredits) : 0;
+    // Credit costs depend on who pays and if credits are active
+    // If credits are not active, the effective credit cost is $0
+    const effectiveMonthlyCredits = creditsActive ? monthlyCredits : 0;
+    const monthlyCreditCostSelfRun = totalLicensesRunBySelf * effectiveMonthlyCredits;
+    const monthlyCreditCostLeased = nodeOperatorPaysCredits ? (totalLicensesLeased * effectiveMonthlyCredits) : 0;
     const monthlyCreditCost = monthlyCreditCostSelfRun + monthlyCreditCostLeased;
 
     const totalMonthlyCost = monthlySimCost + monthlyCreditCost;
@@ -476,7 +484,8 @@ export default function UnityNodesROICalculator() {
 
     // Average monthly costs per node
     const avgMonthlySimCostPerNode = avgSelfRunLicensesPerNode * simMonthly;
-    const avgMonthlyCreditCostPerNode = avgActiveLicensesPerNode * monthlyCredits; // Assume someone pays for all active
+    const effectiveMonthlyCreditsCost = creditsActive ? monthlyCredits : 0;
+    const avgMonthlyCreditCostPerNode = avgActiveLicensesPerNode * effectiveMonthlyCreditsCost; // Assume someone pays for all active
     const avgMonthlyOperatingCostPerNode = avgMonthlySimCostPerNode + avgMonthlyCreditCostPerNode;
     const ecosystemTotalMonthlyCosts = TOTAL_NODES_IN_ECOSYSTEM * avgMonthlyOperatingCostPerNode;
 
@@ -601,8 +610,9 @@ export default function UnityNodesROICalculator() {
         // SIM card costs
         const simCostPerLicenseMonthly = simMonthly;
 
-        // Unity credits costs (if operator pays)
-        const creditsCostPerLicenseMonthly = nodeOperatorPaysCredits ? monthlyCredits : 0;
+        // Unity credits costs (if operator pays and credits are active)
+        const effectiveCredits = creditsActive ? monthlyCredits : 0;
+        const creditsCostPerLicenseMonthly = nodeOperatorPaysCredits ? effectiveCredits : 0;
 
         // Total monthly operating costs per license
         const totalMonthlyOpCosts = hardwareCostPerLicenseMonthly + simCostPerLicenseMonthly + creditsCostPerLicenseMonthly;
@@ -721,6 +731,7 @@ export default function UnityNodesROICalculator() {
             phonePrice,
             simMonthly,
             monthlyCredits,
+            creditsActive,
             nodeOperatorPaysCredits,
             revenuePerLicense,
             leaseSplitToOperator,
@@ -756,6 +767,7 @@ export default function UnityNodesROICalculator() {
         setPhonePrice(scenario.phonePrice);
         setSimMonthly(scenario.simMonthly);
         setMonthlyCredits(scenario.monthlyCredits);
+        if (scenario.creditsActive !== undefined) setCreditsActive(scenario.creditsActive);
         setNodeOperatorPaysCredits(scenario.nodeOperatorPaysCredits);
         setRevenuePerLicense(scenario.revenuePerLicense);
         setLeaseSplitToOperator(scenario.leaseSplitToOperator);
@@ -803,7 +815,7 @@ export default function UnityNodesROICalculator() {
             `Inactive Licenses: ${licensesInactive}`,
             `Phone Price: $${phonePrice}`,
             `SIM Monthly: $${simMonthly}`,
-            `Monthly Credits: $${monthlyCredits.toFixed(2)}`,
+            `Monthly Credits: $${monthlyCredits.toFixed(2)} ${creditsActive ? '(Active)' : '(Inactive)'}`,
             `Revenue per License: $${revenuePerLicense.toFixed(2)}`,
             `Lease Split: ${leaseSplitToOperator}%`,
             `Self-run Uptime: ${uptimeSelfRun}%`,
@@ -1977,66 +1989,104 @@ export default function UnityNodesROICalculator() {
                             </div>
 
                             <div>
-                                <HelpTooltip content="Monthly credit cost for each active license. Credits are required to participate in network verification tasks. You can choose to pay for leased licenses or require license operators to pay their own.">
+                                <HelpTooltip content="Monthly credit cost for each active license. Credits are required to participate in network verification tasks. Toggle whether these credits are currently active and need to be paid. When inactive, credit costs will be $0 in all calculations.">
                                     <label className="text-sm text-purple-300 block mb-2">
                                         Monthly Credits per Phone in $
                                     </label>
                                 </HelpTooltip>
-                                <div className="flex gap-2 mb-2">
-                                    <button
-                                        onClick={() => setMonthlyCredits(1.99)}
-                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 1.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                            }`}
-                                    >
-                                        $1.99
-                                    </button>
-                                    <button
-                                        onClick={() => setMonthlyCredits(2.99)}
-                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 2.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                            }`}
-                                    >
-                                        $2.99
-                                    </button>
-                                    <button
-                                        onClick={() => setMonthlyCredits(3.99)}
-                                        className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 3.99
-                                            ? 'bg-purple-500 text-white'
-                                            : 'bg-white/10 text-purple-300 hover:bg-white/20'
-                                            }`}
-                                    >
-                                        $3.99
-                                    </button>
-                                </div>
-                                <input
-                                    type="number"
-                                    value={monthlyCredits.toFixed(2)}
-                                    onChange={(e) => setMonthlyCredits(Math.max(0, parseFloat(e.target.value) || 0))}
-                                    step="0.01"
-                                    className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2"
-                                    min="0"
-                                />
 
-                                <div className="mt-2 p-2 bg-blue-500/10 border border-blue-500/30 rounded">
-                                    <label className="flex items-center gap-2 text-xs text-blue-200 cursor-pointer">
+                                {/* Checkbox to enable/disable credits */}
+                                <div className="mb-3 p-2 bg-amber-500/10 border border-amber-500/30 rounded">
+                                    <label className="flex items-center gap-2 text-xs text-amber-200 cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            checked={nodeOperatorPaysCredits}
-                                            onChange={(e) => setNodeOperatorPaysCredits(e.target.checked)}
-                                            className="w-3 h-3"
+                                            checked={creditsActive}
+                                            onChange={(e) => setCreditsActive(e.target.checked)}
+                                            className="w-4 h-4"
                                         />
-                                        <span>I (Node Operator) pay credits for leased licenses too</span>
+                                        <span className="font-semibold">
+                                            {creditsActive 
+                                                ? '✓ Credits are ACTIVE (fees apply)' 
+                                                : '✗ Credits are INACTIVE (no fees)'
+                                            }
+                                        </span>
                                     </label>
+                                    <p className="text-xs text-amber-300 mt-1 ml-6">
+                                        {creditsActive 
+                                            ? 'These credits are currently being paid' 
+                                            : 'These credits are not currently active, so there are no fees'
+                                        }
+                                    </p>
                                 </div>
 
+                                {/* Credit amount selectors - only enabled when credits are active */}
+                                <div className={`transition-opacity ${creditsActive ? 'opacity-100' : 'opacity-40'}`}>
+                                    <div className="flex gap-2 mb-2">
+                                        <button
+                                            onClick={() => setMonthlyCredits(1.99)}
+                                            disabled={!creditsActive}
+                                            className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 1.99 && creditsActive
+                                                ? 'bg-purple-500 text-white'
+                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                                } ${!creditsActive ? 'cursor-not-allowed' : ''}`}
+                                        >
+                                            $1.99
+                                        </button>
+                                        <button
+                                            onClick={() => setMonthlyCredits(2.99)}
+                                            disabled={!creditsActive}
+                                            className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 2.99 && creditsActive
+                                                ? 'bg-purple-500 text-white'
+                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                                } ${!creditsActive ? 'cursor-not-allowed' : ''}`}
+                                        >
+                                            $2.99
+                                        </button>
+                                        <button
+                                            onClick={() => setMonthlyCredits(3.99)}
+                                            disabled={!creditsActive}
+                                            className={`flex-1 py-1 px-2 rounded text-xs font-semibold transition-all ${monthlyCredits === 3.99 && creditsActive
+                                                ? 'bg-purple-500 text-white'
+                                                : 'bg-white/10 text-purple-300 hover:bg-white/20'
+                                                } ${!creditsActive ? 'cursor-not-allowed' : ''}`}
+                                        >
+                                            $3.99
+                                        </button>
+                                    </div>
+                                    <input
+                                        type="number"
+                                        value={monthlyCredits.toFixed(2)}
+                                        onChange={(e) => setMonthlyCredits(Math.max(0, parseFloat(e.target.value) || 0))}
+                                        disabled={!creditsActive}
+                                        step="0.01"
+                                        className="w-full bg-white/5 border border-purple-400/30 rounded-lg px-4 py-2 text-white mb-2 disabled:cursor-not-allowed"
+                                        min="0"
+                                    />
+                                </div>
+
+                                {/* Only show the "who pays" option when credits are active */}
+                                {creditsActive && (
+                                    <div className="mt-2 p-2 bg-blue-500/10 border border-blue-500/30 rounded">
+                                        <label className="flex items-center gap-2 text-xs text-blue-200 cursor-pointer">
+                                            <input
+                                                type="checkbox"
+                                                checked={nodeOperatorPaysCredits}
+                                                onChange={(e) => setNodeOperatorPaysCredits(e.target.checked)}
+                                                className="w-3 h-3"
+                                            />
+                                            <span>I (Node Operator) pay credits for leased licenses too</span>
+                                        </label>
+                                    </div>
+                                )}
+
                                 <p className="text-xs text-purple-300 mt-2">
-                                    {nodeOperatorPaysCredits
-                                        ? `Paying for all ${totalActiveLicenses} licenses: $${formatNumber(monthlyCreditCost)}/mo`
-                                        : `Paying only for ${totalLicensesRunBySelf} self-run: $${formatNumber(monthlyCreditCost)}/mo`
-                                    }
+                                    {creditsActive ? (
+                                        nodeOperatorPaysCredits
+                                            ? `Paying for all ${totalActiveLicenses} licenses: $${formatNumber(monthlyCreditCost)}/mo`
+                                            : `Paying only for ${totalLicensesRunBySelf} self-run: $${formatNumber(monthlyCreditCost)}/mo`
+                                    ) : (
+                                        `Credits inactive: $0/mo (no credit fees being paid)`
+                                    )}
                                 </p>
                             </div>
                         </div>
