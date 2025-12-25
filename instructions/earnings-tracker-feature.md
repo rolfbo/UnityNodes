@@ -141,6 +141,13 @@ A comprehensive table view with:
 - **Inline editing**: Edit individual entries directly in the table
 - **Delete**: Remove individual entries
 - **Summary row**: Shows totals for filtered results
+- **Pagination**: 
+  - Choose how many entries to display per page (10, 100, or 1000)
+  - Navigate between pages with First/Previous/Next/Last buttons
+  - Shows current page number and total pages
+  - Displays entry range (e.g., "Showing 1 to 10 of 22 entries")
+  - Automatically resets to page 1 when filters change
+  - Footer totals reflect all filtered results, not just current page
 
 #### Columns
 - Selection (Checkbox)
@@ -377,6 +384,19 @@ For issues or questions:
 5. Clear localStorage and start fresh if needed
 
 ## Version History
+
+### v1.5 (December 2025)
+- Added pagination to Data Table:
+  - Configurable items per page (10, 100, or 1000 entries)
+  - Full page navigation controls (First, Previous, Next, Last)
+  - Current page indicator and entry range display
+  - Auto-reset to page 1 when filters change
+  - Footer totals always show all filtered results regardless of pagination
+  - Responsive design matching app theme
+- Enhanced Data Table tab:
+  - Now displays count of unique devices in filtered results
+  - Shows "Data Table (X devices)" where X updates based on active filters
+  - Provides quick visibility of how many devices are in the current view
 
 ### v1.4 (December 2025)
 - Added device-specific metrics to dashboard:

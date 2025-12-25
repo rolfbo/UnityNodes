@@ -12,7 +12,7 @@
  * 
  * Data Structure:
  * - Earnings: Array of earning objects with id, nodeId, licenseType, amount, date, status
- * - Node Mapping: Object mapping node IDs to license types
+ * - Node Mapping: Object mapping node IDs to objects with licenseType and bound status
  * 
  * @module earningsStorage
  */
@@ -188,7 +188,8 @@ export function clearAllEarnings() {
 
 /**
  * Load node ID to license type mapping from localStorage
- * @returns {Object} Mapping object where keys are node IDs and values are license types
+ * Migrates old format (string values) to new format (object values)
+ * @returns {Object} Mapping object where keys are node IDs and values are objects with licenseType and bound
  */
 export function getNodeMapping() {
     try {
@@ -196,7 +197,25 @@ export function getNodeMapping() {
         if (!stored) {
             return {};
         }
-        return JSON.parse(stored);
+        let mapping = JSON.parse(stored);
+
+        // Migrate old format to new format
+        let migrated = false;
+        for (const [nodeId, value] of Object.entries(mapping)) {
+            if (typeof value === 'string') {
+                // Old format: nodeId -> "licenseType"
+                // New format: nodeId -> { licenseType: "licenseType", bound: false }
+                mapping[nodeId] = { licenseType: value, bound: false };
+                migrated = true;
+            }
+        }
+
+        // Save migrated data back to localStorage
+        if (migrated) {
+            saveNodeMapping(mapping);
+        }
+
+        return mapping;
     } catch (error) {
         console.error('Error loading node mapping:', error);
         return {};
@@ -217,20 +236,36 @@ export function saveNodeMapping(mapping) {
 }
 
 /**
- * Update the license type for a specific node ID
+ * Update the license type and/or bound status for a specific node ID
  * @param {string} nodeId - The node ID to update
  * @param {string} licenseType - The license type to assign (e.g., 'ULO')
+ * @param {boolean} bound - Whether the node is bound to a phone (optional, defaults to false)
  */
-export function updateNodeMapping(nodeId, licenseType) {
+export function updateNodeMapping(nodeId, licenseType, bound = null) {
     const mapping = getNodeMapping();
-    mapping[nodeId] = licenseType;
+
+    // Initialize node mapping if it doesn't exist
+    if (!mapping[nodeId]) {
+        mapping[nodeId] = { licenseType: '', bound: false };
+    }
+
+    // Update license type if provided
+    if (licenseType !== null) {
+        mapping[nodeId].licenseType = licenseType;
+    }
+
+    // Update bound status if provided
+    if (bound !== null) {
+        mapping[nodeId].bound = bound;
+    }
+
     saveNodeMapping(mapping);
 
     // Also update all existing earnings with this nodeId
     const earnings = loadEarnings();
     const updated = earnings.map(earning => {
         if (earning.nodeId === nodeId) {
-            return { ...earning, licenseType };
+            return { ...earning, licenseType: mapping[nodeId].licenseType };
         }
         return earning;
     });
@@ -243,6 +278,26 @@ export function updateNodeMapping(nodeId, licenseType) {
  * @returns {string|null} The license type or null if not mapped
  */
 export function getLicenseType(nodeId) {
+    const mapping = getNodeMapping();
+    return mapping[nodeId] ? mapping[nodeId].licenseType : null;
+}
+
+/**
+ * Get the bound status for a node ID
+ * @param {string} nodeId - The node ID to look up
+ * @returns {boolean} Whether the node is bound to a phone
+ */
+export function getBoundStatus(nodeId) {
+    const mapping = getNodeMapping();
+    return mapping[nodeId] ? mapping[nodeId].bound : false;
+}
+
+/**
+ * Get the full node mapping object for a node ID
+ * @param {string} nodeId - The node ID to look up
+ * @returns {Object|null} The node mapping object with licenseType and bound properties
+ */
+export function getNodeInfo(nodeId) {
     const mapping = getNodeMapping();
     return mapping[nodeId] || null;
 }

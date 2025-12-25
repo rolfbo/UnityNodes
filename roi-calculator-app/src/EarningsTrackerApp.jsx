@@ -88,7 +88,9 @@ import {
     exportToMarkdown,
     importFromJSON,
     importFromCSV,
-    getEarningsStats
+    getEarningsStats,
+    getBoundStatus,
+    getNodeInfo
 } from './utils/earningsStorage.js';
 import { parseEarningsText, getExampleFormat } from './utils/earningsParser.js';
 import {
@@ -188,6 +190,10 @@ export default function EarningsTrackerApp() {
     // Dashboard filter state - determines if dashboard should use selected data
     const [useDashboardSelection, setUseDashboardSelection] = useState(false);
 
+    // Pagination state - controls how many entries to show per page and current page
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage, setItemsPerPage] = useState(10);
+
     // Backup/Restore state
     const [backupSettings, setBackupSettings] = useState(loadBackupSettings());
     const [importResult, setImportResult] = useState(null);
@@ -243,12 +249,21 @@ export default function EarningsTrackerApp() {
     };
 
     /**
-     * Handle updating node mapping
+     * Handle updating node mapping (license type)
      */
     const handleUpdateNodeMapping = (nodeId, licenseType) => {
         updateNodeMapping(nodeId, licenseType);
         setNodeMapping(getNodeMapping());
         setEarnings(loadEarnings()); // Reload to reflect updated license types
+    };
+
+    /**
+     * Handle updating node bound status
+     */
+    const handleUpdateNodeBound = (nodeId, bound) => {
+        updateNodeMapping(nodeId, null, bound);
+        setNodeMapping(getNodeMapping());
+        // No need to reload earnings as bound status doesn't affect them directly
     };
 
     /**
@@ -652,15 +667,53 @@ export default function EarningsTrackerApp() {
     }, [earnings, filterLicenseType, filterDateRange, searchQuery, sortField, sortDirection]);
 
     /**
-     * Get earnings data for dashboard (respects selection if enabled)
+     * Calculate unique number of devices (nodes) in filtered earnings
+     * This count updates based on active filters and is displayed in the Data Table tab
+     */
+    const filteredDeviceCount = useMemo(() => {
+        const uniqueNodeIds = new Set(filteredEarnings.map(e => e.nodeId));
+        return uniqueNodeIds.size;
+    }, [filteredEarnings]);
+
+    /**
+     * Calculate total number of pages for pagination
+     * Based on the total number of filtered earnings and items per page setting
+     */
+    const totalPages = useMemo(() => {
+        return Math.ceil(filteredEarnings.length / itemsPerPage);
+    }, [filteredEarnings.length, itemsPerPage]);
+
+    /**
+     * Get paginated earnings for the current page
+     * Slices the filtered earnings based on current page and items per page
+     */
+    const paginatedEarnings = useMemo(() => {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        return filteredEarnings.slice(startIndex, endIndex);
+    }, [filteredEarnings, currentPage, itemsPerPage]);
+
+    /**
+     * Reset to first page when filters change
+     * Ensures user doesn't end up on an empty page after filtering
+     */
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [filterLicenseType, filterDateRange, searchQuery, sortField, sortDirection]);
+
+    /**
+     * Get earnings data for dashboard (respects selection if enabled, and only shows bound nodes)
      */
     const dashboardEarnings = useMemo(() => {
+        let filteredEarnings = earnings;
+
+        // First apply selection filter if enabled
         if (useDashboardSelection && selectedEarningIds.size > 0) {
-            // Filter to show only selected earnings
-            return earnings.filter(e => selectedEarningIds.has(e.id));
+            filteredEarnings = earnings.filter(e => selectedEarningIds.has(e.id));
         }
-        // Show all earnings
-        return earnings;
+
+        // Then filter to only show earnings from bound nodes
+        return filteredEarnings.filter(e => getBoundStatus(e.nodeId));
     }, [earnings, useDashboardSelection, selectedEarningIds]);
 
     /**
@@ -778,16 +831,28 @@ export default function EarningsTrackerApp() {
     }, [dashboardEarnings, stats]);
 
     /**
-     * Calculate average daily earnings per device (node)
-     * This calculates the average daily earnings for each device individually,
+     * Calculate average daily earnings per device (node) - ROLLING 3-DAY AVERAGE
+     * This calculates the average daily earnings for each device over the LAST 3 DAYS only,
      * then averages those values together to get an overall per-device average.
+     * This provides a more recent and responsive metric compared to all-time averages.
      */
     const avgDailyPerDevice = useMemo(() => {
         if (dashboardEarnings.length === 0) return 0;
 
-        // Group earnings by nodeId
+        // Get the unique dates in the dataset and sort them
+        const uniqueDates = [...new Set(dashboardEarnings.map(e => e.date))].sort();
+        
+        // Get the last 3 dates (or fewer if less than 3 days of data exist)
+        const last3Dates = uniqueDates.slice(-3);
+        
+        // Filter earnings to only include the last 3 days
+        const recentEarnings = dashboardEarnings.filter(e => last3Dates.includes(e.date));
+        
+        if (recentEarnings.length === 0) return 0;
+
+        // Group recent earnings by nodeId
         const nodeMap = {};
-        dashboardEarnings.forEach(e => {
+        recentEarnings.forEach(e => {
             if (!nodeMap[e.nodeId]) {
                 nodeMap[e.nodeId] = { total: 0, dates: new Set() };
             }
@@ -795,7 +860,7 @@ export default function EarningsTrackerApp() {
             nodeMap[e.nodeId].dates.add(e.date);
         });
 
-        // Calculate average daily earnings for each device
+        // Calculate average daily earnings for each device (over the last 3 days)
         const avgPerDevices = Object.values(nodeMap).map(node =>
             node.total / node.dates.size
         );
@@ -831,6 +896,19 @@ export default function EarningsTrackerApp() {
         return Object.values(nodeMap).reduce((top, node) =>
             node.total > (top?.total || 0) ? node : top
             , null);
+    }, [dashboardEarnings]);
+
+    /**
+     * Count unique BOUND node IDs (Active ULOs)
+     * This only counts nodes that are marked as "Bound to phone"
+     * Uses dashboardEarnings which is already filtered to bound nodes only
+     */
+    const activeBoundNodes = useMemo(() => {
+        if (dashboardEarnings.length === 0) return 0;
+        
+        // Get unique node IDs from dashboard earnings (already filtered to bound nodes)
+        const uniqueBoundNodeIds = new Set(dashboardEarnings.map(e => e.nodeId));
+        return uniqueBoundNodeIds.size;
     }, [dashboardEarnings]);
 
     // Color palette for charts
@@ -872,7 +950,7 @@ export default function EarningsTrackerApp() {
                     >
                         <div className="flex items-center gap-2">
                             <Database size={18} />
-                            <span>Data Table</span>
+                            <span>Data Table {filteredEarnings.length > 0 && `(${filteredDeviceCount} ${filteredDeviceCount === 1 ? 'device' : 'devices'})`}</span>
                         </div>
                     </button>
                     <button
@@ -962,21 +1040,21 @@ export default function EarningsTrackerApp() {
                                 </p>
                             </div>
 
-                            {/* Active ULOs */}
+                            {/* Active ULOs - Only Bound Nodes */}
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <div className="flex items-center justify-between mb-2">
                                     <h3 className="text-purple-200 text-sm">Active ULOs</h3>
                                     <Hash className="text-orange-400" size={20} />
                                 </div>
                                 <p className="text-3xl font-bold text-white">
-                                    {stats.uniqueNodes}
+                                    {activeBoundNodes}
                                 </p>
                                 <p className="text-xs text-purple-300 mt-1">
-                                    unique node IDs
+                                    bound devices
                                 </p>
                             </div>
 
-                            {/* Average Daily Per Device */}
+                            {/* Average Daily Per Device - Rolling 3-Day Average */}
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <div className="flex items-center justify-between mb-2">
                                     <h3 className="text-purple-200 text-sm">Avg/Day/Device</h3>
@@ -986,7 +1064,7 @@ export default function EarningsTrackerApp() {
                                     ${avgDailyPerDevice.toFixed(2)}
                                 </p>
                                 <p className="text-xs text-purple-300 mt-1">
-                                    per device per day
+                                    last 3 days rolling avg
                                 </p>
                             </div>
 
@@ -1227,8 +1305,8 @@ export default function EarningsTrackerApp() {
                             {/* Auto-backup notification */}
                             {lastBackupNotification && (
                                 <div className={`mb-4 p-3 rounded-lg border ${lastBackupNotification.type === 'success'
-                                        ? 'bg-green-900/20 border-green-400/30 text-green-300'
-                                        : 'bg-red-900/20 border-red-400/30 text-red-300'
+                                    ? 'bg-green-900/20 border-green-400/30 text-green-300'
+                                    : 'bg-red-900/20 border-red-400/30 text-red-300'
                                     }`}>
                                     <p className="text-sm">{lastBackupNotification.message}</p>
                                 </div>
@@ -1256,8 +1334,8 @@ export default function EarningsTrackerApp() {
                             {/* Import Result */}
                             {importResult && (
                                 <div className={`mb-4 p-4 rounded-lg border ${importResult.success
-                                        ? 'bg-green-900/20 border-green-400/30'
-                                        : 'bg-red-900/20 border-red-400/30'
+                                    ? 'bg-green-900/20 border-green-400/30'
+                                    : 'bg-red-900/20 border-red-400/30'
                                     }`}>
                                     <div className="flex items-center gap-2 mb-2">
                                         {importResult.success ? (
@@ -1686,7 +1764,7 @@ export default function EarningsTrackerApp() {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-purple-400/20">
-                                            {filteredEarnings.map((earning) => (
+                                            {paginatedEarnings.map((earning) => (
                                                 <tr key={earning.id} className="hover:bg-slate-900/30 transition-colors">
                                                     {editingId === earning.id ? (
                                                         <>
@@ -1840,13 +1918,103 @@ export default function EarningsTrackerApp() {
                             )}
                         </div>
 
+                        {/* Pagination Controls */}
+                        {filteredEarnings.length > 0 && (
+                            <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
+                                <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                                    {/* Items Per Page Selector */}
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-sm text-purple-300">Show:</span>
+                                        <div className="flex gap-2">
+                                            {[10, 100, 1000].map(size => (
+                                                <button
+                                                    key={size}
+                                                    onClick={() => {
+                                                        setItemsPerPage(size);
+                                                        setCurrentPage(1); // Reset to first page when changing page size
+                                                    }}
+                                                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${itemsPerPage === size
+                                                        ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50'
+                                                        : 'bg-slate-700/50 text-purple-300 hover:bg-slate-700 hover:text-purple-200'
+                                                        }`}
+                                                >
+                                                    {size}
+                                                </button>
+                                            ))}
+                                        </div>
+                                        <span className="text-sm text-purple-300">entries per page</span>
+                                    </div>
+
+                                    {/* Page Navigation */}
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-sm text-purple-300">
+                                            Page {currentPage} of {totalPages} ({filteredEarnings.length} total entries)
+                                        </span>
+                                        <div className="flex gap-2">
+                                            <button
+                                                onClick={() => setCurrentPage(1)}
+                                                disabled={currentPage === 1}
+                                                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${currentPage === 1
+                                                    ? 'bg-slate-700/30 text-slate-500 cursor-not-allowed'
+                                                    : 'bg-slate-700/50 text-purple-300 hover:bg-slate-700 hover:text-purple-200'
+                                                    }`}
+                                                title="First page"
+                                            >
+                                                «
+                                            </button>
+                                            <button
+                                                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                                                disabled={currentPage === 1}
+                                                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${currentPage === 1
+                                                    ? 'bg-slate-700/30 text-slate-500 cursor-not-allowed'
+                                                    : 'bg-slate-700/50 text-purple-300 hover:bg-slate-700 hover:text-purple-200'
+                                                    }`}
+                                                title="Previous page"
+                                            >
+                                                ‹
+                                            </button>
+                                            <button
+                                                onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                                                disabled={currentPage === totalPages}
+                                                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${currentPage === totalPages
+                                                    ? 'bg-slate-700/30 text-slate-500 cursor-not-allowed'
+                                                    : 'bg-slate-700/50 text-purple-300 hover:bg-slate-700 hover:text-purple-200'
+                                                    }`}
+                                                title="Next page"
+                                            >
+                                                ›
+                                            </button>
+                                            <button
+                                                onClick={() => setCurrentPage(totalPages)}
+                                                disabled={currentPage === totalPages}
+                                                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${currentPage === totalPages
+                                                    ? 'bg-slate-700/30 text-slate-500 cursor-not-allowed'
+                                                    : 'bg-slate-700/50 text-purple-300 hover:bg-slate-700 hover:text-purple-200'
+                                                    }`}
+                                                title="Last page"
+                                            >
+                                                »
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Showing X-Y of Z entries */}
+                                <div className="mt-3 text-center">
+                                    <span className="text-xs text-purple-400">
+                                        Showing {Math.min((currentPage - 1) * itemsPerPage + 1, filteredEarnings.length)} to {Math.min(currentPage * itemsPerPage, filteredEarnings.length)} of {filteredEarnings.length} entries
+                                    </span>
+                                </div>
+                            </div>
+                        )}
+
                         {/* Node Mapping Management */}
                         {uniqueNodeIds.length > 0 && (
                             <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-400/30 rounded-xl p-6">
                                 <h3 className="text-xl font-semibold mb-4 text-purple-200 flex items-center gap-2">
                                     <Hash size={20} />
-                                    Node ID Mapping
-                                    <InfoTooltip content="Map each node ID to its license type. This helps categorize your earnings by license." />
+                                    Bound Node ID Mapping
+                                    <InfoTooltip content="Map each node ID to its license type and mark which nodes are bound to active phones. Dashboard shows only bound nodes." />
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     {uniqueNodeIds.map(nodeId => {
@@ -1855,21 +2023,39 @@ export default function EarningsTrackerApp() {
                                             .filter(e => e.nodeId === nodeId)
                                             .reduce((sum, e) => sum + e.amount, 0);
 
+                                        const nodeInfo = getNodeInfo(nodeId);
+                                        const isBound = nodeInfo ? nodeInfo.bound : false;
+
                                         return (
-                                            <div key={nodeId} className="flex flex-col gap-2 p-3 bg-slate-900/50 rounded-lg">
+                                            <div key={nodeId} className={`flex flex-col gap-3 p-4 rounded-lg border-2 transition-colors ${isBound
+                                                ? 'bg-green-900/20 border-green-400/50'
+                                                : 'bg-slate-900/50 border-slate-700'
+                                                }`}>
                                                 <div className="flex items-center gap-3">
                                                     <span className="font-mono text-sm text-purple-300 flex-1">
                                                         {nodeId}
                                                     </span>
                                                     <input
                                                         type="text"
-                                                        value={nodeMapping[nodeId] || ''}
+                                                        value={nodeInfo ? nodeInfo.licenseType : ''}
                                                         onChange={(e) => handleUpdateNodeMapping(nodeId, e.target.value)}
                                                         placeholder="License type (e.g., ULO)"
                                                         className="px-3 py-1 bg-slate-800 border border-purple-400/30 rounded text-white text-sm w-40"
                                                     />
                                                 </div>
-                                                <div className="flex items-center justify-end">
+
+                                                <div className="flex items-center justify-between">
+                                                    <label className="flex items-center gap-2 text-sm">
+                                                        <input
+                                                            type="checkbox"
+                                                            checked={isBound}
+                                                            onChange={(e) => handleUpdateNodeBound(nodeId, e.target.checked)}
+                                                            className="w-4 h-4 text-green-600 bg-slate-800 border-slate-600 rounded focus:ring-green-500 focus:ring-2"
+                                                        />
+                                                        <span className={`${isBound ? 'text-green-400 font-semibold' : 'text-slate-300'}`}>
+                                                            Bound to phone
+                                                        </span>
+                                                    </label>
                                                     <span className="text-sm font-semibold text-green-400">
                                                         Total: ${nodeTotal.toFixed(2)}
                                                     </span>
