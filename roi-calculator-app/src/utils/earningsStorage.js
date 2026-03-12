@@ -1,21 +1,23 @@
 /**
  * Earnings Storage Utility
- * 
+ *
  * This module provides functions for managing Unity Node earnings data in localStorage.
  * It handles data persistence, duplicate detection, and node ID to license type mapping.
- * 
+ *
  * Key Features:
  * - Save and load earnings data from localStorage
  * - Add individual earnings with automatic duplicate detection
  * - Manage node ID to license type mappings
  * - Export data in various formats
- * 
+ *
  * Data Structure:
  * - Earnings: Array of earning objects with id, nodeId, licenseType, amount, date, status
  * - Node Mapping: Object mapping node IDs to objects with licenseType and bound status
- * 
+ *
  * @module earningsStorage
  */
+
+import { validateJSONImport, checkForDuplicates, sanitizeEarning, generateImportPreview, validateCSVRow, detectCSVColumns } from './importValidator.js';
 
 // Storage keys for localStorage
 const EARNINGS_KEY = 'unity-nodes-earnings';
@@ -349,10 +351,6 @@ export function exportToCSV() {
  */
 export function importFromJSON(jsonString, mergeStrategy = 'skip') {
     try {
-        // Import validation utilities
-        const { validateJSONImport, checkForDuplicates, sanitizeEarning, generateImportPreview } =
-            require('./importValidator.js');
-
         // Parse JSON
         const imported = JSON.parse(jsonString);
 
@@ -464,10 +462,6 @@ export function importFromJSON(jsonString, mergeStrategy = 'skip') {
  */
 export function importFromCSV(csvString, options = {}) {
     try {
-        // Import validation utilities
-        const { validateCSVRow, detectCSVColumns, checkForDuplicates, generateImportPreview } =
-            require('./importValidator.js');
-
         // Parse CSV into rows
         const lines = csvString.split('\n').filter(line => line.trim().length > 0);
 
