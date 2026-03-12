@@ -15,8 +15,8 @@
 
 import { useState } from 'react'
 import { Calculator, TrendingUp } from 'lucide-react'
-import UnityNodesROICalculator from './ROICalculatorApp.jsx'
-import EarningsTrackerApp from './EarningsTrackerApp.jsx'
+import UnityNodesROICalculator from './components/roi/ROICalculatorApp.jsx'
+import EarningsTrackerApp from './components/earnings/EarningsTrackerApp.jsx'
 
 function App() {
   // State to manage which page is currently active
