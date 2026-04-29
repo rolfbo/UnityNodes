@@ -1,0 +1,86 @@
+# Unity Nodes - Telegram Analysis Project
+
+## Project Overview
+
+This project pulls and analyzes Telegram messages from the **Unity Network** community channels using a custom MCP server and the Telethon library.
+
+Unity Network is a DePIN (Decentralized Physical Infrastructure Network) project connected to World Mobile and Minutes Network. Node operators (UNOs) buy licenses and lease them to end-users (ULOs) who run the Unity app on Android/iOS phones to perform edge network tasks (telemetry, Scout & Runner, etc.) in exchange for rewards.
+
+## Data Location
+
+- **Main message archive:** `telegram/unity-verified-messages.json`
+  - 52,612 messages from the "Unity Network - Verified" channel
+  - Date range: 2025-12-22 to 2026-04-07
+  - Format: `[{"ts": "2026-01-15T23:29", "author": "Name", "msg": "text", "id": 6223}, ...]`
+  - Sorted chronologically, deduplicated by message ID
+  - 409 unique authors
+
+- **Official announcements:** `telegram/unity-announcements.json`
+  - 142 official messages from ambassadors (Sophie, Kay, Kyle, Jack) and Unity Network Assistant
+  - Filtered from main archive: messages with 🤝 marker, "Unity Network" header, #update tags
+  - Same format as main archive
+  - Good starting point for understanding team communications and project timeline
+
+## MCP Server
+
+- **Server:** `telegram/telegram_mcp.py` — FastMCP server with 4 tools:
+  - `telegram_list_chats` — list available Telegram chats
+  - `telegram_get_messages` — pull messages from a chat (supports date range, limit)
+  - `telegram_search` — search messages by keyword
+  - `telegram_export_to_files` — export messages to JSON files
+- **Auth:** `telegram/telegram_login.py` — run once interactively to create session
+- **Session:** `telegram/tg_session.session` — Telethon auth session (do not delete)
+- **Credentials:** `telegram/.env` — contains TG_API_ID and TG_API_HASH
+
+### Claude Desktop MCP Config
+
+To use the Telegram MCP in Claude Desktop, add to config:
+```json
+{
+  "mcpServers": {
+    "telegram": {
+      "command": "python3",
+      "args": ["/Users/rolfbosscha/Documents/Projecten/UnityNodes/telegram/telegram_mcp.py"]
+    }
+  }
+}
+```
+
+## Key Community Figures
+
+- **Sophie, Kay, Kyle, Jack** — Ambassadors / moderators (post official announcements)
+- **Unity Network Assistant** — Official bot account
+- **Calus B, Val, Page One, Flippy, Akira** — Very active community members
+- **Josh, Mickey, Omri** — Team members (referenced in discussions, rarely post directly)
+
+## Analysis Done So Far
+
+- **Trustworthiness assessment (April 2026): 5/10**
+  - Working product on Android/iOS (6/10)
+  - Rewards & revenue very low, cents/day (3/10)
+  - Q1 2026 roadmap mostly missed (3/10)
+  - Team communication regular but lacking transparency (5/10)
+  - Active community but increasingly frustrated (5/10)
+
+## X Spaces AMA Recordings
+
+| Date | Event | Link |
+|------|-------|------|
+| 2026-01-04 | S&R Task Briefing | https://x.com/i/spaces/1vOxwdorNjqKB |
+| 2026-01-13 | S&R Briefing | https://x.com/i/spaces/1jMKgRpWqPexL |
+| 2026-01-30 | Minutes Network AMA | https://twitter.com/i/spaces/1OdKrOjyNmQGX |
+| 2026-02-07 | Unity AMA | https://twitter.com/i/spaces/1YqKDNkogbAJV |
+| 2026-02-20 | S&R Alpha Update | https://x.com/i/spaces/1qGvvkkwWbwGB |
+| 2026-03-04 | S&R Briefing | https://x.com/i/spaces/1lKQRvRPQRqGE |
+| 2026-03-13 | S&R Briefing | https://x.com/i/spaces/1qKVmQvLEyVxB |
+| 2026-03-26 | S&R Cohort Update | https://x.com/i/spaces/1NGaraEwWQnJj |
+| 2026-04-03 | Recent space | https://x.com/i/spaces/1wxWjaykyOMJQ |
+
+## How to Refresh Data
+
+To pull fresh messages, use the Telegram MCP tool `telegram_get_messages` with:
+- `chat`: "Unity Network - Verified"
+- `limit`: up to 5000 per call
+- `offset_date` / `min_date`: to specify date ranges
+
+For large pulls, chunk by week to avoid the 5000 message limit on busy periods.
