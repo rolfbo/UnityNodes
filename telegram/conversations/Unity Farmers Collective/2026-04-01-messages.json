@@ -1,0 +1,596 @@
+[
+  {
+    "ts": "2026-04-01T00:01",
+    "author": "MikiRoma87 Miki",
+    "msg": "well, funny thing?\nNow as a UNO you can see which device the ULO is using hehehe",
+    "id": 32041
+  },
+  {
+    "ts": "2026-04-01T00:03",
+    "author": "R B",
+    "msg": "signout the wallets  or in metmask , click permission or DAPP permissions and disconnect all",
+    "id": 32043
+  },
+  {
+    "ts": "2026-04-01T00:05",
+    "author": "MikiRoma87 Miki",
+    "msg": "So now we can guess on what the guy with over 1000 devices was using....ehehe",
+    "id": 32045
+  },
+  {
+    "ts": "2026-04-01T00:08",
+    "author": "R B",
+    "msg": "what a VPN?",
+    "id": 32046
+  },
+  {
+    "ts": "2026-04-01T00:10",
+    "author": "MikiRoma87 Miki",
+    "msg": "would that result as a device name? eheh",
+    "id": 32047
+  },
+  {
+    "ts": "2026-04-01T00:29",
+    "author": "Mr Roundry",
+    "msg": "you could see it before if im not wrong ... on the app",
+    "id": 32048
+  },
+  {
+    "ts": "2026-04-01T00:31",
+    "author": "MikiRoma87 Miki",
+    "msg": "[Photo] as an ULO yes, as an UNO I wasn't, no",
+    "id": 32049
+  },
+  {
+    "ts": "2026-04-01T00:32",
+    "author": "MikiRoma87 Miki",
+    "msg": "now I can see every name of the devices bound to my licenses",
+    "id": 32050
+  },
+  {
+    "ts": "2026-04-01T00:34",
+    "author": "Mr Roundry",
+    "msg": "[Photo]",
+    "id": 32051
+  },
+  {
+    "ts": "2026-04-01T00:35",
+    "author": "Mr Roundry",
+    "msg": "👆 click there and I think you can see it also as an uno in the app … but does not matter though … we knew they can see which devices we are managing",
+    "id": 32052
+  },
+  {
+    "ts": "2026-04-01T03:09",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "Additional procedure to extract 1,000 records from the manage.unitynodes.io page (after the website update it extracts only the first 20 by default)\n\n1. Open DevTools (F12) → Go to Network tab.\n2. Reload the page and find the request named rewards_get_allocations.\n3. Right-click on that request row → Copy → Copy as fetch.\n4. Go to Console tab.\n5. Paste the code.\n6. If Chrome says “Paste is not allowed”, type allow pasting, press Enter and paste the text again.\n7. Make these two changes only:\n    Change \"take\": 20 → \"take\": 1000\n    Change \"credentials\": \"include\" → \"credentials\": \"same-origin\"\n\n8. Press Enter.\n9. Wait a few seconds → Move back to Network tab and copy the results that include 1,000 records from the second rewards_get_allocations",
+    "id": 32053
+  },
+  {
+    "ts": "2026-04-01T03:11",
+    "author": "J. P. Costa",
+    "msg": "Can I just continue to copy the Bearer key and send the api request myself? Anyone knows?\nIve been already using pagination before this change",
+    "id": 32054
+  },
+  {
+    "ts": "2026-04-01T05:04",
+    "author": "Jaba - Unityfarmers",
+    "msg": "",
+    "id": 32055
+  },
+  {
+    "ts": "2026-04-01T05:08",
+    "author": "Jaba - Unityfarmers",
+    "msg": "My market place takers are crap",
+    "id": 32056
+  },
+  {
+    "ts": "2026-04-01T05:08",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Photo]",
+    "id": 32057
+  },
+  {
+    "ts": "2026-04-01T05:08",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Photo]",
+    "id": 32058
+  },
+  {
+    "ts": "2026-04-01T05:12",
+    "author": "OC Nodes",
+    "msg": "Those are the ones that will rough it out with you for 0.05",
+    "id": 32059
+  },
+  {
+    "ts": "2026-04-01T05:34",
+    "author": "GliTch_",
+    "msg": "plz sir",
+    "id": 32060
+  },
+  {
+    "ts": "2026-04-01T05:34",
+    "author": "GliTch_",
+    "msg": "@Unitywalletsbot",
+    "id": 32061
+  },
+  {
+    "ts": "2026-04-01T05:34",
+    "author": "GliTch_",
+    "msg": "👀",
+    "id": 32062
+  },
+  {
+    "ts": "2026-04-01T06:16",
+    "author": "libben",
+    "msg": "How was your rewards today?",
+    "id": 32063
+  },
+  {
+    "ts": "2026-04-01T06:19",
+    "author": "GliTch_",
+    "msg": "🚽 like previous days",
+    "id": 32064
+  },
+  {
+    "ts": "2026-04-01T06:19",
+    "author": "Dennis",
+    "msg": "I am tired of winning",
+    "id": 32065
+  },
+  {
+    "ts": "2026-04-01T06:19",
+    "author": "GliTch_",
+    "msg": "but I've not migrated anything",
+    "id": 32066
+  },
+  {
+    "ts": "2026-04-01T06:23",
+    "author": "GliTch_",
+    "msg": "/wallets",
+    "id": 32069
+  },
+  {
+    "ts": "2026-04-01T06:23",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n✕ **XRP**: $444.86 (329.5251)\n₮ **USDT**: $372.46 (373)\n◎ **SOL**: $284.63 (3.3788)\n₳ **ADA**: $262.37 (1037.7467)\n⟐ **ETH**: $234.71 (0.1099)\n⬡ **BNB**: $215.59 (0.3489)\n💵 **USDT_BSC**: $205.03 (205)\n🐕 **SHIB**: $204.42 (34,012,566)\n$ **USDC**: $164.27 (164)\n💵 **USDC_BSC**: $45.16 (45)\n\n**Total: $2,433.49**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 32070
+  },
+  {
+    "ts": "2026-04-01T06:23",
+    "author": "GliTch_",
+    "msg": "\\o/",
+    "id": 32071
+  },
+  {
+    "ts": "2026-04-01T06:24",
+    "author": "GliTch_",
+    "msg": "This time it's not tied to this account when they nuke it 😂",
+    "id": 32072
+  },
+  {
+    "ts": "2026-04-01T06:24",
+    "author": "libben",
+    "msg": "Fck…",
+    "id": 32073
+  },
+  {
+    "ts": "2026-04-01T07:04",
+    "author": "Bill",
+    "msg": "All my wifi devices are 0.",
+    "id": 32074
+  },
+  {
+    "ts": "2026-04-01T07:05",
+    "author": "Bill",
+    "msg": "Im sorry Josh. I thought I was helping. Please stop punishment 😭",
+    "id": 32075
+  },
+  {
+    "ts": "2026-04-01T07:22",
+    "author": "MikiRoma87 Miki",
+    "msg": "doesn’t it tho, because finding out people are using any sort of android device is pretty wild, lol \n\nAnd now im thinking, like on this post, what android devices can you instal an E-sim on?\n\nAs may are quite a cheap option compare’s to any phone motherboard, apparently they were also giving quite good rewards.\n\nhttps://www.reddit.com/r/SBCGaming/s/RkZ1KVzdox",
+    "id": 32076
+  },
+  {
+    "ts": "2026-04-01T07:22",
+    "author": "MikiRoma87 Miki",
+    "msg": "For me it was good, back at about 1.7$ with 11 devices\nAll run on the same WiFi",
+    "id": 32077
+  },
+  {
+    "ts": "2026-04-01T07:27",
+    "author": "Kevin Blowers",
+    "msg": "Has anyone worked out how to get all of the data for licences in @jabadabadou dashboard instead of only 20 entries since the unity dashboard update?",
+    "id": 32078
+  },
+  {
+    "ts": "2026-04-01T07:59",
+    "author": "Jaba - Unityfarmers",
+    "msg": "additional procedure to extract 1,000 records from the manage.unitynodes.io page (after the webpage update it extracts only the first 20)\n\n1. Open DevTools (F12) → Go to Network tab.\n2. Reload the page and find the request named rewards_get_allocations.\n3. Right-click on that request row → Copy → Copy as fetch.\n4. Go to Console tab.\n5. Paste the code.\n6. If Chrome says “Paste is not allowed”, type allow pasting, press Enter and paste the text again.\n7. Make these two changes only:\n    Change \"take\": 20 → \"take\": 1000\n    Change \"credentials\": \"include\" → \"credentials\": \"same-origin\"\n\n8. Press Enter.\n9. Wait a few seconds → Move back to Network tab and copy the results that include 1,000 records from the second rewards_get_allocations",
+    "id": 32079
+  },
+  {
+    "ts": "2026-04-01T07:59",
+    "author": "Jaba - Unityfarmers",
+    "msg": "The developer also working on a fix, best to keep an eye on his Twitter",
+    "id": 32080
+  },
+  {
+    "ts": "2026-04-01T09:30",
+    "author": "Kevin Blowers",
+    "msg": "This is perfect, thanks",
+    "id": 32081
+  },
+  {
+    "ts": "2026-04-01T11:06",
+    "author": "Crypto Connoisseur",
+    "msg": "My rewards are still dog shite. When will the pain end?",
+    "id": 32083
+  },
+  {
+    "ts": "2026-04-01T11:13",
+    "author": "R B",
+    "msg": "I’ve turned my setup off until the rewards are up on my personal phone , electricity isn’t free",
+    "id": 32084
+  },
+  {
+    "ts": "2026-04-01T11:15",
+    "author": "Daano",
+    "msg": "This ima gona do today aswell",
+    "id": 32085
+  },
+  {
+    "ts": "2026-04-01T11:15",
+    "author": "Daano",
+    "msg": "Will here from others when rewards maybe will pickup",
+    "id": 32086
+  },
+  {
+    "ts": "2026-04-01T11:15",
+    "author": "UNI-NODE",
+    "msg": "i did it as well, most phones are not running",
+    "id": 32087
+  },
+  {
+    "ts": "2026-04-01T13:27",
+    "author": "NEM0",
+    "msg": "You are missed in the verified group",
+    "id": 32088
+  },
+  {
+    "ts": "2026-04-01T14:53",
+    "author": "Wopdiddly",
+    "msg": "I hear a lot of people saying WMT was the same as Unity, everything been dragged out for an eternity. Is that true? Is it now better and rewarding (the numerous nodes I guess)\n\nJust wondering if it all eventually works out",
+    "id": 32089
+  },
+  {
+    "ts": "2026-04-01T14:55",
+    "author": "Darko",
+    "msg": "Earth node owners in their 5th year waiting for going online.\nNo this is not the joke.\nThey are promised it's going live this year....",
+    "id": 32090
+  },
+  {
+    "ts": "2026-04-01T14:55",
+    "author": "Flippy",
+    "msg": "Ask the assistant about calibration and what they are really doing in the past week",
+    "id": 32091
+  },
+  {
+    "ts": "2026-04-01T14:56",
+    "author": "Flippy",
+    "msg": "He is obviously dodging my question about it",
+    "id": 32092
+  },
+  {
+    "ts": "2026-04-01T14:56",
+    "author": "Darko",
+    "msg": "Calibration is a BS term for gullible people",
+    "id": 32093
+  },
+  {
+    "ts": "2026-04-01T14:56",
+    "author": "Darko",
+    "msg": "They turned off the pipe until they start getting paid for scout and runner tasks",
+    "id": 32094
+  },
+  {
+    "ts": "2026-04-01T14:57",
+    "author": "Flippy",
+    "msg": "Thats why I want to know what the hell they doing cause all they do is killing all ulos",
+    "id": 32095
+  },
+  {
+    "ts": "2026-04-01T15:26",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "EN pain hits different. I'm numb to it now 🤣",
+    "id": 32096
+  },
+  {
+    "ts": "2026-04-01T15:44",
+    "author": "NEM0",
+    "msg": "Taking bets. I bet calibration will complete when one of 2 conditions are meant",
+    "id": 32097
+  },
+  {
+    "ts": "2026-04-01T15:44",
+    "author": "NEM0",
+    "msg": "1) everyone one shuts down until calibration is complete",
+    "id": 32098
+  },
+  {
+    "ts": "2026-04-01T15:44",
+    "author": "NEM0",
+    "msg": "2) they roll out the new tool and then can blame you for low rewards",
+    "id": 32099
+  },
+  {
+    "ts": "2026-04-01T15:45",
+    "author": "NEM0",
+    "msg": "And 3) rewards reduced until they can get more money to fill the bucket",
+    "id": 32100
+  },
+  {
+    "ts": "2026-04-01T15:46",
+    "author": "Darko",
+    "msg": "That is the reason they released the whitepaper of new token throwing a bone expecting people will rush to buy all the nodes. Second day not a single mention from anyone about the token. Total flop",
+    "id": 32101
+  },
+  {
+    "ts": "2026-04-01T15:47",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "14857262% it's going to be this",
+    "id": 32102
+  },
+  {
+    "ts": "2026-04-01T15:47",
+    "author": "Darko",
+    "msg": "Only good thing is this Scout thing is making some real money but again they are misleading people and not explaining how it makes money.",
+    "id": 32103
+  },
+  {
+    "ts": "2026-04-01T15:50",
+    "author": "Darko",
+    "msg": "You actually have to put hours and hours of work into it which is fine as it gives an option for some people but working full time and doing this is a hard pass. You would need to find ULO who is willing to do it for you and split the profit.",
+    "id": 32104
+  },
+  {
+    "ts": "2026-04-01T15:52",
+    "author": "NEM0",
+    "msg": "Yes that’s the only way and then see if that ULO even has access to it. That’s a full time job that maybe people in third world countries wouldn’t mind doing.",
+    "id": 32105
+  },
+  {
+    "ts": "2026-04-01T16:26",
+    "author": "Opher",
+    "msg": "Yeah, i had a gut feeling the reward drop wasn’t from calibration. Commercial clients most definitely stop utilizing Unity and decreased volume because of synthetic data. so Unity responded by doing calibration to weed out the bad ulos and once the data looks more organic, then Commercial clients increase volume again? And then they are mentioning the toolkit alongside calibration and saying how AFTER calibration.. if your rewards aren’t improved, then USE the toolkit to figure it out. I think our only savior will be wifi tasks, those are my expectations now. Im thinking about reducing each box to run 10 devices per ISP. Had anyone done this?",
+    "id": 32106
+  },
+  {
+    "ts": "2026-04-01T16:36",
+    "author": "Wopdiddly",
+    "msg": "Ok so what's happening with Unity is standard behaviour from the team then \n\nNext question is why did you buy Unity nodes? S&M services are cheaper you know",
+    "id": 32107
+  },
+  {
+    "ts": "2026-04-01T16:37",
+    "author": "Wopdiddly",
+    "msg": "I think maybe this one. Have they overspent and are now claiming it back? We get no answers which leads to such speculation",
+    "id": 32108
+  },
+  {
+    "ts": "2026-04-01T16:38",
+    "author": "Darko",
+    "msg": "I bought it believing it will not be tied to crypto, will have no token and will have actual real world use. RWA. I fell for false promises and $96 scam trailer",
+    "id": 32109
+  },
+  {
+    "ts": "2026-04-01T16:42",
+    "author": "Wopdiddly",
+    "msg": "Same. The app clearly didn't exist so it wasn't tested for a year at all. That wasn't made clear at all at the start.\n\nThe spy in here can report this back to the team",
+    "id": 32110
+  },
+  {
+    "ts": "2026-04-01T16:43",
+    "author": "Darko",
+    "msg": "Fake it until you make it is their motto basically. It does not mean they won't succeed but it will cost us nerves lost hours and money in the process",
+    "id": 32111
+  },
+  {
+    "ts": "2026-04-01T16:44",
+    "author": "Wopdiddly",
+    "msg": "Yeah it's probably best to accept that it's a very long game and wait",
+    "id": 32112
+  },
+  {
+    "ts": "2026-04-01T17:26",
+    "author": "EdgyBruh",
+    "msg": "Switch them off guys you'll be a lot happier! Keep a few running on unique IPs but there's no point in keeping everything running at a loss",
+    "id": 32113
+  },
+  {
+    "ts": "2026-04-01T18:10",
+    "author": "I.L",
+    "msg": "I own 21 nodes and I switched all my farms off about 4 months ago",
+    "id": 32114
+  },
+  {
+    "ts": "2026-04-01T18:15",
+    "author": "Daano",
+    "msg": "Yup gona switch off today",
+    "id": 32115
+  },
+  {
+    "ts": "2026-04-01T18:25",
+    "author": "Peter",
+    "msg": "Lights will most likely be off tomorrow. I was holding out to see what the 1st of April rewards would bring first. Unfortunately, far too much time, effort, and money has been wasted over the past five months.\n\nI’ll revisit this project once they’ve properly got their act together.",
+    "id": 32116
+  },
+  {
+    "ts": "2026-04-01T18:32",
+    "author": "Daano",
+    "msg": "Was also waiting to end of march updates... Didnt get better in terms of   rewards, cant even cover cost😓",
+    "id": 32117
+  },
+  {
+    "ts": "2026-04-01T18:37",
+    "author": "Peter",
+    "msg": "That’s my point exactly. Loosing money every single day. $100k put into something that earns me $4 a day. WTF.\n\nLost all of my audience also. I look like an idiot to all the people I got involved in this.",
+    "id": 32118
+  },
+  {
+    "ts": "2026-04-01T18:39",
+    "author": "Daano",
+    "msg": "Ye we aswell amount of money and enormous amound of hardware.. 💀",
+    "id": 32119
+  },
+  {
+    "ts": "2026-04-01T19:04",
+    "author": "R B",
+    "msg": "Sorry to hear that hopefully you can sell them if you want or make money n the future on them",
+    "id": 32120
+  },
+  {
+    "ts": "2026-04-01T19:08",
+    "author": "NEM0",
+    "msg": "Mine when off with the final 5 licenses powered down a few mins ago",
+    "id": 32121
+  },
+  {
+    "ts": "2026-04-01T19:09",
+    "author": "NEM0",
+    "msg": "4 countries and 3 different USA states",
+    "id": 32122
+  },
+  {
+    "ts": "2026-04-01T19:10",
+    "author": "Wopdiddly",
+    "msg": "Yea I'm going to take a little mini break and accept that it's all going to take a lot of time.\n\nDefinitely not the project I thought I was investing in, yet. I have much hope though",
+    "id": 32123
+  },
+  {
+    "ts": "2026-04-01T19:11",
+    "author": "Wopdiddly",
+    "msg": "$100k 🤯\n\nI can see why some people are going crazy omg",
+    "id": 32124
+  },
+  {
+    "ts": "2026-04-01T19:32",
+    "author": "MikiRoma87 Miki",
+    "msg": "sorry to hear that, Peter, I wish you a much bigger return of those 100k",
+    "id": 32125
+  },
+  {
+    "ts": "2026-04-01T19:33",
+    "author": "Gwims",
+    "msg": "100k your gonna be a very rich man Sir",
+    "id": 32126
+  },
+  {
+    "ts": "2026-04-01T19:39",
+    "author": "Wopdiddly",
+    "msg": "He could very well be, last night I decided I was going to buy another two but the chat is so toxic it totally put me off. Yes though I definitely think there's a fair chance Peter will make it\n\nWhat did  you say to get muted @Flippyyyyyy ?",
+    "id": 32127
+  },
+  {
+    "ts": "2026-04-01T19:50",
+    "author": "OC Nodes",
+    "msg": "I think repeating the same questions and complaints over and over is really exhausting for all of us. We are all in this together and I definitely appreciate that some of us are very vocal and advocating on all our behalf but we gotta also let things play out a bit. We see improvements and action in the overall projects (WM and MN) so I mean Unity is not a scam unless it's one of those extremely elaborate scams.. the question is can they execute and or are we being too impatient and unrealistic with the timeline of what corporate customers will do with Unity and how fast etc. obviously they over sold the app and it wasn't ready to deploy. It's obvious by now. So we just have to accept the reality that we will get one task at a time.. S&R then the rest.. I personally saw a ULO make 50 UP on MapQuest but that means he submitted some 10 plans and that takes work...but $50 for someone in Pakistan is a shit ton of money to sit around at home and copy things into some forms.. so it's not for me.. j did one and got $5 and I was like ok that's interesting but not doing more now..\n\nAnyway the bottom line is clearly the project has to roll one thing at a time then test and test and retest and wait for clients.. this will take months guys..  we better relax for our combined mental health..",
+    "id": 32128
+  },
+  {
+    "ts": "2026-04-01T20:04",
+    "author": "MikiRoma87 Miki",
+    "msg": "and in the meantime...let's earn some peanuts to pay for coffee :P oh well, sorry starbucks people, I'm going to italy for a month so i can afford coffee AND croissant with my 1.7$!",
+    "id": 32129
+  },
+  {
+    "ts": "2026-04-01T20:05",
+    "author": "MikiRoma87 Miki",
+    "msg": "shit, my child will want frothed milk, I gotta add my mom and dad's devices once I reach home",
+    "id": 32130
+  },
+  {
+    "ts": "2026-04-01T20:13",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "That babychino hits them different haha",
+    "id": 32131
+  },
+  {
+    "ts": "2026-04-01T22:24",
+    "author": "GliTch_",
+    "msg": "well they wont let me back in, I've waited 2.5 days for a response from \"Support\" and counting with also sending email to the admins",
+    "id": 32132
+  },
+  {
+    "ts": "2026-04-01T22:30",
+    "author": "Wopdiddly",
+    "msg": "You're not missing anything. Same shit different day. We ask questions and get talked down to, it's so disrespectful I don't even want to read it anymore.\n\nLet's hope the growing silence in there becomes deafening so they realise the biggest mistake they are making is an arrogant lack of respect for their investors.",
+    "id": 32133
+  },
+  {
+    "ts": "2026-04-01T22:42",
+    "author": "GliTch_",
+    "msg": "Yeah I figured 😂",
+    "id": 32134
+  },
+  {
+    "ts": "2026-04-01T22:42",
+    "author": "GliTch_",
+    "msg": "I do agree with you on this",
+    "id": 32135
+  },
+  {
+    "ts": "2026-04-01T22:48",
+    "author": "NEM0",
+    "msg": "Again I say the min. That map goes dark they’ll come back to the table",
+    "id": 32136
+  },
+  {
+    "ts": "2026-04-01T22:53",
+    "author": "Wopdiddly",
+    "msg": "It's quite the message",
+    "id": 32137
+  },
+  {
+    "ts": "2026-04-01T22:54",
+    "author": "NEM0",
+    "msg": "To be honest I hope that would not be the case. Think about the message that would give the community. “ we will not do anything of any significance until we are forced to” that is a bad message to send",
+    "id": 32138
+  },
+  {
+    "ts": "2026-04-01T23:00",
+    "author": "Wopdiddly",
+    "msg": "For me, banning Flippy was a big no no and has actually sickened the shit out of me. He has given everything and invested I don't know how much  money to make the best of the shit hand we've all been dealt to date. \n\nThe only reason he got banned was because his questions were continually unanswered so naturally after all that got more angry \n\nNo empathy or understanding of his situation. It's inhuman.\n\nLook, paragraphs like The Unity Assistant Josh, I actually think the unity assistant made things worse not better with his robotic answers.",
+    "id": 32139
+  },
+  {
+    "ts": "2026-04-01T23:03",
+    "author": "Wopdiddly",
+    "msg": "I'm not even going to try and give myself the false reassurance of finishing it with \"but I'm sure it will work out\" because we all try to convince ourselves but from experience in crypto it doesn't always have a fairytale ending so who knows.\n\nEvery project has hype men and there are definitely two in that chat who represent the teams best interests n",
+    "id": 32140
+  },
+  {
+    "ts": "2026-04-01T23:03",
+    "author": "NEM0",
+    "msg": "William is not human. It can’t be empathetic",
+    "id": 32141
+  },
+  {
+    "ts": "2026-04-01T23:06",
+    "author": "Wopdiddly",
+    "msg": "I still think it's Josh 😂. His replies read exactly how the AMAs go. \n\nI don't know William or who he is, but to be fair he helped me rescue a lost node license and I can't thank him enough. You earn respect, he earned mine that day because the initial replies were tough shit.",
+    "id": 32142
+  },
+  {
+    "ts": "2026-04-01T23:23",
+    "author": "NEM0",
+    "msg": "It’s world mobiles AI chatbot",
+    "id": 32143
+  },
+  {
+    "ts": "2026-04-01T23:23",
+    "author": "NEM0",
+    "msg": "It sits in every meeting etc etc",
+    "id": 32144
+  }
+]

@@ -1,0 +1,668 @@
+[
+  {
+    "ts": "2026-03-02T00:10",
+    "author": "R B",
+    "msg": "ive seen some devices down. so the issue is not fixed - UPDATE - rebooted the farms",
+    "id": 29336
+  },
+  {
+    "ts": "2026-03-02T00:57",
+    "author": "NEM0",
+    "msg": "Man all these official unity chat groups are getting confusing",
+    "id": 29337
+  },
+  {
+    "ts": "2026-03-02T01:44",
+    "author": "Unknown",
+    "msg": "my daily keeps logging out",
+    "id": 29338
+  },
+  {
+    "ts": "2026-03-02T01:44",
+    "author": "Unknown",
+    "msg": "losing connection with switch",
+    "id": 29339
+  },
+  {
+    "ts": "2026-03-02T02:18",
+    "author": "PinkFatBunny",
+    "msg": "How are peoples rewards today?",
+    "id": 29340
+  },
+  {
+    "ts": "2026-03-02T02:28",
+    "author": "Unknown",
+    "msg": "same as yesterday here around .20 average",
+    "id": 29341
+  },
+  {
+    "ts": "2026-03-02T02:29",
+    "author": "Opher",
+    "msg": "200 Devices w/ .24 average today",
+    "id": 29342
+  },
+  {
+    "ts": "2026-03-02T02:32",
+    "author": "PinkFatBunny",
+    "msg": "Wowzers. @ophernodes whats your set up?",
+    "id": 29343
+  },
+  {
+    "ts": "2026-03-02T02:33",
+    "author": "PinkFatBunny",
+    "msg": "Mine were not great. The range is 0.07-0.002",
+    "id": 29344
+  },
+  {
+    "ts": "2026-03-02T02:38",
+    "author": "PinkFatBunny",
+    "msg": "New APK has just been released......🫣🫣🫣🫣",
+    "id": 29345
+  },
+  {
+    "ts": "2026-03-02T02:39",
+    "author": "PinkFatBunny",
+    "msg": "Who's testing it first 🙄🙄😜",
+    "id": 29346
+  },
+  {
+    "ts": "2026-03-02T02:51",
+    "author": "Opher",
+    "msg": "i just tested it on one device, seems fine to me.",
+    "id": 29347
+  },
+  {
+    "ts": "2026-03-02T03:02",
+    "author": "Opher",
+    "msg": "8 boxes on 8 isp’s(two locations), 20 orbics on home wifi, 20 moto g’s split between two locations",
+    "id": 29348
+  },
+  {
+    "ts": "2026-03-02T03:16",
+    "author": "Marco",
+    "msg": "Do you have any issue la with the moto g’s shutting the app down?",
+    "id": 29349
+  },
+  {
+    "ts": "2026-03-02T03:17",
+    "author": "Unknown",
+    "msg": "My 7s don't seem to",
+    "id": 29350
+  },
+  {
+    "ts": "2026-03-02T03:19",
+    "author": "Unknown",
+    "msg": "They're stable or have been the moto are pretty solid",
+    "id": 29351
+  },
+  {
+    "ts": "2026-03-02T03:20",
+    "author": "PinkFatBunny",
+    "msg": "And the country locations if you don't mind sharing? Thank you",
+    "id": 29352
+  },
+  {
+    "ts": "2026-03-02T03:24",
+    "author": "Opher",
+    "msg": "yeah, the moto g’s are very stable.",
+    "id": 29353
+  },
+  {
+    "ts": "2026-03-02T03:26",
+    "author": "Opher",
+    "msg": "I’m located in Texas, USA",
+    "id": 29354
+  },
+  {
+    "ts": "2026-03-02T03:28",
+    "author": "PinkFatBunny",
+    "msg": "The force is strong with you down in Texas. Are they 4/5g connections the ISPs?",
+    "id": 29355
+  },
+  {
+    "ts": "2026-03-02T04:01",
+    "author": "Kuan",
+    "msg": "i hope its not a bug they forgot to fix in v1.13 😄",
+    "id": 29356
+  },
+  {
+    "ts": "2026-03-02T04:48",
+    "author": "Willian | Nuvola",
+    "msg": "So back on high 20s low 30s for 2+ boxes on same ISP?",
+    "id": 29357
+  },
+  {
+    "ts": "2026-03-02T04:50",
+    "author": "Unknown",
+    "msg": "They all are in groups of 20 different ips",
+    "id": 29358
+  },
+  {
+    "ts": "2026-03-02T04:51",
+    "author": "Willian | Nuvola",
+    "msg": "Ohh, I see. I thought someone mentioned earlier that we were back to high rewards on 2+ boxes on same ISP.",
+    "id": 29359
+  },
+  {
+    "ts": "2026-03-02T04:51",
+    "author": "Unknown",
+    "msg": "Not me",
+    "id": 29360
+  },
+  {
+    "ts": "2026-03-02T04:51",
+    "author": "Unknown",
+    "msg": "Lol",
+    "id": 29361
+  },
+  {
+    "ts": "2026-03-02T04:51",
+    "author": "Willian | Nuvola",
+    "msg": "😭",
+    "id": 29362
+  },
+  {
+    "ts": "2026-03-02T05:08",
+    "author": "Marco",
+    "msg": "I haven’t said that yet, but that’s true for me",
+    "id": 29363
+  },
+  {
+    "ts": "2026-03-02T05:08",
+    "author": "Artisan Nodes | MNTx | Unity",
+    "msg": "Anyone having trouble with Genfarmer connecting to the phones? The box controller is working fine but phones keep showing disconnected",
+    "id": 29364
+  },
+  {
+    "ts": "2026-03-02T05:15",
+    "author": "Willian | Nuvola",
+    "msg": "Cool! Was it low for you and now back to high levels?",
+    "id": 29365
+  },
+  {
+    "ts": "2026-03-02T06:21",
+    "author": "Ricky",
+    "msg": "If u changed DNS in recent past…. Check that",
+    "id": 29366
+  },
+  {
+    "ts": "2026-03-02T06:21",
+    "author": "Ricky",
+    "msg": "Go back to automatic dns",
+    "id": 29367
+  },
+  {
+    "ts": "2026-03-02T06:24",
+    "author": "Daniel 🇷🇴",
+    "msg": "nope",
+    "id": 29368
+  },
+  {
+    "ts": "2026-03-02T07:22",
+    "author": "Flavius",
+    "msg": "Rewards back up for me. I only have a few devices",
+    "id": 29369
+  },
+  {
+    "ts": "2026-03-02T07:42",
+    "author": "Marco",
+    "msg": "Avg went from $0.28 down to $0.20 and now up to $0.24. Multiple ISPs.",
+    "id": 29370
+  },
+  {
+    "ts": "2026-03-02T07:50",
+    "author": "R B",
+    "msg": "Yep rewards back to rubbish again 14cents to 30cents",
+    "id": 29371
+  },
+  {
+    "ts": "2026-03-02T09:10",
+    "author": "Dave",
+    "msg": "For real?",
+    "id": 29372
+  },
+  {
+    "ts": "2026-03-02T09:10",
+    "author": "Dave",
+    "msg": "😂",
+    "id": 29373
+  },
+  {
+    "ts": "2026-03-02T09:11",
+    "author": "Dave",
+    "msg": "For fucks sake, I just updated the farm yesterday and it seemed to run fine for me...",
+    "id": 29374
+  },
+  {
+    "ts": "2026-03-02T09:11",
+    "author": "L",
+    "msg": "😬",
+    "id": 29375
+  },
+  {
+    "ts": "2026-03-02T09:15",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Let me know when I can update to 1.1.4 🤷‍♂️😅",
+    "id": 29376
+  },
+  {
+    "ts": "2026-03-02T09:27",
+    "author": "L",
+    "msg": "Where has it been released i cant find it ?thx",
+    "id": 29378
+  },
+  {
+    "ts": "2026-03-02T09:29",
+    "author": "Mr Roundry",
+    "msg": "Releases.unitynodes.io/android/",
+    "id": 29379
+  },
+  {
+    "ts": "2026-03-02T09:30",
+    "author": "Mr Roundry",
+    "msg": "1.1.4",
+    "id": 29380
+  },
+  {
+    "ts": "2026-03-02T09:31",
+    "author": "Mr Roundry",
+    "msg": "Maybe we should wait until they announce it … could be that we download the version to early and they make changes again until they announce it officially 😀",
+    "id": 29381
+  },
+  {
+    "ts": "2026-03-02T11:08",
+    "author": "Dave",
+    "msg": "It's rolled out in Google",
+    "id": 29382
+  },
+  {
+    "ts": "2026-03-02T11:08",
+    "author": "Dave",
+    "msg": "I just updated my phone",
+    "id": 29383
+  },
+  {
+    "ts": "2026-03-02T11:08",
+    "author": "Dave",
+    "msg": "No changes to be found 😂",
+    "id": 29384
+  },
+  {
+    "ts": "2026-03-02T11:09",
+    "author": "L",
+    "msg": "Just finished updating",
+    "id": 29385
+  },
+  {
+    "ts": "2026-03-02T13:03",
+    "author": "b y",
+    "msg": "My last rewards from 27th feb",
+    "id": 29386
+  },
+  {
+    "ts": "2026-03-02T13:16",
+    "author": "Artisan Nodes | MNTx | Unity",
+    "msg": "Thanks",
+    "id": 29387
+  },
+  {
+    "ts": "2026-03-02T13:29",
+    "author": "Mr Roundry",
+    "msg": "only for yesterdays rewards?",
+    "id": 29388
+  },
+  {
+    "ts": "2026-03-02T15:14",
+    "author": "bkauii_ensō",
+    "msg": "Are people having luck with +20 phones/isp again? I have been hearing rumblings but haven't tried it out myself. I finally got 300 phones connected to 15 isps. Now reverting that back will be a pain",
+    "id": 29389
+  },
+  {
+    "ts": "2026-03-02T15:36",
+    "author": "Carlos",
+    "msg": "1.1.2 has been solid for me.",
+    "id": 29390
+  },
+  {
+    "ts": "2026-03-02T15:37",
+    "author": "L",
+    "msg": "just skip 1.1.3 ,1.1.4 is much better",
+    "id": 29391
+  },
+  {
+    "ts": "2026-03-02T16:04",
+    "author": "EdgyBruh",
+    "msg": "You not experiencing any issues with 1.1.4?",
+    "id": 29392
+  },
+  {
+    "ts": "2026-03-02T16:06",
+    "author": "Arthur",
+    "msg": "More than half of my boxes all of a sudden start logging out. What gives? I have not been able to keep up the reading with you guy because of my job.",
+    "id": 29393
+  },
+  {
+    "ts": "2026-03-02T16:07",
+    "author": "Marco",
+    "msg": "Last 2 days.",
+    "id": 29394
+  },
+  {
+    "ts": "2026-03-02T16:07",
+    "author": "L",
+    "msg": "so far all good i had 15 of my 55 phones on 1.1.3 had green dots on the devices but in the licence section in the unity app they were dead and this morning i was only paid on 40 devices not the full 55 now ive updated to 1.1.4  they're all live in the app now also",
+    "id": 29395
+  },
+  {
+    "ts": "2026-03-02T16:14",
+    "author": "Unknown",
+    "msg": "something they changed previous to the last 2 updates causing issues",
+    "id": 29396
+  },
+  {
+    "ts": "2026-03-02T16:16",
+    "author": "Unknown",
+    "msg": "1.1.4 is the attempted fix so far since update mine appear logged into the UNO again",
+    "id": 29397
+  },
+  {
+    "ts": "2026-03-02T16:48",
+    "author": "Dennis",
+    "msg": "Does anyone have a good adapter to connect more then 3 boxes via bluetooth to my pc ?",
+    "id": 29401
+  },
+  {
+    "ts": "2026-03-02T16:48",
+    "author": "Dennis",
+    "msg": "It seems right now I can only handle to usb connections simultaneously",
+    "id": 29402
+  },
+  {
+    "ts": "2026-03-02T16:48",
+    "author": "Mr Roundry",
+    "msg": "They sure forgot to limit it 😀",
+    "id": 29403
+  },
+  {
+    "ts": "2026-03-02T16:52",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Interesting. I wonder if they've forgot to limit it or if it's intentional",
+    "id": 29404
+  },
+  {
+    "ts": "2026-03-02T16:55",
+    "author": "Willian | Nuvola",
+    "msg": "🤞",
+    "id": 29405
+  },
+  {
+    "ts": "2026-03-02T16:55",
+    "author": "Mr Roundry",
+    "msg": "But why intentional ?",
+    "id": 29406
+  },
+  {
+    "ts": "2026-03-02T16:56",
+    "author": "L",
+    "msg": "Good news, shame it wasn't before i splashed out on multiple sim routers and data sims 😅",
+    "id": 29407
+  },
+  {
+    "ts": "2026-03-02T17:00",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Maybe the job tree is due to expand? Future clients don't have a limit on devices per ISP? Who know's with how things are going. Its more likely they've just forgotten to reset the cap on the new updates.",
+    "id": 29408
+  },
+  {
+    "ts": "2026-03-02T17:03",
+    "author": "libben",
+    "msg": "Is it down?",
+    "id": 29409
+  },
+  {
+    "ts": "2026-03-02T17:03",
+    "author": "Daniel 🇷🇴",
+    "msg": "no",
+    "id": 29410
+  },
+  {
+    "ts": "2026-03-02T17:04",
+    "author": "libben",
+    "msg": "It’s connecting only with bnb chain can’t change it",
+    "id": 29411
+  },
+  {
+    "ts": "2026-03-02T17:04",
+    "author": "libben",
+    "msg": "[Photo]",
+    "id": 29412
+  },
+  {
+    "ts": "2026-03-02T17:15",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] it's from metamask",
+    "id": 29414
+  },
+  {
+    "ts": "2026-03-02T17:16",
+    "author": "NEM0",
+    "msg": "Alright so it seems most people are back online today",
+    "id": 29415
+  },
+  {
+    "ts": "2026-03-02T17:16",
+    "author": "NEM0",
+    "msg": "Let’s see if those who had more rewards drop again",
+    "id": 29416
+  },
+  {
+    "ts": "2026-03-02T17:16",
+    "author": "NEM0",
+    "msg": "I would hate for that to happen",
+    "id": 29417
+  },
+  {
+    "ts": "2026-03-02T17:18",
+    "author": "libben",
+    "msg": "Strange I can’t change the network",
+    "id": 29418
+  },
+  {
+    "ts": "2026-03-02T17:22",
+    "author": "OSUN",
+    "msg": "Hi All. \nI’m new here. Thanks Jaba. \nI finally broke down and purchased a phone farm with 20 S8s (hopefully these are compatible with the unity network)\nI thought it would come with the software to run it but it did not.  I’m new to this and not all that tech savvy. I’m older than the internet. Let’s leave it at that. \nCan someone please point me in the right direction on running this thing?",
+    "id": 29419
+  },
+  {
+    "ts": "2026-03-02T17:22",
+    "author": "OSUN",
+    "msg": "I’ve tried watching a few YouTube videos but I’m still not getting it.",
+    "id": 29420
+  },
+  {
+    "ts": "2026-03-02T17:25",
+    "author": "Zangieff",
+    "msg": "Is there a fast way to setup like 100 physical phones. Installing app etc",
+    "id": 29421
+  },
+  {
+    "ts": "2026-03-02T17:26",
+    "author": "bkauii_ensō",
+    "msg": "Anyone testing their full farm again",
+    "id": 29422
+  },
+  {
+    "ts": "2026-03-02T17:32",
+    "author": "Daniel 🇷🇴",
+    "msg": "https://genfarmer.com/download\nhttps://phonefarm.some3c.com/panda-android-screen-projection",
+    "id": 29423
+  },
+  {
+    "ts": "2026-03-02T17:36",
+    "author": "Unknown",
+    "msg": "nope",
+    "id": 29424
+  },
+  {
+    "ts": "2026-03-02T17:36",
+    "author": "Unknown",
+    "msg": "assumptions are it would be limited again soon enough if not already",
+    "id": 29425
+  },
+  {
+    "ts": "2026-03-02T17:48",
+    "author": "Daano",
+    "msg": "@albap816 may i ask how/if you fixed that the farmphones(s8) work with a simcard? I dont seem to get the phones connected to the local network(s).. 😅",
+    "id": 29426
+  },
+  {
+    "ts": "2026-03-02T17:56",
+    "author": "Willian | Nuvola",
+    "msg": "Turned my second box back on yesterday night. Let's see",
+    "id": 29427
+  },
+  {
+    "ts": "2026-03-02T18:00",
+    "author": "OSUN",
+    "msg": "Awesome. Thank you. I’m sitting down to try it now.",
+    "id": 29428
+  },
+  {
+    "ts": "2026-03-02T18:00",
+    "author": "bkauii_ensō",
+    "msg": "🤞 please let me know results. I finally got my set up going with 20 phones on each. I asked 1 of my community members to try their full set up to see what happens",
+    "id": 29429
+  },
+  {
+    "ts": "2026-03-02T18:03",
+    "author": "Dr. DePin",
+    "msg": "Testing 🤞",
+    "id": 29430
+  },
+  {
+    "ts": "2026-03-02T18:06",
+    "author": "Willian | Nuvola",
+    "msg": "Will do! I only have two boxes on one ISP.",
+    "id": 29431
+  },
+  {
+    "ts": "2026-03-02T18:08",
+    "author": "OSUN",
+    "msg": "Maybe not. I have a Mac. It says coming soon",
+    "id": 29432
+  },
+  {
+    "ts": "2026-03-02T18:25",
+    "author": "Opher",
+    "msg": "We recommend not using any of the software with a personal computer. If you can dedicate a pc/laptop with windows, better this way.",
+    "id": 29433
+  },
+  {
+    "ts": "2026-03-02T18:36",
+    "author": "OSUN",
+    "msg": "Yeah. I bought a separate laptop for crypto related stuff only but it’s a Mac. Guess I’m getting another one. So speaking of… \nWhat do you ( any of you) suggest?  \nI eventually want to have a few farms running in a few different states, possibly even Canada. What kind of dedicated laptop should I get to run them remotely?",
+    "id": 29434
+  },
+  {
+    "ts": "2026-03-02T18:37",
+    "author": "OSUN",
+    "msg": "Or desktop?",
+    "id": 29435
+  },
+  {
+    "ts": "2026-03-02T19:01",
+    "author": "Mr Roundry",
+    "msg": "How were the rewards ?",
+    "id": 29436
+  },
+  {
+    "ts": "2026-03-02T19:03",
+    "author": "Mr Roundry",
+    "msg": "Ah yesterday night … so after snapshot @Coinfera ?",
+    "id": 29437
+  },
+  {
+    "ts": "2026-03-02T19:05",
+    "author": "Willian | Nuvola",
+    "msg": "Before all this drama on rewards getting cut based on the amount of devices on the same ISP .20-0.30 range. Than it dropped to below .05.\n\nI had to plug only one box so rewards went up to mid .20s again. \n\nNo I plug the second box to see where we stand, probably going to see the results tomorrow night",
+    "id": 29438
+  },
+  {
+    "ts": "2026-03-02T19:16",
+    "author": "Mr Roundry",
+    "msg": "Makes sense … would love some feedback on this 🙏",
+    "id": 29439
+  },
+  {
+    "ts": "2026-03-02T20:35",
+    "author": "Janilom81",
+    "msg": "I have my 30 phones on a tmobile 5g router. yesterday I had my highest rewards yet.",
+    "id": 29440
+  },
+  {
+    "ts": "2026-03-02T20:35",
+    "author": "Janilom81",
+    "msg": "Real phones, no sims on wifi.",
+    "id": 29441
+  },
+  {
+    "ts": "2026-03-02T20:38",
+    "author": "Janilom81",
+    "msg": "My 5g router interestingly enough has a really weak signal. 2 bars most of the day and drops internet every other day or so completely for a few minutes. My device connect and disconnect but still maintain above 85% uptime.\n\nIts slow enough for me to switch them to my main wifi to download apk updates. Then I switch back.",
+    "id": 29442
+  },
+  {
+    "ts": "2026-03-02T20:38",
+    "author": "Janilom81",
+    "msg": "Maybe uptime is both a blessing and a curse.",
+    "id": 29443
+  },
+  {
+    "ts": "2026-03-02T22:14",
+    "author": "Loop ENO | ANO | UNO (granddad2)",
+    "msg": "Thank you for kind invite and acknowledging rules of engagement. 23 yrs in the military, my whole life has been to stay off the radar. 🫡",
+    "id": 29445
+  },
+  {
+    "ts": "2026-03-02T22:15",
+    "author": "Mr Roundry",
+    "msg": "welcome sir",
+    "id": 29446
+  },
+  {
+    "ts": "2026-03-02T22:28",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Especially don't use a crypto related stuff computer for it 😁",
+    "id": 29447
+  },
+  {
+    "ts": "2026-03-02T22:31",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Media] Mobile Device Mamagers. Search for MDM in the chats. Here's one for instance https://h-mdm.com/. I believe there are also free open source ones",
+    "id": 29448
+  },
+  {
+    "ts": "2026-03-02T22:32",
+    "author": "Jaba - Unityfarmers",
+    "msg": "He installed a signal booster. Antenna you place outdoors and rebroadcasts signal in the room with the boxes",
+    "id": 29449
+  },
+  {
+    "ts": "2026-03-02T22:40",
+    "author": "Daano",
+    "msg": "You have more than 20 device on same ip AND high rewards?? How🤯",
+    "id": 29451
+  },
+  {
+    "ts": "2026-03-02T22:43",
+    "author": "PinkFatBunny",
+    "msg": "Unity Voodoo",
+    "id": 29452
+  },
+  {
+    "ts": "2026-03-02T22:47",
+    "author": "Mr Roundry",
+    "msg": "dont know where anymore but i saw a foto of someone using a mac book with a software ... would guess it was gen farmers but not sure ... cant find the foto anymore",
+    "id": 29453
+  }
+]

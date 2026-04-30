@@ -1,0 +1,452 @@
+[
+  {
+    "ts": "2026-04-23T00:38",
+    "author": "Cloud #TONCLAW",
+    "msg": "did the app disapper from the play store?",
+    "id": 3309
+  },
+  {
+    "ts": "2026-04-23T00:38",
+    "author": "Cloud #TONCLAW",
+    "msg": "cant see it",
+    "id": 3310
+  },
+  {
+    "ts": "2026-04-23T00:45",
+    "author": "Cloud #TONCLAW",
+    "msg": "nevermind",
+    "id": 3311
+  },
+  {
+    "ts": "2026-04-23T02:23",
+    "author": "Saurabh Singh",
+    "msg": "Let's keep the language English.\nSo everyone can understand",
+    "id": 3314
+  },
+  {
+    "ts": "2026-04-23T02:23",
+    "author": "Alprax",
+    "msg": "I am modifying the 3.1 JS so it resizes to normal size every time you reload the website cuz i resized it way too over and now can't resize it",
+    "id": 3315
+  },
+  {
+    "ts": "2026-04-23T02:23",
+    "author": "Alprax",
+    "msg": "😭😭😭😭",
+    "id": 3316
+  },
+  {
+    "ts": "2026-04-23T02:32",
+    "author": "Saurabh Singh",
+    "msg": "Just use ctrl +  or minus",
+    "id": 3317
+  },
+  {
+    "ts": "2026-04-23T02:33",
+    "author": "Alprax",
+    "msg": "Yh already tried",
+    "id": 3318
+  },
+  {
+    "ts": "2026-04-23T02:33",
+    "author": "Alprax",
+    "msg": "Extended it above the title bar",
+    "id": 3319
+  },
+  {
+    "ts": "2026-04-23T02:33",
+    "author": "Alprax",
+    "msg": "Can't get it down now",
+    "id": 3320
+  },
+  {
+    "ts": "2026-04-23T02:42",
+    "author": "Saurabh Singh",
+    "msg": "Just turn on and off the tamper monkey",
+    "id": 3321
+  },
+  {
+    "ts": "2026-04-23T02:44",
+    "author": "Alprax",
+    "msg": "Tried that too",
+    "id": 3322
+  },
+  {
+    "ts": "2026-04-23T02:44",
+    "author": "Alprax",
+    "msg": "😭😭😭my guy I've already tried everything, editing this code is better than doing that",
+    "id": 3323
+  },
+  {
+    "ts": "2026-04-23T02:47",
+    "author": "Alprax",
+    "msg": "done with it, do lmk if you want the update",
+    "id": 3324
+  },
+  {
+    "ts": "2026-04-23T02:55",
+    "author": "Saurabh Singh",
+    "msg": "Sure bro give me that",
+    "id": 3325
+  },
+  {
+    "ts": "2026-04-23T03:00",
+    "author": "Alprax",
+    "msg": "Fs just let me twinker it a bit more",
+    "id": 3326
+  },
+  {
+    "ts": "2026-04-23T03:02",
+    "author": "Alprax",
+    "msg": "adding glass effect and changing its UI XD",
+    "id": 3327
+  },
+  {
+    "ts": "2026-04-23T03:44",
+    "author": "Saurabh Singh",
+    "msg": "Damn bro..\nWhich ai are u using?",
+    "id": 3328
+  },
+  {
+    "ts": "2026-04-23T03:45",
+    "author": "Alprax",
+    "msg": "No ai, js is easy",
+    "id": 3329
+  },
+  {
+    "ts": "2026-04-23T03:46",
+    "author": "Saurabh Singh",
+    "msg": "Damn bro..\nThat code is like 1000 lines 😢😂",
+    "id": 3330
+  },
+  {
+    "ts": "2026-04-23T03:46",
+    "author": "Alprax",
+    "msg": "Only adding extra lines, I'm not editing the main infrastructure",
+    "id": 3331
+  },
+  {
+    "ts": "2026-04-23T03:46",
+    "author": "Alprax",
+    "msg": "Except a few lines that are at the beginning of the js and consist of design attributes",
+    "id": 3332
+  },
+  {
+    "ts": "2026-04-23T03:52",
+    "author": "Rifat",
+    "msg": "Let's create a git project and allow us all to contribute on it",
+    "id": 3333
+  },
+  {
+    "ts": "2026-04-23T03:53",
+    "author": "Alprax",
+    "msg": "Fs, other than that i am thinking of adding auto withdraw if the wallet exceeds a minimum of 10$",
+    "id": 3334
+  },
+  {
+    "ts": "2026-04-23T03:53",
+    "author": "Alprax",
+    "msg": "Or should i make it 5",
+    "id": 3335
+  },
+  {
+    "ts": "2026-04-23T03:53",
+    "author": "Alprax",
+    "msg": "I am just thinking",
+    "id": 3336
+  },
+  {
+    "ts": "2026-04-23T03:54",
+    "author": "Rifat",
+    "msg": "How about make it like a setting to enable or disable with the withdraw amount input",
+    "id": 3337
+  },
+  {
+    "ts": "2026-04-23T03:55",
+    "author": "Alprax",
+    "msg": "Yeh, yeh exactly that",
+    "id": 3338
+  },
+  {
+    "ts": "2026-04-23T03:55",
+    "author": "Rifat",
+    "msg": "Nice 👍",
+    "id": 3339
+  },
+  {
+    "ts": "2026-04-23T03:56",
+    "author": "Alprax",
+    "msg": "tho gotta need the withdrawal api",
+    "id": 3340
+  },
+  {
+    "ts": "2026-04-23T03:56",
+    "author": "Alprax",
+    "msg": "@coffee_wmtx",
+    "id": 3341
+  },
+  {
+    "ts": "2026-04-23T03:56",
+    "author": "Alprax",
+    "msg": "is there any>",
+    "id": 3342
+  },
+  {
+    "ts": "2026-04-23T03:56",
+    "author": "Alprax",
+    "msg": "?*",
+    "id": 3343
+  },
+  {
+    "ts": "2026-04-23T03:59",
+    "author": "Rifat",
+    "msg": "Anyone noticed that the pagination on unity web doesn't work?",
+    "id": 3344
+  },
+  {
+    "ts": "2026-04-23T04:14",
+    "author": "Cloud #TONCLAW",
+    "msg": "Not likely not",
+    "id": 3345
+  },
+  {
+    "ts": "2026-04-23T04:15",
+    "author": "Cloud #TONCLAW",
+    "msg": "Yes",
+    "id": 3346
+  },
+  {
+    "ts": "2026-04-23T04:16",
+    "author": "Alprax",
+    "msg": "other than that i've noticed the lifetime rewards are stuck at 146$ and it doesn't move onwards",
+    "id": 3347
+  },
+  {
+    "ts": "2026-04-23T04:16",
+    "author": "Rifat",
+    "msg": "It works for me",
+    "id": 3348
+  },
+  {
+    "ts": "2026-04-23T04:24",
+    "author": "Alprax",
+    "msg": "[Photo] on one of my account, total incentives from jan 27th is",
+    "id": 3349
+  },
+  {
+    "ts": "2026-04-23T04:24",
+    "author": "Alprax",
+    "msg": "221",
+    "id": 3350
+  },
+  {
+    "ts": "2026-04-23T04:25",
+    "author": "Alprax",
+    "msg": "tho it only shows 146",
+    "id": 3351
+  },
+  {
+    "ts": "2026-04-23T04:25",
+    "author": "Rifat",
+    "msg": "Interesting",
+    "id": 3352
+  },
+  {
+    "ts": "2026-04-23T04:26",
+    "author": "Saurabh Singh",
+    "msg": "I have already done it though 😂",
+    "id": 3353
+  },
+  {
+    "ts": "2026-04-23T04:26",
+    "author": "Rifat",
+    "msg": "Nice 👍",
+    "id": 3354
+  },
+  {
+    "ts": "2026-04-23T06:58",
+    "author": "Alprax",
+    "msg": "added themes, accent, resizer, export in CSV and JSON and transparency controller",
+    "id": 3355
+  },
+  {
+    "ts": "2026-04-23T07:32",
+    "author": "Saurabh Singh",
+    "msg": "Did u messed with sheets integration.",
+    "id": 3356
+  },
+  {
+    "ts": "2026-04-23T07:32",
+    "author": "Saurabh Singh",
+    "msg": "Send the updated file",
+    "id": 3357
+  },
+  {
+    "ts": "2026-04-23T09:10",
+    "author": "Alprax",
+    "msg": "modified it even better",
+    "id": 3358
+  },
+  {
+    "ts": "2026-04-23T09:10",
+    "author": "Alprax",
+    "msg": "now you can see upto 30D range",
+    "id": 3359
+  },
+  {
+    "ts": "2026-04-23T09:11",
+    "author": "Alprax",
+    "msg": "[Photo]",
+    "id": 3360
+  },
+  {
+    "ts": "2026-04-23T09:11",
+    "author": "Alprax",
+    "msg": "and added custom range too",
+    "id": 3361
+  },
+  {
+    "ts": "2026-04-23T09:12",
+    "author": "city",
+    "msg": "looks good",
+    "id": 3362
+  },
+  {
+    "ts": "2026-04-23T09:12",
+    "author": "Alprax",
+    "msg": "except that the money is bit glitched, gonna fix it, can't attach the auto withdraw hook",
+    "id": 3363
+  },
+  {
+    "ts": "2026-04-23T09:12",
+    "author": "Alprax",
+    "msg": "idk why",
+    "id": 3364
+  },
+  {
+    "ts": "2026-04-23T14:47",
+    "author": "Alprax",
+    "msg": "Added custom range for any specific license/device to measure its daily earnings",
+    "id": 3365
+  },
+  {
+    "ts": "2026-04-23T14:48",
+    "author": "Rifat",
+    "msg": "Would you care to create a publish method? We would love to have the latest builds",
+    "id": 3366
+  },
+  {
+    "ts": "2026-04-23T15:41",
+    "author": "Alprax",
+    "msg": "Github?",
+    "id": 3367
+  },
+  {
+    "ts": "2026-04-23T15:41",
+    "author": "Alprax",
+    "msg": "I'll try",
+    "id": 3368
+  },
+  {
+    "ts": "2026-04-23T15:41",
+    "author": "Alprax",
+    "msg": "Fs",
+    "id": 3369
+  },
+  {
+    "ts": "2026-04-23T17:13",
+    "author": "Alprax",
+    "msg": "make a github? and publish and give the followup link here?",
+    "id": 3370
+  },
+  {
+    "ts": "2026-04-23T17:13",
+    "author": "Alprax",
+    "msg": "am i allowed to",
+    "id": 3371
+  },
+  {
+    "ts": "2026-04-23T17:13",
+    "author": "Alprax",
+    "msg": "@coffee_wmtx",
+    "id": 3372
+  },
+  {
+    "ts": "2026-04-23T17:13",
+    "author": "Alprax",
+    "msg": "@ValaykaWBC",
+    "id": 3373
+  },
+  {
+    "ts": "2026-04-23T17:17",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "No links to external pages please\n\nWe wanna make sure no one gets scammed or wallets drained",
+    "id": 3376
+  },
+  {
+    "ts": "2026-04-23T17:18",
+    "author": "Alprax",
+    "msg": "Github",
+    "id": 3377
+  },
+  {
+    "ts": "2026-04-23T17:18",
+    "author": "Alprax",
+    "msg": "To github",
+    "id": 3378
+  },
+  {
+    "ts": "2026-04-23T17:18",
+    "author": "Alprax",
+    "msg": "I can send it in your dm first and you can check it out yourself",
+    "id": 3379
+  },
+  {
+    "ts": "2026-04-23T17:19",
+    "author": "Alprax",
+    "msg": "Like the code and whatever you want",
+    "id": 3380
+  },
+  {
+    "ts": "2026-04-23T17:19",
+    "author": "Rifat",
+    "msg": "Sure. Let's maintain the group protocols.",
+    "id": 3381
+  },
+  {
+    "ts": "2026-04-23T17:33",
+    "author": "Sussane Lucas",
+    "msg": "Please i need a license",
+    "id": 3382
+  },
+  {
+    "ts": "2026-04-23T17:33",
+    "author": "Sussane Lucas",
+    "msg": "Anybody???",
+    "id": 3383
+  },
+  {
+    "ts": "2026-04-23T17:34",
+    "author": "city",
+    "msg": "here",
+    "id": 3384
+  },
+  {
+    "ts": "2026-04-23T17:34",
+    "author": "city",
+    "msg": "^",
+    "id": 3385
+  },
+  {
+    "ts": "2026-04-23T17:51",
+    "author": "J. P. Costa",
+    "msg": "Just tell us the username and we look up ourselves",
+    "id": 3386
+  },
+  {
+    "ts": "2026-04-23T17:52",
+    "author": "J. P. Costa",
+    "msg": "If thats okay",
+    "id": 3387
+  }
+]

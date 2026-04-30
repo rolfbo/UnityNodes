@@ -1,0 +1,1928 @@
+[
+  {
+    "ts": "2026-04-13T00:25",
+    "author": "GliTch_",
+    "msg": "If anyone was wondering the walletbot is back up and working you can dm it or invite it to your channel it responds to  /wallet /wallets /balance (all the same response because people use different triggers) example output below gives the state of the withdrawal wallets it knows of @Unitywalletsbot : \n\n💼 **Wallet Balance**\n\n🐕 **SHIB**: $658.08 (113,658,149)\n✕ **XRP**: $627.77 (472.0111)\n⬡ **BNB**: $405.76 (0.6831)\n₳ **ADA**: $390.87 (1648.9340)\n⟐ **ETH**: $296.46 (0.1350)\n₮ **USDT**: $291.09 (291)\n◎ **SOL**: $217.92 (2.6650)\n$ **USDC**: $181.07 (181)\n💵 **USDT_BSC**: $166.19 (166)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $3,235.33**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__\n\nCurrently the usdc_bsc balance is empty from what I see",
+    "id": 57448
+  },
+  {
+    "ts": "2026-04-13T00:26",
+    "author": "GliTch_",
+    "msg": "It's just something i built because it seemed like we could use it from previous withdrawal questions in the channel there is also a version on discord that outputs the same result with !wallets or !balance triggers",
+    "id": 57449
+  },
+  {
+    "ts": "2026-04-13T00:36",
+    "author": "Mat",
+    "msg": "Agree but is there some significance to tomorrow that I don't know about?",
+    "id": 57450
+  },
+  {
+    "ts": "2026-04-13T00:43",
+    "author": "JP | KUBE |",
+    "msg": "Save a copy as a \"just in case\" haha",
+    "id": 57451
+  },
+  {
+    "ts": "2026-04-13T00:44",
+    "author": "GliTch_",
+    "msg": "well the discord bot never went down lol, but its now tied to a different user",
+    "id": 57452
+  },
+  {
+    "ts": "2026-04-13T00:44",
+    "author": "GliTch_",
+    "msg": "[File: big-brain.mp4]",
+    "id": 57453
+  },
+  {
+    "ts": "2026-04-13T00:47",
+    "author": "JP | KUBE |",
+    "msg": "Yeah i used it the other day and was glad it was still active haha",
+    "id": 57454
+  },
+  {
+    "ts": "2026-04-13T00:48",
+    "author": "GliTch_",
+    "msg": "Tbh This one was back up in short order I just didn't know the status of my accounts future and wasn't in here because I couldn't rejoin 😂",
+    "id": 57455
+  },
+  {
+    "ts": "2026-04-13T00:49",
+    "author": "JP | KUBE |",
+    "msg": "oh yeah.. welcome to the verified channel... again lol",
+    "id": 57456
+  },
+  {
+    "ts": "2026-04-13T00:50",
+    "author": "GliTch_",
+    "msg": "😂",
+    "id": 57457
+  },
+  {
+    "ts": "2026-04-13T00:50",
+    "author": "GliTch_",
+    "msg": "ty",
+    "id": 57458
+  },
+  {
+    "ts": "2026-04-13T00:50",
+    "author": "GliTch_",
+    "msg": "lets just say it was a interesting week",
+    "id": 57459
+  },
+  {
+    "ts": "2026-04-13T00:51",
+    "author": "GliTch_",
+    "msg": "There was even more to the untold story outside of the known issue \"scammers and bot flood attacks o my\"",
+    "id": 57460
+  },
+  {
+    "ts": "2026-04-13T01:10",
+    "author": "OC Nodes",
+    "msg": "No just the monday after a rather disappointing couple of weeks and a weak last AMA",
+    "id": 57461
+  },
+  {
+    "ts": "2026-04-13T02:03",
+    "author": "Rdawgie",
+    "msg": "3 weeks of calibration now?",
+    "id": 57462
+  },
+  {
+    "ts": "2026-04-13T03:50",
+    "author": "Rocky NOW pool",
+    "msg": "I sure hope Unity doesn’t turn into the next Meld. 😂",
+    "id": 57463
+  },
+  {
+    "ts": "2026-04-13T03:50",
+    "author": "WW Telecoms",
+    "msg": "What does attestation error mean, I have reinstalled via apk and still comes up?",
+    "id": 57464
+  },
+  {
+    "ts": "2026-04-13T03:58",
+    "author": "San",
+    "msg": "Im smelling it.",
+    "id": 57465
+  },
+  {
+    "ts": "2026-04-13T04:07",
+    "author": "Jack | Will Never Message You First",
+    "msg": "[Media] The error means that there was an issue validating the integrity of the device. This could be caused by anything that modifies system-level services.\n\nTeam's suggestion is a factory reset and updating to the latest android version possible for your device. \n\n- Form via WEB: https://unitynodes.io/bug-report/\n- Telegram BOT: https://t.me/UnityBugReportBot\n- Email: support@unitynodes.io",
+    "id": 57466
+  },
+  {
+    "ts": "2026-04-13T04:11",
+    "author": "Jaba - Unityfarmers",
+    "msg": "ow, just a simple factory reset while the rest of the phone works fine. 🤣 Isn't it a bit too much to ask a ULO to do a factory reset on their main device? I mean, that's kinda drastic",
+    "id": 57467
+  },
+  {
+    "ts": "2026-04-13T04:19",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "it happened to my samsung S8+ too just this morning. The phone is already up to date to the latest version of OS, android 9. \nThe factory reset suggestion will makes ULOs think that Unity app is a threat to their phones, more than an opportunity to make some bucks",
+    "id": 57468
+  },
+  {
+    "ts": "2026-04-13T04:20",
+    "author": "Jack | Will Never Message You First",
+    "msg": "I understand, that’s the only advice I’ve received to pass on sorry.",
+    "id": 57469
+  },
+  {
+    "ts": "2026-04-13T04:39",
+    "author": "James_WM_ENO",
+    "msg": "Morning all… \nSo are we now at 1-4 days for an immediate paying task to launch.. \nI sure hope this happens, I mean it’s on the table ready to go like 6 days ago so…..",
+    "id": 57470
+  },
+  {
+    "ts": "2026-04-13T04:43",
+    "author": "OC Nodes",
+    "msg": "Just had a ULO message me about rewards. He has been getting 0.01 for running two phones on one wifi",
+    "id": 57471
+  },
+  {
+    "ts": "2026-04-13T05:11",
+    "author": "Jaba - Unityfarmers",
+    "msg": "It's ok. Once we do 96 usd conservatively that will be 19.2 usd",
+    "id": 57472
+  },
+  {
+    "ts": "2026-04-13T05:12",
+    "author": "EdgyBruh",
+    "msg": "It's prob going to be public launch of S&R",
+    "id": 57473
+  },
+  {
+    "ts": "2026-04-13T05:25",
+    "author": "Rocky NOW pool",
+    "msg": "hang in there! It’s super rough right now. Hopefully the platform steps up this week.",
+    "id": 57474
+  },
+  {
+    "ts": "2026-04-13T05:36",
+    "author": "WW Telecoms",
+    "msg": "That doesn’t work",
+    "id": 57475
+  },
+  {
+    "ts": "2026-04-13T05:43",
+    "author": "WW Telecoms",
+    "msg": "Have submitted bug report",
+    "id": 57476
+  },
+  {
+    "ts": "2026-04-13T05:45",
+    "author": "NEM0",
+    "msg": "What’s MELD?",
+    "id": 57477
+  },
+  {
+    "ts": "2026-04-13T05:51",
+    "author": "redman",
+    "msg": "MELD was a Cardano-based project that promised a lot of good things and made many announcements about the fantastic things they were building right up until the last minute, giving the community the impression everything was going according to plan, but they slowly rugged and are out of business today.",
+    "id": 57478
+  },
+  {
+    "ts": "2026-04-13T05:52",
+    "author": "NEM0",
+    "msg": "Damn",
+    "id": 57479
+  },
+  {
+    "ts": "2026-04-13T05:56",
+    "author": "libben",
+    "msg": "Reward still extremely low \nSame for everyone?",
+    "id": 57480
+  },
+  {
+    "ts": "2026-04-13T06:00",
+    "author": "Kyle | Will never DM you first",
+    "msg": "Hello everyone 😀",
+    "id": 57481
+  },
+  {
+    "ts": "2026-04-13T06:00",
+    "author": "Crg878",
+    "msg": "I was hoping to get some advice or see if anyone else has experienced something similar. I’ve got an iPhone 13 that’s running at around 93% uptime. Not amazing compared to some of my Android devices (which are hitting closer to 98%), but still fairly stable. However, my wife’s identical iPhone 13,  with the same settings, behaves completely differently. It struggles to stay connected and often disconnects within minutes. We’re lucky if it reaches 9% uptime. It’s really puzzling how two identical devices can perform so differently under the same conditions. I’ve submitted a bug report and was told it’s a known issue being worked on, but I’m curious if anyone here has experienced this and found any kind of workaround or fix, it was ok untill about two weeks ago, then just changed……..On another note, I’ve also noticed something interesting with my Android devices. I currently have 7 phones running on the same IP address, each earning roughly between 0.01 and 0.002. However, when I disconnect all of them and leave just one device running, that single phone earns around 0.25 to 0.30, significantly more overall. At the moment, it seems more profitable to just run one device instead of multiple, but I’m unsure how this affects the recalibration process. There’s not much clear information about it, so I wanted to ask: Do devices need to stay connected continuously to be included in recalibration? If devices are turned off, could they miss out on recalibration entirely?\nAny insight, experiences, or advice would be greatly appreciated.\nThanks in advance!",
+    "id": 57482
+  },
+  {
+    "ts": "2026-04-13T06:15",
+    "author": "libben",
+    "msg": "Morning",
+    "id": 57483
+  },
+  {
+    "ts": "2026-04-13T06:20",
+    "author": "libben",
+    "msg": "🙂‍↕️",
+    "id": 57484
+  },
+  {
+    "ts": "2026-04-13T06:23",
+    "author": "libben",
+    "msg": "Let’s be real.\nYou sold something that clearly wasn’t finished, and now it feels like our money is being used to complete your project\n\nRewards are inconsisten communication is unclear and there’s still no solid proof that this will deliver what was promised.",
+    "id": 57485
+  },
+  {
+    "ts": "2026-04-13T06:26",
+    "author": "libben",
+    "msg": "On top of the nodes I bought for $20k I’ve invested at least the same amount again into phones, and setup just to keep this running.",
+    "id": 57486
+  },
+  {
+    "ts": "2026-04-13T06:29",
+    "author": "libben",
+    "msg": "I also want you to understand my situation.\n\nA few days ago, I lost my previous business it was destroyed in the war.\n\nRight now, Unity is the only thing I have left.\n\nSo this is not just frustration this is serious for me.",
+    "id": 57487
+  },
+  {
+    "ts": "2026-04-13T06:36",
+    "author": "Kyle | Will never DM you first",
+    "msg": "The team is currently in the recalibration process and has multiple releases planned before the end of April.\n\nSorry to hear about your business. Wishing you the best moving forward 🙏",
+    "id": 57488
+  },
+  {
+    "ts": "2026-04-13T06:40",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "First of all, damn man.\n\nI hope you and all your relatives are safe 🙏",
+    "id": 57489
+  },
+  {
+    "ts": "2026-04-13T06:40",
+    "author": "OC Nodes",
+    "msg": "Nervous chuckle..",
+    "id": 57490
+  },
+  {
+    "ts": "2026-04-13T06:45",
+    "author": "Jaba - Unityfarmers",
+    "msg": "are you and your wife on the same IOS version? might be good to check, could be helpful for the team to know",
+    "id": 57491
+  },
+  {
+    "ts": "2026-04-13T06:47",
+    "author": "Matt",
+    "msg": "How would everyone feel about running a license for Libben? There are over 500 of us in here! DM me a license or two and ill run yours a few months. 100 uno !That sucks. I hope you stay safe.",
+    "id": 57492
+  },
+  {
+    "ts": "2026-04-13T06:52",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Thats UNITY!\nGreat initiative Matt",
+    "id": 57493
+  },
+  {
+    "ts": "2026-04-13T06:52",
+    "author": "Matt",
+    "msg": "Sounds like a hell of a spot to be in..",
+    "id": 57494
+  },
+  {
+    "ts": "2026-04-13T06:53",
+    "author": "Eddie H",
+    "msg": "Good morning. Any update in relation to the new task that is in final testing. Testing going well? Are we still set to be released in the next day or two ? Any update will be appreciated, even if the test came across a bug and needs to be worked on it would be really helpful to notice information.",
+    "id": 57495
+  },
+  {
+    "ts": "2026-04-13T06:54",
+    "author": "libben",
+    "msg": "Thank you, I really appreciate it, \nit means a lot 🙏\nBut honestly there’s no need. I know everyone here has invested and no one has really made their money back yet.\nI wouldn’t feel right taking from others in the same position\n\n💯❤️",
+    "id": 57496
+  },
+  {
+    "ts": "2026-04-13T06:55",
+    "author": "Alex",
+    "msg": "I ll run 1 a well👏",
+    "id": 57497
+  },
+  {
+    "ts": "2026-04-13T06:56",
+    "author": "Matt",
+    "msg": "Its an open offer. Stay safe.",
+    "id": 57498
+  },
+  {
+    "ts": "2026-04-13T06:58",
+    "author": "Jouni Kuisma",
+    "msg": "I don’t think it is (solely) about several devices on same IP. I have two Androids and one iPad running on Wi-Fi and my own iPhone on SIM. Also my son’s and my wife’s iPhones which aresometimes on WI-FI and other times on SIM. The androids are all working good. So is the iPad and my iPhone. However my son’s phone and my wife’s phone are doing poorly. My son has great uptime but 0.01 or below rewards and my wife’s phone is getting poor uptime (like 10%) as it keeps disconnecting the app whenever not active. The rewards are poor as well. I have checked all our settings and they should be ok. To me it seems that the app isn’t just working as it should. No idea why.",
+    "id": 57499
+  },
+  {
+    "ts": "2026-04-13T06:59",
+    "author": "J D",
+    "msg": "Oh right. What’s the big partnership that fell through then?",
+    "id": 57500
+  },
+  {
+    "ts": "2026-04-13T07:00",
+    "author": "J D",
+    "msg": "Pin this lol",
+    "id": 57501
+  },
+  {
+    "ts": "2026-04-13T07:09",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[Photo] Rewards are definitely connected to uptime, check out the patterns",
+    "id": 57503
+  },
+  {
+    "ts": "2026-04-13T07:09",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[Photo]",
+    "id": 57504
+  },
+  {
+    "ts": "2026-04-13T07:12",
+    "author": "Ricky",
+    "msg": "@Ada_Cardano87 pl drop a license ID in DM, I would run as well, brother",
+    "id": 57505
+  },
+  {
+    "ts": "2026-04-13T07:51",
+    "author": "James_WM_ENO",
+    "msg": "We have heard this since multiple tasks were due to be released in January so I take this with a pinch of salt in all honesty… shame really",
+    "id": 57506
+  },
+  {
+    "ts": "2026-04-13T07:53",
+    "author": "James_WM_ENO",
+    "msg": "CLI and SMS are not existent so not really a release",
+    "id": 57507
+  },
+  {
+    "ts": "2026-04-13T07:58",
+    "author": "Coinalitics",
+    "msg": "So Val, this is only your sim+data ( not wifi) connected 5 phones right? Each on a different isp.?",
+    "id": 57508
+  },
+  {
+    "ts": "2026-04-13T08:04",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Yes\nNo WiFi",
+    "id": 57509
+  },
+  {
+    "ts": "2026-04-13T08:13",
+    "author": "Adam Buracchi",
+    "msg": "Tbh now it’s even before the end of April no more 7-10 days… so don’t hold your breath for new tasks until the 30th of April…",
+    "id": 57510
+  },
+  {
+    "ts": "2026-04-13T08:23",
+    "author": "Eddie H",
+    "msg": "It's so frustrating. I understand they need to make sure it is all working / testing etc. but it will be so much better if they just said something like, final testing showed a new bug / issue so need to make a few more changes which will take approximately this amount of time.",
+    "id": 57511
+  },
+  {
+    "ts": "2026-04-13T08:26",
+    "author": "L",
+    "msg": "[File: spy-spying.mp4]",
+    "id": 57513
+  },
+  {
+    "ts": "2026-04-13T08:52",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I was playing around with AI and this seemed apt ....Telecom is usually very hierarchical and cautious — problems get escalated up the chain before anyone talks about them openly, and everything's documented to death. Crypto's the exact opposite: everything's public by design, people shitpost their failures on Twitter, and speed beats perfection. Mixing the two is brutal because telecom engineers want six months of testing before saying anything, while the crypto side wants to ship next week and let the community find the bugs. The tension usually shows up in how they handle outages — telecom wants to hide them, crypto wants to tweet about them.",
+    "id": 57514
+  },
+  {
+    "ts": "2026-04-13T08:55",
+    "author": "Compost Man Unity code: XY",
+    "msg": "People bought the vision but got telecom bureaucracy wrapped in crypto marketing.",
+    "id": 57515
+  },
+  {
+    "ts": "2026-04-13T08:58",
+    "author": "Charles",
+    "msg": "Sounds about right",
+    "id": 57516
+  },
+  {
+    "ts": "2026-04-13T08:59",
+    "author": "Compost Man Unity code: XY",
+    "msg": "What should we do in terms of our mindset? ... Stay outcome-focused, not timeline-focused. The tech is real, the vision is real — the frustration is almost entirely about speed and communication. Treat delays as a feature of the hybrid model, not a bug. Set personal rules: I check community sentiment once a week max, I don't read price charts daily, and I remind myself this is a five-to-ten-year infrastructure play, not a six-month token flip. The real alpha is being able to sit through the ugly middle phase when retail is screaming but the actual network is quietly building. That's where the separation between tourists and long-term holders happens.",
+    "id": 57517
+  },
+  {
+    "ts": "2026-04-13T08:59",
+    "author": "Compost Man Unity code: XY",
+    "msg": "End",
+    "id": 57518
+  },
+  {
+    "ts": "2026-04-13T09:03",
+    "author": "Coinalitics",
+    "msg": "Finally some sense in this whole matter. No emotional roller coaster.",
+    "id": 57519
+  },
+  {
+    "ts": "2026-04-13T09:05",
+    "author": "Coinalitics",
+    "msg": "[Photo]",
+    "id": 57521
+  },
+  {
+    "ts": "2026-04-13T09:06",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Hi, is it live yet? I got a few people struggling with extraction",
+    "id": 57522
+  },
+  {
+    "ts": "2026-04-13T09:07",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Sending this to my family 😁",
+    "id": 57524
+  },
+  {
+    "ts": "2026-04-13T09:08",
+    "author": "FriendlyUrchin",
+    "msg": "This would make nice addition to the nodes sales pitch.",
+    "id": 57525
+  },
+  {
+    "ts": "2026-04-13T09:30",
+    "author": "Akira",
+    "msg": "correct",
+    "id": 57526
+  },
+  {
+    "ts": "2026-04-13T09:32",
+    "author": "Akira",
+    "msg": "i agree on almost everything, the frustrating part is we got a completely misleading sales pitch in comparison\n\nand if we have to wait 5-10 years to see great results then... 💀",
+    "id": 57527
+  },
+  {
+    "ts": "2026-04-13T09:32",
+    "author": "Akira",
+    "msg": "i've already waited 5 years in WM, i don't recommend it to anyone here",
+    "id": 57528
+  },
+  {
+    "ts": "2026-04-13T09:37",
+    "author": "Mike",
+    "msg": "Just wanted to check on what I've missed since taking a step back from unity, but there's no #update since april 1st? Did the team just stop communicating completely or did the ambassadors/community managers stop marking messages when they relay info from the team?",
+    "id": 57529
+  },
+  {
+    "ts": "2026-04-13T09:39",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Across the three Watkins projects, which I view as a single strategic group, there are things that need to be shipped successfully this month. If even one of them does, great. But if the next two weeks come and go with more delays and more “soon” language, then we'll l have our clearest data point yet.",
+    "id": 57530
+  },
+  {
+    "ts": "2026-04-13T10:09",
+    "author": "Eddie H",
+    "msg": "One of my Apple ULO was having difficulties with the app and ended up reinstalling it and revoking/ reissuing a licence. Interesting thing is the app seems to be more stable It is still early days but he is now hitting 100% up time and this is the best he has ever achieved. Will continue to monitor. I may do the same with other ULO that are having difficulties on iPhones. Will report back if this becomes much more stable and long-term. Has anybody else experienced this?",
+    "id": 57531
+  },
+  {
+    "ts": "2026-04-13T10:13",
+    "author": "MSA | Valhalla.Node",
+    "msg": "My iPhone had issues getting above 35% uptime for weeks, then today or yesterday it jumped to 100% without me doing anything, so maybe it wasn’t the reinstall for your ULO, might’ve just be “fixed”",
+    "id": 57532
+  },
+  {
+    "ts": "2026-04-13T10:21",
+    "author": "Eddie H",
+    "msg": "Maybe however, there are still a number of other Apple users that I know that are having difficulties with uptime. One in which checks it relatively frequently. Maybe the team are making their way through different fixes for different versions of Apple phones",
+    "id": 57533
+  },
+  {
+    "ts": "2026-04-13T10:21",
+    "author": "Eddie H",
+    "msg": "Will run some tests and report back.",
+    "id": 57534
+  },
+  {
+    "ts": "2026-04-13T10:21",
+    "author": "MSA | Valhalla.Node",
+    "msg": "Could be yea. I just know mine fixed itself without me doing anything",
+    "id": 57535
+  },
+  {
+    "ts": "2026-04-13T10:25",
+    "author": "Eddie H",
+    "msg": "Happy to hear this as well.",
+    "id": 57536
+  },
+  {
+    "ts": "2026-04-13T10:35",
+    "author": "Jaba - Unityfarmers",
+    "msg": "we had @unityassistant  until Wednesday a week ago. check those messages",
+    "id": 57537
+  },
+  {
+    "ts": "2026-04-13T10:47",
+    "author": "Mike",
+    "msg": "Not really the same as the #update system we had in place before, but tnx for the tip",
+    "id": 57539
+  },
+  {
+    "ts": "2026-04-13T11:03",
+    "author": "Sojourner",
+    "msg": "My original setup was 7 mini WiFi only Android phone farm that was working great. I added two Apple devices to the WiFi only setup (old iPhone and iPad) as well as 4 family phones that mix sim and WiFi. Since the recalibration, I have removed 6 Android phones from IP and converted one to sim so I only have at most 6 on 1 IP at any given time. Rewards have rebounded back to previous levels for the most part.\n\nI noticed my kids and wife’s phones were not performing well during the week but would uptick on the weekend. I realized they were jumping on the the school WiFi  or work WiFi for a good portion of the day and those tend to block everything. The only way to maintain good uptime is for them to turn off the WiFi while outside the home.",
+    "id": 57540
+  },
+  {
+    "ts": "2026-04-13T11:04",
+    "author": "Bitdano",
+    "msg": "Yes, I agree, jumping on and off of Wi-Fi during the day messes up the connectivity.",
+    "id": 57541
+  },
+  {
+    "ts": "2026-04-13T11:07",
+    "author": "Sojourner",
+    "msg": "Yep, I tend to avoid jumping onto any public WiFi networks, but my kids add WiFi everywhere they go 🤷‍♂️",
+    "id": 57542
+  },
+  {
+    "ts": "2026-04-13T11:25",
+    "author": "Quoia75",
+    "msg": "I'm sorry for your loss, and the senseless violence wrecking the planet. Please continue to do your best to hang in there (((hug))).",
+    "id": 57543
+  },
+  {
+    "ts": "2026-04-13T11:27",
+    "author": "Quoia75",
+    "msg": "I think that's a great idea. I'd be happy to do that for you Libben.",
+    "id": 57544
+  },
+  {
+    "ts": "2026-04-13T11:45",
+    "author": "Daano",
+    "msg": "Took a break of a week, 3k messages damm, any news (regarding normal rewards & calibration done)? what i miss🤓",
+    "id": 57545
+  },
+  {
+    "ts": "2026-04-13T11:46",
+    "author": "Charles",
+    "msg": "Everything soon",
+    "id": 57546
+  },
+  {
+    "ts": "2026-04-13T11:58",
+    "author": "Wopdiddly",
+    "msg": "Well, one of my ULOs tried reformatting his device after me sharing a post from a team member about doing so and today got his first reward and was 46c.\n\nSo that's interesting",
+    "id": 57547
+  },
+  {
+    "ts": "2026-04-13T12:06",
+    "author": "Calus B",
+    "msg": "iOS or android",
+    "id": 57548
+  },
+  {
+    "ts": "2026-04-13T12:06",
+    "author": "Wopdiddly",
+    "msg": "Android",
+    "id": 57549
+  },
+  {
+    "ts": "2026-04-13T12:07",
+    "author": "Calus B",
+    "msg": "Wonder if they had any apps that were “protecting” him",
+    "id": 57550
+  },
+  {
+    "ts": "2026-04-13T12:07",
+    "author": "Wopdiddly",
+    "msg": "Wouldn't surprise me",
+    "id": 57551
+  },
+  {
+    "ts": "2026-04-13T12:11",
+    "author": "James_WM_ENO",
+    "msg": "So are we going to get this immediate paying task this week then ??",
+    "id": 57552
+  },
+  {
+    "ts": "2026-04-13T12:12",
+    "author": "Calus B",
+    "msg": "Who knows",
+    "id": 57553
+  },
+  {
+    "ts": "2026-04-13T12:12",
+    "author": "Calus B",
+    "msg": "I’m sure that they are pushing for it as hard as they can",
+    "id": 57554
+  },
+  {
+    "ts": "2026-04-13T12:12",
+    "author": "Calus B",
+    "msg": "It’s objectively better for them to have it rolling out then to just be sitting on it right",
+    "id": 57555
+  },
+  {
+    "ts": "2026-04-13T12:19",
+    "author": "Eddie H",
+    "msg": "Any ambassador calls coming up? Excited to hear any news or updates. Even If it is just the team working out a few final kinks before release.",
+    "id": 57556
+  },
+  {
+    "ts": "2026-04-13T12:25",
+    "author": "Calus B",
+    "msg": "We had one last week",
+    "id": 57557
+  },
+  {
+    "ts": "2026-04-13T12:25",
+    "author": "Calus B",
+    "msg": "Lots of updates not a lot of firm timelines",
+    "id": 57558
+  },
+  {
+    "ts": "2026-04-13T12:33",
+    "author": "DZ",
+    "msg": "Can you reshare what reformatting was done on the Android? Thank you",
+    "id": 57559
+  },
+  {
+    "ts": "2026-04-13T12:37",
+    "author": "Charles",
+    "msg": "Wouldn't count on it",
+    "id": 57560
+  },
+  {
+    "ts": "2026-04-13T13:20",
+    "author": "Daano",
+    "msg": "I am missing what you mean, care to eleborate?",
+    "id": 57561
+  },
+  {
+    "ts": "2026-04-13T13:21",
+    "author": "Daano",
+    "msg": "What post you are referring to if i may ask??",
+    "id": 57562
+  },
+  {
+    "ts": "2026-04-13T13:21",
+    "author": "Quoia75",
+    "msg": "I wonder if a factory reset is changing the device's Wi‑Fi private/randomized MAC (not the hardaware MAC) and essentially giving it a fresh start?",
+    "id": 57563
+  },
+  {
+    "ts": "2026-04-13T13:22",
+    "author": "Daano",
+    "msg": "So Unity is blacklisting phones?",
+    "id": 57565
+  },
+  {
+    "ts": "2026-04-13T13:23",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "No because after a factory reset it’s still the same phone",
+    "id": 57567
+  },
+  {
+    "ts": "2026-04-13T13:24",
+    "author": "Daano",
+    "msg": "But something changed after reinstall right? So that parameter was flagged/blacklisted?",
+    "id": 57570
+  },
+  {
+    "ts": "2026-04-13T13:24",
+    "author": "Kyle | Will never DM you first",
+    "msg": "Unity is not blacklisting phones.",
+    "id": 57571
+  },
+  {
+    "ts": "2026-04-13T13:24",
+    "author": "Wopdiddly",
+    "msg": "No idea I just spotted the suggestion last week and passed it on to my ULO group and one tried it.",
+    "id": 57572
+  },
+  {
+    "ts": "2026-04-13T13:25",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: uhh.mp4]",
+    "id": 57573
+  },
+  {
+    "ts": "2026-04-13T13:26",
+    "author": "Quoia75",
+    "msg": "Is that a balloon shaped like a car???😆",
+    "id": 57574
+  },
+  {
+    "ts": "2026-04-13T13:30",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "Apparently Unity will progress when car fly’s. 😬. We can wait though.",
+    "id": 57575
+  },
+  {
+    "ts": "2026-04-13T13:31",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: jetsons-driving.mp4]",
+    "id": 57576
+  },
+  {
+    "ts": "2026-04-13T13:32",
+    "author": "Calus B",
+    "msg": "What I mean is sometimes people install apps on their phone and they changed certain settings to try to protect the user. Things like antivirus, etc..",
+    "id": 57577
+  },
+  {
+    "ts": "2026-04-13T13:33",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: back-to.mp4]",
+    "id": 57578
+  },
+  {
+    "ts": "2026-04-13T13:41",
+    "author": "Quoia75",
+    "msg": "[File: waiting.mp4]",
+    "id": 57579
+  },
+  {
+    "ts": "2026-04-13T13:41",
+    "author": "Quoia75",
+    "msg": "[File: waiting-waiting-patiently.mp4]",
+    "id": 57580
+  },
+  {
+    "ts": "2026-04-13T13:44",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: mummy-klaris.mp4]",
+    "id": 57581
+  },
+  {
+    "ts": "2026-04-13T13:44",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "Enjoy",
+    "id": 57582
+  },
+  {
+    "ts": "2026-04-13T13:45",
+    "author": "Quoia75",
+    "msg": "No choice...",
+    "id": 57583
+  },
+  {
+    "ts": "2026-04-13T13:45",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: tinkerbell-trapped.mp4]",
+    "id": 57584
+  },
+  {
+    "ts": "2026-04-13T13:56",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "There is always a choice\nBut you won’t like it 😅",
+    "id": 57585
+  },
+  {
+    "ts": "2026-04-13T13:57",
+    "author": "Quoia75",
+    "msg": "[File: hole-rabbithole.mp4]",
+    "id": 57586
+  },
+  {
+    "ts": "2026-04-13T13:58",
+    "author": "Wopdiddly",
+    "msg": "Search this chat for tea recommends (it was a typo but that's the one)",
+    "id": 57587
+  },
+  {
+    "ts": "2026-04-13T13:59",
+    "author": "Wopdiddly",
+    "msg": "I thought it just may have been a little insight and worth a try. I haven't tried it myself yet cause I'm a busy cnt 😂",
+    "id": 57588
+  },
+  {
+    "ts": "2026-04-13T14:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hello everyone!",
+    "id": 57589
+  },
+  {
+    "ts": "2026-04-13T14:13",
+    "author": "Daano",
+    "msg": "Was your ULO using same license after reinstall??",
+    "id": 57590
+  },
+  {
+    "ts": "2026-04-13T14:17",
+    "author": "Daano",
+    "msg": "So every license/phone who is getting lower rewards than expected could be flagged/blacklisted on the basis of some parameter, and after reinstall OS this parameter is changed and flag is gone? 🫡",
+    "id": 57591
+  },
+  {
+    "ts": "2026-04-13T14:17",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Seems drastic. Recalibration will fix it. Team has all the data",
+    "id": 57592
+  },
+  {
+    "ts": "2026-04-13T14:19",
+    "author": "Daano",
+    "msg": "It certainly is, but calibration can take months for all we know, and with OS reinstall you could atleast start earning cost covering rewards again🤷",
+    "id": 57593
+  },
+  {
+    "ts": "2026-04-13T14:23",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Again, as mentioned above\nNo phones are blacklisted",
+    "id": 57594
+  },
+  {
+    "ts": "2026-04-13T14:31",
+    "author": "Daano",
+    "msg": "Mybad on the wording, but how would we describe this reset in OS and after start earning normal rewards again? Something has changed then right?",
+    "id": 57595
+  },
+  {
+    "ts": "2026-04-13T14:38",
+    "author": "Wopdiddly",
+    "msg": "Not sure tbh",
+    "id": 57596
+  },
+  {
+    "ts": "2026-04-13T14:39",
+    "author": "Wopdiddly",
+    "msg": "That's my thinking but who knows, tomorrow he could be back to sub one cent. We're all waiting to hear",
+    "id": 57597
+  },
+  {
+    "ts": "2026-04-13T14:45",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "On the phone yes\nOn Unity no",
+    "id": 57598
+  },
+  {
+    "ts": "2026-04-13T14:45",
+    "author": "Daano",
+    "msg": "Well even with 5 license per IP, testing it on many different sims/wifis, we dont even seem to get above 0.15 max reward, and on average its between 0.00 and 0.05.....",
+    "id": 57599
+  },
+  {
+    "ts": "2026-04-13T14:46",
+    "author": "Daano",
+    "msg": "So far i have never invested so much money for so little returns😕",
+    "id": 57600
+  },
+  {
+    "ts": "2026-04-13T14:49",
+    "author": "Wopdiddly",
+    "msg": "Worry trying on a couple then maybe and if after a week you find it's helped broadcast message you ULOs and they can do it if they want.\n\nWill they though? I haven't changed my personal phone in four years because I don't want to set up all the apps I have again but for phones dedicated to unity I will.. if his rewards stay consistently high",
+    "id": 57601
+  },
+  {
+    "ts": "2026-04-13T14:49",
+    "author": "RED Nodes",
+    "msg": "[Photo]",
+    "id": 57602
+  },
+  {
+    "ts": "2026-04-13T14:50",
+    "author": "Unity Licenses",
+    "msg": "Am I correct in thinking there will only ever be 1.2 million unity licenses in circulation?",
+    "id": 57603
+  },
+  {
+    "ts": "2026-04-13T14:52",
+    "author": "Kay | Will never DM you first",
+    "msg": "There will only be 6000 Unity nodes, but there might be a day where more licenses are added",
+    "id": 57604
+  },
+  {
+    "ts": "2026-04-13T14:54",
+    "author": "Gwims",
+    "msg": "Potentially up to 100 million licences if demand dictates it",
+    "id": 57605
+  },
+  {
+    "ts": "2026-04-13T15:11",
+    "author": "Lucas",
+    "msg": "Let's be honest, Ken Olin was a little shady and did not deliver much except value extractions vs\nthe Watkins, they have delivered, you might say they they have nor delivered everything they promised \nThey are working on it. I have world mobile number and it works great, that is a tangible delivery",
+    "id": 57606
+  },
+  {
+    "ts": "2026-04-13T15:12",
+    "author": "Lucas",
+    "msg": "sorry to hear, it's really terrible",
+    "id": 57607
+  },
+  {
+    "ts": "2026-04-13T15:19",
+    "author": "David Tz",
+    "msg": "Hi! any grroup fot the S&R ? thanks!",
+    "id": 57608
+  },
+  {
+    "ts": "2026-04-13T15:29",
+    "author": "Dennis",
+    "msg": "What happened to @unityassistant ?",
+    "id": 57609
+  },
+  {
+    "ts": "2026-04-13T15:30",
+    "author": "Kay | Will never DM you first",
+    "msg": "It's located on Minutes Discord. If you're in one of the cohort, you were probably given a role to see it",
+    "id": 57610
+  },
+  {
+    "ts": "2026-04-13T15:32",
+    "author": "Lucas",
+    "msg": "Kay has a better answer than mine",
+    "id": 57611
+  },
+  {
+    "ts": "2026-04-13T15:40",
+    "author": "flipwip",
+    "msg": "[Photo] 2 of my Samsung S8 phones have always been running well with excellent uptime, for the last 8 weeks probably I keep getting this? If I click restart they connect again but then same things after half a day. They are NOT on a VPN or Proxy and my other 5 devices work perfect on this connection\nDo I need to report to have them investigated by the team? If so how do I report, blacklist check or bug?",
+    "id": 57612
+  },
+  {
+    "ts": "2026-04-13T15:41",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] Definitely share your case with the team. Add your IP as well. \n\n- Form via WEB: https://unitynodes.io/bug-report/\n- Telegram BOT: https://t.me/UnityBugReportBot\n- Email: support@unitynodes.io",
+    "id": 57613
+  },
+  {
+    "ts": "2026-04-13T15:56",
+    "author": "Willian | Nuvola",
+    "msg": "Exciting for what this week might bring. 🤞\n\nS&R public beta\nMore paying tasks out the gate \nAnalytics suit\nAdditional features to the management UNO dashboard \nR2 👀\nNew app version \n\nSo much to look forward to. 😍",
+    "id": 57614
+  },
+  {
+    "ts": "2026-04-13T15:58",
+    "author": "Jack🎃",
+    "msg": "Hi @defiants_kay I sent you a dm.",
+    "id": 57615
+  },
+  {
+    "ts": "2026-04-13T16:01",
+    "author": "Krabalot",
+    "msg": "Was this shared by the team in the ambassadors meeting?",
+    "id": 57616
+  },
+  {
+    "ts": "2026-04-13T16:02",
+    "author": "Gwims",
+    "msg": "He said might bring lol",
+    "id": 57617
+  },
+  {
+    "ts": "2026-04-13T16:09",
+    "author": "Willian | Nuvola",
+    "msg": "No, just things that are planned to be released, we just don't know when. 😃",
+    "id": 57618
+  },
+  {
+    "ts": "2026-04-13T16:09",
+    "author": "Willian | Nuvola",
+    "msg": "This",
+    "id": 57619
+  },
+  {
+    "ts": "2026-04-13T16:09",
+    "author": "J. P. Costa",
+    "msg": "Will only get a shard of excitement when I see ups in my rewards",
+    "id": 57620
+  },
+  {
+    "ts": "2026-04-13T16:09",
+    "author": "Willian | Nuvola",
+    "msg": "We are all waiting for that moment",
+    "id": 57621
+  },
+  {
+    "ts": "2026-04-13T16:13",
+    "author": "Krabalot",
+    "msg": "Just clarifying. Never know with this project if hints are just pure hope, or hints are based on insider knowledge, or hints are presented as hope but are actually based on insider knowledge, or in most cases, hints are presented as certainties from the team but are just hope.",
+    "id": 57622
+  },
+  {
+    "ts": "2026-04-13T16:15",
+    "author": "Gwims",
+    "msg": "Sounded official right lol what we get when we yearn for any scraps of info I guess shoon",
+    "id": 57623
+  },
+  {
+    "ts": "2026-04-13T16:18",
+    "author": "Willian | Nuvola",
+    "msg": "No insider knowledge. Just knowing that it's in their best interest to get things out as soon as humanly possible. It will benefit us all tremendously. \n\nJust gotta make sure all Ts are crossed and Is are dotted. My opinion",
+    "id": 57624
+  },
+  {
+    "ts": "2026-04-13T16:20",
+    "author": "Krabalot",
+    "msg": "Yeah, I get that it's in their best interest to deliver, but it's also in their best interests that existing UNOs and ULOs are engaged. The second part can lead to communication tactics that bring high expectations that often backfire. \n\nSpeaking as an Earth Node holder, the deliveries have been delayed consistently for years, but the communication is always transparent on what the issues are and what they are doing to fix it on an almost instantaneous basis.",
+    "id": 57625
+  },
+  {
+    "ts": "2026-04-13T16:22",
+    "author": "Willian | Nuvola",
+    "msg": "Agree. Comms can always improve, and they are aware of that.",
+    "id": 57626
+  },
+  {
+    "ts": "2026-04-13T16:32",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Still happening for me after this post. I can provide the licence address if you like",
+    "id": 57627
+  },
+  {
+    "ts": "2026-04-13T16:33",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Also, could the team please share what they think the issue was / is? Is it a malicious actor?",
+    "id": 57628
+  },
+  {
+    "ts": "2026-04-13T16:38",
+    "author": "FriendlyUrchin",
+    "msg": "Communication is 10/10 according to the team. And that points to what Krabalot is saying. Yes, it's highly likely that's communication tactics. In their eyes it's probably what is needed. Meanwhile I see it as not being treated like equals but as someone who has 1 second attention time span, leaving the project if we don't hear \"next week\" every week. Or 7 - 10 days or whatever.",
+    "id": 57629
+  },
+  {
+    "ts": "2026-04-13T16:42",
+    "author": "FriendlyUrchin",
+    "msg": "Btw the same tactics were used in the early years of EN development imo. I don't like it. I'm quite offended by it.",
+    "id": 57630
+  },
+  {
+    "ts": "2026-04-13T17:00",
+    "author": "Marco",
+    "msg": "I took a week off. 3.8k messages. Everything seems the same.",
+    "id": 57631
+  },
+  {
+    "ts": "2026-04-13T17:01",
+    "author": "Marco",
+    "msg": "Is the ama worth listening to?",
+    "id": 57632
+  },
+  {
+    "ts": "2026-04-13T17:04",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Where will you listen to it😁",
+    "id": 57633
+  },
+  {
+    "ts": "2026-04-13T17:04",
+    "author": "Marco",
+    "msg": "Oh, ha. It wasn’t recorded. I forgot it moved to discord",
+    "id": 57634
+  },
+  {
+    "ts": "2026-04-13T17:05",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: scott-cramer-this-guy-gets-it.mp4]",
+    "id": 57635
+  },
+  {
+    "ts": "2026-04-13T17:05",
+    "author": "Marco",
+    "msg": "I’ll assume it was hype-o-rific",
+    "id": 57636
+  },
+  {
+    "ts": "2026-04-13T17:06",
+    "author": "Master of Sike-ology/RUGpredictor/ValCaltriggerTesticleinvoker",
+    "msg": "[File: de-nada-bingo.mp4]",
+    "id": 57637
+  },
+  {
+    "ts": "2026-04-13T17:07",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Good afternoon UNOs",
+    "id": 57638
+  },
+  {
+    "ts": "2026-04-13T17:27",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "It was better then some made it look like. Just without firm dates",
+    "id": 57639
+  },
+  {
+    "ts": "2026-04-13T17:30",
+    "author": "Page Øne",
+    "msg": "[File: up-down.mp4]",
+    "id": 57640
+  },
+  {
+    "ts": "2026-04-13T17:46",
+    "author": "Krabalot",
+    "msg": "I think they learned to be more humble and transparent with setbacks, which is infinitely better than giving hope that was not in their power to give. I saw the shift in ENO sentiment: more understanding and less hostility",
+    "id": 57641
+  },
+  {
+    "ts": "2026-04-13T17:57",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "I posted a recording on Discord",
+    "id": 57642
+  },
+  {
+    "ts": "2026-04-13T17:58",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "https://discord.com/channels/1239908675523575850/1476982666250420254/1491354616691036200",
+    "id": 57643
+  },
+  {
+    "ts": "2026-04-13T18:02",
+    "author": "Rocky NOW pool",
+    "msg": "Hi folks, I just made my first withdrawal from Unity, via ADA on the Cardano. I am showing a completed transaction on the Unity side but I haven't received funds. Does anyone know how long it typically takes to receive transfer?",
+    "id": 57644
+  },
+  {
+    "ts": "2026-04-13T18:03",
+    "author": "Villion",
+    "msg": "Good day!\nI sure hope tomorrow’s Spaces is recorded, I have a schedule conflict.",
+    "id": 57645
+  },
+  {
+    "ts": "2026-04-13T18:03",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hey, I think we had the same thing with ADA before. Can you please send me screenshots if you have them? I can forward to the team to check",
+    "id": 57646
+  },
+  {
+    "ts": "2026-04-13T18:03",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Photo] 🤝 **Unity Network - S&R Alpha Wrap + What’s Next**\n\n🟩 Scout & Runner Communication Briefing\n\nWe’re live tomorrow with an important update.\n\nJoin us as we officially wrap up the Scout & Runner Alpha and share everything you need to know:\n\n• What we learned from Alpha\n• Key results & performance insights\n• What’s next as we move toward public launch\n\nThis session is your front-row seat to the evolution of Scout & Runner — and where we’re heading next.\n\n🗓 Tuesday, April 14th\n⏰ 17:00 CET\n🎙 Join us live on X Spaces\n\n🔗 https://x.com/i/spaces/1oKMvRYoyNpGQ?s=20\n\nDon’t miss it.\n\n🔗 https://x.com/UnityNodesIO/status/2043751103376843183\n\n🤝 **Official Unity** **Resources**\n[**Unity**](https://unitynodes.io/) | [**Unity Litepaper**](https://unitynodes.io/documents/litepaper.pdf) | [**QR Code Login**](https://uno.unitynodes.io/) | [**Manage**](https://manage.unitynodes.io/) | [**Telegram**](https://t.me/unitynodes) | [**X**](https://x.com/UnityNodesIO) | [**YouTube**](https://youtube.com/@UnityNodesIO) | [**Bug Report**](https://unitynodes.io/bug-report) | [**Verification Bot**](https://t.me/UnityNetworkVerificationBot)",
+    "id": 57648
+  },
+  {
+    "ts": "2026-04-13T18:05",
+    "author": "Rocky NOW pool",
+    "msg": "thanks Kay . I just sent you a message. Rocky",
+    "id": 57650
+  },
+  {
+    "ts": "2026-04-13T18:17",
+    "author": "Villion",
+    "msg": "@defiants_kay Is the EmberNode Spaces going to be the same time as the Unity Spaces?",
+    "id": 57651
+  },
+  {
+    "ts": "2026-04-13T18:17",
+    "author": "Kay | Will never DM you first",
+    "msg": "I'm a moderator at Minutes and Unity :)",
+    "id": 57652
+  },
+  {
+    "ts": "2026-04-13T18:18",
+    "author": "OC Nodes",
+    "msg": "It's not. 17 CET (S&R) and 16 CET (embernodes)",
+    "id": 57653
+  },
+  {
+    "ts": "2026-04-13T18:22",
+    "author": "OC Nodes",
+    "msg": "Actually EmberNodes time is 16 UTC.. which happens to be 17 CET too.. so yes they are the same time",
+    "id": 57654
+  },
+  {
+    "ts": "2026-04-13T18:25",
+    "author": "Rocky NOW pool",
+    "msg": "Hi All! I have started a referral program and need to track groupings of licenses. How can I search for specific llicenses and their rewards?  Thanks in advance- Rocky",
+    "id": 57655
+  },
+  {
+    "ts": "2026-04-13T18:30",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I'll need to wait for the new tool which is just about to be released",
+    "id": 57656
+  },
+  {
+    "ts": "2026-04-13T18:30",
+    "author": "Dennis",
+    "msg": "I am honestly asking what happened to @unityassistant ? @ValaykaWBC did you get anything back from the team ?",
+    "id": 57657
+  },
+  {
+    "ts": "2026-04-13T18:31",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Just forward this to the team",
+    "id": 57658
+  },
+  {
+    "ts": "2026-04-13T18:32",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I'll share as soon as they reply",
+    "id": 57659
+  },
+  {
+    "ts": "2026-04-13T18:32",
+    "author": "FriendlyUrchin",
+    "msg": "Kay, there is a vacant community manager position in WM. How about you apply? You have too much free time anyway",
+    "id": 57660
+  },
+  {
+    "ts": "2026-04-13T18:32",
+    "author": "Kay | Will never DM you first",
+    "msg": "You think you know how much free time I have?",
+    "id": 57661
+  },
+  {
+    "ts": "2026-04-13T18:33",
+    "author": "FriendlyUrchin",
+    "msg": "Just kidding",
+    "id": 57662
+  },
+  {
+    "ts": "2026-04-13T18:33",
+    "author": "Kay | Will never DM you first",
+    "msg": "Very funny :)",
+    "id": 57663
+  },
+  {
+    "ts": "2026-04-13T18:36",
+    "author": "FriendlyUrchin",
+    "msg": "Wanted to say that here it's just a relaxing easy job. You can take one more.",
+    "id": 57664
+  },
+  {
+    "ts": "2026-04-13T18:36",
+    "author": "FriendlyUrchin",
+    "msg": "[File: sarcasm-sarcasm-sign.mp4]",
+    "id": 57665
+  },
+  {
+    "ts": "2026-04-13T18:37",
+    "author": "Kay | Will never DM you first",
+    "msg": "Only if I moderate there 2 hours a day, 3 days a week",
+    "id": 57666
+  },
+  {
+    "ts": "2026-04-13T18:37",
+    "author": "Eddie H",
+    "msg": "Kay is too busy getting therapy after reading this chat all day long. 🤣",
+    "id": 57667
+  },
+  {
+    "ts": "2026-04-13T18:37",
+    "author": "FriendlyUrchin",
+    "msg": "Lmao. 💯",
+    "id": 57668
+  },
+  {
+    "ts": "2026-04-13T18:38",
+    "author": "Kay | Will never DM you first",
+    "msg": "Sorry, it's been a hard day 😭",
+    "id": 57669
+  },
+  {
+    "ts": "2026-04-13T18:40",
+    "author": "Tap MastersTaps",
+    "msg": "No , I am so bummed it said 1 to 3 business days. Just checked still pending.",
+    "id": 57670
+  },
+  {
+    "ts": "2026-04-13T18:42",
+    "author": "Summer5372",
+    "msg": "Why plan an ama at the same time as World Mobile????",
+    "id": 57671
+  },
+  {
+    "ts": "2026-04-13T18:45",
+    "author": "Daano",
+    "msg": "[File: patrick-patrick-star.mp4]",
+    "id": 57672
+  },
+  {
+    "ts": "2026-04-13T18:45",
+    "author": "Lucas",
+    "msg": "I will say, I hope at least one of them is recorded",
+    "id": 57673
+  },
+  {
+    "ts": "2026-04-13T18:45",
+    "author": "Kay | Will never DM you first",
+    "msg": "The time changed, CET = UTC + 2 at the moment",
+    "id": 57674
+  },
+  {
+    "ts": "2026-04-13T18:46",
+    "author": "Summer5372",
+    "msg": "On X they both should be recorded but still it doesn't make sense...",
+    "id": 57675
+  },
+  {
+    "ts": "2026-04-13T18:46",
+    "author": "Kay | Will never DM you first",
+    "msg": "When is the WM AMA?",
+    "id": 57676
+  },
+  {
+    "ts": "2026-04-13T18:46",
+    "author": "Lucas",
+    "msg": "wish they would at least be stacked or 2 different day",
+    "id": 57677
+  },
+  {
+    "ts": "2026-04-13T18:47",
+    "author": "Lucas",
+    "msg": "Tomorrow at noon EST same time has Unity",
+    "id": 57678
+  },
+  {
+    "ts": "2026-04-13T18:48",
+    "author": "Kay | Will never DM you first",
+    "msg": "Unity is at 17:00 CET, if the other one is at 16 UTC - then it's at 18:00 CET",
+    "id": 57679
+  },
+  {
+    "ts": "2026-04-13T18:48",
+    "author": "Lucas",
+    "msg": "[Photo]",
+    "id": 57680
+  },
+  {
+    "ts": "2026-04-13T18:48",
+    "author": "Kay | Will never DM you first",
+    "msg": "Then it's at 18:00 CET",
+    "id": 57681
+  },
+  {
+    "ts": "2026-04-13T18:48",
+    "author": "Lucas",
+    "msg": "it's the same time",
+    "id": 57682
+  },
+  {
+    "ts": "2026-04-13T18:48",
+    "author": "Lucas",
+    "msg": "[Photo]",
+    "id": 57683
+  },
+  {
+    "ts": "2026-04-13T18:49",
+    "author": "Lucas",
+    "msg": "x makes the conversion, I see them both at 12:00 pm tomorrow",
+    "id": 57686
+  },
+  {
+    "ts": "2026-04-13T18:49",
+    "author": "Kay | Will never DM you first",
+    "msg": "Unity is at 17:00 CET\n\nWM is at 18:00 CET",
+    "id": 57687
+  },
+  {
+    "ts": "2026-04-13T18:50",
+    "author": "Lucas",
+    "msg": "one is scheduled in utc and one in cet, that is where the issue is happening",
+    "id": 57688
+  },
+  {
+    "ts": "2026-04-13T18:50",
+    "author": "Lucas",
+    "msg": "[Photo]",
+    "id": 57689
+  },
+  {
+    "ts": "2026-04-13T18:51",
+    "author": "Kay | Will never DM you first",
+    "msg": "Yeah, right now CET = UTC + 2",
+    "id": 57690
+  },
+  {
+    "ts": "2026-04-13T18:52",
+    "author": "Lucas",
+    "msg": "cet = utc+1 which explains the conflict",
+    "id": 57691
+  },
+  {
+    "ts": "2026-04-13T18:53",
+    "author": "Kay | Will never DM you first",
+    "msg": "We changed the clocks on 29th of March",
+    "id": 57692
+  },
+  {
+    "ts": "2026-04-13T18:54",
+    "author": "Kay | Will never DM you first",
+    "msg": "We - Defiants - work on UTC schedule, so I know it's CET = UTC + 2 right now 😄",
+    "id": 57693
+  },
+  {
+    "ts": "2026-04-13T18:54",
+    "author": "Lucas",
+    "msg": "they are still at the same time",
+    "id": 57694
+  },
+  {
+    "ts": "2026-04-13T18:55",
+    "author": "Summer5372",
+    "msg": "Kay unity 17:00 wm at 18:00 17:00 plus 2 = 19:00 18:00 plus 1= 19:00 Same same",
+    "id": 57695
+  },
+  {
+    "ts": "2026-04-13T18:55",
+    "author": "Kay | Will never DM you first",
+    "msg": "Unity AMA is going to be **at 17:00 CET**",
+    "id": 57696
+  },
+  {
+    "ts": "2026-04-13T18:55",
+    "author": "Kay | Will never DM you first",
+    "msg": "At 15:00 UTC",
+    "id": 57697
+  },
+  {
+    "ts": "2026-04-13T18:55",
+    "author": "Summer5372",
+    "msg": "cet = plus 2 right?",
+    "id": 57698
+  },
+  {
+    "ts": "2026-04-13T18:55",
+    "author": "Lucas",
+    "msg": "X does the conversion, it tells me they are both at 12:00 pm EST tomorrow",
+    "id": 57699
+  },
+  {
+    "ts": "2026-04-13T18:56",
+    "author": "Kay | Will never DM you first",
+    "msg": "At 15:00 UTC\nAt 17:00 CET",
+    "id": 57701
+  },
+  {
+    "ts": "2026-04-13T18:56",
+    "author": "Kay | Will never DM you first",
+    "msg": "The X is showing/was configured it wrong, the team will fix it",
+    "id": 57702
+  },
+  {
+    "ts": "2026-04-13T18:56",
+    "author": "Lucas",
+    "msg": "ok",
+    "id": 57703
+  },
+  {
+    "ts": "2026-04-13T18:56",
+    "author": "FriendlyUrchin",
+    "msg": "Why they still stick with CET? 🙄 UTC is the standard for quite some time",
+    "id": 57704
+  },
+  {
+    "ts": "2026-04-13T18:57",
+    "author": "Lucas",
+    "msg": "let's fix the time in the reminder, people will try to join and see no one is in the X space",
+    "id": 57705
+  },
+  {
+    "ts": "2026-04-13T18:58",
+    "author": "Eddie H",
+    "msg": "Hope you have a restful evening Kay 😊",
+    "id": 57706
+  },
+  {
+    "ts": "2026-04-13T19:01",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: lebowski-amateurs.mp4]",
+    "id": 57707
+  },
+  {
+    "ts": "2026-04-13T19:05",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Damn! \n\nOn X is always recorded don't worry",
+    "id": 57709
+  },
+  {
+    "ts": "2026-04-13T19:05",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Tip: make an extra account to be able to join on a different e-mail",
+    "id": 57711
+  },
+  {
+    "ts": "2026-04-13T19:06",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "You are allowed to make an extra account right?",
+    "id": 57713
+  },
+  {
+    "ts": "2026-04-13T19:07",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Never heard of that before, crazy",
+    "id": 57717
+  },
+  {
+    "ts": "2026-04-13T19:08",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I have an old account that you could use if you want",
+    "id": 57720
+  },
+  {
+    "ts": "2026-04-13T19:09",
+    "author": "Summer5372",
+    "msg": "Would love to!!!!",
+    "id": 57722
+  },
+  {
+    "ts": "2026-04-13T19:09",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Let me check my old one",
+    "id": 57723
+  },
+  {
+    "ts": "2026-04-13T19:10",
+    "author": "Summer5372",
+    "msg": "I will go to DM, thanks Val!",
+    "id": 57724
+  },
+  {
+    "ts": "2026-04-13T19:10",
+    "author": "Wen (fed up)",
+    "msg": "I really really hope there’s some good news for everyone on tomorrows AMA 🙏",
+    "id": 57725
+  },
+  {
+    "ts": "2026-04-13T19:10",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Its an inactive:\n59 following, 205 followers\n\nNot brand new so easy to use",
+    "id": 57726
+  },
+  {
+    "ts": "2026-04-13T19:10",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "DM me Summer, lets fix that",
+    "id": 57727
+  },
+  {
+    "ts": "2026-04-13T19:23",
+    "author": "Mat",
+    "msg": "[Photo] @defiants_Sophie \nTrying to log an issue on the bug report web page and getting this. Can someone confirm that it's working?",
+    "id": 57728
+  },
+  {
+    "ts": "2026-04-13T19:26",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Photo]",
+    "id": 57729
+  },
+  {
+    "ts": "2026-04-13T19:26",
+    "author": "Wopdiddly",
+    "msg": "If you overdo it they do that and it's almost impossible to get back tbh\n\nWere you commenting on other posts? Happened to @Dodenberg too as far as I remember 😂",
+    "id": 57730
+  },
+  {
+    "ts": "2026-04-13T19:28",
+    "author": "Summer5372",
+    "msg": "I commented on a guy named ADR after that this happened",
+    "id": 57731
+  },
+  {
+    "ts": "2026-04-13T19:28",
+    "author": "Summer5372",
+    "msg": "i also promoted WM but not abnormal and certainly not copy paste",
+    "id": 57732
+  },
+  {
+    "ts": "2026-04-13T19:29",
+    "author": "Summer5372",
+    "msg": "Craziest thing is when i go to google play to add X it says item not available. Do you guys see this too in google play?",
+    "id": 57734
+  },
+  {
+    "ts": "2026-04-13T19:30",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Go to X.com",
+    "id": 57735
+  },
+  {
+    "ts": "2026-04-13T19:30",
+    "author": "Wen (fed up)",
+    "msg": "X is full of evil. What the hell were you posting?",
+    "id": 57736
+  },
+  {
+    "ts": "2026-04-13T19:30",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "What does it say there?",
+    "id": 57737
+  },
+  {
+    "ts": "2026-04-13T19:32",
+    "author": "Wopdiddly",
+    "msg": "Seems very harsh for commenting about it in one post.",
+    "id": 57738
+  },
+  {
+    "ts": "2026-04-13T19:32",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Especially compared to what other people post on twitter... but it is what it is 🤷",
+    "id": 57739
+  },
+  {
+    "ts": "2026-04-13T19:33",
+    "author": "Wopdiddly",
+    "msg": "Lol true, after a couple of Bourbons at the weekend I go on anti Trump rants 😂",
+    "id": 57740
+  },
+  {
+    "ts": "2026-04-13T19:34",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "If you think of it... Than is muting here not harsh at all hahahah",
+    "id": 57741
+  },
+  {
+    "ts": "2026-04-13T19:35",
+    "author": "Alex",
+    "msg": "you can without an account, just use a diff browser and you can listen as anonymous when its live",
+    "id": 57742
+  },
+  {
+    "ts": "2026-04-13T19:37",
+    "author": "Mat",
+    "msg": "OK ta, will try a different browser perhaps. thx.",
+    "id": 57743
+  },
+  {
+    "ts": "2026-04-13T19:37",
+    "author": "James_WM_ENO",
+    "msg": "I can’t be bothered to listen to either… loads of hype and soon !! Nothing more",
+    "id": 57744
+  },
+  {
+    "ts": "2026-04-13T19:37",
+    "author": "Carlos",
+    "msg": "That would not be funny 😥 if anything catastrophic",
+    "id": 57745
+  },
+  {
+    "ts": "2026-04-13T19:48",
+    "author": "Summer5372",
+    "msg": "No it was totally normal no harsh language nothing. It's probably the promoting. I used different text but same picture, maybe it's that. 🤷🏽",
+    "id": 57746
+  },
+  {
+    "ts": "2026-04-13T19:48",
+    "author": "Summer5372",
+    "msg": "@ValaykaWBC can you check dm",
+    "id": 57747
+  },
+  {
+    "ts": "2026-04-13T19:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Stop spamming me!!!",
+    "id": 57748
+  },
+  {
+    "ts": "2026-04-13T19:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "hahahahah",
+    "id": 57749
+  },
+  {
+    "ts": "2026-04-13T19:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "DM back",
+    "id": 57750
+  },
+  {
+    "ts": "2026-04-13T19:58",
+    "author": "Summer5372",
+    "msg": "[File: if-you-don't-like-it-block-me.mp4]",
+    "id": 57751
+  },
+  {
+    "ts": "2026-04-13T19:59",
+    "author": "Summer5372",
+    "msg": "hahaha",
+    "id": 57752
+  },
+  {
+    "ts": "2026-04-13T20:31",
+    "author": "Trust Me Bro",
+    "msg": "Trust me bro",
+    "id": 57753
+  },
+  {
+    "ts": "2026-04-13T20:31",
+    "author": "Mat",
+    "msg": "Come on fella, it's always darkest before the dawn.\nI think we will be ok, and if not we'll dam well enjoy the ride anyway!",
+    "id": 57754
+  },
+  {
+    "ts": "2026-04-13T20:33",
+    "author": "OC Nodes",
+    "msg": "True. Watching the technology blossom like this was nothing short of marvelous",
+    "id": 57755
+  },
+  {
+    "ts": "2026-04-13T20:53",
+    "author": "FriendlyUrchin",
+    "msg": "Being in S&R alpha helps a lot with the mood lol. Without it I'd be pretty depressed. The guys are smashing it. The team (especially Jamie and Omri) and a lot of testers are putting in a LOT of effort. Everyone very supportive. Teamwork spirit. Good vibes. It's all coming guys. And not only S&R. We'll be more than fine. Just a little while longer (bout 7 - 10 days)",
+    "id": 57756
+  },
+  {
+    "ts": "2026-04-13T21:03",
+    "author": "Page Øne",
+    "msg": "...... announcement S&R happy days looking forward to it ...",
+    "id": 57757
+  },
+  {
+    "ts": "2026-04-13T21:04",
+    "author": "Page Øne",
+    "msg": "let me guess 7-10 days soon",
+    "id": 57758
+  },
+  {
+    "ts": "2026-04-13T21:20",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Photo] 🤝 **Unity Network - S&R Alpha Wrap + What’s Next**\n\n🔷 Update: Date Change\n\nThe Scout & Runner Communication Briefing will now take place on:\n🗓 Wednesday, April 15th\n⏰ 17:00 CET\n🎙 Tune in live on X Spaces\n\nSame link applies 👇\n\n🔗 https://x.com/i/spaces/1oKMvRYoyNpGQ?s=20\n\nDon’t miss it.\n\n🤝 **Official Unity** **Resources**\n[**Unity**](https://unitynodes.io/) | [**Unity Litepaper**](https://unitynodes.io/documents/litepaper.pdf) | [**QR Code Login**](https://uno.unitynodes.io/) | [**Manage**](https://manage.unitynodes.io/) | [**Telegram**](https://t.me/unitynodes) | [**X**](https://x.com/UnityNodesIO) | [**YouTube**](https://youtube.com/@UnityNodesIO) | [**Bug Report**](https://unitynodes.io/bug-report) | [**Verification Bot**](https://t.me/UnityNetworkVerificationBot)",
+    "id": 57760
+  },
+  {
+    "ts": "2026-04-13T21:22",
+    "author": "Page Øne",
+    "msg": "[File: love-hearts.mp4]",
+    "id": 57762
+  },
+  {
+    "ts": "2026-04-13T21:22",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "@Summer5372 Unity spaces 1 day later, no need to stress anymore 😎",
+    "id": 57763
+  },
+  {
+    "ts": "2026-04-13T21:22",
+    "author": "Wopdiddly",
+    "msg": "Omg can't even stick to the wrap up dates. 😁\n\nJoking ofc",
+    "id": 57764
+  },
+  {
+    "ts": "2026-04-13T21:23",
+    "author": "Wopdiddly",
+    "msg": "Damn Val beat me to it",
+    "id": 57765
+  },
+  {
+    "ts": "2026-04-13T21:33",
+    "author": "Quoia75",
+    "msg": "You should be able to listen to the space but obviously, won't be able to participate or come up to the stage. I listen instead of logging in all the time.👌",
+    "id": 57766
+  },
+  {
+    "ts": "2026-04-13T21:35",
+    "author": "StoneFeather",
+    "msg": "‘ as we move towards’ is the new ‘soon’",
+    "id": 57767
+  },
+  {
+    "ts": "2026-04-13T21:35",
+    "author": "Page Øne",
+    "msg": "Question the S&R tasks still need to be added to the current app right ?",
+    "id": 57768
+  },
+  {
+    "ts": "2026-04-13T21:36",
+    "author": "Quoia75",
+    "msg": "Yup.",
+    "id": 57769
+  },
+  {
+    "ts": "2026-04-13T21:36",
+    "author": "Page Øne",
+    "msg": "maybe they are waiting for finishing the S&R when that update comes it will introduce more tasks in 1 go",
+    "id": 57770
+  },
+  {
+    "ts": "2026-04-13T21:37",
+    "author": "Page Øne",
+    "msg": "what could make sense pushing 1 big update",
+    "id": 57771
+  },
+  {
+    "ts": "2026-04-13T22:16",
+    "author": "Carlos",
+    "msg": "More important is if we have the clients ready to go.",
+    "id": 57772
+  },
+  {
+    "ts": "2026-04-13T22:19",
+    "author": "Calus B",
+    "msg": "We do",
+    "id": 57773
+  },
+  {
+    "ts": "2026-04-13T22:20",
+    "author": "Calus B",
+    "msg": "Saw many many new numbers to test this morning hit the system",
+    "id": 57774
+  },
+  {
+    "ts": "2026-04-13T22:23",
+    "author": "Carlos",
+    "msg": "Can I have the name of one of them so I can read about them and educate myself about Telcom?",
+    "id": 57775
+  },
+  {
+    "ts": "2026-04-13T22:26",
+    "author": "WW Telecoms",
+    "msg": "Why as a phone set as 100% UNO is the phone receiving rewards? This has to be a bug?",
+    "id": 57776
+  },
+  {
+    "ts": "2026-04-13T22:27",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] If the settings is indeed 100%/0%, then it's better to report to the team:\n\n- Form via WEB: https://unitynodes.io/bug-report/\n- Telegram BOT: https://t.me/UnityBugReportBot\n- Email: support@unitynodes.io",
+    "id": 57777
+  },
+  {
+    "ts": "2026-04-13T22:38",
+    "author": "Daniel Ives",
+    "msg": "Indeed 😍",
+    "id": 57778
+  },
+  {
+    "ts": "2026-04-13T23:06",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Morning everyone!",
+    "id": 57780
+  },
+  {
+    "ts": "2026-04-13T23:11",
+    "author": "Summer5372",
+    "msg": "Hi Calus, are you talking about Scouts or runner? It's kind of frustrating i have not been able to call as runner yet...",
+    "id": 57781
+  },
+  {
+    "ts": "2026-04-13T23:11",
+    "author": "Janilom81",
+    "msg": "It's strange that I have rewards from today already. Got them earlier today but normally I am 1 day behind.",
+    "id": 57782
+  },
+  {
+    "ts": "2026-04-13T23:22",
+    "author": "MSA | Valhalla.Node",
+    "msg": "Really? That seems highly unlikely unless they changed something significantly on the backend",
+    "id": 57783
+  },
+  {
+    "ts": "2026-04-13T23:23",
+    "author": "MSA | Valhalla.Node",
+    "msg": "Rewards usually come in like 3 hours",
+    "id": 57784
+  },
+  {
+    "ts": "2026-04-13T23:23",
+    "author": "Lucas",
+    "msg": "lot's of new number in Scout",
+    "id": 57785
+  },
+  {
+    "ts": "2026-04-13T23:24",
+    "author": "Lucas",
+    "msg": "Some plans ran out of numbers in scout and got fed a few hundreds to test",
+    "id": 57786
+  },
+  {
+    "ts": "2026-04-13T23:39",
+    "author": "Calus B",
+    "msg": "Scouts",
+    "id": 57787
+  },
+  {
+    "ts": "2026-04-13T23:41",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "GN guys\nHave a good one",
+    "id": 57788
+  },
+  {
+    "ts": "2026-04-13T23:41",
+    "author": "Summer5372",
+    "msg": "Yes i saw that... okay then after that maybe numbers for runners.",
+    "id": 57789
+  },
+  {
+    "ts": "2026-04-13T23:41",
+    "author": "Summer5372",
+    "msg": "Thank Calus, i see it now too!",
+    "id": 57790
+  },
+  {
+    "ts": "2026-04-13T23:41",
+    "author": "Summer5372",
+    "msg": "Nighty night Val! I am off to bed too.",
+    "id": 57791
+  },
+  {
+    "ts": "2026-04-13T23:42",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Night Val!",
+    "id": 57792
+  },
+  {
+    "ts": "2026-04-13T23:42",
+    "author": "Summer5372",
+    "msg": "ps and thanks for all the help!",
+    "id": 57793
+  },
+  {
+    "ts": "2026-04-13T23:42",
+    "author": "BeamNode",
+    "msg": "More than 1400+ for me",
+    "id": 57794
+  },
+  {
+    "ts": "2026-04-13T23:43",
+    "author": "Summer5372",
+    "msg": "Goodnight or day guys!",
+    "id": 57795
+  }
+]

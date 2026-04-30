@@ -1,0 +1,914 @@
+[
+  {
+    "ts": "2026-02-28T01:21",
+    "author": "Unknown",
+    "msg": "odd quirk, noticed some phones no longer logged in seems you have to update to the new apk to get them to login again once they are in that state not sure why",
+    "id": 29107
+  },
+  {
+    "ts": "2026-02-28T01:21",
+    "author": "Unknown",
+    "msg": "at least that was the case here, they wouldn't restart and connect until updated",
+    "id": 29108
+  },
+  {
+    "ts": "2026-02-28T02:31",
+    "author": "Jack🎃",
+    "msg": "Anyone seeing their license are no longer activated?",
+    "id": 29109
+  },
+  {
+    "ts": "2026-02-28T02:37",
+    "author": "Jack🎃",
+    "msg": "Nevermind seems like they are forcing me to update to the new version. On the new version it's back to normal. I rolled back to the old version because my uptime was impacted.",
+    "id": 29110
+  },
+  {
+    "ts": "2026-02-28T02:39",
+    "author": "Jack🎃",
+    "msg": "They must be doing something on their backend. My UNO is still on old version and it's back to normal.",
+    "id": 29111
+  },
+  {
+    "ts": "2026-02-28T03:13",
+    "author": "b y",
+    "msg": "rewards slightly down today, compared to last 7-10 days",
+    "id": 29112
+  },
+  {
+    "ts": "2026-02-28T03:37",
+    "author": "Alder Nodes",
+    "msg": "Same here",
+    "id": 29113
+  },
+  {
+    "ts": "2026-02-28T04:10",
+    "author": "Jaba - Unityfarmers",
+    "msg": "my IOS device compensated it :)",
+    "id": 29114
+  },
+  {
+    "ts": "2026-02-28T05:18",
+    "author": "PinkFatBunny",
+    "msg": "Hey Farmers. Interested to know location and average rewards for your boxes. Can you drop the info in here please. Cheers.",
+    "id": 29115
+  },
+  {
+    "ts": "2026-02-28T05:18",
+    "author": "PinkFatBunny",
+    "msg": "China - 0 - ISP Router",
+    "id": 29116
+  },
+  {
+    "ts": "2026-02-28T05:33",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "UK. 1 box was averaging $0.20 per phone, today down to $0.07",
+    "id": 29117
+  },
+  {
+    "ts": "2026-02-28T06:38",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] same here",
+    "id": 29118
+  },
+  {
+    "ts": "2026-02-28T06:47",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Wth, after update?",
+    "id": 29119
+  },
+  {
+    "ts": "2026-02-28T06:49",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Can I do a guess?",
+    "id": 29120
+  },
+  {
+    "ts": "2026-02-28T06:50",
+    "author": "Jaba - Unityfarmers",
+    "msg": "You have 1 farm and 1 iphone by any chance?",
+    "id": 29121
+  },
+  {
+    "ts": "2026-02-28T06:50",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[File: oh-yeah.mp4]",
+    "id": 29122
+  },
+  {
+    "ts": "2026-02-28T06:50",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Y'all flexing your IOS devices around your farms and pushing the 20 registered devices to 21",
+    "id": 29123
+  },
+  {
+    "ts": "2026-02-28T07:13",
+    "author": "Flippy",
+    "msg": "20 max is a fucked up number for sure",
+    "id": 29124
+  },
+  {
+    "ts": "2026-02-28T07:14",
+    "author": "Flippy",
+    "msg": "Even gotta be careful in case you have a friend with unity on his phone around your farm",
+    "id": 29125
+  },
+  {
+    "ts": "2026-02-28T07:24",
+    "author": "Marco",
+    "msg": "Yeah, I feel like it was a nice gesture through. Knowing these popular boxes are 20, any less would have been cruel",
+    "id": 29126
+  },
+  {
+    "ts": "2026-02-28T07:42",
+    "author": "Flippy",
+    "msg": "20 is also cruel",
+    "id": 29127
+  },
+  {
+    "ts": "2026-02-28T07:43",
+    "author": "Flippy",
+    "msg": "Should have been 25.",
+    "id": 29128
+  },
+  {
+    "ts": "2026-02-28T07:45",
+    "author": "Marco",
+    "msg": "Haaaaaa. Loved running 40. That seemed like there was a real future.",
+    "id": 29129
+  },
+  {
+    "ts": "2026-02-28T07:45",
+    "author": "R B",
+    "msg": "The only thing that has changed for me is rewards are 50% lower I added my iOS device but only onto one farm which has a faulty s8 board so I’m still at 20 devices but even the other separate farm in 4g network shows devices earning 0.07 instead of 20cents some are even at 0.001 it must be unity end",
+    "id": 29130
+  },
+  {
+    "ts": "2026-02-28T07:52",
+    "author": "Marco",
+    "msg": "In US. I have 4 ISPs and all produce $0.20 avg max for 20 devices. Need to reset every couple days when they dip to $0.03 to $0.07, but the reset usually brings them back to max.",
+    "id": 29131
+  },
+  {
+    "ts": "2026-02-28T07:56",
+    "author": "Mr Roundry",
+    "msg": "You mean for the farms and personal phones? 😀",
+    "id": 29132
+  },
+  {
+    "ts": "2026-02-28T08:07",
+    "author": "Flippy",
+    "msg": "Yes",
+    "id": 29133
+  },
+  {
+    "ts": "2026-02-28T08:08",
+    "author": "Flippy",
+    "msg": "So you can have one farm for passive tasks and and few all day phones for all tasks",
+    "id": 29134
+  },
+  {
+    "ts": "2026-02-28T08:09",
+    "author": "Flippy",
+    "msg": "20 max is big fuck you to every (small) farmer",
+    "id": 29135
+  },
+  {
+    "ts": "2026-02-28T08:17",
+    "author": "Mr Roundry",
+    "msg": "Yeah this would be better for us",
+    "id": 29136
+  },
+  {
+    "ts": "2026-02-28T09:03",
+    "author": "Jaba - Unityfarmers",
+    "msg": "anyone facing issue with phones getting stuck in a restart loop?",
+    "id": 29137
+  },
+  {
+    "ts": "2026-02-28T09:04",
+    "author": "Jaba - Unityfarmers",
+    "msg": "after the last Unity update",
+    "id": 29138
+  },
+  {
+    "ts": "2026-02-28T09:35",
+    "author": "Mr Roundry",
+    "msg": "They definitely need more time to connect",
+    "id": 29139
+  },
+  {
+    "ts": "2026-02-28T09:51",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "[Photo] Loops of death, also all logged out 💀",
+    "id": 29140
+  },
+  {
+    "ts": "2026-02-28T10:00",
+    "author": "R B",
+    "msg": "on Official ,unity are failing operations to a failover server ... hopefully that will fix it",
+    "id": 29141
+  },
+  {
+    "ts": "2026-02-28T10:08",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "No update. Sill on v11.2",
+    "id": 29142
+  },
+  {
+    "ts": "2026-02-28T10:09",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "Yeah there is 1 iPhone on the network",
+    "id": 29143
+  },
+  {
+    "ts": "2026-02-28T10:10",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "But I already had 3-4 other phones on the WiFi. Had probably 24 ish devices before the iPhone joined the party 😁",
+    "id": 29144
+  },
+  {
+    "ts": "2026-02-28T10:11",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "Yeah I'm not loading the new APK till this is resolved 😕",
+    "id": 29145
+  },
+  {
+    "ts": "2026-02-28T10:11",
+    "author": "R B",
+    "msg": "it is but they said it from day one they prefer 15-20 devices max, on One IP from the AMA's . we got a few weeks of running a lot of farms on one , but i cant blame them for enforcing 20 device limit",
+    "id": 29146
+  },
+  {
+    "ts": "2026-02-28T10:12",
+    "author": "R B",
+    "msg": "let me try updating just the one device , rewards are already rubbish",
+    "id": 29147
+  },
+  {
+    "ts": "2026-02-28T10:13",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Yeah, they made it clear, was always expecting it",
+    "id": 29148
+  },
+  {
+    "ts": "2026-02-28T10:18",
+    "author": "Rex Vulgaris",
+    "msg": "I have a farm box on Vod 4g router and also now have 2 Vod sim phones…. Looks to be ok\nWhat if one had 2 Vod 4 g routers ?",
+    "id": 29149
+  },
+  {
+    "ts": "2026-02-28T10:27",
+    "author": "Rex Vulgaris",
+    "msg": "Grok thinks it would probs be ok given am running 60 devices from 1 location already…",
+    "id": 29150
+  },
+  {
+    "ts": "2026-02-28T10:30",
+    "author": "Jaba - Unityfarmers",
+    "msg": "but not the actual phone constant restarting right?",
+    "id": 29151
+  },
+  {
+    "ts": "2026-02-28T10:32",
+    "author": "Unknown",
+    "msg": "Not exactly how it was stated, there was \"no limit\" turned into 15-20 turned into \"no limit - but it will reduce rewards \"",
+    "id": 29152
+  },
+  {
+    "ts": "2026-02-28T10:33",
+    "author": "Unknown",
+    "msg": "if you ask to this day they still try to say there is no limit",
+    "id": 29153
+  },
+  {
+    "ts": "2026-02-28T10:36",
+    "author": "Darko",
+    "msg": "Guys it makes no sense to even allow 20 of devices on the same wifi. Allowing around 20 is more than generous imho",
+    "id": 29154
+  },
+  {
+    "ts": "2026-02-28T10:36",
+    "author": "Darko",
+    "msg": "I mean you can have it but what actual use does Unity have from it",
+    "id": 29155
+  },
+  {
+    "ts": "2026-02-28T10:36",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "No ser",
+    "id": 29156
+  },
+  {
+    "ts": "2026-02-28T10:38",
+    "author": "Unknown",
+    "msg": "its lots of use depending on device and data they are checking otherwise they wouldn't run their own",
+    "id": 29157
+  },
+  {
+    "ts": "2026-02-28T10:40",
+    "author": "Unknown",
+    "msg": "and before you say yeah \"but\" it's common for them to have several since one device might not see the same results as the other, in their current configuration and app making them seem as one device is a design flaw on their end the irony here is even with their lab they push out an update that is broken on multiple levels",
+    "id": 29158
+  },
+  {
+    "ts": "2026-02-28T10:41",
+    "author": "Jaba - Unityfarmers",
+    "msg": "interetsting that it's the 8+, the farm doing reboots are also only 8+ affected",
+    "id": 29159
+  },
+  {
+    "ts": "2026-02-28T10:42",
+    "author": "Unknown",
+    "msg": "let me go check the 9's",
+    "id": 29160
+  },
+  {
+    "ts": "2026-02-28T10:44",
+    "author": "Unknown",
+    "msg": "looks like a dozen or more logged out on the app after a few hours of uptime",
+    "id": 29161
+  },
+  {
+    "ts": "2026-02-28T10:47",
+    "author": "Unknown",
+    "msg": "App on uno says logged out only about 3 were closed on devices",
+    "id": 29162
+  },
+  {
+    "ts": "2026-02-28T10:48",
+    "author": "Unknown",
+    "msg": "But dozens not connected on uno",
+    "id": 29163
+  },
+  {
+    "ts": "2026-02-28T11:00",
+    "author": "Unknown",
+    "msg": "and force close / restart app doesn't reconnect them",
+    "id": 29164
+  },
+  {
+    "ts": "2026-02-28T11:37",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "[Photo]",
+    "id": 29165
+  },
+  {
+    "ts": "2026-02-28T11:42",
+    "author": "Unknown",
+    "msg": "vibe code farm ftw",
+    "id": 29166
+  },
+  {
+    "ts": "2026-02-28T11:43",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "I don't think I've known anything so shit in my life",
+    "id": 29167
+  },
+  {
+    "ts": "2026-02-28T11:44",
+    "author": "Unknown",
+    "msg": "I mean it's clear to me they aren't using a \"team\" of their own coders seems to be code for hire and I would bet its a lot of ai code",
+    "id": 29168
+  },
+  {
+    "ts": "2026-02-28T11:45",
+    "author": "Unknown",
+    "msg": "Val said they didn't have days off so that to me confirmed it",
+    "id": 29169
+  },
+  {
+    "ts": "2026-02-28T11:50",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Bruh...",
+    "id": 29170
+  },
+  {
+    "ts": "2026-02-28T11:50",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "AI code...my head would be gone",
+    "id": 29171
+  },
+  {
+    "ts": "2026-02-28T11:50",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Surely there's no way",
+    "id": 29172
+  },
+  {
+    "ts": "2026-02-28T11:51",
+    "author": "Unknown",
+    "msg": "the corners cut to get back on track after the \"unknown\" private issue",
+    "id": 29173
+  },
+  {
+    "ts": "2026-02-28T12:01",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "We will never know what that was",
+    "id": 29174
+  },
+  {
+    "ts": "2026-02-28T12:27",
+    "author": "Mr Roundry",
+    "msg": "Did you get it working? Had the same on all phones … the adb command from glitch did not work this time on all devices … some worked again after clicking on the key and back again to the dash board and for some I had to unplug the motherboards because nothing else helped",
+    "id": 29175
+  },
+  {
+    "ts": "2026-02-28T12:28",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "I will let you know shortly, just trying to fix a few boards and lll go check my comp again",
+    "id": 29176
+  },
+  {
+    "ts": "2026-02-28T12:30",
+    "author": "Mr Roundry",
+    "msg": "Good luck … it is really a mess 😀 spend one hour only to fix all the disconnected devices … but clicking on the key and back again helped for most of the boards",
+    "id": 29177
+  },
+  {
+    "ts": "2026-02-28T12:30",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Which key are you referring too? Just so I can try it if it's still broke!",
+    "id": 29178
+  },
+  {
+    "ts": "2026-02-28T12:33",
+    "author": "Mr Roundry",
+    "msg": "[File: video.mp4] Just this … they connected again … some needed the adb command from glitch “force close and restart” and a little few I had to completely unplug the motherboards from the box 😀",
+    "id": 29179
+  },
+  {
+    "ts": "2026-02-28T12:47",
+    "author": "Rex Vulgaris",
+    "msg": "Checked my upgrade farm… all green\nChecked the UNO showed all with zero uptime\nBack to farm… go to uptime screen and all shown zero",
+    "id": 29180
+  },
+  {
+    "ts": "2026-02-28T13:05",
+    "author": "Darko",
+    "msg": "These crapdates costed me 4 hours of maintenance and binding and unbinding boxes and all. Beyond frustrating fuckup",
+    "id": 29181
+  },
+  {
+    "ts": "2026-02-28T13:05",
+    "author": "Darko",
+    "msg": "I am ok with work. I am not ok with random shits like this. THe worst thing if you don't do anything then you are bound to get shit rewards for 2 days straight",
+    "id": 29182
+  },
+  {
+    "ts": "2026-02-28T13:09",
+    "author": "Rex Vulgaris",
+    "msg": "Are there any videos that show a user how to setup as a ULO and also how to withdraw?",
+    "id": 29183
+  },
+  {
+    "ts": "2026-02-28T13:35",
+    "author": "Mr Roundry",
+    "msg": "I think I will down-Date to the old version",
+    "id": 29184
+  },
+  {
+    "ts": "2026-02-28T13:35",
+    "author": "Mr Roundry",
+    "msg": "This is really a pain",
+    "id": 29185
+  },
+  {
+    "ts": "2026-02-28T13:35",
+    "author": "Mr Roundry",
+    "msg": "The box with the old update has no problems at all",
+    "id": 29186
+  },
+  {
+    "ts": "2026-02-28T13:35",
+    "author": "Unknown",
+    "msg": "gl it wasn't working for me which forced the update",
+    "id": 29187
+  },
+  {
+    "ts": "2026-02-28T13:36",
+    "author": "Mr Roundry",
+    "msg": "Ok that’s shit 😀",
+    "id": 29188
+  },
+  {
+    "ts": "2026-02-28T13:36",
+    "author": "Mr Roundry",
+    "msg": "But still will leave the one box on the old update",
+    "id": 29189
+  },
+  {
+    "ts": "2026-02-28T13:37",
+    "author": "Unknown",
+    "msg": "yeah mine were slowly disconnecting but wouldn't even start",
+    "id": 29190
+  },
+  {
+    "ts": "2026-02-28T13:38",
+    "author": "Darko",
+    "msg": "I did no update on any boxes yet and they were all not activated....",
+    "id": 29191
+  },
+  {
+    "ts": "2026-02-28T13:41",
+    "author": "Mr Roundry",
+    "msg": "This is really shit man",
+    "id": 29192
+  },
+  {
+    "ts": "2026-02-28T13:42",
+    "author": "Mr Roundry",
+    "msg": "I have one box at my parents house and one at my mothers in low house … 45 min and 60 min away from my house … can’t drive everyday to fix everything",
+    "id": 29193
+  },
+  {
+    "ts": "2026-02-28T13:45",
+    "author": "Mr Roundry",
+    "msg": "Imagine if you have 3 nodes and spread them out across Familie with one box each … not manageable",
+    "id": 29194
+  },
+  {
+    "ts": "2026-02-28T13:46",
+    "author": "Mr Roundry",
+    "msg": "Need to see how I can manage the boxes remotely but I think it requires a lot of additional hardware and money",
+    "id": 29195
+  },
+  {
+    "ts": "2026-02-28T13:46",
+    "author": "Coffee Nodes",
+    "msg": "why not tailscale into them",
+    "id": 29196
+  },
+  {
+    "ts": "2026-02-28T13:47",
+    "author": "Unknown",
+    "msg": "was just going to suggest this",
+    "id": 29197
+  },
+  {
+    "ts": "2026-02-28T13:47",
+    "author": "Mr Roundry",
+    "msg": "Yeah need to learn how to do it … this is the only solution",
+    "id": 29198
+  },
+  {
+    "ts": "2026-02-28T13:47",
+    "author": "Unknown",
+    "msg": "but it requires tailscale on all or controller pc's at each location",
+    "id": 29199
+  },
+  {
+    "ts": "2026-02-28T13:48",
+    "author": "Coffee Nodes",
+    "msg": "isn't there a router with tailscale? I have a travel router with it on, so I imagine it's possible",
+    "id": 29200
+  },
+  {
+    "ts": "2026-02-28T13:48",
+    "author": "Mr Roundry",
+    "msg": "Controller pc would be more easy I think but you need hardware and more power consumption",
+    "id": 29201
+  },
+  {
+    "ts": "2026-02-28T13:49",
+    "author": "Unknown",
+    "msg": "if you put tailscale on all the devices then you can control them all at the same local pc",
+    "id": 29202
+  },
+  {
+    "ts": "2026-02-28T13:49",
+    "author": "Unknown",
+    "msg": "(local to you)",
+    "id": 29203
+  },
+  {
+    "ts": "2026-02-28T13:49",
+    "author": "Mr Roundry",
+    "msg": "Is there any app for this? If you guys have any video how to do it would be awesome … I will also start to learn about this by myself",
+    "id": 29204
+  },
+  {
+    "ts": "2026-02-28T13:49",
+    "author": "Unknown",
+    "msg": "yeah I suppose that is another option to get in the network but harder to control that way imo",
+    "id": 29205
+  },
+  {
+    "ts": "2026-02-28T13:52",
+    "author": "Mr Roundry",
+    "msg": "Quick read tells me it works with vpn? Vpn was flagged by the team I think",
+    "id": 29206
+  },
+  {
+    "ts": "2026-02-28T13:53",
+    "author": "Unknown",
+    "msg": "no it uses a \"vpn\" connection to make a network back to you not out to the world",
+    "id": 29207
+  },
+  {
+    "ts": "2026-02-28T13:53",
+    "author": "Unknown",
+    "msg": "so all the devices connect to each other on their own network while still maintaining their external connection",
+    "id": 29208
+  },
+  {
+    "ts": "2026-02-28T13:54",
+    "author": "Coffee Nodes",
+    "msg": "did you setup tailscale on all your devices?",
+    "id": 29209
+  },
+  {
+    "ts": "2026-02-28T13:54",
+    "author": "Coffee Nodes",
+    "msg": "might give this a try",
+    "id": 29210
+  },
+  {
+    "ts": "2026-02-28T13:56",
+    "author": "Unknown",
+    "msg": "not currently but have messed with it off and on",
+    "id": 29211
+  },
+  {
+    "ts": "2026-02-28T13:56",
+    "author": "Unknown",
+    "msg": "Mine all have their own connections here per box",
+    "id": 29212
+  },
+  {
+    "ts": "2026-02-28T14:00",
+    "author": "Mr Roundry",
+    "msg": "Ok that’s great",
+    "id": 29213
+  },
+  {
+    "ts": "2026-02-28T14:00",
+    "author": "Mr Roundry",
+    "msg": "Will start learning how to do it",
+    "id": 29214
+  },
+  {
+    "ts": "2026-02-28T14:01",
+    "author": "Unknown",
+    "msg": "When you get them all setup you can scan the tailscale network ip and get all the devices that are active in your controller software from multiple locations",
+    "id": 29215
+  },
+  {
+    "ts": "2026-02-28T14:02",
+    "author": "Unknown",
+    "msg": "in a perfect world 😂 I'm sure there will be odd cases since some devices like to not always work, like power failure or restart unless you have that apk scripted to start up on boot",
+    "id": 29216
+  },
+  {
+    "ts": "2026-02-28T14:03",
+    "author": "Unknown",
+    "msg": "I've not fell down that rabbit hole all the way yet there are only so many games I will continue to play 😂",
+    "id": 29217
+  },
+  {
+    "ts": "2026-02-28T14:13",
+    "author": "Mr Roundry",
+    "msg": "😀",
+    "id": 29218
+  },
+  {
+    "ts": "2026-02-28T14:13",
+    "author": "Mr Roundry",
+    "msg": "Can’t be as many problems as we have with unity I believe 😀",
+    "id": 29219
+  },
+  {
+    "ts": "2026-02-28T14:15",
+    "author": "Unknown",
+    "msg": "no their stuff is solid",
+    "id": 29220
+  },
+  {
+    "ts": "2026-02-28T14:15",
+    "author": "Unknown",
+    "msg": "it would likely be a device or power issue",
+    "id": 29221
+  },
+  {
+    "ts": "2026-02-28T14:15",
+    "author": "Mr Roundry",
+    "msg": "😀 clearly",
+    "id": 29222
+  },
+  {
+    "ts": "2026-02-28T14:17",
+    "author": "R B",
+    "msg": "so guys i upgraded my 2 farms to ver 1.1.3 - from 1.1.2 they were showing Green dot before the upgrade and upgrade was seemless . The thing that took another while is i lost one S8 board on the reboot so playing with that to get it to life took some time no joy. . Otherwise my S8 farms look ok , crap rewards though yesterday. Iphone and S8 Farm all on 1.1.3",
+    "id": 29223
+  },
+  {
+    "ts": "2026-02-28T14:20",
+    "author": "R B",
+    "msg": "This is perfect for large families with multiple devices and Ipad work devices so we should complain . Nor mention the Mobile farm units on Official.    15-20 was comminucated probably on the 2nd Unity AMA. But implemented a lot later",
+    "id": 29224
+  },
+  {
+    "ts": "2026-02-28T15:15",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Photo]",
+    "id": 29225
+  },
+  {
+    "ts": "2026-02-28T16:14",
+    "author": "Rex Vulgaris",
+    "msg": "Cheers man",
+    "id": 29226
+  },
+  {
+    "ts": "2026-02-28T16:17",
+    "author": "Rex Vulgaris",
+    "msg": "Another question…. Has anyone managed to scraped all the license codes for their node… looking to do a print run with codes",
+    "id": 29227
+  },
+  {
+    "ts": "2026-02-28T17:37",
+    "author": "Mr Roundry",
+    "msg": "Guys the Gen Farmer is really awesome … I just need to be connected to the wlan of the router the box is connected with and can manage the box … no need to connect via lan for this … everything works the same like with lan … \n\nI also can manage a box via OTG and USB at the same time … sure you smart people knew this but I just figured it out 😀",
+    "id": 29228
+  },
+  {
+    "ts": "2026-02-28T17:43",
+    "author": "NEM0",
+    "msg": "Most people have 1 work phone 1 personal and an iPad. There’s 3 devices and we are talking about 1 person. There’s a lot of house holds that have more than 2 people in it",
+    "id": 29229
+  },
+  {
+    "ts": "2026-02-28T18:05",
+    "author": "Darko",
+    "msg": "I do not know a single household that has 10 or more phones constantly on or ipads altogether. There is no useful DATA from even more than few phones per Wifi. Just because we would love a 100 on a wifi does not mean is logical or to pretend that that DATA somehow is useful to someone",
+    "id": 29230
+  },
+  {
+    "ts": "2026-02-28T18:10",
+    "author": "Unknown",
+    "msg": "Then don't nobody is forcing you to do so but saying they don't have a use is wrong",
+    "id": 29231
+  },
+  {
+    "ts": "2026-02-28T18:10",
+    "author": "Unknown",
+    "msg": "Telcos have several devices in a package just the same for data tracking",
+    "id": 29232
+  },
+  {
+    "ts": "2026-02-28T18:11",
+    "author": "Unknown",
+    "msg": "does it mean run 10k in the same location no",
+    "id": 29233
+  },
+  {
+    "ts": "2026-02-28T18:13",
+    "author": "Unknown",
+    "msg": "but limitation at the current level do cap large campuses and shared apartment complexes that get mixed in with these numbers at the same time",
+    "id": 29234
+  },
+  {
+    "ts": "2026-02-28T18:14",
+    "author": "Unknown",
+    "msg": "Those device \"appear\" on the same network by ip but not the same location and do bring value to the information on the network side just the same",
+    "id": 29235
+  },
+  {
+    "ts": "2026-02-28T18:16",
+    "author": "Unknown",
+    "msg": "I'm not advocating running  thousands of devices in a room but the limitations were placed afterwards while still saying they were not limiting the devices instead of being honest they doubled down on saying there wasn't a limit and limited the rewards",
+    "id": 29236
+  },
+  {
+    "ts": "2026-02-28T18:33",
+    "author": "Mr Roundry",
+    "msg": "Bro, again every single license disconnected 😀 getting tired of this shit … even after the they were doing 3 hours ago 😀😀😀 really getting angry",
+    "id": 29237
+  },
+  {
+    "ts": "2026-02-28T18:37",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Let me know how you do, wondering wether to upgrade my box to new version yet or not 😛",
+    "id": 29238
+  },
+  {
+    "ts": "2026-02-28T19:13",
+    "author": "L",
+    "msg": "I updated all my phones yesterday woke up to to half of them being off restarted all this morning just got home and half my phones getting no uptime ,is it possible to downdate to 1.1.2 latest update has fuked everything",
+    "id": 29239
+  },
+  {
+    "ts": "2026-02-28T19:14",
+    "author": "Rex Vulgaris",
+    "msg": "Old adage… wait a few days …let others play in the sandbox",
+    "id": 29240
+  },
+  {
+    "ts": "2026-02-28T19:16",
+    "author": "L",
+    "msg": "Is it possible to restore 1.1.2 ? this latest update is fooking all my shit up",
+    "id": 29241
+  },
+  {
+    "ts": "2026-02-28T19:19",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "Should be as the APK is still available",
+    "id": 29242
+  },
+  {
+    "ts": "2026-02-28T19:19",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "I've not updated my farmbox and they are fine",
+    "id": 29243
+  },
+  {
+    "ts": "2026-02-28T19:21",
+    "author": "L",
+    "msg": "Wish i hadn't, i was on a good role last 5 days until i updated yesterday",
+    "id": 29244
+  },
+  {
+    "ts": "2026-02-28T19:21",
+    "author": "L",
+    "msg": "i forgot there was that option 👍",
+    "id": 29245
+  },
+  {
+    "ts": "2026-02-28T19:30",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "I can confirm going back to the 1.1.2 is not possible. Everything is still fucked.",
+    "id": 29246
+  },
+  {
+    "ts": "2026-02-28T19:30",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "So something fundamentally is broken",
+    "id": 29247
+  },
+  {
+    "ts": "2026-02-28T19:31",
+    "author": "L",
+    "msg": "Ah balls ,i was on a good run beforehand",
+    "id": 29248
+  },
+  {
+    "ts": "2026-02-28T19:31",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Yeah same",
+    "id": 29249
+  },
+  {
+    "ts": "2026-02-28T20:47",
+    "author": "Daniel 🇷🇴",
+    "msg": "I'm using wireguard for this",
+    "id": 29250
+  },
+  {
+    "ts": "2026-02-28T21:03",
+    "author": "Mr Roundry",
+    "msg": "Any problems with rewards? Is it easy to use ?",
+    "id": 29251
+  },
+  {
+    "ts": "2026-02-28T21:03",
+    "author": "Mr Roundry",
+    "msg": "Asked the same in the verified group 😀",
+    "id": 29252
+  },
+  {
+    "ts": "2026-02-28T21:04",
+    "author": "Mr Roundry",
+    "msg": "Have to add … again everything disconnected",
+    "id": 29253
+  },
+  {
+    "ts": "2026-02-28T21:04",
+    "author": "Mr Roundry",
+    "msg": "😀",
+    "id": 29254
+  },
+  {
+    "ts": "2026-02-28T21:05",
+    "author": "Daniel 🇷🇴",
+    "msg": "no rewards issues; the phones are using the location's IP to connect to unity.\nvpn is only for management",
+    "id": 29255
+  },
+  {
+    "ts": "2026-02-28T21:52",
+    "author": "R B",
+    "msg": "It’s the s8 phones on my farm right click in genfarmer and click install apk for each device",
+    "id": 29256
+  },
+  {
+    "ts": "2026-02-28T21:57",
+    "author": "L",
+    "msg": "Im hoping its just a glitch as some of my phones like my voda V10s  are connected with green dots but when i go into the licence menu in app it shows them all as dead ,weird",
+    "id": 29257
+  },
+  {
+    "ts": "2026-02-28T23:08",
+    "author": "Crypto Titan",
+    "msg": "Has anyone figured out a way to have more than 20 devices in a single location?\nMultiples ISPs an 20 devices connected to each ISP?\n\nAny other ideas?",
+    "id": 29258
+  }
+]

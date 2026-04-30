@@ -1,0 +1,266 @@
+[
+  {
+    "ts": "2026-04-04T07:57",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Anyone else noticed a drop today from yesterday?",
+    "id": 32281
+  },
+  {
+    "ts": "2026-04-04T07:58",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Gone from 0.001 to 0.0001 😂",
+    "id": 32283
+  },
+  {
+    "ts": "2026-04-04T08:03",
+    "author": "Forty41",
+    "msg": "Day on day it gets worse",
+    "id": 32284
+  },
+  {
+    "ts": "2026-04-04T08:15",
+    "author": "Daniel 🇷🇴",
+    "msg": "no worries; it's weekend",
+    "id": 32285
+  },
+  {
+    "ts": "2026-04-04T08:46",
+    "author": "Dennis",
+    "msg": "I’d like to share my recent findings.\n\nYesterday, I reduced the number of ULOs to one per unique IP. As a result, all phones recovered. Previously, each device earned around 0.07 or less, but now some are reaching up to 0.507. This suggests that there is likely no general calibration issue.\n\nI will monitor the rewards again tomorrow to see if they remain consistent for these same licenses. After that, I plan to gradually increase the number of ULOs per IP and share further results.\n\nAt the moment, the situation seems similar to what we experienced over a month ago, when the maximum number of devices per IP was effectively limited to 20. However, the team is not stating that rewards will return to previous levels if you stay within that limit, only that you will earn something. At least I cant remember a statement, where they said \"once calibration is over your reward level that you have previous will return\". Hope this info helps someone.",
+    "id": 32288
+  },
+  {
+    "ts": "2026-04-04T08:50",
+    "author": "Daniel 🇷🇴",
+    "msg": "you reduced number of ULOs/ IP to 5? 10?",
+    "id": 32289
+  },
+  {
+    "ts": "2026-04-04T08:51",
+    "author": "Dennis",
+    "msg": "to one per IP",
+    "id": 32291
+  },
+  {
+    "ts": "2026-04-04T08:51",
+    "author": "Dennis",
+    "msg": "previously I had 10 max on one IP",
+    "id": 32292
+  },
+  {
+    "ts": "2026-04-04T08:52",
+    "author": "Daniel 🇷🇴",
+    "msg": "did you try with 5?",
+    "id": 32293
+  },
+  {
+    "ts": "2026-04-04T08:57",
+    "author": "Dennis",
+    "msg": "no not yet, will scale up tmrw",
+    "id": 32294
+  },
+  {
+    "ts": "2026-04-04T09:17",
+    "author": "Forty41",
+    "msg": "I have no more than 5 on any IP and the rewards are low",
+    "id": 32295
+  },
+  {
+    "ts": "2026-04-04T09:24",
+    "author": "Daniel 🇷🇴",
+    "msg": "group1 - sim: 0.2\ngroup2 - sim: 0.01\ngroup3 - fibre: 0.2\ngroup4 - sim: 0.01\n\neach group: 5 devices",
+    "id": 32296
+  },
+  {
+    "ts": "2026-04-04T09:43",
+    "author": "Dennis",
+    "msg": "I have someone with 5 devices max per IP and he earns 0.20-0.30",
+    "id": 32297
+  },
+  {
+    "ts": "2026-04-04T09:45",
+    "author": "R B",
+    "msg": "Are those UPs numbers  per device or total for all 5 devices in that group",
+    "id": 32298
+  },
+  {
+    "ts": "2026-04-04T09:45",
+    "author": "R B",
+    "msg": "Same for you is that 20 to 30 cents per devices or total for all 5 devices",
+    "id": 32299
+  },
+  {
+    "ts": "2026-04-04T09:45",
+    "author": "Daniel 🇷🇴",
+    "msg": "The numbers are the averages/device",
+    "id": 32300
+  },
+  {
+    "ts": "2026-04-04T09:48",
+    "author": "R B",
+    "msg": "My Iphone is the only device that i have connected , over the last three days ive had 15cents, 16 cents and 18 cents , am connected on Sim",
+    "id": 32301
+  },
+  {
+    "ts": "2026-04-04T09:51",
+    "author": "Dennis",
+    "msg": "he receives 20 to 30 cents per device",
+    "id": 32302
+  },
+  {
+    "ts": "2026-04-04T09:56",
+    "author": "R B",
+    "msg": "I assume one sim and connected (tethered via WIFI) ,, might try something with my Sim connected FARM and just have 5 devices . Also try my  Personal Phone on WIFI to home ISP and see how that compares to SIm",
+    "id": 32303
+  },
+  {
+    "ts": "2026-04-04T14:26",
+    "author": "Flippy",
+    "msg": "I minted a new node few days ago. Added 10 single phones with individual sims. Rewards all bad.",
+    "id": 32304
+  },
+  {
+    "ts": "2026-04-04T14:26",
+    "author": "Flippy",
+    "msg": "Tomorrow will be first full 24 hr day so I will give it one more day.",
+    "id": 32305
+  },
+  {
+    "ts": "2026-04-04T14:27",
+    "author": "Flippy",
+    "msg": "But looks bad",
+    "id": 32306
+  },
+  {
+    "ts": "2026-04-04T14:27",
+    "author": "Flippy",
+    "msg": "Everything I try seems fucked",
+    "id": 32307
+  },
+  {
+    "ts": "2026-04-04T14:31",
+    "author": "EdgyBruh",
+    "msg": "Did you check the IPs of each device though?",
+    "id": 32308
+  },
+  {
+    "ts": "2026-04-04T14:35",
+    "author": "Flippy",
+    "msg": "All nigerian sims",
+    "id": 32309
+  },
+  {
+    "ts": "2026-04-04T14:35",
+    "author": "Flippy",
+    "msg": "Different people",
+    "id": 32310
+  },
+  {
+    "ts": "2026-04-04T14:54",
+    "author": "EdgyBruh",
+    "msg": "They could all share the same IP, its pointless adding new devices and sims if you don't check the IPs",
+    "id": 32311
+  },
+  {
+    "ts": "2026-04-04T15:10",
+    "author": "Darko",
+    "msg": "Anyone else got this attestation error because of that last live fix this morning? No matter what I do I cannot license make go green",
+    "id": 32312
+  },
+  {
+    "ts": "2026-04-04T15:12",
+    "author": "Flippy",
+    "msg": "Then all of this pointless, if its that strict",
+    "id": 32313
+  },
+  {
+    "ts": "2026-04-04T15:13",
+    "author": "Flippy",
+    "msg": "Especially with these penny rewards.",
+    "id": 32314
+  },
+  {
+    "ts": "2026-04-04T15:31",
+    "author": "Flippy",
+    "msg": "Btw all ips are different",
+    "id": 32315
+  },
+  {
+    "ts": "2026-04-04T15:31",
+    "author": "Flippy",
+    "msg": "Just checked",
+    "id": 32316
+  },
+  {
+    "ts": "2026-04-04T15:37",
+    "author": "Wopdiddly",
+    "msg": "Had it a few times restart works as long as the connection is ok. Sometimes it sorts itself out also",
+    "id": 32317
+  },
+  {
+    "ts": "2026-04-04T15:45",
+    "author": "R B",
+    "msg": "Can you DM me",
+    "id": 32318
+  },
+  {
+    "ts": "2026-04-04T15:46",
+    "author": "R B",
+    "msg": "See you in 2 months",
+    "id": 32319
+  },
+  {
+    "ts": "2026-04-04T15:55",
+    "author": "Darko",
+    "msg": "Guys I and my ULOs have any setup possible. It is all random, there are no patterns. I am trying to find them for 2 weeks now basically",
+    "id": 32320
+  },
+  {
+    "ts": "2026-04-04T15:55",
+    "author": "Darko",
+    "msg": "from single to 2 3 4 on same IP, different providers, diff areas. All random",
+    "id": 32321
+  },
+  {
+    "ts": "2026-04-04T18:30",
+    "author": "Flippy",
+    "msg": "Only logical conclusion is that no one is willing to pay us for whatever they were paying us for.",
+    "id": 32322
+  },
+  {
+    "ts": "2026-04-04T18:31",
+    "author": "Flippy",
+    "msg": "And random nukes 95% of rewards",
+    "id": 32323
+  },
+  {
+    "ts": "2026-04-04T18:33",
+    "author": "NEM0",
+    "msg": "I think the pot is empty so that’s why rewards are scaled back",
+    "id": 32324
+  },
+  {
+    "ts": "2026-04-04T19:07",
+    "author": "Daano",
+    "msg": "'Stop speculating logical conclusions, focus on positive vibes'😂🤡",
+    "id": 32325
+  },
+  {
+    "ts": "2026-04-04T19:12",
+    "author": "Jack🎃",
+    "msg": "Yea I scaled down to 5 per IP and it's still bad.",
+    "id": 32326
+  },
+  {
+    "ts": "2026-04-04T19:55",
+    "author": "Daniel 🇷🇴",
+    "msg": "had to restart the phones 3-4times",
+    "id": 32327
+  },
+  {
+    "ts": "2026-04-04T20:16",
+    "author": "Marco",
+    "msg": "This doesn’t seem to work for licenses the same way. I wanted to get my license data to load on the backend of my website for tracking",
+    "id": 32328
+  }
+]

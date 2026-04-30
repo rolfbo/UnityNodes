@@ -1,0 +1,98 @@
+[
+  {
+    "ts": "2026-02-23T00:01",
+    "author": "R B",
+    "msg": "yes try that for now , but also note they are no wifi tasks happening now , so i dont know if the data used was much higher in early to mid december 2025 . Oh i also have my farm connected via ethernet to TP link router",
+    "id": 28932
+  },
+  {
+    "ts": "2026-02-23T00:04",
+    "author": "R B",
+    "msg": "imagine if those getting 17 to 24 cents with IPV6 enabled , disable IPv6 and they end up getting a larger increase lol",
+    "id": 28933
+  },
+  {
+    "ts": "2026-02-23T02:01",
+    "author": "Ricky",
+    "msg": "A doubt\nIf ASN code is same, public IP is also showing same but I am using different connections (say two different Sims from same service provider) from same ISP, does unity take them as one connecting and put 20 device restriction?",
+    "id": 28934
+  },
+  {
+    "ts": "2026-02-23T02:21",
+    "author": "Unknown",
+    "msg": "they shouldn't unless they are on the exact same ip",
+    "id": 28935
+  },
+  {
+    "ts": "2026-02-23T09:08",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "I don't think it makes any difference. I switched from static recently and rewards were not affected in my end. I changed provider from BT business to Vodafone residential (in the UK)",
+    "id": 28936
+  },
+  {
+    "ts": "2026-02-23T10:54",
+    "author": "Dave",
+    "msg": "So what are we getting money for if there are no WiFi tasks?",
+    "id": 28937
+  },
+  {
+    "ts": "2026-02-23T10:54",
+    "author": "Dave",
+    "msg": "Yes, if you use a 5g router okay, but many here have their devices on LAN, don't we?",
+    "id": 28938
+  },
+  {
+    "ts": "2026-02-23T13:27",
+    "author": "R B",
+    "msg": "It’s network uptime which is not a job task. The one which is 14cents to 25cents more or less",
+    "id": 28939
+  },
+  {
+    "ts": "2026-02-23T13:28",
+    "author": "R B",
+    "msg": "Ian port on farm unit to lan port on 4or5g router rather than wireless",
+    "id": 28940
+  },
+  {
+    "ts": "2026-02-23T13:56",
+    "author": "Mr Roundry",
+    "msg": "you think it would make any difference on the rewards?",
+    "id": 28941
+  },
+  {
+    "ts": "2026-02-23T14:04",
+    "author": "Dave",
+    "msg": "That's funny... So they are limiting network uptime to max 20 per IP and more if you have less.",
+    "id": 28942
+  },
+  {
+    "ts": "2026-02-23T14:05",
+    "author": "Dave",
+    "msg": "So they don't even need/use the data 😂",
+    "id": 28943
+  },
+  {
+    "ts": "2026-02-23T14:05",
+    "author": "Dave",
+    "msg": "And argument is that we are selling them useless data",
+    "id": 28944
+  },
+  {
+    "ts": "2026-02-23T16:48",
+    "author": "Mr Roundry",
+    "msg": "@albap816 what kind of sim are you using for hotspot? Like how much mbps and how much gb?",
+    "id": 28945
+  },
+  {
+    "ts": "2026-02-23T18:48",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] Added a new chart to my dashboard: Daily movers\n\nhttps://github.com/daniel1941/unity-rewards",
+    "id": 28946
+  },
+  {
+    "ts": "2026-02-23T23:37",
+    "author": "Jaba - Unityfarmers",
+    "msg": "",
+    "id": 28947
+  }
+]

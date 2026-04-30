@@ -1,0 +1,3416 @@
+[
+  {
+    "ts": "2026-04-20T01:21",
+    "author": "HFA | Earnest Nodes",
+    "msg": "[Photo]",
+    "id": 60493
+  },
+  {
+    "ts": "2026-04-20T01:22",
+    "author": "HFA | Earnest Nodes",
+    "msg": "What does device binding limit exceeds per 24 hour?",
+    "id": 60494
+  },
+  {
+    "ts": "2026-04-20T01:26",
+    "author": "Coffee Nodes",
+    "msg": "is it not related to the number of times one can bind a new license to a device?",
+    "id": 60495
+  },
+  {
+    "ts": "2026-04-20T01:27",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Yeah, max amount of binds a day",
+    "id": 60496
+  },
+  {
+    "ts": "2026-04-20T01:52",
+    "author": "HFA | Earnest Nodes",
+    "msg": "A ULO was trying to bind his license multiple times to make the app work",
+    "id": 60497
+  },
+  {
+    "ts": "2026-04-20T01:59",
+    "author": "Jack | Will Never Message You First",
+    "msg": "That would do it",
+    "id": 60498
+  },
+  {
+    "ts": "2026-04-20T02:10",
+    "author": "NEM0",
+    "msg": "@defiants_Jack just powered on a device and I’m getting that attestation error people have been mentioning this device was fine last week",
+    "id": 60499
+  },
+  {
+    "ts": "2026-04-20T02:11",
+    "author": "NEM0",
+    "msg": "Any idea how to fix this or is it like everything else. Submit a ticket and get on your knees and pray?",
+    "id": 60500
+  },
+  {
+    "ts": "2026-04-20T02:12",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Mm, a wider fix for this was in the works last week, let me check if there’s an update",
+    "id": 60501
+  },
+  {
+    "ts": "2026-04-20T02:13",
+    "author": "NEM0",
+    "msg": "Thank you",
+    "id": 60502
+  },
+  {
+    "ts": "2026-04-20T02:13",
+    "author": "NEM0",
+    "msg": "Any idea why is it happening?",
+    "id": 60503
+  },
+  {
+    "ts": "2026-04-20T02:14",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Seems to be related to versioning on the App Store. Is this on android or iOS?",
+    "id": 60504
+  },
+  {
+    "ts": "2026-04-20T02:15",
+    "author": "NEM0",
+    "msg": "Android",
+    "id": 60505
+  },
+  {
+    "ts": "2026-04-20T02:15",
+    "author": "Jack | Will Never Message You First",
+    "msg": "No wider fix yet",
+    "id": 60506
+  },
+  {
+    "ts": "2026-04-20T02:17",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Yeah, they can try the apk instead or uninstall and reinstall",
+    "id": 60507
+  },
+  {
+    "ts": "2026-04-20T02:17",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Clear app cache too",
+    "id": 60508
+  },
+  {
+    "ts": "2026-04-20T02:24",
+    "author": "NEM0",
+    "msg": "Ok but has the team said why is this happening? Again I’m sure something change and like with everything this far we were not informed and have to beg for days for any information",
+    "id": 60509
+  },
+  {
+    "ts": "2026-04-20T02:25",
+    "author": "NEM0",
+    "msg": "Thanks @defiants_Jack",
+    "id": 60511
+  },
+  {
+    "ts": "2026-04-20T02:26",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Team explanation;\n\nIt's difficult to say, as there are many factors. Root/bootloader unlock are not possible with the current Google-backed attestation method. Again - this is a known issue and something we're actively working to solve. The upcoming implementation for Android will only require a Google approved device, and a TEE/StrongBox chip - which includes the vast majority of Android 7+ devices. Again though, our partners may ask for certain traffic or devices to match different profiles, which may require an unrooted device, or locked bootloader to pass. This will be made more transparent to the user through dedicated error messaging.\n\nWith the current implementation, there's no difference between the APK/AppStore version for attestation. Both are valid options. This will continue to be so.",
+    "id": 60512
+  },
+  {
+    "ts": "2026-04-20T02:27",
+    "author": "NEM0",
+    "msg": "My device is a full device compliant with google it doesn’t meet any of the above reasons as to why it would happen to it",
+    "id": 60513
+  },
+  {
+    "ts": "2026-04-20T02:28",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Probably worth opening a ticket for then, if it doesn't fall under known reasons",
+    "id": 60514
+  },
+  {
+    "ts": "2026-04-20T02:29",
+    "author": "NEM0",
+    "msg": "As mentioned in the message you erased I’ll just turn it off and not deal with babying this app until there’s a compelling reason to do so",
+    "id": 60515
+  },
+  {
+    "ts": "2026-04-20T02:30",
+    "author": "Jack | Will Never Message You First",
+    "msg": "All good, got to remove all profanity sorry. Completely understand the sentiment",
+    "id": 60516
+  },
+  {
+    "ts": "2026-04-20T02:52",
+    "author": "Villion",
+    "msg": "Good day! \nOkay my rewards significantly increased today 🙂 Is this just for me or did anyone else see a huge boost?",
+    "id": 60517
+  },
+  {
+    "ts": "2026-04-20T03:08",
+    "author": "Matt",
+    "msg": "No boost here..",
+    "id": 60518
+  },
+  {
+    "ts": "2026-04-20T03:13",
+    "author": "EP /EARTHPATH | WMC $WMTx",
+    "msg": "GM I have the same, someone who can't get binded, stays disconnected. Need to email team @defiants_Jack ?",
+    "id": 60519
+  },
+  {
+    "ts": "2026-04-20T03:14",
+    "author": "Jack | Will Never Message You First",
+    "msg": "The attestation error?",
+    "id": 60520
+  },
+  {
+    "ts": "2026-04-20T03:14",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Yes, emailing is fine",
+    "id": 60521
+  },
+  {
+    "ts": "2026-04-20T03:16",
+    "author": "EP /EARTHPATH | WMC $WMTx",
+    "msg": "Ok let's see, thanks @defiants_Jack",
+    "id": 60522
+  },
+  {
+    "ts": "2026-04-20T03:35",
+    "author": "Peterjo18",
+    "msg": "I had purchased some activation credits back when they were first available. Of course they have never been used. These seem to be attached to the UNO wallet. I have transferred my Unity Node NFTs to a hardware wallet, but the activation credits remain in the old wallet that no longer has any licenses.  Will there be a way to transfer them to another wallet?",
+    "id": 60523
+  },
+  {
+    "ts": "2026-04-20T03:41",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Hey Peter, I’d certainly expect so. Maybe when they become relevant, reach out to the team for support moving them",
+    "id": 60524
+  },
+  {
+    "ts": "2026-04-20T03:59",
+    "author": "Matt",
+    "msg": "Does anyone know if you can move your node into a tangem wallet yet?",
+    "id": 60526
+  },
+  {
+    "ts": "2026-04-20T04:06",
+    "author": "OC Nodes",
+    "msg": "Rewards going up again today. 7 day average moving up.",
+    "id": 60527
+  },
+  {
+    "ts": "2026-04-20T04:07",
+    "author": "Elias Nikolaidis",
+    "msg": "Great News!!",
+    "id": 60528
+  },
+  {
+    "ts": "2026-04-20T04:20",
+    "author": "Tired of getting 0.002 a day",
+    "msg": "0.002 again. Wow",
+    "id": 60529
+  },
+  {
+    "ts": "2026-04-20T04:57",
+    "author": "~•v1kram•~",
+    "msg": "Rewards for me went up by about a 100%. I am ecstatic \n\nI was getting $1 till now, today I got $2 for my 175 licenses.",
+    "id": 60530
+  },
+  {
+    "ts": "2026-04-20T05:01",
+    "author": "OC Nodes",
+    "msg": "Actually my 7 day average doubled too.. compared to a week ago at the nadir. Went back higher than before the caliberization",
+    "id": 60531
+  },
+  {
+    "ts": "2026-04-20T05:28",
+    "author": "Dave",
+    "msg": "What about the faulty attestation failure? \n\nAny update on that? It's very annoying to be excluded all of a sudden after 5 months providing good data and value...",
+    "id": 60532
+  },
+  {
+    "ts": "2026-04-20T05:28",
+    "author": "Jack | Will Never Message You First",
+    "msg": "No update sorry, team is working on it",
+    "id": 60533
+  },
+  {
+    "ts": "2026-04-20T05:29",
+    "author": "Dave",
+    "msg": ":-(",
+    "id": 60534
+  },
+  {
+    "ts": "2026-04-20T05:29",
+    "author": "Dave",
+    "msg": "Well, at least they stay aware...",
+    "id": 60535
+  },
+  {
+    "ts": "2026-04-20T05:55",
+    "author": "Wen (fed up)",
+    "msg": "You offering financial advice now? 🤣",
+    "id": 60536
+  },
+  {
+    "ts": "2026-04-20T05:56",
+    "author": "Wen (fed up)",
+    "msg": "I was told the token was going to do really well 😂 😭",
+    "id": 60537
+  },
+  {
+    "ts": "2026-04-20T06:00",
+    "author": "Kyle | Will never DM you first",
+    "msg": "Hello everyone 😀",
+    "id": 60538
+  },
+  {
+    "ts": "2026-04-20T06:12",
+    "author": "Jouni Kuisma",
+    "msg": "Me too. Been waiting for 5 years now. It actually did rise very well on the first year, but I was ”loyal” and never sold. 😭",
+    "id": 60539
+  },
+  {
+    "ts": "2026-04-20T06:48",
+    "author": "LIIICHT",
+    "msg": "Its an absolute joke. Waste of time.",
+    "id": 60540
+  },
+  {
+    "ts": "2026-04-20T06:49",
+    "author": "Flippy",
+    "msg": "CLI volume today guys",
+    "id": 60541
+  },
+  {
+    "ts": "2026-04-20T06:49",
+    "author": "Flippy",
+    "msg": "S&R this week",
+    "id": 60542
+  },
+  {
+    "ts": "2026-04-20T06:50",
+    "author": "Flippy",
+    "msg": "AMA this week",
+    "id": 60543
+  },
+  {
+    "ts": "2026-04-20T06:50",
+    "author": "Flippy",
+    "msg": "60 tasks soon",
+    "id": 60544
+  },
+  {
+    "ts": "2026-04-20T06:50",
+    "author": "Flippy",
+    "msg": "You will be happy",
+    "id": 60545
+  },
+  {
+    "ts": "2026-04-20T06:54",
+    "author": "Flavius",
+    "msg": "I'm ready",
+    "id": 60546
+  },
+  {
+    "ts": "2026-04-20T07:00",
+    "author": "Gwims",
+    "msg": "lol more looky  look 👀 advice",
+    "id": 60547
+  },
+  {
+    "ts": "2026-04-20T07:07",
+    "author": "Adam Buracchi",
+    "msg": "Yep we were told increase in volume 💥 now if it increases from 1 call to just 2 calls we don’t know… 😂😬🤷‍♂️",
+    "id": 60548
+  },
+  {
+    "ts": "2026-04-20T07:28",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "That’s a 2x though 😅\n\nBut first with need 1 to be able to multiply",
+    "id": 60549
+  },
+  {
+    "ts": "2026-04-20T07:34",
+    "author": "Eddie H",
+    "msg": "Hoping the increase in volume will start showing in with chat with UNO reporting getting rewards. I believe he/she said it was beginning on Monday so I think it will scale up this week. It would be good to have a win this week in terms of new types of rewards coming through.",
+    "id": 60550
+  },
+  {
+    "ts": "2026-04-20T07:40",
+    "author": "Flippy",
+    "msg": "We need something, its been a mess for so many UNOs/ULOs for weeks now.",
+    "id": 60551
+  },
+  {
+    "ts": "2026-04-20T07:45",
+    "author": "Dave",
+    "msg": "I need the attestation failure to be solved 😂",
+    "id": 60552
+  },
+  {
+    "ts": "2026-04-20T08:13",
+    "author": "Flippy",
+    "msg": "#amaquestion \n\nFrom actual real life data from past weeks we see that only ULOs with 95%+ consistent uptime are given max rewards. Every 10% lower will reduce rewards drastically and from 65% or lower it is near zero. Consisteny also seems to play an important role.\n\nThis is nearly impossible for everyday single phones. Especially in poorer countries.\n\nCan you confirm there is a sort of tier system active?\nWhy are we not informed about these rules?",
+    "id": 60553
+  },
+  {
+    "ts": "2026-04-20T08:17",
+    "author": "Beto",
+    "msg": "I’ve actually had the attestation error twice now for one of my licenses and both times it was solved automatically",
+    "id": 60554
+  },
+  {
+    "ts": "2026-04-20T08:31",
+    "author": "Dave",
+    "msg": "Yes. It is permanent on my phones...",
+    "id": 60555
+  },
+  {
+    "ts": "2026-04-20T08:36",
+    "author": "Wopdiddly",
+    "msg": "Could it be a network issue rather than the phones maybe?",
+    "id": 60556
+  },
+  {
+    "ts": "2026-04-20T10:00",
+    "author": "Page Øne",
+    "msg": "a well the question is wen  haha",
+    "id": 60557
+  },
+  {
+    "ts": "2026-04-20T10:01",
+    "author": "Page Øne",
+    "msg": "sorry to burst the bubble  he didnt say what volume",
+    "id": 60558
+  },
+  {
+    "ts": "2026-04-20T10:01",
+    "author": "Page Øne",
+    "msg": "No offense taken - but let’s look at the facts. Tasks have been released. Telemetry tasks have improved and will continue to improve. Voice CLI testing is live. SMS CLI and content testing is live. Larger volumes from customers are expected starting Monday. Scout and Runner Alpha has also been producing rewards and is due for public release. \n\nMultiple additional tasks are due to launch on the network. That’s not the same story since January - that’s delivery.​​​​​​​​​​​​​​​​ Let’s keep things in perspective.",
+    "id": 60559
+  },
+  {
+    "ts": "2026-04-20T10:02",
+    "author": "Page Øne",
+    "msg": "@Flippyyyyyy",
+    "id": 60560
+  },
+  {
+    "ts": "2026-04-20T10:31",
+    "author": "Flippy",
+    "msg": "You are right. Also 0 times 1000 is still zero.",
+    "id": 60561
+  },
+  {
+    "ts": "2026-04-20T10:31",
+    "author": "Page Øne",
+    "msg": "sorry ❤️",
+    "id": 60562
+  },
+  {
+    "ts": "2026-04-20T10:31",
+    "author": "Page Øne",
+    "msg": "now and days its good to read between the lines",
+    "id": 60563
+  },
+  {
+    "ts": "2026-04-20T10:59",
+    "author": "Alem",
+    "msg": "[Photo] Interestingly, on my devices, I don't see the same behavior. Since my rewards dropped, my devices run at high uptime, but rewards are still at the same levels. 20 devices 10 on WIFI and 10 on SIM router.",
+    "id": 60564
+  },
+  {
+    "ts": "2026-04-20T10:59",
+    "author": "Alem",
+    "msg": "[Photo]",
+    "id": 60565
+  },
+  {
+    "ts": "2026-04-20T10:59",
+    "author": "Alem",
+    "msg": "[Photo]",
+    "id": 60566
+  },
+  {
+    "ts": "2026-04-20T10:59",
+    "author": "Alem",
+    "msg": "[Photo]",
+    "id": 60567
+  },
+  {
+    "ts": "2026-04-20T10:59",
+    "author": "Alem",
+    "msg": "[Photo]",
+    "id": 60568
+  },
+  {
+    "ts": "2026-04-20T11:02",
+    "author": "GliTch_",
+    "msg": "that would be 10 device split (different provider or ip) ? or you are using the same sim router for both sets?",
+    "id": 60569
+  },
+  {
+    "ts": "2026-04-20T11:03",
+    "author": "Alem",
+    "msg": "Yes a 10 split",
+    "id": 60570
+  },
+  {
+    "ts": "2026-04-20T11:15",
+    "author": "Flippy",
+    "msg": "Im talking purely about single phones, 1 licence per IP.\n\nMultiple phones per IP is another story. More than 4 or 5 phones you also get reduced heavily in rewards.",
+    "id": 60571
+  },
+  {
+    "ts": "2026-04-20T11:21",
+    "author": "Flippy",
+    "msg": "Its very sad but this has become a big fat shitshow since \"calibration\" kicked in. Waste of time, money and efforts. We can only pray team can deliver on any of their promises and sale tactics.",
+    "id": 60572
+  },
+  {
+    "ts": "2026-04-20T11:22",
+    "author": "Flippy",
+    "msg": "Telemetry is asking for way too much requirements for the rewards it brings.",
+    "id": 60573
+  },
+  {
+    "ts": "2026-04-20T11:26",
+    "author": "Alem",
+    "msg": "I see, thank you for the clarification :)",
+    "id": 60574
+  },
+  {
+    "ts": "2026-04-20T11:28",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Good afternoon",
+    "id": 60575
+  },
+  {
+    "ts": "2026-04-20T11:28",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Wish you all a great week",
+    "id": 60576
+  },
+  {
+    "ts": "2026-04-20T11:55",
+    "author": "kalle",
+    "msg": "Josh said earlier that they intend for the marketplace to go viral. Wen?",
+    "id": 60577
+  },
+  {
+    "ts": "2026-04-20T12:08",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I assume you are talking about the Unity marketplace, the MP will go viral I assume but it’s like a chicken/egg situation \nFor it to go viral we need several tasks deployed and making revenue\nI don’t think it will unless a regular phone isn’t making something around $1 solid per day\n\nAs is we’re not even close to it",
+    "id": 60578
+  },
+  {
+    "ts": "2026-04-20T12:12",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Its now officially Monday everywhere in the World",
+    "id": 60579
+  },
+  {
+    "ts": "2026-04-20T12:23",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "And what’s supposed to happen today?\nCan’t see announcements, just expectations \nDid i miss something?",
+    "id": 60580
+  },
+  {
+    "ts": "2026-04-20T12:24",
+    "author": "Compost Man Unity code: XY",
+    "msg": "You refer to it just a few comments above.",
+    "id": 60581
+  },
+  {
+    "ts": "2026-04-20T12:25",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Oh that… let’s wait and see 👌",
+    "id": 60582
+  },
+  {
+    "ts": "2026-04-20T12:25",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Sure hope so",
+    "id": 60583
+  },
+  {
+    "ts": "2026-04-20T12:28",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Just leaving this here in case any one else is wondering",
+    "id": 60584
+  },
+  {
+    "ts": "2026-04-20T12:31",
+    "author": "Flippy",
+    "msg": "Looking at the assistant's trackrecord I am not expecting much",
+    "id": 60585
+  },
+  {
+    "ts": "2026-04-20T12:31",
+    "author": "Adam Buracchi",
+    "msg": "As we were joking earlier on, UN assistant mentioned increased volumes on CLI and SMS. However if volume was 1 call and now is 2 calls he’s not lying even though it’s not the volume we want… maybe it’s like when we chat with an LLM we need to be more precise on how much volume we want to be happy 🤷‍♂️",
+    "id": 60586
+  },
+  {
+    "ts": "2026-04-20T12:34",
+    "author": "Akira",
+    "msg": "\"volume expected to increase starting monday\" \n\ndidnt say which week, month or year",
+    "id": 60587
+  },
+  {
+    "ts": "2026-04-20T12:34",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "🤣",
+    "id": 60588
+  },
+  {
+    "ts": "2026-04-20T12:34",
+    "author": "Adam Buracchi",
+    "msg": "That also 😂😂😅",
+    "id": 60589
+  },
+  {
+    "ts": "2026-04-20T12:34",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Yeah let’s wait today and pick up the forks tomorrow guys",
+    "id": 60590
+  },
+  {
+    "ts": "2026-04-20T12:37",
+    "author": "Wopdiddly",
+    "msg": "He did say the Strait of Hormuz was to open today , let's see",
+    "id": 60591
+  },
+  {
+    "ts": "2026-04-20T12:37",
+    "author": "Akira",
+    "msg": "when you get a CLI call the app sends a notification as well right?\n\nasking because i get multiple scammer calls everyday",
+    "id": 60592
+  },
+  {
+    "ts": "2026-04-20T12:37",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "And FYI\nBig chance tomorrow I’ll say the very same thing 😅",
+    "id": 60593
+  },
+  {
+    "ts": "2026-04-20T12:38",
+    "author": "Calus B",
+    "msg": "That’s exactly what Big Fork wants us to do.",
+    "id": 60594
+  },
+  {
+    "ts": "2026-04-20T12:38",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "No idea\nNever got one tbh\nI think so though",
+    "id": 60595
+  },
+  {
+    "ts": "2026-04-20T12:39",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: batman-hmmm.mp4]",
+    "id": 60596
+  },
+  {
+    "ts": "2026-04-20T12:39",
+    "author": "Akira",
+    "msg": "yeah only 3 or 4 ppl got calls",
+    "id": 60597
+  },
+  {
+    "ts": "2026-04-20T12:43",
+    "author": "kalle",
+    "msg": "Who said monday? Josh?",
+    "id": 60598
+  },
+  {
+    "ts": "2026-04-20T12:44",
+    "author": "Akira",
+    "msg": "unity assistant, whoever that is",
+    "id": 60599
+  },
+  {
+    "ts": "2026-04-20T12:47",
+    "author": "Flippy",
+    "msg": "Dude comes in here after 10 days of silence, gives us 10 lines of more hopium and takes off again. Amazing.",
+    "id": 60600
+  },
+  {
+    "ts": "2026-04-20T12:48",
+    "author": "Page Øne",
+    "msg": "let me correct you he didnt mention cli or sms it can eb telementary as well XD",
+    "id": 60601
+  },
+  {
+    "ts": "2026-04-20T12:48",
+    "author": "Page Øne",
+    "msg": "so lets today is the day for volume",
+    "id": 60602
+  },
+  {
+    "ts": "2026-04-20T12:49",
+    "author": "Page Øne",
+    "msg": "forks loading",
+    "id": 60603
+  },
+  {
+    "ts": "2026-04-20T12:49",
+    "author": "Adam Buracchi",
+    "msg": "I really really doubt it… but I’ll refrain to say something until tomorrow…",
+    "id": 60605
+  },
+  {
+    "ts": "2026-04-20T12:50",
+    "author": "Page Øne",
+    "msg": "same im taking 1 grain of salt even that is a bit to much",
+    "id": 60606
+  },
+  {
+    "ts": "2026-04-20T12:54",
+    "author": "Wen (fed up)",
+    "msg": "I’m sure that people will announce if they receive an sms or call themselves. Those with big ULO numbers, let us know when today’s rewards come in.",
+    "id": 60607
+  },
+  {
+    "ts": "2026-04-20T13:08",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Adam. My friend. I think we may have just reached peak demoralization.",
+    "id": 60608
+  },
+  {
+    "ts": "2026-04-20T13:11",
+    "author": "Flippy",
+    "msg": "What other projects you guys have?",
+    "id": 60609
+  },
+  {
+    "ts": "2026-04-20T13:12",
+    "author": "Adam Buracchi",
+    "msg": "I have a balanced crypto portfolio… mostly down 🤷‍♂️😅",
+    "id": 60610
+  },
+  {
+    "ts": "2026-04-20T13:12",
+    "author": "Calus B",
+    "msg": "Lmao",
+    "id": 60611
+  },
+  {
+    "ts": "2026-04-20T13:13",
+    "author": "Calus B",
+    "msg": "Most of my crypto money is in world mobile minutes network unity network at this point it seems silly to have it anywhere else",
+    "id": 60612
+  },
+  {
+    "ts": "2026-04-20T13:14",
+    "author": "Adam Buracchi",
+    "msg": "I have tons on these projects too but also Bitcoin Sui, Solana, Tao, Nuvola, and many others",
+    "id": 60613
+  },
+  {
+    "ts": "2026-04-20T13:15",
+    "author": "Adam Buracchi",
+    "msg": "But we don’t seem to catch a break on anything maybe next year",
+    "id": 60614
+  },
+  {
+    "ts": "2026-04-20T13:17",
+    "author": "Alex",
+    "msg": "It seems silly to have all your eggs in one big fam basket, but you do you🤞",
+    "id": 60615
+  },
+  {
+    "ts": "2026-04-20T13:18",
+    "author": "Alex",
+    "msg": "Big gamble",
+    "id": 60616
+  },
+  {
+    "ts": "2026-04-20T13:19",
+    "author": "Calus B",
+    "msg": "If you watch the crypto market, it is one big basket. It basically moves all the same. My diversification comes outside of crypto. So I’m quite comfortable holding all three. Not to mention that I have done a fairly significant amount of background work on all three projects and I feel pretty comfortable with where they’re at and what they’re doing.",
+    "id": 60617
+  },
+  {
+    "ts": "2026-04-20T13:20",
+    "author": "Calus B",
+    "msg": "There will be a point probably this year where I start to scale back into bitcoin as well",
+    "id": 60618
+  },
+  {
+    "ts": "2026-04-20T13:29",
+    "author": "Alex",
+    "msg": "At your rate, I would be 10x more bullish then you and David from WM together 😂 your approach makes sense in this case",
+    "id": 60619
+  },
+  {
+    "ts": "2026-04-20T13:34",
+    "author": "Gwims",
+    "msg": "Same",
+    "id": 60620
+  },
+  {
+    "ts": "2026-04-20T13:46",
+    "author": "Calus B",
+    "msg": "Why do people diversify? The thought is that if you’re properly diversified you’re not going to get wrecked if the one thing you invested in falls. If you’re in crypto and we had a bear market as we’ve all experienced pretty much everything gets wrecked no matter what so crypto alone is not diversification. It’s high risk. Theoretically, it’s higher reward. So you wanna pick a very small selection of projects do a ton of research on them and use that as your crypto exposure and then diversify into maybe more traditional market sources.",
+    "id": 60621
+  },
+  {
+    "ts": "2026-04-20T13:47",
+    "author": "Calus B",
+    "msg": "When you have only a small few projects, it’s easier to keep a very close eye on them and it’s easier to notice major problems if they pop up when you’re only tracking a few.",
+    "id": 60622
+  },
+  {
+    "ts": "2026-04-20T13:52",
+    "author": "Nico | NodeX",
+    "msg": "my rewards absolutely tanked to lowest levels ever",
+    "id": 60623
+  },
+  {
+    "ts": "2026-04-20T13:52",
+    "author": "Wopdiddly",
+    "msg": "Well if Unity fails I would imagine there would be a feedback loop taking down WM and Minutes so reasons like that.",
+    "id": 60624
+  },
+  {
+    "ts": "2026-04-20T13:54",
+    "author": "Willian | Nuvola",
+    "msg": "🤦🏻‍♂️",
+    "id": 60625
+  },
+  {
+    "ts": "2026-04-20T14:00",
+    "author": "Calus B",
+    "msg": "Yeah, seemed to be a rough weekend",
+    "id": 60626
+  },
+  {
+    "ts": "2026-04-20T14:02",
+    "author": "Flippy",
+    "msg": "And this suppose to be our savior from the bear market.",
+    "id": 60627
+  },
+  {
+    "ts": "2026-04-20T14:03",
+    "author": "Calus B",
+    "msg": "I mean the rewards change sort of daily right at least mine do",
+    "id": 60628
+  },
+  {
+    "ts": "2026-04-20T14:05",
+    "author": "Calus B",
+    "msg": "It would be very nice to see other tasks outside of telemetry stabilize some of these rewards",
+    "id": 60629
+  },
+  {
+    "ts": "2026-04-20T14:09",
+    "author": "Adam Buracchi",
+    "msg": "I diversify because having a small portfolio even if it’s just crypto, you exposed to crypto project failures not the actual market… what if WM MN and unity don’t succeed they close shop? You don’t have any other exposure to crypto then… it’s not the crypto market you diversify from but the actual risk of project failures",
+    "id": 60630
+  },
+  {
+    "ts": "2026-04-20T14:10",
+    "author": "Flippy",
+    "msg": "??",
+    "id": 60631
+  },
+  {
+    "ts": "2026-04-20T14:14",
+    "author": "Calus B",
+    "msg": "They are very unlikely to fail overnight all at once. Because I’m so concentrated I can keep a very close eye on them and ideally would be selling out long before they actually died.",
+    "id": 60632
+  },
+  {
+    "ts": "2026-04-20T14:19",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Are you not concerned that you are so invested that it could create a cognitive bias with the potential to influence your risk calculation?",
+    "id": 60633
+  },
+  {
+    "ts": "2026-04-20T14:20",
+    "author": "Adam Buracchi",
+    "msg": "By then other projects I’m invested could have done 5x so I can’t risk if WM, MN and UN don’t succeed and miss a potential 5x somewhere else but that’s me obviously anyone can do what they want 👍",
+    "id": 60634
+  },
+  {
+    "ts": "2026-04-20T14:23",
+    "author": "Flavius",
+    "msg": "An another day approaches its end 😭 No industry need yet",
+    "id": 60635
+  },
+  {
+    "ts": "2026-04-20T14:24",
+    "author": "Harrison B.",
+    "msg": "Need a firm answer on the max number of devices per ISP we can have before rewards depreciate? \n\nThat would be better than hopium 👍🏼",
+    "id": 60636
+  },
+  {
+    "ts": "2026-04-20T14:25",
+    "author": "Calus B",
+    "msg": "No, not really. Getting married to your bags so to speak can happen really no matter how diversified or not you are. You cannot be emotionally invested and expect success. At the end of the day, you need to have your process and base your decisions on that. It’s not perfect. You can still get things wrong but that’s why being diversified in other areas such as traditional markets is also important.",
+    "id": 60637
+  },
+  {
+    "ts": "2026-04-20T14:27",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I do agree, although I sometimes wonder whether the ambassadors (and supporters) of other projects thought the same thing..Meld, Axo etc.",
+    "id": 60638
+  },
+  {
+    "ts": "2026-04-20T14:32",
+    "author": "Calus B",
+    "msg": "Yeah, I wouldn’t doubt some of them got wrecked.",
+    "id": 60639
+  },
+  {
+    "ts": "2026-04-20T14:33",
+    "author": "Charles",
+    "msg": "[Photo] Just realised my personal phone (iPhone) has been earning less than a penny a day connected mostly to 5G at 90%+ uptimes 🙈",
+    "id": 60640
+  },
+  {
+    "ts": "2026-04-20T14:33",
+    "author": "Calus B",
+    "msg": "It’s always very important to have a process",
+    "id": 60641
+  },
+  {
+    "ts": "2026-04-20T14:33",
+    "author": "Compost Man Unity code: XY",
+    "msg": "None of us are robots (although you are so active, I do sometimes wonder) bias scanning information is something we all do, however hard they try to maintain rigour.",
+    "id": 60642
+  },
+  {
+    "ts": "2026-04-20T14:33",
+    "author": "Nico | NodeX",
+    "msg": "i dont even open my UNO dashboard anymore",
+    "id": 60643
+  },
+  {
+    "ts": "2026-04-20T14:34",
+    "author": "Calus B",
+    "msg": "That’s where we’re having a process really helps",
+    "id": 60644
+  },
+  {
+    "ts": "2026-04-20T14:34",
+    "author": "Miro K",
+    "msg": "That is really weird. All my real phones from me or friends are now reachint ATHs of 0.5 (in total) and those idle on wifi are getting anything from few cents to 0.2",
+    "id": 60645
+  },
+  {
+    "ts": "2026-04-20T14:34",
+    "author": "Calus B",
+    "msg": "Why are you invested in the thing you’re invested in?",
+    "id": 60646
+  },
+  {
+    "ts": "2026-04-20T14:35",
+    "author": "Calus B",
+    "msg": "Whatever you decide on to help you make your judgement calls you need to develop that and then rely on it and learn from your mistakes and adjust the process",
+    "id": 60647
+  },
+  {
+    "ts": "2026-04-20T14:35",
+    "author": "Calus B",
+    "msg": "Even your iPhones, my android seem to be OK. The iPhones seem to suck.",
+    "id": 60648
+  },
+  {
+    "ts": "2026-04-20T14:37",
+    "author": "Charles",
+    "msg": "I've got another iPhone in one of my 5-phone per IP WiFi farms and it's also generating very little rewards",
+    "id": 60649
+  },
+  {
+    "ts": "2026-04-20T14:38",
+    "author": "Calus B",
+    "msg": "I do wonder if it’s just a case of the iPhone’s not able to give as much data as the androids",
+    "id": 60650
+  },
+  {
+    "ts": "2026-04-20T14:39",
+    "author": "Akira",
+    "msg": "unless things pick up soon this is not gonna work",
+    "id": 60651
+  },
+  {
+    "ts": "2026-04-20T14:43",
+    "author": "salee",
+    "msg": "I'm opening...hahaha...🤭🤭🤭",
+    "id": 60652
+  },
+  {
+    "ts": "2026-04-20T14:49",
+    "author": "Flippy",
+    "msg": "\"Dashboard\" 😅",
+    "id": 60653
+  },
+  {
+    "ts": "2026-04-20T14:50",
+    "author": "Flippy",
+    "msg": "We are dealing with part time fiver devs here. If that is not the case proof it.",
+    "id": 60654
+  },
+  {
+    "ts": "2026-04-20T14:51",
+    "author": "Miro K",
+    "msg": "my personal iphone is doing fine if I don't get into below 20 percent or get battery saver even before that",
+    "id": 60655
+  },
+  {
+    "ts": "2026-04-20T14:52",
+    "author": "Flippy",
+    "msg": "Honest question Nico, how many hrs would you need to make the webportal 10x better? So UNOs can at least manage their ULOs.",
+    "id": 60656
+  },
+  {
+    "ts": "2026-04-20T14:52",
+    "author": "Willian | Nuvola",
+    "msg": "Sad ngl",
+    "id": 60657
+  },
+  {
+    "ts": "2026-04-20T14:52",
+    "author": "Flippy",
+    "msg": "Isnt it beyond laughable what we are seeing now?",
+    "id": 60658
+  },
+  {
+    "ts": "2026-04-20T14:53",
+    "author": "Miro K",
+    "msg": "Sorry taking it back, iPhone even my sucks last 7 days. Real android phones are still around 0.4-0.5 though. Not sure what is going on with iphone, I might try turning off the iCloud secure connection thingy",
+    "id": 60659
+  },
+  {
+    "ts": "2026-04-20T14:54",
+    "author": "C J",
+    "msg": "I shut most of my phones off, except for a couple iPhones in the family any ULO that I had basically ignores me and shut it off that it wasn’t worth their time to check anything and reconfigure anything just such a time suck. Two out of four iPhones I have a home won’t connect.",
+    "id": 60660
+  },
+  {
+    "ts": "2026-04-20T14:54",
+    "author": "Calus B",
+    "msg": "They are not a dashboard company… they are working on the more difficult part of getting tasks that real companies will pay for on the network",
+    "id": 60661
+  },
+  {
+    "ts": "2026-04-20T14:55",
+    "author": "Flippy",
+    "msg": "Sure they do. 20 hrs per day right",
+    "id": 60662
+  },
+  {
+    "ts": "2026-04-20T14:56",
+    "author": "Willian | Nuvola",
+    "msg": "Exactly, plus dashboard are easy to build. Just like Omri said, they can now build things in hours instead of days with the help of AI.",
+    "id": 60663
+  },
+  {
+    "ts": "2026-04-20T14:57",
+    "author": "Nico | NodeX",
+    "msg": "with a good API and the help of AI a couple of days you can make something.",
+    "id": 60664
+  },
+  {
+    "ts": "2026-04-20T14:57",
+    "author": "TelecomTom",
+    "msg": "Same here depressing is an understatement",
+    "id": 60665
+  },
+  {
+    "ts": "2026-04-20T14:57",
+    "author": "Willian | Nuvola",
+    "msg": "I much rather see more paying tasks first. Paying = meaningful rewards from day one.",
+    "id": 60666
+  },
+  {
+    "ts": "2026-04-20T14:58",
+    "author": "Miro K",
+    "msg": "well...this easy things in Claude do have a lot of downsides...just today I was cancelling a lot of connectioons through APIs in my mini apps because of Vercel hack. And usual go-to-tech for Claude Code is Vercel + Supabase. Both very unsecure in terms of having env vars saved there...",
+    "id": 60667
+  },
+  {
+    "ts": "2026-04-20T15:00",
+    "author": "Miro K",
+    "msg": "but honestly going on about how much functionalities are or are not in dashboard is secondary to tasks volume and money making back. I am below 5 USD Per day now again",
+    "id": 60668
+  },
+  {
+    "ts": "2026-04-20T15:01",
+    "author": "Alex",
+    "msg": "Are they a task company?? 🫣",
+    "id": 60669
+  },
+  {
+    "ts": "2026-04-20T15:02",
+    "author": "Charles",
+    "msg": "Everyone's a dashboard company with AI nowadays",
+    "id": 60670
+  },
+  {
+    "ts": "2026-04-20T15:02",
+    "author": "Calus B",
+    "msg": "They would be a company that provides a network for testing and verification purposes",
+    "id": 60671
+  },
+  {
+    "ts": "2026-04-20T15:03",
+    "author": "Alex",
+    "msg": "Would be, good point",
+    "id": 60672
+  },
+  {
+    "ts": "2026-04-20T15:03",
+    "author": "Alex",
+    "msg": "If...",
+    "id": 60673
+  },
+  {
+    "ts": "2026-04-20T15:03",
+    "author": "Nico | NodeX",
+    "msg": "yeah I avoid those.. for the backend side.. I fully self host and clearly spec the implementation avoiding supabase and other 3e parties.",
+    "id": 60674
+  },
+  {
+    "ts": "2026-04-20T15:03",
+    "author": "Calus B",
+    "msg": "I think when",
+    "id": 60675
+  },
+  {
+    "ts": "2026-04-20T15:03",
+    "author": "Flippy",
+    "msg": "Ofcourse but not even being able to deliver a standard dashboard in 6 months for UNOs is insane",
+    "id": 60676
+  },
+  {
+    "ts": "2026-04-20T15:04",
+    "author": "Nico | NodeX",
+    "msg": "Can we look up a license using the license ID already?",
+    "id": 60677
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "Flippy",
+    "msg": "No",
+    "id": 60678
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "Nico | NodeX",
+    "msg": "that's like so easy to add as a filter",
+    "id": 60679
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "Flippy",
+    "msg": "It is as if they dont want is to check and manage this",
+    "id": 60680
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "chilly",
+    "msg": "No he's got a point, most other companies are dashboard companies first and the product they sell company second",
+    "id": 60681
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "chilly",
+    "msg": "Can't do both",
+    "id": 60682
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "Nico | NodeX",
+    "msg": "basic filtering (not even asking  for grouping logically)",
+    "id": 60683
+  },
+  {
+    "ts": "2026-04-20T15:05",
+    "author": "Flippy",
+    "msg": "Nothing, no search no filters, its nuts.",
+    "id": 60684
+  },
+  {
+    "ts": "2026-04-20T15:06",
+    "author": "Flippy",
+    "msg": "Been asked for since day one",
+    "id": 60685
+  },
+  {
+    "ts": "2026-04-20T15:06",
+    "author": "Nico | NodeX",
+    "msg": "I need a filter on tag and license ID at minimum",
+    "id": 60686
+  },
+  {
+    "ts": "2026-04-20T15:06",
+    "author": "Calus B",
+    "msg": "The point was that the main priority is not the dashboard it’s the product. Clearly they are hardly paying much attention to the dashboard at all",
+    "id": 60687
+  },
+  {
+    "ts": "2026-04-20T15:06",
+    "author": "Flippy",
+    "msg": "Stop this bullshit",
+    "id": 60688
+  },
+  {
+    "ts": "2026-04-20T15:06",
+    "author": "Akira",
+    "msg": "i built this in my custom dashboard",
+    "id": 60689
+  },
+  {
+    "ts": "2026-04-20T15:07",
+    "author": "Flippy",
+    "msg": "Every normal dev would fix that shit in a few days",
+    "id": 60690
+  },
+  {
+    "ts": "2026-04-20T15:07",
+    "author": "Nico | NodeX",
+    "msg": "meanwhile we don't have a simple way to manage licenses, we just need to keep scrolling and scrolling",
+    "id": 60691
+  },
+  {
+    "ts": "2026-04-20T15:07",
+    "author": "Akira",
+    "msg": "plus many other cool features",
+    "id": 60692
+  },
+  {
+    "ts": "2026-04-20T15:07",
+    "author": "Dave",
+    "msg": "No, it is 100% a verification issue due to Google attestation.",
+    "id": 60693
+  },
+  {
+    "ts": "2026-04-20T15:07",
+    "author": "Nico | NodeX",
+    "msg": "I'm done with scrolling for something as basic as filtering",
+    "id": 60694
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Flippy",
+    "msg": "When you click a license back and forth you can start from top again",
+    "id": 60695
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Flippy",
+    "msg": "Mindblowing devs",
+    "id": 60696
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Charles",
+    "msg": "That's not dashboarding, that's essential functionality which is lacking",
+    "id": 60697
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Flippy",
+    "msg": "And we are expecting tasks?",
+    "id": 60698
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Flippy",
+    "msg": "Never",
+    "id": 60699
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Nico | NodeX",
+    "msg": "O(n2)  complexity to revoke some licenses",
+    "id": 60700
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Calus B",
+    "msg": "Yea if that was the thing the dev would doing . If they are working on a crap ton of other stuff then yea dashboard and filters are going to suffer. Likely till they get some of these tasks in qa are launched and then dashboard filters api will all launch",
+    "id": 60701
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Charles",
+    "msg": "Don't be silly",
+    "id": 60702
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Alex",
+    "msg": "Keeps you busy while waiting for tasks 😂",
+    "id": 60703
+  },
+  {
+    "ts": "2026-04-20T15:08",
+    "author": "Flippy",
+    "msg": "Rug this shit already",
+    "id": 60704
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Akira",
+    "msg": "i thought you said they had multiple teams delivering in all fronts",
+    "id": 60705
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Akira",
+    "msg": "now there's only 1 dev????",
+    "id": 60706
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Calus B",
+    "msg": "I’ve literally never said that",
+    "id": 60707
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Adam Buracchi",
+    "msg": "The reality is that they are not capable to deliver either for now…",
+    "id": 60708
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Calus B",
+    "msg": "I’ve also never said that",
+    "id": 60709
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Akira",
+    "msg": "huh 😳 really?",
+    "id": 60710
+  },
+  {
+    "ts": "2026-04-20T15:09",
+    "author": "Akira",
+    "msg": "you sure buddy",
+    "id": 60711
+  },
+  {
+    "ts": "2026-04-20T15:10",
+    "author": "Alex",
+    "msg": "Small team ser, tiny tiny, busy busy 😁",
+    "id": 60712
+  },
+  {
+    "ts": "2026-04-20T15:10",
+    "author": "Nico | NodeX",
+    "msg": "but every AMA they announced more hiring",
+    "id": 60713
+  },
+  {
+    "ts": "2026-04-20T15:11",
+    "author": "Nico | NodeX",
+    "msg": "hire some Claude agents",
+    "id": 60714
+  },
+  {
+    "ts": "2026-04-20T15:11",
+    "author": "Calus B",
+    "msg": "Delivering on all fronts? That’s not language that I generally use. They do have Dev spreading across the world. They have talked about how they can cover all time zones.",
+    "id": 60715
+  },
+  {
+    "ts": "2026-04-20T15:11",
+    "author": "Alex",
+    "msg": "Expansion in progress",
+    "id": 60716
+  },
+  {
+    "ts": "2026-04-20T15:11",
+    "author": "Calus B",
+    "msg": "We know they hired at least a couple people for scout and runner",
+    "id": 60717
+  },
+  {
+    "ts": "2026-04-20T15:11",
+    "author": "Alex",
+    "msg": "We've been expanding for a month now😊",
+    "id": 60718
+  },
+  {
+    "ts": "2026-04-20T15:12",
+    "author": "Alex",
+    "msg": "Super scouts??",
+    "id": 60719
+  },
+  {
+    "ts": "2026-04-20T15:12",
+    "author": "Calus B",
+    "msg": "No admins to run the backend of scout and runner",
+    "id": 60720
+  },
+  {
+    "ts": "2026-04-20T15:12",
+    "author": "Nico | NodeX",
+    "msg": "hopefully not too spread out.  anything more than 6h time difference already gets hard",
+    "id": 60721
+  },
+  {
+    "ts": "2026-04-20T15:12",
+    "author": "Calus B",
+    "msg": "Super scouts are people who help out with specific tasks",
+    "id": 60722
+  },
+  {
+    "ts": "2026-04-20T15:13",
+    "author": "Calus B",
+    "msg": "I just know they have talked about that",
+    "id": 60723
+  },
+  {
+    "ts": "2026-04-20T15:13",
+    "author": "Pilla",
+    "msg": "Any sign of the volume increases for CLI and sms yet?",
+    "id": 60724
+  },
+  {
+    "ts": "2026-04-20T15:14",
+    "author": "redman",
+    "msg": "you can do \"{endpoint}/functions/v1/licenses_get_licenses \nwith \npayload : {\"role\":\"uno\",\"licenseId\":\"0x03253....\",\"skip\":0,\"take\":1}\nthis gives you license details\n\nand also\n\n\"{endpoint}/rest/v1/rpc/license_analytics_get_by_license\" this gives you license stats\n\nand \n\"{endpoint}/rest/v1/rpc/rewards_get_allocations_summary?limit=1\"\n\nfor license rewards",
+    "id": 60725
+  },
+  {
+    "ts": "2026-04-20T15:14",
+    "author": "redman",
+    "msg": "not optimal but this works",
+    "id": 60726
+  },
+  {
+    "ts": "2026-04-20T15:14",
+    "author": "Flippy",
+    "msg": "Lmfao",
+    "id": 60727
+  },
+  {
+    "ts": "2026-04-20T15:14",
+    "author": "Alex",
+    "msg": "Man, you deserve a medal and a big one 😂 defending 24/7 must be very tiring with no light at the end in sight",
+    "id": 60728
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I can’t say I disagree on the dashboard requests\nSome decent filters and search feature shouldn’t be longer that 1 day work\n\nI understand they have a schedule, planning and so on\nBut sometimes you gotta adapt\n\nUNOs need to organize their shit",
+    "id": 60729
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "My 2 cnt",
+    "id": 60730
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Akira",
+    "msg": "[Photo] my bad, i must have gotten confused with all these then",
+    "id": 60731
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Akira",
+    "msg": "[Photo]",
+    "id": 60732
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Akira",
+    "msg": "[Photo]",
+    "id": 60733
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Akira",
+    "msg": "[Photo]",
+    "id": 60734
+  },
+  {
+    "ts": "2026-04-20T15:15",
+    "author": "Akira",
+    "msg": "[Photo]",
+    "id": 60735
+  },
+  {
+    "ts": "2026-04-20T15:16",
+    "author": "Nico | NodeX",
+    "msg": "yes they basically have that. they just need o wrap it into a RPC call with API KEY access probably.",
+    "id": 60736
+  },
+  {
+    "ts": "2026-04-20T15:18",
+    "author": "Pilla",
+    "msg": "So it’s a no for this one so far!!\n\nAny signs of the task that assistant said was “days, not weeks” away…….2 weeks ago?",
+    "id": 60737
+  },
+  {
+    "ts": "2026-04-20T15:18",
+    "author": "Calus B",
+    "msg": "Nothing in here contradicts, what I just said",
+    "id": 60738
+  },
+  {
+    "ts": "2026-04-20T15:19",
+    "author": "Calus B",
+    "msg": "Delivering on all fronts? That’s not language that I generally use. They do have Dev spreading across the world. They have talked about how they can cover all time zones.",
+    "id": 60739
+  },
+  {
+    "ts": "2026-04-20T15:20",
+    "author": "Akira",
+    "msg": "no problem, you are right ser",
+    "id": 60740
+  },
+  {
+    "ts": "2026-04-20T15:21",
+    "author": "redman",
+    "msg": "correct, right now you make 3 calls for license details. hope this is wrapped into 1",
+    "id": 60741
+  },
+  {
+    "ts": "2026-04-20T15:34",
+    "author": "Alex",
+    "msg": "Pls be patient ser, dev cooking.",
+    "id": 60742
+  },
+  {
+    "ts": "2026-04-20T15:36",
+    "author": "Alex",
+    "msg": "Where's the food channel, Where's A B wen you need him 🤣",
+    "id": 60743
+  },
+  {
+    "ts": "2026-04-20T15:36",
+    "author": "Quoia75",
+    "msg": "**__Getting married to your bags so to speak can happen really no matter how diversified or not you are. You cannot be emotionally invested and expect success.__**\n\nExactamundo.\n\nAfter holding a Cardano bag for over 6 years, I liquidated it to buy Unity nodes.\n\nThe traditional three pillars of a well diversified portfolio: Real Estate - Stocks, Bonds (and now Crypto) etc., - and owning a Business.👌",
+    "id": 60744
+  },
+  {
+    "ts": "2026-04-20T15:38",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "@admin\nI tried setting up another phone for the CLI task, but I cant get my phone number verified. It says \"Failed to initiate verification\". Is the service down? When I retry I get the \"too many attempts\" error. I waited all day to get out of the retry error window....",
+    "id": 60745
+  },
+  {
+    "ts": "2026-04-20T15:38",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "[Photo]",
+    "id": 60746
+  },
+  {
+    "ts": "2026-04-20T15:40",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Let me find out",
+    "id": 60747
+  },
+  {
+    "ts": "2026-04-20T15:40",
+    "author": "Eddie H",
+    "msg": "Had me excited there for a minute when I opened up the telegram group",
+    "id": 60748
+  },
+  {
+    "ts": "2026-04-20T15:42",
+    "author": "Paul",
+    "msg": "Are we expecting the public release of S&R by the end of this week? And if so, will that lead to a significant increase in ULO participation in Runner roles and eventually translate into real rewards in UNOs?",
+    "id": 60749
+  },
+  {
+    "ts": "2026-04-20T15:43",
+    "author": "HFA | Earnest Nodes",
+    "msg": "Why am I not earning any rewards or why my rewards are so low?\n\nPlease note that rewards earnings are based on PoW (Proof of Work) which in simple terms means that the app must perform certain Telco tasks for the user to earn. Please also note that any of the situations below can cause a disconnection in the app hence paused earnings.\n\n1. Phone is turned off. Unity app will be disconnected and no earnings will occur.\nSolution: please keep your phone or device powered on at all times with no charge issues.\n\n  2. App’s permission to work in the Background is turned off.\nSolution: Please allow Unity app to work in the background of your device. ( Change your device settings)\n \n  3. Unity app is acting up and not being responsive.\nSolution: Please force-stop the app and try to reconnect to resolve the issue. ( Try powering off, or logging out and logging back in with the email address originally provided )\n\n  4. Unbound License.\nYour license may not be bound with your device hence causing pause in earnings.\nSolution: Please select the 3 dots on the bottom right and then select “Work” from the menu bar, there, select the license to be bound and then hit continue. That should resolve the issue of app is being disconnected. ( You can also unbind and bind back in the license to fix the issue)\n\n  5. No WiFi or Mobile Data connection.\nSolution: Make sure that your device is connected to the WiFi network or mobile data connection at all times for the app to work in the background and earn rewards for you. No connection simply means no earnings or low earnings!\n\nWhat does grey dot means on the left side of Unity license code?\n\nThe Grey dot ( The Green dot means that the app is connected to the internet and functional. How to find Dot in your app? Select the “key” icon on the bottom of the app to find the license number and the dot either green or grey on the left side) simply means that your Unity app is not connected to a WiFi or mobile data connection or any other reasons described above. That means that you are not  earning rewards. That is counter productive for both UNO( Unity Node Operator ie., Earnest Nodes) and ULOs( You, the Unity License Operator). \n\nIMPORTANT:\nPlease make sure that your device is on, connected to the internet and the app is working correctly without any issues. \n\nPlease also see the image of the grey dot that is an indication of activity or inactivity in terms of earnings.\n\nIf you still are having an issue with the app, please contact us by email: \nYou can also direct message us through the Unity app’s messaging feature ( Please make sure to turn it on by clicking on communication and selecting the message button).\n\nThank you",
+    "id": 60750
+  },
+  {
+    "ts": "2026-04-20T15:43",
+    "author": "HFA | Earnest Nodes",
+    "msg": "I created this helpful guide for my ULOS to understand the connection importance and pow",
+    "id": 60751
+  },
+  {
+    "ts": "2026-04-20T15:50",
+    "author": "Dennis",
+    "msg": "Did anyone got any cli task?",
+    "id": 60752
+  },
+  {
+    "ts": "2026-04-20T15:50",
+    "author": "Willian | Nuvola",
+    "msg": "S&R public beta is scheduled to go live on the 22nd starting with MapQuest for the first 7 days. \n\nYou can expect also an increase on CLI and SMS volume starting today. According to @unityassistant. Things are expected to take a VERY positive turn this week. 🤞",
+    "id": 60753
+  },
+  {
+    "ts": "2026-04-20T15:55",
+    "author": "salee",
+    "msg": "really... but really, we should do all that... ooo, we didn't know... thanks, really...🤭",
+    "id": 60754
+  },
+  {
+    "ts": "2026-04-20T16:00",
+    "author": "Page Øne",
+    "msg": "I wonder if we will hear today abit more about the \"Larger volumes from customers are expected starting Monday. \"",
+    "id": 60756
+  },
+  {
+    "ts": "2026-04-20T16:01",
+    "author": "Compost Man Unity code: XY",
+    "msg": "To my mind, it's obvious they are giving this as a useful bit of text for our ulos.",
+    "id": 60757
+  },
+  {
+    "ts": "2026-04-20T16:01",
+    "author": "Page Øne",
+    "msg": "i think its more on the fact for past 3/4 weeks we have been dealing with low rewards and probably all these steps have been done",
+    "id": 60758
+  },
+  {
+    "ts": "2026-04-20T16:02",
+    "author": "Compost Man Unity code: XY",
+    "msg": "People are frustrated and touchy. On the other hand, I see it that this guy tried to do something positive by sharing this text with us. Positivity is in short supply",
+    "id": 60759
+  },
+  {
+    "ts": "2026-04-20T16:03",
+    "author": "Page Øne",
+    "msg": "i agree",
+    "id": 60760
+  },
+  {
+    "ts": "2026-04-20T16:04",
+    "author": "Rdawgie",
+    "msg": "I don't like this take. Nobody is claiming Unity is a dashboard company but there are clear shortcomings on this dashboard. Of course we want the focus to be on task but if your going to release something (the dashboard) don't half ass it.",
+    "id": 60761
+  },
+  {
+    "ts": "2026-04-20T16:05",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Well done and thank you for sharing! 🙏❤️",
+    "id": 60762
+  },
+  {
+    "ts": "2026-04-20T16:06",
+    "author": "Calus B",
+    "msg": "I understand. The dashboard is definitely unfinished. My only point was that they’ve clearly decided that there are other priorities above and beyond the dashboard at this point thinking the dashboard is in the state it’s in because they are incapable of making a better one is incorrect.",
+    "id": 60763
+  },
+  {
+    "ts": "2026-04-20T16:08",
+    "author": "Page Øne",
+    "msg": "I agree with Calus to be honest @Rdawgie i give zero ..... on dashboard right now lol  all the cents i rather have them bring me tasks what is also somewhere in the aether. \n\n\nMaybe in an parallel universe  we already have had 30 tasks 🤔 and Q1  completed",
+    "id": 60764
+  },
+  {
+    "ts": "2026-04-20T16:09",
+    "author": "Rdawgie",
+    "msg": "I'm in the mindset that if you're committed to complete something, don't have ass it. If i tell my kid to clean the front room and they only pick up a few toys, that's not cleaning up the front room even they said they picked up stuff.",
+    "id": 60765
+  },
+  {
+    "ts": "2026-04-20T16:09",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Wish you all a happy CLI day",
+    "id": 60766
+  },
+  {
+    "ts": "2026-04-20T16:09",
+    "author": "Page Øne",
+    "msg": "why whats happening",
+    "id": 60767
+  },
+  {
+    "ts": "2026-04-20T16:10",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "CLI is supposed to ramp up this week, starting today",
+    "id": 60768
+  },
+  {
+    "ts": "2026-04-20T16:10",
+    "author": "Page Øne",
+    "msg": "where was it written ?",
+    "id": 60769
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "@unityassistant said so last week",
+    "id": 60770
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "salee",
+    "msg": "aww, is he going to start doing something here, as he should...",
+    "id": 60771
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "Compost Man Unity code: XY",
+    "msg": "You are trolling right?",
+    "id": 60772
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "Page Øne",
+    "msg": "you  mean this ?",
+    "id": 60773
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "Page Øne",
+    "msg": "No offense taken - but let’s look at the facts. Tasks have been released. Telemetry tasks have improved and will continue to improve. Voice CLI testing is live. SMS CLI and content testing is live. Larger volumes from customers are expected starting Monday. Scout and Runner Alpha has also been producing rewards and is due for public release. \n\nMultiple additional tasks are due to launch on the network. That’s not the same story since January - that’s delivery.​​​​​​​​​​​​​​​​ Let’s keep things in perspective.",
+    "id": 60774
+  },
+  {
+    "ts": "2026-04-20T16:11",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Yes",
+    "id": 60775
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "Page Øne",
+    "msg": "i only see \"Larger volumes from customers are expected starting monday\"",
+    "id": 60776
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "Miyagi Node",
+    "msg": "Monday soon right",
+    "id": 60777
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "Miyagi Node",
+    "msg": "Like obvz not this Monday",
+    "id": 60778
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "Miyagi Node",
+    "msg": "Smh",
+    "id": 60779
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Yeah it's just a timeline",
+    "id": 60780
+  },
+  {
+    "ts": "2026-04-20T16:12",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Date",
+    "id": 60781
+  },
+  {
+    "ts": "2026-04-20T16:13",
+    "author": "Willian | Nuvola",
+    "msg": "[Photo] 👀",
+    "id": 60782
+  },
+  {
+    "ts": "2026-04-20T16:15",
+    "author": "Page Øne",
+    "msg": "[File: thanos-snap.mp4]",
+    "id": 60783
+  },
+  {
+    "ts": "2026-04-20T16:20",
+    "author": "Quoia75",
+    "msg": "Manifest thinking. Let's hope it becomes a reality today.",
+    "id": 60784
+  },
+  {
+    "ts": "2026-04-20T16:21",
+    "author": "Page Øne",
+    "msg": "[Video]",
+    "id": 60785
+  },
+  {
+    "ts": "2026-04-20T16:22",
+    "author": "Page Øne",
+    "msg": "hahaha [Quoia75](tg://user?id=8372685732) 😂",
+    "id": 60786
+  },
+  {
+    "ts": "2026-04-20T16:24",
+    "author": "Quoia75",
+    "msg": "Jesus...LOL!",
+    "id": 60787
+  },
+  {
+    "ts": "2026-04-20T16:25",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Are we stuck in a social experiment?",
+    "id": 60788
+  },
+  {
+    "ts": "2026-04-20T16:26",
+    "author": "Willian | Nuvola",
+    "msg": "[File: jim-carrey-carrey.mp4]",
+    "id": 60789
+  },
+  {
+    "ts": "2026-04-20T16:27",
+    "author": "Page Øne",
+    "msg": "maybe how long will it take until everybody loses their s**** hahah",
+    "id": 60790
+  },
+  {
+    "ts": "2026-04-20T16:28",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I just tried to send a 'stuck in the simulation' gif... System said no",
+    "id": 60791
+  },
+  {
+    "ts": "2026-04-20T16:28",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: matrix-online.mp4]",
+    "id": 60792
+  },
+  {
+    "ts": "2026-04-20T16:30",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "[File: malfunction-system-malfunction.mp4]",
+    "id": 60793
+  },
+  {
+    "ts": "2026-04-20T16:54",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "@defiants_Voslauer Any update?",
+    "id": 60794
+  },
+  {
+    "ts": "2026-04-20T16:57",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Not yet mate, I’m still waiting as well",
+    "id": 60795
+  },
+  {
+    "ts": "2026-04-20T16:59",
+    "author": "Quoia75",
+    "msg": "If you see Cal and Val cross over to the Dark Side - now it's time to panic.🥹",
+    "id": 60796
+  },
+  {
+    "ts": "2026-04-20T16:59",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Did they cross?",
+    "id": 60797
+  },
+  {
+    "ts": "2026-04-20T17:00",
+    "author": "Quoia75",
+    "msg": "Not yet, not yet...",
+    "id": 60798
+  },
+  {
+    "ts": "2026-04-20T17:00",
+    "author": "Quoia75",
+    "msg": "[File: magic8ball-pool-ball.mp4]",
+    "id": 60799
+  },
+  {
+    "ts": "2026-04-20T17:14",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: batman-hmmm.mp4]",
+    "id": 60800
+  },
+  {
+    "ts": "2026-04-20T17:15",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "So… no more drama unless we cross over?\n\nDeal!",
+    "id": 60801
+  },
+  {
+    "ts": "2026-04-20T17:17",
+    "author": "Kerry",
+    "msg": "I’m sure everything will be fine in “7 to 10 days“",
+    "id": 60802
+  },
+  {
+    "ts": "2026-04-20T17:17",
+    "author": "Kerry",
+    "msg": "[File: chamaniya-muskan-smile.mp4]",
+    "id": 60803
+  },
+  {
+    "ts": "2026-04-20T17:17",
+    "author": "Akira",
+    "msg": "i truly wonder this sometimes",
+    "id": 60804
+  },
+  {
+    "ts": "2026-04-20T17:17",
+    "author": "Kerry",
+    "msg": "If not, we’ll “just give the team a couple weeks too…“",
+    "id": 60805
+  },
+  {
+    "ts": "2026-04-20T17:18",
+    "author": "Kerry",
+    "msg": "[File: ha-smirk.mp4]",
+    "id": 60806
+  },
+  {
+    "ts": "2026-04-20T17:18",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: umm-zen.mp4]",
+    "id": 60807
+  },
+  {
+    "ts": "2026-04-20T17:22",
+    "author": "Page Øne",
+    "msg": "Dear @defiants_Voslauer , a question could you maybe ask of the team what was ment with \" larger volmumes from customers are expected starting today\" \n\nOn what side CLI, SMS or is it the current task ?",
+    "id": 60808
+  },
+  {
+    "ts": "2026-04-20T17:25",
+    "author": "Node Broker",
+    "msg": "I asked the team specifically about this…There are common issues/questions that ULO’s are asking. I believe it would be beneficial to have the team create a guide that answers these common questions so we don’t have to keep rotating the same questions in the chats.",
+    "id": 60809
+  },
+  {
+    "ts": "2026-04-20T17:37",
+    "author": "BeamNode",
+    "msg": "Just in: got my first caller id!🔥",
+    "id": 60810
+  },
+  {
+    "ts": "2026-04-20T17:37",
+    "author": "Miyagi Node",
+    "msg": "Nahhhh",
+    "id": 60811
+  },
+  {
+    "ts": "2026-04-20T17:37",
+    "author": "Miyagi Node",
+    "msg": "Lies",
+    "id": 60812
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Page Øne",
+    "msg": "if you lie i will find you and kill you",
+    "id": 60813
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Pic or didn't happen",
+    "id": 60814
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Willian | Nuvola",
+    "msg": "[File: i'm-warning-you-hey-watch-it.mp4]",
+    "id": 60815
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "BeamNode",
+    "msg": "One moment",
+    "id": 60816
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: liam-neeson-i-will-find-you.mp4]",
+    "id": 60817
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Page Øne",
+    "msg": "chatgpt started up processing image",
+    "id": 60818
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Page Øne",
+    "msg": "comeback in 2 hours you reached your limit",
+    "id": 60819
+  },
+  {
+    "ts": "2026-04-20T17:38",
+    "author": "Page Øne",
+    "msg": "😂",
+    "id": 60820
+  },
+  {
+    "ts": "2026-04-20T17:39",
+    "author": "Willian | Nuvola",
+    "msg": "Upgrade to PRO",
+    "id": 60821
+  },
+  {
+    "ts": "2026-04-20T17:39",
+    "author": "Page Øne",
+    "msg": "stopped using chatgpt, i went straigh to Claude and perplexity but claude man pfffff such a token destroyer",
+    "id": 60822
+  },
+  {
+    "ts": "2026-04-20T17:40",
+    "author": "Willian | Nuvola",
+    "msg": "Yep!! Haha. Are you paying for both?",
+    "id": 60823
+  },
+  {
+    "ts": "2026-04-20T17:40",
+    "author": "Pilla",
+    "msg": "Just had a CLI call come through!! 🎉\n\nDon’t know where the rewards went though!! 🤦‍♂️",
+    "id": 60824
+  },
+  {
+    "ts": "2026-04-20T17:40",
+    "author": "Lazeedan40",
+    "msg": "Me too",
+    "id": 60825
+  },
+  {
+    "ts": "2026-04-20T17:40",
+    "author": "Page Øne",
+    "msg": "yeah   XD painfull that is my gaming money hahah",
+    "id": 60826
+  },
+  {
+    "ts": "2026-04-20T17:40",
+    "author": "Willian | Nuvola",
+    "msg": "🫣",
+    "id": 60827
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Page Øne",
+    "msg": "atleast perplexity  keeps working and computer+ is only token based",
+    "id": 60828
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I JUST GOT A CALL!!!!!!!",
+    "id": 60829
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "mr.0297 UNITYEARN",
+    "msg": "Me too!!",
+    "id": 60830
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "It was my son, asking for money again!",
+    "id": 60831
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Willian | Nuvola",
+    "msg": "[File: you-sure-about-that.mp4]",
+    "id": 60832
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Pilla",
+    "msg": "[Photo] Forgot to check if it was a test call",
+    "id": 60833
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Gwims",
+    "msg": "Let’s see then",
+    "id": 60834
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "mr.0297 UNITYEARN",
+    "msg": "[Photo]",
+    "id": 60835
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Page Øne",
+    "msg": "i dotn trust it",
+    "id": 60836
+  },
+  {
+    "ts": "2026-04-20T17:41",
+    "author": "Page Øne",
+    "msg": "first off all never seen this person here",
+    "id": 60837
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "Page Øne",
+    "msg": "who is pilla",
+    "id": 60838
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "mr.0297 UNITYEARN",
+    "msg": "Always here from inception. Lurking",
+    "id": 60839
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "Here it is",
+    "id": 60840
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: adele-hello.mp4]",
+    "id": 60841
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "Willian | Nuvola",
+    "msg": "Are they getting reported automatically?",
+    "id": 60842
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "mr.0297 UNITYEARN",
+    "msg": "Nope",
+    "id": 60843
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "[Photo] First time for me!👏",
+    "id": 60844
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "[Photo]",
+    "id": 60845
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "[Photo]",
+    "id": 60846
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "[Photo]",
+    "id": 60847
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "BeamNode",
+    "msg": "🔥🔥",
+    "id": 60848
+  },
+  {
+    "ts": "2026-04-20T17:42",
+    "author": "Page Øne",
+    "msg": "still dont believe it",
+    "id": 60849
+  },
+  {
+    "ts": "2026-04-20T17:43",
+    "author": "BeamNode",
+    "msg": "Hahha",
+    "id": 60850
+  },
+  {
+    "ts": "2026-04-20T17:43",
+    "author": "Page Øne",
+    "msg": "Unity gave me trust issues",
+    "id": 60851
+  },
+  {
+    "ts": "2026-04-20T17:43",
+    "author": "Willian | Nuvola",
+    "msg": "Damn! 😞",
+    "id": 60852
+  },
+  {
+    "ts": "2026-04-20T17:43",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Never trust Dutch guys!",
+    "id": 60853
+  },
+  {
+    "ts": "2026-04-20T17:43",
+    "author": "mr.0297 UNITYEARN",
+    "msg": "[Photo]",
+    "id": 60854
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Miyagi Node",
+    "msg": "[Photo] Me too",
+    "id": 60855
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Miyagi Node",
+    "msg": "Legit tho, not like these other peeps",
+    "id": 60856
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Page Øne",
+    "msg": "i believe this one",
+    "id": 60857
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Page Øne",
+    "msg": "looks legit",
+    "id": 60858
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "BeamNode",
+    "msg": "Never!😤",
+    "id": 60859
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Lazeedan40",
+    "msg": "[Photo]",
+    "id": 60860
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Willian | Nuvola",
+    "msg": "I wonder if the majority will be 0.10",
+    "id": 60861
+  },
+  {
+    "ts": "2026-04-20T17:44",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I'm SURE that one isn't AI!",
+    "id": 60862
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "Willian | Nuvola",
+    "msg": "Are you SUrE? 🤔",
+    "id": 60863
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "Page Øne",
+    "msg": "it has the same design as our dashboard @Coinfera  so its correct",
+    "id": 60864
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Well.... Looks too natural!",
+    "id": 60865
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Shots fired!",
+    "id": 60866
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "Pilla",
+    "msg": "There still seems to be the issue where the ULO takes all the rewards!!",
+    "id": 60867
+  },
+  {
+    "ts": "2026-04-20T17:45",
+    "author": "BeamNode",
+    "msg": "History has been made. \n\n20/04/2026📅",
+    "id": 60868
+  },
+  {
+    "ts": "2026-04-20T17:46",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Hope that's not the case or we're fuc.ed😁",
+    "id": 60869
+  },
+  {
+    "ts": "2026-04-20T17:46",
+    "author": "Pilla",
+    "msg": "And it’s still test calls, I had two calls, both the same number!!",
+    "id": 60870
+  },
+  {
+    "ts": "2026-04-20T17:46",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "All calls are test calls man",
+    "id": 60871
+  },
+  {
+    "ts": "2026-04-20T17:46",
+    "author": "Page Øne",
+    "msg": "[File: shoot-guns.mp4]",
+    "id": 60872
+  },
+  {
+    "ts": "2026-04-20T17:47",
+    "author": "Pilla",
+    "msg": "It is, happened with both phones",
+    "id": 60873
+  },
+  {
+    "ts": "2026-04-20T17:47",
+    "author": "Pilla",
+    "msg": "It’s the same number calling everyone!!",
+    "id": 60874
+  },
+  {
+    "ts": "2026-04-20T17:48",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I'm gonna DM the guy!, Where's my call!",
+    "id": 60875
+  },
+  {
+    "ts": "2026-04-20T17:48",
+    "author": "Adam Buracchi",
+    "msg": "Ok I would not get carried away as far as we know it just got from 1 call to 2 calls on CLI \nThat’s not what I call volume…",
+    "id": 60876
+  },
+  {
+    "ts": "2026-04-20T17:48",
+    "author": "Nico | NodeX",
+    "msg": "100% scaling",
+    "id": 60877
+  },
+  {
+    "ts": "2026-04-20T17:49",
+    "author": "OC Nodes",
+    "msg": "Josh must have a free morning 😁",
+    "id": 60878
+  },
+  {
+    "ts": "2026-04-20T17:49",
+    "author": "BeamNode",
+    "msg": "Just a jk😁",
+    "id": 60879
+  },
+  {
+    "ts": "2026-04-20T17:49",
+    "author": "Adam Buracchi",
+    "msg": "😅😬❤️👏",
+    "id": 60880
+  },
+  {
+    "ts": "2026-04-20T17:49",
+    "author": "OC Nodes",
+    "msg": "Critical moments for Unity UNO bros",
+    "id": 60881
+  },
+  {
+    "ts": "2026-04-20T17:50",
+    "author": "Adam Buracchi",
+    "msg": "😂 yes still not the volume I would like",
+    "id": 60882
+  },
+  {
+    "ts": "2026-04-20T17:50",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Scaling is scaling!",
+    "id": 60883
+  },
+  {
+    "ts": "2026-04-20T17:50",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "details",
+    "id": 60884
+  },
+  {
+    "ts": "2026-04-20T17:51",
+    "author": "Nico | NodeX",
+    "msg": "I wonder if this means the Exchange is starting",
+    "id": 60885
+  },
+  {
+    "ts": "2026-04-20T17:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "???\n\nTotally unrelated bro",
+    "id": 60886
+  },
+  {
+    "ts": "2026-04-20T17:51",
+    "author": "Pilla",
+    "msg": "The fact that we still have the reward issue where the ULO takes all the rewards, and the same number sending out test calls, just reminds me of what happened a couple of months ago when community was getting frustrated and a handful of test calls went out.",
+    "id": 60887
+  },
+  {
+    "ts": "2026-04-20T17:52",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Routes are being tested by a major customer live on the platform at this time.\n\nAdditional customers are expected to be onboarded. \n\nThe release of the voice and SMS exchange is also expected to increase volumes, pending official announcements.",
+    "id": 60888
+  },
+  {
+    "ts": "2026-04-20T17:52",
+    "author": "Nico | NodeX",
+    "msg": "aren't they using it for offering the tasks to the client, or maybe I'm mixing things up",
+    "id": 60889
+  },
+  {
+    "ts": "2026-04-20T17:53",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Some info from the team 🙌",
+    "id": 60890
+  },
+  {
+    "ts": "2026-04-20T17:53",
+    "author": "Pilla",
+    "msg": "It’s like I received the call on the iPhone (ULO only) with 100% of the rewards going to the UNO, \n\nMy uno dashboard shows no rewards, but my license has now earned .10. It should be zero as it’s 100% to UNO",
+    "id": 60891
+  },
+  {
+    "ts": "2026-04-20T17:53",
+    "author": "Nico | NodeX",
+    "msg": "nice nice",
+    "id": 60893
+  },
+  {
+    "ts": "2026-04-20T17:54",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Oh you mean it like that\nYeah I can see the connection",
+    "id": 60894
+  },
+  {
+    "ts": "2026-04-20T17:54",
+    "author": "BeamNode",
+    "msg": "I think 100% to the ULO is correct. Even if you have a 50/50 license.",
+    "id": 60895
+  },
+  {
+    "ts": "2026-04-20T17:55",
+    "author": "Pilla",
+    "msg": "I thought they were doing that since January, validating the service?",
+    "id": 60896
+  },
+  {
+    "ts": "2026-04-20T17:55",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "That's impossible, split should always apply",
+    "id": 60897
+  },
+  {
+    "ts": "2026-04-20T17:56",
+    "author": "Pilla",
+    "msg": "That doesn’t sound right, why would a UNO even purchase a node if the ULO gets 100% of the rewards?",
+    "id": 60898
+  },
+  {
+    "ts": "2026-04-20T17:56",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Otherwise why would we have nodes?",
+    "id": 60899
+  },
+  {
+    "ts": "2026-04-20T17:57",
+    "author": "Willian | Nuvola",
+    "msg": "Are we expecting these additional customers this week?",
+    "id": 60900
+  },
+  {
+    "ts": "2026-04-20T17:57",
+    "author": "BeamNode",
+    "msg": "Only for the extra work right? Like sms and calling",
+    "id": 60901
+  },
+  {
+    "ts": "2026-04-20T17:58",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Routes being tested is what the platform is used for. “Test your routes for CLI”.\n\nNot “testing the network module”, that happened previously.",
+    "id": 60902
+  },
+  {
+    "ts": "2026-04-20T17:58",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Don't push it 😛",
+    "id": 60903
+  },
+  {
+    "ts": "2026-04-20T17:58",
+    "author": "Pilla",
+    "msg": "No you’ve got this completely wrong. Both passive and active tasks, UNO gets a split!!",
+    "id": 60904
+  },
+  {
+    "ts": "2026-04-20T17:58",
+    "author": "BeamNode",
+    "msg": "That’s what I think. Correct me if I’m wrong.",
+    "id": 60905
+  },
+  {
+    "ts": "2026-04-20T17:58",
+    "author": "BeamNode",
+    "msg": "Ah okay!👍 thanks",
+    "id": 60906
+  },
+  {
+    "ts": "2026-04-20T17:59",
+    "author": "Willian | Nuvola",
+    "msg": "Just checking man! Just checking. Trying to set expectations and if after these calls we could see another undefined wait period. 🤷🏻‍♂️",
+    "id": 60907
+  },
+  {
+    "ts": "2026-04-20T17:59",
+    "author": "Willian | Nuvola",
+    "msg": "Haha",
+    "id": 60908
+  },
+  {
+    "ts": "2026-04-20T17:59",
+    "author": "OC Nodes",
+    "msg": "Exciting stuff",
+    "id": 60909
+  },
+  {
+    "ts": "2026-04-20T18:00",
+    "author": "Pilla",
+    "msg": "I’m just trying to understand where we are. In January/February we were told the task is live and just waiting for the clients to send work.\n\nIn April we were told the clients were validating the service. What were they validating if it wasn’t this?",
+    "id": 60910
+  },
+  {
+    "ts": "2026-04-20T18:02",
+    "author": "Pilla",
+    "msg": "Also, has the team been notified around the rewards issue?",
+    "id": 60911
+  },
+  {
+    "ts": "2026-04-20T18:02",
+    "author": "Flippy",
+    "msg": "Nice, CLI and SMS coming this year?",
+    "id": 60912
+  },
+  {
+    "ts": "2026-04-20T18:02",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "You mean the split error?",
+    "id": 60913
+  },
+  {
+    "ts": "2026-04-20T18:03",
+    "author": "Pilla",
+    "msg": "Yes",
+    "id": 60914
+  },
+  {
+    "ts": "2026-04-20T18:04",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Well team and mods are reading this so I hope they check it out",
+    "id": 60915
+  },
+  {
+    "ts": "2026-04-20T18:04",
+    "author": "Pilla",
+    "msg": "I have 20 cents in two licenses I’ll never be able to cash out 😢",
+    "id": 60916
+  },
+  {
+    "ts": "2026-04-20T18:07",
+    "author": "Ricky",
+    "msg": "same here 0.1 and 0.1",
+    "id": 60917
+  },
+  {
+    "ts": "2026-04-20T18:12",
+    "author": "Villion",
+    "msg": "Nice! So how does it work? You get 24hrs to call the number back?",
+    "id": 60918
+  },
+  {
+    "ts": "2026-04-20T18:19",
+    "author": "Wen (fed up)",
+    "msg": "Great that CLI has started. Still seems to be a chicken and egg. We’ll need at least one per day if not more to attract ULOs, unless other tasks roll in soon too. \nI’m not getting excited yet.",
+    "id": 60920
+  },
+  {
+    "ts": "2026-04-20T18:19",
+    "author": "FriendlyUrchin",
+    "msg": "Anyone received something to UNO or does it all go to ULO for everyone. We've had this before with CLI.",
+    "id": 60921
+  },
+  {
+    "ts": "2026-04-20T18:19",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Only problem is if split is not split as agreed.",
+    "id": 60922
+  },
+  {
+    "ts": "2026-04-20T18:20",
+    "author": "Wen (fed up)",
+    "msg": "Companies make millions of these calls per month apparently, so a few per day per ULO should be easy, right?",
+    "id": 60923
+  },
+  {
+    "ts": "2026-04-20T18:20",
+    "author": "Eddie H",
+    "msg": "The new meta wen will wen get excited. 😂",
+    "id": 60924
+  },
+  {
+    "ts": "2026-04-20T18:21",
+    "author": "Wen (fed up)",
+    "msg": "I want to be excited but I’m learning extreme patience.",
+    "id": 60925
+  },
+  {
+    "ts": "2026-04-20T18:23",
+    "author": "Fizzy",
+    "msg": "[Photo]",
+    "id": 60926
+  },
+  {
+    "ts": "2026-04-20T18:23",
+    "author": "Fizzy",
+    "msg": "Just received the first CLI call😎",
+    "id": 60927
+  },
+  {
+    "ts": "2026-04-20T18:24",
+    "author": "Desire Munga",
+    "msg": "Me too",
+    "id": 60928
+  },
+  {
+    "ts": "2026-04-20T18:27",
+    "author": "Zolee",
+    "msg": "Did you get a prompt from Unity app to report caller id?",
+    "id": 60929
+  },
+  {
+    "ts": "2026-04-20T18:28",
+    "author": "Fizzy",
+    "msg": "Yeah first a call, then a notification to submit the number in the app",
+    "id": 60930
+  },
+  {
+    "ts": "2026-04-20T18:29",
+    "author": "Lazeedan40",
+    "msg": "No you just press the report caller ID button and enter the telephone number that called you. One of my ULOs just had a call as well and earned 10c",
+    "id": 60931
+  },
+  {
+    "ts": "2026-04-20T18:29",
+    "author": "Zolee",
+    "msg": "And how much did you earn?",
+    "id": 60932
+  },
+  {
+    "ts": "2026-04-20T18:31",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "So he is 0 100 ULO😁",
+    "id": 60933
+  },
+  {
+    "ts": "2026-04-20T18:32",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "That's the most broken thing ever. Unity is about liceses, splits😁",
+    "id": 60934
+  },
+  {
+    "ts": "2026-04-20T18:34",
+    "author": "Zolee",
+    "msg": "It would be acceptable if this issue wasn’t reported two months ago\n\n@unityassistant could you guys have a look at this problem please?",
+    "id": 60935
+  },
+  {
+    "ts": "2026-04-20T18:41",
+    "author": "Lazeedan40",
+    "msg": "10c",
+    "id": 60936
+  },
+  {
+    "ts": "2026-04-20T18:42",
+    "author": "Zolee",
+    "msg": "So your ULO earned 10c and you earned 10c?",
+    "id": 60937
+  },
+  {
+    "ts": "2026-04-20T18:44",
+    "author": "Gwims",
+    "msg": "This was the same issue from before if I remember",
+    "id": 60938
+  },
+  {
+    "ts": "2026-04-20T18:55",
+    "author": "Compost Man Unity code: XY",
+    "msg": "So, CLI call testing starts immediately after we start talking about being in a social experiment. Nothing to see here. Move along.",
+    "id": 60939
+  },
+  {
+    "ts": "2026-04-20T18:57",
+    "author": "Flippy",
+    "msg": "Fake news",
+    "id": 60940
+  },
+  {
+    "ts": "2026-04-20T18:58",
+    "author": "Compost Man Unity code: XY",
+    "msg": "[File: animation.gif.mp4]",
+    "id": 60941
+  },
+  {
+    "ts": "2026-04-20T19:01",
+    "author": "Page Øne",
+    "msg": "[File: done-im.mp4]",
+    "id": 60942
+  },
+  {
+    "ts": "2026-04-20T19:05",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Started on the day they said they would start🤷‍♂",
+    "id": 60943
+  },
+  {
+    "ts": "2026-04-20T19:06",
+    "author": "Compost Man Unity code: XY",
+    "msg": "[File: animation.gif.mp4]",
+    "id": 60944
+  },
+  {
+    "ts": "2026-04-20T19:10",
+    "author": "Lazeedan40",
+    "msg": "My cheap sim phone earned 10c (it's 100% UNO) The rewards shows on the actual phone unity app but not in my main manage.unitynodes.io app yet!\n\nIt doesn't look like i received anything from my ULO click call.",
+    "id": 60945
+  },
+  {
+    "ts": "2026-04-20T19:12",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Huge bug",
+    "id": 60946
+  },
+  {
+    "ts": "2026-04-20T19:14",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Rewards are going to the ULO\nWe’ve informed the team about the bug",
+    "id": 60947
+  },
+  {
+    "ts": "2026-04-20T19:16",
+    "author": "Gwims",
+    "msg": "Sounds like ground hog day with this bug to be honest",
+    "id": 60948
+  },
+  {
+    "ts": "2026-04-20T19:17",
+    "author": "Page Øne",
+    "msg": "not sure i thought it was tested and ready to go but a well when it goes live you will find issues",
+    "id": 60949
+  },
+  {
+    "ts": "2026-04-20T19:17",
+    "author": "OC Nodes",
+    "msg": "Weird this error was reported months ago I'm surprised it's happening now with the major roll out of CLI",
+    "id": 60950
+  },
+  {
+    "ts": "2026-04-20T19:18",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Maybe they forgot\nShit happens\nIt’s reported and will be fixed asap for sure",
+    "id": 60951
+  },
+  {
+    "ts": "2026-04-20T19:20",
+    "author": "Eddie H",
+    "msg": "One of my ULO reported a caller to me via WhatsApp. Like others not seeing the reward my end UNO rewards. Asked for a screenshot",
+    "id": 60952
+  },
+  {
+    "ts": "2026-04-20T19:21",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I’m glad the ULO gets it and not the UNO otherwise it would even be more difficult to explain to ULOs why they got nothing",
+    "id": 60953
+  },
+  {
+    "ts": "2026-04-20T19:34",
+    "author": "Eddie H",
+    "msg": "I want my 5c ! Hahaha 🤣",
+    "id": 60954
+  },
+  {
+    "ts": "2026-04-20T19:40",
+    "author": "Eddie H",
+    "msg": "[Photo]",
+    "id": 60955
+  },
+  {
+    "ts": "2026-04-20T19:40",
+    "author": "Eddie H",
+    "msg": "That's 2",
+    "id": 60956
+  },
+  {
+    "ts": "2026-04-20T19:40",
+    "author": "Nico | NodeX",
+    "msg": "Just received a CLI.. paid 0.044 UP",
+    "id": 60957
+  },
+  {
+    "ts": "2026-04-20T19:41",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "That’s a cool number 😅",
+    "id": 60958
+  },
+  {
+    "ts": "2026-04-20T19:41",
+    "author": "Eddie H",
+    "msg": "3 In total now",
+    "id": 60959
+  },
+  {
+    "ts": "2026-04-20T19:43",
+    "author": "Akira",
+    "msg": "really? as major as the latest web portal update??",
+    "id": 60960
+  },
+  {
+    "ts": "2026-04-20T19:43",
+    "author": "Akira",
+    "msg": "so are these calls real or should I make my own AI image too just for the lols?",
+    "id": 60961
+  },
+  {
+    "ts": "2026-04-20T19:46",
+    "author": "Wen (fed up)",
+    "msg": "Be nice if the team could give a report on the number of calls that went out/have been submitted/accepted etc. \n\nNeedless to say I’ve had no calls.",
+    "id": 60962
+  },
+  {
+    "ts": "2026-04-20T19:47",
+    "author": "Charles",
+    "msg": "Or even which countries are eligible",
+    "id": 60963
+  },
+  {
+    "ts": "2026-04-20T19:47",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Why would UNO's lie about this?",
+    "id": 60964
+  },
+  {
+    "ts": "2026-04-20T19:47",
+    "author": "Voslauer | Will never DM you first",
+    "msg": "Not sure if that’s something to be given out, but I’ll ask on your behalf 🙌",
+    "id": 60965
+  },
+  {
+    "ts": "2026-04-20T19:48",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "It's like, an allergy to say anything positive EVER!",
+    "id": 60966
+  },
+  {
+    "ts": "2026-04-20T19:48",
+    "author": "Rick Middleton",
+    "msg": "Interesting.. what is the split on that licence?",
+    "id": 60967
+  },
+  {
+    "ts": "2026-04-20T19:49",
+    "author": "Nico | NodeX",
+    "msg": "100 to UNO",
+    "id": 60968
+  },
+  {
+    "ts": "2026-04-20T19:49",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "AFAIK with the current bug it's always 0/100 unless they fixed it already",
+    "id": 60970
+  },
+  {
+    "ts": "2026-04-20T19:49",
+    "author": "Willian | Nuvola",
+    "msg": "Just like the saying, happy wife happy life.\n\nSame goes gor ULOs 🤣",
+    "id": 60971
+  },
+  {
+    "ts": "2026-04-20T19:49",
+    "author": "Rick Middleton",
+    "msg": "Hmm.. strange!",
+    "id": 60972
+  },
+  {
+    "ts": "2026-04-20T19:49",
+    "author": "Wen (fed up)",
+    "msg": "Why spin it like that? \nReport would be interesting, no? Nothing about doubting the team, but about insight.",
+    "id": 60973
+  },
+  {
+    "ts": "2026-04-20T19:50",
+    "author": "Rick Middleton",
+    "msg": "I got a CLI - and also my mum just messaged me to say she got one as well..  both were 0.1 UPS each - and both those are set to 100% ULO",
+    "id": 60974
+  },
+  {
+    "ts": "2026-04-20T19:50",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Bad timing, my message wasn't;'t for you tbh\nYour request is actually pretty reasonable",
+    "id": 60975
+  },
+  {
+    "ts": "2026-04-20T19:50",
+    "author": "Nico | NodeX",
+    "msg": "But I got less :D",
+    "id": 60976
+  },
+  {
+    "ts": "2026-04-20T19:50",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Karma!",
+    "id": 60977
+  },
+  {
+    "ts": "2026-04-20T19:51",
+    "author": "Nico | NodeX",
+    "msg": "Sums up Y2026 so far",
+    "id": 60978
+  },
+  {
+    "ts": "2026-04-20T19:51",
+    "author": "Wen (fed up)",
+    "msg": "Wen wen? Wen wen’s mum?",
+    "id": 60979
+  },
+  {
+    "ts": "2026-04-20T19:51",
+    "author": "Adam Buracchi",
+    "msg": "How long did it say you have to send the report?",
+    "id": 60980
+  },
+  {
+    "ts": "2026-04-20T19:51",
+    "author": "Nico | NodeX",
+    "msg": "24h",
+    "id": 60981
+  },
+  {
+    "ts": "2026-04-20T19:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Yeah, we deserve some beating for sure",
+    "id": 60982
+  },
+  {
+    "ts": "2026-04-20T19:52",
+    "author": "Willian | Nuvola",
+    "msg": "[File: green-mile-im-tired-boss.mp4]",
+    "id": 60983
+  },
+  {
+    "ts": "2026-04-20T19:52",
+    "author": "Rick Middleton",
+    "msg": "I was not paying too much attention at that stage sorry..  was drving so had to stop to do the report",
+    "id": 60984
+  },
+  {
+    "ts": "2026-04-20T19:52",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: drama-cute.mp4]",
+    "id": 60985
+  },
+  {
+    "ts": "2026-04-20T19:52",
+    "author": "Willian | Nuvola",
+    "msg": "[File: please-prithviraj.mp4]",
+    "id": 60986
+  },
+  {
+    "ts": "2026-04-20T19:53",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: i-thought-you-didn't-care-about-this-mark.mp4]",
+    "id": 60987
+  },
+  {
+    "ts": "2026-04-20T19:53",
+    "author": "Wen (fed up)",
+    "msg": "Millions of calls per day. \nI really hope the team chew into that bone.",
+    "id": 60988
+  },
+  {
+    "ts": "2026-04-20T19:54",
+    "author": "Willian | Nuvola",
+    "msg": "In it for the tech. But the tech must work boss haha",
+    "id": 60989
+  },
+  {
+    "ts": "2026-04-20T19:54",
+    "author": "Alex",
+    "msg": "Got a call from the tester no on a phone without CLI activated 😂",
+    "id": 60990
+  },
+  {
+    "ts": "2026-04-20T19:55",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: the-first-to-admit-it-elon-musk.mp4]",
+    "id": 60991
+  },
+  {
+    "ts": "2026-04-20T19:55",
+    "author": "Nico | NodeX",
+    "msg": "[File: the-big-lebowski-big-lebowski.mp4]",
+    "id": 60992
+  },
+  {
+    "ts": "2026-04-20T19:55",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: liam-neeson-i-will-find-you.mp4]",
+    "id": 60993
+  },
+  {
+    "ts": "2026-04-20T19:55",
+    "author": "Alex",
+    "msg": "Pls tell tester to call on my other phone🫣",
+    "id": 60994
+  },
+  {
+    "ts": "2026-04-20T19:56",
+    "author": "Charles",
+    "msg": "Did someone forget to tell Claude it’s an opt-in task",
+    "id": 60995
+  },
+  {
+    "ts": "2026-04-20T19:56",
+    "author": "Willian | Nuvola",
+    "msg": "[File: on-fire-pizza.mp4]",
+    "id": 60996
+  },
+  {
+    "ts": "2026-04-20T19:56",
+    "author": "Alex",
+    "msg": "Lol, its funny that same no called me on 2 different phones, one with CLI, the other one without:))",
+    "id": 60997
+  },
+  {
+    "ts": "2026-04-20T19:56",
+    "author": "Willian | Nuvola",
+    "msg": "New people coming to the chat lol",
+    "id": 60998
+  },
+  {
+    "ts": "2026-04-20T19:57",
+    "author": "Zolee",
+    "msg": "Is it possible that you used that number at some point but the database the client got hasn’t been updated since you changed your number ?",
+    "id": 60999
+  },
+  {
+    "ts": "2026-04-20T19:57",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[File: discipline-youre-soft.mp4]",
+    "id": 61000
+  },
+  {
+    "ts": "2026-04-20T19:57",
+    "author": "Alex",
+    "msg": "Don't think so, its a new sim since S&R",
+    "id": 61001
+  },
+  {
+    "ts": "2026-04-20T20:00",
+    "author": "Akira",
+    "msg": "did anyone answer those calls?",
+    "id": 61003
+  },
+  {
+    "ts": "2026-04-20T20:01",
+    "author": "Tap MastersTaps",
+    "msg": "Really everyone is getting calls? Have 6 sims sitting  here all lonely waiting to report 😂",
+    "id": 61004
+  },
+  {
+    "ts": "2026-04-20T20:03",
+    "author": "Peterjo18",
+    "msg": "2 of my 4 phones with SIMs have had CLI. Both from the same caller number. One call did the UNO/ULO split correctly and the other incorrectly did 100% ULO",
+    "id": 61005
+  },
+  {
+    "ts": "2026-04-20T20:05",
+    "author": "Calus B",
+    "msg": "Naw I’m at no calls",
+    "id": 61006
+  },
+  {
+    "ts": "2026-04-20T20:11",
+    "author": "Zolee",
+    "msg": "Was the correct split 100 ULO?",
+    "id": 61007
+  },
+  {
+    "ts": "2026-04-20T20:12",
+    "author": "J. P. Costa",
+    "msg": "Can the team share the list of countries supported so we know to expect a call/sms?",
+    "id": 61008
+  },
+  {
+    "ts": "2026-04-20T20:14",
+    "author": "Flippy",
+    "msg": "Would like to know this as well",
+    "id": 61009
+  },
+  {
+    "ts": "2026-04-20T20:16",
+    "author": "OC Nodes",
+    "msg": "No calls here yet",
+    "id": 61010
+  },
+  {
+    "ts": "2026-04-20T20:20",
+    "author": "Page Øne",
+    "msg": "same dont worry atleast its happening",
+    "id": 61011
+  },
+  {
+    "ts": "2026-04-20T20:20",
+    "author": "OC Nodes",
+    "msg": "Yeah definitely looks really exciting that many are reporting it already.. so real volume is way higher",
+    "id": 61012
+  },
+  {
+    "ts": "2026-04-20T20:23",
+    "author": "Krabalot",
+    "msg": "I'm going to give it a week to measure this. The client might have shot their proverbial CLI load fast and early.",
+    "id": 61013
+  },
+  {
+    "ts": "2026-04-20T20:29",
+    "author": "Rick Middleton",
+    "msg": "Just wondering - has anybody with iPhone had a CLI?",
+    "id": 61014
+  },
+  {
+    "ts": "2026-04-20T20:53",
+    "author": "Jason",
+    "msg": "One of my ULOs has had a call! 😎",
+    "id": 61015
+  },
+  {
+    "ts": "2026-04-20T20:53",
+    "author": "Hattori Hanzo",
+    "msg": "what were the rewards?",
+    "id": 61016
+  },
+  {
+    "ts": "2026-04-20T20:54",
+    "author": "Jason",
+    "msg": "0.10",
+    "id": 61017
+  },
+  {
+    "ts": "2026-04-20T20:55",
+    "author": "Hattori Hanzo",
+    "msg": "i have only seen 0,10 so far, though i havent seen much. Did asnyone get higher?",
+    "id": 61018
+  },
+  {
+    "ts": "2026-04-20T20:56",
+    "author": "OC Nodes",
+    "msg": "0.1 is not bad. Added to telemetry if you get one or two a day and suddenly a license is making closer to 0.5-0.6 reliably.. we are getting somewhere",
+    "id": 61019
+  },
+  {
+    "ts": "2026-04-20T20:57",
+    "author": "RED Nodes",
+    "msg": "Got my first CLI. Paid 0.2",
+    "id": 61020
+  },
+  {
+    "ts": "2026-04-20T20:58",
+    "author": "Jason",
+    "msg": "its on a licence where 100% goes to the node operator, but it hasn't been added to my ups. Which is strange",
+    "id": 61021
+  },
+  {
+    "ts": "2026-04-20T20:58",
+    "author": "Hattori Hanzo",
+    "msg": "i just read the same few lines back",
+    "id": 61022
+  },
+  {
+    "ts": "2026-04-20T20:58",
+    "author": "RED Nodes",
+    "msg": "[Photo]",
+    "id": 61023
+  },
+  {
+    "ts": "2026-04-20T20:59",
+    "author": "Jason",
+    "msg": "Nice",
+    "id": 61024
+  },
+  {
+    "ts": "2026-04-20T20:59",
+    "author": "Hattori Hanzo",
+    "msg": "close to quitting your job",
+    "id": 61025
+  },
+  {
+    "ts": "2026-04-20T20:59",
+    "author": "RED Nodes",
+    "msg": "Very close",
+    "id": 61026
+  },
+  {
+    "ts": "2026-04-20T21:02",
+    "author": "Page Øne",
+    "msg": "okay calm down , chill down, hold your horses lets atleast see how it goes before we flip out again",
+    "id": 61027
+  },
+  {
+    "ts": "2026-04-20T21:04",
+    "author": "Wopdiddly",
+    "msg": "I'll take every little win 😁",
+    "id": 61028
+  },
+  {
+    "ts": "2026-04-20T21:07",
+    "author": "Page Øne",
+    "msg": "same but i dont want to get excited for few hours of calls and than seeing nothing",
+    "id": 61029
+  },
+  {
+    "ts": "2026-04-20T21:08",
+    "author": "Eddie H",
+    "msg": "My ULO is a iPhone user and got a call id task",
+    "id": 61030
+  },
+  {
+    "ts": "2026-04-20T21:08",
+    "author": "Peterjo18",
+    "msg": "These are both 90/10 split licenses. It did one correctly and the other all to the ULO",
+    "id": 61031
+  },
+  {
+    "ts": "2026-04-20T21:10",
+    "author": "Lorizzle",
+    "msg": "Okay guys calm down",
+    "id": 61032
+  },
+  {
+    "ts": "2026-04-20T21:10",
+    "author": "Lorizzle",
+    "msg": "Let’s give space for the negative Nancy’s to get in some comments too",
+    "id": 61033
+  },
+  {
+    "ts": "2026-04-20T21:11",
+    "author": "OC Nodes",
+    "msg": "Lol I can't i can't.. we must raise expectations so we can get disappointed again tomorrow",
+    "id": 61034
+  },
+  {
+    "ts": "2026-04-20T21:11",
+    "author": "Lorizzle",
+    "msg": "Unity is a horrible failure and whatnot /s",
+    "id": 61035
+  },
+  {
+    "ts": "2026-04-20T21:16",
+    "author": "Calus B",
+    "msg": "One of my ulo got a call",
+    "id": 61036
+  },
+  {
+    "ts": "2026-04-20T21:23",
+    "author": "Z",
+    "msg": "Which country and networks are you getting CLI?",
+    "id": 61037
+  },
+  {
+    "ts": "2026-04-20T21:24",
+    "author": "Page Øne",
+    "msg": "so far zero but its some good sign",
+    "id": 61038
+  },
+  {
+    "ts": "2026-04-20T21:24",
+    "author": "Akira",
+    "msg": "can josh or james give me some calls already pls",
+    "id": 61039
+  },
+  {
+    "ts": "2026-04-20T21:24",
+    "author": "Page Øne",
+    "msg": "nope",
+    "id": 61040
+  },
+  {
+    "ts": "2026-04-20T21:24",
+    "author": "Akira",
+    "msg": "pls dial",
+    "id": 61041
+  },
+  {
+    "ts": "2026-04-20T21:29",
+    "author": "Calus B",
+    "msg": "Ca",
+    "id": 61042
+  },
+  {
+    "ts": "2026-04-20T21:29",
+    "author": "Peterjo18",
+    "msg": "My two CLI calls were to Australia from UK, but different carriers",
+    "id": 61043
+  },
+  {
+    "ts": "2026-04-20T21:30",
+    "author": "Calus B",
+    "msg": "Oh yeah, the one coat was definitely from the UK",
+    "id": 61044
+  },
+  {
+    "ts": "2026-04-20T21:32",
+    "author": "Calus B",
+    "msg": "I got one",
+    "id": 61045
+  },
+  {
+    "ts": "2026-04-20T21:33",
+    "author": "Eddie H",
+    "msg": "UK here from my ULO",
+    "id": 61046
+  },
+  {
+    "ts": "2026-04-20T21:34",
+    "author": "Calus B",
+    "msg": "Bit of a fun story I got one on a phone that’s 100% uno. Except for the fact that he accredited the ULO for the task so now that one ULO has $.20 on it that I will likely never be able to withdraw. 😂",
+    "id": 61047
+  },
+  {
+    "ts": "2026-04-20T21:38",
+    "author": "Wen (fed up)",
+    "msg": "Rick and Rick’ mum are in UK",
+    "id": 61048
+  },
+  {
+    "ts": "2026-04-20T21:42",
+    "author": "Flavius",
+    "msg": "I can't believe they didn't solve the bug where CLI rewards end up in the wrong balance...",
+    "id": 61049
+  },
+  {
+    "ts": "2026-04-20T21:43",
+    "author": "Flavius",
+    "msg": "I thought they did because when it happened to me, after a week the reward was gone from the ULO",
+    "id": 61050
+  },
+  {
+    "ts": "2026-04-20T21:43",
+    "author": "Flavius",
+    "msg": "I assumed it got moved to the UNO, but I didn't check, so who knows, maybe the UPs just vanished",
+    "id": 61051
+  },
+  {
+    "ts": "2026-04-20T21:45",
+    "author": "Akira",
+    "msg": "great one",
+    "id": 61052
+  },
+  {
+    "ts": "2026-04-20T21:45",
+    "author": "Akira",
+    "msg": "dont worry it will just take another 3 months to fix",
+    "id": 61053
+  },
+  {
+    "ts": "2026-04-20T21:45",
+    "author": "Calus B",
+    "msg": "Meh",
+    "id": 61054
+  },
+  {
+    "ts": "2026-04-20T21:52",
+    "author": "Wopdiddly",
+    "msg": "Promising though especially as we're only UNOs here so a small percentage of the licenses out there",
+    "id": 61055
+  },
+  {
+    "ts": "2026-04-20T22:02",
+    "author": "Rdawgie",
+    "msg": "7-10 days, or months or maybe even less. Who knows.",
+    "id": 61056
+  },
+  {
+    "ts": "2026-04-20T22:03",
+    "author": "Rdawgie",
+    "msg": "[File: elmo.mp4]",
+    "id": 61057
+  },
+  {
+    "ts": "2026-04-20T22:04",
+    "author": "TelecomTom",
+    "msg": "Blah blah blah",
+    "id": 61058
+  },
+  {
+    "ts": "2026-04-20T22:04",
+    "author": "TelecomTom",
+    "msg": "Noise",
+    "id": 61059
+  },
+  {
+    "ts": "2026-04-20T22:13",
+    "author": "David P [DPADA]",
+    "msg": "I got a call also, missed the call but reported it within the 24hrs.\n\nMelbourne, Australia.",
+    "id": 61060
+  },
+  {
+    "ts": "2026-04-20T22:35",
+    "author": "Calus B",
+    "msg": "Nice",
+    "id": 61061
+  },
+  {
+    "ts": "2026-04-20T22:40",
+    "author": "TelecomTom",
+    "msg": "How much did you get 0.023456",
+    "id": 61062
+  },
+  {
+    "ts": "2026-04-20T23:00",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Good morning everybody!",
+    "id": 61063
+  },
+  {
+    "ts": "2026-04-20T23:16",
+    "author": "Tired of getting 0.002 a day",
+    "msg": "Good morning",
+    "id": 61064
+  },
+  {
+    "ts": "2026-04-20T23:46",
+    "author": "Unitynodehub.com",
+    "msg": "How do you know when you receive a call ,  and know it isn't spam?  Is there a specific call identifier?   Will spam blocking software block this type of call? Any insight will help.",
+    "id": 61065
+  },
+  {
+    "ts": "2026-04-20T23:48",
+    "author": "Calus B",
+    "msg": "Notification popped up for me",
+    "id": 61066
+  },
+  {
+    "ts": "2026-04-20T23:49",
+    "author": "Unitynodehub.com",
+    "msg": "Notification from the Unity app?",
+    "id": 61067
+  },
+  {
+    "ts": "2026-04-20T23:49",
+    "author": "Calus B",
+    "msg": "Yea",
+    "id": 61068
+  },
+  {
+    "ts": "2026-04-20T23:50",
+    "author": "Unitynodehub.com",
+    "msg": "Ok thanks.",
+    "id": 61069
+  }
+]

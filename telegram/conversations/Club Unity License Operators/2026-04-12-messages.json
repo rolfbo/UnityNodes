@@ -1,0 +1,92 @@
+[
+  {
+    "ts": "2026-04-12T13:07",
+    "author": "soul",
+    "msg": "[Photo]",
+    "id": 2999
+  },
+  {
+    "ts": "2026-04-12T13:07",
+    "author": "soul",
+    "msg": "[Photo]",
+    "id": 3000
+  },
+  {
+    "ts": "2026-04-12T13:08",
+    "author": "soul",
+    "msg": "Hi, If i select BEP20 chain on coindcx and Binance Chain on Unity withdrawal page i should receive the withdrawal without any issues right?",
+    "id": 3001
+  },
+  {
+    "ts": "2026-04-12T13:08",
+    "author": "soul",
+    "msg": "I was a bit confused because the wording on both was different",
+    "id": 3004
+  },
+  {
+    "ts": "2026-04-12T13:09",
+    "author": "soul",
+    "msg": "Ok thank you",
+    "id": 3007
+  },
+  {
+    "ts": "2026-04-12T13:09",
+    "author": "soul",
+    "msg": "Yes?",
+    "id": 3011
+  },
+  {
+    "ts": "2026-04-12T13:09",
+    "author": "soul",
+    "msg": "Is that better",
+    "id": 3016
+  },
+  {
+    "ts": "2026-04-12T13:10",
+    "author": "soul",
+    "msg": "so which one is the best",
+    "id": 3020
+  },
+  {
+    "ts": "2026-04-12T13:10",
+    "author": "soul",
+    "msg": "Bybit?",
+    "id": 3021
+  },
+  {
+    "ts": "2026-04-12T13:10",
+    "author": "soul",
+    "msg": "ok got u",
+    "id": 3024
+  },
+  {
+    "ts": "2026-04-12T13:10",
+    "author": "soul",
+    "msg": "and im able to withdraw it into bank if needed right",
+    "id": 3026
+  },
+  {
+    "ts": "2026-04-12T13:11",
+    "author": "soul",
+    "msg": "ik theres an option for direct withdrawal to bank in the unity page itself",
+    "id": 3027
+  },
+  {
+    "ts": "2026-04-12T13:11",
+    "author": "soul",
+    "msg": "what about from bybit i can?",
+    "id": 3031
+  },
+  {
+    "ts": "2026-04-12T13:40",
+    "author": "Dime",
+    "msg": "The confusion is that BEP-20 is not on Binance Chain, but on Binance Smart Chain. Binance Chain is the original chain of Binance which does not support smart contracts and BEP-20 tokens. The first time I was not sure because of that and had to risk $5 to see if I will receive it 😀",
+    "id": 3039
+  },
+  {
+    "ts": "2026-04-12T22:18",
+    "author": "Coffee Nodes",
+    "msg": "Thanks all",
+    "id": 3057
+  }
+]

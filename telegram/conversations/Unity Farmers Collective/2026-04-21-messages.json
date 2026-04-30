@@ -1,0 +1,350 @@
+[
+  {
+    "ts": "2026-04-21T03:58",
+    "author": "Opher",
+    "msg": "I’m selling a node for $3000 if anyone is interested",
+    "id": 33397
+  },
+  {
+    "ts": "2026-04-21T04:22",
+    "author": "Matt",
+    "msg": "Yeah I match your numbers.",
+    "id": 33398
+  },
+  {
+    "ts": "2026-04-21T06:30",
+    "author": "b y",
+    "msg": "i turned off my farming device because rewards were $0.02 something.\nHowever i just realized my personal phones (2) rewards are better.",
+    "id": 33399
+  },
+  {
+    "ts": "2026-04-21T06:30",
+    "author": "b y",
+    "msg": "[Photo]",
+    "id": 33400
+  },
+  {
+    "ts": "2026-04-21T06:30",
+    "author": "b y",
+    "msg": "[Photo]",
+    "id": 33401
+  },
+  {
+    "ts": "2026-04-21T06:35",
+    "author": "Dave",
+    "msg": "Congratulations! 😂",
+    "id": 33402
+  },
+  {
+    "ts": "2026-04-21T06:36",
+    "author": "b y",
+    "msg": "they killed farming, clearly",
+    "id": 33403
+  },
+  {
+    "ts": "2026-04-21T08:46",
+    "author": "GliTch_",
+    "msg": "only for people that don't have sims in each device *",
+    "id": 33404
+  },
+  {
+    "ts": "2026-04-21T08:48",
+    "author": "L",
+    "msg": "So if i was to put activated sims [but with no credit on and connected to WIFI ] it could improve rewards ? thx",
+    "id": 33405
+  },
+  {
+    "ts": "2026-04-21T08:49",
+    "author": "GliTch_",
+    "msg": "no, they would need to be the data for the devices so they each had their own ip",
+    "id": 33406
+  },
+  {
+    "ts": "2026-04-21T08:49",
+    "author": "GliTch_",
+    "msg": "or keep the limits around 7 devices per ip from what people are reporting",
+    "id": 33407
+  },
+  {
+    "ts": "2026-04-21T09:13",
+    "author": "Daano",
+    "msg": "Also killed that tbh, we have sims and at some point the subnet get saturated and also gives 0.0005 rewards🙃",
+    "id": 33408
+  },
+  {
+    "ts": "2026-04-21T09:33",
+    "author": "GliTch_",
+    "msg": "yeah, I can see that it seems they are putting limits on any ip so most cgnat provider / users will end up getting less rewards this way since they by design use limited numbers of ipv4 ip's",
+    "id": 33409
+  },
+  {
+    "ts": "2026-04-21T09:34",
+    "author": "GliTch_",
+    "msg": "seems like an odd thing for a \"telco\" company to do knowing most use this type of system but I think they went for the \"easy\" solution to filter \"unwanted\" results go ai",
+    "id": 33410
+  },
+  {
+    "ts": "2026-04-21T09:42",
+    "author": "Wopdiddly",
+    "msg": "Dunno I have ten phones at home with Sims all earning a cent a day",
+    "id": 33411
+  },
+  {
+    "ts": "2026-04-21T09:54",
+    "author": "GliTch_",
+    "msg": "Sounds like they are all on the same IP or group of ips mine aren't much better as they are from the same provider in groups of 20 it's now from .01 - .04 cents per",
+    "id": 33412
+  },
+  {
+    "ts": "2026-04-21T09:56",
+    "author": "GliTch_",
+    "msg": "Only the last 2 **octets** change from what I see on ip rotation",
+    "id": 33413
+  },
+  {
+    "ts": "2026-04-21T09:57",
+    "author": "GliTch_",
+    "msg": "Thought about cycling them with a smart plug but idk if that would be better or a waste of time",
+    "id": 33414
+  },
+  {
+    "ts": "2026-04-21T09:58",
+    "author": "GliTch_",
+    "msg": "( modem ) ie forced IP rotation on power cycle it definitely would be hard on the equipment 😂",
+    "id": 33415
+  },
+  {
+    "ts": "2026-04-21T10:17",
+    "author": "Rick Middleton",
+    "msg": "I wonder if they are checking IPv6s too - my O2 SIM in the UK is set up so that it can get an IPv6 address as well as IPv4 - but it does seem to depend which network I am roaming on as to wether I get assigned an IPv6 or not",
+    "id": 33416
+  },
+  {
+    "ts": "2026-04-21T10:58",
+    "author": "Wopdiddly",
+    "msg": "Maybe I'm not sure how that works with SIM cards but I did buy them lol from the same provider",
+    "id": 33417
+  },
+  {
+    "ts": "2026-04-21T11:04",
+    "author": "emperor tamarin",
+    "msg": "so Wi fi  earns less than having phone with sim?",
+    "id": 33418
+  },
+  {
+    "ts": "2026-04-21T11:04",
+    "author": "emperor tamarin",
+    "msg": "how many phones max on wi fi you recon? I thought less than 20",
+    "id": 33419
+  },
+  {
+    "ts": "2026-04-21T11:04",
+    "author": "emperor tamarin",
+    "msg": "now I read 5, 10?",
+    "id": 33420
+  },
+  {
+    "ts": "2026-04-21T11:12",
+    "author": "GliTch_",
+    "msg": "Yeah they said previously they were",
+    "id": 33421
+  },
+  {
+    "ts": "2026-04-21T11:21",
+    "author": "Daniel 🇷🇴",
+    "msg": "tenda router supports scheduled reboot",
+    "id": 33422
+  },
+  {
+    "ts": "2026-04-21T12:07",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33423
+  },
+  {
+    "ts": "2026-04-21T12:07",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33424
+  },
+  {
+    "ts": "2026-04-21T12:33",
+    "author": "Daano",
+    "msg": "So they DO flag devices??",
+    "id": 33425
+  },
+  {
+    "ts": "2026-04-21T12:35",
+    "author": "Rick Middleton",
+    "msg": "What part of the text made you think that?",
+    "id": 33426
+  },
+  {
+    "ts": "2026-04-21T12:39",
+    "author": "Jaba - Unityfarmers",
+    "msg": "There's plenty s8 non sim working fine though. Often a reboot does the trick",
+    "id": 33427
+  },
+  {
+    "ts": "2026-04-21T12:45",
+    "author": "R B",
+    "msg": "Selll it sooner than later , I’ll\nJust watch my nodes go to zero , ran just my IPhone as the only device on home ISP snd 4G got 18cents",
+    "id": 33428
+  },
+  {
+    "ts": "2026-04-21T12:51",
+    "author": "Opher",
+    "msg": "They’re saying the support team are flagging this particular issue. More of a poor choice of words as it’s somewhat of an AI response with human input.",
+    "id": 33429
+  },
+  {
+    "ts": "2026-04-21T12:53",
+    "author": "Daano",
+    "msg": "Last paragraph of second image",
+    "id": 33430
+  },
+  {
+    "ts": "2026-04-21T12:54",
+    "author": "Rick Middleton",
+    "msg": "I thought so...  see Opher's explanation",
+    "id": 33431
+  },
+  {
+    "ts": "2026-04-21T12:54",
+    "author": "Daano",
+    "msg": "Stronger than me, i cant seem to sell (crypto) at a loss💀",
+    "id": 33432
+  },
+  {
+    "ts": "2026-04-21T12:56",
+    "author": "Opher",
+    "msg": "They say an alternative pathway is being worked on, but no timeline. So, hard to say when my boxes and others will be useable again. It’s not like they can be ran with all motherboards active anyway with current task structure.",
+    "id": 33433
+  },
+  {
+    "ts": "2026-04-21T13:02",
+    "author": "Rick Middleton",
+    "msg": "Some people I know can't even bring themselves to sell when it is in profit!   I begged one of my mates to start selling BTC when it was over 120k to get used to the idea..  He sold a small amount.. and then bought back in again at about 105k 🙈️️️️️️ Still at least he has a fraction more BTC for the next cycle eh",
+    "id": 33434
+  },
+  {
+    "ts": "2026-04-21T13:03",
+    "author": "Miyagi Node",
+    "msg": "Any UK 🇬🇧 want my s8 phone farm? Am selling it",
+    "id": 33435
+  },
+  {
+    "ts": "2026-04-21T13:04",
+    "author": "Kevin Blowers",
+    "msg": "List it on ebay,how much?",
+    "id": 33436
+  },
+  {
+    "ts": "2026-04-21T13:12",
+    "author": "Miyagi Node",
+    "msg": "£450",
+    "id": 33437
+  },
+  {
+    "ts": "2026-04-21T13:25",
+    "author": "Opher",
+    "msg": "Do y’all think they’re throttling rewards for multiple ISP’s in one location now?",
+    "id": 33438
+  },
+  {
+    "ts": "2026-04-21T14:52",
+    "author": "Daano",
+    "msg": "Idk anymore, feels like the Niantic days, (almost) no technical feedback and community had to figure it out by their own gathered information",
+    "id": 33439
+  },
+  {
+    "ts": "2026-04-21T15:47",
+    "author": "Wopdiddly",
+    "msg": "[Photo] User profile?",
+    "id": 33440
+  },
+  {
+    "ts": "2026-04-21T16:57",
+    "author": "Opher",
+    "msg": "I’ve tried everything you can think of, including setting up a new box with newer licenses and i keep getting the attestation error on all devices",
+    "id": 33441
+  },
+  {
+    "ts": "2026-04-21T18:04",
+    "author": "Daano",
+    "msg": "Please share this in Verified, or let me post it there",
+    "id": 33442
+  },
+  {
+    "ts": "2026-04-21T18:04",
+    "author": "Daano",
+    "msg": "So specific lease code can get flagged, not just IPs",
+    "id": 33443
+  },
+  {
+    "ts": "2026-04-21T18:13",
+    "author": "Wopdiddly",
+    "msg": "I got it from that group just no one picked up on that part",
+    "id": 33444
+  },
+  {
+    "ts": "2026-04-21T18:14",
+    "author": "Wopdiddly",
+    "msg": "[Photo]",
+    "id": 33445
+  },
+  {
+    "ts": "2026-04-21T19:45",
+    "author": "Dave",
+    "msg": "That's basically my worst fears",
+    "id": 33446
+  },
+  {
+    "ts": "2026-04-21T19:45",
+    "author": "Dave",
+    "msg": "I doubt this had any priority for them to solve",
+    "id": 33447
+  },
+  {
+    "ts": "2026-04-21T19:46",
+    "author": "Dave",
+    "msg": "Quite the opposite. They probably are happy that it solved a problem with emulated devices...",
+    "id": 33448
+  },
+  {
+    "ts": "2026-04-21T20:05",
+    "author": "Wopdiddly",
+    "msg": "Still no luck with your boxes?",
+    "id": 33449
+  },
+  {
+    "ts": "2026-04-21T20:13",
+    "author": "Wopdiddly",
+    "msg": "I've tried four phones (out of ten) so far to register for CLI today and none of them will register all failing with \"Failed to Initiate verification\". \n\nI had about 60 devices running across WiFi networks, sim routers and WiFi. All still complete dog shit now and seems I can't join any SIM tasks.\n\nSo I'm thinking they are blocking farm setups past and present, possibly forever. Just seems weird 4/4 all give the same error",
+    "id": 33450
+  },
+  {
+    "ts": "2026-04-21T20:16",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Thats a known issue and they are already looking into it",
+    "id": 33451
+  },
+  {
+    "ts": "2026-04-21T20:18",
+    "author": "Wopdiddly",
+    "msg": "Ok phew, hard not to get suspicious/paranoid round these parts",
+    "id": 33452
+  },
+  {
+    "ts": "2026-04-21T22:51",
+    "author": "R B",
+    "msg": "IPhones are awful though",
+    "id": 33453
+  },
+  {
+    "ts": "2026-04-21T23:28",
+    "author": "GliTch_",
+    "msg": "devices in a box without a screen aren't emulated devices, ones running multiple apps (cloned) or on emulator boxes that \"act\" like phones are what they are referring to, what we have qualify the only thing that I see being said that would cause issue is the rom on the devices that the supplier loaded being flagged for either being rooted or some other reason",
+    "id": 33454
+  }
+]

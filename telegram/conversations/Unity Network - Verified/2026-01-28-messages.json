@@ -1,0 +1,3620 @@
+[
+  {
+    "ts": "2026-01-28T00:00",
+    "author": "Page Øne",
+    "msg": "Post Traumatic Stress Disorder ?",
+    "id": 14906
+  },
+  {
+    "ts": "2026-01-28T00:00",
+    "author": "Mat",
+    "msg": "Poll Traumatic Stress Disorder ?",
+    "id": 14907
+  },
+  {
+    "ts": "2026-01-28T00:00",
+    "author": "Page Øne",
+    "msg": "o yeah that one lol went automatically to Post hahah",
+    "id": 14908
+  },
+  {
+    "ts": "2026-01-28T00:01",
+    "author": "Page Øne",
+    "msg": "but Poll indeed",
+    "id": 14909
+  },
+  {
+    "ts": "2026-01-28T00:01",
+    "author": "Page Øne",
+    "msg": "I feel like people are missing it as they keep turning back to the voting topic",
+    "id": 14910
+  },
+  {
+    "ts": "2026-01-28T00:05",
+    "author": "Nixinzim",
+    "msg": "I thought the poll was a vote and so was misdiagnosed with post traumatic voting disorder but you are correct it was in fact poll traumatic stress disorder. Fire my psychiatrist!!! 🤣",
+    "id": 14911
+  },
+  {
+    "ts": "2026-01-28T00:06",
+    "author": "Mat",
+    "msg": "Need laser focus on Task deployment, **and** production release. Both from the team and from the UNO community",
+    "id": 14912
+  },
+  {
+    "ts": "2026-01-28T00:06",
+    "author": "SkyChain",
+    "msg": "Is anyone running an openwrt router? I’ve been slowly testing due to the 24hr delay in rewards. I have -10 licenses performing at 10c per day but I’d really like to get that up to 30c for the background telemetry task. I did confirm that switching to another router brings up rewards to 30c per license per day, but I’d really like to use my openwrt equipment. My best guess so far is that the default vlan config is somehow disrupting but it would be great to identify the ground truth on this one… Should I switch to ubiquiti?",
+    "id": 14913
+  },
+  {
+    "ts": "2026-01-28T00:06",
+    "author": "Page Øne",
+    "msg": "also any news on an AMA soon on the Caller ID and the grayed out task ? (no voting topic just tasks only)",
+    "id": 14914
+  },
+  {
+    "ts": "2026-01-28T00:06",
+    "author": "Page Øne",
+    "msg": "as we are coming to an end of Jan",
+    "id": 14915
+  },
+  {
+    "ts": "2026-01-28T00:09",
+    "author": "Dummy",
+    "msg": "Literally all of us are in red bro ….",
+    "id": 14916
+  },
+  {
+    "ts": "2026-01-28T00:10",
+    "author": "Page Øne",
+    "msg": "we are not red bro we are just temporary color blind and all we see is green",
+    "id": 14917
+  },
+  {
+    "ts": "2026-01-28T00:11",
+    "author": "Dummy",
+    "msg": "Problem is many of us cannot participate in manual tasks. And most of our licensees will not be either. So while it may be great for you and a handful of others, that doesn’t help 99% of everyone else’s situation.",
+    "id": 14918
+  },
+  {
+    "ts": "2026-01-28T00:14",
+    "author": "Page Øne",
+    "msg": "lets hope besides the S&R we receive more task that we wont be noticing  it",
+    "id": 14919
+  },
+  {
+    "ts": "2026-01-28T00:15",
+    "author": "SkyChain",
+    "msg": "It would be great to get some technical documentation on the best practices or required operating conditions…",
+    "id": 14920
+  },
+  {
+    "ts": "2026-01-28T00:17",
+    "author": "Mat",
+    "msg": "You personally can't perhaps but can't the person you lease the licence to can you you get a split of this?",
+    "id": 14921
+  },
+  {
+    "ts": "2026-01-28T00:18",
+    "author": "Dummy",
+    "msg": "Yes if you are lucky enough to have a licensee that both is capable, has the time, wants to, and applied and was approved.\n\n99% of us do not",
+    "id": 14922
+  },
+  {
+    "ts": "2026-01-28T00:18",
+    "author": "JP | KUBE |",
+    "msg": "Yeah I understand that, but regardless, if this first task starts generating better rewards, even though it’s more hands on, that should give you a good look at what is possible and what can happen. We were always told there would be opt in tasks and then passive ones that we just let run. S&R opt in task just happens to be the first one they chose to kick this off with.",
+    "id": 14923
+  },
+  {
+    "ts": "2026-01-28T00:19",
+    "author": "Mat",
+    "msg": "Oh, I see you mean for the Alpha - cool I get you now. Was thinking more longer term once S&R is in prod.",
+    "id": 14925
+  },
+  {
+    "ts": "2026-01-28T00:20",
+    "author": "Dummy",
+    "msg": "That would only remove the “applied and was approved” factor but yeah",
+    "id": 14926
+  },
+  {
+    "ts": "2026-01-28T00:21",
+    "author": "Dummy",
+    "msg": "Still need to be capable (having the SIM card and knowledge to perform) time and interest",
+    "id": 14927
+  },
+  {
+    "ts": "2026-01-28T00:21",
+    "author": "Mat",
+    "msg": "2nd opt in task as we sort of have \"Caller ID Testing\"",
+    "id": 14928
+  },
+  {
+    "ts": "2026-01-28T00:22",
+    "author": "JP | KUBE |",
+    "msg": "Yeah guess that’s true. 😃",
+    "id": 14929
+  },
+  {
+    "ts": "2026-01-28T00:25",
+    "author": "R B",
+    "msg": "could do with as Unity AMA, after the MNTX AMA this week",
+    "id": 14930
+  },
+  {
+    "ts": "2026-01-28T00:59",
+    "author": "Carlos",
+    "msg": "Wen email?",
+    "id": 14931
+  },
+  {
+    "ts": "2026-01-28T01:02",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Which email?",
+    "id": 14932
+  },
+  {
+    "ts": "2026-01-28T01:04",
+    "author": "Carlos",
+    "msg": "Is this your way of saying I’m not getting the S&R email 😂",
+    "id": 14933
+  },
+  {
+    "ts": "2026-01-28T01:06",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Oh, yeah, 'over the next 48hrs' 3hrs ago hahahaha",
+    "id": 14936
+  },
+  {
+    "ts": "2026-01-28T01:06",
+    "author": "Jack | Will Never Message You First",
+    "msg": "You're definitely out of the running",
+    "id": 14937
+  },
+  {
+    "ts": "2026-01-28T01:06",
+    "author": "Carlos",
+    "msg": "I’m devastated Jack 😢",
+    "id": 14938
+  },
+  {
+    "ts": "2026-01-28T01:07",
+    "author": "Carlos",
+    "msg": "😂",
+    "id": 14939
+  },
+  {
+    "ts": "2026-01-28T01:19",
+    "author": "Willian | Nuvola",
+    "msg": "Guys, is it safe to assume that won't have the credit card option to purchase nodes prior R1 ends? \n\nUSA mainly",
+    "id": 14940
+  },
+  {
+    "ts": "2026-01-28T01:19",
+    "author": "Willian | Nuvola",
+    "msg": "@defiants_Jack 🤝",
+    "id": 14941
+  },
+  {
+    "ts": "2026-01-28T01:20",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Not sure sorry Willian!",
+    "id": 14942
+  },
+  {
+    "ts": "2026-01-28T01:34",
+    "author": "Matt",
+    "msg": "Did I read in the past that there is a farm group?\nLooking to expand my knowledge of how to multi isp...",
+    "id": 14943
+  },
+  {
+    "ts": "2026-01-28T02:11",
+    "author": "Coffee Nodes",
+    "msg": "rewards coming in!",
+    "id": 14944
+  },
+  {
+    "ts": "2026-01-28T03:42",
+    "author": "Paul",
+    "msg": "Jack, what kind of manual tasks are required for S&R?",
+    "id": 14945
+  },
+  {
+    "ts": "2026-01-28T03:44",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Hey Paul, believe info on that is still coming sorry",
+    "id": 14946
+  },
+  {
+    "ts": "2026-01-28T04:29",
+    "author": "Matt",
+    "msg": "[Photo] Milestone reached",
+    "id": 14947
+  },
+  {
+    "ts": "2026-01-28T05:07",
+    "author": "Red Unity Nodes",
+    "msg": "Excellent",
+    "id": 14949
+  },
+  {
+    "ts": "2026-01-28T05:54",
+    "author": "Gwailow",
+    "msg": "The first rule of Farm Group...",
+    "id": 14950
+  },
+  {
+    "ts": "2026-01-28T06:17",
+    "author": "Matt",
+    "msg": "Oompa loompa is a given!",
+    "id": 14951
+  },
+  {
+    "ts": "2026-01-28T06:21",
+    "author": "Matt",
+    "msg": "Got a DM...but im paranoid about them now. Lol",
+    "id": 14952
+  },
+  {
+    "ts": "2026-01-28T06:27",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "You invested 5K a few months ago in a startup and you haven’t made your 5K back yet\n\nThat’s not red, that’s being delusional bro\n\nDefinitely not how this works",
+    "id": 14953
+  },
+  {
+    "ts": "2026-01-28T06:29",
+    "author": "Coffee Nodes",
+    "msg": "👍",
+    "id": 14954
+  },
+  {
+    "ts": "2026-01-28T06:53",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Branching into price discussion, sorry gang",
+    "id": 14956
+  },
+  {
+    "ts": "2026-01-28T06:53",
+    "author": "James_WM_ENO",
+    "msg": "Morning all 👋🏻",
+    "id": 14957
+  },
+  {
+    "ts": "2026-01-28T06:56",
+    "author": "Wen (calibrating)",
+    "msg": "Hello does anybody know if there are there new tasks families with better rewards ready yet? Omri said task ready and customers ready but I guess the team are chilling?",
+    "id": 14958
+  },
+  {
+    "ts": "2026-01-28T07:00",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Good morning and happy Wednesday everyone 😊",
+    "id": 14959
+  },
+  {
+    "ts": "2026-01-28T07:02",
+    "author": "Wen (calibrating)",
+    "msg": "Seems like answer is no. \n.32c tap still.\nFeels like the team is quite inefficient in use of time and disrespect of others people’s capital.",
+    "id": 14960
+  },
+  {
+    "ts": "2026-01-28T07:15",
+    "author": "Daniel 🇷🇴",
+    "msg": "@defiants_Sophie \nDo you have answers for the below?\nTokens Allocation:\n33. Are the license allocated tokens held in escrow, in a smart contract, or in a custodial wallet during the 24-month lock period?\n34. Can you provide the specific wallet addresses or smart contract addresses where license allocated tokens will be held during the lock period?\n35. What proof of ownership do I receive to verify these tokens are genuinely locked and allocated to my license?",
+    "id": 14961
+  },
+  {
+    "ts": "2026-01-28T07:22",
+    "author": "libben",
+    "msg": ".32 on all devices ?",
+    "id": 14963
+  },
+  {
+    "ts": "2026-01-28T08:12",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Hey Daniel, I’ll forward this to the team for the upcoming AMA :)",
+    "id": 14964
+  },
+  {
+    "ts": "2026-01-28T08:14",
+    "author": "Dave",
+    "msg": "Yes, it also might be that a mobile lost it's connection to the lease",
+    "id": 14965
+  },
+  {
+    "ts": "2026-01-28T08:15",
+    "author": "Dave",
+    "msg": "A license is leased once you created a lease contract for it.",
+    "id": 14966
+  },
+  {
+    "ts": "2026-01-28T08:15",
+    "author": "Dave",
+    "msg": "A license is bound once the lease contract is activated with a mobile",
+    "id": 14967
+  },
+  {
+    "ts": "2026-01-28T08:17",
+    "author": "Dave",
+    "msg": "If I were you I would look if you find  grey dots and/or a grey mobile:",
+    "id": 14968
+  },
+  {
+    "ts": "2026-01-28T08:17",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 14969
+  },
+  {
+    "ts": "2026-01-28T08:18",
+    "author": "Dave",
+    "msg": "Grey mobile imo means that the mobile is no longer actively connected to the license. It happens sometimes to me too.",
+    "id": 14970
+  },
+  {
+    "ts": "2026-01-28T08:18",
+    "author": "James_WM_ENO",
+    "msg": "How can you have grey mobile and 100% uptime",
+    "id": 14971
+  },
+  {
+    "ts": "2026-01-28T08:19",
+    "author": "Dave",
+    "msg": "That's something I am not sure either 😂",
+    "id": 14972
+  },
+  {
+    "ts": "2026-01-28T08:19",
+    "author": "Dave",
+    "msg": "Maybe it just lost connection now?",
+    "id": 14973
+  },
+  {
+    "ts": "2026-01-28T08:19",
+    "author": "Dave",
+    "msg": "Can't check atm as I am at work...",
+    "id": 14974
+  },
+  {
+    "ts": "2026-01-28T08:20",
+    "author": "Dave",
+    "msg": "But coming back how to solve it.\nYou need to bind that license again here:",
+    "id": 14975
+  },
+  {
+    "ts": "2026-01-28T08:20",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 14976
+  },
+  {
+    "ts": "2026-01-28T08:21",
+    "author": "Dave",
+    "msg": "It will show you a list of your licenses if a mobile is not bound.",
+    "id": 14977
+  },
+  {
+    "ts": "2026-01-28T08:22",
+    "author": "Dave",
+    "msg": "I also don't think this view is always true and good.\n\nLike this 0 up-time license is troubling me since days but the phone says it's up...",
+    "id": 14978
+  },
+  {
+    "ts": "2026-01-28T08:24",
+    "author": "LIIICHT",
+    "msg": "I have a few grey dots now. App obviously dropping off and ulos not noticing..",
+    "id": 14979
+  },
+  {
+    "ts": "2026-01-28T08:30",
+    "author": "Lazeedan40",
+    "msg": "#Feature request\nI'm guessing this has already been requested but it would be a massive help if implemented!\n\nIt would be very beneficial to be able to advertise a personal market place, where it lists all the available licenses for the individual UNO. You could advertise with a link or QR etc.",
+    "id": 14980
+  },
+  {
+    "ts": "2026-01-28T08:33",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Hey! You could request this feature through this form: https://forms.gle/womUzD5u2fbEGbbHA 🙂",
+    "id": 14981
+  },
+  {
+    "ts": "2026-01-28T08:40",
+    "author": "Dave",
+    "msg": "Same same.",
+    "id": 14982
+  },
+  {
+    "ts": "2026-01-28T08:40",
+    "author": "Dave",
+    "msg": "Since the last update I have more and more greys",
+    "id": 14983
+  },
+  {
+    "ts": "2026-01-28T08:49",
+    "author": "Pedro",
+    "msg": "If your leasing licenses out on the Unity App on Android devices are we paying credits yet?",
+    "id": 14986
+  },
+  {
+    "ts": "2026-01-28T08:49",
+    "author": "Pedro",
+    "msg": "🙏",
+    "id": 14988
+  },
+  {
+    "ts": "2026-01-28T08:51",
+    "author": "Dave",
+    "msg": "If it's taken from the marketplace you basically have no options but to wait and hope that this ULO realises it and binds the licenses again or you revoke it and place it on the marketplace again.",
+    "id": 14989
+  },
+  {
+    "ts": "2026-01-28T08:52",
+    "author": "Wen (calibrating)",
+    "msg": "Imagine paying credits at this point 🤦‍♂️",
+    "id": 14990
+  },
+  {
+    "ts": "2026-01-28T08:52",
+    "author": "Dave",
+    "msg": "I would keep hoping because getting a license picked up again... You probably know the chances ;-)",
+    "id": 14991
+  },
+  {
+    "ts": "2026-01-28T08:53",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Good morning happy holders, did anyone see my tasks, I lost them and I can't find them anywhere 😔",
+    "id": 14992
+  },
+  {
+    "ts": "2026-01-28T08:58",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Is the academy open yet, I'm still looking for that promised sprint in a few days 2 weeks ago.",
+    "id": 14993
+  },
+  {
+    "ts": "2026-01-28T09:09",
+    "author": "Akira",
+    "msg": "more tasks in january ser",
+    "id": 14995
+  },
+  {
+    "ts": "2026-01-28T09:09",
+    "author": "Akira",
+    "msg": "soon™",
+    "id": 14996
+  },
+  {
+    "ts": "2026-01-28T09:10",
+    "author": "Akira",
+    "msg": "its jan 28th still, plenty of time",
+    "id": 14997
+  },
+  {
+    "ts": "2026-01-28T09:11",
+    "author": "Mat",
+    "msg": "@defiants_Sophie @defiants_kyle @defiants_kay @defiants_Jack  - A number of days ago, Jan 23rd my time Unity landed the new task \"Caller ID Testing\" Since then I, as well as many other of the UNO community have been asking for an update on when this will be live from the perspective of all ULOs.\n**Question:** My question is not when is it live as for some reason the Unity team can't tell us this, but Why is there no response to questions on this topic.\n\nTo be super clear on my question: WHY CAN WE NOT BE UPDATED WITH WHAT IS HAPPENING WITH THE TASK \"CALLER ID TESTING\"",
+    "id": 14998
+  },
+  {
+    "ts": "2026-01-28T09:12",
+    "author": "Akira",
+    "msg": "wait for more information, it's all part of the plan",
+    "id": 14999
+  },
+  {
+    "ts": "2026-01-28T09:12",
+    "author": "Akira",
+    "msg": "trust me bro",
+    "id": 15000
+  },
+  {
+    "ts": "2026-01-28T09:13",
+    "author": "Mat",
+    "msg": "Apologies for the all caps but this information blackout is becoming disrespectful to the UNO community. I'm unsure how I can be more clear on this.",
+    "id": 15001
+  },
+  {
+    "ts": "2026-01-28T09:15",
+    "author": "Akira",
+    "msg": "not disrespectful, please don't be so negative and assume the worst. team are super transparent, they just don't have time to give us updates to us plebs, too busy working 18h/day and also busy building the new onchain voting system for a final fourth voting round, don't mind those waiting for eth minting though, their votes are worthless",
+    "id": 15002
+  },
+  {
+    "ts": "2026-01-28T09:18",
+    "author": "Akira",
+    "msg": "caller ID was released wasn't it? you just like to complain all the time",
+    "id": 15003
+  },
+  {
+    "ts": "2026-01-28T09:20",
+    "author": "Byron",
+    "msg": "its the 28th people ... good morning, for starters! there is PLENTY of time for the team to provide what the CEO said to us NOT ONCE but SEVERAL TIMES, the JANUARY taskS ... \n\nLets see how many NEW tasks will be live in 4 days because currently there is NOT a single NEW task live in January.\n\nAnd seen there is ZERO communication from the team about this matter, I have the right to speculate and assume the worst AS MUCH AS I WANT",
+    "id": 15004
+  },
+  {
+    "ts": "2026-01-28T09:43",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Telemetry task volume has increased during January and will continue to increase. CLI testing has been released, and task related instructions are due to be announced shortly. S&R alpha is also nearing release, amongst other additional task families in January & February.",
+    "id": 15005
+  },
+  {
+    "ts": "2026-01-28T09:44",
+    "author": "James_WM_ENO",
+    "msg": "So there are more tasks coming live in January yeah ? Other families ?\n\nWhich says to me more then 1",
+    "id": 15006
+  },
+  {
+    "ts": "2026-01-28T09:46",
+    "author": "Byron",
+    "msg": "Thank you for copy pasting the same response, one more time.\n\nThank you for validating my argument that NO new tasks are live in January (up until now).",
+    "id": 15007
+  },
+  {
+    "ts": "2026-01-28T09:48",
+    "author": "Sophie | I will never DM you first",
+    "msg": "This is the latest update regarding Tasks, please stay tuned for more updates!",
+    "id": 15008
+  },
+  {
+    "ts": "2026-01-28T09:49",
+    "author": "Sören Lewis Müller",
+    "msg": "Very sure that the grey dot simply means not connected (airplane mode, no internet, app closed). \n\nNot so sure about the 2 icons on the right. \nOne would probably mean this license is bound to a phone. \nThe respective other one no idea. \n@defiants_Sophie @defiants_kay \nDo you know?",
+    "id": 15009
+  },
+  {
+    "ts": "2026-01-28T09:49",
+    "author": "FreshChives",
+    "msg": "I’m a bit late to the game, but is the iOS app supposed work? I can download it, but the connection is grey when I open the app with a licence",
+    "id": 15010
+  },
+  {
+    "ts": "2026-01-28T09:50",
+    "author": "Sören Lewis Müller",
+    "msg": "Nope. Gotta wait.",
+    "id": 15011
+  },
+  {
+    "ts": "2026-01-28T09:51",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Task families will be released in January/February and task related instructions will be announced shortly.",
+    "id": 15012
+  },
+  {
+    "ts": "2026-01-28T09:54",
+    "author": "Sophie | I will never DM you first",
+    "msg": "You can download it but Pow is not yet enabled",
+    "id": 15013
+  },
+  {
+    "ts": "2026-01-28T10:03",
+    "author": "Gwims",
+    "msg": "@defiants_Sophie  I sent you a Dm could you respond when you get a chance please",
+    "id": 15014
+  },
+  {
+    "ts": "2026-01-28T10:14",
+    "author": "Wen (calibrating)",
+    "msg": "January 2026?",
+    "id": 15015
+  },
+  {
+    "ts": "2026-01-28T10:15",
+    "author": "Wen (calibrating)",
+    "msg": "Why they need to show you respect? You already bought.",
+    "id": 15016
+  },
+  {
+    "ts": "2026-01-28T10:15",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Yes, January/February 2026",
+    "id": 15017
+  },
+  {
+    "ts": "2026-01-28T10:16",
+    "author": "Wen (calibrating)",
+    "msg": "Wen March?",
+    "id": 15018
+  },
+  {
+    "ts": "2026-01-28T10:17",
+    "author": "FriendlyUrchin",
+    "msg": "I have the same with some. But it seems to be that they did not switch off battery optimization for apps running in the background",
+    "id": 15019
+  },
+  {
+    "ts": "2026-01-28T10:17",
+    "author": "Akira",
+    "msg": "does \"January/February\" mean some will be released in january?",
+    "id": 15020
+  },
+  {
+    "ts": "2026-01-28T10:17",
+    "author": "Akira",
+    "msg": "because this is what we mean with unclear comms",
+    "id": 15021
+  },
+  {
+    "ts": "2026-01-28T10:18",
+    "author": "Akira",
+    "msg": "we don't really know what to expect and how many tasks will be out",
+    "id": 15022
+  },
+  {
+    "ts": "2026-01-28T10:18",
+    "author": "Akira",
+    "msg": "would be great to get more details thx",
+    "id": 15023
+  },
+  {
+    "ts": "2026-01-28T10:19",
+    "author": "Jason",
+    "msg": "Yeah i keep thinking that....why keep saying jan/feb....everyone just wants to know one thing.....Will we see more tasks in jan and if so will this increase rewards.",
+    "id": 15024
+  },
+  {
+    "ts": "2026-01-28T10:19",
+    "author": "Sophie | I will never DM you first",
+    "msg": "We’re still in January, so please keep an eye out. The team will share an update once it’s complete 🙏",
+    "id": 15025
+  },
+  {
+    "ts": "2026-01-28T10:20",
+    "author": "Jason",
+    "msg": "I give up lol",
+    "id": 15026
+  },
+  {
+    "ts": "2026-01-28T10:20",
+    "author": "Akira",
+    "msg": "thank you that gave us zero clarity on this matter",
+    "id": 15027
+  },
+  {
+    "ts": "2026-01-28T10:20",
+    "author": "Akira",
+    "msg": "but yeah, 4 days left",
+    "id": 15028
+  },
+  {
+    "ts": "2026-01-28T10:21",
+    "author": "Akira",
+    "msg": "you would think team would be able to anticipate what's gonna be released in under 4 days",
+    "id": 15029
+  },
+  {
+    "ts": "2026-01-28T10:22",
+    "author": "Jason",
+    "msg": "I believe its going to be another \"app is READY in October scenario\" 😂",
+    "id": 15030
+  },
+  {
+    "ts": "2026-01-28T10:23",
+    "author": "Akira",
+    "msg": "might be the 25 for 25 scenario, waiting till literally the last hours",
+    "id": 15031
+  },
+  {
+    "ts": "2026-01-28T10:23",
+    "author": "Akira",
+    "msg": "idk anymore",
+    "id": 15032
+  },
+  {
+    "ts": "2026-01-28T10:25",
+    "author": "Wen (calibrating)",
+    "msg": "February is the shortest month so I think we can safely bet that there’ll be nothing achieved during it. Then we have the approach of spring holidays (Easters a big deal too guys). Soon after that team deserve time of for summer (6 weeks approx). Then before you know it everything is closed for Jesus birthday and new year. We have Ramadan and Vesak to prepare for. Then we’re back to January.",
+    "id": 15034
+  },
+  {
+    "ts": "2026-01-28T10:25",
+    "author": "Charles",
+    "msg": "Expect around mid-febuary for the new tasks in febuary/march update",
+    "id": 15035
+  },
+  {
+    "ts": "2026-01-28T10:26",
+    "author": "Friso",
+    "msg": "👋",
+    "id": 15036
+  },
+  {
+    "ts": "2026-01-28T10:26",
+    "author": "Akira",
+    "msg": "but ser team does not take breaks, multiple teams working 18h/day as confirmed and verified by multiple ambassadors",
+    "id": 15037
+  },
+  {
+    "ts": "2026-01-28T10:27",
+    "author": "Wen (calibrating)",
+    "msg": "But focus now is rightly on governance and poll design.",
+    "id": 15038
+  },
+  {
+    "ts": "2026-01-28T10:27",
+    "author": "James_WM_ENO",
+    "msg": "The new road map is underway and I’m hopeful that 50% of the things on it may be done in this quarter.. if that’s the case then it’s all looking positive \n\nJust need daily rewards from 0.25 up to 0.8-$1 and this will be a totally different ball game altogether\n\nI’m impatient also but we did get some decent updates last week",
+    "id": 15039
+  },
+  {
+    "ts": "2026-01-28T10:28",
+    "author": "Akira",
+    "msg": "we're not that far yeah",
+    "id": 15040
+  },
+  {
+    "ts": "2026-01-28T10:28",
+    "author": "Wen (calibrating)",
+    "msg": "Doubtful emoji",
+    "id": 15041
+  },
+  {
+    "ts": "2026-01-28T10:29",
+    "author": "James_WM_ENO",
+    "msg": "24 things on the roadmap. Even if they get through the top 10 would be great",
+    "id": 15042
+  },
+  {
+    "ts": "2026-01-28T10:31",
+    "author": "Wen (calibrating)",
+    "msg": "Roadmap usually has destination (dates). They posted  bullet point list.",
+    "id": 15043
+  },
+  {
+    "ts": "2026-01-28T10:32",
+    "author": "Coffee Nodes",
+    "msg": "We still know what the team is working on in Q1",
+    "id": 15044
+  },
+  {
+    "ts": "2026-01-28T10:35",
+    "author": "Elitemas77",
+    "msg": "Honestly, are we all 12 in this chat 😅😂😂",
+    "id": 15045
+  },
+  {
+    "ts": "2026-01-28T10:44",
+    "author": "Daniel 🇷🇴",
+    "msg": "Just waiting for my daily rewards to crawl me out of the ~0.15 swamp.",
+    "id": 15046
+  },
+  {
+    "ts": "2026-01-28T10:51",
+    "author": "Akira",
+    "msg": "hey it could be worse... we could still be at 0.03 dark hole",
+    "id": 15047
+  },
+  {
+    "ts": "2026-01-28T10:51",
+    "author": "Wopdiddly",
+    "msg": "Agreed this could literally happen next month who knows \n\nTbh I'm not completely dissatisfied with the current rewards as it's still early.\n\nIF you had all your licenses leased at 50/50 a node has an ROI under six months. \n\nBig if ofc but I feel you can't put everything down to the team, it's everyone's responsibility to lease their license.\n\nThe problem for some is they bought way too many nodes and it will take crazy effort to lease all their licenses",
+    "id": 15048
+  },
+  {
+    "ts": "2026-01-28T10:51",
+    "author": "Akira",
+    "msg": "or 0.00X even",
+    "id": 15049
+  },
+  {
+    "ts": "2026-01-28T10:52",
+    "author": "Akira",
+    "msg": "we won't get all licenses leased at current levels",
+    "id": 15050
+  },
+  {
+    "ts": "2026-01-28T10:52",
+    "author": "Akira",
+    "msg": "maybe with a couple more tasks we can",
+    "id": 15051
+  },
+  {
+    "ts": "2026-01-28T10:53",
+    "author": "Wopdiddly",
+    "msg": "Well it was possible until the marketplace filters were introduced now my ULOs are leaving to the whales who over committed",
+    "id": 15052
+  },
+  {
+    "ts": "2026-01-28T10:54",
+    "author": "Wopdiddly",
+    "msg": "So fk it I'll use them all myself and ROI much faster",
+    "id": 15053
+  },
+  {
+    "ts": "2026-01-28T10:54",
+    "author": "Akira",
+    "msg": "how though",
+    "id": 15054
+  },
+  {
+    "ts": "2026-01-28T10:55",
+    "author": "Akira",
+    "msg": "you taking the farming route?",
+    "id": 15055
+  },
+  {
+    "ts": "2026-01-28T10:55",
+    "author": "Akira",
+    "msg": "exactly why we did 3 rounds of voting, ppl are already racing to the bottom and its not working",
+    "id": 15056
+  },
+  {
+    "ts": "2026-01-28T10:56",
+    "author": "Wopdiddly",
+    "msg": "I posted it all on X a few days ago but yeah 20 phones per LTE router or network. \n\nI'll set some up at home, set as many as can up in my factory. At least with the little LTE routers I can move them well out of the way so I don't glow 😂",
+    "id": 15057
+  },
+  {
+    "ts": "2026-01-28T10:57",
+    "author": "Wopdiddly",
+    "msg": "It's really going to crush the little guy I think by the time all the whales give away licenses. Anyway, all I can do is react so I am doing exactly that",
+    "id": 15058
+  },
+  {
+    "ts": "2026-01-28T10:58",
+    "author": "Akira",
+    "msg": "from edge network to farming network",
+    "id": 15059
+  },
+  {
+    "ts": "2026-01-28T10:58",
+    "author": "Mat",
+    "msg": "Thank you @defiants_Sophie follow on question please if thats OK.\n Re: \"CLI testing has been released, and task related instructions are due to be announced shortly\" \n1. Am I right in assuming \"CLI testing\" is the task called \"Caller ID Testing\"\nIf so:\n2. is this making production calls to UNOs (as defined by majority membership in this group)\n3. Your statement \"and task related instructions are due to be announced shortly\" is this in relation to the task called \"Caller ID Testing\"?",
+    "id": 15060
+  },
+  {
+    "ts": "2026-01-28T11:00",
+    "author": "Wopdiddly",
+    "msg": "Well I will use sim cards will be on different carriers and I'm doing my bit\n\nHowever I think we need as many devices online as possible rn to get the extra jobs and customers so I can't see it having a negative impact for now",
+    "id": 15061
+  },
+  {
+    "ts": "2026-01-28T11:04",
+    "author": "Byron",
+    "msg": "I am sick of this lack of meaningful communication and \"play with words\" game. The team obviously think we are mindless plebs that they can play with.\n\nWhat we all have to understand is that the power is in our hands. This thing is nothing without us, not only because we paid, but also because we offer the decentralization.\n\nWe should dictate the rules and priorities. NOT the team. We paid, our money they are using, and we provide the decentralization. Without us this thing is DEAD.\n\nSo, for me.\n\n- The team's first priority is COMMUNICATION with US\n- The team's second priority is to implement tasks and evolve the product\n\nI am willing to remove all my licenses from the marketplace and stop all promotional/marketing actions until the team behaves and starts treating us like partners. I urge everyone in here, who has invested their hard earned money for just being played (remember the voting fiasco right?), to do the same.\n\nWe have the power to change this. Shut down your farms, big or small. Stop promoting. Lets see how long they will keep ignoring us.\n\nThink about it.",
+    "id": 15062
+  },
+  {
+    "ts": "2026-01-28T11:06",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Please stop the accusations! It’s not tolerated!",
+    "id": 15063
+  },
+  {
+    "ts": "2026-01-28T11:08",
+    "author": "Kay",
+    "msg": "You make me think of my 3yr old toddler 😆",
+    "id": 15064
+  },
+  {
+    "ts": "2026-01-28T11:08",
+    "author": "Coffee Nodes",
+    "msg": "I wish the team was better with coms, but I think the project is moving in the right direction overall",
+    "id": 15065
+  },
+  {
+    "ts": "2026-01-28T11:08",
+    "author": "Flippy",
+    "msg": "Maybe team should do a Voice Chat in here. Today.",
+    "id": 15066
+  },
+  {
+    "ts": "2026-01-28T11:09",
+    "author": "Jamek",
+    "msg": "I think the same way . Even though we are the ones investing money in them, we have no rights or anything and there is very little communication.",
+    "id": 15067
+  },
+  {
+    "ts": "2026-01-28T11:09",
+    "author": "James_WM_ENO",
+    "msg": "Lack of communication ?? We had a lot of communication last week",
+    "id": 15068
+  },
+  {
+    "ts": "2026-01-28T11:11",
+    "author": "Jamek",
+    "msg": "a lot?",
+    "id": 15069
+  },
+  {
+    "ts": "2026-01-28T11:11",
+    "author": "Byron",
+    "msg": "corrected it",
+    "id": 15070
+  },
+  {
+    "ts": "2026-01-28T11:14",
+    "author": "Akira",
+    "msg": "for sure wasn't critizising you. you do what you have to do to earn\n\nits just that i think its sad for us to be forced to farming as the only alternative to get closer to ROI atm",
+    "id": 15071
+  },
+  {
+    "ts": "2026-01-28T11:14",
+    "author": "Sören Lewis Müller",
+    "msg": "Speaking a lot of truth here 👍",
+    "id": 15072
+  },
+  {
+    "ts": "2026-01-28T11:14",
+    "author": "Akira",
+    "msg": "definitely not what unity was built for",
+    "id": 15073
+  },
+  {
+    "ts": "2026-01-28T11:15",
+    "author": "Coffee Nodes",
+    "msg": "keyword is atm. with more tasks and more rewards, ulos will likely be more incentives than farmers",
+    "id": 15074
+  },
+  {
+    "ts": "2026-01-28T11:15",
+    "author": "ADA ACE WM Ambassador",
+    "msg": "Gm Gm yall!",
+    "id": 15075
+  },
+  {
+    "ts": "2026-01-28T11:16",
+    "author": "Akira",
+    "msg": "yeah, lets hope those come soon. cannot start any real marketing effort till then",
+    "id": 15076
+  },
+  {
+    "ts": "2026-01-28T11:17",
+    "author": "Akira",
+    "msg": "most of the potential ULOs i have reached out to have declined the opportunity, earnings are too low and they don't trust crypto\n\nwe seriously need fiat withdrawals",
+    "id": 15077
+  },
+  {
+    "ts": "2026-01-28T11:18",
+    "author": "Akira",
+    "msg": "ofc this is in europe, maybe ppl in other countries have more luck with distribution",
+    "id": 15078
+  },
+  {
+    "ts": "2026-01-28T11:18",
+    "author": "Coffee Nodes",
+    "msg": "you can post on twitter a few minutes a day. talk to friends. lurk on passive income forums, digital nomads and fire reddits",
+    "id": 15079
+  },
+  {
+    "ts": "2026-01-28T11:18",
+    "author": "Peterjo18",
+    "msg": "Honestly we really do have to see this investment as speculative. If it works the returns are high, and it may take a while because most of the dev work is experimental.\nPatience on our part is essential or we will go crazy. Developers are human too and our encouragement will be more helpful than threats.\nSo my advice is to reduce our timeframe expectations and keep your day job until the new tasks are ready.",
+    "id": 15080
+  },
+  {
+    "ts": "2026-01-28T11:18",
+    "author": "Sören Lewis Müller",
+    "msg": "Can't sign this though. tasks & evolving product is & always should be first priority.\n\nDoes the poor comms annoy everyone? Hell yeah it does. \n\nBut product & tasks come first. (just talking sequencing here tho, it shouldn't be exclusive of course and both should be possible)",
+    "id": 15081
+  },
+  {
+    "ts": "2026-01-28T11:18",
+    "author": "Coffee Nodes",
+    "msg": "not saying you're not limited but there are bits that can be done",
+    "id": 15082
+  },
+  {
+    "ts": "2026-01-28T11:19",
+    "author": "Rick Middleton",
+    "msg": "Fiat option would definitley help.  I've got a couple of people to set up Revolut for Unity withdrawls - and tested it myself with my main phone as a ULO once it got to $5.  Works pretty well.\n\nI was surprised it was possible to do the withdrawls directly from the phone by visiting the claim portal in Chrome!  Nice 🙂",
+    "id": 15083
+  },
+  {
+    "ts": "2026-01-28T11:19",
+    "author": "Akira",
+    "msg": "yeah but then this relates to having the minimum fee in the marketplace\n\ni would not like to start doing marketing efforts to then lose my ULO leads because they find other licenses with 10/90 splits in the marketplace",
+    "id": 15084
+  },
+  {
+    "ts": "2026-01-28T11:20",
+    "author": "Akira",
+    "msg": "its not worth it atm",
+    "id": 15085
+  },
+  {
+    "ts": "2026-01-28T11:20",
+    "author": "Daniel 🇷🇴",
+    "msg": "you can withdraw to your Revolut eth address 🤔",
+    "id": 15086
+  },
+  {
+    "ts": "2026-01-28T11:20",
+    "author": "Coffee Nodes",
+    "msg": "sure but that's today (like as in short term). built for a longer time frame. the 10/90 will be gone soon enough",
+    "id": 15087
+  },
+  {
+    "ts": "2026-01-28T11:21",
+    "author": "Sören Lewis Müller",
+    "msg": "but will be sorted (maybe) after next vote",
+    "id": 15088
+  },
+  {
+    "ts": "2026-01-28T11:21",
+    "author": "Rick Middleton",
+    "msg": "I chose USDT on Ethereum.. but ETH would probably work too",
+    "id": 15089
+  },
+  {
+    "ts": "2026-01-28T11:21",
+    "author": "Akira",
+    "msg": "will it be the final \"final voting\" round?",
+    "id": 15090
+  },
+  {
+    "ts": "2026-01-28T11:21",
+    "author": "Sören Lewis Müller",
+    "msg": "That is interesting. Makes sense that it should work with any wallet, but that really is the closest to fiat, straight to Revolut.",
+    "id": 15091
+  },
+  {
+    "ts": "2026-01-28T11:21",
+    "author": "Sören Lewis Müller",
+    "msg": "or the final final final voting round.",
+    "id": 15092
+  },
+  {
+    "ts": "2026-01-28T11:22",
+    "author": "Coffee Nodes",
+    "msg": "I disagree with \"We should dictate the rules and priorities. NOT the team.\". Not that I don't want the powa, but we'd be flying blind. we don't know who are the clients and what they ask for. The team should set the priorities with the health of the entire ecosystem in mind, not just the UNOs.",
+    "id": 15093
+  },
+  {
+    "ts": "2026-01-28T11:22",
+    "author": "James_WM_ENO",
+    "msg": "Just need an increase in rewards before anything else \n\nUp to 0.8- $1 per licence and this will be completely different",
+    "id": 15094
+  },
+  {
+    "ts": "2026-01-28T11:22",
+    "author": "Akira",
+    "msg": "good to know thx ser. \nmaybe Wise works too? have to try",
+    "id": 15095
+  },
+  {
+    "ts": "2026-01-28T11:24",
+    "author": "Wopdiddly",
+    "msg": "Exactly the problem why would any waste their time if others are the ones to gain from it.",
+    "id": 15096
+  },
+  {
+    "ts": "2026-01-28T11:25",
+    "author": "Sören Lewis Müller",
+    "msg": "does wise have a crypto wallet? mine doesn't & Wise overall is very anti-crypto",
+    "id": 15097
+  },
+  {
+    "ts": "2026-01-28T11:25",
+    "author": "Coffee Nodes",
+    "msg": "because the number of licenses are limited, and demand will grow as more people are enrolled",
+    "id": 15098
+  },
+  {
+    "ts": "2026-01-28T11:25",
+    "author": "Wopdiddly",
+    "msg": "Yes they will but until then if I advertise they get to the app and choose a 10/90 from a whale",
+    "id": 15099
+  },
+  {
+    "ts": "2026-01-28T11:26",
+    "author": "Akira",
+    "msg": "the only solution for this weird zero sum game competition between UNOs is to remove the marketplace entirely.\n\nULOs would just need to install the app and have a random license autoassigned (with a minimum fee for UNO, e.g. 50/50)",
+    "id": 15100
+  },
+  {
+    "ts": "2026-01-28T11:26",
+    "author": "Sören Lewis Müller",
+    "msg": "With the latest app version, is it somehow possible to see the phone model using a specific license? If not, can we reactivate it?",
+    "id": 15101
+  },
+  {
+    "ts": "2026-01-28T11:26",
+    "author": "Coffee Nodes",
+    "msg": "yup, and that's temporary. The whale have limited licenses",
+    "id": 15102
+  },
+  {
+    "ts": "2026-01-28T11:26",
+    "author": "Akira",
+    "msg": "this way all UNOs would only have to do marketing for the Unity app, not for their own licenses\n\na collective marketing effort",
+    "id": 15103
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Akira",
+    "msg": "also UX wise it would be much simpler for ULOs = install and earn",
+    "id": 15104
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Yeah, the idea isnt bad.",
+    "id": 15105
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Elitemas77",
+    "msg": "Exactly, it was possible before filters. And now look at the butterfly effect that has happened now from people trying to control. First asking for market place filters, then demanding a vote on a minimum split to prevent a “race to the bottom”. The effect of that now is a poor voting system and extended voting.\nLost interest of potential ulo’s and loss of already gained ulo’s, because of a set 60/40 split with current rewards. And the whole point of this, the avoidance of “race to the bottom”, is happening on the original unverified chat anyway. The market will always find a way. It was all pointless and look where it got us. But hey, you got what you wanted.\nMy opinion, it was better before all this 🤷🏻‍♂️",
+    "id": 15106
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Wopdiddly",
+    "msg": "Well I know one guy has 8800 as an example and that the lay store is still showing just 1k+ downloads so will be a while",
+    "id": 15107
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Coffee Nodes",
+    "msg": "tbh I agree with you here, I think ULO UNO is just confusing for new comers, it should be in the background",
+    "id": 15108
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "The split might be up for discussion though 😂",
+    "id": 15109
+  },
+  {
+    "ts": "2026-01-28T11:27",
+    "author": "Akira",
+    "msg": "we can vote 😁",
+    "id": 15110
+  },
+  {
+    "ts": "2026-01-28T11:28",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "[File: sticker.webm]",
+    "id": 15111
+  },
+  {
+    "ts": "2026-01-28T11:29",
+    "author": "Wopdiddly",
+    "msg": "I only joined this chat and haven't voted for anything but yes the whales got what they wanted I guess",
+    "id": 15112
+  },
+  {
+    "ts": "2026-01-28T11:29",
+    "author": "Akira",
+    "msg": "so instead of each UNO working for their own self interest (their own licenses)\n\nwe all would be working together as a collective for the common goal: build the biggest edge network in existence",
+    "id": 15113
+  },
+  {
+    "ts": "2026-01-28T11:31",
+    "author": "Coffee Nodes",
+    "msg": "I get you. I will just add that the more overall ULOs the network has, especially earning better rewards (at those 10.90), the quicker the overall network grows",
+    "id": 15114
+  },
+  {
+    "ts": "2026-01-28T11:33",
+    "author": "Wopdiddly",
+    "msg": "Yeah and also the more licenses online the more jobs they can attract..I get it. \n\nBe like water,\nOnce my hard earned users started abandoning me I started buying more phones.",
+    "id": 15115
+  },
+  {
+    "ts": "2026-01-28T11:37",
+    "author": "Tuco Ramirez",
+    "msg": "@mattyyco",
+    "id": 15116
+  },
+  {
+    "ts": "2026-01-28T11:38",
+    "author": "Owen D",
+    "msg": "Maybe you need a breast feed.",
+    "id": 15117
+  },
+  {
+    "ts": "2026-01-28T11:38",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Is this what the team suggested? I would rather hear their attempts to manage our expectations",
+    "id": 15118
+  },
+  {
+    "ts": "2026-01-28T11:40",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I love this idea! For a moment there I was worried I'd have to do some work",
+    "id": 15119
+  },
+  {
+    "ts": "2026-01-28T11:43",
+    "author": "Akira",
+    "msg": "i'm starting the anti-marketplace club",
+    "id": 15120
+  },
+  {
+    "ts": "2026-01-28T11:43",
+    "author": "Akira",
+    "msg": "[File: sticker.webm]",
+    "id": 15121
+  },
+  {
+    "ts": "2026-01-28T11:43",
+    "author": "Akira",
+    "msg": "stop making UNOs compete for ULOs",
+    "id": 15122
+  },
+  {
+    "ts": "2026-01-28T11:46",
+    "author": "Wopdiddly",
+    "msg": "Default rewards setting, ULOs take the next available license and give them out equally so spread among UNOs fairly then a joint marketing campaign.\n\nTeam gives us the material and we all push and retweet each others posts etc",
+    "id": 15123
+  },
+  {
+    "ts": "2026-01-28T11:47",
+    "author": "Akira",
+    "msg": "see, there is a way forward here\n\nand its totally fair for everyone involved",
+    "id": 15125
+  },
+  {
+    "ts": "2026-01-28T11:48",
+    "author": "Akira",
+    "msg": "best UX possible for ULOs\n\nno racing to the bottom, no stupid competitions, no official and unofficial marketplaces",
+    "id": 15126
+  },
+  {
+    "ts": "2026-01-28T11:49",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Only problem would be that your individual marketing efforts wouldnt give you individual rturns.",
+    "id": 15127
+  },
+  {
+    "ts": "2026-01-28T11:49",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "So someone who doesnt do marketing at all will reap the same results as someone who does",
+    "id": 15128
+  },
+  {
+    "ts": "2026-01-28T11:49",
+    "author": "Wopdiddly",
+    "msg": "Would be better than what's happening now \n\nPeople who were marketing now stopping because it's literally just whale food,  it's easier for them to steal them all than make an effort themselves",
+    "id": 15129
+  },
+  {
+    "ts": "2026-01-28T11:49",
+    "author": "Akira",
+    "msg": "but isnt a referal system in the works?",
+    "id": 15130
+  },
+  {
+    "ts": "2026-01-28T11:50",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Yeah, I agree, the current system isnt good and there needs to be improvements",
+    "id": 15131
+  },
+  {
+    "ts": "2026-01-28T11:50",
+    "author": "Akira",
+    "msg": "share the app store link with your referal code and earn for onboarding ppl",
+    "id": 15132
+  },
+  {
+    "ts": "2026-01-28T11:50",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Yes, but we dont know how it will look like and whats the ETA on that",
+    "id": 15133
+  },
+  {
+    "ts": "2026-01-28T11:51",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I have no idea why you've sent this to me",
+    "id": 15134
+  },
+  {
+    "ts": "2026-01-28T11:51",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Agreed, would be good. And also you can still do direct to ULO leases with better splits",
+    "id": 15135
+  },
+  {
+    "ts": "2026-01-28T11:51",
+    "author": "Akira",
+    "msg": "thats how i would build it at least. \nthe goal is to get as many ppl as possible on the app\n\nlicenses can be autoassigned equally",
+    "id": 15136
+  },
+  {
+    "ts": "2026-01-28T11:52",
+    "author": "Carlos",
+    "msg": "I have a few like that",
+    "id": 15137
+  },
+  {
+    "ts": "2026-01-28T11:52",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Maybe try formulating this in one combined clear post and tag the team. You can tag me too and I will forward it myself. But should be one post with the basic idea and why it would benefit everyone and then thnik about how someone would game the system and try to eliminate loopholes 😃",
+    "id": 15138
+  },
+  {
+    "ts": "2026-01-28T11:53",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "@akira_exo 👆",
+    "id": 15139
+  },
+  {
+    "ts": "2026-01-28T11:53",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Could be the first Unity Community Proposal.",
+    "id": 15140
+  },
+  {
+    "ts": "2026-01-28T11:54",
+    "author": "Carlos",
+    "msg": "Does anyone know if a ULO can revoke a lease?",
+    "id": 15141
+  },
+  {
+    "ts": "2026-01-28T11:54",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Yes",
+    "id": 15142
+  },
+  {
+    "ts": "2026-01-28T11:55",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "[Photo]",
+    "id": 15143
+  },
+  {
+    "ts": "2026-01-28T11:56",
+    "author": "Wopdiddly",
+    "msg": "Yeah just get the next available when you install, that's even easier",
+    "id": 15144
+  },
+  {
+    "ts": "2026-01-28T11:57",
+    "author": "FriendlyUrchin",
+    "msg": "Open the license and you'll see it. There is a small arrow down at each licence. Click on it.",
+    "id": 15145
+  },
+  {
+    "ts": "2026-01-28T11:59",
+    "author": "John",
+    "msg": "[Photo]",
+    "id": 15146
+  },
+  {
+    "ts": "2026-01-28T11:59",
+    "author": "John",
+    "msg": "[Photo]",
+    "id": 15147
+  },
+  {
+    "ts": "2026-01-28T11:59",
+    "author": "John",
+    "msg": "Any tips to attract some business …underwhelming weeks in",
+    "id": 15148
+  },
+  {
+    "ts": "2026-01-28T12:00",
+    "author": "UNO",
+    "msg": "This is such a great idea and solves a lot of issues. It simplifies onboarding for new ULO’s, it cleans up the App UI and it resolves all this conflict over the split which unifies the farms/whales/marketers etc toward a common goal.",
+    "id": 15149
+  },
+  {
+    "ts": "2026-01-28T12:00",
+    "author": "FriendlyUrchin",
+    "msg": "[Photo]",
+    "id": 15150
+  },
+  {
+    "ts": "2026-01-28T12:01",
+    "author": "FriendlyUrchin",
+    "msg": "You can do Carlos. 10/90 for 12 months. They'll fly off the shelf",
+    "id": 15151
+  },
+  {
+    "ts": "2026-01-28T12:03",
+    "author": "John",
+    "msg": "I’m open to get the fly wheel moving",
+    "id": 15152
+  },
+  {
+    "ts": "2026-01-28T12:04",
+    "author": "Compost Man Unity code: XY",
+    "msg": "All these issues relate to timing of when rewards pick up. If they shoot up in the near term then a free market app market makes perfect sense. If they are not going to pick up for some time then we may as well have a fixed split. Having a minimum split is just a variation on that that is slightly more complicated. A referral code for unos to benefit directly plus random allocation for people hitting the marketplace on their own would work well. But then there's no point building anything extra at this point if we are expecting rewards to shoot up in the near term.",
+    "id": 15153
+  },
+  {
+    "ts": "2026-01-28T12:04",
+    "author": "John",
+    "msg": "20/80 for a start",
+    "id": 15154
+  },
+  {
+    "ts": "2026-01-28T12:04",
+    "author": "Carlos",
+    "msg": "Your split and lease duration is no bueno.",
+    "id": 15155
+  },
+  {
+    "ts": "2026-01-28T12:04",
+    "author": "Akira",
+    "msg": "working on it. \n\ni'll share it here asap",
+    "id": 15156
+  },
+  {
+    "ts": "2026-01-28T12:04",
+    "author": "Quoia75",
+    "msg": "How bad are the fees on Revolut?",
+    "id": 15157
+  },
+  {
+    "ts": "2026-01-28T12:05",
+    "author": "Carlos",
+    "msg": "As soon as the allocated 10/90 are gone then I go to 15/85.",
+    "id": 15158
+  },
+  {
+    "ts": "2026-01-28T12:07",
+    "author": "FriendlyUrchin",
+    "msg": "So we just wait for Carlos to work his way to 50/50 and then we get going 🥳💪",
+    "id": 15159
+  },
+  {
+    "ts": "2026-01-28T12:08",
+    "author": "Miro K",
+    "msg": "Usdc to usd is no fees now, standard free plan.",
+    "id": 15160
+  },
+  {
+    "ts": "2026-01-28T12:08",
+    "author": "Nico | NodeX",
+    "msg": "I think originally Josh talked about something like this.",
+    "id": 15161
+  },
+  {
+    "ts": "2026-01-28T12:09",
+    "author": "Quoia75",
+    "msg": "Does Standard come with a physical card? Or is pure digital?",
+    "id": 15162
+  },
+  {
+    "ts": "2026-01-28T12:09",
+    "author": "Akira",
+    "msg": "building a proposal",
+    "id": 15163
+  },
+  {
+    "ts": "2026-01-28T12:11",
+    "author": "Miro K",
+    "msg": "Digital card you can out into your wallet (apple or google).",
+    "id": 15165
+  },
+  {
+    "ts": "2026-01-28T12:14",
+    "author": "R.- B.",
+    "msg": "Coms are def a problem. And yes the project is moving in the right direction.",
+    "id": 15166
+  },
+  {
+    "ts": "2026-01-28T12:15",
+    "author": "Wopdiddly",
+    "msg": "A praise Open Sandwich 😂",
+    "id": 15167
+  },
+  {
+    "ts": "2026-01-28T12:17",
+    "author": "Quoia75",
+    "msg": "I somewhat agree with this. Byron had a good automated license distribution solution but it's unclear to what degree it would set back development. The current sentiment among UNOs has been impacted by this split stuff. Now factions are forming. Healthy competition is good but I think UNO cooperation will produce stronger results. \n\n- Establish a floor split\n- Automate license distribution",
+    "id": 15168
+  },
+  {
+    "ts": "2026-01-28T12:17",
+    "author": "Quoia75",
+    "msg": "-Thank you",
+    "id": 15169
+  },
+  {
+    "ts": "2026-01-28T12:18",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "You cannot ask UNOs for unity after that shitshow that has killed the marketplace with a crazy 60:40 split. \nI agree with what you wrote, as usual I have to say, but you cannot expect support from those UNOs that were relying on the marketplace to lease (fairly, 30:70, 40:60) part of their licenses.\nDivide et impera, as Romans were used to say. \nYou (and Val and Clover and many others) have split UNOs and destroy an in-app functionality for your own interest, now you all have to rule and fight your own battles \nI will watch from the bleachers, until a more fair option for the marketplace would come out from your side",
+    "id": 15170
+  },
+  {
+    "ts": "2026-01-28T12:24",
+    "author": "Don Standard",
+    "msg": "Building on the discussion above, here’s how I’m currently thinking about it. \n\nSetting an artificially low ULO profit share on the marketplace won’t prevent undercutting. It will simply push competition off-platform into Telegram groups and DMs. \n\nThat still results in marketeers losing ULOs they onboarded, while new users are flooded with offers and exposed to bad actors. It also creates a real risk of scams, which reflects badly on Unity as a platform. \n\nAnother unintended consequence is that, if organic leasing becomes harder for some UNOs, it may incentivise consolidation of devices rather than growth of a distributed operator base — which runs counter to the goal of a broad, decentralised edge network. \n\nA cleaner solution would be for Unity to apply a consistent, platform-defined licence split wherever licences are offered. If no one can offer preferential terms elsewhere, there’s no incentive for DM outreach, licence switching, or spam.\nPeople who put real work into marketing Unity would still have a fair advantage by being able to distribute their own lease codes. Those who don’t wish to, or are unable to market, would still have their licences fairly allocated to new ULOs who join without a code. \n\nThis isn’t about restricting competition — it’s about clear, transparent rules applied equally, protecting users, and keeping activity on the platform rather than in private messages.",
+    "id": 15171
+  },
+  {
+    "ts": "2026-01-28T12:25",
+    "author": "Sören Lewis Müller",
+    "msg": "Oh thank you! Can’t believe I didn’t get that 🤣 that’s great. Haha",
+    "id": 15172
+  },
+  {
+    "ts": "2026-01-28T12:32",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "[Photo]",
+    "id": 15173
+  },
+  {
+    "ts": "2026-01-28T12:33",
+    "author": "Wopdiddly",
+    "msg": "[File: animation.gif.mp4]",
+    "id": 15174
+  },
+  {
+    "ts": "2026-01-28T12:34",
+    "author": "Rdawgie",
+    "msg": "What's your plan if rewards take off? Do you keep your ULO's at 10/90 or do you revoke and change allocation?",
+    "id": 15175
+  },
+  {
+    "ts": "2026-01-28T12:34",
+    "author": "Quoia75",
+    "msg": "Your split and lease duration is not bad. People have 50/50 licenses being picked up. These are people that are actively promoting to existing communities. Until we get more tasks, higher rewards, and fiat withdrawals, moving licenses \"passively\" is going to be challenging. Right now some folks are capitalizing on ULOs' fear that a 60/40 floor split is going to be established and they're listing licenses at 10/90 with a 6-12 month duration.",
+    "id": 15176
+  },
+  {
+    "ts": "2026-01-28T12:42",
+    "author": "Quoia75",
+    "msg": "Not knocking the team but I don't think the whole **in-app marketplace / choose your own split / go be an indie Unity marketer** perspective was given enough thought. Hoping they are learning from recent feedback.🙏🙌",
+    "id": 15177
+  },
+  {
+    "ts": "2026-01-28T12:43",
+    "author": "Jon",
+    "msg": "[Photo]",
+    "id": 15178
+  },
+  {
+    "ts": "2026-01-28T12:45",
+    "author": "Jon",
+    "msg": "I have a ULO with this error and I don’t know how to fix it. I told her to do the usual…force stop restart, unrestricted battery…anything else?",
+    "id": 15180
+  },
+  {
+    "ts": "2026-01-28T12:45",
+    "author": "Jon",
+    "msg": "The phone is a redmi 14C",
+    "id": 15181
+  },
+  {
+    "ts": "2026-01-28T12:46",
+    "author": "Coffee Nodes",
+    "msg": "Try different wifi",
+    "id": 15182
+  },
+  {
+    "ts": "2026-01-28T12:46",
+    "author": "Arch Trekkor",
+    "msg": "No any sleep modes. kills the app.",
+    "id": 15183
+  },
+  {
+    "ts": "2026-01-28T12:47",
+    "author": "Jon",
+    "msg": "Hmm ok I’ll let her know…thx for the input guys!",
+    "id": 15184
+  },
+  {
+    "ts": "2026-01-28T12:48",
+    "author": "chilly",
+    "msg": "If rewards hit $96, a 10:90 split has an ROI of like 3 months",
+    "id": 15185
+  },
+  {
+    "ts": "2026-01-28T12:48",
+    "author": "Byron",
+    "msg": "Thank you for your comment. I totally get your point of view and your arguments. Let me clarify a couple of things.\n\n1. I was among the first, probably THE first, to say that the whole voting thing was useless. I thoroughly explained my reasoning and suggested an automated system which would guarantee fair incentives (shares) for both UNOs and ULOs and at the same time allow us to boost marketplace performance and product awareness UNITED, since there would be NO need for individual offers. The optimal share (in terms of revenue and adoption) at any given time would be the one already set by the algorithm, so any deviation from that would directly mean less performance, something that no sensible UNO would want. The marketplace can move to a fully unregulated status when it reaches a certain capacity/maturity in terms of supply (tasks) / demand (quality ULOs).\n\n2. Given the decision from the team for a vote, and a hard fixed UNO/ULO share I had to propose what I believe best fits our tasks as marketeers. What would give us the most tools to promote our licenses LONG TERM, not only when incentives are miniscule as right now. I am sorry if I had you divided. That was not my intention. My only intention is to help in making this project, my investment, successful and rewarding, as soon as possible.",
+    "id": 15186
+  },
+  {
+    "ts": "2026-01-28T12:50",
+    "author": "Wopdiddly",
+    "msg": "If you discount the time it takes for them to hit that yeah, but you can't",
+    "id": 15187
+  },
+  {
+    "ts": "2026-01-28T12:51",
+    "author": "Carlos",
+    "msg": "I will not revoke any licenses unless uptime is not met 69% over a quarter or zero uptime for more than 7 days.",
+    "id": 15189
+  },
+  {
+    "ts": "2026-01-28T12:54",
+    "author": "Carlos",
+    "msg": "My leases are for 12 months which is also appealing",
+    "id": 15190
+  },
+  {
+    "ts": "2026-01-28T12:55",
+    "author": "Wopdiddly",
+    "msg": "Even the lease term is meaningless as either party can revoke at any time",
+    "id": 15191
+  },
+  {
+    "ts": "2026-01-28T12:55",
+    "author": "James_WM_ENO",
+    "msg": "So what’s the new discussion… ULO’s don’t see split details at all and us UNO’s get a good rate like 50/60% ?",
+    "id": 15192
+  },
+  {
+    "ts": "2026-01-28T12:56",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "thank for replying, food for thought",
+    "id": 15193
+  },
+  {
+    "ts": "2026-01-28T12:57",
+    "author": "Rdawgie",
+    "msg": "That's a big if. We are nowhere near that. If Carlos is willing to leave large amounts of money on the table, I praise him.",
+    "id": 15194
+  },
+  {
+    "ts": "2026-01-28T12:58",
+    "author": "Rdawgie",
+    "msg": "Most wouldn't do that but he can do whatever he wants",
+    "id": 15195
+  },
+  {
+    "ts": "2026-01-28T13:00",
+    "author": "Carlos",
+    "msg": "I’ll repeat myself. Not all my leases will be 10/90 only 10%. I will raise split as we go until ai reach 50/50. I am at bootstrap phase.",
+    "id": 15196
+  },
+  {
+    "ts": "2026-01-28T13:01",
+    "author": "Joshua F",
+    "msg": "@akira_exo heres my proposal if it helps",
+    "id": 15197
+  },
+  {
+    "ts": "2026-01-28T13:03",
+    "author": "Joshua F",
+    "msg": "The only drawback I could find is potential disincentive to actively market as those who just wait over the long term end up with a better average split. Suggested remedy would be to reward UNOs with bonus licenses when milestones are hit for referral code use",
+    "id": 15198
+  },
+  {
+    "ts": "2026-01-28T13:12",
+    "author": "LIIICHT",
+    "msg": "Anybody else who uses Ledger get a dodgy looking email today??",
+    "id": 15199
+  },
+  {
+    "ts": "2026-01-28T13:12",
+    "author": "Quoia75",
+    "msg": "As long as UNOs retain the ability to distribute licenses privately, I don't think there will be much of an issue here. Those who are interested self distribution will continue to do so. I think in a past AMA it was mention that if more license need to be created they will be directed toward those who have done the best job of distributing their existing supply.\n\nOr is the general opinion turning from self distribution as an option as long as a fully automated marketplace exists?\n\nIf so, removing self-distribution will be as problematic as having no guardrails against \"race to the bottom\" splits.",
+    "id": 15200
+  },
+  {
+    "ts": "2026-01-28T13:14",
+    "author": "Quoia75",
+    "msg": "Better than that, I had a whole dodgy phone call last week. They called 3 times in a row. Wanted to __help me out__ because \"it looks like someone from Germany is trying access your Ledger, sir\".",
+    "id": 15201
+  },
+  {
+    "ts": "2026-01-28T13:19",
+    "author": "LIIICHT",
+    "msg": "[Photo]",
+    "id": 15203
+  },
+  {
+    "ts": "2026-01-28T13:21",
+    "author": "Quoia75",
+    "msg": "DO NOT CLICK ANY LINK IN THAT EMAIL. Contact Ledger directly if you suspect foul play.",
+    "id": 15204
+  },
+  {
+    "ts": "2026-01-28T13:21",
+    "author": "LIIICHT",
+    "msg": "Reported as spam and deleted",
+    "id": 15205
+  },
+  {
+    "ts": "2026-01-28T13:24",
+    "author": "Quoia75",
+    "msg": "If it helps anyone here, beware of any calls coming from the following number, claims to be working with Ledger: (650) 489-5346.",
+    "id": 15206
+  },
+  {
+    "ts": "2026-01-28T13:24",
+    "author": "Elitemas77",
+    "msg": "[File: bogus-smell.mp4]",
+    "id": 15207
+  },
+  {
+    "ts": "2026-01-28T13:25",
+    "author": "Nico | NodeX",
+    "msg": "Good suggestions fill in the form pls",
+    "id": 15208
+  },
+  {
+    "ts": "2026-01-28T13:25",
+    "author": "Akira",
+    "msg": "@Dodenberg this chat has restrictions, can't attach documents. \n\nsending you the full proposal via DM",
+    "id": 15209
+  },
+  {
+    "ts": "2026-01-28T13:27",
+    "author": "Rick Middleton",
+    "msg": "I don't think the fees are a problem at all... But likely the exchange rates are not the best for swapping cryptos around.",
+    "id": 15210
+  },
+  {
+    "ts": "2026-01-28T13:28",
+    "author": "Quoia75",
+    "msg": "If ULOs stick to USDC to USD, they should be fine, no?",
+    "id": 15211
+  },
+  {
+    "ts": "2026-01-28T13:28",
+    "author": "Nico | NodeX",
+    "msg": "Love the creative thinking going on",
+    "id": 15212
+  },
+  {
+    "ts": "2026-01-28T13:28",
+    "author": "LIIICHT",
+    "msg": "So you just cashed out of Unity using the web portal and used an eth address linked to your Revolut account?\nI've not tried cashing out yet.....",
+    "id": 15213
+  },
+  {
+    "ts": "2026-01-28T13:29",
+    "author": "Akira",
+    "msg": "**TL;DR – Unity License Distribution Proposal**\n\nThe current license marketplace forces UNOs to compete against each other for ULOs via reward splits, fragmenting marketing and hurting long-term growth.\n\nThis proposal removes the marketplace entirely. Licenses are automatically assigned to ULOs when the Unity app is installed and a license is activated, using a neutral allocation method.\n\nTo keep strong marketing incentives, UNOs are rewarded through a referral system: if a user installs the app via a UNO referral and keeps a license active for a minimum period, the referring UNO earns a reward. No instant payouts, no split bidding.\n\n➡️** Result**: less internal competition, aligned incentives, simpler onboarding, and rewards tied to real, long-term adoption rather than short-term tactics.\n\nIf this sounds good to any of you and want to see the full proposal in detail, DM me 🤝",
+    "id": 15214
+  },
+  {
+    "ts": "2026-01-28T13:30",
+    "author": "WISE Node | Depinity.io WMC Services",
+    "msg": "Where do you get this data from?",
+    "id": 15215
+  },
+  {
+    "ts": "2026-01-28T13:30",
+    "author": "LIIICHT",
+    "msg": "Im hoping that Unity and Revolut can be linked at some stage so cashing out is a simple process and can be straight into GBP if desired",
+    "id": 15216
+  },
+  {
+    "ts": "2026-01-28T13:32",
+    "author": "Quoia75",
+    "msg": "I think this looks solid, however I would not want the option to lease licenses privately to be removed as a result of this proposal. What's your thinking there?",
+    "id": 15217
+  },
+  {
+    "ts": "2026-01-28T13:33",
+    "author": "Akira",
+    "msg": "still possible to lease privately, that would remain an option",
+    "id": 15218
+  },
+  {
+    "ts": "2026-01-28T13:33",
+    "author": "Quoia75",
+    "msg": "Cool beans. Yes, I'd like to see the full proposal. I'll DM you. How do you plan to submit it? Via the Feature Recommendation form?",
+    "id": 15219
+  },
+  {
+    "ts": "2026-01-28T13:33",
+    "author": "Gwailow",
+    "msg": "Im hoping they use the tech that WM have already implemented for withdrawing airnode rewards - straight to bank account in GBP, USD, EUR",
+    "id": 15220
+  },
+  {
+    "ts": "2026-01-28T13:34",
+    "author": "Akira",
+    "msg": "lets see if ambassadors is a better shortcut to the team",
+    "id": 15221
+  },
+  {
+    "ts": "2026-01-28T13:35",
+    "author": "Elitemas77",
+    "msg": "Then the competition is still there",
+    "id": 15222
+  },
+  {
+    "ts": "2026-01-28T13:37",
+    "author": "Akira",
+    "msg": "would not be the default path and can have limitations",
+    "id": 15223
+  },
+  {
+    "ts": "2026-01-28T13:38",
+    "author": "Rick Middleton",
+    "msg": "Yep.  Used my phone. Logged into web portal on chrome as ULO by email.  \n\nRevolut can accept a small variety of cryptos.  USDT and USDC on Ethereum were options.  Also probably SHIB, XRP, SOL, ETH... But I wanted to use stable.  \n\nYou can spend crypto directly from your Revolut card.  So if you want you can just deposit stables and then spend it in shops.",
+    "id": 15224
+  },
+  {
+    "ts": "2026-01-28T13:38",
+    "author": "Daniel 🇷🇴",
+    "msg": "getting Ledger spams every day",
+    "id": 15225
+  },
+  {
+    "ts": "2026-01-28T13:38",
+    "author": "Quoia75",
+    "msg": "I think the automated marketplace will be a strong enough draw that private leasing will not be a threat. People will still be serving private communities, family and friends so they should have that option. Most will just let the marketplace do the heavy lifting, as it should if it's going to exist.",
+    "id": 15226
+  },
+  {
+    "ts": "2026-01-28T13:39",
+    "author": "LIIICHT",
+    "msg": "Yes i already use Revolut. Good to know",
+    "id": 15227
+  },
+  {
+    "ts": "2026-01-28T13:41",
+    "author": "Elitemas77",
+    "msg": "I like the idea. I just mean if you can still privately lease, you’re still going to have people advertising 10/90 I think",
+    "id": 15228
+  },
+  {
+    "ts": "2026-01-28T13:43",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Will foraward it to the team after we included the additions we talked about in DMs ❤️",
+    "id": 15229
+  },
+  {
+    "ts": "2026-01-28T13:45",
+    "author": "ale2159",
+    "msg": "This proposal removes the marketplace entirely. Licenses are automatically assigned to ~~UNOs  ~~**ULOs**",
+    "id": 15230
+  },
+  {
+    "ts": "2026-01-28T13:45",
+    "author": "LIIICHT",
+    "msg": "Another idea i had was that if UNO\"s could only list a small percentage of their licenses at high ULO splits and only for a shorter contract durations.\nIt would just be a way of bootstrapping the project and letting early bird ulos get a juicy worm.\nOnce rewards started ramping up there wouldn't be the need for such wide splits.",
+    "id": 15231
+  },
+  {
+    "ts": "2026-01-28T13:46",
+    "author": "Friso",
+    "msg": "[Photo] Getting Ledger and Trezor phising every week. 'New firmware' etc. Never click on links in emails. Only go to the official website or official app!",
+    "id": 15232
+  },
+  {
+    "ts": "2026-01-28T13:46",
+    "author": "Flippy",
+    "msg": "Will never happen",
+    "id": 15233
+  },
+  {
+    "ts": "2026-01-28T13:47",
+    "author": "LIIICHT",
+    "msg": "And once you had used up your 5% of licenses at 10/90 or whatever you couldn't offer any more at that split.\nWould prevent whales putting all their licenses up at cut price rates",
+    "id": 15234
+  },
+  {
+    "ts": "2026-01-28T13:48",
+    "author": "LIIICHT",
+    "msg": "These people are scumbags",
+    "id": 15235
+  },
+  {
+    "ts": "2026-01-28T13:48",
+    "author": "Elitemas77",
+    "msg": "Yeah I wouldn’t want to lose the option to set good splits for friends and family. But I think people could still abuse it   ?",
+    "id": 15236
+  },
+  {
+    "ts": "2026-01-28T13:49",
+    "author": "LIIICHT",
+    "msg": "Well say you have 200 licenses but can only offer 10 or maybe 20 at 10/90...",
+    "id": 15237
+  },
+  {
+    "ts": "2026-01-28T13:49",
+    "author": "Abdus",
+    "msg": "Don’t think bonus licenses is they way to go. You’re just reducing the chances of you getting allocated a task. We still don’t have alot of info. For e.g. where are the telemetry rewards coming from and how are they calculated. Does unity sign on companies and are paid a chunk upfront and then this translate into rewards? 🤷‍♂️ If yes then more licenses does not equate into more tasks being carried out by every ULO. As I see it right now, more licenses may dilute rewards, may reduce chances of being allocated tasks (if done randomly), and could lead to more disappointment. I would shelf bonus licenses until ULOs are consistently using the app, there is a real demand because of peak capacity. Just my 2 cents. Feel free to disagree.",
+    "id": 15238
+  },
+  {
+    "ts": "2026-01-28T13:50",
+    "author": "LIIICHT",
+    "msg": "Tbf the only reason people are offering 10/90 is because rewards are miniscule so they are looking for volume.",
+    "id": 15239
+  },
+  {
+    "ts": "2026-01-28T13:51",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I made my own platform with dashboard for monitoring Unity",
+    "id": 15240
+  },
+  {
+    "ts": "2026-01-28T13:51",
+    "author": "Joshua F",
+    "msg": "The team have explicitly stated that rewards grow proportionally with network growth, not diluted by it",
+    "id": 15241
+  },
+  {
+    "ts": "2026-01-28T13:52",
+    "author": "Elitemas77",
+    "msg": "Could be an option",
+    "id": 15242
+  },
+  {
+    "ts": "2026-01-28T13:52",
+    "author": "Patrick | 🇨🇭 EN#666",
+    "msg": "or to spread the network.  right now it's  2cent/ULO/Day.  thats 60cent * 200 per month.  120$/month.  Thast totaly ok for do nothing.",
+    "id": 15243
+  },
+  {
+    "ts": "2026-01-28T13:52",
+    "author": "Abdus",
+    "msg": "Right which network?",
+    "id": 15244
+  },
+  {
+    "ts": "2026-01-28T13:53",
+    "author": "WISE Node | Depinity.io WMC Services",
+    "msg": "I know, but where you get the data from?",
+    "id": 15245
+  },
+  {
+    "ts": "2026-01-28T13:56",
+    "author": "Abdus",
+    "msg": "The way I understand “as the network grows” is as unity onboards more companies…",
+    "id": 15246
+  },
+  {
+    "ts": "2026-01-28T13:57",
+    "author": "Joshua F",
+    "msg": "Agree with this. Please could you DM your proposal",
+    "id": 15247
+  },
+  {
+    "ts": "2026-01-28T14:01",
+    "author": "LIIICHT",
+    "msg": "Yeah for example for each node you get 25 \"friends and family\" licenses that you can split any which way AND put on the marketplace if you dont need them for friends and family.\nYou then have another tranche of licenses, say 75 that you can advertise on  marketplace at 40/60 then the remaining 100 at 50/50 or better.",
+    "id": 15248
+  },
+  {
+    "ts": "2026-01-28T14:01",
+    "author": "LE",
+    "msg": "Abuse it how?",
+    "id": 15249
+  },
+  {
+    "ts": "2026-01-28T14:01",
+    "author": "Joshua F",
+    "msg": "I get your point. But theres no more reason to assume that the total tasks available are fixed than that they can increase as the network grows and provides better more distributed data, which is what the team has stated",
+    "id": 15250
+  },
+  {
+    "ts": "2026-01-28T14:07",
+    "author": "Abdus",
+    "msg": "Then way would you want to spread the rewards further limiting your current potential gain. I did mention when capacity peaks and current 1.2M cannot cope then release more licenses wisely. Of course plan ahead. There is something called law of diminishing returns. ECON 101. Just saying..",
+    "id": 15251
+  },
+  {
+    "ts": "2026-01-28T14:10",
+    "author": "LIIICHT",
+    "msg": "Man , we UNOS need a \"nudge\" or poke button on our licenses to wake up sleepy ULOs who have not checked their app is connected...😆",
+    "id": 15253
+  },
+  {
+    "ts": "2026-01-28T14:11",
+    "author": "LIIICHT",
+    "msg": "\"You have been nudged by the node holder...please ensure your POW is active\"",
+    "id": 15254
+  },
+  {
+    "ts": "2026-01-28T14:13",
+    "author": "Quoia75",
+    "msg": "Define abuse though? Farming? Otherwise it will still take some work to get them distributed outside of a simplified app-based distribution system. Most people are naturally lazy and will reach for the option that has the least amount of steps.",
+    "id": 15255
+  },
+  {
+    "ts": "2026-01-28T14:13",
+    "author": "Mr Roundry",
+    "msg": "this is a really good idea ... 3 friends of mine need exactly this ... i have to remember them to keep their licenses online",
+    "id": 15256
+  },
+  {
+    "ts": "2026-01-28T14:14",
+    "author": "Dennis",
+    "msg": "great idea",
+    "id": 15257
+  },
+  {
+    "ts": "2026-01-28T14:14",
+    "author": "Elitemas77",
+    "msg": "Well maybe abuse is the wrong word. I mean that can still be used as a “race to the bottom”",
+    "id": 15258
+  },
+  {
+    "ts": "2026-01-28T14:14",
+    "author": "Sophie | I will never DM you first",
+    "msg": "Have you filled the feature request form? 🙂",
+    "id": 15259
+  },
+  {
+    "ts": "2026-01-28T14:14",
+    "author": "Mr Roundry",
+    "msg": "yeah @LIIICHT pls do it",
+    "id": 15260
+  },
+  {
+    "ts": "2026-01-28T14:15",
+    "author": "LIIICHT",
+    "msg": "I will",
+    "id": 15261
+  },
+  {
+    "ts": "2026-01-28T14:15",
+    "author": "Quoia75",
+    "msg": "Scammers in #SweatyMode.",
+    "id": 15262
+  },
+  {
+    "ts": "2026-01-28T14:17",
+    "author": "Elitemas77",
+    "msg": "It can still be used as a “race to the bottom” in other markets/channels",
+    "id": 15263
+  },
+  {
+    "ts": "2026-01-28T14:19",
+    "author": "Quoia75",
+    "msg": "Automated please.",
+    "id": 15264
+  },
+  {
+    "ts": "2026-01-28T14:21",
+    "author": "Quoia75",
+    "msg": "Not nearly in the way it stands presently. I think you are also underestimating the amount of work it takes to market a new thing to people. Especially since this has a crypto component and for now, no pure fiat option.",
+    "id": 15265
+  },
+  {
+    "ts": "2026-01-28T14:24",
+    "author": "LIIICHT",
+    "msg": "Yes I've suggested it as an automated response before requiring any dialogue/direct contact between UNO and ULO",
+    "id": 15266
+  },
+  {
+    "ts": "2026-01-28T14:25",
+    "author": "Joshua F",
+    "msg": "There is also something called the network effect. We don't yet know where the peak for the value of this system will be. My bet is network effect will dominate for a long time before diminishing returns, so long as the team continue building partnerships and taking greater market share",
+    "id": 15267
+  },
+  {
+    "ts": "2026-01-28T14:25",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "When voting!",
+    "id": 15268
+  },
+  {
+    "ts": "2026-01-28T14:26",
+    "author": "Elitemas77",
+    "msg": "Apparently it only takes a simple “I have licenses with a 10/90 split, dm if you want” message on the old chat to get a couple 100. The exact thing you try to get rid of pop it’s head up somewhere else.",
+    "id": 15269
+  },
+  {
+    "ts": "2026-01-28T14:28",
+    "author": "Quoia75",
+    "msg": "Same🙏🙌",
+    "id": 15270
+  },
+  {
+    "ts": "2026-01-28T14:28",
+    "author": "Luckybuy",
+    "msg": "Hi everyone! Anyone else noticed that there have appeared ulo rewards on devices that are set on 0%. I run a few licenses for myself and noticed this the last few days",
+    "id": 15271
+  },
+  {
+    "ts": "2026-01-28T14:28",
+    "author": "Quoia75",
+    "msg": "Yeah - I don't think there is one \"perfect\" solution, just a better solution👍",
+    "id": 15272
+  },
+  {
+    "ts": "2026-01-28T14:35",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "So team comfirmed only voting options will be 50/50 60/40 right?",
+    "id": 15273
+  },
+  {
+    "ts": "2026-01-28T14:37",
+    "author": "James_WM_ENO",
+    "msg": "Think so yes",
+    "id": 15274
+  },
+  {
+    "ts": "2026-01-28T14:43",
+    "author": "Elitemas77",
+    "msg": "Yeah it is a better solution than what we have now for sure.",
+    "id": 15275
+  },
+  {
+    "ts": "2026-01-28T14:47",
+    "author": "Forty41",
+    "msg": "I have had this too today",
+    "id": 15276
+  },
+  {
+    "ts": "2026-01-28T14:53",
+    "author": "Luckybuy",
+    "msg": "Thats weird...i've filed a bug report already",
+    "id": 15277
+  },
+  {
+    "ts": "2026-01-28T15:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hey everyone!",
+    "id": 15278
+  },
+  {
+    "ts": "2026-01-28T15:01",
+    "author": "Charles",
+    "msg": "Yeah I've got the same",
+    "id": 15279
+  },
+  {
+    "ts": "2026-01-28T15:13",
+    "author": "J. P. Costa",
+    "msg": "Guys can we please stop wasting so much energy on fee split and focus on pressing for more tasks and therefore more UPs?? 10, 40, 50 or 60% of $0.2 are still pennies!!!!",
+    "id": 15281
+  },
+  {
+    "ts": "2026-01-28T15:16",
+    "author": "Quoia75",
+    "msg": "No time was wasted today. Between Akira nd Byron some very viable alternatives were recommended that would eliminate the need for a debate about splits. Look for Akira's recent posts.👌",
+    "id": 15282
+  },
+  {
+    "ts": "2026-01-28T15:16",
+    "author": "Quoia75",
+    "msg": "And yes - we need more tasks!",
+    "id": 15283
+  },
+  {
+    "ts": "2026-01-28T15:18",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "We'll stop the first sec when what we voted on 3 times and was sold to us as final - implemented",
+    "id": 15284
+  },
+  {
+    "ts": "2026-01-28T15:21",
+    "author": "Wopdiddly",
+    "msg": "I'm sure pressing for them won't make a difference. I'm sure the team want to get the tasks onboard asap also\n\nI think they will increase once we get more online tho, just look at the downloads on the play store still low",
+    "id": 15285
+  },
+  {
+    "ts": "2026-01-28T15:21",
+    "author": "Carlos",
+    "msg": "We still need to be able to lease licenses privately",
+    "id": 15286
+  },
+  {
+    "ts": "2026-01-28T15:27",
+    "author": "J. P. Costa",
+    "msg": "Ofc its low, no one is getting out of bed for 0.2 reward before split and soon before monthly fee. Realistically we only have one task live atm and u guys spent the whole week fighting over market splits",
+    "id": 15287
+  },
+  {
+    "ts": "2026-01-28T15:31",
+    "author": "Paul",
+    "msg": "Do we have any clarity yet on what the manual tasks for Scouts & Runners will be, and is there any estimate on the expected rewards?",
+    "id": 15288
+  },
+  {
+    "ts": "2026-01-28T15:36",
+    "author": "Janilom81",
+    "msg": "Woke up, checked email for Scout/Runner .... back to bed. See you tomorrow.",
+    "id": 15289
+  },
+  {
+    "ts": "2026-01-28T15:37",
+    "author": "Wopdiddly",
+    "msg": "Yup you're right, think some of us have to be the chicken rather than wait for the eggs. If we all ran 3-4 per household it'd be a great start. Some poor guy up above with one lease WHEN every lease is earning about $6- $9/month (mine are at least)\n\nGet a few old Samsungs, pay for themselves in under two months if you look for the right bargains \n\nWe all do this and the network grows 2X I'm sure",
+    "id": 15290
+  },
+  {
+    "ts": "2026-01-28T15:38",
+    "author": "Abdus",
+    "msg": "Uhm just to be clear by peak capacity I am referring to tasks that can be performed. And since we are relying on human input time will tell where that peak is in terms of human capital. From data you can plan ahead and forecast how many more licenses needs to be released when needed. Network effect - that is onboarding. If the deals closed so far don’t warrant more licenses, then why create redundancy in the system? Both work hand in hand and I just think it’s a balancing act between supply and demand. Companies do not grow on hopium. I trust Unity is working diligently behind the scenes. Let’s see what the future brings. Anyways. Good talk.",
+    "id": 15291
+  },
+  {
+    "ts": "2026-01-28T15:48",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "[File: got-any-tasks.mp4]",
+    "id": 15292
+  },
+  {
+    "ts": "2026-01-28T15:48",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "kind reminder 🙏",
+    "id": 15293
+  },
+  {
+    "ts": "2026-01-28T15:58",
+    "author": "Page Øne",
+    "msg": "lets first get clarity on the \"active task \"",
+    "id": 15294
+  },
+  {
+    "ts": "2026-01-28T16:11",
+    "author": "libben",
+    "msg": "Are we supposed to have new task before end of jan?",
+    "id": 15295
+  },
+  {
+    "ts": "2026-01-28T16:27",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "I didn't read the full proposal yet and I appreciate the debate, but I have problems to understand how it's better than the one that imposes a 60:40 cap and practically kills the marketplace.\nFor what I read from the posts it suggests to develop an algo that, when a potential ULO approaches the marketplace, randomly picks a license among all available ones applying a fixed \"unified\" split rate. But let's say that the rate will be the 60:40 that came out from the polls.\nIf I understood correctly I think we can save the cost for developing the algo and the picking system because even if the team applies the poll decision of a minimum 60:40 split ALL the licenses that will be made available to the marketplace will have exactly the same 60:40 split creating a \"de facto\" unified split rate as suggested by this latest proposal. \nIt's just that the randomization will be performed by the ULO himself during the picking.\n\nWhat is inconceivable is that, because some influencers already leased licenses to friends, family and followers with a \"very generous for themselves\" 50:50 the whole marketplace must bend the knee and be set in a way (60:40) that doesn't disturb their business, despite other UNOs have different business plans. \nThis proposal seems not fixing this issue\n\nI agree on a referral code that rewards UNOs that forwards potential ULOs to the marketplace. I suggest to consider even a slice of rewards (5%ish on license's UNO gains) for the whole lifetime of the contract",
+    "id": 15296
+  },
+  {
+    "ts": "2026-01-28T16:30",
+    "author": "Summer5372",
+    "msg": "10 phones show uptime of 48% anyone else seeing this?",
+    "id": 15297
+  },
+  {
+    "ts": "2026-01-28T16:34",
+    "author": "Miro K",
+    "msg": "Nope, got mine lersonal stacked as well as from real ULOs all above 95%",
+    "id": 15298
+  },
+  {
+    "ts": "2026-01-28T16:35",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "nope. Is it a problem that affect your personal device licenses or also licenses you leased? Maybe an ISP issue?",
+    "id": 15299
+  },
+  {
+    "ts": "2026-01-28T16:35",
+    "author": "Summer5372",
+    "msg": "Thanks Miro 🙏🏽 than i guess i will have to dive in my setup again. 🥴",
+    "id": 15300
+  },
+  {
+    "ts": "2026-01-28T16:36",
+    "author": "Summer5372",
+    "msg": "These are my leased licenses",
+    "id": 15301
+  },
+  {
+    "ts": "2026-01-28T16:36",
+    "author": "Summer5372",
+    "msg": "personal devices",
+    "id": 15302
+  },
+  {
+    "ts": "2026-01-28T16:37",
+    "author": "Summer5372",
+    "msg": "I should say personal leases",
+    "id": 15303
+  },
+  {
+    "ts": "2026-01-28T16:37",
+    "author": "Summer5372",
+    "msg": "sorry",
+    "id": 15304
+  },
+  {
+    "ts": "2026-01-28T16:38",
+    "author": "Summer5372",
+    "msg": "I believe it is the setup 10 on 2,4 ghz and 10 on 5ghz",
+    "id": 15305
+  },
+  {
+    "ts": "2026-01-28T16:41",
+    "author": "Summer5372",
+    "msg": "I get the notification software caused connection abort? I am logged out",
+    "id": 15306
+  },
+  {
+    "ts": "2026-01-28T16:41",
+    "author": "Summer5372",
+    "msg": "Will report it",
+    "id": 15307
+  },
+  {
+    "ts": "2026-01-28T16:42",
+    "author": "Wen (calibrating)",
+    "msg": "Did team start building new voting system yet?",
+    "id": 15308
+  },
+  {
+    "ts": "2026-01-28T16:44",
+    "author": "Adam Buracchi",
+    "msg": "I really hope they are not spending too much time on this tbh. \nFix the rewards with more tasks and everything will be fine",
+    "id": 15309
+  },
+  {
+    "ts": "2026-01-28T16:45",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "first reviewing S&R applications, then voting system, one at a time ser",
+    "id": 15310
+  },
+  {
+    "ts": "2026-01-28T16:45",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "if you have a laptop/pc connected to the same wifi try to open a Command Prompt window and ping the unity server with this command: ping -t unityedge.io\nIf the response time is quite high it's possible that the problem is on your internet provider side more than on the Unity side. Or your router has problems/limitations on managing 20+ devices",
+    "id": 15311
+  },
+  {
+    "ts": "2026-01-28T16:52",
+    "author": "Wen (calibrating)",
+    "msg": "As long as we can place adding new task families at the bottom of the list!",
+    "id": 15312
+  },
+  {
+    "ts": "2026-01-28T16:53",
+    "author": "NorthLine Nodes",
+    "msg": "I kind of like the franchise idea.",
+    "id": 15313
+  },
+  {
+    "ts": "2026-01-28T16:53",
+    "author": "Flippy",
+    "msg": "[Photo] How can this be solved sirs?",
+    "id": 15314
+  },
+  {
+    "ts": "2026-01-28T16:53",
+    "author": "Flippy",
+    "msg": "[Photo]",
+    "id": 15315
+  },
+  {
+    "ts": "2026-01-28T16:54",
+    "author": "Wen (calibrating)",
+    "msg": "Your second paragraph sounds very nice. Is the team still aligned with that goal?",
+    "id": 15316
+  },
+  {
+    "ts": "2026-01-28T16:54",
+    "author": "Kay | Will never DM you first",
+    "msg": "I'd send a report to support@unitynodes.io if regular troubleshooting didn't help",
+    "id": 15317
+  },
+  {
+    "ts": "2026-01-28T16:56",
+    "author": "Eddie H",
+    "msg": "Don't suppose there's been any updates on when we might hear more about caller ID ? There is an AMA on the 30th Is that just for minutes network or would that include Unity information as well?",
+    "id": 15318
+  },
+  {
+    "ts": "2026-01-28T17:07",
+    "author": "Flippy",
+    "msg": "Dont you think that the actual workers deserve a much bigger cut than simply splitting your hard work with the \"non-working\" UNO's?",
+    "id": 15319
+  },
+  {
+    "ts": "2026-01-28T17:08",
+    "author": "Flippy",
+    "msg": "Sounds crazy",
+    "id": 15320
+  },
+  {
+    "ts": "2026-01-28T17:09",
+    "author": "Flippy",
+    "msg": "Also team should full focus on more rewards asap, and nothing else.\nPlease dont give them another reason/proposal to delay things.",
+    "id": 15321
+  },
+  {
+    "ts": "2026-01-28T17:12",
+    "author": "OC Nodes",
+    "msg": "So it really looks like if leases are revoked by UNO but subsequently not unbound by ULO, then that license remains sort of hostage and cannot be bound to a new device and a new lease .. this somehow has to change .. revoking a lease should not automatically free up the license as maybe the UNO is wanting to offer new terms, but an option should exist to remotely unbind",
+    "id": 15323
+  },
+  {
+    "ts": "2026-01-28T17:13",
+    "author": "Summer5372",
+    "msg": "Wauw thanks I am gonna try this now.",
+    "id": 15324
+  },
+  {
+    "ts": "2026-01-28T17:14",
+    "author": "Summer5372",
+    "msg": "i do have to connect all of them again. Thanks it's a great way to see what the problem is probably in the router",
+    "id": 15325
+  },
+  {
+    "ts": "2026-01-28T17:15",
+    "author": "Wopdiddly",
+    "msg": "I'd like info on if we need a certain number of active licenses for us to unlock new tasks. Is the network size holding us back?",
+    "id": 15326
+  },
+  {
+    "ts": "2026-01-28T17:18",
+    "author": "Flippy",
+    "msg": "I dont understand what you mean.\nI can revoke a license and directly lease out to someone else.",
+    "id": 15327
+  },
+  {
+    "ts": "2026-01-28T17:18",
+    "author": "libben",
+    "msg": "Are we going to see $1 per day per license anytime soon?",
+    "id": 15328
+  },
+  {
+    "ts": "2026-01-28T17:19",
+    "author": "Rdawgie",
+    "msg": "If we go by history, then no.",
+    "id": 15329
+  },
+  {
+    "ts": "2026-01-28T17:20",
+    "author": "Wopdiddly",
+    "msg": "Well we have one task currently and four more are coming in February apparently so hopefully",
+    "id": 15330
+  },
+  {
+    "ts": "2026-01-28T17:20",
+    "author": "Mat",
+    "msg": "Hi @defiants_kay just following up on these questions. Are there answers you can provide. Thx!",
+    "id": 15332
+  },
+  {
+    "ts": "2026-01-28T17:20",
+    "author": "Rdawgie",
+    "msg": "We just forgetting about January now?",
+    "id": 15333
+  },
+  {
+    "ts": "2026-01-28T17:21",
+    "author": "Rdawgie",
+    "msg": "Push it to next month?",
+    "id": 15334
+  },
+  {
+    "ts": "2026-01-28T17:21",
+    "author": "James_WM_ENO",
+    "msg": "More tasks in Jan gonna help rewards hopefully 😊",
+    "id": 15335
+  },
+  {
+    "ts": "2026-01-28T17:21",
+    "author": "Wopdiddly",
+    "msg": "Well I am assuming it'll be Feb but Jan would be good",
+    "id": 15336
+  },
+  {
+    "ts": "2026-01-28T17:21",
+    "author": "libben",
+    "msg": "What kind of task is it ?",
+    "id": 15337
+  },
+  {
+    "ts": "2026-01-28T17:21",
+    "author": "Kay | Will never DM you first",
+    "msg": "Sorry, I don't see any answer yet",
+    "id": 15338
+  },
+  {
+    "ts": "2026-01-28T17:22",
+    "author": "Wopdiddly",
+    "msg": "No idea but we're getting $0.30 a day for something",
+    "id": 15339
+  },
+  {
+    "ts": "2026-01-28T17:22",
+    "author": "libben",
+    "msg": "How many device do you have active ?",
+    "id": 15340
+  },
+  {
+    "ts": "2026-01-28T17:23",
+    "author": "Wopdiddly",
+    "msg": "20 per router",
+    "id": 15341
+  },
+  {
+    "ts": "2026-01-28T17:23",
+    "author": "libben",
+    "msg": "Are you getting 30c on all ?",
+    "id": 15342
+  },
+  {
+    "ts": "2026-01-28T17:24",
+    "author": "Wopdiddly",
+    "msg": "Most of them yeah 13-30 it depends I have been moving them about and not always up while I do all this.\n\nThe ones with the best uptime on fibre getting 25-30 every day",
+    "id": 15343
+  },
+  {
+    "ts": "2026-01-28T17:24",
+    "author": "James_WM_ENO",
+    "msg": "Don’t forget the company that Micky was talking about ages ago that could blow unity revenue through the roof !!! That may be launching very soon 💪",
+    "id": 15344
+  },
+  {
+    "ts": "2026-01-28T17:25",
+    "author": "James_WM_ENO",
+    "msg": "Exciting times ahead !!!",
+    "id": 15345
+  },
+  {
+    "ts": "2026-01-28T17:25",
+    "author": "Wopdiddly",
+    "msg": "Got my first LTE router with it's own data only Sims up today. Will test soon 🔥",
+    "id": 15346
+  },
+  {
+    "ts": "2026-01-28T17:25",
+    "author": "Wopdiddly",
+    "msg": "Oh tell me more James!",
+    "id": 15347
+  },
+  {
+    "ts": "2026-01-28T17:25",
+    "author": "Mat",
+    "msg": "Ok. Thx for looking. Tbh they are super easy questions. Is there perhaps a backlog of questions to answer? Would this be the delay?",
+    "id": 15348
+  },
+  {
+    "ts": "2026-01-28T17:25",
+    "author": "James_WM_ENO",
+    "msg": "Was in one of the original AMA’s",
+    "id": 15349
+  },
+  {
+    "ts": "2026-01-28T17:26",
+    "author": "Kay | Will never DM you first",
+    "msg": "Yeah, there are several questions still pending",
+    "id": 15350
+  },
+  {
+    "ts": "2026-01-28T17:26",
+    "author": "James_WM_ENO",
+    "msg": "Think it was the second half of an earthnode operator call that was made public",
+    "id": 15351
+  },
+  {
+    "ts": "2026-01-28T17:26",
+    "author": "Wopdiddly",
+    "msg": "So may not have been said then like the $96 min 😂😂",
+    "id": 15352
+  },
+  {
+    "ts": "2026-01-28T17:27",
+    "author": "Wopdiddly",
+    "msg": "Thanks sounds exciting",
+    "id": 15353
+  },
+  {
+    "ts": "2026-01-28T17:28",
+    "author": "OC Nodes",
+    "msg": "Really the same license with a new lease and a new phone? It didn't work out yet I'm getting red connection error and there was no option to bind the new license. Maybe I'll try again later",
+    "id": 15354
+  },
+  {
+    "ts": "2026-01-28T17:29",
+    "author": "Wopdiddly",
+    "msg": "What's the specific message?\n\nSometimes it wants you to use an unbound licence so look out for that",
+    "id": 15355
+  },
+  {
+    "ts": "2026-01-28T17:29",
+    "author": "Wopdiddly",
+    "msg": "Oh connection error sorry",
+    "id": 15356
+  },
+  {
+    "ts": "2026-01-28T17:30",
+    "author": "Wopdiddly",
+    "msg": "Last time I had that my phone had disabled the WiFi check the connection",
+    "id": 15357
+  },
+  {
+    "ts": "2026-01-28T17:30",
+    "author": "Flippy",
+    "msg": "Yes",
+    "id": 15358
+  },
+  {
+    "ts": "2026-01-28T17:30",
+    "author": "Wen (calibrating)",
+    "msg": "But it could be from anything. The kindness of the team’s heart. Who knows? 🤷‍♂️",
+    "id": 15359
+  },
+  {
+    "ts": "2026-01-28T17:31",
+    "author": "Wopdiddly",
+    "msg": "I think that was the one cent a day at the start but perhaps one of the team can clarify what the existing task or tasks are",
+    "id": 15360
+  },
+  {
+    "ts": "2026-01-28T17:36",
+    "author": "Eddie H",
+    "msg": "Is it WiFi through? 🤣",
+    "id": 15361
+  },
+  {
+    "ts": "2026-01-28T17:39",
+    "author": "Page Øne",
+    "msg": "hey all",
+    "id": 15362
+  },
+  {
+    "ts": "2026-01-28T17:39",
+    "author": "Page Øne",
+    "msg": "how are we doing today",
+    "id": 15363
+  },
+  {
+    "ts": "2026-01-28T17:40",
+    "author": "Page Øne",
+    "msg": "anything new or interesting happened ?",
+    "id": 15364
+  },
+  {
+    "ts": "2026-01-28T17:43",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "hello hello waiting for some exciting news!",
+    "id": 15365
+  },
+  {
+    "ts": "2026-01-28T17:45",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Twice now I have revoked licences where it seemed to be dead in the sense that it wasn't bound for a few days. Uptime had been very choppy. After revoking both licences have been taken again. My question is, why can I see the uptime that was in those licences previously? And also it seems incredibly improbable that those two exact same licensees should have been taken again and not one of the others. Something is going on there",
+    "id": 15366
+  },
+  {
+    "ts": "2026-01-28T17:46",
+    "author": "OC Nodes",
+    "msg": "Did it show they were taken by the same device? You can see device name at the bottom there .  That's interesting indeed",
+    "id": 15367
+  },
+  {
+    "ts": "2026-01-28T17:47",
+    "author": "OC Nodes",
+    "msg": "Same here I see the old uptime and even some UPs on the old revoked license.. unclaimed UPs basically",
+    "id": 15368
+  },
+  {
+    "ts": "2026-01-28T17:47",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Same on the ups as well",
+    "id": 15369
+  },
+  {
+    "ts": "2026-01-28T17:48",
+    "author": "Compost Man Unity code: XY",
+    "msg": "These two devices look different to the original two. Originally I think the same person took both because it was the same device associated with both licences. They then seem to switch the binding around between the devices and eventually only had one.",
+    "id": 15370
+  },
+  {
+    "ts": "2026-01-28T17:48",
+    "author": "Akira",
+    "msg": "pls don't assume things till you get to see the actual proposal",
+    "id": 15371
+  },
+  {
+    "ts": "2026-01-28T17:49",
+    "author": "Compost Man Unity code: XY",
+    "msg": "@defiants_kay why is it I can see the old uptime and ups on licences that have been revoked by me and then claimed by another person?",
+    "id": 15372
+  },
+  {
+    "ts": "2026-01-28T17:50",
+    "author": "Kay | Will never DM you first",
+    "msg": "I'm reading other reports that this is how it works right now. I think it will make more sense to wipe uptime if the license was picked up by another account",
+    "id": 15373
+  },
+  {
+    "ts": "2026-01-28T17:51",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Agreed but what I find very strange is that those same two licences have been picked up by other people and no other licences have been picked up at all. Statistically it's impossible. I would say unless those same two licences are always appearing at the top of people's options",
+    "id": 15374
+  },
+  {
+    "ts": "2026-01-28T17:53",
+    "author": "Rob | Nexus Nodes",
+    "msg": "2 more leases taken from the marketplace this morning. \n\n60/40 6M 85%",
+    "id": 15375
+  },
+  {
+    "ts": "2026-01-28T17:54",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Worth mentioning that my two were at 50/50 splits and 80% up time, 12 months",
+    "id": 15376
+  },
+  {
+    "ts": "2026-01-28T17:56",
+    "author": "Rob | Nexus Nodes",
+    "msg": "I had a similar situation. Licence was taken within 24hrs of it being revoked.",
+    "id": 15377
+  },
+  {
+    "ts": "2026-01-28T17:57",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Without knowing how it all works under the hood, we can only say what we see I suppose",
+    "id": 15378
+  },
+  {
+    "ts": "2026-01-28T17:58",
+    "author": "Compost Man Unity code: XY",
+    "msg": "I hope the new licence operators cannot see the old history of the licence",
+    "id": 15379
+  },
+  {
+    "ts": "2026-01-28T17:58",
+    "author": "Kerry",
+    "msg": "How many months do you have your leases set for",
+    "id": 15380
+  },
+  {
+    "ts": "2026-01-28T17:58",
+    "author": "Rob | Nexus Nodes",
+    "msg": "6months",
+    "id": 15381
+  },
+  {
+    "ts": "2026-01-28T17:59",
+    "author": "Carlos",
+    "msg": "Your split is too high. App can’t handle it.",
+    "id": 15382
+  },
+  {
+    "ts": "2026-01-28T18:00",
+    "author": "Kerry",
+    "msg": "We have the same settings then 🤝",
+    "id": 15383
+  },
+  {
+    "ts": "2026-01-28T18:01",
+    "author": "Rob | Nexus Nodes",
+    "msg": "Great minds think alike! 😅",
+    "id": 15384
+  },
+  {
+    "ts": "2026-01-28T18:07",
+    "author": "Wopdiddly",
+    "msg": "This is interesting. It's like SEO for licenses it seems.\n\nPerhaps for licence exposure you list and revoke to get to the top of the list and improve your odds of leasing them?",
+    "id": 15385
+  },
+  {
+    "ts": "2026-01-28T18:09",
+    "author": "James_WM_ENO",
+    "msg": "Any news on iOS PoW ?",
+    "id": 15386
+  },
+  {
+    "ts": "2026-01-28T18:22",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "This is actually very interesting Akira",
+    "id": 15387
+  },
+  {
+    "ts": "2026-01-28T18:27",
+    "author": "Akira",
+    "msg": "Dodo has submitted the full proposal for review, lets wait for teams feedback",
+    "id": 15388
+  },
+  {
+    "ts": "2026-01-28T18:31",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "I know \nI saw it \n\nThanks for you well constructed proposal",
+    "id": 15389
+  },
+  {
+    "ts": "2026-01-28T18:32",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "This is the kind of feedback any project needs",
+    "id": 15390
+  },
+  {
+    "ts": "2026-01-28T18:33",
+    "author": "Carlos",
+    "msg": "Did the proposal also read that we could privately lease licenses outside the marketplace?",
+    "id": 15391
+  },
+  {
+    "ts": "2026-01-28T18:36",
+    "author": "Calus B",
+    "msg": "Missed this due to the plague. Read the copy dodo posted to the team. I really like the concept it’s a great idea that simplifies lots of things. Thanks for sharing and coming up with it",
+    "id": 15392
+  },
+  {
+    "ts": "2026-01-28T18:43",
+    "author": "BeamNode",
+    "msg": "And also, Ulos are unable to search the marketplace to find better deals. I really like this idea Akira! Wow😎",
+    "id": 15393
+  },
+  {
+    "ts": "2026-01-28T18:45",
+    "author": "Willian | Nuvola",
+    "msg": "Indeed great ideas in there Akira.",
+    "id": 15394
+  },
+  {
+    "ts": "2026-01-28T18:47",
+    "author": "Carlos",
+    "msg": "@akira_exo can you answer my question please or @Dodenberg",
+    "id": 15395
+  },
+  {
+    "ts": "2026-01-28T18:50",
+    "author": "Akira",
+    "msg": "sry carlos busy with IRL but yes, it's specifically included in the proposal that UNOs are able to lease privately with a custom split",
+    "id": 15396
+  },
+  {
+    "ts": "2026-01-28T18:51",
+    "author": "Willian | Nuvola",
+    "msg": "Yes, I just read it as well. Great work",
+    "id": 15397
+  },
+  {
+    "ts": "2026-01-28T18:52",
+    "author": "Carlos",
+    "msg": "Ok, thank you. I like the proposal if this was included. UNO’s outside of the marketplace would need to work harder to get ULO’s which is fine.",
+    "id": 15398
+  },
+  {
+    "ts": "2026-01-28T18:55",
+    "author": "CloverNodes",
+    "msg": "Your proposal is great and I have to give you credit for taking the time, it solves a lot of issues but it introduces some fundamental changes that need to be addressed:\n\n**1) Automatic assignment breaks the incentive loop:** The proposal removes the marketplace and does automatic assignment on install (round-robin / load-balanced / performance weighted)\n The issue is simple, if I bring a user to Unity and they get assigned to someone else why would I market? The proposal tries to solve this with referrals later but that still creates a “marketing dead zone” in the meantime.\n\n**2) It removes ULO choice and community trust:** This proposal makes onboarding “simpler” because users no longer choose operators. But many ULOs want to pick an operator because:\nA) They trust them\nB) They want support\nC) They’re part of that operator’s community\n\nRandom assignment makes UNOs interchangeable. That kills relationships, loyalty and the most important part it kills retention.\n\n**3) “Protocol-defined” becomes political fast:** Akira says it would be neutral and protocol-defined. But once you introduce:\n- performance weighted assignment\n-uptime scoring\n-quality metrics\nyou’ve created the next battleground. Now everyone fights over the algorithm instead of the marketplace.\n\n**4) Referral systems create a new type of abuse:** He does include safeguards like:\n-time-locked rewards\n-one-time attribution\n-caps / decay\n-device fingerprinting + wallet -uniqueness + rate limits\n\nThat’s good, but in practice referral systems attract:\n-fake installs\n-churn loops\n-phone farms\n-referral laundering\nSo you may remove split wars, but you introduce referral warfare.\n\n**5) The timing is backwards:** In the doc, referrals really “pay” when the network reaches capacity and licenses are scarce, like via airdrops. But incentives are needed most RIGHT NOW, while adoption is still being built. You don’t remove the main incentive today and promise rewards later.\nAkira’s proposal is thoughtful and I agree with the problem it’s trying to solve, race-to-the-bottom splits are not healthy. But removing the marketplace entirely breaks the incentive loop for UNOs to market, it also removes ULO choice and it shifts conflict from splits to an algorithm.\n\n**The better fix is simple:** keep the marketplace, set a minimum standard split, keep private deals free market and add referrals as a bonus layer on the ULO side to drive adoption.  That keeps builders incentivized today while still eliminating the worst marketplace behavior.",
+    "id": 15399
+  },
+  {
+    "ts": "2026-01-28T18:57",
+    "author": "Luckybuy",
+    "msg": "I agree with this..",
+    "id": 15400
+  },
+  {
+    "ts": "2026-01-28T18:57",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "[Photo] It's that simple⚡️",
+    "id": 15401
+  },
+  {
+    "ts": "2026-01-28T18:59",
+    "author": "Wopdiddly",
+    "msg": "Point 1, in current form is why I stopped marketing. I get my ULOs and look after them for three months. Now the filters have been added to the marketplace a lot have left",
+    "id": 15402
+  },
+  {
+    "ts": "2026-01-28T19:00",
+    "author": "Wopdiddly",
+    "msg": "Point 2. Why do they trust a random Uno from the marketplace? Unos can still market themselves this actually stops your ULOs fleeing you",
+    "id": 15403
+  },
+  {
+    "ts": "2026-01-28T19:02",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "People contact me how to withdraw their 10 90 rewards lol I tell them ask your UNO and give them Carlos and LIEEHT[ or something like that] TG contact to share that knowladge",
+    "id": 15404
+  },
+  {
+    "ts": "2026-01-28T19:06",
+    "author": "Wopdiddly",
+    "msg": "10/90 is so ridiculous imo it's one extra phone yourself to cover ten 10/90 licenses. I'm guessing they have thousands of licenses and so I get it.\n\nIs it fair on those of us who have made an effort to market? No. It's very much a disincentive to me so yeah. Won't be marketing for other people sorry.",
+    "id": 15405
+  },
+  {
+    "ts": "2026-01-28T19:08",
+    "author": "Wen (calibrating)",
+    "msg": "Tl;dr great proposal but No, No, No, No, No, No, No, No, No. 👌",
+    "id": 15406
+  },
+  {
+    "ts": "2026-01-28T19:09",
+    "author": "Nico | NodeX",
+    "msg": "@akira_exo great work man!  By working together as a whole we grow and all benefit. The only way this goes viral",
+    "id": 15407
+  },
+  {
+    "ts": "2026-01-28T19:09",
+    "author": "CloverNodes",
+    "msg": "Not that many No, there is some really good points in the PDF which everyone should read",
+    "id": 15408
+  },
+  {
+    "ts": "2026-01-28T19:10",
+    "author": "Wen (calibrating)",
+    "msg": "Anyway, only 3 days until Feb/March rewards which will make these discussions actually relevant to anything instead of being some really weird strategy game.",
+    "id": 15409
+  },
+  {
+    "ts": "2026-01-28T19:11",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "When I'm full I'll search the chat finding people supporting high UNO split  and ask for licenses with 50 50 split, lease them out for them. That will be my help.",
+    "id": 15410
+  },
+  {
+    "ts": "2026-01-28T19:12",
+    "author": "Johannes",
+    "msg": "It's good that people are engaged but we still have nothing to sell with 0.1 rewards / day. \n\nAnd if the marketplace becomes \"bad\" what's stopping someone from creating an alternative site for UNO where ULO can get a better split?",
+    "id": 15411
+  },
+  {
+    "ts": "2026-01-28T19:12",
+    "author": "EP /EARTHPATH | WMC $WMTx",
+    "msg": "@Clover_Nodes trying to wrap my head around this part you wrote.. That’s good, but in practice referral systems attract:\n-fake installs\n-churn loops\n-phone farms\n-referral laundering\nSo you may remove split wars, but you introduce referral warfare.",
+    "id": 15412
+  },
+  {
+    "ts": "2026-01-28T19:13",
+    "author": "Wopdiddly",
+    "msg": "Absolutely it's better for the vast majority of UNOs who haven't overcommitted and are now desperate",
+    "id": 15413
+  },
+  {
+    "ts": "2026-01-28T19:14",
+    "author": "Nico | NodeX",
+    "msg": "The secret sauce to growth a create a viral project is when we all can push in the same direction without competing",
+    "id": 15414
+  },
+  {
+    "ts": "2026-01-28T19:14",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Like I just said\n\nIt is a great proposal \nIt doesn’t mean everything needs to be done what Akira writes\nHe does give us and the team a different approach \nSomething to work with\n\nVery constructive approach even tho some things can’t be doable due to legal or project planning challenges \n\nIf we all look at it like that and share our point of view instead of keeping the good old Wen Wen Wen it can only get better\n\nAgain, Ty Akira",
+    "id": 15415
+  },
+  {
+    "ts": "2026-01-28T19:15",
+    "author": "James_WM_ENO",
+    "msg": "Just set the minimum market place to 60/40 or 50/50 and job done \n\nHow about the elephant in the room though we need $1 a day, not 0.2c",
+    "id": 15416
+  },
+  {
+    "ts": "2026-01-28T19:15",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Pretty different than this approach 👆",
+    "id": 15417
+  },
+  {
+    "ts": "2026-01-28T19:15",
+    "author": "Akira",
+    "msg": "i love that the proposal is actually picking up interest from the community and that these discussions are taking place\n\nyou make valid points too, addressing the main one: marketing incentives for UNOs\n\nin my initial draft, UNOs that actively market unity app would be directly rewarded with a % of the revenue of all licenses from ULOs that installed the app thru the UNO referal link (that is, after a certain period of activity)\n\nbut discussing the draft with dodo he proposed that receiving more licenses from future airdrops could be a bigger motivation to keep growing the network, and i agree when thinking long term\n\ni think both options (earning a % from referals vs. getting more licenses in future airdrops) can co-exist, and actually both could be implemented at the same time. \nsort of: short term/immediate incentives + long term growth incentives",
+    "id": 15418
+  },
+  {
+    "ts": "2026-01-28T19:17",
+    "author": "Carlos",
+    "msg": "I would love to know who they are and have them come to my Telegram channel. I do have a few ULO’s who I talk with through Telegram.",
+    "id": 15419
+  },
+  {
+    "ts": "2026-01-28T19:18",
+    "author": "James_WM_ENO",
+    "msg": "If random licences are being picked with Akira’s proposal what split will they be at ?",
+    "id": 15420
+  },
+  {
+    "ts": "2026-01-28T19:18",
+    "author": "BeamNode",
+    "msg": "Akira makes valid points, and Clover does as well. However, if the goal is rapid scaling through marketing, Clover’s proposal gives UNOs a much stronger and more immediate impact.\n\nClover = Marketing only happens when the actor sees a clear, near-term upside they can influence.\n\nFor UNOs, the question is simple:\nIf I spend money and time on Facebook, YouTube, local meetups, flyers, support groups, what do I get, and when?",
+    "id": 15421
+  },
+  {
+    "ts": "2026-01-28T19:20",
+    "author": "Wopdiddly",
+    "msg": "You get more licenses for Carlos",
+    "id": 15422
+  },
+  {
+    "ts": "2026-01-28T19:21",
+    "author": "Calus B",
+    "msg": "The initial point could be solved with a more robust referral program as well as a api to generate a uno OWN licences automatically. That should solve incentives \n2 uLO would be able to find their preferred uno outside the system if that was their wish. The api for licence generation would help. Uno being interchangeable for default users is exactly the point.\n3 good point keep it simple just have it random\n4 refferal system needs to be designed to prevent this yea",
+    "id": 15423
+  },
+  {
+    "ts": "2026-01-28T19:21",
+    "author": "James_WM_ENO",
+    "msg": "My approach agrees with clover.. just set the minimum",
+    "id": 15424
+  },
+  {
+    "ts": "2026-01-28T19:21",
+    "author": "LE",
+    "msg": "I agree!! \n\nPersonally, I would like to market my own licenses and have the choice of my UNO/ULO split.",
+    "id": 15425
+  },
+  {
+    "ts": "2026-01-28T19:22",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Uhhhh\n\nYou do, right?",
+    "id": 15426
+  },
+  {
+    "ts": "2026-01-28T19:22",
+    "author": "Willian | Nuvola",
+    "msg": "Rewards have to be meaningful for any approach to stick tbh.",
+    "id": 15427
+  },
+  {
+    "ts": "2026-01-28T19:22",
+    "author": "Willian | Nuvola",
+    "msg": "And consistent",
+    "id": 15428
+  },
+  {
+    "ts": "2026-01-28T19:23",
+    "author": "James_WM_ENO",
+    "msg": "Don’t worry January tasks are coming 😊",
+    "id": 15429
+  },
+  {
+    "ts": "2026-01-28T19:23",
+    "author": "James_WM_ENO",
+    "msg": "Hope the next stop is 60/70c a day 💪",
+    "id": 15430
+  },
+  {
+    "ts": "2026-01-28T19:24",
+    "author": "Willian | Nuvola",
+    "msg": "[File: rookie-numbers.mp4]",
+    "id": 15431
+  },
+  {
+    "ts": "2026-01-28T19:24",
+    "author": "CloverNodes",
+    "msg": "Referral systems sound great on paper but they always attract people trying to game it. Fake installs are when someone downloads the app just to trigger a referral reward then never use it.\n\nChurn loops happen when people activate for the minimum time.. cash out whatever reward then drop off and repeat.\n\nPhone farms someone runs 20 to 200 phones to simulate “new users” and farms referrals which is hard to combat \n\nReferral laundering are when groups trade referral codes and recycle signups to make it look like real growth, even though it’s just the same circle of people. So you might remove split wars in the marketplace but you replace it with a different battle who’s is people competing to exploit referrals instead of competing to provide better value.\n\nThe proposal does mention time-locks, one-time attribution and Sybil resistance which helps but it’s still a real risk in any referral-based system which in my opinion needs to be thought of very well before being introduced",
+    "id": 15432
+  },
+  {
+    "ts": "2026-01-28T19:24",
+    "author": "Wopdiddly",
+    "msg": "Does the project need more active licenses to attract more tasks?",
+    "id": 15433
+  },
+  {
+    "ts": "2026-01-28T19:25",
+    "author": "BeamNode",
+    "msg": "Yes, if you do marketing, you want immediate impact, not hope.",
+    "id": 15434
+  },
+  {
+    "ts": "2026-01-28T19:25",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "The project needs more tasks to attract ULOs",
+    "id": 15435
+  },
+  {
+    "ts": "2026-01-28T19:25",
+    "author": "Joshua F",
+    "msg": "Dont want speak for Akira but I’d answer these as follows:\n1. This point is made null by the minimum split that will be enforced after the next poll. There will be almost zero differentiation between licenses and assignment will be based on the algorithm putting random leases at the top of the marketplace. Best option IMO is drop marketplace and just do random license assignment so that its un-gamable.\n2. Also believe this point is null until there is far more in-app UNO social functionality like UNO support and leaderboards. \n3. Same as point 1\n4. All these issues are avoided with minimum uptime requirement and license revocation. My suggestion ontop of Akiras model is to start by using referrals to lease your own licenses by dropping default 60/40 split to 50/50, therefore ensuring the UNO doing the marketing benefits directly, and so does the user USING the referral code who gets a 10% rewards boost.\n5. Same as previous point, UNO benefits from having their licenses leased which even at todays rates is a win.\n\nUltimately, the proposal sets up the UX to be much more beginner friendly to those new to the ecosystem and prevents churn at the most critical stage, whilst incentivising mass marketing from UNOs.",
+    "id": 15436
+  },
+  {
+    "ts": "2026-01-28T19:25",
+    "author": "Willian | Nuvola",
+    "msg": "1000%",
+    "id": 15437
+  },
+  {
+    "ts": "2026-01-28T19:26",
+    "author": "EP /EARTHPATH | WMC $WMTx",
+    "msg": "But this referral system already exists if i for example distribute a code? They can trigger a lot of systems already?",
+    "id": 15438
+  },
+  {
+    "ts": "2026-01-28T19:27",
+    "author": "James_WM_ENO",
+    "msg": "That’s the solution as I said \nMinimum split and better rewards.. \nit’s as simple as that, no need to complicate it",
+    "id": 15439
+  },
+  {
+    "ts": "2026-01-28T19:28",
+    "author": "James_WM_ENO",
+    "msg": "At 20-30$ a month it will market itself",
+    "id": 15440
+  },
+  {
+    "ts": "2026-01-28T19:28",
+    "author": "Wopdiddly",
+    "msg": "So we can get more jobs with less than 2000 installs? Assuming the next number in the play store is over 2k\n\nGreat news if so I had assumed the bigger tasks might need a bigger network. I'm glad if I'm wrong",
+    "id": 15441
+  },
+  {
+    "ts": "2026-01-28T19:29",
+    "author": "James_WM_ENO",
+    "msg": "I’d even be happy if the minimum was UNO 45/55 ULO",
+    "id": 15442
+  },
+  {
+    "ts": "2026-01-28T19:30",
+    "author": "Willian | Nuvola",
+    "msg": "Josh did say that the amount of tasks deployed don't necessarily depend on the size of the network.",
+    "id": 15443
+  },
+  {
+    "ts": "2026-01-28T19:30",
+    "author": "James_WM_ENO",
+    "msg": "Once all the 55’s were gone people will move up the chain so you can set any split you like",
+    "id": 15444
+  },
+  {
+    "ts": "2026-01-28T19:30",
+    "author": "Flippy",
+    "msg": "Can we just get an update from the team?",
+    "id": 15445
+  },
+  {
+    "ts": "2026-01-28T19:31",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "We are far over 2k. Farmers alone are.. And I'm sure I onbarded more then 500 people and most have more then one phone",
+    "id": 15446
+  },
+  {
+    "ts": "2026-01-28T19:32",
+    "author": "James_WM_ENO",
+    "msg": "Many using the APK right, farmers I guess",
+    "id": 15447
+  },
+  {
+    "ts": "2026-01-28T19:32",
+    "author": "James_WM_ENO",
+    "msg": "That’s additional to the googleplay downloads",
+    "id": 15448
+  },
+  {
+    "ts": "2026-01-28T19:32",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Good point",
+    "id": 15449
+  },
+  {
+    "ts": "2026-01-28T19:32",
+    "author": "R.- B.",
+    "msg": "100%",
+    "id": 15450
+  },
+  {
+    "ts": "2026-01-28T19:32",
+    "author": "CloverNodes",
+    "msg": "Love this reply and I’m glad you clarified it because that addresses my biggest concern which is the “incentive loop” for UNOs marketing. I actually agree that both can co-exist… short term incentives + long term incentives makes sense.\n\nMy only pushback is this:\n\nIf we remove the marketplace and rely primarily on future airdrops as the long term incentive it can become too delayed and too uncertain for most UNOs to justify real marketing spend today. Most builders won’t grind 60 to 90 days or longer on a “maybe later” reward even if the vision is solid. Also referral reward in the form of future licenses is a good idea but it still introduces questions like:\nhow often airdrops happen?\nhow the weight is calculated?\nHow quickly UNOs feel the payoff?\nwhat happens if the network pace slows?\n\nSo I’m aligned with your direction but I think the safest version is this:\n\nKeep the marketplace with a minimum standard split preferably weighted towards an UNO initially so 60/40 split (so we stop the race to the bottom) keep private leasing fully flexible and add referral rewards on top on the ULO side (both % revenue and future license weighting) That way we don’t break anything that’s working today but we still evolve into the more cooperative model long term.\n\nReally appreciate you pushing this conversation forward I gotta run but I’ll reply back on any counter points later on just tag me.",
+    "id": 15451
+  },
+  {
+    "ts": "2026-01-28T19:34",
+    "author": "CloverNodes",
+    "msg": "it’s not that referrals are new it’s that making referrals the main engine of license allocation/rewards changes behavior and attracts exploitation at scale",
+    "id": 15452
+  },
+  {
+    "ts": "2026-01-28T19:38",
+    "author": "Wopdiddly",
+    "msg": "They are incredible numbers, very well done! 🫡",
+    "id": 15453
+  },
+  {
+    "ts": "2026-01-28T19:43",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Exactly",
+    "id": 15454
+  },
+  {
+    "ts": "2026-01-28T19:51",
+    "author": "LE",
+    "msg": "Yes, I do! Is this not my choice considering it’s my investment. I do not need as much as a 60/40 split; I would much rather help others along the way.",
+    "id": 15455
+  },
+  {
+    "ts": "2026-01-28T19:56",
+    "author": "Akira",
+    "msg": "i would be very happy with this outcome too! and bonus points for not having to drastically change how things work atm\n\nbut still think the best UX is simply: __'Install and earn' __...and learn about the network details later, if ULO is interested\n\nrather than: __'Install, choose license from marketplace, get overwhelmed with parameters and then start earning knowing you'll get less share than the UNO'__\n\nit's fine for us crypto nerds but not the best journey for the vast majority of normies - although its true that when there's money to be made, ppl will go thru all sorts of hoops :D\n\nhopefully the team can evaluate the proposals and find something that works best for all of us and the network, both short and long term",
+    "id": 15456
+  },
+  {
+    "ts": "2026-01-28T19:58",
+    "author": "Wen (calibrating)",
+    "msg": "Why\nDo \nPeople\nKeep \nAdding jobs for the team to do (build governance, rebuild market place) \nAll of which distract from what matters\nWhich is releasing the READY tasks from the READY customers.",
+    "id": 15457
+  },
+  {
+    "ts": "2026-01-28T20:00",
+    "author": "Flippy",
+    "msg": "OR.. Find ULO's, create incentives for them to spread the word, create community, share knowledge/findings/educate, 50/50 no bullshit.",
+    "id": 15458
+  },
+  {
+    "ts": "2026-01-28T20:00",
+    "author": "Akira",
+    "msg": "just a civil conversation for a change but we can keep asking wen XYZ for sure :D",
+    "id": 15459
+  },
+  {
+    "ts": "2026-01-28T20:00",
+    "author": "Lorizzle",
+    "msg": "Honestly I would have some more ULOs right now but I need iOS PoW",
+    "id": 15460
+  },
+  {
+    "ts": "2026-01-28T20:02",
+    "author": "Wen (calibrating)",
+    "msg": "I’m certain jobs will be postponed while marketplace is overhauled due to community sentiment",
+    "id": 15461
+  },
+  {
+    "ts": "2026-01-28T20:02",
+    "author": "Akira",
+    "msg": "yes, that's valid too, but it's still the UNO vs UNO approach which is the scenario i was trying to prevent in my proposal",
+    "id": 15462
+  },
+  {
+    "ts": "2026-01-28T20:05",
+    "author": "Akira",
+    "msg": "anyway folks loved the discussions today\nback to: wen tasks wen rewards 😁",
+    "id": 15463
+  },
+  {
+    "ts": "2026-01-28T20:13",
+    "author": "Quoia75",
+    "msg": "It's not a useless conversation. It's prepping the house before the real traffic starts to come through. You only get one chance to make the best impression possible.",
+    "id": 15464
+  },
+  {
+    "ts": "2026-01-28T20:27",
+    "author": "VeganCatLover",
+    "msg": "I really like Akira's idea of auto allocating new users with a license - that would remove a lot of friction to the onboarding process which I think is very important.",
+    "id": 15465
+  },
+  {
+    "ts": "2026-01-28T20:27",
+    "author": "Wen (calibrating)",
+    "msg": "You taking about the Jan/February/March tasks?",
+    "id": 15466
+  },
+  {
+    "ts": "2026-01-28T20:31",
+    "author": "Charles",
+    "msg": "Not allowed to mention March yet",
+    "id": 15467
+  },
+  {
+    "ts": "2026-01-28T20:32",
+    "author": "James_WM_ENO",
+    "msg": "Don’t worry we still got Jan task families coming 😊",
+    "id": 15468
+  },
+  {
+    "ts": "2026-01-28T20:33",
+    "author": "Wen (calibrating)",
+    "msg": "They’re ready, after all, so don’t see why not.",
+    "id": 15469
+  },
+  {
+    "ts": "2026-01-28T20:37",
+    "author": "Quoia75",
+    "msg": "Just increased traffic period. No particular timeframe (sorry, I have no inside scoop on that 😁)",
+    "id": 15470
+  },
+  {
+    "ts": "2026-01-28T20:37",
+    "author": "Andrei",
+    "msg": "Ready to rumble?",
+    "id": 15471
+  },
+  {
+    "ts": "2026-01-28T20:50",
+    "author": "UNO",
+    "msg": "[Photo] Adding to the ongoing discussion, perhaps we can tweak the UI a bit for claiming a license.\n\nSomething like this\n@akira_exo @Clover_Nodes",
+    "id": 15472
+  },
+  {
+    "ts": "2026-01-28T20:54",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Unrelated",
+    "id": 15473
+  },
+  {
+    "ts": "2026-01-28T20:57",
+    "author": "Wen (calibrating)",
+    "msg": "Really? \nSo what’s stopping the jobs that are ready now from the customers that are ready now (Omri’s words) from being released? The team seem reluctant to unleash what they’ve spent three years building.",
+    "id": 15474
+  },
+  {
+    "ts": "2026-01-28T20:59",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "I dont know whats stopping them from releasing, but I know its not related to the min split on the marketplace.",
+    "id": 15475
+  },
+  {
+    "ts": "2026-01-28T20:59",
+    "author": "Nico | NodeX",
+    "msg": "maybe the wait is on the clients",
+    "id": 15476
+  },
+  {
+    "ts": "2026-01-28T21:22",
+    "author": "LIIICHT",
+    "msg": "Id like an update on ios pow as well. Is this being caused by apple ?",
+    "id": 15477
+  },
+  {
+    "ts": "2026-01-28T21:37",
+    "author": "Wopdiddly",
+    "msg": "20",
+    "id": 15481
+  },
+  {
+    "ts": "2026-01-28T21:38",
+    "author": "Dummy",
+    "msg": "You know damn well I didn’t invest 5k bro. Why act like that?",
+    "id": 15482
+  },
+  {
+    "ts": "2026-01-28T21:39",
+    "author": "Kerry",
+    "msg": "Can you post your router settings? I am missing a setting somewhere that is keeping from getting decent rewards",
+    "id": 15483
+  },
+  {
+    "ts": "2026-01-28T21:45",
+    "author": "Wopdiddly",
+    "msg": "I haven't changed anything it's just the bog standard router I got from my ISP. The phones are in the room directly above it which may help \n\nOne thing I did do at the start when I had a terrible time was run speed tests on a couple and realised they were getting terrible speeds then I had to make sure everything used the same wireless network (as I had my mesh and router both creating WiFi networks from the one line)\n\nI think it's speed related basically but I don't really know. I have them on two other networks on my work and they earn the same. Baffles me when I read people getting 5 or 6c",
+    "id": 15484
+  },
+  {
+    "ts": "2026-01-28T21:46",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "That is not what I meant\n\nI mean it’s impossible to be full ROI within 3 months and you know that so we are not “red”",
+    "id": 15485
+  },
+  {
+    "ts": "2026-01-28T21:48",
+    "author": "Summer5372",
+    "msg": "I found the problem. My SSID was the problem. Thanks for your help! 🙏🏽",
+    "id": 15486
+  },
+  {
+    "ts": "2026-01-28T21:48",
+    "author": "Dummy",
+    "msg": "The returns if you run all 200 phones yourself for .25-.40/day are pretty great. I’m not saying they aren’t. Problem is we are punished for running more than 20-40",
+    "id": 15487
+  },
+  {
+    "ts": "2026-01-28T21:50",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "You are not punished imo\nBut I think 20/30/50 phones on 1 IP can’t deliver enough unique data to generate more incentives\n\nNot punishment",
+    "id": 15488
+  },
+  {
+    "ts": "2026-01-28T21:53",
+    "author": "Brandolf [NOVA]",
+    "msg": "The PoW app has been submitted, it’s up to apple now",
+    "id": 15489
+  },
+  {
+    "ts": "2026-01-28T21:59",
+    "author": "Wopdiddly",
+    "msg": "Agreed. If you can do that you're on course for a very quick ROI. The problem for many of us we bought too many nodes. 😅\n\nNot a problem forever tho",
+    "id": 15490
+  },
+  {
+    "ts": "2026-01-28T22:00",
+    "author": "Wopdiddly",
+    "msg": "Also tho just get an LTE SIM card router for 20 if you have 40",
+    "id": 15491
+  },
+  {
+    "ts": "2026-01-28T22:11",
+    "author": "Wen (calibrating)",
+    "msg": "Omri said they were ready?",
+    "id": 15492
+  },
+  {
+    "ts": "2026-01-28T22:13",
+    "author": "Mr Roundry",
+    "msg": "guys i would like to hear your opinion on revenue ... we always talk about 1 dollar a day for one license but nobody is talking what revenue we need for that ... did anyone think about it?",
+    "id": 15493
+  },
+  {
+    "ts": "2026-01-28T22:19",
+    "author": "Mr Roundry",
+    "msg": "even for the rewards we are getting right now we need good revenue ... it is money what others have to be willing to pay ... we struggle convincing people about the licenses ... imagine how the team might struggle to convince \"smart\" people to spend money on the network ... \n\nif all licenses were leased, we need a revenue of 1,6 mil (MNTX/WMTX fee included) to achieve 1 dollar per license per day ... you realise how much money this is?\n\ndid anybody compare unity to other depin projects regarding revenue?",
+    "id": 15494
+  },
+  {
+    "ts": "2026-01-28T22:21",
+    "author": "Mr Roundry",
+    "msg": "what i want to say is, even if rewards right now might seem to low (dont forget roi is 3-5 months if all licenses were leased), it needs a lot of revenue ...",
+    "id": 15495
+  },
+  {
+    "ts": "2026-01-28T22:31",
+    "author": "Flippy",
+    "msg": "[Photo] Does this grey dot mean device is currently not connected?",
+    "id": 15496
+  },
+  {
+    "ts": "2026-01-28T22:31",
+    "author": "Flippy",
+    "msg": "As in realtime",
+    "id": 15497
+  },
+  {
+    "ts": "2026-01-28T22:32",
+    "author": "Mr Roundry",
+    "msg": "would guess so",
+    "id": 15498
+  },
+  {
+    "ts": "2026-01-28T22:32",
+    "author": "Eddie H",
+    "msg": "Yep",
+    "id": 15499
+  },
+  {
+    "ts": "2026-01-28T22:32",
+    "author": "Wopdiddly",
+    "msg": "I find it hard to compare this to other DePin aside from Uber etc. which I think would be closer to this than a crypto DePin. Is this a crypto DePin? Not even sure it is.\n\nthis is a well established, ever growing industry,  that the team are trying to decentralise whereas much of (crypto) DePin I have been involved in is trying to create something new.\n\nBut yeah they are huge numbers, huge numbers for a huge industry",
+    "id": 15500
+  },
+  {
+    "ts": "2026-01-28T22:41",
+    "author": "Mr Roundry",
+    "msg": "well dont know if we can exactly compare it to uber since uber had big investors and we only have the team to market the product ... but i get the difference you are seeing between depin and unity and it makes sense\n\nindeed it is a growing industrie but we are still small and just started ... i have a hard time to realise why a bigger company should pay so much money and the point we are in right now when you look at the network built untill now ... team made a lot of progress but still a long way to go ... \n\nthese numbers just look very big to me",
+    "id": 15501
+  },
+  {
+    "ts": "2026-01-28T22:44",
+    "author": "Wen (calibrating)",
+    "msg": "We need to grow from zero to the size of zopa bank or gymshark. \n\nBut they’ve been building for years and are READY, right?",
+    "id": 15502
+  },
+  {
+    "ts": "2026-01-28T22:44",
+    "author": "Lorizzle",
+    "msg": "Yes, some people forget this. Even at 25c per license that’s $300k per DAY that would get paid out to 1.2 million licenses",
+    "id": 15503
+  },
+  {
+    "ts": "2026-01-28T22:44",
+    "author": "Lorizzle",
+    "msg": "Any current DePIN project would drool over that amount",
+    "id": 15504
+  },
+  {
+    "ts": "2026-01-28T22:47",
+    "author": "Mr Roundry",
+    "msg": "Funny Name bro 😄 \n\nwe made good progress ... i only can imagine what team is working behind the scenes and i hope they dont lose the drive ... a network like this, if it stays like this for a long time, has a lot of value",
+    "id": 15505
+  },
+  {
+    "ts": "2026-01-28T22:47",
+    "author": "Nico | NodeX",
+    "msg": "Yes they were, but still needs to start",
+    "id": 15506
+  },
+  {
+    "ts": "2026-01-28T22:47",
+    "author": "Wen (calibrating)",
+    "msg": "Odd. Ok guys we’re ready! \n\nOk. Let’s just not do anything.",
+    "id": 15507
+  },
+  {
+    "ts": "2026-01-28T22:48",
+    "author": "Wopdiddly",
+    "msg": "Just make sure you're ready when they do I think we can all be more proactive",
+    "id": 15508
+  },
+  {
+    "ts": "2026-01-28T22:49",
+    "author": "Andreas",
+    "msg": "I cant understand how poeple can use their whole day crying lol",
+    "id": 15509
+  },
+  {
+    "ts": "2026-01-28T22:50",
+    "author": "Mr Roundry",
+    "msg": "yes ... it is a lot of money already",
+    "id": 15510
+  },
+  {
+    "ts": "2026-01-28T22:51",
+    "author": "Mr Roundry",
+    "msg": "was this for my reply to your message? dont get it somehow",
+    "id": 15511
+  },
+  {
+    "ts": "2026-01-28T22:51",
+    "author": "Wen (calibrating)",
+    "msg": "But $96 is conservative, don’t forget, before parting them on the back for your .20 per day",
+    "id": 15512
+  },
+  {
+    "ts": "2026-01-28T22:51",
+    "author": "Lorizzle",
+    "msg": "The thing is, it seems like a ton because crypto projects make no money. But for real businesses, that’s only $9 million a month",
+    "id": 15513
+  },
+  {
+    "ts": "2026-01-28T22:51",
+    "author": "Lorizzle",
+    "msg": "Which isn’t that much",
+    "id": 15514
+  },
+  {
+    "ts": "2026-01-28T22:51",
+    "author": "Wopdiddly",
+    "msg": "I must admit i moaned plenty when we were getting a few cents but not since we were regularly over 20 for me at least.",
+    "id": 15515
+  },
+  {
+    "ts": "2026-01-28T22:52",
+    "author": "Wen (calibrating)",
+    "msg": "Yes. Usually it’s \nReady; go\nNot\nReady; waaaaaiiittt until February",
+    "id": 15516
+  },
+  {
+    "ts": "2026-01-28T22:53",
+    "author": "Mr Roundry",
+    "msg": "would love to hear some estimate regading the revenue guys ... what do you think is a realistic revenue we can achieve in one year?",
+    "id": 15517
+  },
+  {
+    "ts": "2026-01-28T22:53",
+    "author": "Eddie H",
+    "msg": "Mr T is on X doing a space right now",
+    "id": 15518
+  },
+  {
+    "ts": "2026-01-28T22:53",
+    "author": "Andreas",
+    "msg": "I just could not use my day crying about something i can not change.\n\nLike i understand not beeing happy about it or voice it once or twice.",
+    "id": 15519
+  },
+  {
+    "ts": "2026-01-28T22:55",
+    "author": "Elitemas77",
+    "msg": "300k",
+    "id": 15520
+  },
+  {
+    "ts": "2026-01-28T22:57",
+    "author": "Mr Roundry",
+    "msg": "aaah get it ... yeah i know what you mean ... would also love to see big task right now but im not unhappy with rewards im getting for nothing ... it is real money \n\ni have another problem that i cant bring people to install this app because germans are so fucking carefull and afraid i could look into their phones 😄 i have to learn how to bring the project to people in a way they are not afraid ... have to get better in explaining and introducing",
+    "id": 15521
+  },
+  {
+    "ts": "2026-01-28T22:59",
+    "author": "Mr Roundry",
+    "msg": "would be the averade of the current rewards",
+    "id": 15522
+  },
+  {
+    "ts": "2026-01-28T23:00",
+    "author": "Mr Roundry",
+    "msg": "do we know how many licenses we have online?",
+    "id": 15523
+  },
+  {
+    "ts": "2026-01-28T23:01",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Morning everyone!",
+    "id": 15524
+  },
+  {
+    "ts": "2026-01-28T23:01",
+    "author": "Mr Roundry",
+    "msg": "morning",
+    "id": 15525
+  },
+  {
+    "ts": "2026-01-28T23:19",
+    "author": "Quoia75",
+    "msg": "Having fiat withdrawals and a more streamlined license binding workflow would help a lot.",
+    "id": 15526
+  },
+  {
+    "ts": "2026-01-28T23:22",
+    "author": "Wopdiddly",
+    "msg": "Could be the iOS hold up, fiat withdrawals?",
+    "id": 15527
+  },
+  {
+    "ts": "2026-01-28T23:25",
+    "author": "Quoia75",
+    "msg": "Being able to cash out in local currency would allow larger scale ULO adoption. The team hasn't said specifically what's causing the delay. I suspect it may be anti money laundering regulations that have to be met jurisdiction by jurisdiction. Can be more than a pain in the rear to deal with.",
+    "id": 15528
+  },
+  {
+    "ts": "2026-01-28T23:31",
+    "author": "Rdawgie",
+    "msg": "Has anybody received a call yet?",
+    "id": 15529
+  },
+  {
+    "ts": "2026-01-28T23:33",
+    "author": "Mr Roundry",
+    "msg": "good point ... fiat withdrawals are def needed",
+    "id": 15530
+  },
+  {
+    "ts": "2026-01-28T23:45",
+    "author": "Mat",
+    "msg": "No, I don't think so. Have been trying to get an answer from the team about this but the question is sitting in a backlog of unanswered questions that the Mods communicate through.",
+    "id": 15531
+  }
+]

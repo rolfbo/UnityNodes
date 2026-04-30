@@ -1,0 +1,1304 @@
+[
+  {
+    "ts": "2026-04-15T04:31",
+    "author": "David P [DPADA]",
+    "msg": "How do you do this?\n\nEven just to unlimit number of viewed licenses",
+    "id": 32884
+  },
+  {
+    "ts": "2026-04-15T04:31",
+    "author": "David P [DPADA]",
+    "msg": "Sorry haven’t dealt much with it",
+    "id": 32885
+  },
+  {
+    "ts": "2026-04-15T04:47",
+    "author": "Dennis",
+    "msg": "Did anyone else experience a reward increase?",
+    "id": 32886
+  },
+  {
+    "ts": "2026-04-15T04:54",
+    "author": "Jack🎃",
+    "msg": "Yea I went from $3 to $5 today.",
+    "id": 32887
+  },
+  {
+    "ts": "2026-04-15T05:01",
+    "author": "David P [DPADA]",
+    "msg": "How many units boys?",
+    "id": 32888
+  },
+  {
+    "ts": "2026-04-15T05:02",
+    "author": "David P [DPADA]",
+    "msg": "That’s limiting to 5?\n$1 a unit?",
+    "id": 32889
+  },
+  {
+    "ts": "2026-04-15T05:16",
+    "author": "Dennis",
+    "msg": "I have 5 units max on one ISP right now, what about you @Jakku8 ?",
+    "id": 32890
+  },
+  {
+    "ts": "2026-04-15T06:58",
+    "author": "FriendlyUrchin",
+    "msg": "No",
+    "id": 32891
+  },
+  {
+    "ts": "2026-04-15T07:01",
+    "author": "Marco",
+    "msg": "Look at the last pinned message",
+    "id": 32892
+  },
+  {
+    "ts": "2026-04-15T07:08",
+    "author": "Forty41",
+    "msg": "Rewards are getting worse for me . I’ve switched off many phones and now even stand alone phones with their own sim are down as low as 1 cent",
+    "id": 32893
+  },
+  {
+    "ts": "2026-04-15T07:28",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Not fully grasping this one. You adjust \"skip\" or you just mean the change of 20 to 1000 in the same line?",
+    "id": 32894
+  },
+  {
+    "ts": "2026-04-15T07:52",
+    "author": "Dave",
+    "msg": "Is anyone else having the attestation failure on his farmbox?",
+    "id": 32895
+  },
+  {
+    "ts": "2026-04-15T07:52",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 32896
+  },
+  {
+    "ts": "2026-04-15T07:52",
+    "author": "Dave",
+    "msg": "It popped up on all my devices yesterday morning...",
+    "id": 32897
+  },
+  {
+    "ts": "2026-04-15T07:54",
+    "author": "Dave",
+    "msg": "The App was and is installed from the official unitynodes.io page...\n\nI tried everything i can think of:\n- restart unity app\n- restart device\n- unbind, revoke, redo and reconnect license\n- take a licenses from marketplace\n- reset device to factory settings and reinstall unity app after freshly downloading the apk from official website\n- tried downloading the app f im Google store but didn't work either",
+    "id": 32898
+  },
+  {
+    "ts": "2026-04-15T08:27",
+    "author": "Darko",
+    "msg": "I got them too",
+    "id": 32899
+  },
+  {
+    "ts": "2026-04-15T08:27",
+    "author": "Darko",
+    "msg": "not on all but seems on same ones over and over",
+    "id": 32900
+  },
+  {
+    "ts": "2026-04-15T08:29",
+    "author": "Marco",
+    "msg": "Leave the word skip but change the default “0” next to it to 1000, just like changing the 20 next to “take” in your pinned procedure.",
+    "id": 32901
+  },
+  {
+    "ts": "2026-04-15T08:35",
+    "author": "Dave",
+    "msg": "What devices are you using? S8 with OTG Lan connection?",
+    "id": 32902
+  },
+  {
+    "ts": "2026-04-15T08:35",
+    "author": "Dave",
+    "msg": "That's what I got",
+    "id": 32903
+  },
+  {
+    "ts": "2026-04-15T08:35",
+    "author": "Darko",
+    "msg": "S8 with SIM",
+    "id": 32904
+  },
+  {
+    "ts": "2026-04-15T08:35",
+    "author": "Dave",
+    "msg": "With SIM even",
+    "id": 32905
+  },
+  {
+    "ts": "2026-04-15T08:35",
+    "author": "Dave",
+    "msg": "Wow...",
+    "id": 32906
+  },
+  {
+    "ts": "2026-04-15T08:36",
+    "author": "Dave",
+    "msg": "When did it come up for you?",
+    "id": 32907
+  },
+  {
+    "ts": "2026-04-15T08:36",
+    "author": "Darko",
+    "msg": "Two days ago for the first time",
+    "id": 32908
+  },
+  {
+    "ts": "2026-04-15T08:36",
+    "author": "Dave",
+    "msg": "Same",
+    "id": 32909
+  },
+  {
+    "ts": "2026-04-15T08:36",
+    "author": "Dave",
+    "msg": "I was able to remove it once through restart",
+    "id": 32910
+  },
+  {
+    "ts": "2026-04-15T08:37",
+    "author": "Dave",
+    "msg": "And now it's permanent",
+    "id": 32911
+  },
+  {
+    "ts": "2026-04-15T09:42",
+    "author": "Jaba - Unityfarmers",
+    "msg": "and that will provide unlimited list",
+    "id": 32912
+  },
+  {
+    "ts": "2026-04-15T11:31",
+    "author": "Dennis",
+    "msg": "[Photo] I hope this is a reversal regarding calibration. Sim Phone btw.",
+    "id": 32913
+  },
+  {
+    "ts": "2026-04-15T11:56",
+    "author": "Shaun93",
+    "msg": "Hi, I’m struggling with one thing - has anyone managed to download the license uptime via REST API?",
+    "id": 32914
+  },
+  {
+    "ts": "2026-04-15T12:21",
+    "author": "Kolks",
+    "msg": "[Photo]",
+    "id": 32915
+  },
+  {
+    "ts": "2026-04-15T12:22",
+    "author": "Kolks",
+    "msg": "A Tee/StrongBox Chip isn't part of a S8 setup, isn't it?",
+    "id": 32916
+  },
+  {
+    "ts": "2026-04-15T12:23",
+    "author": "Kolks",
+    "msg": "So, troubles in (phonebox) paradise?",
+    "id": 32917
+  },
+  {
+    "ts": "2026-04-15T12:32",
+    "author": "Kolks",
+    "msg": "[Photo]",
+    "id": 32918
+  },
+  {
+    "ts": "2026-04-15T12:33",
+    "author": "Kolks",
+    "msg": "A nice way to kill the S8 farmboxes.",
+    "id": 32919
+  },
+  {
+    "ts": "2026-04-15T12:49",
+    "author": "Jack🎃",
+    "msg": "4 units max on sim x 3 and another 4 phone on isp. The best one was my phone at 0.51. Others were averaging about 0.15 then a bunch of 0.03 and some 0's",
+    "id": 32920
+  },
+  {
+    "ts": "2026-04-15T13:04",
+    "author": "Darko",
+    "msg": "Why would that kill farmboxes? All our phones has TEE",
+    "id": 32921
+  },
+  {
+    "ts": "2026-04-15T13:04",
+    "author": "Darko",
+    "msg": "it's either strongbox or software version TEE. That is what they are telling us, so we are fine",
+    "id": 32922
+  },
+  {
+    "ts": "2026-04-15T13:18",
+    "author": "Flavius",
+    "msg": "What about root privileges and unlocked bootload? Do farm boxes have that?",
+    "id": 32923
+  },
+  {
+    "ts": "2026-04-15T13:20",
+    "author": "Kolks",
+    "msg": "For now. Yes. Wait and see.",
+    "id": 32924
+  },
+  {
+    "ts": "2026-04-15T13:23",
+    "author": "Darko",
+    "msg": "I have some phones with custom ROM and they do not work at all",
+    "id": 32925
+  },
+  {
+    "ts": "2026-04-15T13:25",
+    "author": "David P [DPADA]",
+    "msg": "Still seems very random?",
+    "id": 32926
+  },
+  {
+    "ts": "2026-04-15T13:25",
+    "author": "Daano",
+    "msg": "Oeh now i want to check myself as well",
+    "id": 32927
+  },
+  {
+    "ts": "2026-04-15T13:47",
+    "author": "Dave",
+    "msg": "It does have a TEE chip according to AI search.",
+    "id": 32928
+  },
+  {
+    "ts": "2026-04-15T13:48",
+    "author": "Dave",
+    "msg": "All farmboxes probably have this as it are custom roms and you have debugging via usb turned on.",
+    "id": 32929
+  },
+  {
+    "ts": "2026-04-15T13:49",
+    "author": "Dave",
+    "msg": "All my S8+ boxes are out of business with attestation failure",
+    "id": 32930
+  },
+  {
+    "ts": "2026-04-15T13:50",
+    "author": "Dave",
+    "msg": "200 devices (10 boxes) total spread through family and friends so it's just 20 max on 1 IP gone offline yesterday with the snip of a finger 😂",
+    "id": 32931
+  },
+  {
+    "ts": "2026-04-15T13:51",
+    "author": "Dave",
+    "msg": "That is very painful, I tell you... Like rewards weren't great, we all know this, but I hoped for these new WiFi tasks and now I can't participate it seems 😂",
+    "id": 32932
+  },
+  {
+    "ts": "2026-04-15T14:18",
+    "author": "Darko",
+    "msg": "Have you tried restarting them yet? I do not see why they would not work",
+    "id": 32933
+  },
+  {
+    "ts": "2026-04-15T14:18",
+    "author": "Darko",
+    "msg": "They did say in last AMA that headless devices are good to go",
+    "id": 32934
+  },
+  {
+    "ts": "2026-04-15T14:21",
+    "author": "Dave",
+    "msg": "1) I restarted the app multiple times - didn't work.\n2) I restarted the device - didn't work.\n3) I reinstalled the app - didn't work.\n4) I revoked the licenses, created new lease, connected that - didn't work.\n5) I reset the device to factory settings, reinstalled the app, used a new email and connected a new lease - didn't work.",
+    "id": 32935
+  },
+  {
+    "ts": "2026-04-15T14:21",
+    "author": "Dave",
+    "msg": "All went into green \"active\" and then 2x red with the attestation failure.",
+    "id": 32936
+  },
+  {
+    "ts": "2026-04-15T14:22",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 32937
+  },
+  {
+    "ts": "2026-04-15T14:25",
+    "author": "Marco",
+    "msg": "Effectively. The cap is still 1000, but you could review them back to roll out at the end of November if you skip enough",
+    "id": 32938
+  },
+  {
+    "ts": "2026-04-15T14:38",
+    "author": "Jaba - Unityfarmers",
+    "msg": "By letting more load and scrolling down? Would that be the way?",
+    "id": 32939
+  },
+  {
+    "ts": "2026-04-15T14:38",
+    "author": "EdgyBruh",
+    "msg": "Try switching networks as well",
+    "id": 32940
+  },
+  {
+    "ts": "2026-04-15T14:43",
+    "author": "Dave",
+    "msg": "I did",
+    "id": 32941
+  },
+  {
+    "ts": "2026-04-15T14:43",
+    "author": "Dave",
+    "msg": "Doesn't change :-/",
+    "id": 32942
+  },
+  {
+    "ts": "2026-04-15T14:59",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Installed app via ADB might trigger it",
+    "id": 32943
+  },
+  {
+    "ts": "2026-04-15T15:00",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Check playstore settings if device is certified",
+    "id": 32944
+  },
+  {
+    "ts": "2026-04-15T15:02",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Talk to ChatGPT, it will give you many potential options. Especially if it's already trained on phone farms",
+    "id": 32945
+  },
+  {
+    "ts": "2026-04-15T15:02",
+    "author": "Marco",
+    "msg": "Even if you scroll I believe it stops at 1000, but if you force the call in the console like your pinned message says and skip then you can pull data from further back in time",
+    "id": 32946
+  },
+  {
+    "ts": "2026-04-15T15:10",
+    "author": "Opher",
+    "msg": "Does everyone with S8 boxes have issues with the attestation error?",
+    "id": 32947
+  },
+  {
+    "ts": "2026-04-15T15:12",
+    "author": "Dennis",
+    "msg": "No I am not",
+    "id": 32948
+  },
+  {
+    "ts": "2026-04-15T15:13",
+    "author": "Dennis",
+    "msg": "Did install with apk",
+    "id": 32949
+  },
+  {
+    "ts": "2026-04-15T15:13",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Nope, seems incidental at the moment. I hope we can collect some info here which devices actually get the error. Maybe there are similarities",
+    "id": 32950
+  },
+  {
+    "ts": "2026-04-15T15:15",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Definitely not limited to farms, regular devices with sims are also getting it",
+    "id": 32951
+  },
+  {
+    "ts": "2026-04-15T15:22",
+    "author": "GliTch_",
+    "msg": "I seen that exact error after the first time rewards dropped without answer for 2 days then they went back up",
+    "id": 32952
+  },
+  {
+    "ts": "2026-04-15T15:22",
+    "author": "GliTch_",
+    "msg": "those timebombs finally went off I guess",
+    "id": 32953
+  },
+  {
+    "ts": "2026-04-15T15:22",
+    "author": "Dave",
+    "msg": "I think it's only for devices without SIM",
+    "id": 32954
+  },
+  {
+    "ts": "2026-04-15T15:22",
+    "author": "Dave",
+    "msg": "My boxes don't have SIM card slots",
+    "id": 32955
+  },
+  {
+    "ts": "2026-04-15T15:23",
+    "author": "GliTch_",
+    "msg": "mine either, but they are also not online right now either",
+    "id": 32956
+  },
+  {
+    "ts": "2026-04-15T15:24",
+    "author": "Dave",
+    "msg": "I think I really tried everything and I also can state that the licenses very shortly connects green and then switches to this attestation failure.",
+    "id": 32957
+  },
+  {
+    "ts": "2026-04-15T15:24",
+    "author": "Dave",
+    "msg": "So it is something coming back from them",
+    "id": 32958
+  },
+  {
+    "ts": "2026-04-15T15:24",
+    "author": "Dave",
+    "msg": "99% sure",
+    "id": 32959
+  },
+  {
+    "ts": "2026-04-15T15:25",
+    "author": "Dave",
+    "msg": "I tried the playstore, but no clue what that means.",
+    "id": 32960
+  },
+  {
+    "ts": "2026-04-15T15:26",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 32961
+  },
+  {
+    "ts": "2026-04-15T15:26",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Photo]",
+    "id": 32962
+  },
+  {
+    "ts": "2026-04-15T15:26",
+    "author": "Dave",
+    "msg": "Yes. That's an answer to me 😂",
+    "id": 32963
+  },
+  {
+    "ts": "2026-04-15T15:27",
+    "author": "Dave",
+    "msg": "Tried both, too.",
+    "id": 32964
+  },
+  {
+    "ts": "2026-04-15T15:27",
+    "author": "Dave",
+    "msg": "And I put in over 10h including AI questioning yesterday...",
+    "id": 32965
+  },
+  {
+    "ts": "2026-04-15T15:31",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Your farms rooted?",
+    "id": 32966
+  },
+  {
+    "ts": "2026-04-15T15:31",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Da heck, that's a clue",
+    "id": 32967
+  },
+  {
+    "ts": "2026-04-15T15:31",
+    "author": "GliTch_",
+    "msg": "I thought they might've rooted a lot of them",
+    "id": 32968
+  },
+  {
+    "ts": "2026-04-15T15:31",
+    "author": "GliTch_",
+    "msg": "I don't think mine are",
+    "id": 32969
+  },
+  {
+    "ts": "2026-04-15T15:31",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Normally you can only get rooted if you pay quite a lot extra. It's a lot of work they won't put in unless paid for it",
+    "id": 32970
+  },
+  {
+    "ts": "2026-04-15T15:32",
+    "author": "GliTch_",
+    "msg": "yeah I didn't pay extra for it iirc told her not to have them rooted",
+    "id": 32971
+  },
+  {
+    "ts": "2026-04-15T15:33",
+    "author": "GliTch_",
+    "msg": "swapping roms on those is going to be a pain in the ass unless you get some screens",
+    "id": 32972
+  },
+  {
+    "ts": "2026-04-15T15:33",
+    "author": "GliTch_",
+    "msg": "tbh that might get some of the boxes unflagged if they are all on a similar rom / version",
+    "id": 32973
+  },
+  {
+    "ts": "2026-04-15T15:33",
+    "author": "GliTch_",
+    "msg": "and were on different ip",
+    "id": 32974
+  },
+  {
+    "ts": "2026-04-15T15:55",
+    "author": "Dennis",
+    "msg": "What does this mean ? Rooted ?",
+    "id": 32975
+  },
+  {
+    "ts": "2026-04-15T15:57",
+    "author": "Dave",
+    "msg": "It is, but I didn't pay extra. And I am not 100% sure as adb root doesn't work",
+    "id": 32976
+  },
+  {
+    "ts": "2026-04-15T16:02",
+    "author": "Dave",
+    "msg": "So actually I don't think they are truly rooted",
+    "id": 32977
+  },
+  {
+    "ts": "2026-04-15T16:36",
+    "author": "Dennis",
+    "msg": "Sorry for the dumb question but the TEE is this software or hardware",
+    "id": 32978
+  },
+  {
+    "ts": "2026-04-15T16:37",
+    "author": "Abdus",
+    "msg": "What is TEE?",
+    "id": 32979
+  },
+  {
+    "ts": "2026-04-15T16:44",
+    "author": "Darko",
+    "msg": "Software, newer phone models has hardware version or strongbox chip. Basically same as knox security chip, completely physically detached from phone OS with OS of its own",
+    "id": 32980
+  },
+  {
+    "ts": "2026-04-15T16:44",
+    "author": "Darko",
+    "msg": "with rooting the phone people burn knox security chip. Literally burn and cannot work or repair it again",
+    "id": 32981
+  },
+  {
+    "ts": "2026-04-15T16:50",
+    "author": "Janilom81",
+    "msg": "Just trying to catch up with the latest news here. Did I read that having the bootloader unlocked might cause lower rewards?",
+    "id": 32982
+  },
+  {
+    "ts": "2026-04-15T17:01",
+    "author": "Abdus",
+    "msg": "And what’s SoC",
+    "id": 32983
+  },
+  {
+    "ts": "2026-04-15T17:06",
+    "author": "GliTch_",
+    "msg": "it's to verify that the device is legitimate and not \"tampered\" with from the \"stock\" state of the rom",
+    "id": 32984
+  },
+  {
+    "ts": "2026-04-15T17:10",
+    "author": "Abdus",
+    "msg": "Have you seen the back alleys in China where you can pick just about any phone board up? Are boxed phone farms screwed??",
+    "id": 32985
+  },
+  {
+    "ts": "2026-04-15T17:12",
+    "author": "GliTch_",
+    "msg": "yep",
+    "id": 32986
+  },
+  {
+    "ts": "2026-04-15T17:12",
+    "author": "GliTch_",
+    "msg": "seen those parts bins before 😂",
+    "id": 32987
+  },
+  {
+    "ts": "2026-04-15T17:14",
+    "author": "GliTch_",
+    "msg": "I don't know that they are completely screwed but they are trying to sort out things and it appears they are clipping the boxes wings currently which tbf the massive farms are the same devices and setups its going to be hard to sort bad from \"ok\" or good actors",
+    "id": 32988
+  },
+  {
+    "ts": "2026-04-15T17:15",
+    "author": "Abdus",
+    "msg": "Let’s see what these tasks are",
+    "id": 32989
+  },
+  {
+    "ts": "2026-04-15T17:25",
+    "author": "GliTch_",
+    "msg": "Yep",
+    "id": 32990
+  },
+  {
+    "ts": "2026-04-15T18:13",
+    "author": "R B",
+    "msg": "I’m dropping back down to 4 devices on a 4g router connected via wifi",
+    "id": 32991
+  },
+  {
+    "ts": "2026-04-15T18:49",
+    "author": "Coinalitics",
+    "msg": "[Photo]",
+    "id": 32993
+  },
+  {
+    "ts": "2026-04-15T18:49",
+    "author": "Dave",
+    "msg": "😂 at least your device still can be used 😂",
+    "id": 32994
+  },
+  {
+    "ts": "2026-04-15T18:50",
+    "author": "Dave",
+    "msg": "Well, mine don't anymore 😂 I can't even make pennies anymore.",
+    "id": 32997
+  },
+  {
+    "ts": "2026-04-15T18:51",
+    "author": "Dave",
+    "msg": "No. It is something about my phones",
+    "id": 32998
+  },
+  {
+    "ts": "2026-04-15T18:53",
+    "author": "Dave",
+    "msg": "Never tried that",
+    "id": 33000
+  },
+  {
+    "ts": "2026-04-15T19:03",
+    "author": "Rick Middleton",
+    "msg": "I just logged into my S8 farmbox - it is one I got from everyones fave seller Fiona 😂  I have 7 phones running logged into Unity, the other 13 I rebooted and did not restart Unity app about 2 weeks ago or something..  I got the SIM option, although I have not installed any yet.\n\nAnyway.. my 7 phones all seem to be working OK - no attestation\n\nThey are on Ethernet on same IP address - no SIM cards.  They are earning from 11.9c to 18 cents",
+    "id": 33002
+  },
+  {
+    "ts": "2026-04-15T19:05",
+    "author": "Dave",
+    "msg": "Interesting...",
+    "id": 33003
+  },
+  {
+    "ts": "2026-04-15T19:06",
+    "author": "Dave",
+    "msg": "I really would like to know what's different about mine 😂",
+    "id": 33004
+  },
+  {
+    "ts": "2026-04-15T19:06",
+    "author": "Rick Middleton",
+    "msg": "How many devices are on the IP address you are using again?",
+    "id": 33005
+  },
+  {
+    "ts": "2026-04-15T19:07",
+    "author": "Dave",
+    "msg": "Never more than 20.\n\nI have 10 boxes spread each 1 between family and friends.\n\nAll of them show that error.",
+    "id": 33006
+  },
+  {
+    "ts": "2026-04-15T19:08",
+    "author": "Rick Middleton",
+    "msg": "Hmmm.. do any of the places also have someone running Unity on their personal phone - pushing you past 20?",
+    "id": 33007
+  },
+  {
+    "ts": "2026-04-15T19:08",
+    "author": "Dave",
+    "msg": "No",
+    "id": 33008
+  },
+  {
+    "ts": "2026-04-15T19:08",
+    "author": "Dave",
+    "msg": "All factored in",
+    "id": 33009
+  },
+  {
+    "ts": "2026-04-15T19:08",
+    "author": "Rick Middleton",
+    "msg": "Interesting!",
+    "id": 33010
+  },
+  {
+    "ts": "2026-04-15T19:08",
+    "author": "Dave",
+    "msg": "It's not an IP issue",
+    "id": 33011
+  },
+  {
+    "ts": "2026-04-15T19:09",
+    "author": "Dave",
+    "msg": "I have my private phone in the same IP as my box",
+    "id": 33012
+  },
+  {
+    "ts": "2026-04-15T19:09",
+    "author": "Dave",
+    "msg": "My private mobile is fine. Same with family.",
+    "id": 33013
+  },
+  {
+    "ts": "2026-04-15T19:09",
+    "author": "Rick Middleton",
+    "msg": "It probably won't make any difference - but which supplier did your boxes come from?",
+    "id": 33014
+  },
+  {
+    "ts": "2026-04-15T19:09",
+    "author": "Dave",
+    "msg": "3cfarmbox",
+    "id": 33015
+  },
+  {
+    "ts": "2026-04-15T19:10",
+    "author": "Dave",
+    "msg": "[Photo] I also don't think they are really rooted.",
+    "id": 33016
+  },
+  {
+    "ts": "2026-04-15T19:11",
+    "author": "libben",
+    "msg": "I have 3 S8 boxes and none of them show any errors.",
+    "id": 33017
+  },
+  {
+    "ts": "2026-04-15T19:11",
+    "author": "Daano",
+    "msg": "Nono they said multiple times between 10 and 20🤡",
+    "id": 33018
+  },
+  {
+    "ts": "2026-04-15T19:11",
+    "author": "Rick Middleton",
+    "msg": "Which supplier?",
+    "id": 33019
+  },
+  {
+    "ts": "2026-04-15T19:11",
+    "author": "libben",
+    "msg": "William",
+    "id": 33020
+  },
+  {
+    "ts": "2026-04-15T19:11",
+    "author": "Rick Middleton",
+    "msg": "IDK.. that conversation does not make total sense does it 😂️️️️️️",
+    "id": 33021
+  },
+  {
+    "ts": "2026-04-15T19:12",
+    "author": "Rick Middleton",
+    "msg": "Good to know thanks.  Same as Dave",
+    "id": 33022
+  },
+  {
+    "ts": "2026-04-15T19:12",
+    "author": "Dave",
+    "msg": "It does not lol 😂",
+    "id": 33023
+  },
+  {
+    "ts": "2026-04-15T19:12",
+    "author": "Rick Middleton",
+    "msg": "How many phones are you running per IP address?",
+    "id": 33024
+  },
+  {
+    "ts": "2026-04-15T19:12",
+    "author": "libben",
+    "msg": "20",
+    "id": 33025
+  },
+  {
+    "ts": "2026-04-15T19:13",
+    "author": "Dave",
+    "msg": "I wanted to try to change my android id via ADB",
+    "id": 33026
+  },
+  {
+    "ts": "2026-04-15T19:13",
+    "author": "Dave",
+    "msg": "But adb didn't have root access",
+    "id": 33027
+  },
+  {
+    "ts": "2026-04-15T19:13",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "30 from William and they're all fine my end",
+    "id": 33028
+  },
+  {
+    "ts": "2026-04-15T19:14",
+    "author": "Dave",
+    "msg": "So I had to do a factory reset",
+    "id": 33029
+  },
+  {
+    "ts": "2026-04-15T19:14",
+    "author": "Dave",
+    "msg": "As I don't want to root a headless device. I always felt it's tricky to root my complete phones 😂",
+    "id": 33030
+  },
+  {
+    "ts": "2026-04-15T19:14",
+    "author": "Dave",
+    "msg": "Not wanted to risk it on such a thing without a proper guide",
+    "id": 33031
+  },
+  {
+    "ts": "2026-04-15T19:15",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Just catching up on all the drama, but yeah looks like they're trying to target these big boy farm set ups. And some of us are collateral",
+    "id": 33032
+  },
+  {
+    "ts": "2026-04-15T19:15",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Well all of us with the recalibration",
+    "id": 33033
+  },
+  {
+    "ts": "2026-04-15T19:16",
+    "author": "Dave",
+    "msg": "Even the factory reset didn't resolve the attestation so I believe it's something like a missing sensor.",
+    "id": 33034
+  },
+  {
+    "ts": "2026-04-15T19:25",
+    "author": "Rick Middleton",
+    "msg": "Hmmm. did yours come with the SIM card option?   Just the trays themselves wont make any difference - but I wonder if there is a module of the phone they leave off if you don't want SIMs",
+    "id": 33035
+  },
+  {
+    "ts": "2026-04-15T19:32",
+    "author": "Opher",
+    "msg": "I only had 10 mother motherboards running Unity per box and one box per isp before i got all the errors on every single box. I have 14 Boxes from William. And i have them spread across 5 locations ..",
+    "id": 33036
+  },
+  {
+    "ts": "2026-04-15T19:36",
+    "author": "Kolks",
+    "msg": "With a SIM card or without?",
+    "id": 33037
+  },
+  {
+    "ts": "2026-04-15T19:37",
+    "author": "Opher",
+    "msg": "No SIM",
+    "id": 33038
+  },
+  {
+    "ts": "2026-04-15T19:40",
+    "author": "Kolks",
+    "msg": "Do they have a SIM connector?",
+    "id": 33039
+  },
+  {
+    "ts": "2026-04-15T19:41",
+    "author": "Kolks",
+    "msg": "Maybe we're on to something.",
+    "id": 33040
+  },
+  {
+    "ts": "2026-04-15T19:44",
+    "author": "Rick Middleton",
+    "msg": "You got the SIM card option in yours didn't you?",
+    "id": 33041
+  },
+  {
+    "ts": "2026-04-15T19:47",
+    "author": "Dave",
+    "msg": "There is a module they leave off:",
+    "id": 33042
+  },
+  {
+    "ts": "2026-04-15T19:49",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 33043
+  },
+  {
+    "ts": "2026-04-15T19:50",
+    "author": "Dave",
+    "msg": "No, they don't.",
+    "id": 33044
+  },
+  {
+    "ts": "2026-04-15T19:52",
+    "author": "Dave",
+    "msg": "Anyone willing to open a box with simcard to verify this information?",
+    "id": 33046
+  },
+  {
+    "ts": "2026-04-15T19:52",
+    "author": "Dave",
+    "msg": "I will open mine tomorrow. Going to bed now",
+    "id": 33047
+  },
+  {
+    "ts": "2026-04-15T19:53",
+    "author": "Rick Middleton",
+    "msg": "My box ( with SIM option ) is in a different location - but I remember I did have the bit at the top - it looked like the one on the left",
+    "id": 33048
+  },
+  {
+    "ts": "2026-04-15T19:54",
+    "author": "Dave",
+    "msg": "Thanks for your support.",
+    "id": 33049
+  },
+  {
+    "ts": "2026-04-15T19:54",
+    "author": "Dave",
+    "msg": "I think it needs to be connected with this module",
+    "id": 33050
+  },
+  {
+    "ts": "2026-04-15T19:54",
+    "author": "Rick Middleton",
+    "msg": "Good to try and figure out things between us if we can",
+    "id": 33051
+  },
+  {
+    "ts": "2026-04-15T19:55",
+    "author": "Dave",
+    "msg": "As unity stated SIM cards are not necessarily needed for many tasks and me starting with 1 box in November/December verifying that this setup works I decided to stay without SIM",
+    "id": 33052
+  },
+  {
+    "ts": "2026-04-15T19:55",
+    "author": "Dave",
+    "msg": "Seems like they changed their mind...",
+    "id": 33053
+  },
+  {
+    "ts": "2026-04-15T19:56",
+    "author": "Rick Middleton",
+    "msg": "I don't think it is the SIM itself - it might be there is some other component on that board that is missing",
+    "id": 33054
+  },
+  {
+    "ts": "2026-04-15T19:57",
+    "author": "Dave",
+    "msg": "Yes",
+    "id": 33055
+  },
+  {
+    "ts": "2026-04-15T19:57",
+    "author": "Dave",
+    "msg": "Something that just comes with the SIM connector. I believe so too",
+    "id": 33056
+  },
+  {
+    "ts": "2026-04-15T19:57",
+    "author": "Dave",
+    "msg": "But I don't know how to figure out what is missing...",
+    "id": 33057
+  },
+  {
+    "ts": "2026-04-15T19:58",
+    "author": "Dave",
+    "msg": "Good night gents. I'll follow up tomorrow.",
+    "id": 33058
+  },
+  {
+    "ts": "2026-04-15T19:58",
+    "author": "Rick Middleton",
+    "msg": "I'll be able to access my box in a couple of days and examine my phone boards and see if I can tell if there are any components on that end bit",
+    "id": 33059
+  },
+  {
+    "ts": "2026-04-15T19:58",
+    "author": "Rick Middleton",
+    "msg": "Good night 👋️️️️️️",
+    "id": 33060
+  },
+  {
+    "ts": "2026-04-15T19:58",
+    "author": "Flippy",
+    "msg": "Are these yours?",
+    "id": 33061
+  },
+  {
+    "ts": "2026-04-15T19:59",
+    "author": "Flippy",
+    "msg": "I can open a box with S8 with sim",
+    "id": 33062
+  },
+  {
+    "ts": "2026-04-15T20:00",
+    "author": "Flippy",
+    "msg": "Its off for few weeks now",
+    "id": 33063
+  },
+  {
+    "ts": "2026-04-15T20:02",
+    "author": "Rick Middleton",
+    "msg": "Looks like a photo from the supplier to me",
+    "id": 33064
+  },
+  {
+    "ts": "2026-04-15T20:07",
+    "author": "Opher",
+    "msg": "So the going theory is motherboards with NO SIM Function could be missing components needed for device verification with Unity App?",
+    "id": 33065
+  },
+  {
+    "ts": "2026-04-15T20:13",
+    "author": "Rick Middleton",
+    "msg": "it is one hypothesis yes..  can't think of another at this stage... now we've checked out number of devices",
+    "id": 33066
+  },
+  {
+    "ts": "2026-04-15T20:20",
+    "author": "Dennis",
+    "msg": "I think calibration is ongoing and they went from 1 device on one ip to 5 then to 10 then 15 then 20. like slowly grinding upwards. Thatswhy we see improved rewards for 5 connections where previous even more then one was max",
+    "id": 33067
+  },
+  {
+    "ts": "2026-04-15T20:20",
+    "author": "Flippy",
+    "msg": "Btw",
+    "id": 33068
+  },
+  {
+    "ts": "2026-04-15T20:21",
+    "author": "Flippy",
+    "msg": "How to go in wifi mode with your phones while in OTG?",
+    "id": 33069
+  },
+  {
+    "ts": "2026-04-15T20:21",
+    "author": "Flippy",
+    "msg": "I want to connect 4 devices to a wifi hotspot while keeping the others in OTG mode",
+    "id": 33070
+  },
+  {
+    "ts": "2026-04-15T20:28",
+    "author": "Flippy",
+    "msg": "So now we at 10?",
+    "id": 33071
+  },
+  {
+    "ts": "2026-04-15T20:29",
+    "author": "Dennis",
+    "msg": "I think still at 5 and maybe after some time 10 and then going upwards",
+    "id": 33072
+  },
+  {
+    "ts": "2026-04-15T20:29",
+    "author": "Dennis",
+    "msg": "but just a theory  i have",
+    "id": 33073
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "Dennis",
+    "msg": "could be complete bullshit as well",
+    "id": 33074
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "Flippy",
+    "msg": "Lets pray",
+    "id": 33075
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "J. P. Costa",
+    "msg": "I have 10 devices and Im ranging from .15 to .25",
+    "id": 33076
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "J. P. Costa",
+    "msg": "Same wifi",
+    "id": 33077
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "Dennis",
+    "msg": "interesting, since today or always",
+    "id": 33078
+  },
+  {
+    "ts": "2026-04-15T20:30",
+    "author": "Kevin Blowers",
+    "msg": "Same here. I know others too",
+    "id": 33079
+  },
+  {
+    "ts": "2026-04-15T20:31",
+    "author": "Dennis",
+    "msg": "since when ?",
+    "id": 33080
+  },
+  {
+    "ts": "2026-04-15T20:31",
+    "author": "Kevin Blowers",
+    "msg": "At least 1 week",
+    "id": 33081
+  },
+  {
+    "ts": "2026-04-15T20:31",
+    "author": "J. P. Costa",
+    "msg": "Yeah more or less that",
+    "id": 33082
+  },
+  {
+    "ts": "2026-04-15T20:33",
+    "author": "J. P. Costa",
+    "msg": "[Photo] .007 was dead for the day and the .008 is iOS (useless for now)",
+    "id": 33083
+  },
+  {
+    "ts": "2026-04-15T20:33",
+    "author": "Kevin Blowers",
+    "msg": "I’m currently getting around $6 per day off 44 devices in multiple places and setups",
+    "id": 33084
+  },
+  {
+    "ts": "2026-04-15T20:33",
+    "author": "J. P. Costa",
+    "msg": "I dont have a single iphone performing well so I turned them off",
+    "id": 33085
+  },
+  {
+    "ts": "2026-04-15T20:33",
+    "author": "Dennis",
+    "msg": "but ten on one IP?",
+    "id": 33086
+  },
+  {
+    "ts": "2026-04-15T20:34",
+    "author": "Dennis",
+    "msg": "Ok interesting",
+    "id": 33087
+  },
+  {
+    "ts": "2026-04-15T20:34",
+    "author": "Dennis",
+    "msg": "I think we still have to wait at least a week to have enough data to confirm a reversal",
+    "id": 33088
+  },
+  {
+    "ts": "2026-04-15T20:34",
+    "author": "Kevin Blowers",
+    "msg": "This message will delete in 1 minute lol",
+    "id": 33089
+  },
+  {
+    "ts": "2026-04-15T20:40",
+    "author": "Daano",
+    "msg": "Interesting, anyone with higher then 5> license per IP making over 0.2 on average?",
+    "id": 33090
+  },
+  {
+    "ts": "2026-04-15T20:44",
+    "author": "Flippy",
+    "msg": "Thats still 50% less than full",
+    "id": 33091
+  },
+  {
+    "ts": "2026-04-15T20:44",
+    "author": "Flippy",
+    "msg": "Are 5 earning 0.4 to 0.5 for all?",
+    "id": 33092
+  },
+  {
+    "ts": "2026-04-15T20:45",
+    "author": "J. P. Costa",
+    "msg": "Never seen it",
+    "id": 33093
+  },
+  {
+    "ts": "2026-04-15T20:45",
+    "author": "Dennis",
+    "msg": "for me starting of today yes",
+    "id": 33094
+  },
+  {
+    "ts": "2026-04-15T20:45",
+    "author": "J. P. Costa",
+    "msg": "Biggest was .3x before calibration",
+    "id": 33095
+  },
+  {
+    "ts": "2026-04-15T20:45",
+    "author": "Flippy",
+    "msg": "Ok",
+    "id": 33096
+  },
+  {
+    "ts": "2026-04-15T20:46",
+    "author": "J. P. Costa",
+    "msg": "Oh you getting 0.4 on 5 devices?",
+    "id": 33097
+  },
+  {
+    "ts": "2026-04-15T20:46",
+    "author": "J. P. Costa",
+    "msg": "You are making More than me with 10. I might turn some off if thats the case",
+    "id": 33098
+  },
+  {
+    "ts": "2026-04-15T20:53",
+    "author": "Dennis",
+    "msg": "yess",
+    "id": 33099
+  },
+  {
+    "ts": "2026-04-15T21:19",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33100
+  },
+  {
+    "ts": "2026-04-15T21:19",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33101
+  },
+  {
+    "ts": "2026-04-15T21:19",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33102
+  },
+  {
+    "ts": "2026-04-15T22:07",
+    "author": "Jack🎃",
+    "msg": "I haven't had a chance to verify each device that had an increase. 3 days ago their was a slight increase, following there was a drop to a new low, then yesterday it was the highest I've had since we noticed the reward drop from few weeks ago.",
+    "id": 33103
+  },
+  {
+    "ts": "2026-04-15T23:37",
+    "author": "L .",
+    "msg": "Prior to the current/2nd calibration I was getting about $5.70 for about 20 licenses all on wifi.  Now, 45 licenses gets about $3.  38 devices, 2 different locations on wifi, all actual phones, 7 different marketplace SIM leases , all 90%+ uptime.  I hope @dennisvess theory is correct! 🙌🏾",
+    "id": 33104
+  },
+  {
+    "ts": "2026-04-15T23:38",
+    "author": "L .",
+    "msg": "I’m getting about .035 on average across 2 locations. All wifi only.  Was getting .245 prior to calibration tho…",
+    "id": 33105
+  },
+  {
+    "ts": "2026-04-15T23:41",
+    "author": "L .",
+    "msg": "[Photo] Set ups are like this.",
+    "id": 33106
+  }
+]

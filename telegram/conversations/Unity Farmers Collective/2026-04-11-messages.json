@@ -1,0 +1,200 @@
+[
+  {
+    "ts": "2026-04-11T05:32",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I don't think the app can access all that parameters",
+    "id": 32714
+  },
+  {
+    "ts": "2026-04-11T06:24",
+    "author": "Kevin Blowers",
+    "msg": "I don’t think that’s any different to having a phone with the battery constantly on charge",
+    "id": 32715
+  },
+  {
+    "ts": "2026-04-11T06:35",
+    "author": "Kevin Blowers",
+    "msg": "When did you disconnect them? Also what were the individual licenses rewards before you reduced them",
+    "id": 32717
+  },
+  {
+    "ts": "2026-04-11T06:47",
+    "author": "Kevin Blowers",
+    "msg": "I think you need to wait for 24hrs before you see a difference",
+    "id": 32719
+  },
+  {
+    "ts": "2026-04-11T07:26",
+    "author": "R B",
+    "msg": "So today the rewards for 6 x s8 farm devices on Ethernet and 1x personal iPhone connected to the same ISP are around 10cents to 18 cents massively lower but not awful",
+    "id": 32720
+  },
+  {
+    "ts": "2026-04-11T09:21",
+    "author": "Forty41",
+    "msg": "I tethered a couple of phones to other phones with sims today . The phones which were tethering saw a drop in rewards but overall they averaged 21 cents . Highest was an eSIM phone I was using for S&R at 48c and lowest 11 cents. All other phones still dust with many phones connected to broadband and sim routers .",
+    "id": 32721
+  },
+  {
+    "ts": "2026-04-11T09:48",
+    "author": "Abdus",
+    "msg": "I think they just should make it a legal disclosure. You want to use the app, then data about the phone has to be collected. Your choice. Don’t consent, app locks and you can’t use it. Request to clear stored identifiers, sure clear and lock up. You want in again? Ok consent to info about your phone used. That way you can tie down the “malicious” activity to the specific phone. Someone in verified posted their ULO is cloning the app and still receiving rewards. GDPR is a pain true but we can work with it.",
+    "id": 32722
+  },
+  {
+    "ts": "2026-04-11T09:50",
+    "author": "Abdus",
+    "msg": "Issue is the costs involved can be high and prohibitive. But that’s the way it is.",
+    "id": 32723
+  },
+  {
+    "ts": "2026-04-11T09:52",
+    "author": "Abdus",
+    "msg": "I hope this “quality” issue is just telemetry specific. They have claimed other tasks would benefit from “screenless phones” setup.",
+    "id": 32724
+  },
+  {
+    "ts": "2026-04-11T10:21",
+    "author": "GliTch_",
+    "msg": "I tried this with a few of mine but couldn't get them to power back up on some moto's for some reason never figured out why",
+    "id": 32725
+  },
+  {
+    "ts": "2026-04-11T10:23",
+    "author": "Flippy",
+    "msg": "I was about to buy some sims and go that route but it all seems a waste of money and time",
+    "id": 32726
+  },
+  {
+    "ts": "2026-04-11T10:25",
+    "author": "Kevin Blowers",
+    "msg": "Once you removed the battery, how were you powering them?? I have successfully done this to moto g7 and g8. I might be able to help.",
+    "id": 32727
+  },
+  {
+    "ts": "2026-04-11T10:26",
+    "author": "Flippy",
+    "msg": "Fucking shitshow",
+    "id": 32728
+  },
+  {
+    "ts": "2026-04-11T10:29",
+    "author": "GliTch_",
+    "msg": "direct wire from the motherboard basically one of these boxes",
+    "id": 32729
+  },
+  {
+    "ts": "2026-04-11T10:29",
+    "author": "GliTch_",
+    "msg": "where they have the low voltage out on a lead that plugs into the boards",
+    "id": 32730
+  },
+  {
+    "ts": "2026-04-11T10:30",
+    "author": "GliTch_",
+    "msg": "I would get them to \"charge\" but whenever I powered them on they would just shutdown",
+    "id": 32731
+  },
+  {
+    "ts": "2026-04-11T10:39",
+    "author": "Kevin Blowers",
+    "msg": "So did you have 2 sets of wires going to the phone. 1 plugged into the usb c connection for data transfer and a red and black onto the phone where the original battery was connected to?",
+    "id": 32732
+  },
+  {
+    "ts": "2026-04-11T10:39",
+    "author": "GliTch_",
+    "msg": "yeah",
+    "id": 32733
+  },
+  {
+    "ts": "2026-04-11T10:47",
+    "author": "Kevin Blowers",
+    "msg": "What I done will all of mine was to carefully remove the pcb off each battery. Then solder the wires that came with the box onto the + and - connections on the pcb. This means I was able to use the original connector from the battery to ensure all connections were the same. If you do this be careful as the batteries can be volatile",
+    "id": 32734
+  },
+  {
+    "ts": "2026-04-11T10:47",
+    "author": "GliTch_",
+    "msg": "yeah that was going to be my next step",
+    "id": 32735
+  },
+  {
+    "ts": "2026-04-11T10:48",
+    "author": "Kevin Blowers",
+    "msg": "I carefully cut the connection between the battery and the pcb with precision wire cutters.",
+    "id": 32736
+  },
+  {
+    "ts": "2026-04-11T16:53",
+    "author": "Chewy Dankz",
+    "msg": "Absolute ass, ‘$19k a month’ to this🫣",
+    "id": 32737
+  },
+  {
+    "ts": "2026-04-11T16:54",
+    "author": "Chewy Dankz",
+    "msg": "If you complain then they say ‘we never said it was $19k straight away’ like we aren’t 5 months in and barely getting $100 if lucky",
+    "id": 32738
+  },
+  {
+    "ts": "2026-04-11T16:56",
+    "author": "Flippy",
+    "msg": "Dont forget they kept that calculator in their shiny revamped website as well. It quite sickening.",
+    "id": 32739
+  },
+  {
+    "ts": "2026-04-11T16:56",
+    "author": "Flippy",
+    "msg": "But getting it out might be even worse tho",
+    "id": 32740
+  },
+  {
+    "ts": "2026-04-11T17:41",
+    "author": "GliTch_",
+    "msg": "/balance",
+    "id": 32741
+  },
+  {
+    "ts": "2026-04-11T17:42",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n🐕 **SHIB**: $679.68 (113,658,149)\n✕ **XRP**: $662.85 (487.3892)\n⬡ **BNB**: $630.82 (1.0372)\n₳ **ADA**: $462.13 (1850.6330)\n◎ **SOL**: $443.94 (5.2271)\n⟐ **ETH**: $435.48 (0.1924)\n$ **USDC**: $433.02 (433)\n₮ **USDT**: $413.41 (413)\n💵 **USDT_BSC**: $383.25 (383)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $4,544.68**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 32742
+  },
+  {
+    "ts": "2026-04-11T23:26",
+    "author": "Daano",
+    "msg": "Howmany licenses",
+    "id": 32743
+  },
+  {
+    "ts": "2026-04-11T23:31",
+    "author": "Carlos",
+    "msg": "How big are your farms making $3",
+    "id": 32744
+  },
+  {
+    "ts": "2026-04-11T23:37",
+    "author": "Daano",
+    "msg": "So josh answered my ama question in last discord call about 'max amount of licenses per IP per day' and he said there is no limit...... How can he answer this way and dont think its gasslighting. Like ofc we get it there is no limit to be able to connect more license to ip, BUT for sure there is a limit for normal reward range and its NOT 20 anymore, more like 1-5",
+    "id": 32745
+  },
+  {
+    "ts": "2026-04-11T23:42",
+    "author": "Coffee Nodes",
+    "msg": "It’s about whether the data produced is valuable or not for that specific task",
+    "id": 32746
+  },
+  {
+    "ts": "2026-04-11T23:56",
+    "author": "Daano",
+    "msg": "Thats a nice theoretical description, but we (def in farm commun) are looking for practical limits",
+    "id": 32747
+  },
+  {
+    "ts": "2026-04-11T23:57",
+    "author": "Daano",
+    "msg": "And for months now (and still) telemetry is only (daily) paying (passive) 'task', so we are looking for 'only' that limit for now🤷",
+    "id": 32748
+  }
+]

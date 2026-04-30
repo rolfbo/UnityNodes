@@ -1,0 +1,1298 @@
+[
+  {
+    "ts": "2026-01-12T00:01",
+    "author": "Mat",
+    "msg": "Love your work on this Nico. Just awesome. One question. It only shows the rewards from the UNO perspective correct? If so is there a way we can manually enter the ULO/UNO % split so we see the total rewards for each phone running a licence.",
+    "id": 3722
+  },
+  {
+    "ts": "2026-01-12T00:02",
+    "author": "Nico | NodeX",
+    "msg": "You can see individual licenses as well",
+    "id": 3723
+  },
+  {
+    "ts": "2026-01-12T00:05",
+    "author": "Mat",
+    "msg": "Oh great! So if I have a UNO/ULO split of 40/60 and the licence makes $0.10 it will report on all 10 cents and not just the UNO's 4 cents?",
+    "id": 3724
+  },
+  {
+    "ts": "2026-01-12T00:06",
+    "author": "Tap MastersTaps",
+    "msg": "What software are you using for this?",
+    "id": 3725
+  },
+  {
+    "ts": "2026-01-12T00:06",
+    "author": "Nico | NodeX",
+    "msg": "It wil just show the UNO 4c. But I hope we get the full APIs to do all things",
+    "id": 3726
+  },
+  {
+    "ts": "2026-01-12T00:07",
+    "author": "Nico | NodeX",
+    "msg": "Grafana",
+    "id": 3727
+  },
+  {
+    "ts": "2026-01-12T00:08",
+    "author": "Mat",
+    "msg": "Got it. Thx love your work! I too am hanging out for API access.",
+    "id": 3728
+  },
+  {
+    "ts": "2026-01-12T00:17",
+    "author": "Tap MastersTaps",
+    "msg": "Are you adding your information manually?",
+    "id": 3729
+  },
+  {
+    "ts": "2026-01-12T00:18",
+    "author": "Nico | NodeX",
+    "msg": "It's automated",
+    "id": 3730
+  },
+  {
+    "ts": "2026-01-12T00:19",
+    "author": "JP | KUBE |",
+    "msg": "I like Grafana. I want to add to mine but idk the Apis to use for unity…",
+    "id": 3731
+  },
+  {
+    "ts": "2026-01-12T00:20",
+    "author": "Tap MastersTaps",
+    "msg": "Way above my pay grade 🤣",
+    "id": 3732
+  },
+  {
+    "ts": "2026-01-12T01:42",
+    "author": "OC Nodes",
+    "msg": "AMA coming up 😍",
+    "id": 3733
+  },
+  {
+    "ts": "2026-01-12T01:46",
+    "author": "Nico | NodeX",
+    "msg": "Let's goooo",
+    "id": 3734
+  },
+  {
+    "ts": "2026-01-12T01:46",
+    "author": "Calus B",
+    "msg": "Let’s DO it",
+    "id": 3735
+  },
+  {
+    "ts": "2026-01-12T01:47",
+    "author": "Willian | Nuvola",
+    "msg": "[File: xrd-exrd.mp4]",
+    "id": 3736
+  },
+  {
+    "ts": "2026-01-12T01:58",
+    "author": "BeamNode",
+    "msg": "Readyy",
+    "id": 3737
+  },
+  {
+    "ts": "2026-01-12T02:19",
+    "author": "OC Nodes",
+    "msg": "Calling dibs for alpha tester 😂",
+    "id": 3738
+  },
+  {
+    "ts": "2026-01-12T02:50",
+    "author": "Calus B",
+    "msg": "Lmao",
+    "id": 3739
+  },
+  {
+    "ts": "2026-01-12T02:55",
+    "author": "Calus B",
+    "msg": "We doing it",
+    "id": 3740
+  },
+  {
+    "ts": "2026-01-12T03:20",
+    "author": "Tap MastersTaps",
+    "msg": "Rewards late today for anyone else else?",
+    "id": 3741
+  },
+  {
+    "ts": "2026-01-12T03:25",
+    "author": "MSA | Valhalla.Node",
+    "msg": "Yup",
+    "id": 3742
+  },
+  {
+    "ts": "2026-01-12T03:30",
+    "author": "Op .",
+    "msg": "Just got off a space now and all I can say is i cant wait for ULO reward to get higher a little. People are excited",
+    "id": 3743
+  },
+  {
+    "ts": "2026-01-12T03:32",
+    "author": "Calus B",
+    "msg": "What space are you on?",
+    "id": 3744
+  },
+  {
+    "ts": "2026-01-12T03:33",
+    "author": "G Boot",
+    "msg": "👀",
+    "id": 3745
+  },
+  {
+    "ts": "2026-01-12T03:33",
+    "author": "Op .",
+    "msg": "But the ULO reward is still not sustainable yet 😶",
+    "id": 3746
+  },
+  {
+    "ts": "2026-01-12T03:34",
+    "author": "Op .",
+    "msg": "Some crypto community builders who come together at night to share alpha",
+    "id": 3747
+  },
+  {
+    "ts": "2026-01-12T03:35",
+    "author": "Op .",
+    "msg": "It's 4:30 am here.",
+    "id": 3748
+  },
+  {
+    "ts": "2026-01-12T03:36",
+    "author": "Calus B",
+    "msg": "Everyone knows the best alpha is shared in the middle of the night",
+    "id": 3749
+  },
+  {
+    "ts": "2026-01-12T03:40",
+    "author": "G Boot",
+    "msg": "It’s 1pm 😎",
+    "id": 3750
+  },
+  {
+    "ts": "2026-01-12T03:40",
+    "author": "Calus B",
+    "msg": "Sorry bro, you can’t get any alpha",
+    "id": 3751
+  },
+  {
+    "ts": "2026-01-12T03:40",
+    "author": "Calus B",
+    "msg": "lol",
+    "id": 3752
+  },
+  {
+    "ts": "2026-01-12T03:41",
+    "author": "G Boot",
+    "msg": "🤣 I‘m happy to pass the word has given me an overhyped sense of cringe 😆",
+    "id": 3753
+  },
+  {
+    "ts": "2026-01-12T03:43",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Communication event, don't think it's open to Q&A yet",
+    "id": 3754
+  },
+  {
+    "ts": "2026-01-12T04:05",
+    "author": "Lucas",
+    "msg": "Ama deep dive on Scouts&runner on Tuesday\nPretty exciting, 10am EST",
+    "id": 3755
+  },
+  {
+    "ts": "2026-01-12T04:05",
+    "author": "Lucas",
+    "msg": "They posted on X 2h ago",
+    "id": 3756
+  },
+  {
+    "ts": "2026-01-12T04:06",
+    "author": "Mat",
+    "msg": "Could do with an full project AMA. Do want to also know where the 1st party jobs are at. (ie over an above S&R)",
+    "id": 3757
+  },
+  {
+    "ts": "2026-01-12T04:10",
+    "author": "Depins",
+    "msg": "Comms event not ama. \nBut maybe they'll answer a few questions",
+    "id": 3758
+  },
+  {
+    "ts": "2026-01-12T04:11",
+    "author": "Lucas",
+    "msg": "My apologies I use the wrong word\nA comms event",
+    "id": 3759
+  },
+  {
+    "ts": "2026-01-12T04:12",
+    "author": "Depins",
+    "msg": "It is exciting. Really looking forward to this one",
+    "id": 3760
+  },
+  {
+    "ts": "2026-01-12T05:40",
+    "author": "OC Nodes",
+    "msg": "Rewards holding up. High of 0.356",
+    "id": 3761
+  },
+  {
+    "ts": "2026-01-12T06:00",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Hello everyone! 😁",
+    "id": 3762
+  },
+  {
+    "ts": "2026-01-12T06:36",
+    "author": "Dennis",
+    "msg": "Can the ambassadors pin the message regarding communication event on tuesday 16 CET?",
+    "id": 3763
+  },
+  {
+    "ts": "2026-01-12T06:37",
+    "author": "Jaba - Unityfarmers",
+    "msg": "well.. they are still selecting the ambassadors :)",
+    "id": 3764
+  },
+  {
+    "ts": "2026-01-12T06:37",
+    "author": "Jaba - Unityfarmers",
+    "msg": "defiants are almighty here",
+    "id": 3765
+  },
+  {
+    "ts": "2026-01-12T06:37",
+    "author": "Jaba - Unityfarmers",
+    "msg": "@defiants_kyle do ya thing",
+    "id": 3766
+  },
+  {
+    "ts": "2026-01-12T06:47",
+    "author": "emperor tamarin",
+    "msg": "wow got another licence leased out on the market",
+    "id": 3767
+  },
+  {
+    "ts": "2026-01-12T06:47",
+    "author": "emperor tamarin",
+    "msg": "that is 2 now",
+    "id": 3768
+  },
+  {
+    "ts": "2026-01-12T06:48",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Congratz!",
+    "id": 3769
+  },
+  {
+    "ts": "2026-01-12T06:48",
+    "author": "Dodo | MRCY Nodes | UNITY - MN - WM - CHIRP",
+    "msg": "Still got nothing 😂",
+    "id": 3770
+  },
+  {
+    "ts": "2026-01-12T06:48",
+    "author": "emperor tamarin",
+    "msg": "only 397 left and it s a salary",
+    "id": 3771
+  },
+  {
+    "ts": "2026-01-12T06:48",
+    "author": "emperor tamarin",
+    "msg": "tempted to but them myself but not sure if its an insane task",
+    "id": 3772
+  },
+  {
+    "ts": "2026-01-12T06:49",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "[Photo] 🤝 **Unity Network - Scout & Runner Briefing**\n\nUnity Network Communication Event\n\nJoin us on X Spaces for a deeper dive into the Scout & Runner task. \n\n🧭 Briefing: Scout & Runner\n🗓 Tuesday, January 13th\n⏰ 16:00 CET\n\n🔗 https://x.com/i/spaces/1jMKgRpWqPexL?s=20 \n\n🔗 https://x.com/UnityNodesIO/status/2010526175643234395\n\n🤝 **Official Unity** **Resources**\n[**Unity**](https://unitynodes.io/) | [**Unity Litepaper**](https://unitynodes.io/documents/litepaper.pdf) | [**QR Code Login**](https://uno.unitynodes.io/) | [**Manage**](https://manage.unitynodes.io/) | [**Telegram**](https://t.me/unitynodes) | [**X**](https://x.com/UnityNodesIO) | [**YouTube**](https://youtube.com/@UnityNodesIO) | [**Bug Report**](https://unitynodes.io/bug-report) | [**Verification Bot**](https://t.me/UnityNetworkVerificationBot)",
+    "id": 3773
+  },
+  {
+    "ts": "2026-01-12T06:53",
+    "author": "Miro K",
+    "msg": "Update of iOS flight test to 1.0.9 now",
+    "id": 3776
+  },
+  {
+    "ts": "2026-01-12T07:04",
+    "author": "Mat",
+    "msg": "Hit some solid reward numbers today. + now have 3 random off market ULO's at 40/60 (UNO/ULO)",
+    "id": 3777
+  },
+  {
+    "ts": "2026-01-12T07:47",
+    "author": "LIIICHT",
+    "msg": "You have to scroll through the marketplace for about 10 minutes to find one of my licenses.  Its a pity there isn't some kind of search function to allow ULOs to look for particular parameters like percentage or uptime or duration of lease.",
+    "id": 3778
+  },
+  {
+    "ts": "2026-01-12T07:50",
+    "author": "UNO",
+    "msg": "I submitted a feature request where every time someone opens the marketplace, the licences get shuffled. The way all the licences have a better chance of getting picked up. Hope they implement this soon.",
+    "id": 3779
+  },
+  {
+    "ts": "2026-01-12T07:51",
+    "author": "Sean",
+    "msg": "How do you submit a feature request?",
+    "id": 3780
+  },
+  {
+    "ts": "2026-01-12T07:54",
+    "author": "Unknown",
+    "msg": "You can post it in here and the team will pass it forward",
+    "id": 3781
+  },
+  {
+    "ts": "2026-01-12T07:55",
+    "author": "UNO",
+    "msg": "[Media] Use this form: https://docs.google.com/forms/d/e/1FAIpQLSeM35_cnKJIHErt3dg-fidOI-fvCs_m-WE5DYQfJft6qiWSJw/viewform",
+    "id": 3782
+  },
+  {
+    "ts": "2026-01-12T07:56",
+    "author": "Unknown",
+    "msg": "form seems live still not sure they actively check it was just getting that link lol",
+    "id": 3783
+  },
+  {
+    "ts": "2026-01-12T07:59",
+    "author": "UNO",
+    "msg": "I would hope they check it. I did submit this quite a while back, however, haven't heard anything back yet 🤷",
+    "id": 3784
+  },
+  {
+    "ts": "2026-01-12T07:59",
+    "author": "Unknown",
+    "msg": "yeah so did i",
+    "id": 3785
+  },
+  {
+    "ts": "2026-01-12T08:00",
+    "author": "Trebor Geogregio",
+    "msg": "I got a suggestion….3.2 per Lic/phone per day…why can’t Unity do that? 5% market share = 1.4 billion…and that’s Unity Node cut..where is it?",
+    "id": 3786
+  },
+  {
+    "ts": "2026-01-12T08:18",
+    "author": "LIIICHT",
+    "msg": "I think being able to search for parameters would be a better way.",
+    "id": 3787
+  },
+  {
+    "ts": "2026-01-12T08:20",
+    "author": "UNO",
+    "msg": "This would definitely be better. I am sure it is coming ASAP.",
+    "id": 3788
+  },
+  {
+    "ts": "2026-01-12T08:27",
+    "author": "Zolee",
+    "msg": "What percentage share have you set your licenses at?",
+    "id": 3789
+  },
+  {
+    "ts": "2026-01-12T08:30",
+    "author": "Coffee Nodes",
+    "msg": "your suggestion is to increase rewards?",
+    "id": 3790
+  },
+  {
+    "ts": "2026-01-12T08:37",
+    "author": "LIIICHT",
+    "msg": "Im happy with a chunk at 25/75 to get this kicked off",
+    "id": 3791
+  },
+  {
+    "ts": "2026-01-12T08:55",
+    "author": "UNO",
+    "msg": "Just realised that ULOs probably wouldn't have to spend any money from their own pocket. The rewards they are earning now can be used to purchase google play or apple store gifts cards from platforms like bitrefill.com to pay for fees.",
+    "id": 3792
+  },
+  {
+    "ts": "2026-01-12T08:55",
+    "author": "Zolee",
+    "msg": "How many of your licenses have been picked up by random people?",
+    "id": 3793
+  },
+  {
+    "ts": "2026-01-12T09:08",
+    "author": "LIIICHT",
+    "msg": "4 but one was later dropped. \nIts interesting that @BBGiraffe is seeing 40/60s being taken as that would be my next tranche followed by 50/50 as (if) demand picks up ...",
+    "id": 3794
+  },
+  {
+    "ts": "2026-01-12T09:12",
+    "author": "Zolee",
+    "msg": "My opinion is that visibility determined by alphabetical order of license numbers is fair. UNOs who are not willing to race to the bottom have a chance of visibility too. If ULOs want to find licenses with higher percentage for them, they can go and look for it.",
+    "id": 3795
+  },
+  {
+    "ts": "2026-01-12T09:19",
+    "author": "LIIICHT",
+    "msg": "Its not a race to anywhere at the moment. Demand and supply will dictate the price. \nId rather have licenses out earning and providing data for the network as that's the only way to build this successfully",
+    "id": 3796
+  },
+  {
+    "ts": "2026-01-12T09:26",
+    "author": "Zolee",
+    "msg": "I get your point but still, for fairness of visibility I still believe that randomness determined by license number is good",
+    "id": 3797
+  },
+  {
+    "ts": "2026-01-12T09:26",
+    "author": "Coffee Nodes",
+    "msg": "that doesn't make any sense - people would be on this app to earn money, it makes more sense to show them the best available license at the time first",
+    "id": 3798
+  },
+  {
+    "ts": "2026-01-12T09:27",
+    "author": "Coffee Nodes",
+    "msg": "Filters are on the roadmap anyway so it will come one day",
+    "id": 3799
+  },
+  {
+    "ts": "2026-01-12T09:30",
+    "author": "Zolee",
+    "msg": "What percentage are your licenses listed at on the marketplace, again?",
+    "id": 3800
+  },
+  {
+    "ts": "2026-01-12T09:38",
+    "author": "LIIICHT",
+    "msg": "Yeah its grand if a lot of your licenses start 0x01 or 0x02 but unfortunately mine don't 😬",
+    "id": 3801
+  },
+  {
+    "ts": "2026-01-12T09:46",
+    "author": "James_WM_ENO",
+    "msg": "None of that matters once rewards increase, all licences will go regardless of %split",
+    "id": 3802
+  },
+  {
+    "ts": "2026-01-12T09:49",
+    "author": "Coffee Nodes",
+    "msg": "On the low side, but that’s a separate issue. A minimum fee should have been set post-survey to avoid that race entirely. In any case, no ones really browsing the marketplace yet.\n\nMy point still stands: alphabetical ordering does not help ULOs find the best available license. Surfacing the best option at a given time is more rational than neutral ordering. The marketplace should primarily serve ULO decision-making.",
+    "id": 3803
+  },
+  {
+    "ts": "2026-01-12T09:55",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Guys a friend of mine has a HONOR 90 LITE running Android 13 and I put a license on it and its uptime has been around 0.03 for last 3 days.. any insights for that phone? Thanks",
+    "id": 3804
+  },
+  {
+    "ts": "2026-01-12T09:55",
+    "author": "Zolee",
+    "msg": "I agree on the minimum fee. It absolutely should have been set. \n\nThe marketplace should be fair for all UNOs as we paid money up front. We are the ones risking our money not the ULOs. So ULOs can look for the best deal if they want to scroll and UNOs have the same chance of visibility. \nIn any case, the chance of the more favourable split licenses to go first is still quite high.",
+    "id": 3805
+  },
+  {
+    "ts": "2026-01-12T09:57",
+    "author": "Trebor Geogregio",
+    "msg": "Whole lot of thinking…extrapolating..Metric….Methodological tweaks….over Pennies.wow…",
+    "id": 3806
+  },
+  {
+    "ts": "2026-01-12T10:00",
+    "author": "James_WM_ENO",
+    "msg": "We need more tasks deployed.. first party ones.. get th rewards growing",
+    "id": 3807
+  },
+  {
+    "ts": "2026-01-12T10:00",
+    "author": "James_WM_ENO",
+    "msg": "Scout and runner could be months away",
+    "id": 3808
+  },
+  {
+    "ts": "2026-01-12T10:01",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "I thought S&R would be the next task, soon..",
+    "id": 3809
+  },
+  {
+    "ts": "2026-01-12T10:01",
+    "author": "Coffee Nodes",
+    "msg": "hopefully not months, he sounded like it was closer",
+    "id": 3810
+  },
+  {
+    "ts": "2026-01-12T10:02",
+    "author": "Rex Vulgaris",
+    "msg": "Thank you for your fud",
+    "id": 3811
+  },
+  {
+    "ts": "2026-01-12T10:02",
+    "author": "James_WM_ENO",
+    "msg": "Alpha testing, beta testing, multiple groups ….",
+    "id": 3812
+  },
+  {
+    "ts": "2026-01-12T10:03",
+    "author": "James_WM_ENO",
+    "msg": "Is not fud it’s about setting your expectations to where they should be",
+    "id": 3813
+  },
+  {
+    "ts": "2026-01-12T10:04",
+    "author": "James_WM_ENO",
+    "msg": "I’m more excited about other tasks that may arrive before scout and runner",
+    "id": 3814
+  },
+  {
+    "ts": "2026-01-12T10:14",
+    "author": "Eddie H",
+    "msg": "The latest version seems to be much more stable. Supported one of my colleagues to become a ULO yesterday, It has literally been set and forget it - her uptime has been great. Ask her if she kept an eye on it and she said no, had not looked at it. To be fair it has only been a few days but still Glad to see real progress with the app not shutting down. \n\nPersonally I have changed my split to 40/60, hopefully get a few people at this level. Will increase later. \nThe way I see it, yes I have taken the risk to become a UNO, but ULO don't care about me getting a return.They want to earn some money and we need to get more people using and spending the word. Hopefully a better licence filter would be helpful and a referral program to come into effect soon. \n\nHope this makes sense. 😁",
+    "id": 3815
+  },
+  {
+    "ts": "2026-01-12T10:14",
+    "author": "Mat",
+    "msg": "Agree, really excited about the first party tasks.",
+    "id": 3816
+  },
+  {
+    "ts": "2026-01-12T10:27",
+    "author": "Flippy",
+    "msg": "what other tasks?",
+    "id": 3817
+  },
+  {
+    "ts": "2026-01-12T10:29",
+    "author": "James_WM_ENO",
+    "msg": "Normal network tasks all being worked on at the same time… \nScout and runner is a 3rd party task",
+    "id": 3818
+  },
+  {
+    "ts": "2026-01-12T10:29",
+    "author": "Rex Vulgaris",
+    "msg": "The expectations I heard were of fast sprints to get it out very quick",
+    "id": 3819
+  },
+  {
+    "ts": "2026-01-12T10:32",
+    "author": "Trebor Geogregio",
+    "msg": "You change your split 40/60 on $0.35 cents….good strategic move",
+    "id": 3820
+  },
+  {
+    "ts": "2026-01-12T10:32",
+    "author": "Trebor Geogregio",
+    "msg": "Looks way more attractive now is 40/60 at that level….lol",
+    "id": 3821
+  },
+  {
+    "ts": "2026-01-12T10:33",
+    "author": "Eddie H",
+    "msg": "Cheers 🍾🥂😁",
+    "id": 3822
+  },
+  {
+    "ts": "2026-01-12T10:35",
+    "author": "LIIICHT",
+    "msg": "Trebor is being sarcastic... he's always full of the joys 🙄",
+    "id": 3823
+  },
+  {
+    "ts": "2026-01-12T10:37",
+    "author": "Eddie H",
+    "msg": "Yeah did get that he was being sarcastic, just did not want to be playing into the rudeness.",
+    "id": 3824
+  },
+  {
+    "ts": "2026-01-12T10:42",
+    "author": "Trebor Geogregio",
+    "msg": "Unity has set the bar sooo low for everyone….do you really think it made difference someone change their split 40/60 on $0.35 or maybe even less….it sad…the girl does not look at her phone case she probably doesn’t really care..now if the Rewards were substantial ..I would be checking every minute..",
+    "id": 3825
+  },
+  {
+    "ts": "2026-01-12T10:44",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "The team has stated that the rewards will pick up. Let's wait and see what the team says in tomorrow's communication event",
+    "id": 3826
+  },
+  {
+    "ts": "2026-01-12T10:50",
+    "author": "Trebor Geogregio",
+    "msg": "We’re 180% below",
+    "id": 3827
+  },
+  {
+    "ts": "2026-01-12T10:52",
+    "author": "Eddie H",
+    "msg": "The point I am trying to make is : beforehand when supporting colleagues to become ULOs I needed to remind them to check their phone to ensure the app was up and running, which I would imagine would become annoying after a while especially while the awards are quite low. Now the app is more stable ( good job team ) and will hopefully be even more stable. I don't need to keep asking them to check their Unity app. My colleague I think he will happy with just getting a few dollers if all she needs to do is keep a app open on her phone (especially if she does not need to keep checking it everyday)",
+    "id": 3828
+  },
+  {
+    "ts": "2026-01-12T10:53",
+    "author": "Coffee Nodes",
+    "msg": "it will increase, it's still early days. more tasks incoming",
+    "id": 3829
+  },
+  {
+    "ts": "2026-01-12T10:53",
+    "author": "Eddie H",
+    "msg": "With the percentage being waited towards the ULO I think generally this is a good first step we need to be - licence holder focused.",
+    "id": 3830
+  },
+  {
+    "ts": "2026-01-12T10:53",
+    "author": "Peter",
+    "msg": "I reckon a notification when a reward is given will motivate interaction with the app",
+    "id": 3831
+  },
+  {
+    "ts": "2026-01-12T10:54",
+    "author": "Peter",
+    "msg": "Especially if it doesnt say how much when the notification pings, they open to see how much they received",
+    "id": 3832
+  },
+  {
+    "ts": "2026-01-12T10:57",
+    "author": "Akira",
+    "msg": "[Photo] can someone explain this pls:\nvery similar uptime in both licenses, but on different wifi+location",
+    "id": 3833
+  },
+  {
+    "ts": "2026-01-12T10:58",
+    "author": "Akira",
+    "msg": "as you can see, the difference is quite abysmal 😔",
+    "id": 3834
+  },
+  {
+    "ts": "2026-01-12T10:58",
+    "author": "LIIICHT",
+    "msg": "I asked for this a while ago.\nSomething like a cash register \"kaching\" noise would be epic.\nGreat for marketing too.",
+    "id": 3835
+  },
+  {
+    "ts": "2026-01-12T10:59",
+    "author": "Coffee Nodes",
+    "msg": "tasks that find more useful results get higher rewards, probably one has found better info than the other",
+    "id": 3836
+  },
+  {
+    "ts": "2026-01-12T10:59",
+    "author": "BeamNode",
+    "msg": "Can you see the difference in data if you use Wireglass?",
+    "id": 3837
+  },
+  {
+    "ts": "2026-01-12T10:59",
+    "author": "Unknown",
+    "msg": "hard to guess but I would assume its different equipment / provider",
+    "id": 3838
+  },
+  {
+    "ts": "2026-01-12T11:00",
+    "author": "Akira",
+    "msg": "the one with 0.00 is from my ULO and is not a very technical person, the max i can ask him is to share what's his uptime. he lives very far so don't have access to his device",
+    "id": 3839
+  },
+  {
+    "ts": "2026-01-12T11:54",
+    "author": "Krabalot",
+    "msg": "I’m an ENO. 4-5 years in, software still ‘imminent’ and ‘weeks not months’ for a year now, and we’re still considered ‘early’. I’m not sure majority of early Unity Node buyers are ready for a journey that’s so full of delays and disappointment. Maybe I’m insane, but I hope Unity delivers significant revenue by end of Q1.",
+    "id": 3841
+  },
+  {
+    "ts": "2026-01-12T11:56",
+    "author": "Bitdano",
+    "msg": "I am... Because whining and complaining doesn't make anybody do anything faster.. It's like telling a woman to calm down",
+    "id": 3842
+  },
+  {
+    "ts": "2026-01-12T12:00",
+    "author": "Krabalot",
+    "msg": "I think the ‘whining’ is more of helping a fellow investor set their expectations based on experience.",
+    "id": 3843
+  },
+  {
+    "ts": "2026-01-12T12:04",
+    "author": "Sadok Merkikou",
+    "msg": "[Photo] Could somebody tell me what this problem is please \nMany thanks",
+    "id": 3844
+  },
+  {
+    "ts": "2026-01-12T12:12",
+    "author": "Sadok Merkikou",
+    "msg": "Thanks 🙏",
+    "id": 3846
+  },
+  {
+    "ts": "2026-01-12T12:17",
+    "author": "Rex Vulgaris",
+    "msg": "If not reboot the device",
+    "id": 3847
+  },
+  {
+    "ts": "2026-01-12T12:38",
+    "author": "Alem",
+    "msg": "[Photo] All of my devices disconnected today with this error. The same error happened yesterday for 70% of devices. Anyone with the same problem?",
+    "id": 3850
+  },
+  {
+    "ts": "2026-01-12T12:46",
+    "author": "Pedro",
+    "msg": "I’ve just been looking through the media pack on the unitynodes.io website. \n\nIs this pack for us to create media for selling licences. I guess my question is if we make a website to push our licences out can we use the text/images/logos without any copyright infringements?",
+    "id": 3851
+  },
+  {
+    "ts": "2026-01-12T12:51",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Are you using the latest version(1.1.0)?",
+    "id": 3852
+  },
+  {
+    "ts": "2026-01-12T12:55",
+    "author": "Alem",
+    "msg": "Yes, on build 3c68ba, I submitted a bug yesterday. After logging in again, it worked, but I'm experiencing the same problem again today.",
+    "id": 3853
+  },
+  {
+    "ts": "2026-01-12T13:05",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Thank you. The team is looking in to it 🫡",
+    "id": 3854
+  },
+  {
+    "ts": "2026-01-12T13:06",
+    "author": "Alem",
+    "msg": "Thank you :)",
+    "id": 3855
+  },
+  {
+    "ts": "2026-01-12T13:15",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Does the connection ever reconnect? Do you do anything to 'reset' the connection?",
+    "id": 3856
+  },
+  {
+    "ts": "2026-01-12T13:17",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "My wife's phone had it for about 30 seconds earlier today, but on closing and reopening the app, it resolved itself.",
+    "id": 3857
+  },
+  {
+    "ts": "2026-01-12T13:19",
+    "author": "Alem",
+    "msg": "For me, only a device restart or logging out and in of the app worked. Just reopening or switching tabs did not solve it.",
+    "id": 3858
+  },
+  {
+    "ts": "2026-01-12T13:27",
+    "author": "SpideyNode616",
+    "msg": "[Media] I created a thread on x about Unitym mthught people might bei interested in a read.\n\nhttps://x.com/Spideyman_616/status/2010703967932846317?s=20",
+    "id": 3860
+  },
+  {
+    "ts": "2026-01-12T13:30",
+    "author": "Pedro",
+    "msg": "Would be good to get some clarity from the team on this.",
+    "id": 3861
+  },
+  {
+    "ts": "2026-01-12T13:32",
+    "author": "Sojourner",
+    "msg": "It is nice to see rewards stabilize 2-3x over previous rewards and uptime with new update is back to 99’s for me.",
+    "id": 3862
+  },
+  {
+    "ts": "2026-01-12T13:34",
+    "author": "Akira",
+    "msg": "i fail to see the co-relation between what bezos said and unity's value proposition\n\nai generated post?",
+    "id": 3863
+  },
+  {
+    "ts": "2026-01-12T13:35",
+    "author": "Wattdog",
+    "msg": "Nice post again my man 👏👏 #liverpoolareshit",
+    "id": 3864
+  },
+  {
+    "ts": "2026-01-12T13:37",
+    "author": "Calus B",
+    "msg": "there is perhaps some need for unity in terms of distribution of resources monitoring",
+    "id": 3865
+  },
+  {
+    "ts": "2026-01-12T13:37",
+    "author": "Wattdog",
+    "msg": "Obviously bezos nor musk have mentioned anything about unity but if you read between the lines and connect the dots it makes sense",
+    "id": 3866
+  },
+  {
+    "ts": "2026-01-12T13:37",
+    "author": "Calus B",
+    "msg": "but",
+    "id": 3867
+  },
+  {
+    "ts": "2026-01-12T13:38",
+    "author": "SpideyNode616",
+    "msg": "I write it and use AI to tidy up my wording..... hows that relevant lol?\n\nBezos bit is about data centres, isn’t saying data centres vanish, he’s saying the centralised model doesn’t scale forever. As compute and intelligence move closer to users (the edge), the internet becomes more distributed by necessity.\n\nIn that world, the key problem becomes verification. When services run across thousands of edge nodes, you must be able to prove latency, availability, and performance. Centralised monitoring breaks at that scale. UNITY exists to decentralise verification itself, making edge-first networks provable and trustworthy.",
+    "id": 3868
+  },
+  {
+    "ts": "2026-01-12T14:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hey everyone!",
+    "id": 3869
+  },
+  {
+    "ts": "2026-01-12T14:05",
+    "author": "Eddie H",
+    "msg": "Hey Kay 👋👋👋",
+    "id": 3870
+  },
+  {
+    "ts": "2026-01-12T14:38",
+    "author": "Rhinocomms",
+    "msg": "GM Kay😊",
+    "id": 3871
+  },
+  {
+    "ts": "2026-01-12T14:38",
+    "author": "Elias Nikolaidis",
+    "msg": "One must be mine !! LoL  I was away from my UNO, one ULO expired and could not wait to get home to create a lease and picked one up from the market place 40/60 lol !!!",
+    "id": 3872
+  },
+  {
+    "ts": "2026-01-12T14:41",
+    "author": "Elias Nikolaidis",
+    "msg": "So did I but I am sure they are checking",
+    "id": 3873
+  },
+  {
+    "ts": "2026-01-12T15:20",
+    "author": "Kerry",
+    "msg": "On the iOS app is it normal to not have a green button next to the tasks network connection",
+    "id": 3882
+  },
+  {
+    "ts": "2026-01-12T15:20",
+    "author": "Kerry",
+    "msg": "[Photo]",
+    "id": 3883
+  },
+  {
+    "ts": "2026-01-12T15:21",
+    "author": "Kerry",
+    "msg": "@defiants_kay",
+    "id": 3884
+  },
+  {
+    "ts": "2026-01-12T15:21",
+    "author": "Dennis",
+    "msg": "Yeah because you are not performing tasks",
+    "id": 3885
+  },
+  {
+    "ts": "2026-01-12T15:21",
+    "author": "Kay | Will never DM you first",
+    "msg": "I don't think iOS app is meant for ULOs currently.",
+    "id": 3886
+  },
+  {
+    "ts": "2026-01-12T15:21",
+    "author": "Kerry",
+    "msg": "Ahh",
+    "id": 3887
+  },
+  {
+    "ts": "2026-01-12T16:00",
+    "author": "OC Nodes",
+    "msg": "[Photo] This is two of the examples of the data packet drops I'm seeing. You can see one of the phones the data peaked at 23MB now around 2-4MB. The other one similar too (but didn't reach as high as 23MB). All phones are keeping 99+% uptime.\n\nI have been using Verizon and Google Fiber and dont think I changed much in the phone settings to mess with it.\n\nRewards have been good nonetheless! With latest rewards up to 0.356 and mostly 20s and lower\n\nDoes the data size not correlate at all or are we seeing a delayed effect? Anyone see the same thing? Ideas to improve it?",
+    "id": 3891
+  },
+  {
+    "ts": "2026-01-12T16:00",
+    "author": "OC Nodes",
+    "msg": "[Photo]",
+    "id": 3892
+  },
+  {
+    "ts": "2026-01-12T16:05",
+    "author": "Carlos",
+    "msg": "I’m not seeing 20-30 cents. More like 10-15 cents with 9 phones. With two phones I did see 20-30 cents.",
+    "id": 3893
+  },
+  {
+    "ts": "2026-01-12T16:20",
+    "author": "Trebor Geogregio",
+    "msg": "I have 60 phones and received avg. .35",
+    "id": 3895
+  },
+  {
+    "ts": "2026-01-12T16:22",
+    "author": "Mic",
+    "msg": "Geeze that is really good. Can you advertise your specs? Service, Phone Type, Country.",
+    "id": 3897
+  },
+  {
+    "ts": "2026-01-12T16:23",
+    "author": "NEM0",
+    "msg": "@defiants_kay can you ask the team why is there a 2 day delay in rewards? I just saw the 10/1 rewards this AM",
+    "id": 3898
+  },
+  {
+    "ts": "2026-01-12T16:23",
+    "author": "NEM0",
+    "msg": "That’s been the case for the last week or so",
+    "id": 3899
+  },
+  {
+    "ts": "2026-01-12T16:24",
+    "author": "Kay | Will never DM you first",
+    "msg": "The latest rewards I see is 11th",
+    "id": 3900
+  },
+  {
+    "ts": "2026-01-12T16:26",
+    "author": "NEM0",
+    "msg": "[Photo]",
+    "id": 3901
+  },
+  {
+    "ts": "2026-01-12T16:27",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Photo] I see this. I would send a report to the team via email to check if it's individual case",
+    "id": 3902
+  },
+  {
+    "ts": "2026-01-12T16:29",
+    "author": "Kay",
+    "msg": "Hi all, what time does your reward usually come in? Mine is sometimes around 8am and then some days around 8pm",
+    "id": 3904
+  },
+  {
+    "ts": "2026-01-12T16:29",
+    "author": "Kay",
+    "msg": "Don't know if that's normal or just me",
+    "id": 3905
+  },
+  {
+    "ts": "2026-01-12T16:56",
+    "author": "Lucas",
+    "msg": "same for me, some time I get late during the evening or overnight",
+    "id": 3907
+  },
+  {
+    "ts": "2026-01-12T17:00",
+    "author": "Pedro",
+    "msg": "@defiants_kay please could you ask the team?",
+    "id": 3908
+  },
+  {
+    "ts": "2026-01-12T17:02",
+    "author": "OC Nodes",
+    "msg": "Average of 0.35? So you have rewards up in the 0.40s and 0.50s?",
+    "id": 3909
+  },
+  {
+    "ts": "2026-01-12T18:00",
+    "author": "J. P. Costa",
+    "msg": "This is just some timezone thing, I also see 10, but if you inspect the raw data from the api it correctly states as 11.",
+    "id": 3911
+  },
+  {
+    "ts": "2026-01-12T18:43",
+    "author": "Wattdog",
+    "msg": "Hi all, quick question about the locked tokens we have with our nodes, I know they’re locked for 2 years but do they then get dropped into our wallet after that? Or are they locked and linked to the node forever? Sorry if this has been asked, I’ve tried finding out myself before someone having to repeat themselves",
+    "id": 3913
+  },
+  {
+    "ts": "2026-01-12T18:44",
+    "author": "OC Nodes",
+    "msg": "Linked forever. You can claim them if you want to let go of the node",
+    "id": 3914
+  },
+  {
+    "ts": "2026-01-12T18:45",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] Hey there! It's absolutely okay to ask. They are locked until you unlock them. If you unlock under the initial amount, the node becomes available for others to claim. You can read more here: https://unitynodes.io/faq.html#Tokens-Staking:~:text=Tokens%20%26%20Staking,-How%20long%20is",
+    "id": 3915
+  },
+  {
+    "ts": "2026-01-12T18:55",
+    "author": "Kerry",
+    "msg": "How do you have your phone distributed? Are they in multiple locations or same location same Wi-Fi different Wi-Fi ip’s etc",
+    "id": 3916
+  },
+  {
+    "ts": "2026-01-12T19:16",
+    "author": "emperor tamarin",
+    "msg": "just got another licence leased on the market",
+    "id": 3918
+  },
+  {
+    "ts": "2026-01-12T19:16",
+    "author": "emperor tamarin",
+    "msg": "2 in 1 day",
+    "id": 3919
+  },
+  {
+    "ts": "2026-01-12T19:17",
+    "author": "emperor tamarin",
+    "msg": "that is good",
+    "id": 3920
+  },
+  {
+    "ts": "2026-01-12T19:30",
+    "author": "Miyagi Node",
+    "msg": "What was your settings for the lease",
+    "id": 3921
+  },
+  {
+    "ts": "2026-01-12T19:30",
+    "author": "emperor tamarin",
+    "msg": "not great aaha 30/70",
+    "id": 3922
+  },
+  {
+    "ts": "2026-01-12T19:31",
+    "author": "Miyagi Node",
+    "msg": "I’ve put some up for 20/80 for 3 months, no one’s touched them ahah",
+    "id": 3923
+  },
+  {
+    "ts": "2026-01-12T19:33",
+    "author": "emperor tamarin",
+    "msg": "oh ok, sorry to hear hope you get them leased mate. I wonder why some do some don't",
+    "id": 3924
+  },
+  {
+    "ts": "2026-01-12T19:34",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "I wouldn't touch those also. Too good is skatchy. Me as ULO would only go for 50:50😁😁",
+    "id": 3925
+  },
+  {
+    "ts": "2026-01-12T19:46",
+    "author": "Vin Lo",
+    "msg": "But it is saying that tokens are locked for 24 months, so after the 24 months they wil be unlocked and you don’t lose your nft. If you unlock the tokens before the 24 months you lose the nft.  Or am i wrong?",
+    "id": 3927
+  },
+  {
+    "ts": "2026-01-12T19:47",
+    "author": "Kay | Will never DM you first",
+    "msg": "They are locked for 24 months. Then they become available for unlock. You can decide to unlock after 24 months, but if you do, you will forfeit the NFT",
+    "id": 3928
+  },
+  {
+    "ts": "2026-01-12T19:49",
+    "author": "Vin Lo",
+    "msg": "Ah oke",
+    "id": 3929
+  },
+  {
+    "ts": "2026-01-12T19:49",
+    "author": "OC Nodes",
+    "msg": "I wish we get a top secret reveal from the team about how many are getting organically snatched and is this number on an uptrend? Like what is the current network size.. just got us UNOs.. secret inside information",
+    "id": 3930
+  },
+  {
+    "ts": "2026-01-12T19:50",
+    "author": "James_WM_ENO",
+    "msg": "Are we able to get an update on normal tasks that will hopefully be deployed before scout and runner ?",
+    "id": 3931
+  },
+  {
+    "ts": "2026-01-12T19:50",
+    "author": "James_WM_ENO",
+    "msg": "Like the tasks we were told were launching in January because scout and runner won’t be in Jan that’s pretty certain",
+    "id": 3932
+  },
+  {
+    "ts": "2026-01-12T19:51",
+    "author": "Kay | Will never DM you first",
+    "msg": "I think we should get some general update tomorrow along with S&R description",
+    "id": 3933
+  },
+  {
+    "ts": "2026-01-12T19:51",
+    "author": "Kay | Will never DM you first",
+    "msg": "But I will ask the team",
+    "id": 3934
+  },
+  {
+    "ts": "2026-01-12T19:51",
+    "author": "Mat",
+    "msg": "Can I please +1 on this. Really need a project update.",
+    "id": 3935
+  },
+  {
+    "ts": "2026-01-12T19:51",
+    "author": "Mat",
+    "msg": "That would be great if we did get a wider update as well.",
+    "id": 3936
+  },
+  {
+    "ts": "2026-01-12T19:52",
+    "author": "James_WM_ENO",
+    "msg": "Scout and runner is a third party task right.. I’m thinking about all the first party tasks that were meant to be deployed this month\n\nJust hoping that’s still the case",
+    "id": 3937
+  },
+  {
+    "ts": "2026-01-12T19:52",
+    "author": "James_WM_ENO",
+    "msg": "Thank you !! 😊",
+    "id": 3938
+  },
+  {
+    "ts": "2026-01-12T19:55",
+    "author": "Mat",
+    "msg": "My top secret update is I have 4 market place ULOs. shh....don't tell anyone else...",
+    "id": 3939
+  },
+  {
+    "ts": "2026-01-12T19:57",
+    "author": "Sean",
+    "msg": "Agreed, we were told there were would be in increase, hence the rewards return over the last few days but there's no news other than telegram feedback however not everyone who owns a node is necessarily using this platform",
+    "id": 3940
+  },
+  {
+    "ts": "2026-01-12T20:10",
+    "author": "Mark",
+    "msg": "I set my lease default ratio to 5/95 to see if they'd get snapped up quick but only one has been picked up after several days.\nThe one that did get picked up starts with 0x02, my first in alphabetical order. \nI think because the marketplace has no sorting or filtering at the moment the leases high up in the alphabetical order are the only ones users are looking at.\nYou can scroll, scroll, scroll and still not reach the ones starting with 0x03 for a while.",
+    "id": 3941
+  },
+  {
+    "ts": "2026-01-12T20:10",
+    "author": "Kay | Will never DM you first",
+    "msg": "You are right and we've asked and reported that to the team",
+    "id": 3942
+  },
+  {
+    "ts": "2026-01-12T20:11",
+    "author": "Kay | Will never DM you first",
+    "msg": "To either check when filtering is coming to the place or if there's going to be some randomizing system before it comes",
+    "id": 3943
+  },
+  {
+    "ts": "2026-01-12T20:11",
+    "author": "Mark",
+    "msg": "Great, it seems like a simple thing to add",
+    "id": 3944
+  },
+  {
+    "ts": "2026-01-12T20:12",
+    "author": "James_WM_ENO",
+    "msg": "What about the minimum for marketplace.. will there be an email poll ? \n#amaquestion",
+    "id": 3945
+  },
+  {
+    "ts": "2026-01-12T20:17",
+    "author": "Mat",
+    "msg": "Sorry mate. Simple answer is that mine are all 0x01. Being picked up at 40/60. This should be a market test for everyone that we DON'T need silly low numbers like 10/90 for licenses to be picked up.",
+    "id": 3947
+  },
+  {
+    "ts": "2026-01-12T20:19",
+    "author": "Mark",
+    "msg": "That's good to know they're being picked up at that ratio",
+    "id": 3948
+  },
+  {
+    "ts": "2026-01-12T20:20",
+    "author": "Mark",
+    "msg": "Still the current marketplace user experience leaves 99% of licences invisible",
+    "id": 3949
+  },
+  {
+    "ts": "2026-01-12T20:20",
+    "author": "Kay",
+    "msg": "Some of mine is even set at 12% uno and it's been up on the marketplace for almost 2 months now but still 0 lease.",
+    "id": 3950
+  },
+  {
+    "ts": "2026-01-12T20:22",
+    "author": "Mat",
+    "msg": "I've made a grand total of 50 cents from market place, so don't feel any FOMO folks. Just take the lesson that 40/60 is fine at the moment EVEN AT 30 CENTS A DAY!. \nWe don't need to go lower people.",
+    "id": 3951
+  },
+  {
+    "ts": "2026-01-12T20:24",
+    "author": "OC Nodes",
+    "msg": "Picking up is not the same as maintaining. They can pick up a 60/40 but are they gonna keep it when they don't make any rewards? While if they get a 20/80 and get more interesting rewards then they will keep it.\n\nI bet you they have no idea what UNO ULO is and probably not even looking at the numbers. \n\nBut when the rewards are low they will turn it off and not come back",
+    "id": 3952
+  },
+  {
+    "ts": "2026-01-12T20:28",
+    "author": "Mat",
+    "msg": "Mine are hanging around and doing OK one is at 95% plus 3 days in a row, one  I kicked as they dropped off to zero, new one from yesterday today is 96%. 40/60 is working for me.",
+    "id": 3953
+  },
+  {
+    "ts": "2026-01-12T20:30",
+    "author": "OC Nodes",
+    "msg": "I'm glad and I hope so. I think the market has room for all kinds of splits and each will play a role. My goal now is to expand the network as rapidly as possible and this requires lower UNO splits but that's just my speculation.",
+    "id": 3954
+  },
+  {
+    "ts": "2026-01-12T20:31",
+    "author": "Pedro",
+    "msg": "I’ve just been looking through the media pack on the unitynodes.io website. \n\nIs this pack for us to create media for selling licences. I guess my question is if we make a website to push our licences out can we use the text/images/logos without any copyright infringements?\n\n#amaquestion",
+    "id": 3955
+  },
+  {
+    "ts": "2026-01-12T20:34",
+    "author": "Mat",
+    "msg": "Agreed, the market will tell in the end. IMHO all bets are off when we get to $1 a day. At this point a  50/50 will be easy and will drive the market + referrals + our marketing, Anything less will just be leaving money on the table. Exciting times!!",
+    "id": 3956
+  },
+  {
+    "ts": "2026-01-12T20:35",
+    "author": "Wen (calibrating)",
+    "msg": "Roll on those times.",
+    "id": 3957
+  },
+  {
+    "ts": "2026-01-12T20:57",
+    "author": "Wattdog",
+    "msg": "Yer thanks Kay, for some reason I forget unity has its own website 😂🤦‍♀️",
+    "id": 3959
+  },
+  {
+    "ts": "2026-01-12T23:11",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Morning everyone!",
+    "id": 3961
+  },
+  {
+    "ts": "2026-01-12T23:19",
+    "author": "Darko",
+    "msg": "[Photo]",
+    "id": 3962
+  },
+  {
+    "ts": "2026-01-12T23:35",
+    "author": "Janilom81",
+    "msg": "Very interesting.",
+    "id": 3964
+  },
+  {
+    "ts": "2026-01-12T23:42",
+    "author": "OC Nodes",
+    "msg": "Wow okay 😮",
+    "id": 3965
+  },
+  {
+    "ts": "2026-01-12T23:52",
+    "author": "Kilian",
+    "msg": "Good morning !",
+    "id": 3967
+  },
+  {
+    "ts": "2026-01-12T23:59",
+    "author": "Wattdog",
+    "msg": "So I see it, we buy a sim that get refunded, then we pay for top ups with UPs? So this third party has to be WM right?",
+    "id": 3968
+  }
+]

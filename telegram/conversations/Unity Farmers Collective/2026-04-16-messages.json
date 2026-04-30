@@ -1,0 +1,1046 @@
+[
+  {
+    "ts": "2026-04-16T00:05",
+    "author": "Coffee Nodes",
+    "msg": "try only 5 devices per connection to see how rewards evolve",
+    "id": 33107
+  },
+  {
+    "ts": "2026-04-16T00:15",
+    "author": "L .",
+    "msg": "Yea, I’m just going to leave them as is tho…Don’t really feel like decreasing as I’ve seen quite a few people in the UNO group report still getting low rewards.  Hopefully they’re calibrating up…😁",
+    "id": 33108
+  },
+  {
+    "ts": "2026-04-16T00:36",
+    "author": "Jaba - Unityfarmers",
+    "msg": "@AbongileViksVika @RickMiddleton even farms without sim could still have the SIM card holder module on the board but it would not be functional. What they do is testing all motherboards and keep the ones where the sim can function seperate. Then those are further debugged to make sure the sim works. The one with non functional SIM card holders will not be further debugged. So there is a difference. That said, I didn't get any reports from attestation errors yet, regardless the type of farm.",
+    "id": 33109
+  },
+  {
+    "ts": "2026-04-16T01:15",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Maybe it's a matter of luck. But I didn't get a single person yet reporting it happened on their farms and there's quite a few around",
+    "id": 33110
+  },
+  {
+    "ts": "2026-04-16T03:44",
+    "author": "C J",
+    "msg": "I’m tired of switch everything around.  I have 20 in a box on 1 ip that are getting .01-.02. I have a few sim only getting .10-.20 and another batch of 6 with a different ip and location getting.07",
+    "id": 33111
+  },
+  {
+    "ts": "2026-04-16T05:38",
+    "author": "Dave",
+    "msg": "I think it could a matter of subversion",
+    "id": 33112
+  },
+  {
+    "ts": "2026-04-16T05:39",
+    "author": "Dave",
+    "msg": "Which Subversion of Unity app do you have on the S8 without SIM trays?",
+    "id": 33113
+  },
+  {
+    "ts": "2026-04-16T05:39",
+    "author": "Dave",
+    "msg": "I believe this could be the case because it happened so suddenly on all my phones",
+    "id": 33114
+  },
+  {
+    "ts": "2026-04-16T05:55",
+    "author": "steve|KoalaKo.io|ENO|UNO|SPO WM Ambassador",
+    "msg": "It's definitely a pain in the ass. I wish they would just issue guidance and stick to it. It's all too secretive.",
+    "id": 33115
+  },
+  {
+    "ts": "2026-04-16T06:06",
+    "author": "GliTch_",
+    "msg": "I don't think they know, and it will be a continuous cat n mouse game moving forward if they can't sort out the \"large\" farm groups if thats what they are going after",
+    "id": 33116
+  },
+  {
+    "ts": "2026-04-16T06:06",
+    "author": "GliTch_",
+    "msg": "I think this system came up when they figured out what data these \"customers\" want and their requirements for clean data",
+    "id": 33117
+  },
+  {
+    "ts": "2026-04-16T06:08",
+    "author": "GliTch_",
+    "msg": "That will continue if they go after high end companies that demand that high quality content higher paying = more restrictions , but we \"should\" be ok still if we stick to the rules and arent trying to run emulators or massive farms trying to short cut their system",
+    "id": 33118
+  },
+  {
+    "ts": "2026-04-16T06:09",
+    "author": "Dave",
+    "msg": "Yeah, but the rules were set when we bought the node and started to build our phone collections according to their initially stated needs...",
+    "id": 33119
+  },
+  {
+    "ts": "2026-04-16T06:09",
+    "author": "GliTch_",
+    "msg": "Right now its the sort out phase of what they are going to require moving forward vs being unrestricted from the start",
+    "id": 33120
+  },
+  {
+    "ts": "2026-04-16T06:09",
+    "author": "Dave",
+    "msg": "Now they are rugging us like crazy...",
+    "id": 33121
+  },
+  {
+    "ts": "2026-04-16T06:09",
+    "author": "GliTch_",
+    "msg": "\"rules were set\" but not enforced at the security level",
+    "id": 33122
+  },
+  {
+    "ts": "2026-04-16T06:10",
+    "author": "Dave",
+    "msg": "[File: rug-pull.mp4]",
+    "id": 33123
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "Dave",
+    "msg": "Well, they clearly stated \"no SIM card needed\"",
+    "id": 33124
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "Dave",
+    "msg": "😢",
+    "id": 33125
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "GliTch_",
+    "msg": "and that's still the case if they start stepping the wifi tasks up",
+    "id": 33126
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "Dave",
+    "msg": "Now a SIM card tray seems to be needed...",
+    "id": 33127
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "GliTch_",
+    "msg": "right now they are trying to get this scout n runner crap",
+    "id": 33128
+  },
+  {
+    "ts": "2026-04-16T06:11",
+    "author": "GliTch_",
+    "msg": "That's not exactly clear yet",
+    "id": 33129
+  },
+  {
+    "ts": "2026-04-16T06:12",
+    "author": "GliTch_",
+    "msg": "It could be just the root issue more so currently",
+    "id": 33130
+  },
+  {
+    "ts": "2026-04-16T06:12",
+    "author": "Dave",
+    "msg": "I have 1 box S8 with SIM card. Not me personally but a friend. That's doing totally fine...",
+    "id": 33131
+  },
+  {
+    "ts": "2026-04-16T06:12",
+    "author": "GliTch_",
+    "msg": "Others have them with no sim still working also",
+    "id": 33132
+  },
+  {
+    "ts": "2026-04-16T06:13",
+    "author": "GliTch_",
+    "msg": "so it seems to me that its the rom",
+    "id": 33133
+  },
+  {
+    "ts": "2026-04-16T06:13",
+    "author": "GliTch_",
+    "msg": "or root",
+    "id": 33134
+  },
+  {
+    "ts": "2026-04-16T06:13",
+    "author": "GliTch_",
+    "msg": "Where did you get those boxes that are having issues?",
+    "id": 33135
+  },
+  {
+    "ts": "2026-04-16T06:13",
+    "author": "Dave",
+    "msg": "I'll switch to general",
+    "id": 33136
+  },
+  {
+    "ts": "2026-04-16T06:14",
+    "author": "Dave",
+    "msg": "@GliTch_41 \nAll my boxes are from 3cfarmbox",
+    "id": 33137
+  },
+  {
+    "ts": "2026-04-16T06:14",
+    "author": "Dave",
+    "msg": "Also the one I bought to a friend in the UK. That's the only one I bought with SIM tray. That box is totally fine.",
+    "id": 33138
+  },
+  {
+    "ts": "2026-04-16T06:15",
+    "author": "GliTch_",
+    "msg": "ok so they could be using their own rom and they could be the ones on those huge farms",
+    "id": 33139
+  },
+  {
+    "ts": "2026-04-16T06:15",
+    "author": "GliTch_",
+    "msg": "problem with that is trying to reload those devices is not going to be fun but you could attempt one as a test if they remain locked out",
+    "id": 33140
+  },
+  {
+    "ts": "2026-04-16T06:16",
+    "author": "GliTch_",
+    "msg": "again not ideal but no additional cost really outside of a screen and time :/",
+    "id": 33141
+  },
+  {
+    "ts": "2026-04-16T06:17",
+    "author": "GliTch_",
+    "msg": "Hopefully thats not the case so far",
+    "id": 33142
+  },
+  {
+    "ts": "2026-04-16T06:17",
+    "author": "GliTch_",
+    "msg": "we dont yet know",
+    "id": 33143
+  },
+  {
+    "ts": "2026-04-16T06:18",
+    "author": "GliTch_",
+    "msg": "flashing a stock rom isn't that bad just time suck, and not having the screen is a bit of a pain in the ass",
+    "id": 33144
+  },
+  {
+    "ts": "2026-04-16T06:21",
+    "author": "GliTch_",
+    "msg": "They will work on a default stock rom but you have to enable dev/usb mode then they should pass the verification if it comes to that.",
+    "id": 33145
+  },
+  {
+    "ts": "2026-04-16T06:29",
+    "author": "Dave",
+    "msg": "Yeah... I'll order a display",
+    "id": 33146
+  },
+  {
+    "ts": "2026-04-16T06:29",
+    "author": "Dave",
+    "msg": "That is a viable option",
+    "id": 33147
+  },
+  {
+    "ts": "2026-04-16T06:30",
+    "author": "Dave",
+    "msg": "But it is a real pain in the arse 😂 like I will have to connect a display while the device is mounted in the box and work with that. God -.- \n\nI remember the times when I was rooting my old phones once they lost official support to get a custom rom on them. It is a real troublesome thing.",
+    "id": 33148
+  },
+  {
+    "ts": "2026-04-16T06:31",
+    "author": "Dave",
+    "msg": "And time is my biggest factor",
+    "id": 33149
+  },
+  {
+    "ts": "2026-04-16T06:31",
+    "author": "Dave",
+    "msg": "-.- wife is already killing me",
+    "id": 33150
+  },
+  {
+    "ts": "2026-04-16T06:31",
+    "author": "Dave",
+    "msg": "I am very close to just call it quits and book unity into the big shelf of rugs I participated in...",
+    "id": 33151
+  },
+  {
+    "ts": "2026-04-16T06:33",
+    "author": "GliTch_",
+    "msg": "I'm waiting to cast that stone so far but am close as well",
+    "id": 33152
+  },
+  {
+    "ts": "2026-04-16T06:34",
+    "author": "GliTch_",
+    "msg": "I'm resetting my network while the rewards are shit, if that doesn't work short of new tasks arriving then I will yank the plug",
+    "id": 33153
+  },
+  {
+    "ts": "2026-04-16T06:36",
+    "author": "GliTch_",
+    "msg": "as far as the screen goes I bought one of those usb hubs that plugs into the phone/board via the usb port but you have to guess where the button is to click ok on the device blindly to activate it 😂",
+    "id": 33154
+  },
+  {
+    "ts": "2026-04-16T06:37",
+    "author": "GliTch_",
+    "msg": "so if possible and cheap the screen would be the better option",
+    "id": 33155
+  },
+  {
+    "ts": "2026-04-16T06:37",
+    "author": "GliTch_",
+    "msg": "unless you get really lucky with a hub and guessing",
+    "id": 33156
+  },
+  {
+    "ts": "2026-04-16T06:43",
+    "author": "Flippy",
+    "msg": "By the way i dont find any problems with the jaba boxes regarding attestation failures",
+    "id": 33157
+  },
+  {
+    "ts": "2026-04-16T06:44",
+    "author": "libben",
+    "msg": "lol the just  mute me",
+    "id": 33158
+  },
+  {
+    "ts": "2026-04-16T06:44",
+    "author": "libben",
+    "msg": "Wtf",
+    "id": 33159
+  },
+  {
+    "ts": "2026-04-16T06:45",
+    "author": "Dennis",
+    "msg": "who?",
+    "id": 33160
+  },
+  {
+    "ts": "2026-04-16T06:45",
+    "author": "libben",
+    "msg": "Some admin I don’t know who",
+    "id": 33161
+  },
+  {
+    "ts": "2026-04-16T06:45",
+    "author": "libben",
+    "msg": "I can’t text there any more",
+    "id": 33162
+  },
+  {
+    "ts": "2026-04-16T06:45",
+    "author": "libben",
+    "msg": "Bc of this text \n\nHave you noticed how much the team is lying? It’s honestly insane by now. We were supposed to have multiple tasks generating income, not just a single task since we bought these nodes.",
+    "id": 33163
+  },
+  {
+    "ts": "2026-04-16T06:49",
+    "author": "libben",
+    "msg": "Can some one pls ask them why?",
+    "id": 33164
+  },
+  {
+    "ts": "2026-04-16T06:49",
+    "author": "libben",
+    "msg": "I can’t text on that group anymore",
+    "id": 33165
+  },
+  {
+    "ts": "2026-04-16T07:27",
+    "author": "Darko",
+    "msg": "Can you pass the link please",
+    "id": 33166
+  },
+  {
+    "ts": "2026-04-16T07:28",
+    "author": "GliTch_",
+    "msg": "I can but not sure if mine works on the 8s or if the plug changed for the usb",
+    "id": 33167
+  },
+  {
+    "ts": "2026-04-16T07:30",
+    "author": "GliTch_",
+    "msg": "mine used the usbc idk if the s8 uses the same I thought it was a micro",
+    "id": 33168
+  },
+  {
+    "ts": "2026-04-16T07:30",
+    "author": "GliTch_",
+    "msg": "https://www.amazon.com/dp/B0BVHSNF3G",
+    "id": 33169
+  },
+  {
+    "ts": "2026-04-16T08:00",
+    "author": "Jaba - Unityfarmers",
+    "msg": "3C is william, who most certainly sold more units than Fiona and me. Besides Fiona's production comes partly through same channel. Dive into the phones and see what you can pull out of settings in developer menu. It might be that they use standard certain region/carrier setting which Unity blocks. There's many options, but this could be one",
+    "id": 33170
+  },
+  {
+    "ts": "2026-04-16T08:02",
+    "author": "GliTch_",
+    "msg": "So far mine aren't w/ this issue just seen the \"warning\" early on when they were testing",
+    "id": 33171
+  },
+  {
+    "ts": "2026-04-16T08:19",
+    "author": "Forty41",
+    "msg": "I had this too . Struggling to recall how I got rid of it but I think it was by updating the Play store app",
+    "id": 33172
+  },
+  {
+    "ts": "2026-04-16T08:37",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "lll follow up for you",
+    "id": 33173
+  },
+  {
+    "ts": "2026-04-16T08:38",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "How are peeps rewards today? Anyone have a uptick from the previous days?",
+    "id": 33174
+  },
+  {
+    "ts": "2026-04-16T08:39",
+    "author": "Kuan",
+    "msg": "nope. its getting less",
+    "id": 33175
+  },
+  {
+    "ts": "2026-04-16T08:40",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "You're back haha",
+    "id": 33176
+  },
+  {
+    "ts": "2026-04-16T08:41",
+    "author": "libben",
+    "msg": "Thank you 🙏",
+    "id": 33177
+  },
+  {
+    "ts": "2026-04-16T08:41",
+    "author": "Jaba - Unityfarmers",
+    "msg": "probably by changing region, the app is not in all play stores",
+    "id": 33178
+  },
+  {
+    "ts": "2026-04-16T08:49",
+    "author": "Dennis",
+    "msg": "Yess",
+    "id": 33179
+  },
+  {
+    "ts": "2026-04-16T08:51",
+    "author": "Dave",
+    "msg": "I can try that but it doesn't matter.",
+    "id": 33180
+  },
+  {
+    "ts": "2026-04-16T08:51",
+    "author": "Dave",
+    "msg": "It will not work anyway and also bring up the attestation",
+    "id": 33181
+  },
+  {
+    "ts": "2026-04-16T08:52",
+    "author": "Dave",
+    "msg": "In all honesty, I didn't know about you when I started to get my boxes ;-) we met afterwards...",
+    "id": 33182
+  },
+  {
+    "ts": "2026-04-16T08:52",
+    "author": "FriendlyUrchin",
+    "msg": "Anyone here in S&R alpha? From what I've seen I think boxes with SIMs will be very good for running.",
+    "id": 33183
+  },
+  {
+    "ts": "2026-04-16T08:52",
+    "author": "Dave",
+    "msg": "How so?",
+    "id": 33184
+  },
+  {
+    "ts": "2026-04-16T08:54",
+    "author": "FriendlyUrchin",
+    "msg": "I'm not sure what I can share lol. But it could become very profitable I think.",
+    "id": 33185
+  },
+  {
+    "ts": "2026-04-16T08:55",
+    "author": "Flippy",
+    "msg": "Share it who cares man. We could use some positiveness",
+    "id": 33186
+  },
+  {
+    "ts": "2026-04-16T09:00",
+    "author": "FriendlyUrchin",
+    "msg": "I think this was also mentioned in an AMA so I think I can share it. I might be wrong but from what I understood you'll be able to call the same runner number from different phones at the same time. Ideal for our setup as long as we have SIM enabled boxes.",
+    "id": 33187
+  },
+  {
+    "ts": "2026-04-16T09:00",
+    "author": "Vũ văn Định",
+    "msg": "My average is 0.2 per IP address.",
+    "id": 33188
+  },
+  {
+    "ts": "2026-04-16T09:02",
+    "author": "FriendlyUrchin",
+    "msg": "But hold your horses getting SIM boxes lol. This needs to be confirmed. We'll see two weeks from now. Next week is MapQuest and the week after that both scout and runner roles will be enabled.",
+    "id": 33189
+  },
+  {
+    "ts": "2026-04-16T09:07",
+    "author": "Flippy",
+    "msg": "No reason to believe they start at 22nd tbh.",
+    "id": 33190
+  },
+  {
+    "ts": "2026-04-16T09:09",
+    "author": "Rick Middleton",
+    "msg": "Interesting!  But yeah best not to go rushing out to buy new SIM cards and boxes just yet..  haha.\n\nEven if calibration means that our stock box setups are not good for telemetry tasks, I am sure there will be some tasks that wifi only boards can do..  so our farm boxes won't be useless.\n\nThe question as always is WEN",
+    "id": 33191
+  },
+  {
+    "ts": "2026-04-16T09:11",
+    "author": "Dennis",
+    "msg": "I think it was calus who mentioned it",
+    "id": 33192
+  },
+  {
+    "ts": "2026-04-16T09:19",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I joined the game only months later :)",
+    "id": 33194
+  },
+  {
+    "ts": "2026-04-16T09:34",
+    "author": "Daniel 🇷🇴",
+    "msg": "lower",
+    "id": 33195
+  },
+  {
+    "ts": "2026-04-16T09:40",
+    "author": "Rick Middleton",
+    "msg": "Mine have dropped a little today..   it is actually lowest earning in 30 days for me - calibration killed all the marketplace ones I had ofc.\n\nThese are the actual phones I have with me here - on Starlink wifi.\n\n0.5055 ( main Android with SIM but on wifi mostly )\n0.3062\n0.2330\n0.1021\n0.0209\n0.0200\n0.0169\n0.0149\n0.2350\nTotal = 1.4545\n\nThese are the 7 I have running in my box at a different location: on Virgin fibre broadband UK\n\n0.1834\n0.1777\n0.1697\n0.1692\n0.1574\n0.1481\n0.1171\nTotal = 1.1226\n\nThese 7 are real phones at my mum's house:\n\n0.2804\n0.2485\n0.2304\n0.2164\n0.2159\n0.2298\n0.1262 ( has a SIM in it but mostly on wifi )\nTotal = 1.5476\n\n\nI have speculated before that for Telemetry there are diminishing returns when you run multiple tests on the same IP...  there is no reason why a client would pay a lot of times for tests on the same route..  a couple for validation yes.. but not too many.  Rewards seem to support that hypothesis..\n\nI added the earnings up for fun - has anyone else done that?   Be interesting to see the totals people are getting per IP address",
+    "id": 33196
+  },
+  {
+    "ts": "2026-04-16T09:48",
+    "author": "Dave",
+    "msg": "I agree with that hypothesis and actually tested it. When I carried some boxes to friends. I set it all up at my place: typical low rewards\n\nOnce everything was setup I brought them to family and friends often far away and in total rural areas.\n\nThe whole box was generating slowly decreasing rewards starting around 40c down to 10c over the span of a week. And then it went into nothingness...\n\nIt did 3 boxes during the calibration phase, all reacted the same.\n\nSo I did 1 try with my own boxes and completely switched ISP -> same behaviour but starting at 20c",
+    "id": 33197
+  },
+  {
+    "ts": "2026-04-16T09:51",
+    "author": "Dave",
+    "msg": "I disagree with the customer stuff. I don't believe they have customers yet, but for S&R.\n\nI believe this calibration is some kind of AI doing exactly this distribution strategy.\n\nIf they have seen your geolocation often -> lower rewards; if they have seen your IP often -> even lower rewards",
+    "id": 33198
+  },
+  {
+    "ts": "2026-04-16T09:51",
+    "author": "Dave",
+    "msg": "And they are feeding us some mint money back",
+    "id": 33199
+  },
+  {
+    "ts": "2026-04-16T09:52",
+    "author": "Dave",
+    "msg": "But ofc that is my opinion and I can't prove it.",
+    "id": 33200
+  },
+  {
+    "ts": "2026-04-16T10:13",
+    "author": "Rick Middleton",
+    "msg": "Not sure what you mean by disagreement on customers for telemetry data?  Where else does the payment come from?\n\nWether customers were paying from the get go or wether Unity were subsiding our rewards makes no difference...  Nobody will pay for multiple telemetry tests...   If they don't pay - we don't get paid.  Simple as that.",
+    "id": 33201
+  },
+  {
+    "ts": "2026-04-16T10:19",
+    "author": "Dave",
+    "msg": "yes. that is the general problem:\nNobody needs your data multiple times for a long time frame especially if it is stable data.",
+    "id": 33202
+  },
+  {
+    "ts": "2026-04-16T10:20",
+    "author": "Dave",
+    "msg": "and i agree, i dont mind where my reward comes from. I just dont believe it is \"customer behaviour\" like the team is stating it :-)",
+    "id": 33203
+  },
+  {
+    "ts": "2026-04-16T10:22",
+    "author": "Rick Middleton",
+    "msg": "I think customer behavior is quite easy to see.... Or rather NOT see\n\nThat's why they did this whole Calibration thing.   People did not want to pay us to do tasks ( and I would guess that also includes CLI and SMS verification ) if they can see the data is synthetic shite.",
+    "id": 33204
+  },
+  {
+    "ts": "2026-04-16T10:25",
+    "author": "Dave",
+    "msg": "oh, yes. snythetic shit is dangerous. i also fully agree on that. If Emulators make their way into this it will destroy it.",
+    "id": 33205
+  },
+  {
+    "ts": "2026-04-16T10:29",
+    "author": "Rick Middleton",
+    "msg": "There were many thousands of those... that was the main problem I think that started calibration.\n\nUnfortunately we are kind of in the middle I think.  Our boxes are legit devices so should be good as long as we don't run too many in one place..  but techniques to find emulators might hit us too..  like this attestation thing",
+    "id": 33206
+  },
+  {
+    "ts": "2026-04-16T10:31",
+    "author": "Dave",
+    "msg": "I agree. And if i wouldnt have such a high invest in it, i probably could see it less emotional.\n\nbut i am pretty angry with them and myself. I think i did the right actions, slowly built the amount of devices up, sticked to the rules and now am getting excluded. :-)\n\nMy wife is very angry with me for investing all the time and when i finally felt it is running better... boom",
+    "id": 33207
+  },
+  {
+    "ts": "2026-04-16T10:34",
+    "author": "Rick Middleton",
+    "msg": "I was kind of banking on at least 5% rewards from the get go... so I am extremely pissed off with the results so far!\n\nIt definitely was a kick in the teeth when the rewards got cut in half",
+    "id": 33208
+  },
+  {
+    "ts": "2026-04-16T10:43",
+    "author": "Kolks",
+    "msg": "[Photo]",
+    "id": 33209
+  },
+  {
+    "ts": "2026-04-16T10:43",
+    "author": "Kolks",
+    "msg": "1 NODE with 1 sim for each box (history up-until-now).",
+    "id": 33210
+  },
+  {
+    "ts": "2026-04-16T10:45",
+    "author": "Kolks",
+    "msg": "[Photo]",
+    "id": 33211
+  },
+  {
+    "ts": "2026-04-16T10:45",
+    "author": "Kolks",
+    "msg": "3 Boxes with each 2 Simms. (around $2-2.20 per Box).",
+    "id": 33212
+  },
+  {
+    "ts": "2026-04-16T10:51",
+    "author": "Jaba - Unityfarmers",
+    "msg": "if 3 sims per box you should get around 4$ per farm per day, at minimum",
+    "id": 33213
+  },
+  {
+    "ts": "2026-04-16T11:00",
+    "author": "Kolks",
+    "msg": "With 20 Sim-routers per Node my setup looks like a space ship. Let alone with 30 or 40 routers..😊",
+    "id": 33214
+  },
+  {
+    "ts": "2026-04-16T11:02",
+    "author": "Darko",
+    "msg": "So with the marketplace coming and opening API for developers are we expecting to see Unity being used and paid for let's say Likes or boosts for Influencers?",
+    "id": 33215
+  },
+  {
+    "ts": "2026-04-16T11:17",
+    "author": "Darko",
+    "msg": "I got many boxes so far from Jaba and nothing but high praise for him and the quality of them",
+    "id": 33216
+  },
+  {
+    "ts": "2026-04-16T11:19",
+    "author": "Ricky",
+    "msg": "Same sentiments @jabadabadou",
+    "id": 33217
+  },
+  {
+    "ts": "2026-04-16T11:20",
+    "author": "Coffee Nodes",
+    "msg": "probably not",
+    "id": 33218
+  },
+  {
+    "ts": "2026-04-16T11:28",
+    "author": "Daano",
+    "msg": "So any or you guys have a setup with boxes that is cost covering at the moment??",
+    "id": 33219
+  },
+  {
+    "ts": "2026-04-16T11:29",
+    "author": "Flippy",
+    "msg": "Im testing 5pcs from which one is phone with sim card and 4 S8 devices via hotspot.",
+    "id": 33220
+  },
+  {
+    "ts": "2026-04-16T11:30",
+    "author": "Flippy",
+    "msg": "Btw one friend has one box from which 1 device gives 0.5 consistently rest is shit.",
+    "id": 33221
+  },
+  {
+    "ts": "2026-04-16T11:31",
+    "author": "Flippy",
+    "msg": "This shit is fucking tiring",
+    "id": 33222
+  },
+  {
+    "ts": "2026-04-16T11:35",
+    "author": "Ricky",
+    "msg": "Did the close S&R alpha and not launched anything new?",
+    "id": 33223
+  },
+  {
+    "ts": "2026-04-16T11:45",
+    "author": "Opher",
+    "msg": "[Photo]",
+    "id": 33225
+  },
+  {
+    "ts": "2026-04-16T12:10",
+    "author": "Dave",
+    "msg": "Really?",
+    "id": 33226
+  },
+  {
+    "ts": "2026-04-16T12:10",
+    "author": "Dave",
+    "msg": "Wow...",
+    "id": 33227
+  },
+  {
+    "ts": "2026-04-16T12:19",
+    "author": "Jaba - Unityfarmers",
+    "msg": "[Media] If you face this issue, please mark at which type of device Anonymously",
+    "id": 33228
+  },
+  {
+    "ts": "2026-04-16T12:19",
+    "author": "Jaba - Unityfarmers",
+    "msg": "",
+    "id": 33229
+  },
+  {
+    "ts": "2026-04-16T12:20",
+    "author": "Daniel 🇷🇴",
+    "msg": "I faced this but it was fixed through a couple of reboots",
+    "id": 33230
+  },
+  {
+    "ts": "2026-04-16T12:21",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Gib shit to supplier Ser 😂 oh, wait..",
+    "id": 33231
+  },
+  {
+    "ts": "2026-04-16T12:22",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Reboot or factory reset?",
+    "id": 33232
+  },
+  {
+    "ts": "2026-04-16T12:22",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I think it pertains to the recent ones who suffer it.",
+    "id": 33233
+  },
+  {
+    "ts": "2026-04-16T12:30",
+    "author": "Darko",
+    "msg": "unbind bind fixes it for me. Interesting thing is onlu some same phones are giving me that error on s8+",
+    "id": 33234
+  },
+  {
+    "ts": "2026-04-16T12:40",
+    "author": "R B",
+    "msg": "Does that mean logging into Google play as I don’t do that and I’ve not suffered the issues as far as I know",
+    "id": 33235
+  },
+  {
+    "ts": "2026-04-16T12:43",
+    "author": "R B",
+    "msg": "Can we assume calibration  can be referred to as whitelisting devices .   We don’t have to believe Unitys terminology",
+    "id": 33236
+  },
+  {
+    "ts": "2026-04-16T13:08",
+    "author": "Daniel 🇷🇴",
+    "msg": "only reboot ser",
+    "id": 33237
+  },
+  {
+    "ts": "2026-04-16T13:11",
+    "author": "Jaba - Unityfarmers",
+    "msg": "Could it be that Google play downloaders are affected?",
+    "id": 33238
+  },
+  {
+    "ts": "2026-04-16T13:12",
+    "author": "Jaba - Unityfarmers",
+    "msg": "APK or playstore?",
+    "id": 33239
+  },
+  {
+    "ts": "2026-04-16T13:12",
+    "author": "Daniel 🇷🇴",
+    "msg": "100% apk on all kind of devices",
+    "id": 33240
+  },
+  {
+    "ts": "2026-04-16T13:26",
+    "author": "Rick Middleton",
+    "msg": "That makes no sense...  When I turn on more devices per IP the rewards go down.. when I turn on less the rewards go up..  that is not whitelisting",
+    "id": 33241
+  },
+  {
+    "ts": "2026-04-16T13:29",
+    "author": "Daniel 🇷🇴",
+    "msg": "it's not whitelisting per se; 0.00001 rewards it is :P",
+    "id": 33242
+  },
+  {
+    "ts": "2026-04-16T13:30",
+    "author": "Rick Middleton",
+    "msg": "Ouch.. yeah.. Worst I got was between 1 and 2c each for my box of 20 - but I don't want to turn them all on again right now and try and get lower",
+    "id": 33243
+  },
+  {
+    "ts": "2026-04-16T14:08",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] my wife's phone",
+    "id": 33244
+  },
+  {
+    "ts": "2026-04-16T14:11",
+    "author": "Opher",
+    "msg": "I don’t believe that will help, i think the issue is Googles new integrity check system that was implemented this year. As of now it seems that’s Unity’s only way of verifying devices? I saw they mentioned a google free pathway, but lord knows when that will come to fruition. I can’t do anything it seems and have no wheels to drive the car lol",
+    "id": 33245
+  },
+  {
+    "ts": "2026-04-16T14:16",
+    "author": "Opher",
+    "msg": "I’ve tried most of the troubleshooting strategies, but in the end i just get Attestation error. I even tested updating Magisk, enabling Zygisk and pushing an update to the google integrity check on one motherboard. But that changed the booting stuff and can’t control that motherboard anymore unless i get a screen to fix it. I’ve messaged william and he send me a specific update to magisk that i could try, not sure if it’ll help though. Apparently updating Magisk then pushing the updated google integrity check would help spoof the missing hardware that might be causing the attestation issues?",
+    "id": 33246
+  },
+  {
+    "ts": "2026-04-16T15:09",
+    "author": "Andrei",
+    "msg": "[Photo] My phone 😅",
+    "id": 33247
+  },
+  {
+    "ts": "2026-04-16T15:09",
+    "author": "Andrei",
+    "msg": "[Photo] Uptime. It’s an iPhone",
+    "id": 33248
+  },
+  {
+    "ts": "2026-04-16T15:21",
+    "author": "Abdus",
+    "msg": "Ok how do you get green bars? I have ULOs doing 99% uptime and their bars are yellow. And when I pointed it out to support because they were earning pennies and I was given a lot of tosh for an answer. None or which made any sense. So please enlighten me, ye beholder of the green bars.",
+    "id": 33249
+  },
+  {
+    "ts": "2026-04-16T15:21",
+    "author": "Andrei",
+    "msg": "I have a 70% minimum threshold.",
+    "id": 33250
+  },
+  {
+    "ts": "2026-04-16T15:23",
+    "author": "Abdus",
+    "msg": "Ok so if I have 90% minimum threshold and the ULO does above 90, does that entitle to the ULO to a nice green bar for all their effort?",
+    "id": 33251
+  },
+  {
+    "ts": "2026-04-16T15:29",
+    "author": "Abdus",
+    "msg": "Andrei’s thinking piss off mate. Go bugger the support team. Leave me alone 😂🤣",
+    "id": 33252
+  },
+  {
+    "ts": "2026-04-16T15:41",
+    "author": "Flavius",
+    "msg": "No, it's true, they coded the colors in a rather weird way",
+    "id": 33253
+  },
+  {
+    "ts": "2026-04-16T15:41",
+    "author": "Flavius",
+    "msg": "If your minimum is too high you can't get green bars",
+    "id": 33254
+  },
+  {
+    "ts": "2026-04-16T15:41",
+    "author": "Flavius",
+    "msg": "For green you have to be X% above minimum",
+    "id": 33255
+  },
+  {
+    "ts": "2026-04-16T16:41",
+    "author": "Andrei",
+    "msg": "I think \nBelow minimum is red\n<10% above minimum is yellow\n>10% above minimum is green\n\nSo for 90% minimum, they only get red and yellow",
+    "id": 33256
+  },
+  {
+    "ts": "2026-04-16T16:50",
+    "author": "Dave",
+    "msg": "I came to the same conclusion but this is outside of my capabilities",
+    "id": 33257
+  },
+  {
+    "ts": "2026-04-16T16:50",
+    "author": "R B",
+    "msg": "Whitelisting IP for rewards cap then lol",
+    "id": 33258
+  },
+  {
+    "ts": "2026-04-16T16:50",
+    "author": "R B",
+    "msg": "Whatever it is the Unity support team are laughing at us",
+    "id": 33259
+  },
+  {
+    "ts": "2026-04-16T16:51",
+    "author": "Dave",
+    "msg": "I also tried everything like you, but could you send me that magisk update please, too?",
+    "id": 33260
+  },
+  {
+    "ts": "2026-04-16T16:51",
+    "author": "Dave",
+    "msg": "How does one push an update to the Google integrity check?",
+    "id": 33261
+  },
+  {
+    "ts": "2026-04-16T17:13",
+    "author": "Opher",
+    "msg": "I wouldn’t recommend it, the motherboard i tried it on is in a boot loop and can’t be fixed unless i buy a screen for it",
+    "id": 33262
+  },
+  {
+    "ts": "2026-04-16T17:40",
+    "author": "Abdus",
+    "msg": "Oh I see",
+    "id": 33263
+  },
+  {
+    "ts": "2026-04-16T17:41",
+    "author": "Abdus",
+    "msg": "Madness",
+    "id": 33264
+  },
+  {
+    "ts": "2026-04-16T17:52",
+    "author": "Flippy",
+    "msg": "Sweet spot per SIM or IP still 5?",
+    "id": 33265
+  },
+  {
+    "ts": "2026-04-16T18:03",
+    "author": "Dennis",
+    "msg": "For me yes",
+    "id": 33266
+  },
+  {
+    "ts": "2026-04-16T18:03",
+    "author": "Dennis",
+    "msg": "Lets see tmrw",
+    "id": 33267
+  },
+  {
+    "ts": "2026-04-16T18:29",
+    "author": "Dave",
+    "msg": "That's a crazy result?! So many people experience it permanently?",
+    "id": 33268
+  },
+  {
+    "ts": "2026-04-16T20:04",
+    "author": "Rick Middleton",
+    "msg": "Can you post a pic of the result please?  I can't see unless I vote.",
+    "id": 33269
+  },
+  {
+    "ts": "2026-04-16T20:33",
+    "author": "Dave",
+    "msg": "[Photo]",
+    "id": 33270
+  },
+  {
+    "ts": "2026-04-16T20:33",
+    "author": "Dave",
+    "msg": "Sure thing.",
+    "id": 33271
+  },
+  {
+    "ts": "2026-04-16T22:31",
+    "author": "Opher",
+    "msg": "Do the mirroring/ control software do anything to the motherboards that would cause the google integrity test to fail. I only use Gen farmer",
+    "id": 33272
+  },
+  {
+    "ts": "2026-04-16T22:45",
+    "author": "GliTch_",
+    "msg": "No it shouldn't afaik, its not related to what they are \"checking\" currently it seems to be rom/root status",
+    "id": 33273
+  },
+  {
+    "ts": "2026-04-16T23:06",
+    "author": "J. P. Costa",
+    "msg": "Lets us know",
+    "id": 33274
+  },
+  {
+    "ts": "2026-04-16T23:07",
+    "author": "steve|KoalaKo.io|ENO|UNO|SPO WM Ambassador",
+    "msg": "Well at this rate when the 2 yrs is up I'll be scraping my nodes for the tokens and calling it a day",
+    "id": 33275
+  },
+  {
+    "ts": "2026-04-16T23:33",
+    "author": "GliTch_",
+    "msg": "/balance  (checking new feature)",
+    "id": 33276
+  },
+  {
+    "ts": "2026-04-16T23:34",
+    "author": "GliTch_",
+    "msg": "/balance",
+    "id": 33277
+  },
+  {
+    "ts": "2026-04-16T23:34",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n🐕 **SHIB**: $706.33 (112,651,987)\n💵 **USDT_BSC**: $692.60 (693)\n$ **USDC**: $685.40 (685)\n✕ **XRP**: $672.44 (463.7522)\n◎ **SOL**: $580.10 (6.5180)\n⟐ **ETH**: $551.43 (0.2346)\n₳ **ADA**: $276.79 (1067.2112)\n⬡ **BNB**: $199.93 (0.3143)\n₮ **USDT**: $170.45 (170)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $4,535.59**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 33278
+  },
+  {
+    "ts": "2026-04-16T23:36",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I know 1 mobile phone showing it that is a a Hisense, curious if it also happens on higher end phones.",
+    "id": 33279
+  },
+  {
+    "ts": "2026-04-16T23:36",
+    "author": "GliTch_",
+    "msg": "/wallets",
+    "id": 33280
+  },
+  {
+    "ts": "2026-04-16T23:36",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n🐕 **SHIB**: $706.33 (112,651,987)\n💵 **USDT_BSC**: $692.60 (693)\n$ **USDC**: $685.40 (685)\n✕ **XRP**: $672.44 (463.7522)\n◎ **SOL**: $580.10 (6.5180)\n⟐ **ETH**: $551.43 (0.2346)\n₳ **ADA**: $276.79 (1067.2112)\n⬡ **BNB**: $199.93 (0.3143)\n₮ **USDT**: $170.45 (170)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $4,535.59**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 33281
+  },
+  {
+    "ts": "2026-04-16T23:37",
+    "author": "GliTch_",
+    "msg": "ok test over 😂",
+    "id": 33282
+  }
+]

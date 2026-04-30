@@ -1,0 +1,14 @@
+# Telegram MCP Server Requirements
+
+# Telegram API client
+telethon>=1.34.0
+
+# Model Context Protocol server
+mcp[cli]>=0.9.0
+
+# Data validation
+pydantic>=2.5.0
+
+# Optional: Analysis tools (uncomment if needed)
+# pandas>=2.0.0
+# nltk>=3.8

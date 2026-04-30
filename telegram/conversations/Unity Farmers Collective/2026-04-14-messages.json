@@ -1,0 +1,458 @@
+[
+  {
+    "ts": "2026-04-14T06:26",
+    "author": "R B",
+    "msg": "Ok rewards are abysmal today with 8 devices nothing larger than 0.02cents I will go back to 7 devices in two days  time giving each setup a few days to run",
+    "id": 32807
+  },
+  {
+    "ts": "2026-04-14T06:31",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I'm getting around 20 cents on 7 per isp",
+    "id": 32808
+  },
+  {
+    "ts": "2026-04-14T06:34",
+    "author": "emperor tamarin",
+    "msg": "Are your rewards good even at 30%uptime mate? Considering lowering the bar lol",
+    "id": 32809
+  },
+  {
+    "ts": "2026-04-14T07:01",
+    "author": "EdgyBruh",
+    "msg": "Has anyone tried 2 or 3 on 1 isp? Wondering what makes more sense economically. 5 gives me 0.2 - 0.3 (mostly low 0.2's)",
+    "id": 32810
+  },
+  {
+    "ts": "2026-04-14T07:09",
+    "author": "Forty41",
+    "msg": "My average today across 15 physical sims and one broadband connection including 2 sim routers and the rest tethered is 4.5 cents a phone.",
+    "id": 32811
+  },
+  {
+    "ts": "2026-04-14T10:06",
+    "author": "Dave",
+    "msg": "That is funny...",
+    "id": 32812
+  },
+  {
+    "ts": "2026-04-14T10:07",
+    "author": "Dave",
+    "msg": "I restarted one of my boxes after reading that rewards are back",
+    "id": 32813
+  },
+  {
+    "ts": "2026-04-14T10:07",
+    "author": "Dave",
+    "msg": "And now all phones show \"attestation failure. Please reinstall the application from an official source.\"",
+    "id": 32814
+  },
+  {
+    "ts": "2026-04-14T10:08",
+    "author": "Dave",
+    "msg": "But I downloaded it from the unity website 😂",
+    "id": 32815
+  },
+  {
+    "ts": "2026-04-14T10:08",
+    "author": "Dave",
+    "msg": "Anyone had that issue and knows how to solve it?",
+    "id": 32816
+  },
+  {
+    "ts": "2026-04-14T10:12",
+    "author": "Flippy",
+    "msg": "Restart usualy works",
+    "id": 32817
+  },
+  {
+    "ts": "2026-04-14T10:12",
+    "author": "Flippy",
+    "msg": "But for some it cant be fixed",
+    "id": 32818
+  },
+  {
+    "ts": "2026-04-14T10:12",
+    "author": "Dave",
+    "msg": "I did that",
+    "id": 32819
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Dave",
+    "msg": "Multiple times",
+    "id": 32820
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Dave",
+    "msg": "Can't be fixed? 😂",
+    "id": 32821
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Flippy",
+    "msg": "Then they say to do factory reset",
+    "id": 32822
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Dave",
+    "msg": "Wth. What is that error? Factory reset on the farm?",
+    "id": 32823
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Dave",
+    "msg": "Can I do that?",
+    "id": 32824
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Flippy",
+    "msg": "The error means that there was an issue validating the integrity of the device. This could be caused by anything that modifies system-level services.\n\nTeam's suggestion is a factory reset and updating to the latest android version possible for your device. \n\n- Form via WEB: https://unitynodes.io/bug-report/\n- Telegram BOT: https://t.me/UnityBugReportBot\n- Email: support@unitynodes.io",
+    "id": 32825
+  },
+  {
+    "ts": "2026-04-14T10:13",
+    "author": "Flippy",
+    "msg": "No on the device",
+    "id": 32826
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Dave",
+    "msg": "Yeah, can a farm device do that?",
+    "id": 32827
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Flippy",
+    "msg": "Sure",
+    "id": 32828
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Dave",
+    "msg": "It basically means it's asking for new android id...",
+    "id": 32829
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Dave",
+    "msg": "Great",
+    "id": 32830
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Flippy",
+    "msg": "Its fucked",
+    "id": 32831
+  },
+  {
+    "ts": "2026-04-14T10:14",
+    "author": "Flippy",
+    "msg": "Like everything",
+    "id": 32832
+  },
+  {
+    "ts": "2026-04-14T10:15",
+    "author": "Dave",
+    "msg": "Can I DM you for a in depth discussion?",
+    "id": 32833
+  },
+  {
+    "ts": "2026-04-14T10:15",
+    "author": "Flippy",
+    "msg": "There is a reason they went total silent",
+    "id": 32834
+  },
+  {
+    "ts": "2026-04-14T10:18",
+    "author": "Daano",
+    "msg": "So your devices does get flagged",
+    "id": 32835
+  },
+  {
+    "ts": "2026-04-14T10:18",
+    "author": "Daano",
+    "msg": "Interesting✍",
+    "id": 32836
+  },
+  {
+    "ts": "2026-04-14T10:18",
+    "author": "Rex Vulgaris",
+    "msg": "Rewards dropped back ytd for me",
+    "id": 32837
+  },
+  {
+    "ts": "2026-04-14T10:23",
+    "author": "Dave",
+    "msg": "Yes.",
+    "id": 32838
+  },
+  {
+    "ts": "2026-04-14T10:23",
+    "author": "Dave",
+    "msg": "It got flagged for whatever reason by their AI calibration after taking it online again yesterday.",
+    "id": 32839
+  },
+  {
+    "ts": "2026-04-14T10:26",
+    "author": "Flippy",
+    "msg": "They flagged us, they increase uptime requirement and they killed multi phones above 5.",
+    "id": 32840
+  },
+  {
+    "ts": "2026-04-14T10:26",
+    "author": "Flippy",
+    "msg": "Noice",
+    "id": 32841
+  },
+  {
+    "ts": "2026-04-14T10:38",
+    "author": "Kevin Blowers",
+    "msg": "Not sure i agree with this.. What do you mean?",
+    "id": 32842
+  },
+  {
+    "ts": "2026-04-14T10:41",
+    "author": "Flippy",
+    "msg": "Attestation failure seems like flagging.\n\nUptime must be 95% for max rewards. Before like 50%\n\nMultiple phones gets slashed while before one farmbox earned max rewards.\n\nWhat part dont you agree?",
+    "id": 32843
+  },
+  {
+    "ts": "2026-04-14T10:49",
+    "author": "Kevin Blowers",
+    "msg": "Oh sorry, i thought you were saying too get max rewards you can only have 5 devices on the same isp.",
+    "id": 32844
+  },
+  {
+    "ts": "2026-04-14T10:49",
+    "author": "OldPaul AmaZix",
+    "msg": "Have you already seen today's rewards (14/04) appearing in the rewards tab? When do they normally appear for you (which time)? I'm trying to understand what's the release timing every day, if there's any constant schedule.",
+    "id": 32845
+  },
+  {
+    "ts": "2026-04-14T10:51",
+    "author": "OldPaul AmaZix",
+    "msg": "Last ones in my UNO app are showing 13/04 h02:00 as of now",
+    "id": 32846
+  },
+  {
+    "ts": "2026-04-14T11:04",
+    "author": "Flavius",
+    "msg": "The date always shows the previous day",
+    "id": 32847
+  },
+  {
+    "ts": "2026-04-14T11:05",
+    "author": "Flavius",
+    "msg": "For telemetry rewards",
+    "id": 32848
+  },
+  {
+    "ts": "2026-04-14T11:11",
+    "author": "Daano",
+    "msg": "You get it with more devices?",
+    "id": 32849
+  },
+  {
+    "ts": "2026-04-14T11:27",
+    "author": "Kevin Blowers",
+    "msg": "yes 10.",
+    "id": 32850
+  },
+  {
+    "ts": "2026-04-14T12:21",
+    "author": "I.L",
+    "msg": "Lord almighty",
+    "id": 32851
+  },
+  {
+    "ts": "2026-04-14T12:26",
+    "author": "NEM0",
+    "msg": "What’s your theory",
+    "id": 32852
+  },
+  {
+    "ts": "2026-04-14T12:27",
+    "author": "NEM0",
+    "msg": "Im at 99% and still getting 0.02-0.05",
+    "id": 32853
+  },
+  {
+    "ts": "2026-04-14T12:33",
+    "author": "Flippy",
+    "msg": "Multiple devices?",
+    "id": 32854
+  },
+  {
+    "ts": "2026-04-14T12:34",
+    "author": "Flippy",
+    "msg": "My farms also at 99% and giving those numbers",
+    "id": 32855
+  },
+  {
+    "ts": "2026-04-14T12:36",
+    "author": "Flippy",
+    "msg": "They are struggling, lack of resources, customer/unity only paying for high quality data (95%+ uptime consistently, 1 per IP)",
+    "id": 32856
+  },
+  {
+    "ts": "2026-04-14T12:53",
+    "author": "J. P. Costa",
+    "msg": "Around 11:30 pm utc-3\nAlways a day behind for me too",
+    "id": 32858
+  },
+  {
+    "ts": "2026-04-14T13:07",
+    "author": "Daano",
+    "msg": "Did the last last weeks, still shit rewards around 0.05",
+    "id": 32859
+  },
+  {
+    "ts": "2026-04-14T13:24",
+    "author": "David P [DPADA]",
+    "msg": "I don’t get it, so is the cap 5, 7 or 20?",
+    "id": 32860
+  },
+  {
+    "ts": "2026-04-14T13:25",
+    "author": "David P [DPADA]",
+    "msg": "I mean running 20 units and getting .01 is crap.\n\n Better off running 7 devices at .20 each",
+    "id": 32861
+  },
+  {
+    "ts": "2026-04-14T13:25",
+    "author": "David P [DPADA]",
+    "msg": "But doesn’t this mean the hard cap is 7 devices? Or at least for the basic online task…",
+    "id": 32862
+  },
+  {
+    "ts": "2026-04-14T13:26",
+    "author": "Daano",
+    "msg": "I think the cap is arbittary and around 1-5",
+    "id": 32863
+  },
+  {
+    "ts": "2026-04-14T13:30",
+    "author": "David P [DPADA]",
+    "msg": "Ffs, and rewards roughly for that many?",
+    "id": 32864
+  },
+  {
+    "ts": "2026-04-14T13:30",
+    "author": "David P [DPADA]",
+    "msg": "Also how do you fix the error attestation?",
+    "id": 32865
+  },
+  {
+    "ts": "2026-04-14T13:30",
+    "author": "Daano",
+    "msg": "I see around me between 0.20-0.50",
+    "id": 32866
+  },
+  {
+    "ts": "2026-04-14T13:31",
+    "author": "Daano",
+    "msg": "Kay said OS reinstall",
+    "id": 32867
+  },
+  {
+    "ts": "2026-04-14T13:31",
+    "author": "David P [DPADA]",
+    "msg": "Unity? Or the phone OS?",
+    "id": 32868
+  },
+  {
+    "ts": "2026-04-14T13:31",
+    "author": "David P [DPADA]",
+    "msg": "Yikes",
+    "id": 32869
+  },
+  {
+    "ts": "2026-04-14T13:34",
+    "author": "Daano",
+    "msg": "Phone OS",
+    "id": 32870
+  },
+  {
+    "ts": "2026-04-14T13:34",
+    "author": "Daano",
+    "msg": "Start with unity",
+    "id": 32871
+  },
+  {
+    "ts": "2026-04-14T13:38",
+    "author": "Daniel 🇷🇴",
+    "msg": "group1 - sim: 0.14\ngroup2 - sim: 0.08\ngroup3 - fibre: 0.21\ngroup4 - sim: 0.28\ngroup5 - sim: 0.32",
+    "id": 32872
+  },
+  {
+    "ts": "2026-04-14T14:03",
+    "author": "David P [DPADA]",
+    "msg": "Ouccchhh",
+    "id": 32873
+  },
+  {
+    "ts": "2026-04-14T14:14",
+    "author": "Flippy",
+    "msg": "What is the setup for each group?",
+    "id": 32874
+  },
+  {
+    "ts": "2026-04-14T14:15",
+    "author": "Daniel 🇷🇴",
+    "msg": "5 devices/group",
+    "id": 32875
+  },
+  {
+    "ts": "2026-04-14T15:35",
+    "author": "Daano",
+    "msg": "All same location? And same provider?",
+    "id": 32876
+  },
+  {
+    "ts": "2026-04-14T15:44",
+    "author": "Daniel 🇷🇴",
+    "msg": "same location, dif.providers",
+    "id": 32877
+  },
+  {
+    "ts": "2026-04-14T16:34",
+    "author": "Marco",
+    "msg": "Just as an FYI, and I’m sure people knew this, but you can change the “skip” in the console in increments of 1000 if you want to get data older than the most recent 1000.",
+    "id": 32878
+  },
+  {
+    "ts": "2026-04-14T18:58",
+    "author": "Opher",
+    "msg": "Watch them come out and say the required minimum OS has changed. All my S8 Boxes are getting attestation error. All my newer android phones and some newer iPhones are all fine running unity…",
+    "id": 32879
+  },
+  {
+    "ts": "2026-04-14T19:01",
+    "author": "Marco",
+    "msg": "[Photo] This is an s7. It’s still on 1.1.4 tho",
+    "id": 32880
+  },
+  {
+    "ts": "2026-04-14T19:38",
+    "author": "OSUN",
+    "msg": "I’ve been dropping 3 phones from my 20 phone farm for the past few weeks. Does anyone know if the rewards increase at a certain point or am I just wasting my time and 12 cents \nGetting .04 each max on the 14 I have left.",
+    "id": 32881
+  },
+  {
+    "ts": "2026-04-14T19:47",
+    "author": "Daano",
+    "msg": "/wallet",
+    "id": 32882
+  },
+  {
+    "ts": "2026-04-14T19:47",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n🐕 **SHIB**: $663.76 (113,658,149)\n₳ **ADA**: $638.04 (2655.1436)\n✕ **XRP**: $636.14 (467.7471)\n◎ **SOL**: $524.53 (6.2393)\n₮ **USDT**: $435.95 (436)\n⬡ **BNB**: $320.79 (0.5226)\n$ **USDC**: $306.30 (306)\n💵 **USDT_BSC**: $306.27 (306)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $3,831.89**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 32883
+  }
+]

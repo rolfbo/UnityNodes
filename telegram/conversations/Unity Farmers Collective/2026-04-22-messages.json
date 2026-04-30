@@ -1,0 +1,224 @@
+[
+  {
+    "ts": "2026-04-22T01:58",
+    "author": "C J",
+    "msg": "Yup, getting worse. 4 devices in my house are now getting less than .0009. What the actual F. I gave it time tried all kinds of configurations. Colossal waste",
+    "id": 33455
+  },
+  {
+    "ts": "2026-04-22T04:26",
+    "author": "b y",
+    "msg": "Our wmtx & mntx locked for exact 2 years right? (The one tied to unity nodes)",
+    "id": 33456
+  },
+  {
+    "ts": "2026-04-22T05:04",
+    "author": "Coffee Nodes",
+    "msg": "y",
+    "id": 33457
+  },
+  {
+    "ts": "2026-04-22T05:35",
+    "author": "Kuan",
+    "msg": "Yup from the day of mint",
+    "id": 33458
+  },
+  {
+    "ts": "2026-04-22T05:35",
+    "author": "Dave",
+    "msg": "I agree. What I mean with it is:\nWe are the collateral in them pushing back against the synthetic data.\n\nWho cares about some community collateral if the actual customers are happy?",
+    "id": 33459
+  },
+  {
+    "ts": "2026-04-22T05:37",
+    "author": "Dave",
+    "msg": "No.\nJust like @ophernodes, I believe I tried everything up to:\nReset device to factory settings, install Unity from Google store, use a new email, connect a new license from marketplace -> instant attestation failure",
+    "id": 33460
+  },
+  {
+    "ts": "2026-04-22T05:40",
+    "author": "Dave",
+    "msg": "It is Unity. \nTo fight the synthetic data they set up the Google integrity test to be on the highest possible level. Actually higher than your banking app demands, because I can connect my banking... I tested that.",
+    "id": 33461
+  },
+  {
+    "ts": "2026-04-22T06:06",
+    "author": "feqifei 🇮🇹 [COOL] [CALM]",
+    "msg": "/wallet",
+    "id": 33462
+  },
+  {
+    "ts": "2026-04-22T06:07",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n₮ **USDT**: $738.30 (738)\n⬡ **BNB**: $713.15 (1.1103)\n🐕 **SHIB**: $698.44 (112,651,987)\n⟐ **ETH**: $673.14 (0.2812)\n✕ **XRP**: $579.12 (399.3924)\n$ **USDC**: $541.03 (541)\n◎ **SOL**: $529.70 (6.0152)\n💵 **USDT_BSC**: $385.60 (386)\n₳ **ADA**: $273.38 (1070.2898)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $5,131.98**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 33463
+  },
+  {
+    "ts": "2026-04-22T06:27",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I got a feeling the integrity test is not the only criteria",
+    "id": 33464
+  },
+  {
+    "ts": "2026-04-22T07:29",
+    "author": "Ricky",
+    "msg": "My small farm (S8 without sim) is giving an avg of 0.18 per day per license (any one phone ranges max to 0.35 randomly )\nIs it ok? \nI tried various permutations and combinations of ISPs\n\nCurrently I am at 6/ISP max",
+    "id": 33465
+  },
+  {
+    "ts": "2026-04-22T07:39",
+    "author": "blackcoffee",
+    "msg": "/wallet",
+    "id": 33466
+  },
+  {
+    "ts": "2026-04-22T07:39",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n⬡ **BNB**: $706.73 (1.1003)\n🐕 **SHIB**: $698.44 (112,651,987)\n⟐ **ETH**: $670.27 (0.2806)\n₮ **USDT**: $612.87 (613)\n✕ **XRP**: $579.12 (399.3924)\n◎ **SOL**: $528.74 (6.0152)\n$ **USDC**: $415.26 (415)\n💵 **USDT_BSC**: $324.15 (324)\n₳ **ADA**: $272.44 (1070.2898)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $4,808.13**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 33467
+  },
+  {
+    "ts": "2026-04-22T08:11",
+    "author": "Dave",
+    "msg": "What else do you think it is?",
+    "id": 33468
+  },
+  {
+    "ts": "2026-04-22T08:16",
+    "author": "Jaba - Unityfarmers",
+    "msg": "that's not the max but better than many. around 40 cents would be the max",
+    "id": 33469
+  },
+  {
+    "ts": "2026-04-22T09:00",
+    "author": "Jaba - Unityfarmers",
+    "msg": "I think they also look at amount of devices on 1 provider/region in 1 country regardless if they have different isp. Of too many devices are within a same geographical area they get slashed too. I suspect that's what happening in the Netherlands and Vietnam",
+    "id": 33470
+  },
+  {
+    "ts": "2026-04-22T09:08",
+    "author": "Daniel 🇷🇴",
+    "msg": "based on IP?",
+    "id": 33471
+  },
+  {
+    "ts": "2026-04-22T09:10",
+    "author": "Daniel 🇷🇴",
+    "msg": "The geolocation of my ISP IPs is wildly off",
+    "id": 33472
+  },
+  {
+    "ts": "2026-04-22T10:05",
+    "author": "Dave",
+    "msg": "Great... That is actually quite possible",
+    "id": 33473
+  },
+  {
+    "ts": "2026-04-22T10:05",
+    "author": "Dave",
+    "msg": "Well, probably not country wide off...",
+    "id": 33474
+  },
+  {
+    "ts": "2026-04-22T10:22",
+    "author": "Daniel 🇷🇴",
+    "msg": "just couple of hundred kms",
+    "id": 33475
+  },
+  {
+    "ts": "2026-04-22T10:47",
+    "author": "UNI-NODE",
+    "msg": "i have muliple 0.52$ leases",
+    "id": 33476
+  },
+  {
+    "ts": "2026-04-22T10:55",
+    "author": "Daano",
+    "msg": "On 1 license per IP?",
+    "id": 33477
+  },
+  {
+    "ts": "2026-04-22T11:42",
+    "author": "UNI-NODE",
+    "msg": "Yes, as soon as there are 2 or more rewards drop",
+    "id": 33478
+  },
+  {
+    "ts": "2026-04-22T13:37",
+    "author": "Crypto Connoisseur",
+    "msg": "I've been out of the loop for a while, it looks like rewards haven't improved much.",
+    "id": 33479
+  },
+  {
+    "ts": "2026-04-22T16:43",
+    "author": "Daano",
+    "msg": "So whats the total range of license per ip rewards? ;\n\n1 license; 0.52\n2 license; 0.43, 0.41~\n3 license; 3x 0.26-0.38?\n4 license; 4x ?,  0.20-0.35?\n5 license; 5x 0.20~\n6 license; ?\n\nFeel free to give more accurate feedback plz🤝🙏",
+    "id": 33480
+  },
+  {
+    "ts": "2026-04-22T17:40",
+    "author": "NEM0",
+    "msg": "I think your gonna make about 1UP per ip no matter what you throw at it no more than that",
+    "id": 33481
+  },
+  {
+    "ts": "2026-04-22T17:41",
+    "author": "NEM0",
+    "msg": "Have 2 devices .40-.50. Have 20 devices .03-05",
+    "id": 33482
+  },
+  {
+    "ts": "2026-04-22T17:43",
+    "author": "UNI-NODE",
+    "msg": "Same",
+    "id": 33483
+  },
+  {
+    "ts": "2026-04-22T18:16",
+    "author": "J. P. Costa",
+    "msg": "My Avg is 0.2 per license with 10 pones",
+    "id": 33484
+  },
+  {
+    "ts": "2026-04-22T18:44",
+    "author": "R B",
+    "msg": "Guys is there something else we can use our S8 farms with and earn rewards I don’t have faith and time for Unity",
+    "id": 33485
+  },
+  {
+    "ts": "2026-04-22T20:44",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "So is farms a no go now for Unity then?...",
+    "id": 33486
+  },
+  {
+    "ts": "2026-04-22T20:44",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Same here, been out for a week or two and nothing changed",
+    "id": 33487
+  },
+  {
+    "ts": "2026-04-22T21:20",
+    "author": "Daano",
+    "msg": "Howmany license per IP?",
+    "id": 33488
+  },
+  {
+    "ts": "2026-04-22T21:21",
+    "author": "J. P. Costa",
+    "msg": "All 10",
+    "id": 33489
+  },
+  {
+    "ts": "2026-04-22T23:32",
+    "author": "GliTch_",
+    "msg": "I wish I could say the same",
+    "id": 33490
+  },
+  {
+    "ts": "2026-04-22T23:33",
+    "author": "GliTch_",
+    "msg": "guess I have to give up and shut all but 7-8 devices per ip off",
+    "id": 33491
+  }
+]

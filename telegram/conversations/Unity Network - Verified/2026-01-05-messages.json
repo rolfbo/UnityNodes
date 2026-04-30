@@ -1,0 +1,2294 @@
+[
+  {
+    "ts": "2026-01-05T00:02",
+    "author": "Bitdano",
+    "msg": "I have many phones showing 99% but showing yellow bars and low UP..too many to make bug reports..what should I do?",
+    "id": 1418
+  },
+  {
+    "ts": "2026-01-05T00:03",
+    "author": "Nico | NodeX",
+    "msg": "Use the reporting bot",
+    "id": 1419
+  },
+  {
+    "ts": "2026-01-05T00:05",
+    "author": "Calus B",
+    "msg": "What is your minimum uptime set too",
+    "id": 1420
+  },
+  {
+    "ts": "2026-01-05T00:05",
+    "author": "Bitdano",
+    "msg": "Any suggestions before I do that? Would take me hrs for all of them",
+    "id": 1421
+  },
+  {
+    "ts": "2026-01-05T00:05",
+    "author": "Bitdano",
+    "msg": "5%",
+    "id": 1422
+  },
+  {
+    "ts": "2026-01-05T00:06",
+    "author": "Calus B",
+    "msg": "What’s your default license set to",
+    "id": 1423
+  },
+  {
+    "ts": "2026-01-05T00:07",
+    "author": "Bitdano",
+    "msg": "80",
+    "id": 1424
+  },
+  {
+    "ts": "2026-01-05T00:07",
+    "author": "Calus B",
+    "msg": "Weird",
+    "id": 1425
+  },
+  {
+    "ts": "2026-01-05T00:07",
+    "author": "Calus B",
+    "msg": "Just do bug report on a few but mention it happens to more phone models",
+    "id": 1426
+  },
+  {
+    "ts": "2026-01-05T00:08",
+    "author": "Bitdano",
+    "msg": "Ok will do",
+    "id": 1427
+  },
+  {
+    "ts": "2026-01-05T00:08",
+    "author": "Calus B",
+    "msg": "Bonus points if you can name the model and the license # in the report",
+    "id": 1428
+  },
+  {
+    "ts": "2026-01-05T00:08",
+    "author": "Calus B",
+    "msg": "Of other phones",
+    "id": 1429
+  },
+  {
+    "ts": "2026-01-05T00:08",
+    "author": "Bitdano",
+    "msg": "Yes",
+    "id": 1430
+  },
+  {
+    "ts": "2026-01-05T00:10",
+    "author": "Bitdano",
+    "msg": "I bet there is a conflict of node parameters, and then you make a custom. One for certain licenses.",
+    "id": 1431
+  },
+  {
+    "ts": "2026-01-05T00:16",
+    "author": "bkauii_ensō",
+    "msg": "I seem to only be getting frequent SwitchNode disconnect notifications on my Starlink and accompanying Access points... my other connections: fiber, cable, and tmobile 5g box along with their accompanied access points are 95% stable.... must be the latency with starlink",
+    "id": 1432
+  },
+  {
+    "ts": "2026-01-05T00:25",
+    "author": "Calus B",
+    "msg": "I’ve been on a starlink system a few times, but don’t rely on the Starlink for the Wi-Fi connection I had another router doing that and was at 98+ on connection",
+    "id": 1433
+  },
+  {
+    "ts": "2026-01-05T01:14",
+    "author": "Unknown",
+    "msg": "I have a few disconnect notices on 4/5g modems",
+    "id": 1434
+  },
+  {
+    "ts": "2026-01-05T01:14",
+    "author": "Unknown",
+    "msg": "but its hard to know if that is a continuous issue or a one time issue and corrected 😂",
+    "id": 1435
+  },
+  {
+    "ts": "2026-01-05T02:20",
+    "author": "Tap MastersTaps",
+    "msg": "Getting constantly disconnected since upgrade to 1.0.8, I would say about every minute or two",
+    "id": 1436
+  },
+  {
+    "ts": "2026-01-05T02:20",
+    "author": "Ricky",
+    "msg": "Same issue",
+    "id": 1437
+  },
+  {
+    "ts": "2026-01-05T02:24",
+    "author": "Mat",
+    "msg": "Same here",
+    "id": 1438
+  },
+  {
+    "ts": "2026-01-05T02:44",
+    "author": "OC Nodes",
+    "msg": "Did anyone notice a big drop in data packets today? I have perfect uptime but somehow data is only 4MB on each device vs the usual 10-20MB",
+    "id": 1439
+  },
+  {
+    "ts": "2026-01-05T03:00",
+    "author": "Calus B",
+    "msg": "Hmm maybe they are doing something else",
+    "id": 1440
+  },
+  {
+    "ts": "2026-01-05T03:06",
+    "author": "OC Nodes",
+    "msg": "It happened to all 8 phones",
+    "id": 1441
+  },
+  {
+    "ts": "2026-01-05T03:09",
+    "author": "Essi",
+    "msg": "What app to use for node and license in 1 phone android?",
+    "id": 1442
+  },
+  {
+    "ts": "2026-01-05T03:45",
+    "author": "OC Nodes",
+    "msg": "[Photo] Wait what?",
+    "id": 1443
+  },
+  {
+    "ts": "2026-01-05T03:46",
+    "author": "OC Nodes",
+    "msg": "I disabled notifications. Is this why all my phones didnt move any data since the upgrade? I dont allow notifications on all those phones",
+    "id": 1444
+  },
+  {
+    "ts": "2026-01-05T03:52",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Oo, that would make sense",
+    "id": 1445
+  },
+  {
+    "ts": "2026-01-05T04:07",
+    "author": "Calus B",
+    "msg": "I believe it does say that you must enable notifications",
+    "id": 1446
+  },
+  {
+    "ts": "2026-01-05T04:08",
+    "author": "OC Nodes",
+    "msg": "Well that would be a big problem",
+    "id": 1447
+  },
+  {
+    "ts": "2026-01-05T06:02",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Hello everyone!",
+    "id": 1448
+  },
+  {
+    "ts": "2026-01-05T07:43",
+    "author": "Sean",
+    "msg": "Morning all have anyone been paid for the 4th yet?",
+    "id": 1449
+  },
+  {
+    "ts": "2026-01-05T07:43",
+    "author": "Daniel 🇷🇴",
+    "msg": "only 3rd",
+    "id": 1450
+  },
+  {
+    "ts": "2026-01-05T07:44",
+    "author": "Sean",
+    "msg": "Spot on - same, upgraded to 1.08 yesterday so just making sure 👌",
+    "id": 1451
+  },
+  {
+    "ts": "2026-01-05T07:45",
+    "author": "Unknown",
+    "msg": "2nd",
+    "id": 1452
+  },
+  {
+    "ts": "2026-01-05T07:45",
+    "author": "Unknown",
+    "msg": "[File: animation.gif.mp4]",
+    "id": 1453
+  },
+  {
+    "ts": "2026-01-05T09:43",
+    "author": "Tap MastersTaps",
+    "msg": "Not even received for the 3rd yet",
+    "id": 1454
+  },
+  {
+    "ts": "2026-01-05T09:54",
+    "author": "Johannes",
+    "msg": "What's the difference to the offical one? \nThe problem I had with the offical one is it hard to get it to work behind a reverse proxy, it has to have it's own ssl certificate to run on https.",
+    "id": 1455
+  },
+  {
+    "ts": "2026-01-05T10:49",
+    "author": "Dermott 🕵🏼‍♂️",
+    "msg": "[Photo] Validation nodes are back.",
+    "id": 1456
+  },
+  {
+    "ts": "2026-01-05T10:54",
+    "author": "Mat",
+    "msg": "Force close and reopen to get patched version of 1.0.8",
+    "id": 1457
+  },
+  {
+    "ts": "2026-01-05T11:31",
+    "author": "Aldigidi",
+    "msg": "Good morning.",
+    "id": 1458
+  },
+  {
+    "ts": "2026-01-05T11:31",
+    "author": "Aldigidi",
+    "msg": "Is the space in half an hour",
+    "id": 1459
+  },
+  {
+    "ts": "2026-01-05T11:31",
+    "author": "Aldigidi",
+    "msg": "I seem to have conflicting times  in my calender",
+    "id": 1460
+  },
+  {
+    "ts": "2026-01-05T11:37",
+    "author": "Elias Nikolaidis",
+    "msg": "T-minus 1 hour",
+    "id": 1461
+  },
+  {
+    "ts": "2026-01-05T11:38",
+    "author": "James_WM_ENO",
+    "msg": "1 hour !!!",
+    "id": 1462
+  },
+  {
+    "ts": "2026-01-05T11:38",
+    "author": "Tomas",
+    "msg": "@defiants_kyle \nSuggestion:\nCan the team add a notification/prompt in the app notifying the user when a new build is available. Ideally the prompt will contain a button to restart the app so the update can be applied.",
+    "id": 1463
+  },
+  {
+    "ts": "2026-01-05T11:41",
+    "author": "Gwims",
+    "msg": "Any rewards yet today?",
+    "id": 1464
+  },
+  {
+    "ts": "2026-01-05T11:47",
+    "author": "~•v1kram•~",
+    "msg": "Higher data consumption today by Unity apps",
+    "id": 1465
+  },
+  {
+    "ts": "2026-01-05T12:00",
+    "author": "Nico | NodeX",
+    "msg": "Haven't seen any. Maybe we are preparing for the real tasks",
+    "id": 1466
+  },
+  {
+    "ts": "2026-01-05T12:31",
+    "author": "Akira",
+    "msg": "if anyone could write down key takeaways from the spaces today it'd be much appreciated. thx",
+    "id": 1467
+  },
+  {
+    "ts": "2026-01-05T12:42",
+    "author": "Calus B",
+    "msg": "Takeaway one this service is an higher incentive option it’s why they chose it first. Has some challenges in translated to mobile but when it shows up it will really help push the network forward",
+    "id": 1468
+  },
+  {
+    "ts": "2026-01-05T12:45",
+    "author": "Sean",
+    "msg": "Thanks Calus, if you could keep us updated with key takeaways that would be great - at work unfortunately",
+    "id": 1469
+  },
+  {
+    "ts": "2026-01-05T12:45",
+    "author": "Daniel 🇷🇴",
+    "msg": "bloody X space",
+    "id": 1470
+  },
+  {
+    "ts": "2026-01-05T12:46",
+    "author": "Calus B",
+    "msg": "Has orders from multiple carrier",
+    "id": 1471
+  },
+  {
+    "ts": "2026-01-05T12:46",
+    "author": "Calus B",
+    "msg": "It is gamified to guide behavior",
+    "id": 1472
+  },
+  {
+    "ts": "2026-01-05T12:47",
+    "author": "VeganCatLover",
+    "msg": "Anyone else having issues accessing the space on android?",
+    "id": 1473
+  },
+  {
+    "ts": "2026-01-05T12:47",
+    "author": "Calus B",
+    "msg": "Scout and runner sounds like it is also made for third party",
+    "id": 1474
+  },
+  {
+    "ts": "2026-01-05T12:47",
+    "author": "Calus B",
+    "msg": "Ui expert brought in",
+    "id": 1475
+  },
+  {
+    "ts": "2026-01-05T12:48",
+    "author": "Calus B",
+    "msg": "Getting into what it is doing",
+    "id": 1476
+  },
+  {
+    "ts": "2026-01-05T12:48",
+    "author": "Calus B",
+    "msg": "Two roles scout and runners",
+    "id": 1477
+  },
+  {
+    "ts": "2026-01-05T12:48",
+    "author": "Nico | NodeX",
+    "msg": "scouts are sitters, that's you calus",
+    "id": 1478
+  },
+  {
+    "ts": "2026-01-05T12:48",
+    "author": "Calus B",
+    "msg": "On the edge",
+    "id": 1479
+  },
+  {
+    "ts": "2026-01-05T12:49",
+    "author": "Calus B",
+    "msg": "Wow it’s issuing a SIM card",
+    "id": 1480
+  },
+  {
+    "ts": "2026-01-05T12:50",
+    "author": "James_WM_ENO",
+    "msg": "So we need to buy SIM cards ?",
+    "id": 1481
+  },
+  {
+    "ts": "2026-01-05T12:50",
+    "author": "James_WM_ENO",
+    "msg": "Not WiFi ?",
+    "id": 1482
+  },
+  {
+    "ts": "2026-01-05T12:50",
+    "author": "Daniel 🇷🇴",
+    "msg": "wifi's dead",
+    "id": 1483
+  },
+  {
+    "ts": "2026-01-05T12:50",
+    "author": "Calus B",
+    "msg": "I believe it’s issuing it for the task and paid for internally",
+    "id": 1484
+  },
+  {
+    "ts": "2026-01-05T12:51",
+    "author": "Nico | NodeX",
+    "msg": "good question",
+    "id": 1485
+  },
+  {
+    "ts": "2026-01-05T12:51",
+    "author": "Calus B",
+    "msg": "So Omri said it’s all paid for by the task issuer",
+    "id": 1486
+  },
+  {
+    "ts": "2026-01-05T12:52",
+    "author": "Calus B",
+    "msg": "So I think this is a process that happens within the app so DONT go buy sims",
+    "id": 1487
+  },
+  {
+    "ts": "2026-01-05T12:52",
+    "author": "libben",
+    "msg": "Sim router must b okey?",
+    "id": 1488
+  },
+  {
+    "ts": "2026-01-05T12:52",
+    "author": "Daniel 🇷🇴",
+    "msg": "too late; I clicked checkout",
+    "id": 1489
+  },
+  {
+    "ts": "2026-01-05T12:52",
+    "author": "Calus B",
+    "msg": "Lmao",
+    "id": 1490
+  },
+  {
+    "ts": "2026-01-05T12:52",
+    "author": "Calus B",
+    "msg": "Nice",
+    "id": 1491
+  },
+  {
+    "ts": "2026-01-05T12:56",
+    "author": "Daniel 🇷🇴",
+    "msg": "do we get something in writing after this space?",
+    "id": 1492
+  },
+  {
+    "ts": "2026-01-05T12:56",
+    "author": "Miro K",
+    "msg": "Didn’t get that from his speech, i understand that this will be sim requiring tasks.",
+    "id": 1493
+  },
+  {
+    "ts": "2026-01-05T12:57",
+    "author": "Calus B",
+    "msg": "Will relisten but he did say part of the task is issuing a sim and that will be covered by task provider",
+    "id": 1494
+  },
+  {
+    "ts": "2026-01-05T12:58",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "I hope not all tasks require sim",
+    "id": 1495
+  },
+  {
+    "ts": "2026-01-05T12:58",
+    "author": "Daniel 🇷🇴",
+    "msg": "is this an ama?",
+    "id": 1496
+  },
+  {
+    "ts": "2026-01-05T12:58",
+    "author": "Calus B",
+    "msg": "I don’t know",
+    "id": 1497
+  },
+  {
+    "ts": "2026-01-05T12:58",
+    "author": "Akira",
+    "msg": "sounds like this will take some weeks/months at the very least",
+    "id": 1498
+  },
+  {
+    "ts": "2026-01-05T12:59",
+    "author": "Calus B",
+    "msg": "Yes though phased access orgainization is announced in the next few days",
+    "id": 1499
+  },
+  {
+    "ts": "2026-01-05T12:59",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Time is the essence",
+    "id": 1500
+  },
+  {
+    "ts": "2026-01-05T12:59",
+    "author": "Daniel 🇷🇴",
+    "msg": "rewards 4th jan are appearing",
+    "id": 1501
+  },
+  {
+    "ts": "2026-01-05T13:00",
+    "author": "Calus B",
+    "msg": "Wants more involvement",
+    "id": 1502
+  },
+  {
+    "ts": "2026-01-05T13:05",
+    "author": "Miro K",
+    "msg": "I understood no credits again required - that was part i thought Omri meant. But probably it is better to wait on official summary / info.",
+    "id": 1503
+  },
+  {
+    "ts": "2026-01-05T13:05",
+    "author": "R.- B.",
+    "msg": "At least for the fist part of the task a sim is required as I understood it",
+    "id": 1504
+  },
+  {
+    "ts": "2026-01-05T13:05",
+    "author": "Janilom81",
+    "msg": "🙋‍♂️ test group please!",
+    "id": 1505
+  },
+  {
+    "ts": "2026-01-05T13:06",
+    "author": "Sean",
+    "msg": "Is this a SIM only task?",
+    "id": 1506
+  },
+  {
+    "ts": "2026-01-05T13:08",
+    "author": "libben",
+    "msg": "Sim router must be okey?",
+    "id": 1507
+  },
+  {
+    "ts": "2026-01-05T13:13",
+    "author": "Jaba - Unityfarmers",
+    "msg": "was it sim card or jargon for simulation?",
+    "id": 1508
+  },
+  {
+    "ts": "2026-01-05T13:14",
+    "author": "Elias Nikolaidis",
+    "msg": "We shall know more over the next weeks",
+    "id": 1509
+  },
+  {
+    "ts": "2026-01-05T13:17",
+    "author": "Daniel 🇷🇴",
+    "msg": "How long it's a unity sprint? 2 weeks?",
+    "id": 1510
+  },
+  {
+    "ts": "2026-01-05T13:19",
+    "author": "Nico | NodeX",
+    "msg": "Scout  and runner requires an active SIM:\n\nScout: “verifies it by activating a SIM card and confirming voice, SMS and data.”\nRunner: “operate with an active SIM on the confirmed network” to do calling/messaging/data actions.\n\nAlso: Omire said all credits/top-ups required are covered by the job issuer (so you shouldn’t have to fund the SIM usage yourself for the task).",
+    "id": 1511
+  },
+  {
+    "ts": "2026-01-05T13:19",
+    "author": "Nico | NodeX",
+    "msg": "On gamification..\n\n“We are not creating a game.”\nThey’re adding gamification elements, not turning Unity into a game.\nIt wasn’t a marketing choice — it came from weeks of internal debate.\nThe “Scout & Runner” poster/characters are the “front cover” of the first third-party task on Unity’s composable network.\n\nWhy use gamification?\nTo force structure, clarity, and correctness in a task that needs real telecom precision.\n\nThe goal is guided behavior:\ndo the task “the right way”\nwithout vulnerabilities/exploits\nwithout misunderstandings\n\nand with clear “what success looks like” It’s meant to make users feel safe and confident:\nno anxiety\nno second guessing\nno “is this working?” uncertainty\n\nAfter deciding on gamification, Omri says he brought in a UX gamification expert (designed complex gamified systems for big consumer products, enterprise platforms, and a large educational system) to build the experience properly.",
+    "id": 1512
+  },
+  {
+    "ts": "2026-01-05T13:20",
+    "author": "Nico | NodeX",
+    "msg": "Release plan (fast sprints)\n\nClosed Alpha → more groups (alpha/beta) → public release\nAccess via registration forms with criteria per group\nCommunity involvement = hands-on testing + structured feedback\nSome regions may be blocked initially (regulatory prudence)\nLegal teams (internal + external) working “around the clock”",
+    "id": 1513
+  },
+  {
+    "ts": "2026-01-05T13:27",
+    "author": "Lucas",
+    "msg": "My understanding too.\n\npretty cool that the task provider can provide a sim to complete the task, pretty big accomplishment",
+    "id": 1514
+  },
+  {
+    "ts": "2026-01-05T13:28",
+    "author": "James_WM_ENO",
+    "msg": "We need physical sims from my understanding",
+    "id": 1515
+  },
+  {
+    "ts": "2026-01-05T13:28",
+    "author": "James_WM_ENO",
+    "msg": "None of mine have sims so that’s a massive disappointment really",
+    "id": 1516
+  },
+  {
+    "ts": "2026-01-05T13:29",
+    "author": "Lucas",
+    "msg": "Omri said that the sim would be provided part of the task\nThat is what i got from the space",
+    "id": 1517
+  },
+  {
+    "ts": "2026-01-05T13:30",
+    "author": "Daniel 🇷🇴",
+    "msg": "Buboy was a Runner or a Scout?",
+    "id": 1518
+  },
+  {
+    "ts": "2026-01-05T13:31",
+    "author": "Sojourner",
+    "msg": "Definitely a disappointment for me unless they get iOS app live. Literally all my family, friends, family of friends, and friends of family are all iPhone users. The mini farm of android phones I have are WiFi only and they said many times WiFi is preferred I thought 🤷‍♂️",
+    "id": 1520
+  },
+  {
+    "ts": "2026-01-05T13:33",
+    "author": "J D",
+    "msg": "Considering they haven’t gotten scan for points or unity on iOS I doubt this will be good for iPhone users in the foreseeable future",
+    "id": 1521
+  },
+  {
+    "ts": "2026-01-05T13:34",
+    "author": "J D",
+    "msg": "Given track record team will make it a priority then all of a sudden won’t mention iOS for over a year and hope everyone forgets about it as they move on to “more important developments”",
+    "id": 1522
+  },
+  {
+    "ts": "2026-01-05T13:34",
+    "author": "Calus B",
+    "msg": "That is not what was said let’s wait and see",
+    "id": 1523
+  },
+  {
+    "ts": "2026-01-05T13:34",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Multiple additional WiFi-only, and hybrid based tasks are coming and will be released",
+    "id": 1524
+  },
+  {
+    "ts": "2026-01-05T13:35",
+    "author": "DampflokTV",
+    "msg": "I have not heard a single word in the briefing  about a sim card being required for the tasks, where did you hear that?",
+    "id": 1525
+  },
+  {
+    "ts": "2026-01-05T13:35",
+    "author": "J D",
+    "msg": "The iOS unity release was a joke. It’s just a Ui. Doesn’t do anything and they knew this and decided to release it anyways to try and appease the anger of the community. Said it was for “testing” lol",
+    "id": 1526
+  },
+  {
+    "ts": "2026-01-05T13:35",
+    "author": "Lucas",
+    "msg": "The app is literally with Apple waiting for final approval, where did the IOS not happening come from,\n\ntestflight is at least allowing people to test it",
+    "id": 1527
+  },
+  {
+    "ts": "2026-01-05T13:37",
+    "author": "Lucas",
+    "msg": "I am excited about testing these new task and hope I can be in the Alpha group\n\nThis is super exciting, that is my opinion. You do you!",
+    "id": 1528
+  },
+  {
+    "ts": "2026-01-05T13:38",
+    "author": "J D",
+    "msg": "Dude there is nothing to test. It’s just Ui. Theres no functionality. If it is approved in the next couple months I’d be surprised. They never got scan for points approved and has been over a year “in final approval” just watch them pivot and say “there’s nothing we can do now” and for that deliverable to fade into non existence. I’d be happy to be wrong but scan for points is the proof",
+    "id": 1529
+  },
+  {
+    "ts": "2026-01-05T13:38",
+    "author": "Nico | NodeX",
+    "msg": "It's a testflight test, it gives valuable feedback still .",
+    "id": 1530
+  },
+  {
+    "ts": "2026-01-05T13:38",
+    "author": "Lucas",
+    "msg": "Scan for point is World Mobile, these are 2 different company",
+    "id": 1531
+  },
+  {
+    "ts": "2026-01-05T13:39",
+    "author": "Daniel 🇷🇴",
+    "msg": "🍻",
+    "id": 1532
+  },
+  {
+    "ts": "2026-01-05T13:40",
+    "author": "Nico | NodeX",
+    "msg": "lots of questions around scout/runner..The exact mechanism (self-select vs assignment vs reputation/region/device requirements) wasn’t stated.",
+    "id": 1533
+  },
+  {
+    "ts": "2026-01-05T13:40",
+    "author": "Lucas",
+    "msg": "I understand your frustration,it also took almost 2 week for the Android one to actually be on the playstore after the apk release\nhopefully Apple approves the final release in the next week which would make it a window of 2 weeks like Android did",
+    "id": 1534
+  },
+  {
+    "ts": "2026-01-05T13:41",
+    "author": "Nico | NodeX",
+    "msg": "If Apply doesnt approve, get an android phone.",
+    "id": 1535
+  },
+  {
+    "ts": "2026-01-05T13:41",
+    "author": "Nico | NodeX",
+    "msg": "There is always a choice",
+    "id": 1536
+  },
+  {
+    "ts": "2026-01-05T13:41",
+    "author": "Daniel 🇷🇴",
+    "msg": "I remember that was said that app will not make calls only 1 VoIP call at the start, right?",
+    "id": 1537
+  },
+  {
+    "ts": "2026-01-05T13:43",
+    "author": "Nico | NodeX",
+    "msg": "#amaquestion \n\nWill Scout/Runner be self-selected, assigned by Unity, or earned via reputation/qualification—and what are the minimum requirements (SIM type, region, device, accuracy score)?”",
+    "id": 1538
+  },
+  {
+    "ts": "2026-01-05T13:44",
+    "author": "Flavius",
+    "msg": "TestFlight is not doing any tasks",
+    "id": 1539
+  },
+  {
+    "ts": "2026-01-05T13:45",
+    "author": "Lucas",
+    "msg": "I understand, my guess is that the one that will be release through app store will do tasks",
+    "id": 1540
+  },
+  {
+    "ts": "2026-01-05T13:46",
+    "author": "DampflokTV",
+    "msg": "@defiants_Sophie Hello Sophie, could you ask the team for a short clarification:\n\nDo we need physical sim cards in the phone or e-sims activated on the phones to participate in Scout and Runner or do our phones virtualy get connected to a sim that is provided by the scout service the provider runs to distribute the runner tasks?\n\nOr are the phones with sims the scouts and the phones without are the runners?",
+    "id": 1541
+  },
+  {
+    "ts": "2026-01-05T13:54",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Scouts are paid, all costs are covered. Reward potential is massive, and instant. eSIMs or physical sims are compatible.",
+    "id": 1542
+  },
+  {
+    "ts": "2026-01-05T13:55",
+    "author": "DampflokTV",
+    "msg": "Can phones, without sim or e-sim participate?",
+    "id": 1543
+  },
+  {
+    "ts": "2026-01-05T13:55",
+    "author": "Darren @WorldDePIN",
+    "msg": "How do we apply to be in the closed test group?",
+    "id": 1544
+  },
+  {
+    "ts": "2026-01-05T13:58",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "It will be opt-in from the app.",
+    "id": 1545
+  },
+  {
+    "ts": "2026-01-05T13:58",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Yes. Additional tasks for WiFi only setups are being deployed to the network. You can expect dates to be announced in the upcoming roadmap release.",
+    "id": 1546
+  },
+  {
+    "ts": "2026-01-05T13:59",
+    "author": "Darren @WorldDePIN",
+    "msg": "Thank you but it sounded like it would be a closed user group. So what is the selection criteria?",
+    "id": 1547
+  },
+  {
+    "ts": "2026-01-05T13:59",
+    "author": "Unknown",
+    "msg": "#ama how many of these tasks are now going to be active participation vs passive like initially said what does that change for earn potential",
+    "id": 1548
+  },
+  {
+    "ts": "2026-01-05T14:00",
+    "author": "Nico | NodeX",
+    "msg": "one might even be at this point if you are running with a SIM",
+    "id": 1549
+  },
+  {
+    "ts": "2026-01-05T14:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hello everyone!",
+    "id": 1550
+  },
+  {
+    "ts": "2026-01-05T14:01",
+    "author": "DampflokTV",
+    "msg": "Yes, i know that there will be tasks for wifi only coming up. But Scout and Runner is for phones with sims only correct?\nThat means phones with wifi only cannot participate in Scout and runner, correct?",
+    "id": 1551
+  },
+  {
+    "ts": "2026-01-05T14:01",
+    "author": "Darren @WorldDePIN",
+    "msg": "Nope. Has anyone? I operate a farm currently WiFi only and have some personal family phones with SIMs. I need to know if we should be buying SIM plans for the farm phones. The selection criteria will help.",
+    "id": 1552
+  },
+  {
+    "ts": "2026-01-05T14:03",
+    "author": "Darren @WorldDePIN",
+    "msg": "Also some sort of indication of revenue per task, number of tasks and if location is important. I am in the UK so would like to know if we're included or if we need to look to deploy phones in other countries.",
+    "id": 1553
+  },
+  {
+    "ts": "2026-01-05T14:03",
+    "author": "Lucas",
+    "msg": "they did say, you would not need to buy sim, that the cost and the sim would be paid/provided by the third party for that particular task, that was pretty clear in the AMA",
+    "id": 1554
+  },
+  {
+    "ts": "2026-01-05T14:04",
+    "author": "Darren @WorldDePIN",
+    "msg": "That makes no sense",
+    "id": 1555
+  },
+  {
+    "ts": "2026-01-05T14:04",
+    "author": "Kay | Will never DM you first",
+    "msg": "Nico made a good TLDR: https://t.me/c/3692765127/1512\nAs far as I understand, Scout&Runner will require SIMs",
+    "id": 1556
+  },
+  {
+    "ts": "2026-01-05T14:04",
+    "author": "Kay | Will never DM you first",
+    "msg": "I would wait for more communication on the tasks before purchasing the sim cards",
+    "id": 1557
+  },
+  {
+    "ts": "2026-01-05T14:05",
+    "author": "DampflokTV",
+    "msg": "yeah, many technical questions left open",
+    "id": 1558
+  },
+  {
+    "ts": "2026-01-05T14:05",
+    "author": "Daniel 🇷🇴",
+    "msg": "we need to have written proper comms from the team not transcripts",
+    "id": 1559
+  },
+  {
+    "ts": "2026-01-05T14:05",
+    "author": "Darren @WorldDePIN",
+    "msg": "You're saying 3rd parties will pay for and issue us Sims?",
+    "id": 1560
+  },
+  {
+    "ts": "2026-01-05T14:05",
+    "author": "Kay | Will never DM you first",
+    "msg": "Incredibly high incentive potential!",
+    "id": 1561
+  },
+  {
+    "ts": "2026-01-05T14:05",
+    "author": "ADA ACE WM Ambassador",
+    "msg": "If they need sim and the phones can do eSIM then everyone needs to use my WM affiliate link 😉",
+    "id": 1562
+  },
+  {
+    "ts": "2026-01-05T14:06",
+    "author": "Darren @WorldDePIN",
+    "msg": "Word salad 🥗",
+    "id": 1563
+  },
+  {
+    "ts": "2026-01-05T14:06",
+    "author": "DampflokTV",
+    "msg": "My S21 FE 5G phones do not support e-sims unfortunatly 😞",
+    "id": 1564
+  },
+  {
+    "ts": "2026-01-05T14:06",
+    "author": "Kay | Will never DM you first",
+    "msg": "All locations can opt-in with exception of some sanctioned countries",
+    "id": 1565
+  },
+  {
+    "ts": "2026-01-05T14:06",
+    "author": "Darren @WorldDePIN",
+    "msg": "Cool",
+    "id": 1566
+  },
+  {
+    "ts": "2026-01-05T14:07",
+    "author": "Kay | Will never DM you first",
+    "msg": "A range of operators would be recommended to ensure the best reward potential. More on this in the next communications event, and material release.",
+    "id": 1567
+  },
+  {
+    "ts": "2026-01-05T14:08",
+    "author": "Darren @WorldDePIN",
+    "msg": "Ok, sounds like we are a way off this launching. It would be good to get some early warning if we need to get Sims.",
+    "id": 1569
+  },
+  {
+    "ts": "2026-01-05T14:08",
+    "author": "Calus B",
+    "msg": "For sure",
+    "id": 1570
+  },
+  {
+    "ts": "2026-01-05T14:08",
+    "author": "James_WM_ENO",
+    "msg": "This is a task for people with every day phones.. hence we need the market place to really take off and get all our licences leased",
+    "id": 1571
+  },
+  {
+    "ts": "2026-01-05T14:09",
+    "author": "Darren @WorldDePIN",
+    "msg": "Chicken and egg. Nobody will help until it's worth it.",
+    "id": 1572
+  },
+  {
+    "ts": "2026-01-05T14:09",
+    "author": "Calus B",
+    "msg": "High rewards and then a clear process to get it rolling and this will spread like wild fire",
+    "id": 1573
+  },
+  {
+    "ts": "2026-01-05T14:10",
+    "author": "Lucas",
+    "msg": "That is what Omri said, that service need a sim activation, once it is verified it can be used for the runner tasks",
+    "id": 1574
+  },
+  {
+    "ts": "2026-01-05T14:10",
+    "author": "Darren @WorldDePIN",
+    "msg": "I agree. If this goes well then the marketplace will start to get used.",
+    "id": 1575
+  },
+  {
+    "ts": "2026-01-05T14:11",
+    "author": "Darren @WorldDePIN",
+    "msg": "I didn't get that but you might be right. I can't see how that would work though.",
+    "id": 1576
+  },
+  {
+    "ts": "2026-01-05T14:11",
+    "author": "Kay | Will never DM you first",
+    "msg": "The next communications session is not far off, and the launch of the materials associated task is almost upon us. Please standby for further communication :)",
+    "id": 1577
+  },
+  {
+    "ts": "2026-01-05T14:11",
+    "author": "Lucas",
+    "msg": "that is why they said it is a set of tasks that is asking for more involvement from the community to be successful",
+    "id": 1578
+  },
+  {
+    "ts": "2026-01-05T14:12",
+    "author": "Darren @WorldDePIN",
+    "msg": "I am in permanent standby 👍 ready to go at a moments notice 🚀",
+    "id": 1579
+  },
+  {
+    "ts": "2026-01-05T14:14",
+    "author": "Lucas",
+    "msg": "Same for me!",
+    "id": 1580
+  },
+  {
+    "ts": "2026-01-05T14:22",
+    "author": "Sojourner",
+    "msg": "Definitely ready to participate, just need to know more information on sim or no sim and what regions will be blacked out.",
+    "id": 1581
+  },
+  {
+    "ts": "2026-01-05T14:22",
+    "author": "Miro K",
+    "msg": "Let’s wait on official comm then. Hopefuly with rollout plan, surely i will wanna register via form for early testing. And sim cards are ok if in entive covers their monthly fee costs…i would gladly put it out to friends and family so i don’t jave to buy sim cards for my small test android group, but everyone is on iOS 😅",
+    "id": 1582
+  },
+  {
+    "ts": "2026-01-05T14:33",
+    "author": "Bitdano",
+    "msg": "The phones have to be unlocked to use WM e-sim right?",
+    "id": 1583
+  },
+  {
+    "ts": "2026-01-05T14:33",
+    "author": "ADA ACE WM Ambassador",
+    "msg": "Yes",
+    "id": 1584
+  },
+  {
+    "ts": "2026-01-05T14:39",
+    "author": "R.- B.",
+    "msg": "Or how many tasks we are talking about.",
+    "id": 1585
+  },
+  {
+    "ts": "2026-01-05T14:47",
+    "author": "Calus B",
+    "msg": "Are you asking what the volume of Scout and runner tasks will be?",
+    "id": 1586
+  },
+  {
+    "ts": "2026-01-05T14:48",
+    "author": "R.- B.",
+    "msg": "Yes - and then I am guessting they are assigned at random. So wanted to make a guess of how likely it is to actually get the work",
+    "id": 1587
+  },
+  {
+    "ts": "2026-01-05T14:49",
+    "author": "R.- B.",
+    "msg": "Assuming 3000x3 licences on average",
+    "id": 1588
+  },
+  {
+    "ts": "2026-01-05T14:55",
+    "author": "bkauii_ensō",
+    "msg": "Is Scout and Runner a Sim only task",
+    "id": 1589
+  },
+  {
+    "ts": "2026-01-05T14:55",
+    "author": "Calus B",
+    "msg": "It seems a very least you phone needs to be capable of running sim",
+    "id": 1590
+  },
+  {
+    "ts": "2026-01-05T14:56",
+    "author": "Kay | Will never DM you first",
+    "msg": "https://t.me/c/3692765127/1512",
+    "id": 1591
+  },
+  {
+    "ts": "2026-01-05T14:56",
+    "author": "Calus B",
+    "msg": "We will have to wait for more information of exactly what it needs",
+    "id": 1592
+  },
+  {
+    "ts": "2026-01-05T14:58",
+    "author": "bkauii_ensō",
+    "msg": "Ok thanks",
+    "id": 1593
+  },
+  {
+    "ts": "2026-01-05T15:17",
+    "author": "Kay | Will never DM you first",
+    "msg": "There will be no volume shortage, the demand is huge.",
+    "id": 1594
+  },
+  {
+    "ts": "2026-01-05T15:19",
+    "author": "Nico | NodeX",
+    "msg": "they could have mentioned some figures.",
+    "id": 1595
+  },
+  {
+    "ts": "2026-01-05T15:29",
+    "author": "RS",
+    "msg": "Yes some figures in the verified chat would help…can’t tell if other chats are truthful or just (paid) bashers/swindlers etc.\n\nI still don’t understand if I need to buy a Sim but per Omri it’s part of the process so they will supply an e /sim - that would make sense",
+    "id": 1597
+  },
+  {
+    "ts": "2026-01-05T15:34",
+    "author": "Daniel Ives",
+    "msg": "Yeah be nice to know this as I assume the majority of people that are operating multiple devices haven't sourced sims for them...",
+    "id": 1598
+  },
+  {
+    "ts": "2026-01-05T15:34",
+    "author": "Daniel 🇷🇴",
+    "msg": "esim on android 7?",
+    "id": 1599
+  },
+  {
+    "ts": "2026-01-05T15:35",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Gl with that :))",
+    "id": 1600
+  },
+  {
+    "ts": "2026-01-05T15:39",
+    "author": "Aldigidi",
+    "msg": "Am I bugging or are we getting more revenue today.  Usually I get paid once at night but seems to be receiving at multiple points today.",
+    "id": 1601
+  },
+  {
+    "ts": "2026-01-05T15:40",
+    "author": "Kay | Will never DM you first",
+    "msg": "I noticed the same thing but also assumed I'm buggy",
+    "id": 1602
+  },
+  {
+    "ts": "2026-01-05T15:41",
+    "author": "Aldigidi",
+    "msg": "Maybe we are already scouting 😂",
+    "id": 1603
+  },
+  {
+    "ts": "2026-01-05T15:52",
+    "author": "OC Nodes",
+    "msg": "I think they forgot to connect the validation node in 1.0.8, now the update shows that it is connected. I think this explains the lack of data movement on my phones (or at least it dropped by 75%)",
+    "id": 1604
+  },
+  {
+    "ts": "2026-01-05T15:52",
+    "author": "Kay | Will never DM you first",
+    "msg": "I will forward to the team",
+    "id": 1605
+  },
+  {
+    "ts": "2026-01-05T15:53",
+    "author": "OC Nodes",
+    "msg": "Yeah the pushed an internal update that shows the connection to validation node again: edition 42e61f",
+    "id": 1606
+  },
+  {
+    "ts": "2026-01-05T16:01",
+    "author": "Nashy82",
+    "msg": "Any update on IOS release?",
+    "id": 1607
+  },
+  {
+    "ts": "2026-01-05T16:01",
+    "author": "Kay | Will never DM you first",
+    "msg": "Not at the moment. All the updates are pinned here",
+    "id": 1608
+  },
+  {
+    "ts": "2026-01-05T16:07",
+    "author": "G P",
+    "msg": "Did I miss the Scout and Runner Task on X?",
+    "id": 1609
+  },
+  {
+    "ts": "2026-01-05T16:08",
+    "author": "OC Nodes",
+    "msg": "Yes",
+    "id": 1610
+  },
+  {
+    "ts": "2026-01-05T16:08",
+    "author": "RS",
+    "msg": "Can someone please post a link for world mobile eSIMs for US participation just for my research, I understand it may or may not be necessary-",
+    "id": 1611
+  },
+  {
+    "ts": "2026-01-05T16:08",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] Today's Communication Brief recording link - https://x.com/unitynodesio/status/2008154536364724330?s=46",
+    "id": 1612
+  },
+  {
+    "ts": "2026-01-05T16:08",
+    "author": "Kay | Will never DM you first",
+    "msg": "I believe Charles share it in Unity Chat",
+    "id": 1613
+  },
+  {
+    "ts": "2026-01-05T16:17",
+    "author": "Nico | NodeX",
+    "msg": "[Media] https://worldmobile.io/\n\nUnder phone plans",
+    "id": 1614
+  },
+  {
+    "ts": "2026-01-05T16:19",
+    "author": "Kevin Sorbo’s Hair as Hercules",
+    "msg": "What a good morning eh guys",
+    "id": 1615
+  },
+  {
+    "ts": "2026-01-05T16:22",
+    "author": "Charles",
+    "msg": "We really need that roadmap. I hope the team is working on it.",
+    "id": 1617
+  },
+  {
+    "ts": "2026-01-05T16:25",
+    "author": "James_WM_ENO",
+    "msg": "Do we get given SIM cards then ? Omri said all top up costs are covered… I’m certainly not laying out more money up front",
+    "id": 1618
+  },
+  {
+    "ts": "2026-01-05T16:25",
+    "author": "Calus B",
+    "msg": "We will get clarity on that",
+    "id": 1619
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "James_WM_ENO",
+    "msg": "Seems every ama just generates more questions",
+    "id": 1620
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "Calus B",
+    "msg": "No, it’s just generates different questions as we get deeper into it",
+    "id": 1621
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "is WM the only option for eSims for this task?",
+    "id": 1622
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "Calus B",
+    "msg": "They could honestly probably talk at us for hours about this and not explaining all of it",
+    "id": 1623
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "Kay | Will never DM you first",
+    "msg": "No",
+    "id": 1624
+  },
+  {
+    "ts": "2026-01-05T16:26",
+    "author": "Charles",
+    "msg": "I think today's AMA by itself was decent for the Scout & Runner tasks, but we need new tasks to come available sooner than later or we'll lose ULOs let alone attract new ones. I know this is stating the obvious, but when I hear testing groups for these tasks I'm hearing longer timeframes",
+    "id": 1625
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "J D",
+    "msg": "yeah it was kinda funny. i didnt really learn anything. he was saying like \"just to get you excited full disclosure and just being conservative we will get massive potential from a gamified task that we will involve you in the development of majorly maybe soon.\"",
+    "id": 1626
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "J D",
+    "msg": "he didnt give any conservative fgure for earnings, or delivery date",
+    "id": 1627
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "Calus B",
+    "msg": "Omri certainly address this today at the end of the announcement. Basically saying their attitude is that they have to go deliberately and slow slowly enough to make sure everything is 100% correct but fast enough that people don’t lose interest and that’s the line. They are trying to walk right now.",
+    "id": 1628
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "Lucas",
+    "msg": "They said the scout/runners are super rewarding and will need additional new features to the Unity app to be able to test sim install followed by sim verification\n\nthat is really cool and exciting",
+    "id": 1629
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "J D",
+    "msg": "i guess it was cool he said we struck oil and now we just have to figure out how to get it to everyone haha but thats also very unclear",
+    "id": 1630
+  },
+  {
+    "ts": "2026-01-05T16:28",
+    "author": "Calus B",
+    "msg": "He did say that we should get the first announcement of the staggered rollout in the next few days",
+    "id": 1631
+  },
+  {
+    "ts": "2026-01-05T16:29",
+    "author": "J D",
+    "msg": "i wonder if this oil was always in the roadmap? or if it was already foreseen and on the table like a month ago or what",
+    "id": 1632
+  },
+  {
+    "ts": "2026-01-05T16:29",
+    "author": "Lucas",
+    "msg": "Exactly, stay positive, I really think it will all work out",
+    "id": 1633
+  },
+  {
+    "ts": "2026-01-05T16:30",
+    "author": "Trebor Geogregio",
+    "msg": "Maybe I’m not understanding… for top rewards I need a Sims Card and pay for data service? What?",
+    "id": 1634
+  },
+  {
+    "ts": "2026-01-05T16:31",
+    "author": "Lucas",
+    "msg": "If you listen to the Scout/Runner AMA, toward the end of Omri speach, he said that he was planning on easier cheaper task deployment originally, Josh and Mickey pushed him for the more difficult/rewarding ones",
+    "id": 1635
+  },
+  {
+    "ts": "2026-01-05T16:31",
+    "author": "Kay | Will never DM you first",
+    "msg": "We were told that for particular Scout&Runner tasks SIMs will be needed, but that doesn't mean that that's the case for all the greater tasks: https://t.me/c/3692765127/1511",
+    "id": 1636
+  },
+  {
+    "ts": "2026-01-05T16:32",
+    "author": "Nico | NodeX",
+    "msg": "Massive win if we keep it internal.",
+    "id": 1637
+  },
+  {
+    "ts": "2026-01-05T16:35",
+    "author": "SpideyNode616",
+    "msg": "Hi All! Just joined the verified chat. Seems so much more peaceful here than the public one!\n\nSo, I just wanted to put it out there, I think its time Unity Node Operator's are given the oppertunity of a monthly private AMA with the team. I saw Ambassedors are going to get to do that. Is this something we can organise? \n\nIm not asking for MAJOR secrets, but we need the roadmap, we need some level of understanding of where we are at because I feel like I dont have a clue right now.\n\nIm in the process of organising partnerships/sponsorships and I cant answer the basic questions when asked, It comes across so unprofessional and we only get a first impression once. So, to give us all the BEST shot at a super strong start, this is something that would help.\n\nI want to have everything ready to go when we are past the testing..... but even now, I cant guess if thats weeks, months, Q2,Q3? I honestly have no idea when these kind of business partnerships can effectivly take place.\n\nIs the private AMA something that could possibly happen? WM do it for ENO's and it seems to go well.",
+    "id": 1638
+  },
+  {
+    "ts": "2026-01-05T16:35",
+    "author": "Lucas",
+    "msg": "I encourage you to go listen to the AMA",
+    "id": 1639
+  },
+  {
+    "ts": "2026-01-05T16:38",
+    "author": "Nigel Dennis",
+    "msg": "Hi..a bunch of my phones the green validation inidator is no longer showing?",
+    "id": 1640
+  },
+  {
+    "ts": "2026-01-05T16:38",
+    "author": "Nigel Dennis",
+    "msg": "[Photo]",
+    "id": 1641
+  },
+  {
+    "ts": "2026-01-05T16:38",
+    "author": "Kay | Will never DM you first",
+    "msg": "I forwarded to the team. Meanwhile can you restart the app?",
+    "id": 1643
+  },
+  {
+    "ts": "2026-01-05T16:39",
+    "author": "Daniel 🇷🇴",
+    "msg": "it's an old version; restart app",
+    "id": 1644
+  },
+  {
+    "ts": "2026-01-05T16:39",
+    "author": "Jouni Kuisma",
+    "msg": "Just joined here. Anything particular I should read on the old messages?",
+    "id": 1645
+  },
+  {
+    "ts": "2026-01-05T16:39",
+    "author": "Nigel Dennis",
+    "msg": "Hi Kay yea i tried logging out of a couple and logging back in, but nothing changed! Running updated playstore version",
+    "id": 1646
+  },
+  {
+    "ts": "2026-01-05T16:40",
+    "author": "Kay | Will never DM you first",
+    "msg": "Can you please restart your phone?",
+    "id": 1647
+  },
+  {
+    "ts": "2026-01-05T16:40",
+    "author": "Flippy",
+    "msg": "Fully agree",
+    "id": 1648
+  },
+  {
+    "ts": "2026-01-05T16:40",
+    "author": "Kay | Will never DM you first",
+    "msg": "I saw it helped people",
+    "id": 1649
+  },
+  {
+    "ts": "2026-01-05T16:40",
+    "author": "Nigel Dennis",
+    "msg": "Ok will give that a try",
+    "id": 1650
+  },
+  {
+    "ts": "2026-01-05T16:41",
+    "author": "Daniel 🇷🇴",
+    "msg": "the latest build is f70276",
+    "id": 1651
+  },
+  {
+    "ts": "2026-01-05T16:42",
+    "author": "Janilom81",
+    "msg": "If you are in the US, Google Fi also has data only plans where you can put 4 SIMs on the same data only plan.\nThey mail the physical SIM.",
+    "id": 1652
+  },
+  {
+    "ts": "2026-01-05T16:43",
+    "author": "Nigel Dennis",
+    "msg": "Yep complete phone restart did the trick",
+    "id": 1653
+  },
+  {
+    "ts": "2026-01-05T16:44",
+    "author": "Nigel Dennis",
+    "msg": "Thanks mate",
+    "id": 1654
+  },
+  {
+    "ts": "2026-01-05T16:44",
+    "author": "Daniel 🇷🇴",
+    "msg": "but you need voice also as per latest ama",
+    "id": 1655
+  },
+  {
+    "ts": "2026-01-05T16:49",
+    "author": "James_WM_ENO",
+    "msg": "It was said that all top ups and costs are covered by the company… \nSo they will provide the SIM cards correct ? Really need to clarify this one point, I’m not going to purchase 10 SIM card plans in the hope that I ‘may’ get refunded",
+    "id": 1657
+  },
+  {
+    "ts": "2026-01-05T16:50",
+    "author": "Janilom81",
+    "msg": "I think they said more clarification in the coming days. This was the 1st briefing. You don't get all the deets in a first briefing. It's brief.",
+    "id": 1658
+  },
+  {
+    "ts": "2026-01-05T16:51",
+    "author": "Janilom81",
+    "msg": "I dont think anyone should be purchasing anything until they know what we are actually doing. Just my opinion though. Everyone is free to do what they want.",
+    "id": 1659
+  },
+  {
+    "ts": "2026-01-05T16:55",
+    "author": "James_WM_ENO",
+    "msg": "This seems a task aimed at ULO’s on their daily phones.. let’s hope the market place comes alive and licences get taken",
+    "id": 1660
+  },
+  {
+    "ts": "2026-01-05T16:59",
+    "author": "Daniel 🇷🇴",
+    "msg": "AMA's are useless imo; \nverba volant...",
+    "id": 1661
+  },
+  {
+    "ts": "2026-01-05T17:07",
+    "author": "SpideyNode616",
+    "msg": "Public AMA's yes..... private AMA's? No...... more info can be shared but also more blunt conversations can be had.\n\nPublic AMA's are more a promotional thing and theyre to ask questions, but not really the place to bring up concerns as you still want the public image to remain positive. Private is business. I havent spent $20,000 on nodes not to speak my mind when I have concerns..... I won't do it in public because I don't think it's appropriate or fair on the team to put them in that position. but in a private AMA i'd be more than happy to make clear my concerns. In a respectful way of course.",
+    "id": 1662
+  },
+  {
+    "ts": "2026-01-05T17:21",
+    "author": "Willian | Nuvola",
+    "msg": "Gm Everyone. 🙏\n\nDo we know if these are high frequency tasks? Meaning, will most the the ULOs be able to participate on a constant basis (daily), considering of course they check all boxes needed (allowed location, SIM activated (whatever that entails), etc.)\n\nTnks",
+    "id": 1663
+  },
+  {
+    "ts": "2026-01-05T17:22",
+    "author": "Willian | Nuvola",
+    "msg": "@defiants_kay",
+    "id": 1664
+  },
+  {
+    "ts": "2026-01-05T17:23",
+    "author": "Kay | Will never DM you first",
+    "msg": "There will be no volume shortage, the demand is huge, if that's what you are asking",
+    "id": 1665
+  },
+  {
+    "ts": "2026-01-05T17:24",
+    "author": "Willian | Nuvola",
+    "msg": "Good to know. 👏",
+    "id": 1666
+  },
+  {
+    "ts": "2026-01-05T17:24",
+    "author": "Jouni Kuisma",
+    "msg": "Gotta ask - you have said the demand is huge a couple of times already. Do you have some concrete info about that, or is it based on what Josh said earlier on one of the AMAs?",
+    "id": 1667
+  },
+  {
+    "ts": "2026-01-05T17:25",
+    "author": "Kay | Will never DM you first",
+    "msg": "It is information shared by the team :)",
+    "id": 1668
+  },
+  {
+    "ts": "2026-01-05T17:26",
+    "author": "Ricky",
+    "msg": "[Media] @defiants_kay \n\nNo words for my replies to your “we never said that” msgs in other group?? Pl stop insulting ppl by saying “we didnt say that”.\n\nI stop it here NOW.\n\nhttps://t.me/unitynodes/48008",
+    "id": 1669
+  },
+  {
+    "ts": "2026-01-05T17:28",
+    "author": "Kay | Will never DM you first",
+    "msg": "Ricky, I'm not sure what you want me to say here. You asked \"doesn't it mean that roadmap was supposed to be before 29th?\" -> I said \"we didn't get roadmap date\", so I won't be able to answer. If you are asking for my personal opinion, then I would like not to speculate.\n\nWe don't currently have and didn't get any date of the roadmap. All we know that the team is currently working on it.",
+    "id": 1670
+  },
+  {
+    "ts": "2026-01-05T17:31",
+    "author": "Ricky",
+    "msg": "As u wanna reword\nI won’t comment on ur personal opinion and I respect your position \n\nBut\n\nI did mean what I said about failed timelines (as given in 12 Dec AMA) and no acknowledgement of that by team\nN you saying “we didn’t have roadmap date” \n\nPeace ☮️",
+    "id": 1671
+  },
+  {
+    "ts": "2026-01-05T17:34",
+    "author": "Lucas",
+    "msg": "There is a failed roadmap or deliverable, it has been acknowledge by the team\n\nrepeating that over and over does not make the roadmap available or the next task available\nWhat do you want from someone saying there is delay, we all know it happened",
+    "id": 1672
+  },
+  {
+    "ts": "2026-01-05T17:37",
+    "author": "Lucas",
+    "msg": "Kay, is helping around, also does not have a crystal ball with all the answer",
+    "id": 1673
+  },
+  {
+    "ts": "2026-01-05T17:37",
+    "author": "Willian | Nuvola",
+    "msg": "I was mainly asking after listening to the scout side of the job with the hard to find information and earning only if that information is deemed correct.",
+    "id": 1674
+  },
+  {
+    "ts": "2026-01-05T17:37",
+    "author": "Lucas",
+    "msg": "everyone is waiting for the road map",
+    "id": 1675
+  },
+  {
+    "ts": "2026-01-05T17:38",
+    "author": "Lucas",
+    "msg": "Can we at least be positive until we can participate to the Scout/runner tasks\n\nI am excited about this happening personnally",
+    "id": 1676
+  },
+  {
+    "ts": "2026-01-05T17:39",
+    "author": "Willian | Nuvola",
+    "msg": "Yeah! I'm sure it's coming probably this month as mentioned by Josh. \n\nJanuary is the starting point for many things to come.",
+    "id": 1677
+  },
+  {
+    "ts": "2026-01-05T17:49",
+    "author": "Charles",
+    "msg": "When withdrawing, is ETH the only working option? I get 'No quote available' on all other chains",
+    "id": 1678
+  },
+  {
+    "ts": "2026-01-05T17:50",
+    "author": "Kay | Will never DM you first",
+    "msg": "I saw people withdrawing on Cardano. Could you please clear cache and retry?",
+    "id": 1679
+  },
+  {
+    "ts": "2026-01-05T17:51",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Can you start withdrawing? \nI only have 3ups though 😅",
+    "id": 1680
+  },
+  {
+    "ts": "2026-01-05T17:51",
+    "author": "Nixinzim",
+    "msg": "Withdrawing has been enabled a while ago, but you have to have at least 5UPS to withdraw",
+    "id": 1681
+  },
+  {
+    "ts": "2026-01-05T17:52",
+    "author": "Calus B",
+    "msg": "Get more phones 🙂",
+    "id": 1682
+  },
+  {
+    "ts": "2026-01-05T17:52",
+    "author": "Calus B",
+    "msg": "I stupidly split up my phones and just recently hit 5 on my first node",
+    "id": 1683
+  },
+  {
+    "ts": "2026-01-05T17:52",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Yes I want to have 10 phone farm at home to be honest and lease the rest. \nStill waiting on feedback on which phones to get to use Unity ULOs on",
+    "id": 1684
+  },
+  {
+    "ts": "2026-01-05T17:53",
+    "author": "Calus B",
+    "msg": "Nice",
+    "id": 1685
+  },
+  {
+    "ts": "2026-01-05T17:53",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Best price/unity quality hehe",
+    "id": 1686
+  },
+  {
+    "ts": "2026-01-05T17:53",
+    "author": "Bitdano",
+    "msg": "Moto g works great",
+    "id": 1687
+  },
+  {
+    "ts": "2026-01-05T17:53",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "I heard yes 👍🏻",
+    "id": 1688
+  },
+  {
+    "ts": "2026-01-05T17:54",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Any in specific or all good overall?",
+    "id": 1689
+  },
+  {
+    "ts": "2026-01-05T17:54",
+    "author": "Bitdano",
+    "msg": "I bought new at walmart 30.00",
+    "id": 1691
+  },
+  {
+    "ts": "2026-01-05T17:54",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Nice",
+    "id": 1692
+  },
+  {
+    "ts": "2026-01-05T17:55",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Im looking at OSCAL for 80€ running Android 15 \nWaiting for a mate of mine to test it on Unity as its his main phone",
+    "id": 1693
+  },
+  {
+    "ts": "2026-01-05T17:59",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Any possibility to relisten to the Scout & Runner Briefing on X? I listened to half of it and would like to hear what I missed",
+    "id": 1695
+  },
+  {
+    "ts": "2026-01-05T17:59",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] Today's Communication Brief recording link - https://x.com/unitynodesio/status/2008154536364724330?s=46",
+    "id": 1696
+  },
+  {
+    "ts": "2026-01-05T17:59",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Thanks Kay",
+    "id": 1697
+  },
+  {
+    "ts": "2026-01-05T18:06",
+    "author": "Charles",
+    "msg": "Thanks, that fixed the Cardano option. The others still don't work.",
+    "id": 1698
+  },
+  {
+    "ts": "2026-01-05T18:08",
+    "author": "Charles",
+    "msg": "There's also a $1 withdrawal fee, so you'll have to keep chasing those 0.13 UPS a little while longer",
+    "id": 1699
+  },
+  {
+    "ts": "2026-01-05T18:19",
+    "author": "Daniel 🇷🇴",
+    "msg": "fee? on which chain?",
+    "id": 1701
+  },
+  {
+    "ts": "2026-01-05T18:25",
+    "author": "Charles",
+    "msg": "ETH and Cardano, the only options that work for me at least",
+    "id": 1702
+  },
+  {
+    "ts": "2026-01-05T18:26",
+    "author": "Daniel 🇷🇴",
+    "msg": "indeed: $0.95 fee atm",
+    "id": 1703
+  },
+  {
+    "ts": "2026-01-05T18:28",
+    "author": "Charles",
+    "msg": "That's a steal, it was $1.10 for me earlier",
+    "id": 1704
+  },
+  {
+    "ts": "2026-01-05T18:35",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] amazing",
+    "id": 1705
+  },
+  {
+    "ts": "2026-01-05T18:41",
+    "author": "Daniel 🇷🇴",
+    "msg": "I think that's time for a reminder ( @defiants_kay )\n**\nCore service model:**\n1. Your CLI/SMS service tests routes on-demand for paying customers - is that correct?\n2. This is different from monitoring live network traffic for fraud - correct?\n3. You describe Unity as providing \"complementary\" fraud detection - complementary to what primary systems?\n4. Do you position Unity as an addition to existing fraud management systems (FMS) or as a standalone solution?\n5. How does sporadic testing (your model) compare to continuous live traffic analysis (traditional FMS)?",
+    "id": 1706
+  },
+  {
+    "ts": "2026-01-05T18:51",
+    "author": "Trebor Geogregio",
+    "msg": "Is there information i missed..? SIMS? TASK? There is nothing on my Licenses that show the",
+    "id": 1707
+  },
+  {
+    "ts": "2026-01-05T18:52",
+    "author": "Trebor Geogregio",
+    "msg": "Scout & Runner app? Where do i get information.",
+    "id": 1708
+  },
+  {
+    "ts": "2026-01-05T18:52",
+    "author": "Flippy",
+    "msg": "Stay tuned",
+    "id": 1709
+  },
+  {
+    "ts": "2026-01-05T18:52",
+    "author": "Flippy",
+    "msg": "Thats all you need to know",
+    "id": 1710
+  },
+  {
+    "ts": "2026-01-05T18:53",
+    "author": "Flippy",
+    "msg": "*we",
+    "id": 1711
+  },
+  {
+    "ts": "2026-01-05T18:53",
+    "author": "Calus B",
+    "msg": "The update on x was good today if you can listen to it. Shares what we can expect over the coming weeks",
+    "id": 1712
+  },
+  {
+    "ts": "2026-01-05T18:53",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] General description of Scout&Runner tasks was shared in today's space:\n\nToday's Communication Brief recording link - https://x.com/unitynodesio/status/2008154536364724330?s=46",
+    "id": 1713
+  },
+  {
+    "ts": "2026-01-05T18:54",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Good evening UNOs",
+    "id": 1714
+  },
+  {
+    "ts": "2026-01-05T18:54",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "We need to wait a few days before the team starts running up S&R tasks alpha group",
+    "id": 1715
+  },
+  {
+    "ts": "2026-01-05T18:58",
+    "author": "Rex Vulgaris",
+    "msg": "Am guessing this is the group to be in",
+    "id": 1716
+  },
+  {
+    "ts": "2026-01-05T19:00",
+    "author": "Trebor Geogregio",
+    "msg": "Yeah ,, I heard it… but nothing about sim’s cards…do we need to buy 200 sims + data ?",
+    "id": 1717
+  },
+  {
+    "ts": "2026-01-05T19:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "No, that's for that specific task type",
+    "id": 1718
+  },
+  {
+    "ts": "2026-01-05T19:00",
+    "author": "Trebor Geogregio",
+    "msg": "If it means progress I have the funds for",
+    "id": 1719
+  },
+  {
+    "ts": "2026-01-05T19:01",
+    "author": "Trebor Geogregio",
+    "msg": "Despite my Bitching…I’m all in.. and I did like the Scout & Runner session….",
+    "id": 1720
+  },
+  {
+    "ts": "2026-01-05T19:10",
+    "author": "ale2159",
+    "msg": "Lots of msgs to catch up on — any alpha that I should know about? 🫡",
+    "id": 1721
+  },
+  {
+    "ts": "2026-01-05T19:18",
+    "author": "Daniel 🇷🇴",
+    "msg": "Can't wait for Delta task group 🙃",
+    "id": 1722
+  },
+  {
+    "ts": "2026-01-05T19:19",
+    "author": "Aldigidi",
+    "msg": "Operation grab and run",
+    "id": 1723
+  },
+  {
+    "ts": "2026-01-05T19:32",
+    "author": "Manuel Flores",
+    "msg": "Hey bro,  question I don't have chance to listen the AMA this morning because I was working. I see a lot of people talking about cell phone with sim .For the new task The phones need to have sim ?",
+    "id": 1725
+  },
+  {
+    "ts": "2026-01-05T19:33",
+    "author": "OC Nodes",
+    "msg": "I wish there was some typed up official announcements following the AMA today or tomorrow to explain what Scout and Runner is. It all sounds really exciting honestly.. can't wait!!",
+    "id": 1726
+  },
+  {
+    "ts": "2026-01-05T19:33",
+    "author": "Kay | Will never DM you first",
+    "msg": "Check out: https://t.me/c/3692765127/1511",
+    "id": 1727
+  },
+  {
+    "ts": "2026-01-05T19:44",
+    "author": "Loop ENO | ANO | UNO (granddad2)",
+    "msg": "In UK got new Moto-e15 from Argos £49 without eSIM so under warranty. Extra £5 from Asda for sim. Expensive option for phone farms",
+    "id": 1728
+  },
+  {
+    "ts": "2026-01-05T19:56",
+    "author": "PRANA",
+    "msg": "Force stop the app",
+    "id": 1729
+  },
+  {
+    "ts": "2026-01-05T19:59",
+    "author": "Super Solo",
+    "msg": "alright. I'm in...",
+    "id": 1731
+  },
+  {
+    "ts": "2026-01-05T20:01",
+    "author": "Super Solo",
+    "msg": "ok. first question: do we need to have a SIM card active in a phone who wants to run the scout/runner tasks please?",
+    "id": 1732
+  },
+  {
+    "ts": "2026-01-05T20:02",
+    "author": "Willian | Nuvola",
+    "msg": "[Media] 🤝 Unity Network - End of Round 1\n\nRound 1 concludes on 4 February 2026.\n\nRound 2 will be priced at USD 10,000 per Unity Node. Complementary MNTx and WMTx allocated in Round 2 will be subject to a 5-year lock-up period.\n\nParticipants in Round 2 will not be eligible for the exclusive long term permanent privilege communicated during Round 1.\n\n🔗 https://x.com/UnityNodesIO/status/2008267591241142599\n\n🤝 Official Unity Resources\nUnity | Unity Litepaper | QR Code Login | Manage | Telegram | X | YouTube | Bug Report | Verification Bot",
+    "id": 1733
+  },
+  {
+    "ts": "2026-01-05T20:02",
+    "author": "Willian | Nuvola",
+    "msg": "🤝🏆✅️",
+    "id": 1734
+  },
+  {
+    "ts": "2026-01-05T20:03",
+    "author": "R.- B.",
+    "msg": "Hey Kay, thank you for all the work you ! And I can appreciate that you don’t always know enough, but what I find hard is there is never a number and sometimes a date. If it is possible could we work more with numbers, instead of “huge” and “a lot”. Don’t know if it works but I would love it if we stay away from anything descriptive. \nThanks!!",
+    "id": 1735
+  },
+  {
+    "ts": "2026-01-05T20:03",
+    "author": "PRANA",
+    "msg": "$10k must be pretty confident on the rewards inbound 💰",
+    "id": 1736
+  },
+  {
+    "ts": "2026-01-05T20:03",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Photo] **🤝**** Unity Network - End of Round 1**\n\nRound 1 concludes on 4 February 2026.\n\nRound 2 will be priced at USD 10,000 per Unity Node. Complementary MNTx and WMTx allocated in Round 2 will be subject to a 5-year lock-up period.\n\nParticipants in Round 2 will not be eligible for the exclusive long term permanent privilege communicated during Round 1.\n\n🔗 https://x.com/UnityNodesIO/status/2008267591241142599\n\n🤝 **Official Unity** **Resources**\n[**Unity**](https://unitynodes.io/) | [**Unity Litepaper**](https://unitynodes.io/documents/litepaper.pdf) | [**QR Code Login**](https://uno.unitynodes.io/) | [**Manage**](https://manage.unitynodes.io/) | [**Telegram**](https://t.me/unitynodes) | [**X**](https://x.com/UnityNodesIO) | [**YouTube**](https://youtube.com/@UnityNodesIO) | [**Bug Report**](https://unitynodes.io/bug-report) | [**Verification Bot**](https://t.me/UnityNetworkVerificationBot)",
+    "id": 1737
+  },
+  {
+    "ts": "2026-01-05T20:04",
+    "author": "Rex Vulgaris",
+    "msg": "Looks like they expect to deliver before Feb",
+    "id": 1739
+  },
+  {
+    "ts": "2026-01-05T20:05",
+    "author": "Willian | Nuvola",
+    "msg": "Things are starting to happen faster now. \n\n#Sprints",
+    "id": 1740
+  },
+  {
+    "ts": "2026-01-05T20:05",
+    "author": "Janilom81",
+    "msg": "One of the more recent AMAs when asked about job rewards. Josh said \"let's let the rewards speak for themselves.\"\n\nI'm prepping for what's coming.",
+    "id": 1741
+  },
+  {
+    "ts": "2026-01-05T20:06",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "so prob no new tasks before Feb??",
+    "id": 1742
+  },
+  {
+    "ts": "2026-01-05T20:12",
+    "author": "Flavius",
+    "msg": "Inb4 round 2 delayed 🤣",
+    "id": 1743
+  },
+  {
+    "ts": "2026-01-05T20:13",
+    "author": "Janilom81",
+    "msg": "The 1st, 3rd party app on Unity's composable system. New expert on board. Exciting stuff.\n\nWonder who the 3rd party is.",
+    "id": 1744
+  },
+  {
+    "ts": "2026-01-05T20:13",
+    "author": "Zolee",
+    "msg": "I’m excited about the Scout and Runner tasks 👏🏻",
+    "id": 1745
+  },
+  {
+    "ts": "2026-01-05T20:18",
+    "author": "Mat",
+    "msg": "Sorry if I missed this Re round 1of UNO purchases but what exactly was the \"exclusive long term permanent privilege communicated during Round 1.\"",
+    "id": 1746
+  },
+  {
+    "ts": "2026-01-05T20:18",
+    "author": "Kay | Will never DM you first",
+    "msg": "Information on the exclusive long term permanent privilege will be released in an up and coming announcement.",
+    "id": 1747
+  },
+  {
+    "ts": "2026-01-05T20:20",
+    "author": "Mat",
+    "msg": "Oh OK, good so I did not miss anything. Would guess we would want to reveal this before round 1 finishes so to drive node sales?",
+    "id": 1748
+  },
+  {
+    "ts": "2026-01-05T20:22",
+    "author": "Rex Vulgaris",
+    "msg": "The total opposite…..",
+    "id": 1749
+  },
+  {
+    "ts": "2026-01-05T20:23",
+    "author": "Rex Vulgaris",
+    "msg": "Just think about it logically",
+    "id": 1750
+  },
+  {
+    "ts": "2026-01-05T20:23",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Why the increase from 5k to 10k per node?",
+    "id": 1751
+  },
+  {
+    "ts": "2026-01-05T20:24",
+    "author": "Nixinzim",
+    "msg": "I'm thinking because the rewards are going to be good enough to warrant this price increase",
+    "id": 1752
+  },
+  {
+    "ts": "2026-01-05T20:24",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "so you can buy more now while its hot ;) otherwise why announce price increase now while R1 is still going, other then hype it a bit",
+    "id": 1753
+  },
+  {
+    "ts": "2026-01-05T20:25",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Yes I understand that haha but whats the actual reason? Just so everybody buys out now on round 1?",
+    "id": 1754
+  },
+  {
+    "ts": "2026-01-05T20:25",
+    "author": "Nixinzim",
+    "msg": "Yes, while they are $5000",
+    "id": 1755
+  },
+  {
+    "ts": "2026-01-05T20:25",
+    "author": "Nixinzim",
+    "msg": "If rewards are good, it will create FOMO",
+    "id": 1756
+  },
+  {
+    "ts": "2026-01-05T20:26",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Exactly",
+    "id": 1757
+  },
+  {
+    "ts": "2026-01-05T20:26",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Not good yet",
+    "id": 1758
+  },
+  {
+    "ts": "2026-01-05T20:26",
+    "author": "Daniel 🇷🇴",
+    "msg": "if rewards are good, it'll sell-out in 6hrs",
+    "id": 1759
+  },
+  {
+    "ts": "2026-01-05T20:27",
+    "author": "ale2159",
+    "msg": "How many rounds are left?",
+    "id": 1760
+  },
+  {
+    "ts": "2026-01-05T20:27",
+    "author": "Nixinzim",
+    "msg": "Hopefully the Scout and Runner rewards will be good as implied by Omri today",
+    "id": 1761
+  },
+  {
+    "ts": "2026-01-05T20:27",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "maybe that's why the push for this rewarding task before others, strategically makes sense in a way",
+    "id": 1762
+  },
+  {
+    "ts": "2026-01-05T20:28",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Fingers crossed 🤞🏼",
+    "id": 1763
+  },
+  {
+    "ts": "2026-01-05T20:29",
+    "author": "James_WM_ENO",
+    "msg": "It’s pushing the normal person to run on every day phones right.. should be a better way to get ULO’s in hopefully",
+    "id": 1764
+  },
+  {
+    "ts": "2026-01-05T20:30",
+    "author": "James_WM_ENO",
+    "msg": "As much as I would like my 8 phones to have SIM cards.. I’d rather lease out 100 licences at 60/40",
+    "id": 1765
+  },
+  {
+    "ts": "2026-01-05T20:30",
+    "author": "James_WM_ENO",
+    "msg": "For starters",
+    "id": 1766
+  },
+  {
+    "ts": "2026-01-05T20:32",
+    "author": "Daniel 🇷🇴",
+    "msg": "Think that this new task will be ready till R2 start? nah",
+    "id": 1767
+  },
+  {
+    "ts": "2026-01-05T20:35",
+    "author": "Bitdano",
+    "msg": "Not if your making 100 a month its not",
+    "id": 1769
+  },
+  {
+    "ts": "2026-01-05T20:45",
+    "author": "Trebor Geogregio",
+    "msg": "Has anyone input Unity App Business structure into Grok…and see what AI thinks about the whole thing.",
+    "id": 1770
+  },
+  {
+    "ts": "2026-01-05T20:46",
+    "author": "Rob | Nexus Nodes",
+    "msg": "Nice. the confidence the team has speaks volumes with that increase in round 2! A golden age of unity is ahead of us!",
+    "id": 1771
+  },
+  {
+    "ts": "2026-01-05T20:50",
+    "author": "Loop ENO | ANO | UNO (granddad2)",
+    "msg": "Yep meant at the moment, no dig at farmers just not within my funds otherwise I would be there tomorrow 🫡",
+    "id": 1772
+  },
+  {
+    "ts": "2026-01-05T20:53",
+    "author": "Bitdano",
+    "msg": "Small farm is the way",
+    "id": 1773
+  },
+  {
+    "ts": "2026-01-05T20:54",
+    "author": "G P",
+    "msg": "Quick question, has anyone had minting issues through a Ledger attached to MM?",
+    "id": 1774
+  },
+  {
+    "ts": "2026-01-05T20:54",
+    "author": "G P",
+    "msg": "Is it even feasible?",
+    "id": 1775
+  },
+  {
+    "ts": "2026-01-05T21:00",
+    "author": "Daniel 🇷🇴",
+    "msg": "no issues here",
+    "id": 1776
+  },
+  {
+    "ts": "2026-01-05T21:01",
+    "author": "Charles",
+    "msg": "That’s my setup, has never failed me",
+    "id": 1777
+  },
+  {
+    "ts": "2026-01-05T21:02",
+    "author": "Mat",
+    "msg": "Yip, works fine.",
+    "id": 1778
+  },
+  {
+    "ts": "2026-01-05T21:12",
+    "author": "Willian | Nuvola",
+    "msg": "Are we possibly having the credit card purchased enabled for US prior R2, @defiants_kay ? \n\nSome people are asking in my DMs.\n\nTnks",
+    "id": 1781
+  },
+  {
+    "ts": "2026-01-05T21:12",
+    "author": "Miro K",
+    "msg": "Of all models you would choose Grok? :) anyway i sent it to a t-mobile b2b guy i know and agree that premise is very promising and it depends on unity business development team how skillful + lucky they get with deals in enterprise b2b.\nMuch better listen to people from industry then from predictive llm models. No matter how of a real-like analysis it can produce, it is (for now) only llm based on probability.",
+    "id": 1782
+  },
+  {
+    "ts": "2026-01-05T21:16",
+    "author": "Loop ENO | ANO | UNO (granddad2)",
+    "msg": "That is what I am thinking reading the chat 👍 just need IOS 🙏. It’s a nice feeling finding a few in the draws from the kids flipping over the years.",
+    "id": 1783
+  },
+  {
+    "ts": "2026-01-05T21:19",
+    "author": "OC Nodes",
+    "msg": "The briefing today on Scout and Runner is really bullish. Inspiring a lot of confidence. I think as soon as the Alpha testing starts and we see app stability and tasks people will want to buy more Nodes. I don't know if there will be even any left for round 2. I won't buy another one now but I'm in for a last one if I get the chance to be an alpha tester and see some results. I have friends who are also wanting to buy now once they heard about round 2. The team has one beautiful month to deliver some good progress. Also I love what Omri said about delivering weekly updates.",
+    "id": 1784
+  },
+  {
+    "ts": "2026-01-05T21:36",
+    "author": "Mat",
+    "msg": "OK, I wanted to get a little more clarity on the Scout and Runner comms event so used a little speech to text and then queried it a little...\nScout — definition and responsibilities\n\nA Scout is a discovery-and-verification role that operates at the edge of the Unity network.\n\nFrom the meeting:\n\nWhat actions a Scout performs:\nOperates with a real device, real SIM, and real carrier connectivity.\nUncovers telecom information that exists locally or can be reached remotely.\nTargets information that is hard to find and very hard to automate.\n\nActively verifies discovered information by:\nActivating a SIM.\nConfirming voice, SMS, and data functionality on the target network.\n\nWhat signals it generates\nProduces verified telecom facts (reachability, network behavior, identity of routes or interconnect characteristics as applicable to the task).\nOnce verified, the data becomes trusted input for the network.\n\nHow Unity uses those signals\nVerified Scout data is ingested into Unity as trusted groundwork.\nThis data enables downstream execution tasks (Runner tasks).\nScout outputs form the first step in a closed operational loop.\n\nRequirements, constraints, examples\nScouts must use real SIMs on real carrier networks.\nNo improvisation: verification must be exact.\nAll credits and top-ups required (SIM, calls, SMS, data) are paid by the issuer, not the operator.\nIf the information is correct and verified, the Scout earns.\nConceptual framing used by the speaker: “Discover” is the Scout phase.\n\nRunner — definition and responsibilities\nA Runner is an execution role that acts on trusted information produced by Scouts.\n\nFrom the meeting:\nWhat actions a Runner performs\nOperates with an active SIM on the concerned network.\nExecutes pre-defined, non-improvised actions, such as:\nMaking calls.\nSending messages.\nUsing data in a specified way.\nPerforms tasks exactly as configured by the issuer.\n\nHow it differs from Scout\nScout discovers and verifies information.\nRunner executes deterministic actions using that verified information.\nScout work establishes trust; Runner work exploits that trust to perform measurable telecom tests.\n\nWhat signals it generates\nProduces execution results from live telecom activity:\nCall behavior.\nMessaging behavior.\nData usage outcomes.\nEach completed Runner task emits a measurable result and earns a reward.\n\nRequirements, constraints, examples\nAccuracy is emphasized repeatedly: “nothing is improvised and accuracy matters.”\nRunner tasks depend on Scout outputs and form a handshake / loop with them.\nConceptual framing used by the speaker: “Execute” is the Runner phase.\n\nUNO Operator tasks and expectations\nFrom the meeting, UNO operators are expected to act as hands-on participants, not passive node holders.\nOnboarding steps\nRegister via Unity-provided forms for specific release groups (closed alpha → beta → public).\nMeet defined criteria for participation (varies by release group).\nOperate real devices with real SIMs on real carrier networks.\nDaily or periodic responsibilities\nRun Scout and/or Runner tasks as assigned.\nPerform real telecom actions (verification or execution) exactly as specified.\nActively test usability and task flow during early release phases.\nInteraction with Scout and Runner task families\n\nScouts: discover and verify hard-to-automate telecom information.\nRunners: execute defined telecom actions using Scout-verified data.\n\nOperators may participate in one or both roles depending on eligibility and task design.\n\nWhat success looks like\nAccurate, repeatable execution at scale.\nA system that works not just for telecom experts, but can scale from hundreds to millions of participants.\nData that is trusted, usable, and valuable to issuing telecom partners.",
+    "id": 1785
+  },
+  {
+    "ts": "2026-01-05T21:36",
+    "author": "Mat",
+    "msg": "Contextual notes from the meeting\n\nScout and Runner are described as two characters in a closed loop:\nDiscover → Verify → Execute\n\nThe rollout is phased:\nClosed alpha first.\nRapid progression through additional groups.\nFrequent communication events planned.\n\nIncentives are emphasized:\nScout earns when information is correct and verified.\nRunner earns per completed task.\nIssuers cover all operational telecom costs (credits, top-ups).\n\nQuality over improvisation:\nReal networks, real devices, real behavior.\nAccuracy and repeatability are repeatedly stressed as non-negotiable.\n\nStrategic intent:\nThese roles are positioned as the foundation for a much larger set of high-value telecom tasks once usability and scalability are proven.",
+    "id": 1786
+  },
+  {
+    "ts": "2026-01-05T21:41",
+    "author": "Daniel 🇷🇴",
+    "msg": "question:\nwhy a telecom company would give tasks to do to a company (Unity) which is the sister/brother company of another telecom company (WM)\nit's clearly a conflict of interests",
+    "id": 1789
+  },
+  {
+    "ts": "2026-01-05T21:46",
+    "author": "Willian | Nuvola",
+    "msg": "The same way they are probably giving these jobs to 3rd party companies anyways, that most likely provide the same service to other telcos.",
+    "id": 1790
+  },
+  {
+    "ts": "2026-01-05T21:47",
+    "author": "Willian | Nuvola",
+    "msg": "They much rather go with the edge network inho. More reliable, spread out and likely cheaper",
+    "id": 1791
+  },
+  {
+    "ts": "2026-01-05T21:48",
+    "author": "Daniel 🇷🇴",
+    "msg": "how unity would pass due diligence from other telcos when they are competitors?",
+    "id": 1792
+  },
+  {
+    "ts": "2026-01-05T21:50",
+    "author": "Willian | Nuvola",
+    "msg": "Unity is a stand alone company which complies with industry's requirements and policies worldwide.",
+    "id": 1793
+  },
+  {
+    "ts": "2026-01-05T21:51",
+    "author": "Daniel 🇷🇴",
+    "msg": "[Photo] not quite; see WM logo?",
+    "id": 1795
+  },
+  {
+    "ts": "2026-01-05T21:53",
+    "author": "Willian | Nuvola",
+    "msg": "Well, I guess telcos will have the liberty to either stay with their current providers or go with Unity, which will have a birds eye view in their network regardless via the ULOs. 🤷🏻‍♂️",
+    "id": 1796
+  },
+  {
+    "ts": "2026-01-05T21:55",
+    "author": "Willian | Nuvola",
+    "msg": "Maybe I'm looking at this in a completely wrong way but saving costs is always an enticing proposition to any business.",
+    "id": 1797
+  },
+  {
+    "ts": "2026-01-05T21:56",
+    "author": "Kay | Will never DM you first",
+    "msg": "Not competing. Providing services to, and for.",
+    "id": 1798
+  },
+  {
+    "ts": "2026-01-05T22:13",
+    "author": "OC Nodes",
+    "msg": "[Photo] Last 7 day and today earnings no longer displaying correctly in UNO view of the various ULOs. Only showing totals",
+    "id": 1799
+  },
+  {
+    "ts": "2026-01-05T22:13",
+    "author": "Nico | NodeX",
+    "msg": "It resets on monday",
+    "id": 1800
+  },
+  {
+    "ts": "2026-01-05T22:13",
+    "author": "OC Nodes",
+    "msg": "Ooh",
+    "id": 1801
+  },
+  {
+    "ts": "2026-01-05T22:30",
+    "author": "Willian | Nuvola",
+    "msg": "🚨1.0.9 version is live.",
+    "id": 1802
+  },
+  {
+    "ts": "2026-01-05T22:35",
+    "author": "Willian | Nuvola",
+    "msg": "Unity App 1.0.9 (apk: f6d0ee play_store: 438baa)\n\n  - Delayed disconnection notification to prevent false alerts.\n  - Minor housekeeping",
+    "id": 1803
+  },
+  {
+    "ts": "2026-01-05T23:01",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Hey Node Holders, how we doing?",
+    "id": 1804
+  },
+  {
+    "ts": "2026-01-05T23:04",
+    "author": "OC Nodes",
+    "msg": "Installed!",
+    "id": 1805
+  },
+  {
+    "ts": "2026-01-05T23:12",
+    "author": "Willian | Nuvola",
+    "msg": "It appears this new version 1.0.9 introduced a translation button. 👀\n\nAnyone else got that feedback from ULOs?",
+    "id": 1806
+  },
+  {
+    "ts": "2026-01-05T23:15",
+    "author": "Willian | Nuvola",
+    "msg": "Nvm, my ULO got confused. 😅",
+    "id": 1807
+  },
+  {
+    "ts": "2026-01-05T23:18",
+    "author": "Willian | Nuvola",
+    "msg": "Yeah, she saw the play store toggle and just said:\n\n\"I Love the new option for translation\" 🤣🤣🤣",
+    "id": 1809
+  },
+  {
+    "ts": "2026-01-05T23:21",
+    "author": "Trebor Geogregio",
+    "msg": "Where? Screen shot it",
+    "id": 1810
+  },
+  {
+    "ts": "2026-01-05T23:25",
+    "author": "Willian | Nuvola",
+    "msg": "It was a false alarm. No app translation yet",
+    "id": 1812
+  },
+  {
+    "ts": "2026-01-05T23:29",
+    "author": "Bitdano",
+    "msg": "Good.. Because, you know someone's gonna complain about it",
+    "id": 1813
+  },
+  {
+    "ts": "2026-01-05T23:30",
+    "author": "Willian | Nuvola",
+    "msg": "🤷🏻‍♂️\n\nIt's not a normal day if there's no complaints about something.",
+    "id": 1814
+  },
+  {
+    "ts": "2026-01-05T23:32",
+    "author": "Bitdano",
+    "msg": "We should ban complaining on this channel and open up a complaint channel",
+    "id": 1815
+  },
+  {
+    "ts": "2026-01-05T23:33",
+    "author": "Elias Nikolaidis",
+    "msg": "Just woke up and saw 342 new messages ! OMG!  And no complaints ?? I guess I dont need to read and if them!!! lol. 😁😁",
+    "id": 1816
+  },
+  {
+    "ts": "2026-01-05T23:40",
+    "author": "Lucas",
+    "msg": "You are quick, just ask Play store to check for updates and was able to download 1.0.9",
+    "id": 1817
+  },
+  {
+    "ts": "2026-01-05T23:40",
+    "author": "Lucas",
+    "msg": "you found it before the announcement",
+    "id": 1818
+  },
+  {
+    "ts": "2026-01-05T23:43",
+    "author": "Willian | Nuvola",
+    "msg": "Haha, someone else mentioned it. I jumped in. Haha",
+    "id": 1819
+  }
+]

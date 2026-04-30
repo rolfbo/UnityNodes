@@ -1,0 +1,2732 @@
+[
+  {
+    "ts": "2026-02-10T00:01",
+    "author": "Gwailow",
+    "msg": "Interesting - would be good to understand what happens here. I’ll have to test this out later",
+    "id": 22771
+  },
+  {
+    "ts": "2026-02-10T00:05",
+    "author": "Mat",
+    "msg": "Yes me too, I was wondering gif this was the case so ran today revocations as a but of a test. If it's true then perhaps until there is a way to alert our ULO's in app this MIGHT be the only path to get them a message. But yes, need to test.",
+    "id": 22772
+  },
+  {
+    "ts": "2026-02-10T00:36",
+    "author": "Coleman",
+    "msg": "Do the CLI task rewards decrease the longer you take to report it? Or if it’s worth $1 it’ll be $1 if you report it in 2 minutes or 23 hours?",
+    "id": 22773
+  },
+  {
+    "ts": "2026-02-10T00:38",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "As far as it was communicated they don’t decrease\n\nThey might “disappear” if you don’t react within the expected time which also may vary",
+    "id": 22774
+  },
+  {
+    "ts": "2026-02-10T03:27",
+    "author": "Rdawgie",
+    "msg": "Rewards are definitely lower. Not as catastrophic as it was a few days ago but lower than what I would like.",
+    "id": 22775
+  },
+  {
+    "ts": "2026-02-10T03:29",
+    "author": "Rob | Nexus Nodes",
+    "msg": "I have a ULO who has leased and bound his device, but it’s not showing as activated (green dot) on my UNO page. Any ideas?",
+    "id": 22776
+  },
+  {
+    "ts": "2026-02-10T03:30",
+    "author": "Rob | Nexus Nodes",
+    "msg": "On his (android) it’s showing as activated. See picture they sent me below:",
+    "id": 22777
+  },
+  {
+    "ts": "2026-02-10T03:30",
+    "author": "Rob | Nexus Nodes",
+    "msg": "[Photo]",
+    "id": 22778
+  },
+  {
+    "ts": "2026-02-10T04:11",
+    "author": "Jon",
+    "msg": "[Photo]",
+    "id": 22779
+  },
+  {
+    "ts": "2026-02-10T04:12",
+    "author": "Jon",
+    "msg": "Low like this?",
+    "id": 22780
+  },
+  {
+    "ts": "2026-02-10T04:12",
+    "author": "Flippy",
+    "msg": "Very motivating.",
+    "id": 22781
+  },
+  {
+    "ts": "2026-02-10T04:14",
+    "author": "Jon",
+    "msg": "Mine have been like this for the past few days as well…stirs emotions of regret I can say for sure. I’m actually going backwards instead of forward",
+    "id": 22782
+  },
+  {
+    "ts": "2026-02-10T04:16",
+    "author": "Jon",
+    "msg": "Any idea how long this is to go on Calus?",
+    "id": 22783
+  },
+  {
+    "ts": "2026-02-10T04:22",
+    "author": "Vũ văn Định",
+    "msg": "[Photo] Each of my phones has its own SIM card.",
+    "id": 22784
+  },
+  {
+    "ts": "2026-02-10T04:26",
+    "author": "Jon",
+    "msg": "I’ve one with SIM and the rest WiFi and my SIM is getting $0.01 as well",
+    "id": 22785
+  },
+  {
+    "ts": "2026-02-10T04:33",
+    "author": "G Boot",
+    "msg": "Mine is a private not disclosed group. Probably a few of these around. Protects ID, client loyalty, cultural / linguistic safe spaces  as well as IP for marketing.",
+    "id": 22786
+  },
+  {
+    "ts": "2026-02-10T04:40",
+    "author": "Crg878",
+    "msg": "I’ve noticed that since Saturday, the rewards on several of my licenses have been significantly reduced. Overall, the rewards appear to have been cut nearly in half across all my devices, and some are now receiving as little as 0.001.\nDoes anybody know the reason for this, I have emailed support but no reply as of yet.",
+    "id": 22787
+  },
+  {
+    "ts": "2026-02-10T05:05",
+    "author": "OC Nodes",
+    "msg": "[Photo] What do those symbolize and why is one grey?",
+    "id": 22788
+  },
+  {
+    "ts": "2026-02-10T05:05",
+    "author": "Kyrpyk29",
+    "msg": "As i saydbefore i think the .arket crash i yhink have a lot to do with rewards.looks like we get payd from unity funds but i can be wrong",
+    "id": 22789
+  },
+  {
+    "ts": "2026-02-10T05:07",
+    "author": "Kyrpyk29",
+    "msg": "Me too.and probably all of us but some are more optimistic then others.",
+    "id": 22790
+  },
+  {
+    "ts": "2026-02-10T05:19",
+    "author": "Unknown",
+    "msg": "@defiants_Jack has the dev team made an update about anything with their backend or uptime reporting ? I've flagged it a week ago w/ the report system and several times in here and other channels but not heard back. \n\nThe issue is the app seems to silently disconnect and uptime doesn't show that they are disconnected on the \"key\" tab unless you click deeper into the licenses section this causes people to assume the phones are online when they aren't which leads to no rewards unless force killing and restarting the app\n\nexample here https://t.me/c/3692765127/22039",
+    "id": 22791
+  },
+  {
+    "ts": "2026-02-10T05:20",
+    "author": "Mat",
+    "msg": "I think they have revoked their license? But not sure @defiants_Jack can you confirm what these icons mean?",
+    "id": 22792
+  },
+  {
+    "ts": "2026-02-10T05:21",
+    "author": "Jack | Will Never Message You First",
+    "msg": "I'll follow it up, both queries",
+    "id": 22793
+  },
+  {
+    "ts": "2026-02-10T05:22",
+    "author": "~•v1kram•~",
+    "msg": "I thonk one is leased and the other is bound",
+    "id": 22794
+  },
+  {
+    "ts": "2026-02-10T05:27",
+    "author": "OC Nodes",
+    "msg": "So both are leased (makes sense because it's the lease filter) but one got unbound",
+    "id": 22795
+  },
+  {
+    "ts": "2026-02-10T05:31",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Leased but not earning.. I unbound those after 3 days with 0 uptime.",
+    "id": 22796
+  },
+  {
+    "ts": "2026-02-10T05:44",
+    "author": "Jack | Will Never Message You First",
+    "msg": "There was a point for 1-2h yesterday when the server was undergoing some upgrades... there were several instances when the servers were down - but it was a momentary downtime. Consequently, there would have been periods that devices were online and connected, but showing offline in the license list for a short period of time.",
+    "id": 22797
+  },
+  {
+    "ts": "2026-02-10T05:44",
+    "author": "Jack | Will Never Message You First",
+    "msg": "^",
+    "id": 22798
+  },
+  {
+    "ts": "2026-02-10T05:45",
+    "author": "Unknown",
+    "msg": "Interesting, thanks. It's odd that this has seemed to happen since the day the rewards stopped for a lot of people... and if they were still seeing reduced rewards that if they restarted the app completely the next day rewards seemed to return to normal",
+    "id": 22799
+  },
+  {
+    "ts": "2026-02-10T05:48",
+    "author": "James_WM_ENO",
+    "msg": "Morning all, quite a drop in rewards for me across all devices",
+    "id": 22800
+  },
+  {
+    "ts": "2026-02-10T05:49",
+    "author": "James_WM_ENO",
+    "msg": "Wonder if they are phasing out the connection rewards and getting ready for real task rewards to take over",
+    "id": 22801
+  },
+  {
+    "ts": "2026-02-10T05:50",
+    "author": "James_WM_ENO",
+    "msg": "Are we still in early Feb ?",
+    "id": 22802
+  },
+  {
+    "ts": "2026-02-10T05:50",
+    "author": "James_WM_ENO",
+    "msg": "Eagerly awaiting those Jan tasks to start up",
+    "id": 22803
+  },
+  {
+    "ts": "2026-02-10T06:01",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Hello everyone 😀 Happy Tuesday",
+    "id": 22804
+  },
+  {
+    "ts": "2026-02-10T06:06",
+    "author": "Peterjo18",
+    "msg": "Try running your phone with sim on mobile data only for a few days. I think you may find that makes a difference",
+    "id": 22805
+  },
+  {
+    "ts": "2026-02-10T06:07",
+    "author": "Luckybuy",
+    "msg": "Every day my rewards are a bit lower untill i restart my phones. Might be a coincidence but i am restarting my phones every 3 days now",
+    "id": 22806
+  },
+  {
+    "ts": "2026-02-10T06:09",
+    "author": "Unknown",
+    "msg": "yeah it's legit a problem since the latest update that more and more of the apps have been crashing",
+    "id": 22807
+  },
+  {
+    "ts": "2026-02-10T06:09",
+    "author": "Unknown",
+    "msg": "I've been doing the same",
+    "id": 22808
+  },
+  {
+    "ts": "2026-02-10T06:23",
+    "author": "HSL",
+    "msg": "Keep increasing no restart and crashes in my case",
+    "id": 22810
+  },
+  {
+    "ts": "2026-02-10T06:25",
+    "author": "Unknown",
+    "msg": "it will till it wont, not all devices are the same but congrats either way",
+    "id": 22811
+  },
+  {
+    "ts": "2026-02-10T06:29",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "The team has advised that rewards may fluctuate.\n\nI dont believe restarting your phones is necessary, however, if you suspect this may be a bug, I recommend submitting it to the team.",
+    "id": 22812
+  },
+  {
+    "ts": "2026-02-10T06:30",
+    "author": "Unknown",
+    "msg": "you say that but this is extreme reduction in rewards and it does restart their earnings after restart",
+    "id": 22813
+  },
+  {
+    "ts": "2026-02-10T06:30",
+    "author": "Unknown",
+    "msg": "So there is something to it",
+    "id": 22814
+  },
+  {
+    "ts": "2026-02-10T06:33",
+    "author": "Unknown",
+    "msg": "either the dev's are changing things or its related to the app stopping in the background not just a slight change in rewards",
+    "id": 22815
+  },
+  {
+    "ts": "2026-02-10T06:34",
+    "author": "Edin",
+    "msg": "@defiants_kyle do you have an update on the phone number verification for the CLI testing task? I am still getting errors.",
+    "id": 22816
+  },
+  {
+    "ts": "2026-02-10T06:34",
+    "author": "Sören Lewis Müller",
+    "msg": "On my end in average rewards look good again across all ULOs (mostly 70/30)\n\nIncluding $0.00 payouts:\n\nAverage (mean): $0.1404\n\nMedian: $0.17\n\n25th percentile (Q1): $0.1225\n\n75th percentile (Q3): $0.20\n\nStd dev: $0.0761 (inflated by the many $0.00s)\n\nExcluding $0.00 payouts (only wallets that actually earned something):\n\n# non-zero payouts: 173 (so 37 were $0.00)\n\nMean (non-zero): $0.1704\n\nMedian (non-zero): $0.17\n\nQ1/Q3 (non-zero): $0.15 / $0.20\n\nStd dev (non-zero): $0.0437 (much tighter)\n\nInterpretation: the “real” earning cluster is very tight around $0.15–$0.20, and the main distortion is simply the $0.00 group.",
+    "id": 22817
+  },
+  {
+    "ts": "2026-02-10T06:35",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Have you submitted a bug report on this?",
+    "id": 22818
+  },
+  {
+    "ts": "2026-02-10T06:35",
+    "author": "Unknown",
+    "msg": "multiple",
+    "id": 22819
+  },
+  {
+    "ts": "2026-02-10T06:35",
+    "author": "Flippy",
+    "msg": "Rewards again all over the place",
+    "id": 22820
+  },
+  {
+    "ts": "2026-02-10T06:38",
+    "author": "Flavius",
+    "msg": "First time since December that rewards have dropped to 0.0x on one of my phones",
+    "id": 22821
+  },
+  {
+    "ts": "2026-02-10T06:38",
+    "author": "Flippy",
+    "msg": "Few 100s of 0.01 on individual ulo's\n\nSmall (20pcs) farms doing OK.",
+    "id": 22822
+  },
+  {
+    "ts": "2026-02-10T06:42",
+    "author": "Flippy",
+    "msg": "[Photo] Perfect uptime, yet two days of near zero is not helping",
+    "id": 22823
+  },
+  {
+    "ts": "2026-02-10T06:42",
+    "author": "Flippy",
+    "msg": "[Photo]",
+    "id": 22824
+  },
+  {
+    "ts": "2026-02-10T06:43",
+    "author": "Flippy",
+    "msg": "This is happening to A LOT of my ULO's",
+    "id": 22825
+  },
+  {
+    "ts": "2026-02-10T06:50",
+    "author": "Jon",
+    "msg": "I’ll give it a shot Pete. Thanks!",
+    "id": 22826
+  },
+  {
+    "ts": "2026-02-10T06:52",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Yes, I see they communicated to Kay that they are in the process of restoring it. Apologies for the delay 🙏",
+    "id": 22827
+  },
+  {
+    "ts": "2026-02-10T06:57",
+    "author": "Flippy",
+    "msg": "I tell them its due to maintainance on the network.\n\nThanks for the feedback and the heads up once again team.",
+    "id": 22828
+  },
+  {
+    "ts": "2026-02-10T06:59",
+    "author": "Jon",
+    "msg": "[Photo] Is this the fluctuation you’re referring to? This has been going on for a few days now with uptime of 90% and up. If so, how long is this “fluctuation” supposed to last?",
+    "id": 22829
+  },
+  {
+    "ts": "2026-02-10T06:59",
+    "author": "Coffee Nodes",
+    "msg": "How many devices on one ip?",
+    "id": 22830
+  },
+  {
+    "ts": "2026-02-10T07:00",
+    "author": "Jon",
+    "msg": "I had 18 then dropped it to 7 to see if it would make a difference…it did not",
+    "id": 22831
+  },
+  {
+    "ts": "2026-02-10T07:02",
+    "author": "Flippy",
+    "msg": "Even single ULO's are suffering now.",
+    "id": 22832
+  },
+  {
+    "ts": "2026-02-10T07:05",
+    "author": "Jon",
+    "msg": "[Photo] This was the average a week ago",
+    "id": 22833
+  },
+  {
+    "ts": "2026-02-10T07:06",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Question is also will rewards drop after iOS and more ULOs.",
+    "id": 22834
+  },
+  {
+    "ts": "2026-02-10T07:08",
+    "author": "El Whalo",
+    "msg": "Many pending things. Few questions answered. Time to hibernate and wait for higher rewards, calls, S&R, iphone pow, etc.\n\nPatience to us\nAnd please realistic comms and timelines, team",
+    "id": 22835
+  },
+  {
+    "ts": "2026-02-10T07:10",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "I do not know if this is intended but I see that this has been raised with the team. They are looking in to it🙏",
+    "id": 22836
+  },
+  {
+    "ts": "2026-02-10T07:12",
+    "author": "Flippy",
+    "msg": "More drop? Its already near zero😅",
+    "id": 22837
+  },
+  {
+    "ts": "2026-02-10T07:12",
+    "author": "Daniel 🇷🇴",
+    "msg": "Really?\nAre you doing upgrades in a production environment without a public announcement?\nWhat kind of company is that?\nHire someone who knows how IT operations are run.",
+    "id": 22838
+  },
+  {
+    "ts": "2026-02-10T07:26",
+    "author": "Flippy",
+    "msg": "Our lives would be much easier if we just would get a little heads up",
+    "id": 22839
+  },
+  {
+    "ts": "2026-02-10T07:27",
+    "author": "Jon",
+    "msg": "Thanks Kyle!",
+    "id": 22840
+  },
+  {
+    "ts": "2026-02-10T07:51",
+    "author": "Zolee",
+    "msg": "#amaquestion \nWhat happens if a ULO enters an incorrect number after receiving a CLI testing call? Will the system recognise if the ULO was truthful or malicious?",
+    "id": 22841
+  },
+  {
+    "ts": "2026-02-10T07:53",
+    "author": "MrCat",
+    "msg": "[Photo]",
+    "id": 22842
+  },
+  {
+    "ts": "2026-02-10T07:53",
+    "author": "MrCat",
+    "msg": "Anyone else having this issue?",
+    "id": 22843
+  },
+  {
+    "ts": "2026-02-10T07:57",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "The ULO gets a verification SMS on that number to activate the CLI tasks\nWithout the SMS code he can’t activate",
+    "id": 22844
+  },
+  {
+    "ts": "2026-02-10T07:58",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "The OTP verification is an issue that has been reported to the team and should be resolved very soon\n\nThey are working on it now",
+    "id": 22845
+  },
+  {
+    "ts": "2026-02-10T08:04",
+    "author": "LE",
+    "msg": "[Photo] Rewards dropped after ‘Sim’ was inserted and activated. Previously been connected to ‘WiFi’. Unsure if this is reason for change. 🤷‍♀️",
+    "id": 22846
+  },
+  {
+    "ts": "2026-02-10T08:06",
+    "author": "Karvensteve",
+    "msg": "A ulo isnt receiving the verification code for cli, is the service down atm?",
+    "id": 22847
+  },
+  {
+    "ts": "2026-02-10T08:06",
+    "author": "Jaba - Unityfarmers",
+    "msg": "seems general trend of reward drop, not related to sim",
+    "id": 22848
+  },
+  {
+    "ts": "2026-02-10T08:07",
+    "author": "Zolee",
+    "msg": "I mean when they receive a CLI call. Not when they register their own number",
+    "id": 22849
+  },
+  {
+    "ts": "2026-02-10T08:08",
+    "author": "R B",
+    "msg": "I think rewards will drop by 40 percent when IOS POW works and they all share the same reward pool depending on uptime",
+    "id": 22850
+  },
+  {
+    "ts": "2026-02-10T08:09",
+    "author": "Akira",
+    "msg": "and this is where we risk credibility and could face big churn...  we need more transparency and better comms",
+    "id": 22851
+  },
+  {
+    "ts": "2026-02-10T08:10",
+    "author": "Bill",
+    "msg": "Im having exactly the same issue. Averaging 12c now all of them are 1/2c",
+    "id": 22852
+  },
+  {
+    "ts": "2026-02-10T08:11",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Hope not😁",
+    "id": 22853
+  },
+  {
+    "ts": "2026-02-10T08:11",
+    "author": "Akira",
+    "msg": "i'm actually suprised we didn't get an official explanation to what's happening",
+    "id": 22854
+  },
+  {
+    "ts": "2026-02-10T08:11",
+    "author": "LE",
+    "msg": "Thanks, wasn’t sure! Just an observation. 👍",
+    "id": 22855
+  },
+  {
+    "ts": "2026-02-10T08:11",
+    "author": "Unknown",
+    "msg": "lol",
+    "id": 22856
+  },
+  {
+    "ts": "2026-02-10T08:12",
+    "author": "Akira",
+    "msg": "if they want to prove comms are improving, this would be a great opportunity",
+    "id": 22857
+  },
+  {
+    "ts": "2026-02-10T08:12",
+    "author": "Unknown",
+    "msg": "I didn't get a response until I pushed the issue",
+    "id": 22858
+  },
+  {
+    "ts": "2026-02-10T08:12",
+    "author": "Unknown",
+    "msg": "and I brought it up 4 different locations",
+    "id": 22859
+  },
+  {
+    "ts": "2026-02-10T08:12",
+    "author": "Akira",
+    "msg": "[File: sticker.webp]",
+    "id": 22860
+  },
+  {
+    "ts": "2026-02-10T08:13",
+    "author": "LIIICHT",
+    "msg": "Rewards need to spike up and soon because licenses are just not moving.",
+    "id": 22861
+  },
+  {
+    "ts": "2026-02-10T08:14",
+    "author": "Unknown",
+    "msg": "[File: i-don't-know-idk.mp4]",
+    "id": 22862
+  },
+  {
+    "ts": "2026-02-10T08:24",
+    "author": "Wen (calibrating)",
+    "msg": "This. Been stuck at 2 taken from market place for weeks now. If this is the ‘egg’ then we need to feed the chickens.",
+    "id": 22863
+  },
+  {
+    "ts": "2026-02-10T08:28",
+    "author": "brickman1914",
+    "msg": "I am willing to lease your ULO’s if you come up short 🤓",
+    "id": 22864
+  },
+  {
+    "ts": "2026-02-10T09:22",
+    "author": "Compost Man Unity code: XY",
+    "msg": "That's one approach and it makes sense. As others have said, we are at risk of being incredibly inefficient in terms of community management if each Uno is looking after their own ulos. I think I do need to go close group eventually, but I'm thinking more in terms of a group of Uno's cooperating to some extent. Not everybody is going to want to run their own community support group. In my group they will be able to chip in and benefit as they want",
+    "id": 22865
+  },
+  {
+    "ts": "2026-02-10T09:22",
+    "author": "Lazeedan40",
+    "msg": "Have we had any explanation why the rewards dramatically dropped from the weekend?\nI heard VPNs were banned.\nMost of the phones affected on my side were the phone farms.",
+    "id": 22866
+  },
+  {
+    "ts": "2026-02-10T09:25",
+    "author": "BeamNode",
+    "msg": "[Photo] Is iOS blocked from CLI calling? Sms verification doesn’t work for me.",
+    "id": 22867
+  },
+  {
+    "ts": "2026-02-10T09:26",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "The team is working to resolve this🙏 Apologies for the delay",
+    "id": 22868
+  },
+  {
+    "ts": "2026-02-10T09:31",
+    "author": "G Boot",
+    "msg": "Yes and No, if there is one primary group how will you prevent fishing of clients?? Will you accept some offering 10, 20% better rates with longer durations? \n\nYou underestimate the power and importance of relationship, as well as the tribal dynamics that will naturally emerge. Any none official group will be exposed to that and you already had a taste here on TG for what this can mean. It could support as well as break some UNOs. \n\nWill leave it here as I won’t get involved but encourage those setting it up to think a few things through on the potential risks & issues that can come up and how to mitigate / prevent those and their potential impact.",
+    "id": 22869
+  },
+  {
+    "ts": "2026-02-10T09:33",
+    "author": "Compost Man Unity code: XY",
+    "msg": "Yes. It is being thought through. Such as the 50/50 minimum split being a requirement, and working with a smaller group of unos who understand the ToR.",
+    "id": 22870
+  },
+  {
+    "ts": "2026-02-10T09:35",
+    "author": "G Boot",
+    "msg": "Perfect. I prefer to go my own way and make splits in favour and support of my ULOs & personal business interests, which will vary on a case by case basis (range 25-90%)",
+    "id": 22871
+  },
+  {
+    "ts": "2026-02-10T09:36",
+    "author": "Compost Man Unity code: XY",
+    "msg": "It is going to be interesting watching the different business models emerge. With a strong tailwind driven by higher rewards, we should all do okay",
+    "id": 22872
+  },
+  {
+    "ts": "2026-02-10T09:45",
+    "author": "chilly",
+    "msg": "[Photo]",
+    "id": 22873
+  },
+  {
+    "ts": "2026-02-10T09:47",
+    "author": "chilly",
+    "msg": "Three days of this and my marketplace ULO's are leaving me 😭",
+    "id": 22874
+  },
+  {
+    "ts": "2026-02-10T09:47",
+    "author": "Adam Buracchi",
+    "msg": "Are these farms?",
+    "id": 22875
+  },
+  {
+    "ts": "2026-02-10T09:48",
+    "author": "chilly",
+    "msg": "They're all from the marketplace, but I'd think so",
+    "id": 22876
+  },
+  {
+    "ts": "2026-02-10T09:54",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "What’s the split 😅",
+    "id": 22877
+  },
+  {
+    "ts": "2026-02-10T09:55",
+    "author": "Compost Man Unity code: XY",
+    "msg": "@ValaykaWBC may I DM you?",
+    "id": 22878
+  },
+  {
+    "ts": "2026-02-10T09:55",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Always",
+    "id": 22879
+  },
+  {
+    "ts": "2026-02-10T10:07",
+    "author": "Page Øne",
+    "msg": "I have the same was trying to put my esim number. But  i feel like i missed already 30 calls so will get compensated 😂",
+    "id": 22880
+  },
+  {
+    "ts": "2026-02-10T10:34",
+    "author": "Darren @WorldDePIN",
+    "msg": "I know this has been raised but I wanted to also confirm that my rewards have dropped from $0.1 - $0.2 with average around $0.15 to $0.02-$0.07 with average around $0.05. No change to my farm setup with stable connections for 30+ phones.\nIt would be good to get an explanation as to what has changed and why. I'd hoped the trend would be higher rewards as new jobs and customers come online.\nCommunication from the Devs and/or Unity team would be appreciated!",
+    "id": 22881
+  },
+  {
+    "ts": "2026-02-10T10:34",
+    "author": "Akira",
+    "msg": "yeah no wonder\nmine are also quitting after these days",
+    "id": 22882
+  },
+  {
+    "ts": "2026-02-10T10:35",
+    "author": "Akira",
+    "msg": "its not like whatever split of 0.0001 matters much",
+    "id": 22883
+  },
+  {
+    "ts": "2026-02-10T10:36",
+    "author": "Akira",
+    "msg": "10/90 of nothing is nothing",
+    "id": 22884
+  },
+  {
+    "ts": "2026-02-10T10:38",
+    "author": "Nico | NodeX",
+    "msg": "30+ phones? I thought a max of 20 would not be considered farming .",
+    "id": 22885
+  },
+  {
+    "ts": "2026-02-10T10:42",
+    "author": "Daniel Ives",
+    "msg": "Had it on an android too yesterday",
+    "id": 22886
+  },
+  {
+    "ts": "2026-02-10T10:44",
+    "author": "Darren @WorldDePIN",
+    "msg": "Never heard that. I have 24 in a farm. Then I have personal family phones with SIMs plus a couple of friends who are trialing ULO for me.",
+    "id": 22887
+  },
+  {
+    "ts": "2026-02-10T10:46",
+    "author": "Darren @WorldDePIN",
+    "msg": "Regardless the rewards have dropped in line with many other UNOs. So just like to know why if possible.",
+    "id": 22888
+  },
+  {
+    "ts": "2026-02-10T10:49",
+    "author": "EdgyBruh",
+    "msg": "[Photo] ATH for me yesterday",
+    "id": 22889
+  },
+  {
+    "ts": "2026-02-10T10:55",
+    "author": "Darren @WorldDePIN",
+    "msg": "I am thinking of getting a dedicated 5G broadband service dedicated to Unity. Is this worth it? Curious if anyone has seen benefits from this setup?",
+    "id": 22890
+  },
+  {
+    "ts": "2026-02-10T11:08",
+    "author": "Stig",
+    "msg": "[Photo] I have 30 phones on 2 locations, and mine are trending higher lately.",
+    "id": 22891
+  },
+  {
+    "ts": "2026-02-10T11:20",
+    "author": "EP /EARTHPATH | WMC $WMTx",
+    "msg": "Hello, any defiant active now I can DM for a quick follow up? 🙏",
+    "id": 22892
+  },
+  {
+    "ts": "2026-02-10T11:23",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Hi 👋\n\nYou can DM me.\n\nYou can also type it here if you want. It is your choice 😁",
+    "id": 22893
+  },
+  {
+    "ts": "2026-02-10T11:23",
+    "author": "Elitemas77",
+    "msg": "[Photo] Anyone know what this is, and why it’s not highlighted in green like the others? I also am no long receiving rewards from this ULO…\n\n@defiants",
+    "id": 22894
+  },
+  {
+    "ts": "2026-02-10T11:26",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "It means it's unbound from the device.",
+    "id": 22896
+  },
+  {
+    "ts": "2026-02-10T11:27",
+    "author": "Elitemas77",
+    "msg": "From the ULO’s end?",
+    "id": 22897
+  },
+  {
+    "ts": "2026-02-10T11:30",
+    "author": "Elitemas77",
+    "msg": "[File: how-dare-you-james-franco.mp4]",
+    "id": 22898
+  },
+  {
+    "ts": "2026-02-10T11:30",
+    "author": "Elitemas77",
+    "msg": "[File: grinch-audacity.mp4]",
+    "id": 22899
+  },
+  {
+    "ts": "2026-02-10T11:31",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "HAHA 😂",
+    "id": 22900
+  },
+  {
+    "ts": "2026-02-10T11:31",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Yes, I believe so",
+    "id": 22901
+  },
+  {
+    "ts": "2026-02-10T11:33",
+    "author": "Elitemas77",
+    "msg": "Thank you 🙏",
+    "id": 22902
+  },
+  {
+    "ts": "2026-02-10T11:43",
+    "author": "Milenario Libre",
+    "msg": "Where can I see these metrics? Thanks",
+    "id": 22903
+  },
+  {
+    "ts": "2026-02-10T11:53",
+    "author": "Alem",
+    "msg": "[Photo] ATH for me as well",
+    "id": 22904
+  },
+  {
+    "ts": "2026-02-10T11:58",
+    "author": "Carlos",
+    "msg": "I saw for last rewards again an average of 0.265 for 22 phones on same router.",
+    "id": 22905
+  },
+  {
+    "ts": "2026-02-10T12:06",
+    "author": "Kevin Sorbo’s Hair as Hercules",
+    "msg": "My rewards on all ULO have actually gone up since Saturday from a range of 0.13-0.2 to now a range of 0.18-0.28\nSo I don’t see no reason to worry like everyone has been doing personally",
+    "id": 22906
+  },
+  {
+    "ts": "2026-02-10T12:07",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "ATH also today. No farms",
+    "id": 22907
+  },
+  {
+    "ts": "2026-02-10T12:07",
+    "author": "Sören Lewis Müller",
+    "msg": "Confusing part for me though is that it also shows the green dot saying “online” at the same time. Like how can it be unbound & online at same time. \n\nI’ve also had someone where it showed unbound, but when I asked they had no idea (so doubt it was actually unbound)",
+    "id": 22908
+  },
+  {
+    "ts": "2026-02-10T12:13",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "Feel free to DM me the license ID so I can have the team look into it.\n\n**Remember, I will never DM you first.**",
+    "id": 22909
+  },
+  {
+    "ts": "2026-02-10T12:14",
+    "author": "Rob | Nexus Nodes",
+    "msg": "Any of the defiants team got an answer for this? \n\nSince then this ULO has leased and bound a few for licenses and they are fine. \n\nWe have already tried to recycle the lease and bind again, but that didn’t resolve it.",
+    "id": 22910
+  },
+  {
+    "ts": "2026-02-10T12:20",
+    "author": "Stig",
+    "msg": "You would have to sign up for my dashboard and install my Chrome extension, or make your own, as many others have done.",
+    "id": 22911
+  },
+  {
+    "ts": "2026-02-10T12:24",
+    "author": "Kyle | I will never PM you 1st",
+    "msg": "**Is** it showing green 'online' now? Has there been any earnings?",
+    "id": 22912
+  },
+  {
+    "ts": "2026-02-10T12:25",
+    "author": "James_WM_ENO",
+    "msg": "Are we likely to see any CLI calls soon ?",
+    "id": 22913
+  },
+  {
+    "ts": "2026-02-10T12:26",
+    "author": "Loop ENO | ANO | UNO (granddad2)",
+    "msg": "Seeing the same. Past two days all ULOs from marketplace unbinded? Unable to contact as to reason why which would have been a nice consumer centric interaction.",
+    "id": 22914
+  },
+  {
+    "ts": "2026-02-10T12:26",
+    "author": "James_WM_ENO",
+    "msg": "All my ULO’s asking why no calls have come.. I keep telling them soon but how soon ?",
+    "id": 22915
+  },
+  {
+    "ts": "2026-02-10T12:27",
+    "author": "James_WM_ENO",
+    "msg": "And any news on the early Feb tasks that moved from late January ? The families",
+    "id": 22916
+  },
+  {
+    "ts": "2026-02-10T12:27",
+    "author": "Henrik ( Airnode & Unitynode )",
+    "msg": "Some of mine ULO's in Bangladesh are having problems getting there phone number verified",
+    "id": 22917
+  },
+  {
+    "ts": "2026-02-10T12:28",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "It's a world wide thing. Team is working on it.. India, most of Europe, Pakistan.. Most ULOs can't do it right now",
+    "id": 22918
+  },
+  {
+    "ts": "2026-02-10T12:29",
+    "author": "Henrik ( Airnode & Unitynode )",
+    "msg": "Thanks",
+    "id": 22919
+  },
+  {
+    "ts": "2026-02-10T12:40",
+    "author": "Rob | Nexus Nodes",
+    "msg": "No, it’s leased, bound, activated (see picture below original comment). But there is no green dot. \n\nThe others he leased yesterday are working fine.",
+    "id": 22920
+  },
+  {
+    "ts": "2026-02-10T12:40",
+    "author": "Cardano Lady",
+    "msg": "Same error in all my phones and ULOS",
+    "id": 22921
+  },
+  {
+    "ts": "2026-02-10T12:41",
+    "author": "Calus B",
+    "msg": "Yea",
+    "id": 22922
+  },
+  {
+    "ts": "2026-02-10T12:41",
+    "author": "Calus B",
+    "msg": "They know about it and are working on it",
+    "id": 22923
+  },
+  {
+    "ts": "2026-02-10T12:41",
+    "author": "Rob | Nexus Nodes",
+    "msg": "It’s not showing any uptime either.",
+    "id": 22924
+  },
+  {
+    "ts": "2026-02-10T12:44",
+    "author": "Cardano Lady",
+    "msg": "How to get this view :(",
+    "id": 22925
+  },
+  {
+    "ts": "2026-02-10T12:54",
+    "author": "Jon",
+    "msg": "You’d be singing a different tune if you were getting the “rewards” that we’re getting. I noticed a lot of you all are getting higher rewards while many are getting near zero. Almost as if our rewards are going to you guys.",
+    "id": 22926
+  },
+  {
+    "ts": "2026-02-10T12:54",
+    "author": "Carlos",
+    "msg": "Do you have a farm?",
+    "id": 22927
+  },
+  {
+    "ts": "2026-02-10T12:56",
+    "author": "Carlos",
+    "msg": "I revoked about 35 licenses last night for over 7 days of inactivity. Almost all of them returned now.",
+    "id": 22928
+  },
+  {
+    "ts": "2026-02-10T12:58",
+    "author": "Jon",
+    "msg": "I answered this already but no. I had 18 and dropped to 7 to see if it would make a difference but it didn’t. Same low rewards.",
+    "id": 22929
+  },
+  {
+    "ts": "2026-02-10T12:58",
+    "author": "Alem",
+    "msg": "It's a self-made dashboard on top of the existing API. There are a few of them circulating, where you just copy the rewards into the dashboard and get your charts. This one requires a backend as well, so at this stage, I can't just share it, as it's more WIP and not so user-friendly 😅",
+    "id": 22930
+  },
+  {
+    "ts": "2026-02-10T12:59",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Any news on when marketplace will be fixed😁",
+    "id": 22931
+  },
+  {
+    "ts": "2026-02-10T13:06",
+    "author": "Calus B",
+    "msg": "What do you mean fixed",
+    "id": 22932
+  },
+  {
+    "ts": "2026-02-10T13:06",
+    "author": "Calus B",
+    "msg": "All on wifi?",
+    "id": 22933
+  },
+  {
+    "ts": "2026-02-10T13:08",
+    "author": "Calus B",
+    "msg": "Have you checked settings on the router to make sure you’re not behind a vpn or Vlan ?",
+    "id": 22934
+  },
+  {
+    "ts": "2026-02-10T13:09",
+    "author": "Daniel Ives",
+    "msg": "How would you go about checking settings? I appreciate you're not a broadband advisor lol",
+    "id": 22935
+  },
+  {
+    "ts": "2026-02-10T13:10",
+    "author": "Calus B",
+    "msg": "You would have to log into the router",
+    "id": 22936
+  },
+  {
+    "ts": "2026-02-10T13:16",
+    "author": "Daniel Ives",
+    "msg": "Sound",
+    "id": 22937
+  },
+  {
+    "ts": "2026-02-10T13:17",
+    "author": "Calus B",
+    "msg": "I have asked a few questions around why some are low and some are higher",
+    "id": 22938
+  },
+  {
+    "ts": "2026-02-10T13:18",
+    "author": "Calus B",
+    "msg": "Hopefully when they have some time they can see if this is just intended behaviour or due to lower volume of tests or if there is something in the network preventing certain information to be launched",
+    "id": 22939
+  },
+  {
+    "ts": "2026-02-10T13:21",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Will the CLI call be a hidden/private number by any chance? My device blocks hidden/private calls",
+    "id": 22940
+  },
+  {
+    "ts": "2026-02-10T13:22",
+    "author": "Stig",
+    "msg": "A tip to you if you're copying data manually. Do as I did and make a chrome extension that does the copying for you.",
+    "id": 22941
+  },
+  {
+    "ts": "2026-02-10T13:29",
+    "author": "Carlos",
+    "msg": "Look into your router",
+    "id": 22942
+  },
+  {
+    "ts": "2026-02-10T13:36",
+    "author": "Eddie H",
+    "msg": "[Photo] Anyone had this error?",
+    "id": 22943
+  },
+  {
+    "ts": "2026-02-10T13:43",
+    "author": "R B",
+    "msg": "Restart  the phone",
+    "id": 22944
+  },
+  {
+    "ts": "2026-02-10T13:44",
+    "author": "R B",
+    "msg": "They still show up in missed calls right ? Just not highlighted",
+    "id": 22945
+  },
+  {
+    "ts": "2026-02-10T13:48",
+    "author": "Sören Lewis Müller",
+    "msg": "With those that are leased & bound but been offline for a few days, do you notify them or just remove them? \n\nI kinda doubt that it's worth it to send a message to everyone who's offline & then wait for response & back & forth. So leaning towards just removing, clearly they're not paying enough attention.\n\nBut maybe you got a better strategy?",
+    "id": 22946
+  },
+  {
+    "ts": "2026-02-10T13:49",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "I don't check who's license it is. I just unbound. If ULO wants to return he usually writes his license is gone and I just send another one with a firm reminder that uptime is important",
+    "id": 22947
+  },
+  {
+    "ts": "2026-02-10T13:52",
+    "author": "Sören Lewis Müller",
+    "msg": "Thanks. Yeah that sounds better. Time to tidy up 😁",
+    "id": 22948
+  },
+  {
+    "ts": "2026-02-10T13:53",
+    "author": "Sören Lewis Müller",
+    "msg": "I always name the alias so I know right away who it is. Sounds like you don't do that either.",
+    "id": 22949
+  },
+  {
+    "ts": "2026-02-10T13:55",
+    "author": "Eddie H",
+    "msg": "It does not like NHS WiFi... Soon as I turn it off on my friends phone it works again.as on another colleague's phone. Some Samsung\nIts ok on my phone.",
+    "id": 22950
+  },
+  {
+    "ts": "2026-02-10T13:55",
+    "author": "FriendlyUrchin",
+    "msg": "[Photo] See here",
+    "id": 22951
+  },
+  {
+    "ts": "2026-02-10T13:56",
+    "author": "Calus B",
+    "msg": "Intresting",
+    "id": 22952
+  },
+  {
+    "ts": "2026-02-10T13:56",
+    "author": "Calus B",
+    "msg": "I’m still surprised you didn’t see the go",
+    "id": 22953
+  },
+  {
+    "ts": "2026-02-10T13:56",
+    "author": "Calus B",
+    "msg": "Call",
+    "id": 22954
+  },
+  {
+    "ts": "2026-02-10T13:58",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "I don't. I have contacts saved so when I'll need to market them new tasks or something I'll just reach out and copy paste to all.. Untill we get to APP direct chat.\nI don't intend to hunt down the ULOs trough notifications with bad uptime until APP allows me to unbind them freely. I just unbind and find a new one.",
+    "id": 22955
+  },
+  {
+    "ts": "2026-02-10T13:59",
+    "author": "Calus B",
+    "msg": "I probably will let it go pretty far until the amount of licenses I have left makes it imperative that I grab unused licenses back",
+    "id": 22956
+  },
+  {
+    "ts": "2026-02-10T13:59",
+    "author": "FriendlyUrchin",
+    "msg": "Looks like some pre-production version slipped out somehow.",
+    "id": 22957
+  },
+  {
+    "ts": "2026-02-10T14:00",
+    "author": "Kay | Will never DM you first",
+    "msg": "Hey everyone!",
+    "id": 22958
+  },
+  {
+    "ts": "2026-02-10T14:00",
+    "author": "Calus B",
+    "msg": "Yea I also wonder if the call just got blocked in the notification didn’t come on time",
+    "id": 22959
+  },
+  {
+    "ts": "2026-02-10T14:04",
+    "author": "Charles",
+    "msg": "just 48 hours left before my hat goes back into the fridge",
+    "id": 22960
+  },
+  {
+    "ts": "2026-02-10T14:04",
+    "author": "FriendlyUrchin",
+    "msg": "It can definitely be also something with my phone. It's a very old one Android 9 and I'm also on roaming now. Who knows",
+    "id": 22961
+  },
+  {
+    "ts": "2026-02-10T14:12",
+    "author": "Sören Lewis Müller",
+    "msg": "Cool thank you. 🙏",
+    "id": 22962
+  },
+  {
+    "ts": "2026-02-10T14:22",
+    "author": "Calus B",
+    "msg": "We need this more calls and probably scout and runner",
+    "id": 22963
+  },
+  {
+    "ts": "2026-02-10T14:24",
+    "author": "James_WM_ENO",
+    "msg": "More ?? Not had any",
+    "id": 22964
+  },
+  {
+    "ts": "2026-02-10T14:26",
+    "author": "Jon",
+    "msg": "I’ll have to look more into it Calus thanks for the suggestions!",
+    "id": 22965
+  },
+  {
+    "ts": "2026-02-10T14:27",
+    "author": "Jon",
+    "msg": "Will do thanks for the suggestion Carlos!",
+    "id": 22966
+  },
+  {
+    "ts": "2026-02-10T14:27",
+    "author": "Calus B",
+    "msg": "Well, then we need more don’t we?",
+    "id": 22967
+  },
+  {
+    "ts": "2026-02-10T14:30",
+    "author": "Adam Buracchi",
+    "msg": "Hopefully  more tasks will attive by the end of this week 🤞",
+    "id": 22968
+  },
+  {
+    "ts": "2026-02-10T14:32",
+    "author": "James_WM_ENO",
+    "msg": "Well we are getting into mid Feb soon and more task families were meant to come early Feb so I’m hopeful something will happen in next few days",
+    "id": 22969
+  },
+  {
+    "ts": "2026-02-10T14:38",
+    "author": "Adam Buracchi",
+    "msg": "Well to save me been disappointed I started adding few weeks to what the team tell us… I feel more relaxed now… I don’t have any expectations  😅🤣",
+    "id": 22970
+  },
+  {
+    "ts": "2026-02-10T14:40",
+    "author": "Adam Buracchi",
+    "msg": "Pretty confident tasks will come but not in the timeline we are expecting",
+    "id": 22971
+  },
+  {
+    "ts": "2026-02-10T14:40",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "I would suggest you to lower your expectations a bit man, unfortunately these multiple tasks families are not coming as fast as we would like, team seems to be overly optimistic most of the time :((",
+    "id": 22972
+  },
+  {
+    "ts": "2026-02-10T14:42",
+    "author": "Luckybuy",
+    "msg": "I am doing the same adam...self protection 😂...and my believe is that the roadmap is a 2 year timeline. (That's the token unlock as well)",
+    "id": 22973
+  },
+  {
+    "ts": "2026-02-10T14:51",
+    "author": "Node Broker",
+    "msg": "Obtained a new ulo last night thru MP. . It was Leased and bound. Few hours later it’s still leased but unbound but accruing uptime. Grey dot. I have no way of communicating with him/her",
+    "id": 22974
+  },
+  {
+    "ts": "2026-02-10T14:52",
+    "author": "Kay | Will never DM you first",
+    "msg": "Could be UI error if you are saying that it's getting uptime",
+    "id": 22975
+  },
+  {
+    "ts": "2026-02-10T14:52",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "I'm more positive about this week. We'll see the first calls screenshots and marketplace split limit set.",
+    "id": 22976
+  },
+  {
+    "ts": "2026-02-10T14:52",
+    "author": "Node Broker",
+    "msg": "I’ll keep an eye out on it",
+    "id": 22977
+  },
+  {
+    "ts": "2026-02-10T14:58",
+    "author": "Nigel Dennis",
+    "msg": "Im in the UK and had about 25 phones on 1 router, Virgin Media 1k gig!! I thought would be good but the rewards were super low, like 0.05! I switched to Vodaphone and rewards have jumped to 0.25 to 0.33!! Turns out the Virgin media router was using Dynamic IP address which change! The Vodaphone router has static IP address which really helped! If i was you i would look into how ur router is set up",
+    "id": 22979
+  },
+  {
+    "ts": "2026-02-10T15:02",
+    "author": "James_WM_ENO",
+    "msg": "Static or dynamic is usually down to the isp",
+    "id": 22980
+  },
+  {
+    "ts": "2026-02-10T15:03",
+    "author": "Calus B",
+    "msg": "Generally, you can pay an extra fee to get static",
+    "id": 22981
+  },
+  {
+    "ts": "2026-02-10T15:03",
+    "author": "James_WM_ENO",
+    "msg": "I am on dynamic and static costs more",
+    "id": 22982
+  },
+  {
+    "ts": "2026-02-10T15:04",
+    "author": "Calus B",
+    "msg": "I still think there is something in the way nat is handled that is causing some lower rewards",
+    "id": 22983
+  },
+  {
+    "ts": "2026-02-10T15:04",
+    "author": "Calus B",
+    "msg": "That is not confirmed though",
+    "id": 22984
+  },
+  {
+    "ts": "2026-02-10T15:04",
+    "author": "Calus B",
+    "msg": "It does seem like certain Internet connections are better than others, though",
+    "id": 22985
+  },
+  {
+    "ts": "2026-02-10T15:04",
+    "author": "Nigel Dennis",
+    "msg": "Yea im no tech wiz , when i asked Virgin Media for Static IP address they told me i would need a business grade set up! So just switched to Vodaphone as i had a 5g hotspot with Vodaphone also whoch works quite well",
+    "id": 22986
+  },
+  {
+    "ts": "2026-02-10T15:05",
+    "author": "Adam Buracchi",
+    "msg": "Would be good to know this technical details that may lower the rewards.. do you think the team will share this info at some point @CalusB ?",
+    "id": 22987
+  },
+  {
+    "ts": "2026-02-10T15:06",
+    "author": "James_WM_ENO",
+    "msg": "Yeah we really need more guidance",
+    "id": 22988
+  },
+  {
+    "ts": "2026-02-10T15:06",
+    "author": "Calus B",
+    "msg": "I’ve asked the team directly about it. They said they were looking into it, but it shouldn’t be any sort of cause",
+    "id": 22989
+  },
+  {
+    "ts": "2026-02-10T15:06",
+    "author": "Calus B",
+    "msg": "I haven’t had a update on that specifically yet",
+    "id": 22990
+  },
+  {
+    "ts": "2026-02-10T15:06",
+    "author": "Calus B",
+    "msg": "This is a new network and there’s going to be unexpected behaviours and consequences that they have to work through",
+    "id": 22991
+  },
+  {
+    "ts": "2026-02-10T15:07",
+    "author": "Calus B",
+    "msg": "As we get more jobs, I think reward should level out a bit better",
+    "id": 22992
+  },
+  {
+    "ts": "2026-02-10T15:07",
+    "author": "Adam Buracchi",
+    "msg": "I want to get a SIM router too, maybe I’ll look to see if Vodaphone has one 👍",
+    "id": 22993
+  },
+  {
+    "ts": "2026-02-10T15:07",
+    "author": "Nigel Dennis",
+    "msg": "Yea vodaphone has a 5g sim hotspot",
+    "id": 22994
+  },
+  {
+    "ts": "2026-02-10T15:09",
+    "author": "Nigel Dennis",
+    "msg": "Seems a bit chunky on the data usage though! I had about 9 phones on it and it chewed through 15gb of data in about 25 days",
+    "id": 22995
+  },
+  {
+    "ts": "2026-02-10T15:10",
+    "author": "Adam Buracchi",
+    "msg": "Yes, seems quite a lot considering we don’t have many tasks yet…",
+    "id": 22996
+  },
+  {
+    "ts": "2026-02-10T15:11",
+    "author": "James_WM_ENO",
+    "msg": "My 3 network router in the UK has been good",
+    "id": 22997
+  },
+  {
+    "ts": "2026-02-10T15:11",
+    "author": "Nigel Dennis",
+    "msg": "Yea so i reckon if you only run a few phones on them then could be worth it",
+    "id": 22998
+  },
+  {
+    "ts": "2026-02-10T15:11",
+    "author": "Adam Buracchi",
+    "msg": "Which one?",
+    "id": 22999
+  },
+  {
+    "ts": "2026-02-10T15:12",
+    "author": "Nigel Dennis",
+    "msg": "Yea wanted to try that but it not available in my place! Maybe cos i live in an apartment",
+    "id": 23000
+  },
+  {
+    "ts": "2026-02-10T15:12",
+    "author": "James_WM_ENO",
+    "msg": "Sim router",
+    "id": 23001
+  },
+  {
+    "ts": "2026-02-10T15:12",
+    "author": "Wopdiddly",
+    "msg": "Ok that's good I have that too and I am travelling so haven't been able to check",
+    "id": 23002
+  },
+  {
+    "ts": "2026-02-10T15:12",
+    "author": "Nigel Dennis",
+    "msg": "Oh i was talking about their plug in router",
+    "id": 23003
+  },
+  {
+    "ts": "2026-02-10T15:12",
+    "author": "James_WM_ENO",
+    "msg": "Yeah is plug in",
+    "id": 23004
+  },
+  {
+    "ts": "2026-02-10T15:13",
+    "author": "James_WM_ENO",
+    "msg": "With SIM card",
+    "id": 23005
+  },
+  {
+    "ts": "2026-02-10T15:13",
+    "author": "Adam Buracchi",
+    "msg": "Any particular brand ?",
+    "id": 23006
+  },
+  {
+    "ts": "2026-02-10T15:13",
+    "author": "Nigel Dennis",
+    "msg": "Ok yea wish i could get that",
+    "id": 23007
+  },
+  {
+    "ts": "2026-02-10T15:13",
+    "author": "Wopdiddly",
+    "msg": "You can get any router and just stick a Vodafone SIM in it.",
+    "id": 23008
+  },
+  {
+    "ts": "2026-02-10T15:13",
+    "author": "James_WM_ENO",
+    "msg": "3",
+    "id": 23009
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Adam Buracchi",
+    "msg": "Just wondering wich sim router to get…",
+    "id": 23010
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Wopdiddly",
+    "msg": "I use TPLink MR6400 and MERCUSYS MB115-4G 300 Mbps",
+    "id": 23011
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Adam Buracchi",
+    "msg": "Thanks 🙏",
+    "id": 23012
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Wopdiddly",
+    "msg": "Think Mercursys and TPlink are the same company",
+    "id": 23013
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Wopdiddly",
+    "msg": "The Mercursys is £30 new tho lol",
+    "id": 23014
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Adam Buracchi",
+    "msg": "All working ok?",
+    "id": 23015
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Wopdiddly",
+    "msg": "Amazon",
+    "id": 23016
+  },
+  {
+    "ts": "2026-02-10T15:14",
+    "author": "Adam Buracchi",
+    "msg": "🔥",
+    "id": 23017
+  },
+  {
+    "ts": "2026-02-10T15:15",
+    "author": "Wopdiddly",
+    "msg": "Yes they were last I checked and I have been running them for two weeks",
+    "id": 23018
+  },
+  {
+    "ts": "2026-02-10T15:15",
+    "author": "Adam Buracchi",
+    "msg": "Thanks for this, always help to know this info before buying anything 👍",
+    "id": 23019
+  },
+  {
+    "ts": "2026-02-10T15:21",
+    "author": "BILAL - KAG",
+    "msg": "Hello everyone",
+    "id": 23020
+  },
+  {
+    "ts": "2026-02-10T15:21",
+    "author": "BILAL - KAG",
+    "msg": "Do you have a link do you mind?",
+    "id": 23021
+  },
+  {
+    "ts": "2026-02-10T15:22",
+    "author": "NorthLine Nodes",
+    "msg": "Did you get a business license,if so, what did you say the service was?",
+    "id": 23022
+  },
+  {
+    "ts": "2026-02-10T15:29",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "I dont see this screen",
+    "id": 23023
+  },
+  {
+    "ts": "2026-02-10T15:30",
+    "author": "Kay | Will never DM you first",
+    "msg": "It's the screen when you get a call test",
+    "id": 23024
+  },
+  {
+    "ts": "2026-02-10T15:35",
+    "author": "Super Solo",
+    "msg": "Prob been asked before but what do I need to do when I get this when trying to setup Called ID testing: \"Failed to initiate phone number verification\" please?",
+    "id": 23025
+  },
+  {
+    "ts": "2026-02-10T15:35",
+    "author": "Kay | Will never DM you first",
+    "msg": "This error is being resolved, apologies!",
+    "id": 23026
+  },
+  {
+    "ts": "2026-02-10T15:49",
+    "author": "Super Solo",
+    "msg": "OK thanks. Ill wait...It worked on my first number. Now it fails. Ill await an update here",
+    "id": 23027
+  },
+  {
+    "ts": "2026-02-10T16:10",
+    "author": "Carlos",
+    "msg": "Data usage through router keeps going down since February 1. Almost like no jobs are being sent to the phones.",
+    "id": 23028
+  },
+  {
+    "ts": "2026-02-10T16:10",
+    "author": "Carlos",
+    "msg": "[Photo]",
+    "id": 23029
+  },
+  {
+    "ts": "2026-02-10T16:34",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Static or dynamic IP should be irrelevant \n\nThis project is set up to dynamic ranges as ULOs worldwide will often change IP once they go offline\n\nThe biggest question is the vpn/proxy firewall \nIf they use a DNS blocking that could affect complete IP ranges many will have connection issues\n\nIP limitations will also be an issue if limits are per IP instead of per license, this seems to be the case but we’ll need more data to analyze it\n\nMore tasks more requests means more work to be done helping those with multiple phones on 1 location\nFor telemetry it’s just terrible as the data will all be the same and therefore less profitable",
+    "id": 23030
+  },
+  {
+    "ts": "2026-02-10T16:37",
+    "author": "James_WM_ENO",
+    "msg": "What we really need is a couple tasks to actually go live 😊 problem solved",
+    "id": 23031
+  },
+  {
+    "ts": "2026-02-10T16:39",
+    "author": "Nigel Dennis",
+    "msg": "Thanks for the info, but what explains my experiance, had a vrigin media router, statoc IP, rewards were good. upgraded it for 1k gig, that use dynamic IP..rewards dropped through the floor! Switched to Vodaphone..static IP address..rewards went back up??",
+    "id": 23032
+  },
+  {
+    "ts": "2026-02-10T16:44",
+    "author": "Zangieff",
+    "msg": "How do we fix this with Virgin router? Having the same problem",
+    "id": 23033
+  },
+  {
+    "ts": "2026-02-10T16:49",
+    "author": "Nigel Dennis",
+    "msg": "I originally had a Hub 3 router i think whcih worked fine until it broke!! Upgraded to the on they have 1k gig!! That one did not work well!! So just switched to Vodaphone! When i spoke to Virgin media to ask for a static IP address they were saying i needed a business grade set up! But i had a hard time explaining what i needed to them as im not really that tech savvy",
+    "id": 23034
+  },
+  {
+    "ts": "2026-02-10T17:00",
+    "author": "Zolee",
+    "msg": "Hi Kay, could you please ask for an ETA on this?",
+    "id": 23035
+  },
+  {
+    "ts": "2026-02-10T17:03",
+    "author": "Willian | Nuvola",
+    "msg": "Any word on the AMA we were going to have 2 weeks ago? @defiants_kay 🙏",
+    "id": 23036
+  },
+  {
+    "ts": "2026-02-10T17:03",
+    "author": "Willian | Nuvola",
+    "msg": "Per Omri",
+    "id": 23037
+  },
+  {
+    "ts": "2026-02-10T17:13",
+    "author": "Marco",
+    "msg": "When I update my license defaults, why is that not the actual default when I hit “generate lease”?",
+    "id": 23038
+  },
+  {
+    "ts": "2026-02-10T17:14",
+    "author": "Kay | Will never DM you first",
+    "msg": "The default applies to Marketplace licenses. I'm not sure the settings will pop up the same when you are generating a private lease 🧐",
+    "id": 23039
+  },
+  {
+    "ts": "2026-02-10T17:16",
+    "author": "Kay | Will never DM you first",
+    "msg": "[Media] Yeah it's not the same in the example here https://youtube.com/shorts/kHS8ipqCWt8?si=4tv7BOsqtyvMSRGl",
+    "id": 23040
+  },
+  {
+    "ts": "2026-02-10T17:16",
+    "author": "Marco",
+    "msg": "Yeah, it’s strange because the default when I hit generate does align with wallet defaults that I created before, but not the current.",
+    "id": 23041
+  },
+  {
+    "ts": "2026-02-10T17:16",
+    "author": "Marco",
+    "msg": "I’ll watch. Thanks.",
+    "id": 23042
+  },
+  {
+    "ts": "2026-02-10T17:16",
+    "author": "Kay | Will never DM you first",
+    "msg": "Could be that the info was not fetched then. I'd restart the phone",
+    "id": 23043
+  },
+  {
+    "ts": "2026-02-10T17:18",
+    "author": "Marco",
+    "msg": "Another funny thing I’m sure someone has reported. If you create a lease, then revoke, then create a new lease, the new lease start date aligns with the end date of the revoked lease, so I have 12 month leases created for a new ULO that end in July of 2027",
+    "id": 23044
+  },
+  {
+    "ts": "2026-02-10T17:29",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Weird\nWhen I do that the start date is always today",
+    "id": 23045
+  },
+  {
+    "ts": "2026-02-10T17:32",
+    "author": "Kay | Will never DM you first",
+    "msg": "**CLI OTP verification issue should be resolved now. **\n\nPlease, check and report back if you have any issues.",
+    "id": 23046
+  },
+  {
+    "ts": "2026-02-10T17:32",
+    "author": "Kay | Will never DM you first",
+    "msg": "@zollee",
+    "id": 23047
+  },
+  {
+    "ts": "2026-02-10T17:32",
+    "author": "Kay | Will never DM you first",
+    "msg": "@Supersolow",
+    "id": 23048
+  },
+  {
+    "ts": "2026-02-10T17:32",
+    "author": "Eddie H",
+    "msg": "I was with Virgin , but switch to openreach fibre. Which was much cheaper and better! Virgin are a rip-off. I went with  plusnet. Happy with the service",
+    "id": 23049
+  },
+  {
+    "ts": "2026-02-10T17:41",
+    "author": "Marco",
+    "msg": "Maybe it was just a glitch because when I look at them after bound they look right.",
+    "id": 23051
+  },
+  {
+    "ts": "2026-02-10T17:41",
+    "author": "Marco",
+    "msg": "If I can reproduce I’ll create a ticket",
+    "id": 23052
+  },
+  {
+    "ts": "2026-02-10T17:44",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "Working now👌",
+    "id": 23053
+  },
+  {
+    "ts": "2026-02-10T17:46",
+    "author": "Bitdano",
+    "msg": "Samsung and moto have system updates right now",
+    "id": 23054
+  },
+  {
+    "ts": "2026-02-10T17:52",
+    "author": "James_WM_ENO",
+    "msg": "Hi Kay, \nAny word on the early Feb tasks ? Are they going to happen on top of CLI ?",
+    "id": 23055
+  },
+  {
+    "ts": "2026-02-10T17:53",
+    "author": "Eddie H",
+    "msg": "Also working from my sister.",
+    "id": 23056
+  },
+  {
+    "ts": "2026-02-10T17:56",
+    "author": "Forty41",
+    "msg": "[Media] For those in the UK wanting SIM routers to test out you could try this company . I got a few second hand off here via https://www.eternalcomms.com/",
+    "id": 23057
+  },
+  {
+    "ts": "2026-02-10T18:00",
+    "author": "Paul",
+    "msg": "@defiants_kay can you confirm S&R works on iOS as well?",
+    "id": 23058
+  },
+  {
+    "ts": "2026-02-10T18:01",
+    "author": "Adam Buracchi",
+    "msg": "Thanks 🙏",
+    "id": 23059
+  },
+  {
+    "ts": "2026-02-10T18:03",
+    "author": "Forty41",
+    "msg": "Stating the obvious but just make sure you get unlocked ones . I ordered some that were supposed to be used and they came still in security sealed boxes",
+    "id": 23060
+  },
+  {
+    "ts": "2026-02-10T18:04",
+    "author": "Kay | Will never DM you first",
+    "msg": "Yes, I can confirm",
+    "id": 23061
+  },
+  {
+    "ts": "2026-02-10T18:06",
+    "author": "Willian | Nuvola",
+    "msg": "👀",
+    "id": 23062
+  },
+  {
+    "ts": "2026-02-10T18:10",
+    "author": "Paul",
+    "msg": "@defiants_kay",
+    "id": 23063
+  },
+  {
+    "ts": "2026-02-10T18:15",
+    "author": "El Whalo",
+    "msg": "Normal SIM phone… Got a VPN error on home wifi. Disabled wi-fi.\n\nWorked flawlessly after",
+    "id": 23064
+  },
+  {
+    "ts": "2026-02-10T18:17",
+    "author": "Page Øne",
+    "msg": "Caller ID \nafter filling in my OTP  im getting enrollment not found",
+    "id": 23065
+  },
+  {
+    "ts": "2026-02-10T18:17",
+    "author": "Page Øne",
+    "msg": "still having issues ?",
+    "id": 23066
+  },
+  {
+    "ts": "2026-02-10T18:17",
+    "author": "Kay | Will never DM you first",
+    "msg": "Should be fine now. Can you send a screenshot?",
+    "id": 23067
+  },
+  {
+    "ts": "2026-02-10T18:18",
+    "author": "Page Øne",
+    "msg": "let me hard close and try again",
+    "id": 23068
+  },
+  {
+    "ts": "2026-02-10T18:21",
+    "author": "Page Øne",
+    "msg": "to many request need to wait hahah",
+    "id": 23069
+  },
+  {
+    "ts": "2026-02-10T18:24",
+    "author": "⚡️Redoxis⚡️",
+    "msg": "Anyone have their first call yet?",
+    "id": 23070
+  },
+  {
+    "ts": "2026-02-10T18:28",
+    "author": "Willian | Nuvola",
+    "msg": "👀",
+    "id": 23071
+  },
+  {
+    "ts": "2026-02-10T18:29",
+    "author": "Rdawgie",
+    "msg": "If someone did, this chat would be blowing up",
+    "id": 23072
+  },
+  {
+    "ts": "2026-02-10T18:44",
+    "author": "OC Nodes",
+    "msg": "Just a regular spam call today sadly I even double checked and asked if he was with Unity then asked if he wanted a license. Didn't work out.",
+    "id": 23074
+  },
+  {
+    "ts": "2026-02-10T18:46",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "One of my ULOs now buying a node. Lost a good one😁😭",
+    "id": 23075
+  },
+  {
+    "ts": "2026-02-10T18:51",
+    "author": "OC Nodes",
+    "msg": "He better use your referral code",
+    "id": 23076
+  },
+  {
+    "ts": "2026-02-10T18:58",
+    "author": "Wen (calibrating)",
+    "msg": "Just here to say that ‘early February’ ends tomorrow. With 18 days left of the month, we are soon in LATE February. \nWill the January tasks become available in February or are we looking into March now?",
+    "id": 23078
+  },
+  {
+    "ts": "2026-02-10T19:13",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Love the name 😂\n\nLet's give the team this week at least. Fingers crossed we start to see something 🤞",
+    "id": 23079
+  },
+  {
+    "ts": "2026-02-10T19:13",
+    "author": "James_WM_ENO",
+    "msg": "I have asked this question a couple times today but seem to just get ignored now",
+    "id": 23080
+  },
+  {
+    "ts": "2026-02-10T19:14",
+    "author": "Kay | Will never DM you first",
+    "msg": "We are waiting for info on February tasks",
+    "id": 23081
+  },
+  {
+    "ts": "2026-02-10T19:14",
+    "author": "James_WM_ENO",
+    "msg": "Everyone was saying early Feb when we were in late Jan … now I guess it will be late Feb or march",
+    "id": 23082
+  },
+  {
+    "ts": "2026-02-10T19:18",
+    "author": "Wen (calibrating)",
+    "msg": "Let’s keep asking.",
+    "id": 23083
+  },
+  {
+    "ts": "2026-02-10T19:29",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Where is Mr. As Expected wen u need him? 😃",
+    "id": 23084
+  },
+  {
+    "ts": "2026-02-10T19:48",
+    "author": "salee",
+    "msg": "really...well, that's a problem....already 5 days for sure...",
+    "id": 23085
+  },
+  {
+    "ts": "2026-02-10T19:50",
+    "author": "salee",
+    "msg": "😂",
+    "id": 23086
+  },
+  {
+    "ts": "2026-02-10T19:50",
+    "author": "Calus B",
+    "msg": "When did the coming soon task show up in app",
+    "id": 23087
+  },
+  {
+    "ts": "2026-02-10T20:05",
+    "author": "Dennis",
+    "msg": "what do you mean ?",
+    "id": 23088
+  },
+  {
+    "ts": "2026-02-10T20:08",
+    "author": "Flippy",
+    "msg": "Anyone else having trouble getting money off of Mobilum/zebec wallet (unitys partner)?",
+    "id": 23089
+  },
+  {
+    "ts": "2026-02-10T20:10",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Third week January?\n\n\nEdited",
+    "id": 23090
+  },
+  {
+    "ts": "2026-02-10T20:10",
+    "author": "Dennis",
+    "msg": "Was it not in the end of january around 22nd?",
+    "id": 23091
+  },
+  {
+    "ts": "2026-02-10T20:11",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Yeah I was checking the announcement \nNot even first but third yes",
+    "id": 23092
+  },
+  {
+    "ts": "2026-02-10T20:12",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "So almost 3 weeks ago",
+    "id": 23093
+  },
+  {
+    "ts": "2026-02-10T20:12",
+    "author": "Dennis",
+    "msg": "Lets give the team this week to get the CLI tasks and S&R running",
+    "id": 23094
+  },
+  {
+    "ts": "2026-02-10T20:15",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "[Photo] Meanwhile nobody loves me nobody calls me 😭",
+    "id": 23095
+  },
+  {
+    "ts": "2026-02-10T20:17",
+    "author": "OC Nodes",
+    "msg": "On an unrelated note Val what's your number",
+    "id": 23096
+  },
+  {
+    "ts": "2026-02-10T20:20",
+    "author": "Eddie H",
+    "msg": "It's just unity in the treat them means keen them keen stage. Hopefully we will be in the over keen stages with lots of calls and messages soon 🔜",
+    "id": 23097
+  },
+  {
+    "ts": "2026-02-10T20:21",
+    "author": "FriendlyUrchin",
+    "msg": "Yes. They are looking for a new card issuer.",
+    "id": 23098
+  },
+  {
+    "ts": "2026-02-10T20:21",
+    "author": "FriendlyUrchin",
+    "msg": "[File: coming-soon-crypto.mp4]",
+    "id": 23099
+  },
+  {
+    "ts": "2026-02-10T20:23",
+    "author": "salee",
+    "msg": "🧐really",
+    "id": 23100
+  },
+  {
+    "ts": "2026-02-10T20:23",
+    "author": "⚡️BeyondLimitsNodes⚡️",
+    "msg": "I'm using Tria now. 20$ yearly but works great.. And I can top it up with enough options. Zebec just with too many problems for now.",
+    "id": 23101
+  },
+  {
+    "ts": "2026-02-10T20:27",
+    "author": "Flippy",
+    "msg": "First and last time using zebec",
+    "id": 23102
+  },
+  {
+    "ts": "2026-02-10T20:30",
+    "author": "Charles",
+    "msg": "Yep, same experience. Not a serious business",
+    "id": 23103
+  },
+  {
+    "ts": "2026-02-10T20:31",
+    "author": "Wen (calibrating)",
+    "msg": "Zebec was meant to be awesome news! wtf",
+    "id": 23104
+  },
+  {
+    "ts": "2026-02-10T20:33",
+    "author": "Electronige",
+    "msg": "I keep getting Enrollment not found. when I enter the texted code to Verify my Number .",
+    "id": 23105
+  },
+  {
+    "ts": "2026-02-10T20:34",
+    "author": "Kay | Will never DM you first",
+    "msg": "Could you send a screenshot?",
+    "id": 23106
+  },
+  {
+    "ts": "2026-02-10T20:35",
+    "author": "Electronige",
+    "msg": "will try give me 2 mins",
+    "id": 23107
+  },
+  {
+    "ts": "2026-02-10T20:36",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "7",
+    "id": 23108
+  },
+  {
+    "ts": "2026-02-10T20:39",
+    "author": "FriendlyUrchin",
+    "msg": "420",
+    "id": 23109
+  },
+  {
+    "ts": "2026-02-10T20:39",
+    "author": "Kay | Will never DM you first",
+    "msg": "31415",
+    "id": 23110
+  },
+  {
+    "ts": "2026-02-10T20:41",
+    "author": "Electronige",
+    "msg": "[Photo]",
+    "id": 23111
+  },
+  {
+    "ts": "2026-02-10T20:41",
+    "author": "Kay | Will never DM you first",
+    "msg": "Thank you! Will share with the team",
+    "id": 23112
+  },
+  {
+    "ts": "2026-02-10T20:43",
+    "author": "Kay | Will never DM you first",
+    "msg": "While we wait for team's response, have you tried:\n1. Restarting your app\n2. Restarting your phone",
+    "id": 23113
+  },
+  {
+    "ts": "2026-02-10T20:44",
+    "author": "Electronige",
+    "msg": "ok will try",
+    "id": 23114
+  },
+  {
+    "ts": "2026-02-10T20:49",
+    "author": "chilly",
+    "msg": "[Photo] Anyone else had a ULO running unity on a pair of headphones?\n\nJust checked and it earned 0.5UPs over 3 day\n\nTeam needs to look into blocking some devices I think - unless it's just what they've named it",
+    "id": 23115
+  },
+  {
+    "ts": "2026-02-10T20:49",
+    "author": "Kay | Will never DM you first",
+    "msg": "Yeah in my experience the licenses just fetch the name of the device",
+    "id": 23116
+  },
+  {
+    "ts": "2026-02-10T20:50",
+    "author": "chilly",
+    "msg": "Ahh okay, that would make sense haha :)",
+    "id": 23117
+  },
+  {
+    "ts": "2026-02-10T20:51",
+    "author": "Calus B",
+    "msg": "That’s funny. OK I never look at my uLO phones they’ve been stable for so long. I didn’t notice the coming soon task under the CLI.",
+    "id": 23118
+  },
+  {
+    "ts": "2026-02-10T20:55",
+    "author": "Page Øne",
+    "msg": "cool hahah well the goal of the team was to run licenses on every wifi product hahaha",
+    "id": 23119
+  },
+  {
+    "ts": "2026-02-10T21:00",
+    "author": "R B",
+    "msg": "how did they evrn enter the lease code on headphones i would think its just renamed to that.",
+    "id": 23120
+  },
+  {
+    "ts": "2026-02-10T21:01",
+    "author": "R B",
+    "msg": "think that was always there .  hopefully another 4UPS for that too",
+    "id": 23121
+  },
+  {
+    "ts": "2026-02-10T21:03",
+    "author": "Calus B",
+    "msg": "Be sweet",
+    "id": 23122
+  },
+  {
+    "ts": "2026-02-10T21:06",
+    "author": "R B",
+    "msg": "users need to disable any firewall or security included with their ISP,  with Vodafone they call it secureNET in UK, turning that off makes a massive difference",
+    "id": 23123
+  },
+  {
+    "ts": "2026-02-10T21:11",
+    "author": "Frank",
+    "msg": "Any news about the new early februrary tasks?",
+    "id": 23124
+  },
+  {
+    "ts": "2026-02-10T21:18",
+    "author": "Val | WhiteBridge Noderunners | MNT SN.VN.UN",
+    "msg": "Yes but the security is there with a goal right?\n\nIt’s like at my office we got all kinds of proxy’s and firewall to keep the bad guys outside\n\nAnd this wasn’t a problem till 1 week ago",
+    "id": 23125
+  },
+  {
+    "ts": "2026-02-10T21:19",
+    "author": "Calus B",
+    "msg": "You should be able to make a network segment that has all that off",
+    "id": 23126
+  },
+  {
+    "ts": "2026-02-10T21:19",
+    "author": "Kay | Will never DM you first",
+    "msg": "Could you check now please?",
+    "id": 23127
+  },
+  {
+    "ts": "2026-02-10T21:23",
+    "author": "Page Øne",
+    "msg": "checking as well",
+    "id": 23128
+  },
+  {
+    "ts": "2026-02-10T21:24",
+    "author": "Page Øne",
+    "msg": "im getting to many request try later",
+    "id": 23129
+  },
+  {
+    "ts": "2026-02-10T21:24",
+    "author": "Page Øne",
+    "msg": "😢",
+    "id": 23130
+  },
+  {
+    "ts": "2026-02-10T21:24",
+    "author": "Kay | Will never DM you first",
+    "msg": "🥲",
+    "id": 23131
+  },
+  {
+    "ts": "2026-02-10T21:29",
+    "author": "Page Øne",
+    "msg": "how long is the cooldown on this Kay ?",
+    "id": 23132
+  },
+  {
+    "ts": "2026-02-10T21:33",
+    "author": "Kay | Will never DM you first",
+    "msg": "Can you try in 6 minutes from now? 😅",
+    "id": 23133
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Alex B",
+    "msg": "Me too!",
+    "id": 23134
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Kay | Will never DM you first",
+    "msg": "You as well, in 6 minutes",
+    "id": 23135
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Calus B",
+    "msg": "Can I try in six minutes?",
+    "id": 23136
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Kay | Will never DM you first",
+    "msg": "No, please, too many requests",
+    "id": 23137
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Calus B",
+    "msg": "Or should I just go for it right now?",
+    "id": 23138
+  },
+  {
+    "ts": "2026-02-10T21:34",
+    "author": "Kay | Will never DM you first",
+    "msg": "😟",
+    "id": 23139
+  },
+  {
+    "ts": "2026-02-10T21:35",
+    "author": "Page Øne",
+    "msg": "I will wait 15 min",
+    "id": 23140
+  },
+  {
+    "ts": "2026-02-10T21:35",
+    "author": "Kay | Will never DM you first",
+    "msg": "Actually, the team is ready to look at particular case if it doesn't work in 5-ish. But I was also informed that the most common throttles should be ~10 minutes",
+    "id": 23141
+  },
+  {
+    "ts": "2026-02-10T21:36",
+    "author": "Calus B",
+    "msg": "Oh",
+    "id": 23142
+  },
+  {
+    "ts": "2026-02-10T21:36",
+    "author": "Calus B",
+    "msg": "Just got one through",
+    "id": 23143
+  },
+  {
+    "ts": "2026-02-10T21:37",
+    "author": "Calus B",
+    "msg": "Finally",
+    "id": 23144
+  },
+  {
+    "ts": "2026-02-10T21:38",
+    "author": "R B",
+    "msg": "yes but the kids cant access the PS5 playstore with it on, so i just turn it off now.. home laptops have their own software and av",
+    "id": 23145
+  },
+  {
+    "ts": "2026-02-10T21:44",
+    "author": "Miyagi Node",
+    "msg": "What’s everyone doin?",
+    "id": 23146
+  },
+  {
+    "ts": "2026-02-10T21:45",
+    "author": "Wopdiddly",
+    "msg": "I hope you referred him?",
+    "id": 23147
+  },
+  {
+    "ts": "2026-02-10T21:54",
+    "author": "Cardano Lady",
+    "msg": "[Photo]",
+    "id": 23148
+  },
+  {
+    "ts": "2026-02-10T21:55",
+    "author": "Cardano Lady",
+    "msg": "Today I withdraw my first rewards $150 worth of ADA from unity",
+    "id": 23149
+  },
+  {
+    "ts": "2026-02-10T21:56",
+    "author": "Page Øne",
+    "msg": "still getting the the pop up @defiants_kay",
+    "id": 23150
+  },
+  {
+    "ts": "2026-02-10T21:58",
+    "author": "Kay | Will never DM you first",
+    "msg": "The team is on it",
+    "id": 23151
+  },
+  {
+    "ts": "2026-02-10T21:58",
+    "author": "Page Øne",
+    "msg": "i did the hard stop",
+    "id": 23152
+  },
+  {
+    "ts": "2026-02-10T21:58",
+    "author": "Page Øne",
+    "msg": "before testing",
+    "id": 23153
+  },
+  {
+    "ts": "2026-02-10T22:30",
+    "author": "Wen (calibrating)",
+    "msg": "Looking forward to getting to three figures. Should take about 3 years at current rate.",
+    "id": 23154
+  },
+  {
+    "ts": "2026-02-10T22:49",
+    "author": "Cardano Lady",
+    "msg": "🫠",
+    "id": 23155
+  },
+  {
+    "ts": "2026-02-10T22:49",
+    "author": "HFA | Earnest Nodes",
+    "msg": "Any updates on the Scout and Runner tasks?",
+    "id": 23156
+  },
+  {
+    "ts": "2026-02-10T22:49",
+    "author": "Calus B",
+    "msg": "Nope",
+    "id": 23157
+  },
+  {
+    "ts": "2026-02-10T22:50",
+    "author": "HFA | Earnest Nodes",
+    "msg": "I really hope I hear soon from the team about Unity AMA this week",
+    "id": 23158
+  },
+  {
+    "ts": "2026-02-10T22:50",
+    "author": "Calus B",
+    "msg": "When they are quiet they are busy",
+    "id": 23159
+  },
+  {
+    "ts": "2026-02-10T22:51",
+    "author": "flipwip",
+    "msg": "How come the radio silence, Omri said comms will pick up, with calls every week......",
+    "id": 23160
+  },
+  {
+    "ts": "2026-02-10T22:51",
+    "author": "Willian | Nuvola",
+    "msg": "🤷🏻‍♂️",
+    "id": 23161
+  },
+  {
+    "ts": "2026-02-10T22:52",
+    "author": "HFA | Earnest Nodes",
+    "msg": "It has been over a week since CLI and we haven’t received any test calls yet",
+    "id": 23162
+  },
+  {
+    "ts": "2026-02-10T22:52",
+    "author": "flipwip",
+    "msg": "Sure, but it dosnt take much time to give a brief update, either in this chat or announcements. Let's be honest, in any of the companies we are involved in this would not be acceptable.",
+    "id": 23163
+  },
+  {
+    "ts": "2026-02-10T22:54",
+    "author": "Calus B",
+    "msg": "Announcement for the sake of announcements are useless. What are they going to say… we are still working on it. We got a cli announcement yesterday we should be moving into more callls midweek so hopefully we see some more cli calls tomorrow till Friday",
+    "id": 23164
+  },
+  {
+    "ts": "2026-02-10T22:54",
+    "author": "flipwip",
+    "msg": "Not even a... hey guys sorry, we have run info few unexpected issues and we expect to have CLI calls within days not weeks. Working on resolving, of which are in house challenges so we have control to resolve. Appreciate your patience",
+    "id": 23165
+  },
+  {
+    "ts": "2026-02-10T22:54",
+    "author": "flipwip",
+    "msg": "See i just did it",
+    "id": 23166
+  },
+  {
+    "ts": "2026-02-10T22:54",
+    "author": "flipwip",
+    "msg": "Simple",
+    "id": 23167
+  },
+  {
+    "ts": "2026-02-10T22:54",
+    "author": "flipwip",
+    "msg": "Give us some level of connection with the team",
+    "id": 23168
+  },
+  {
+    "ts": "2026-02-10T22:55",
+    "author": "Calus B",
+    "msg": "Sure. If they know when it will turn on",
+    "id": 23169
+  },
+  {
+    "ts": "2026-02-10T22:55",
+    "author": "flipwip",
+    "msg": "Ok then just say we having issues",
+    "id": 23170
+  },
+  {
+    "ts": "2026-02-10T22:55",
+    "author": "flipwip",
+    "msg": "No known resolution date",
+    "id": 23171
+  },
+  {
+    "ts": "2026-02-10T22:55",
+    "author": "flipwip",
+    "msg": "They can't just not communicate at all",
+    "id": 23172
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "flipwip",
+    "msg": "And any comms is a general x post the build up hopium",
+    "id": 23173
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "Calus B",
+    "msg": "Likely they are just fine tuning things to go into production",
+    "id": 23174
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "flipwip",
+    "msg": "They just need to shoot straight and say it as it is",
+    "id": 23175
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "Calus B",
+    "msg": "Small changes add up in time",
+    "id": 23176
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "flipwip",
+    "msg": "We all grown up and can take the truth",
+    "id": 23177
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "Calus B",
+    "msg": "Trust me…. Some of us can’t",
+    "id": 23178
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "flipwip",
+    "msg": "Then they should just say that",
+    "id": 23179
+  },
+  {
+    "ts": "2026-02-10T22:56",
+    "author": "Carlos",
+    "msg": "That has been a complaint of people that use it outside of Unity project.",
+    "id": 23180
+  },
+  {
+    "ts": "2026-02-10T22:57",
+    "author": "flipwip",
+    "msg": "We just guessing and that causes all the bollocks",
+    "id": 23181
+  },
+  {
+    "ts": "2026-02-10T22:58",
+    "author": "Calus B",
+    "msg": "Jamie said on Saturday they were wrapping up testing on production and should be ramping up to full production middle of the week",
+    "id": 23182
+  },
+  {
+    "ts": "2026-02-10T22:58",
+    "author": "Calus B",
+    "msg": "That was 3 days ago",
+    "id": 23183
+  },
+  {
+    "ts": "2026-02-10T22:58",
+    "author": "Calus B",
+    "msg": "It’s not like we hear nothing ever",
+    "id": 23184
+  },
+  {
+    "ts": "2026-02-10T22:58",
+    "author": "flipwip",
+    "msg": "I didn't say ever",
+    "id": 23185
+  },
+  {
+    "ts": "2026-02-10T22:59",
+    "author": "Calus B",
+    "msg": "Right my point is they are giving updates",
+    "id": 23186
+  },
+  {
+    "ts": "2026-02-10T22:59",
+    "author": "Calus B",
+    "msg": "No company updates daily",
+    "id": 23187
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "flipwip",
+    "msg": "Bro just stop",
+    "id": 23188
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "flipwip",
+    "msg": "I never asked for daily updates",
+    "id": 23189
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "flipwip",
+    "msg": "Good lord",
+    "id": 23190
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "flipwip",
+    "msg": "You right",
+    "id": 23191
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Morning chat, how are we?",
+    "id": 23192
+  },
+  {
+    "ts": "2026-02-10T23:00",
+    "author": "flipwip",
+    "msg": "I'm done",
+    "id": 23193
+  },
+  {
+    "ts": "2026-02-10T23:03",
+    "author": "flipwip",
+    "msg": "Morning, doing ok thanks and trust you are too",
+    "id": 23194
+  },
+  {
+    "ts": "2026-02-10T23:03",
+    "author": "HFA | Earnest Nodes",
+    "msg": "Let’s focus on the upcoming tasks",
+    "id": 23195
+  },
+  {
+    "ts": "2026-02-10T23:04",
+    "author": "Calus B",
+    "msg": "You just complained they don’t communicate at all\n\n look at announcement literally yesterday and then the space on Saturday then say oh they don’t update us ever.",
+    "id": 23196
+  },
+  {
+    "ts": "2026-02-10T23:04",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Doing good thanks!",
+    "id": 23197
+  },
+  {
+    "ts": "2026-02-10T23:04",
+    "author": "HFA | Earnest Nodes",
+    "msg": "I say this. After I received my rewards few days back, it kind of turns me on:)",
+    "id": 23198
+  },
+  {
+    "ts": "2026-02-10T23:04",
+    "author": "HFA | Earnest Nodes",
+    "msg": "I’m seeing big silver lining here",
+    "id": 23199
+  },
+  {
+    "ts": "2026-02-10T23:04",
+    "author": "Jack | Will Never Message You First",
+    "msg": "An system maintenance log / page isn't an unreasonable request, I think things are quite early on here ad people are expecting stuff that long established companies provide.",
+    "id": 23200
+  },
+  {
+    "ts": "2026-02-10T23:05",
+    "author": "Calus B",
+    "msg": "Like I think we could have a different method of communication like a monthly call or something to give more clear  updates pertinent to us that’s fair",
+    "id": 23201
+  },
+  {
+    "ts": "2026-02-10T23:05",
+    "author": "flipwip",
+    "msg": "Come on, I said \"they cant\" not \"they dont\"....\n\nAnd I never said they dont EVER update us",
+    "id": 23202
+  },
+  {
+    "ts": "2026-02-10T23:05",
+    "author": "Jack | Will Never Message You First",
+    "msg": "Reality is there'd be a lot of helpful things to have, but in a lean setting it means attention being taken away from something else too, so 🤷🏽‍♂️",
+    "id": 23203
+  },
+  {
+    "ts": "2026-02-10T23:06",
+    "author": "Flavius",
+    "msg": "I think the frustration is the updates are always \"everything is on track\" but we never get the \"we hit a delay guys\" updates",
+    "id": 23204
+  },
+  {
+    "ts": "2026-02-10T23:06",
+    "author": "flipwip",
+    "msg": "Agreed",
+    "id": 23205
+  },
+  {
+    "ts": "2026-02-10T23:08",
+    "author": "Calus B",
+    "msg": "Sure. I get that. It is entirely possible that the scope of work is just taking longer then they thought but there are no real roadblocks. The only thing to do is to finish the work",
+    "id": 23206
+  },
+  {
+    "ts": "2026-02-10T23:10",
+    "author": "flipwip",
+    "msg": "And we get that, 💯 know that things dont always go to plan, in a week at work I get slammed with set backs all the time. The key is clear, honest and timely communication when there are setbacks and challenges. People feel informed and more accepting of a bad situation.",
+    "id": 23207
+  },
+  {
+    "ts": "2026-02-10T23:12",
+    "author": "Calus B",
+    "msg": "Honestly, they need a team member dedicated to that but they don’t have one",
+    "id": 23208
+  },
+  {
+    "ts": "2026-02-10T23:13",
+    "author": "Calus B",
+    "msg": "So now we have to rely on someone from the senior team, pulling away from a meeting or work to get any sort of updates",
+    "id": 23209
+  },
+  {
+    "ts": "2026-02-10T23:13",
+    "author": "flipwip",
+    "msg": "Couldn't agree more",
+    "id": 23210
+  },
+  {
+    "ts": "2026-02-10T23:13",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Do you ever get tired ?",
+    "id": 23211
+  },
+  {
+    "ts": "2026-02-10T23:14",
+    "author": "flipwip",
+    "msg": "And that person dosnt have to have a bachelors degree, 2800 or whatever nodes sold at 5k a pop, I reckon they can hire someone on 6 month contact to be that person.....",
+    "id": 23212
+  },
+  {
+    "ts": "2026-02-10T23:14",
+    "author": "Calus B",
+    "msg": "I’m a robot",
+    "id": 23213
+  },
+  {
+    "ts": "2026-02-10T23:18",
+    "author": "flipwip",
+    "msg": "Hell Calus, if I was you I would be seriously questioning the team on why they cant fast track that. The amount of crap you have to put up with is admirable sir. I couldn't do what you do, id tell folks to go suck on a long one to be honest. Your job as ambassador made so much harder than if there were some short snappy updates from the team. Anyhow, it is what it is, I've been a massive supporter from Unity day 1, been around since WM TGE and continue to bring folks into the space. I ain't going away and will be about for years to come. I want what's best for us all and trying to influence change. I usually stay silent and patient in the background but needed to speak up today. Have a good day all. Bye for now",
+    "id": 23214
+  },
+  {
+    "ts": "2026-02-10T23:19",
+    "author": "flipwip",
+    "msg": "Select all the ✈️🛩🛫🛬 😁",
+    "id": 23215
+  },
+  {
+    "ts": "2026-02-10T23:24",
+    "author": "Calus B",
+    "msg": "Yea we know 😁 it’s been suggested multiple times. Honestly, there’s a lot they want to improve, but everything takes time and effort. Right now every effort is concentrated on launching unity and scaling minutes. In that lens i’m just gonna have to wait for the things like that which would be nice to haves.",
+    "id": 23216
+  },
+  {
+    "ts": "2026-02-10T23:25",
+    "author": "Calus B",
+    "msg": "Instructions unclear 💣",
+    "id": 23217
+  },
+  {
+    "ts": "2026-02-10T23:28",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Remind them Unity launched already, we need tasks 😂",
+    "id": 23218
+  },
+  {
+    "ts": "2026-02-10T23:30",
+    "author": "Calus B",
+    "msg": "Oh right. They probably forgot to turn on all the tasks. I will go remind them to turn it on",
+    "id": 23219
+  },
+  {
+    "ts": "2026-02-10T23:31",
+    "author": "Willian | Nuvola",
+    "msg": "[File: the-office-damn-it.mp4]",
+    "id": 23220
+  },
+  {
+    "ts": "2026-02-10T23:34",
+    "author": "Multiple-Tasks-incoming",
+    "msg": "Also Jan ones, that would be a bonus 😉",
+    "id": 23221
+  },
+  {
+    "ts": "2026-02-10T23:35",
+    "author": "Calus B",
+    "msg": "Gotta wait till next January to turn the January tasks on",
+    "id": 23222
+  },
+  {
+    "ts": "2026-02-10T23:35",
+    "author": "Calus B",
+    "msg": "Those are the rules",
+    "id": 23223
+  },
+  {
+    "ts": "2026-02-10T23:36",
+    "author": "Calus B",
+    "msg": "But the February tasks we could probably turn on as long as it’s in February",
+    "id": 23224
+  },
+  {
+    "ts": "2026-02-10T23:36",
+    "author": "Calus B",
+    "msg": "March is right out",
+    "id": 23225
+  },
+  {
+    "ts": "2026-02-10T23:41",
+    "author": "Mat",
+    "msg": "CalusClawd",
+    "id": 23226
+  },
+  {
+    "ts": "2026-02-10T23:45",
+    "author": "Page Øne",
+    "msg": "what are you talking about  you are Buboy",
+    "id": 23227
+  },
+  {
+    "ts": "2026-02-10T23:45",
+    "author": "Calus B",
+    "msg": "Just a simulation",
+    "id": 23228
+  },
+  {
+    "ts": "2026-02-10T23:46",
+    "author": "Calus B",
+    "msg": "Buboy is real. Individually that dude has made more than all of us on Unity so far. The man is a legend.",
+    "id": 23229
+  },
+  {
+    "ts": "2026-02-10T23:48",
+    "author": "Calus B",
+    "msg": "[File: simpsons-rich.mp4]",
+    "id": 23230
+  },
+  {
+    "ts": "2026-02-10T23:59",
+    "author": "Page Øne",
+    "msg": "stillll to many request error",
+    "id": 23231
+  }
+]

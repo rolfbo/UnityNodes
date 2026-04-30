@@ -1,0 +1,344 @@
+[
+  {
+    "ts": "2026-04-23T00:34",
+    "author": "Coffee Nodes",
+    "msg": "/wallet",
+    "id": 33492
+  },
+  {
+    "ts": "2026-04-23T00:34",
+    "author": "Unitywalletbot",
+    "msg": "💼 **Wallet Balance**\n\n$ **USDC**: $747.43 (748)\n🐕 **SHIB**: $688.30 (112,651,987)\n₳ **ADA**: $667.01 (2680.4207)\n⬡ **BNB**: $666.52 (1.0452)\n⟐ **ETH**: $650.79 (0.2746)\n✕ **XRP**: $422.31 (295.3184)\n◎ **SOL**: $367.97 (4.2359)\n💵 **USDT_BSC**: $260.23 (260)\n₮ **USDT**: $245.09 (245)\n💵 **USDC_BSC**: $0.11 (0)\n\n**Total: $4,715.76**\n\n__ETH: 0x0aec...626a__\n__ADA: addr1v...84hj__\n__XRP: raE89s...ZJJM__\n__SOL: BcSEuH...YV6i__\n__BSC: 0xf026...bf9f__",
+    "id": 33493
+  },
+  {
+    "ts": "2026-04-23T04:02",
+    "author": "Alder Nodes",
+    "msg": "I'm seeing rewards from CLI tasks for two of my ULOs the past two days",
+    "id": 33494
+  },
+  {
+    "ts": "2026-04-23T04:03",
+    "author": "Alder Nodes",
+    "msg": "A $0.12 reward and $0.04 reward",
+    "id": 33495
+  },
+  {
+    "ts": "2026-04-23T08:32",
+    "author": "Flippy",
+    "msg": "I remember them saying rewards for CLI from 0.5 to 2.0 UPs",
+    "id": 33496
+  },
+  {
+    "ts": "2026-04-23T08:32",
+    "author": "Flippy",
+    "msg": "Literally everything they say needs to be cut 10 fold minimum",
+    "id": 33497
+  },
+  {
+    "ts": "2026-04-23T08:39",
+    "author": "Jaba - Unityfarmers",
+    "msg": "except for timelines",
+    "id": 33498
+  },
+  {
+    "ts": "2026-04-23T08:46",
+    "author": "Flippy",
+    "msg": "Yes those are 10x minimum or rugged",
+    "id": 33499
+  },
+  {
+    "ts": "2026-04-23T09:06",
+    "author": "Chewy Dankz",
+    "msg": "Lol or like 30x in the case of ‘conservative’ unity estimates",
+    "id": 33500
+  },
+  {
+    "ts": "2026-04-23T11:14",
+    "author": "David P [DPADA]",
+    "msg": "The CLI is just testing, I dont think its customers.....",
+    "id": 33501
+  },
+  {
+    "ts": "2026-04-23T11:14",
+    "author": "David P [DPADA]",
+    "msg": "But at least they are paying",
+    "id": 33502
+  },
+  {
+    "ts": "2026-04-23T11:14",
+    "author": "David P [DPADA]",
+    "msg": "How long till this ponzi scheme runs out of cash....",
+    "id": 33503
+  },
+  {
+    "ts": "2026-04-23T11:14",
+    "author": "David P [DPADA]",
+    "msg": "We are all probably thinking it",
+    "id": 33504
+  },
+  {
+    "ts": "2026-04-23T11:38",
+    "author": "Chewy Dankz",
+    "msg": "Yep",
+    "id": 33505
+  },
+  {
+    "ts": "2026-04-23T11:38",
+    "author": "Chewy Dankz",
+    "msg": "At a certain point they need to evidence that there actually are customers and revenue coming in",
+    "id": 33506
+  },
+  {
+    "ts": "2026-04-23T12:52",
+    "author": "LIIICHT",
+    "msg": "Can't even report the numbers in the app. The whole things a mess. My money would be better put elsewhere but that's not even an option as no one is buying this shit in their right mind.",
+    "id": 33507
+  },
+  {
+    "ts": "2026-04-23T12:56",
+    "author": "Marv | UnitySquad Admin | Unity Node Operator",
+    "msg": "Current build is 2aa32d7 \nI have to force restart twice",
+    "id": 33508
+  },
+  {
+    "ts": "2026-04-23T12:58",
+    "author": "Daniel 🇷🇴",
+    "msg": "new builds today?",
+    "id": 33509
+  },
+  {
+    "ts": "2026-04-23T12:59",
+    "author": "David P [DPADA]",
+    "msg": "What’s this mean?",
+    "id": 33510
+  },
+  {
+    "ts": "2026-04-23T13:02",
+    "author": "Daniel 🇷🇴",
+    "msg": "I guess this new build is fixing the CLI number reporting bug",
+    "id": 33511
+  },
+  {
+    "ts": "2026-04-23T13:21",
+    "author": "Ricky",
+    "msg": "For me it’s not coming on android \n\nEven after multiple restarts of the phone",
+    "id": 33512
+  },
+  {
+    "ts": "2026-04-23T13:48",
+    "author": "Marv | UnitySquad Admin | Unity Node Operator",
+    "msg": "[Photo]",
+    "id": 33513
+  },
+  {
+    "ts": "2026-04-23T14:07",
+    "author": "Daano",
+    "msg": "\"Delete account\" looking juicier everyday👀",
+    "id": 33514
+  },
+  {
+    "ts": "2026-04-23T18:33",
+    "author": "Rick Middleton",
+    "msg": "Has anyone got a SIM with a phone number in their farm box?   If so has anyone got a CLI so far?",
+    "id": 33515
+  },
+  {
+    "ts": "2026-04-23T18:50",
+    "author": "Willian | Nuvola",
+    "msg": "Are rewards still shit? I turned my boxes off about 2 weeks ago 😅",
+    "id": 33516
+  },
+  {
+    "ts": "2026-04-23T19:23",
+    "author": "GliTch_",
+    "msg": "Mine were yesterday",
+    "id": 33517
+  },
+  {
+    "ts": "2026-04-23T19:34",
+    "author": "Rick Middleton",
+    "msg": "I've got just 7 phones running in my box.\n\n0.1806\n0.1718\n0.1622\n0.1530\n0.1475\n0.1454\n0.1424\ntotal = 1.1029\n\nThese are on Fibre - and they do not get an IPv6 from my supplier Virgin in the UK",
+    "id": 33518
+  },
+  {
+    "ts": "2026-04-23T20:14",
+    "author": "Rick Middleton",
+    "msg": "Makes me wonder if I should get 2 x SIM cards and run the other boards off hotspots...  That's why I was wondering if it was worth trying to get SIMs with phone numbers for CLI and SMS tasks or just data ones...\n\nIf I am able to get on average $1 per day for 7 phones just on Telemetry it might be worth spending 5 or 10 per month on a SIM ?",
+    "id": 33519
+  },
+  {
+    "ts": "2026-04-23T20:24",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "Yes and yes",
+    "id": 33520
+  },
+  {
+    "ts": "2026-04-23T20:25",
+    "author": "Rick Middleton",
+    "msg": "Cool thanks Danny! I might as well give it a go.. rather than having 13 S8 boards doing bugger all",
+    "id": 33521
+  },
+  {
+    "ts": "2026-04-23T20:26",
+    "author": "Danny | World Market | ENO UK",
+    "msg": "I've only had 1 call! But it must work. Even between my handheld and 3 family members. We've had 1 call. So I like your idea 💡",
+    "id": 33522
+  },
+  {
+    "ts": "2026-04-23T20:26",
+    "author": "Flippy",
+    "msg": "Im doing this for one box now to test",
+    "id": 33523
+  },
+  {
+    "ts": "2026-04-23T20:26",
+    "author": "Flippy",
+    "msg": "But with 5 on one sim its already 50% reduced rewards",
+    "id": 33524
+  },
+  {
+    "ts": "2026-04-23T20:26",
+    "author": "Rick Middleton",
+    "msg": "I already have the lid off the box - hopefully the cellular can reach the phones inside...  I have relativley good 4G signal",
+    "id": 33525
+  },
+  {
+    "ts": "2026-04-23T20:27",
+    "author": "Rick Middleton",
+    "msg": "I guess yeah if we are saying 40 to 50c is the going rate for a single SIM",
+    "id": 33526
+  },
+  {
+    "ts": "2026-04-23T20:27",
+    "author": "Flippy",
+    "msg": "I put 4 phones with sims on top of the box",
+    "id": 33527
+  },
+  {
+    "ts": "2026-04-23T20:27",
+    "author": "Flippy",
+    "msg": "Yeah its shit, barely worth it",
+    "id": 33528
+  },
+  {
+    "ts": "2026-04-23T20:28",
+    "author": "Rick Middleton",
+    "msg": "Not a bad idea! 👍️️️️️️",
+    "id": 33529
+  },
+  {
+    "ts": "2026-04-23T20:28",
+    "author": "Flippy",
+    "msg": "Need a fucking wifi task for 20 devices per IP",
+    "id": 33530
+  },
+  {
+    "ts": "2026-04-23T20:28",
+    "author": "Flippy",
+    "msg": "This is shit",
+    "id": 33531
+  },
+  {
+    "ts": "2026-04-23T20:29",
+    "author": "Flippy",
+    "msg": "I sold some boxes to friends which are eating dust right now",
+    "id": 33532
+  },
+  {
+    "ts": "2026-04-23T20:29",
+    "author": "Forty41",
+    "msg": "You can get a Lebara 5gb SIM card deal from here https://www.moneysavingexpert.com/cheap-mobile-finder/sim-only/lebara/ at £1.10 a month for 6 months or 35gb at £1.80 month for 9 months",
+    "id": 33533
+  },
+  {
+    "ts": "2026-04-23T20:30",
+    "author": "Rick Middleton",
+    "msg": "Nice thanks 🙏️️️️️️",
+    "id": 33534
+  },
+  {
+    "ts": "2026-04-23T20:31",
+    "author": "Forty41",
+    "msg": "You can get more than one by using different email or after you have bought one just page back to the start of the order process and repeat",
+    "id": 33535
+  },
+  {
+    "ts": "2026-04-23T20:31",
+    "author": "Rick Middleton",
+    "msg": "Yep..  we almost have boat anchors at the moment.   But I have not given up hope... I always thought not all tasks would work in our farm boxes.. just sucks that the only task we had to begin with does not earn",
+    "id": 33536
+  },
+  {
+    "ts": "2026-04-23T20:32",
+    "author": "Rick Middleton",
+    "msg": "Sneaky! 🤩️️️️️️",
+    "id": 33537
+  },
+  {
+    "ts": "2026-04-23T20:32",
+    "author": "Forty41",
+    "msg": "I am",
+    "id": 33538
+  },
+  {
+    "ts": "2026-04-23T20:39",
+    "author": "Flippy",
+    "msg": "Thats cheap",
+    "id": 33539
+  },
+  {
+    "ts": "2026-04-23T20:39",
+    "author": "Flippy",
+    "msg": "Cheapest here is 4,50 euro per month in first year, 8 euro for 2nd year.",
+    "id": 33540
+  },
+  {
+    "ts": "2026-04-23T20:40",
+    "author": "Flippy",
+    "msg": "(From what I could find)",
+    "id": 33541
+  },
+  {
+    "ts": "2026-04-23T20:40",
+    "author": "Flippy",
+    "msg": "Happy to hear cheaper solution for the dutch",
+    "id": 33542
+  },
+  {
+    "ts": "2026-04-23T20:40",
+    "author": "Forty41",
+    "msg": "It is. It reverts after the initial period but you get at least 6 months at the intro rate but they are always on promotion",
+    "id": 33543
+  },
+  {
+    "ts": "2026-04-23T21:06",
+    "author": "Flippy",
+    "msg": "Its more profitable to just find good ulos who can also earn from cli and sms/s&r soon than doing all this stuff with sims on my boxes just for the telemetry task",
+    "id": 33544
+  },
+  {
+    "ts": "2026-04-23T21:14",
+    "author": "Rick Middleton",
+    "msg": "Yep.  Just be good to see the boxes we have bought already not sitting idle if they can be profitable at all.\n\nAnd maybe in the long run there will be other wifi tasks that will work OK in our boxes to make it even more worthwhile..  as we get to keep 100% of the earnings as opposed to just 50% from the market place it might work out",
+    "id": 33545
+  },
+  {
+    "ts": "2026-04-23T21:19",
+    "author": "Frank",
+    "msg": "Did someone already try to run the s8 boxes with esim?",
+    "id": 33546
+  },
+  {
+    "ts": "2026-04-23T21:20",
+    "author": "Frank",
+    "msg": "chillaxsim.com/products/esim-adapter https://share.google/VcD36J54dSD152Mql",
+    "id": 33547
+  },
+  {
+    "ts": "2026-04-23T21:21",
+    "author": "Frank",
+    "msg": "With something like this for example..",
+    "id": 33548
+  }
+]
