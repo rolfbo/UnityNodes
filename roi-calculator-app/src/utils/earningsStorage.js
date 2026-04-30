@@ -18,6 +18,7 @@
  */
 
 import { validateJSONImport, checkForDuplicates, sanitizeEarning, generateImportPreview, validateCSVRow, detectCSVColumns } from './importValidator.js';
+import { parseAPIResponse, smartParse, detectFormat } from './earningsParser.js';
 
 // Storage keys for localStorage
 const EARNINGS_KEY = 'unity-nodes-earnings';
@@ -325,7 +326,7 @@ export function exportToCSV() {
     }
 
     // CSV header
-    const headers = ['Date', 'Node ID', 'License Type', 'Amount ($)', 'Status'];
+    const headers = ['Date', 'Node ID', 'License Type', 'Amount (UP)', 'Status'];
     const rows = [headers.join(',')];
 
     // Add data rows
@@ -561,6 +562,138 @@ export function importFromCSV(csvString, options = {}) {
 }
 
 /**
+ * Import earnings from Unity Nodes API JSON response
+ * Handles the rewards_get_allocations response format (amountMicros, completedAt, licenseId etc.)
+ *
+ * @param {string} jsonString - Raw JSON string from the API
+ * @param {string} mergeStrategy - How to handle duplicates: 'skip', 'add-all', or 'replace-all'
+ * @returns {Object} Result with success status, counts, and preview
+ */
+export function importFromAPIJSON(jsonString, mergeStrategy = 'skip') {
+    const parseResult = parseAPIResponse(jsonString);
+
+    if (!parseResult.success) {
+        return {
+            success: false,
+            message: `API import failed: ${parseResult.errors.join(', ')}`,
+            errors: parseResult.errors
+        };
+    }
+
+    const existingEarnings = loadEarnings();
+    const preview = generateImportPreview(parseResult.earnings);
+
+    switch (mergeStrategy) {
+        case 'replace-all':
+            saveEarnings(parseResult.earnings);
+            return {
+                success: true,
+                message: `Replaced all data with ${parseResult.earnings.length} API records`,
+                addedCount: parseResult.earnings.length,
+                replacedCount: existingEarnings.length,
+                totalCount: parseResult.earnings.length,
+                preview
+            };
+
+        case 'add-all': {
+            const allEarnings = [...existingEarnings, ...parseResult.earnings];
+            saveEarnings(allEarnings);
+            return {
+                success: true,
+                message: `Added ${parseResult.earnings.length} API records`,
+                addedCount: parseResult.earnings.length,
+                totalCount: parseResult.earnings.length,
+                preview
+            };
+        }
+
+        case 'skip':
+        default: {
+            const duplicateCheck = checkForDuplicates(parseResult.earnings, existingEarnings);
+            if (duplicateCheck.uniqueEarnings.length > 0) {
+                const allEarnings = [...existingEarnings, ...duplicateCheck.uniqueEarnings];
+                saveEarnings(allEarnings);
+            }
+            return {
+                success: true,
+                message: duplicateCheck.duplicateCount > 0
+                    ? `Added ${duplicateCheck.uniqueCount} records, skipped ${duplicateCheck.duplicateCount} duplicates`
+                    : `Added ${duplicateCheck.uniqueCount} records`,
+                addedCount: duplicateCheck.uniqueCount,
+                duplicateCount: duplicateCheck.duplicateCount,
+                totalCount: parseResult.earnings.length,
+                preview
+            };
+        }
+    }
+}
+
+/**
+ * Smart import that auto-detects format (API JSON, tracker JSON, CSV, or pasted text)
+ * and routes to the appropriate import function
+ *
+ * @param {string} data - Raw data string (JSON, CSV, or pasted text)
+ * @param {string} mergeStrategy - 'skip', 'add-all', or 'replace-all'
+ * @returns {Object} Result with success status, counts, and detected format
+ */
+export function smartImport(data, mergeStrategy = 'skip') {
+    const format = detectFormat(data);
+
+    switch (format) {
+        case 'api-json':
+            return { ...importFromAPIJSON(data, mergeStrategy), format };
+
+        case 'tracker-json':
+            return { ...importFromJSON(data, mergeStrategy), format };
+
+        default: {
+            // Try CSV detection (has header row with commas)
+            const firstLine = data.trim().split('\n')[0];
+            if (firstLine.includes(',') && (
+                firstLine.toLowerCase().includes('date') ||
+                firstLine.toLowerCase().includes('amount') ||
+                firstLine.toLowerCase().includes('node')
+            )) {
+                return { ...importFromCSV(data), format: 'csv' };
+            }
+
+            // Fall back to paste-text parsing
+            const parseResult = smartParse(data);
+            if (parseResult.success) {
+                const existingEarnings = loadEarnings();
+                const duplicateCheck = checkForDuplicates(parseResult.earnings, existingEarnings);
+                const earningsToAdd = mergeStrategy === 'add-all'
+                    ? parseResult.earnings
+                    : duplicateCheck.uniqueEarnings;
+
+                if (earningsToAdd.length > 0) {
+                    const allEarnings = mergeStrategy === 'replace-all'
+                        ? earningsToAdd
+                        : [...existingEarnings, ...earningsToAdd];
+                    saveEarnings(allEarnings);
+                }
+
+                return {
+                    success: true,
+                    message: `Parsed ${earningsToAdd.length} records from pasted text`,
+                    addedCount: earningsToAdd.length,
+                    duplicateCount: duplicateCheck?.duplicateCount || 0,
+                    totalCount: parseResult.earnings.length,
+                    format: 'paste-text'
+                };
+            }
+
+            return {
+                success: false,
+                message: 'Could not detect data format. Supported: API JSON, tracker JSON, CSV, or pasted text.',
+                errors: parseResult.errors || [],
+                format: 'unknown'
+            };
+        }
+    }
+}
+
+/**
  * Export earnings data as Markdown formatted table
  * @param {Object} options - Export options (includeAll, maxRows, etc.)
  * @returns {string} Markdown formatted string
@@ -589,9 +722,9 @@ export function exportToMarkdown(options = {}) {
 
     // Summary Statistics
     markdown += '## Summary\n\n';
-    markdown += `- **Total Earnings:** $${stats.total.toFixed(2)}\n`;
+    markdown += `- **Total Earnings:** ${stats.total.toFixed(6)} UP\n`;
     markdown += `- **Number of Transactions:** ${stats.count}\n`;
-    markdown += `- **Average per Transaction:** $${stats.average.toFixed(2)}\n`;
+    markdown += `- **Average per Transaction:** ${stats.average.toFixed(6)} UP\n`;
     markdown += `- **Active Nodes (ULOs):** ${stats.uniqueNodes}\n`;
 
     // Date range

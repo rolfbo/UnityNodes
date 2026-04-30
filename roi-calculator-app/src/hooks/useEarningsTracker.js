@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { loadEarnings, saveEarnings, deleteEarning, updateEarning, getNodeMapping, updateNodeMapping, addEarning, clearAllEarnings } from '../utils/earningsStorage.js';
-import { parseEarningsText } from '../utils/earningsParser.js';
+import { parseEarningsText, smartParse } from '../utils/earningsParser.js';
 import { addEarning as addEarningToStorage } from '../utils/earningsStorage.js';
 
 /**
@@ -20,7 +20,9 @@ export function useEarningsTracker() {
     }, []);
 
     const handleParse = () => {
-        const result = parseEarningsText(pasteText);
+        // Use smart parser that auto-detects format
+        // (API JSON, tracker JSON, or pasted text)
+        const result = smartParse(pasteText);
         setParseResult(result);
 
         if (result.success) {

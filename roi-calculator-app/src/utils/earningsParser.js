@@ -71,18 +71,37 @@ function extractNodeId(line) {
 
 /**
  * Extract amount from a line of text
- * Looks for patterns like: + $0.07, +$1.23, $0.50, etc.
- * 
+ * Looks for patterns like: + $0.07, +$1.23, $0.50, 0.07 UP, + 0.07, etc.
+ * Also handles the manage.unitynodes.io format (no $ prefix, amounts in UP)
+ *
  * @param {string} line - The line of text to search
  * @returns {number|null} The amount as a number or null if not found
  */
 function extractAmount(line) {
-    // Pattern for amounts: optional +, optional space, $, then number with decimals
-    const pattern = /\+?\s*\$\s*(\d+\.?\d*)/;
-    const match = line.match(pattern);
+    // Pattern 1: Dollar amounts - + $0.07, +$1.23, $0.50
+    const dollarPattern = /\+?\s*\$\s*(\d+\.?\d*)/;
+    const dollarMatch = line.match(dollarPattern);
 
-    if (match && match[1]) {
-        const amount = parseFloat(match[1]);
+    if (dollarMatch && dollarMatch[1]) {
+        const amount = parseFloat(dollarMatch[1]);
+        return isNaN(amount) ? null : amount;
+    }
+
+    // Pattern 2: UP amounts - 0.07 UP, 0.182195 UP
+    const upPattern = /(\d+\.?\d*)\s*UP/i;
+    const upMatch = line.match(upPattern);
+
+    if (upMatch && upMatch[1]) {
+        const amount = parseFloat(upMatch[1]);
+        return isNaN(amount) ? null : amount;
+    }
+
+    // Pattern 3: Plain number with + prefix (manage site format) - + 0.07, +0.182
+    const plainPattern = /^\s*\+\s*(\d+\.?\d*)\s*$/;
+    const plainMatch = line.match(plainPattern);
+
+    if (plainMatch && plainMatch[1]) {
+        const amount = parseFloat(plainMatch[1]);
         return isNaN(amount) ? null : amount;
     }
 
@@ -122,12 +141,16 @@ function extractDate(line) {
         return match3[1];
     }
 
-    // Pattern 4: MM/DD/YYYY or DD/MM/YYYY
-    const pattern4 = /(\d{1,2}\/\d{1,2}\/\d{4})/;
+    // Pattern 4: DD/MM/YYYY HH:MM (manage site format) or DD/MM/YYYY
+    const pattern4 = /(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s+\d{1,2}:\d{2})?/;
     const match4 = line.match(pattern4);
 
     if (match4) {
-        return parseDate(match4[1]);
+        // Treat as DD/MM/YYYY (European format, as used by manage.unitynodes.io)
+        const day = match4[1].padStart(2, '0');
+        const month = match4[2].padStart(2, '0');
+        const year = match4[3];
+        return `${year}-${month}-${day}`;
     }
 
     return null;
@@ -336,28 +359,169 @@ export function validateEarning(earning) {
 }
 
 /**
+ * Parse earnings from Unity Nodes API JSON response
+ * Handles the format returned by rewards_get_allocations endpoint
+ *
+ * @param {string} jsonString - Raw JSON string from the API (or parsed array)
+ * @returns {Object} Result object with parsed earnings and statistics
+ */
+export function parseAPIResponse(jsonString) {
+    try {
+        const data = typeof jsonString === 'string' ? JSON.parse(jsonString) : jsonString;
+
+        if (!Array.isArray(data)) {
+            return {
+                success: false,
+                earnings: [],
+                errors: ['API response is not an array']
+            };
+        }
+
+        const earnings = [];
+        const errors = [];
+
+        data.forEach((record, i) => {
+            try {
+                // Extract date from completedAt or createdAt
+                const dateField = record.completedAt || record.createdAt;
+                if (!dateField) {
+                    errors.push(`Record ${i}: Missing date field`);
+                    return;
+                }
+                const date = dateField.split('T')[0];
+
+                // Extract amount (amountMicros / 1,000,000 = UP)
+                if (record.amountMicros === undefined && record.amount === undefined) {
+                    errors.push(`Record ${i}: Missing amount field`);
+                    return;
+                }
+                const amount = record.amountMicros !== undefined
+                    ? record.amountMicros / 1000000
+                    : record.amount;
+
+                // Short license ID for display
+                const licenseId = record.licenseId || record.nodeId || 'unknown';
+                const shortId = licenseId.length > 12
+                    ? `${licenseId.substring(0, 6)}...${licenseId.substring(licenseId.length - 4)}`
+                    : licenseId;
+
+                earnings.push({
+                    id: `api-${i}-${(record.id || '').substring(0, 8) || Math.random().toString(36).substr(2, 8)}`,
+                    nodeId: shortId,
+                    licenseType: 'ULO',
+                    amount,
+                    date,
+                    status: 'completed',
+                    timestamp: new Date(date).getTime(),
+                    // Preserve full IDs as metadata
+                    fullLicenseId: record.licenseId,
+                    fullNodeId: record.nodeId,
+                    apiRecordId: record.id
+                });
+            } catch (err) {
+                errors.push(`Record ${i}: ${err.message}`);
+            }
+        });
+
+        return {
+            success: earnings.length > 0,
+            earnings,
+            errors,
+            parsedCount: earnings.length,
+            errorCount: errors.length
+        };
+    } catch (error) {
+        return {
+            success: false,
+            earnings: [],
+            errors: [`JSON parse error: ${error.message}`]
+        };
+    }
+}
+
+/**
+ * Detect if text is API JSON, tracker JSON, or pasted text format
+ * @param {string} text - The input text to detect
+ * @returns {string} Format type: 'api-json', 'tracker-json', 'paste-text'
+ */
+export function detectFormat(text) {
+    const trimmed = text.trim();
+
+    // Check if it's JSON
+    if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
+        try {
+            const parsed = JSON.parse(trimmed);
+            const arr = Array.isArray(parsed) ? parsed : [parsed];
+
+            if (arr.length > 0) {
+                // API format has amountMicros
+                if (arr[0].amountMicros !== undefined) return 'api-json';
+                // Tracker format has nodeId + amount + date
+                if (arr[0].nodeId !== undefined && arr[0].amount !== undefined) return 'tracker-json';
+            }
+        } catch (e) {
+            // Not valid JSON, fall through to paste-text
+        }
+    }
+
+    return 'paste-text';
+}
+
+/**
+ * Smart parse function that auto-detects format and parses accordingly
+ * @param {string} text - Raw input text (pasted, JSON, or API response)
+ * @returns {Object} Result object with parsed earnings
+ */
+export function smartParse(text) {
+    const format = detectFormat(text);
+
+    switch (format) {
+        case 'api-json':
+            return { ...parseAPIResponse(text), format: 'api-json' };
+        case 'tracker-json':
+            // Already in tracker format, just parse and validate
+            try {
+                const earnings = JSON.parse(text);
+                return {
+                    success: true,
+                    earnings: Array.isArray(earnings) ? earnings : [earnings],
+                    errors: [],
+                    parsedCount: Array.isArray(earnings) ? earnings.length : 1,
+                    errorCount: 0,
+                    format: 'tracker-json'
+                };
+            } catch (e) {
+                return { success: false, earnings: [], errors: [e.message], format: 'tracker-json' };
+            }
+        case 'paste-text':
+        default:
+            return { ...parseEarningsText(text), format: 'paste-text' };
+    }
+}
+
+/**
  * Get example text format for user guidance
  * @returns {string} Example text showing the expected format
  */
 export function getExampleFormat() {
-    return `Example format:
+    return `Supported formats:
 
+FORMAT 1 — Paste from Unity Nodes dashboard:
 0x01...a278
 + $0.07
 completed / 06 Dec 2025
 
+FORMAT 2 — Paste from manage.unitynodes.io:
 0x01...a278
-+ $0.09
-completed / 05 Dec 2025
++ 0.07
+completed / 27/04/2026 00:00
 
-0x02...b123
-+ $0.15
-completed / 07 Dec 2025
+FORMAT 3 — JSON from API (paste the full response):
+[{"amountMicros": 80419, "completedAt": "2026-04-27T00:00:00+00:00", "licenseId": "0x818d...a575", ...}]
 
-Each entry should include:
-- Node ID (e.g., 0x01...a278)
-- Amount (e.g., + $0.07)
-- Date and status (e.g., completed / 06 Dec 2025)
+FORMAT 4 — Tracker JSON (re-import exported data):
+[{"nodeId": "0x01...a278", "amount": 0.07, "date": "2026-04-27", ...}]
 
-Entries can be separated by blank lines or consecutive.`;
+Each entry should include a node/license ID, amount, and date.
+The parser auto-detects the format.`;
 }

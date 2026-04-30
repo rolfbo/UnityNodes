@@ -10,5 +10,11 @@ export default defineConfig({
     port: 0,
     // Also enable host to allow access from other devices if needed
     host: true
-  }
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    setupFiles: './src/test/setup.js',
+    css: true,
+  },
 })

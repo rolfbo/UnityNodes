@@ -18,7 +18,7 @@ export function BackupRestorePanel({ onBackup, onImport, onClearAll, backupStatu
                     <span>Clear All Data</span>
                 </button>
             </div>
-            {backupStatus && <p className="text-xs text-green-300 mt-2">{backupStatus}</p>}
+            {backupStatus && <p className="text-xs text-green-300 mt-2">{typeof backupStatus === 'string' ? backupStatus : backupStatus.statusMessage || ''}</p>}
         </div>
     );
 }

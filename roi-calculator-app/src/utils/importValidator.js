@@ -40,7 +40,7 @@ export function validateEarning(earning, index = 0) {
         errors.push(`Entry ${index + 1}: Missing node ID`);
     } else if (typeof earning.nodeId !== 'string') {
         errors.push(`Entry ${index + 1}: Node ID must be a string`);
-    } else if (!earning.nodeId.match(/^0x[0-9a-fA-F]/)) {
+    } else if (!earning.nodeId.match(/^0x[0-9a-fA-F]/) && earning.nodeId !== 'daily-aggregate') {
         warnings.push(`Entry ${index + 1}: Node ID format looks unusual: ${earning.nodeId}`);
     }
 
@@ -184,6 +184,11 @@ export function validateCSVRow(row, columnMap, rowIndex) {
         const cleanAmount = amountStr.replace(/[$,]/g, '');
         amount = parseFloat(cleanAmount);
 
+        // Handle amountMicros (divide by 1,000,000)
+        if (!isNaN(amount) && columnMap._amountIsMicros) {
+            amount = amount / 1000000;
+        }
+
         if (isNaN(amount)) {
             errors.push(`Row ${rowIndex + 1}: Invalid amount: ${amountStr}`);
         } else if (amount < 0) {
@@ -244,23 +249,39 @@ export function detectCSVColumns(headerRow) {
         const normalized = header.toLowerCase().trim();
 
         // Date column
-        if (normalized.includes('date') || normalized === 'day') {
+        if (normalized === 'date' || normalized === 'day' || normalized === 'completedat') {
             mapping.date = index;
         }
-        // Node ID column
-        else if (normalized.includes('node') || normalized.includes('id')) {
-            mapping.nodeId = index;
+        // Node ID column — matches: node id, nodeid, licenseid_short, licenseid, fullnodeid
+        else if (normalized === 'node id' || normalized === 'nodeid'
+            || normalized === 'licenseid_short' || normalized === 'licenseid'
+            || normalized === 'fullnodeid') {
+            // Prefer licenseid_short over fullnodeid/fullLicenseId
+            if (mapping.nodeId === -1 || normalized === 'licenseid_short' || normalized === 'node id') {
+                mapping.nodeId = index;
+            }
         }
         // License Type column
-        else if (normalized.includes('license') || normalized.includes('type')) {
+        else if (normalized.includes('license') && normalized.includes('type')) {
             mapping.licenseType = index;
         }
-        // Amount column
-        else if (normalized.includes('amount') || normalized.includes('$') || normalized === 'earnings') {
+        // Amount column — matches: amount, amount ($), amountup, daily_up, amountmicros
+        else if (normalized === 'amount' || normalized === 'amount ($)'
+            || normalized === 'amountup' || normalized === 'daily_up'
+            || normalized === 'earnings') {
             mapping.amount = index;
+        }
+        else if (normalized === 'amountmicros' && mapping.amount === -1) {
+            // amountMicros needs division by 1,000,000 — flag it
+            mapping.amount = index;
+            mapping._amountIsMicros = true;
         }
         // Status column
         else if (normalized.includes('status')) {
+            mapping.status = index;
+        }
+        // Type column (from API CSV) — can serve as status
+        else if (normalized === 'type' && mapping.status === -1) {
             mapping.status = index;
         }
     });

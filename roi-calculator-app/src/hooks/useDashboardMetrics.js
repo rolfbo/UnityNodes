@@ -4,16 +4,18 @@ import { getEarningsStats } from '../utils/earningsStorage.js';
 /**
  * Hook computing all dashboard metrics and chart data
  */
-export function useDashboardMetrics(earnings, nodeMapping, selectedEarningIds, useDashboardSelection) {
-    // Filter to bound nodes only
+export function useDashboardMetrics(earnings, nodeMapping = {}, selectedEarningIds, useDashboardSelection) {
+    // Filter to bound nodes only (if nodeMapping is available)
     const dashboardEarnings = useMemo(() => {
         let data = [...earnings];
 
-        // Filter to bound nodes
-        data = data.filter(e => {
-            const bound = nodeMapping[e.nodeId]?.bound;
-            return bound === true || bound === 'true';
-        });
+        // Filter to bound nodes (skip if no mapping or empty mapping)
+        if (nodeMapping && Object.keys(nodeMapping).length > 0) {
+            data = data.filter(e => {
+                const bound = nodeMapping[e.nodeId]?.bound;
+                return bound === true || bound === 'true';
+            });
+        }
 
         // If dashboard selection enabled, further filter to selected
         if (useDashboardSelection && selectedEarningIds.size > 0) {

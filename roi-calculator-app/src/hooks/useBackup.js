@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { loadBackupSettings, saveBackupSettings, toggleAutoBackup, updateBackupFrequency, getChangeCounter, incrementChangeCounter, resetChangeCounter, shouldTriggerBackup, performAutoBackup, getBackupStatus } from '../utils/autoBackup.js';
-import { exportToJSON, exportToCSV } from '../utils/earningsStorage.js';
+import { exportToJSON, exportToCSV, smartImport } from '../utils/earningsStorage.js';
 import { importFromJSON, importFromCSV } from '../utils/earningsStorage.js';
 
 /**
@@ -65,7 +65,9 @@ export function useBackup() {
                 if (file.name.endsWith('.csv')) {
                     result = importFromCSV(content);
                 } else {
-                    result = importFromJSON(content);
+                    // Use smart import to auto-detect format
+                    // (handles API JSON, tracker JSON, and pasted text)
+                    result = smartImport(content);
                 }
 
                 setImportResult(result);
